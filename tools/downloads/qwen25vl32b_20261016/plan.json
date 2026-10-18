@@ -1,0 +1,196 @@
+{
+  "root": "/storage/yukaichengLab/share/model/.staging/qwen25vl32b_20261016",
+  "publish_root": "/storage/yukaichengLab/share/model",
+  "state_dir": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_data/model_downloads/qwen25vl32b_20261016",
+  "datasets": [
+    {
+      "name": "Qwen2.5-VL-32B-Instruct",
+      "repo_id": "Qwen/Qwen2.5-VL-32B-Instruct",
+      "revision": "7cfb30d71a1f4f49a57592323337a4a4727301da",
+      "source": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct",
+      "precision": "original BF16",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size": 1570,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/.gitattributes"
+        },
+        {
+          "path": "README.md",
+          "size": 18640,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md"
+        },
+        {
+          "path": "added_tokens.json",
+          "size": 605,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/added_tokens.json"
+        },
+        {
+          "path": "chat_template.json",
+          "size": 1049,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/chat_template.json"
+        },
+        {
+          "path": "config.json",
+          "size": 1223,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/config.json"
+        },
+        {
+          "path": "configuration.json",
+          "size": 76,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/configuration.json"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 216,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/generation_config.json"
+        },
+        {
+          "path": "merges.txt",
+          "size": 1671853,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/merges.txt"
+        },
+        {
+          "path": "model-00001-of-00018.safetensors",
+          "size": 2755409624,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00001-of-00018.safetensors",
+          "sha256": "64c2a870b88b235da239b0eee9360810d162c2eaa6c0a6318f33969d3e653e8f"
+        },
+        {
+          "path": "model-00002-of-00018.safetensors",
+          "size": 3916519128,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00002-of-00018.safetensors",
+          "sha256": "d58b007f2a2a3104e243949b5533209087fb71528a801719a7ff87e1c5402a13"
+        },
+        {
+          "path": "model-00003-of-00018.safetensors",
+          "size": 3900847488,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00003-of-00018.safetensors",
+          "sha256": "e4102551d61285941d4c628ef34beeeb2ecb66713b37756c4be31542b03c5546"
+        },
+        {
+          "path": "model-00004-of-00018.safetensors",
+          "size": 3900847488,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00004-of-00018.safetensors",
+          "sha256": "20a6ff2c6b6ea5d7199ea0da7c39787f694d04068a1b5090c56e1b2cd2c8279c"
+        },
+        {
+          "path": "model-00005-of-00018.safetensors",
+          "size": 3900847536,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00005-of-00018.safetensors",
+          "sha256": "3af4c2e3274e045d9b08bc92dda78b615c2e21aead1159f8193fe6d01b49b62c"
+        },
+        {
+          "path": "model-00006-of-00018.safetensors",
+          "size": 3900847536,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00006-of-00018.safetensors",
+          "sha256": "8a47aa90e2e685110e9c82b4f468eac4116286c98090a1461275130ac5ac42ea"
+        },
+        {
+          "path": "model-00007-of-00018.safetensors",
+          "size": 3900847536,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00007-of-00018.safetensors",
+          "sha256": "dcd94eb28bee42e2697dda0497eeafd04a6d10f686d966a18b77ec1b62c95cb9"
+        },
+        {
+          "path": "model-00008-of-00018.safetensors",
+          "size": 3900847536,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00008-of-00018.safetensors",
+          "sha256": "5ed4aee864b479c6dfcafcfa10d11d511aaf8fefd95618325d03a6662aacf7ae"
+        },
+        {
+          "path": "model-00009-of-00018.safetensors",
+          "size": 3900847536,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00009-of-00018.safetensors",
+          "sha256": "bd7a7666f7246c3bf5dae7b4709a3032deab6970ccbb3d4de9853e18dccd0a4f"
+        },
+        {
+          "path": "model-00010-of-00018.safetensors",
+          "size": 3900847536,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00010-of-00018.safetensors",
+          "sha256": "23e22a974e698e049e0abf917747aa270b6f11202a4ef23feffba18534bdbb0d"
+        },
+        {
+          "path": "model-00011-of-00018.safetensors",
+          "size": 3900847536,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00011-of-00018.safetensors",
+          "sha256": "2d9900a158e75ed10c9d271063283f356c998c9e94792eda2d5cf4eb1fd49bff"
+        },
+        {
+          "path": "model-00012-of-00018.safetensors",
+          "size": 3900847536,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00012-of-00018.safetensors",
+          "sha256": "7d0005e8ea7c058a1a1c03f9b76937836fcfded52ae41876d2d6f8c0657343a9"
+        },
+        {
+          "path": "model-00013-of-00018.safetensors",
+          "size": 3900847536,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00013-of-00018.safetensors",
+          "sha256": "792a18eb6999f1d0b9716292a894fe480ee0393d66c71468263b46d795e669ea"
+        },
+        {
+          "path": "model-00014-of-00018.safetensors",
+          "size": 3900847536,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00014-of-00018.safetensors",
+          "sha256": "d3ef548f5c10161749d6833e8cfa45fb68785617c60b3babeaf6803359cb6640"
+        },
+        {
+          "path": "model-00015-of-00018.safetensors",
+          "size": 3900847536,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00015-of-00018.safetensors",
+          "sha256": "f99201514697986e5a5408f7f42f0fecc45916385614f6af8eab37a64a0e0e06"
+        },
+        {
+          "path": "model-00016-of-00018.safetensors",
+          "size": 3900847536,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00016-of-00018.safetensors",
+          "sha256": "e366d738ecd99a3f66d01a7a9bbaf8355cd70a9450c4d58f0f4f9b16159be1e4"
+        },
+        {
+          "path": "model-00017-of-00018.safetensors",
+          "size": 3900847536,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00017-of-00018.safetensors",
+          "sha256": "92e355aac688513437bd1c087a855808e7cb83aea8f31d1ec0f08d31ce3bb29e"
+        },
+        {
+          "path": "model-00018-of-00018.safetensors",
+          "size": 3098609680,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model-00018-of-00018.safetensors",
+          "sha256": "87d7dddef2c079610e409a4372f29453382c6218687a9e1b9c04ae0359a880c2"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 93115,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/model.safetensors.index.json"
+        },
+        {
+          "path": "preprocessor_config.json",
+          "size": 351,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/preprocessor_config.json"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 613,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/special_tokens_map.json"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 11421896,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/tokenizer.json",
+          "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5702,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/tokenizer_config.json"
+        },
+        {
+          "path": "vocab.json",
+          "size": 2776833,
+          "url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/resolve/7cfb30d71a1f4f49a57592323337a4a4727301da/vocab.json"
+        }
+      ],
+      "model_type": "qwen2_5_vl"
+    }
+  ]
+}

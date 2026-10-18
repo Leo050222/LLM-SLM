@@ -1,0 +1,491 @@
+{
+  "pooled_event": {
+    "events": 43879,
+    "questions": 4454,
+    "high": 0.5873196745595843,
+    "middle": 0.37653547254951114,
+    "low": 0.036144852890904536,
+    "p_median": 0.035508036613464355,
+    "q_median": 0.3784199357032776,
+    "rank_median": 2.0,
+    "top5": 0.8006107705280431,
+    "top10": 0.8950067230337975,
+    "top50": 0.9632398185920372,
+    "weak_entropy": 0.6816989010274128,
+    "strong_entropy": 0.6112135424185767,
+    "delta": 0.07048535860883615,
+    "weak_higher": 0.5701588459171814,
+    "masked_delta": 0.2597064718916818,
+    "weak_masked_entropy": 0.7929337763575453,
+    "strong_masked_entropy": 0.5332273044658634,
+    "gap_flip": 0.019827252216322158
+  },
+  "dataset_macro": [
+    {
+      "dataset": "MACRO",
+      "metric": "high",
+      "weight": "event_dataset_macro",
+      "mean": 0.5538825263159877,
+      "ci_low": 0.5463618785224428,
+      "ci_high": 0.5608723921950667
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "middle",
+      "weight": "event_dataset_macro",
+      "mean": 0.3984311848663764,
+      "ci_low": 0.39150049933180386,
+      "ci_high": 0.4057598206982429
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "low",
+      "weight": "event_dataset_macro",
+      "mean": 0.047686288817635945,
+      "ci_low": 0.04495383383782647,
+      "ci_high": 0.050353113987591284
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_py",
+      "weight": "event_dataset_macro",
+      "mean": 0.10021560881974104,
+      "ci_low": 0.09829243114706493,
+      "ci_high": 0.10204097969037777
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_qy",
+      "weight": "event_dataset_macro",
+      "mean": 0.49051788564510557,
+      "ci_low": 0.4844789874102498,
+      "ci_high": 0.49685033424619224
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "p_lt001",
+      "weight": "event_dataset_macro",
+      "mean": 0.30147027053314746,
+      "ci_low": 0.29511883183768545,
+      "ci_high": 0.30796538255635
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "p_ge01",
+      "weight": "event_dataset_macro",
+      "mean": 0.5726944612798301,
+      "ci_low": 0.5652589044631109,
+      "ci_high": 0.5793502205831222
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "p_ge10",
+      "weight": "event_dataset_macro",
+      "mean": 0.3300979276402055,
+      "ci_low": 0.3239511389821795,
+      "ci_high": 0.3361079678600518
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "low_p_high_q",
+      "weight": "event_dataset_macro",
+      "mean": 0.0842059839934301,
+      "ci_low": 0.07983794168341121,
+      "ci_high": 0.08890385938371775
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top1_certain",
+      "weight": "event_dataset_macro",
+      "mean": 0.011263383901821942,
+      "ci_low": 0.009892208730260093,
+      "ci_high": 0.012844257629936762
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top5_certain",
+      "weight": "event_dataset_macro",
+      "mean": 0.7961428284159338,
+      "ci_low": 0.790545278023227,
+      "ci_high": 0.8015489982245864
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top10_certain",
+      "weight": "event_dataset_macro",
+      "mean": 0.8810595852419842,
+      "ci_low": 0.8769262622753149,
+      "ci_high": 0.8852170023545215
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top50_certain",
+      "weight": "event_dataset_macro",
+      "mean": 0.9517993033893238,
+      "ci_low": 0.9490619261277533,
+      "ci_high": 0.9545544102807727
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top1_possible",
+      "weight": "event_dataset_macro",
+      "mean": 0.03312405682606815,
+      "ci_low": 0.030696538495267503,
+      "ci_high": 0.035681178075409534
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top5_possible",
+      "weight": "event_dataset_macro",
+      "mean": 0.8021503178273761,
+      "ci_low": 0.7966645692923661,
+      "ci_high": 0.8073917500951322
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top10_possible",
+      "weight": "event_dataset_macro",
+      "mean": 0.8839278680595885,
+      "ci_low": 0.8798147188794049,
+      "ci_high": 0.8880901828688156
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top50_possible",
+      "weight": "event_dataset_macro",
+      "mean": 0.9522926408180548,
+      "ci_low": 0.949625426635856,
+      "ci_high": 0.9550241433345672
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_nucleus90_certain",
+      "weight": "event_dataset_macro",
+      "mean": 0.38800466515900256,
+      "ci_low": 0.38122563783936264,
+      "ci_high": 0.3942214828234556
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_nucleus90_possible",
+      "weight": "event_dataset_macro",
+      "mean": 0.3917397339428579,
+      "ci_low": 0.3847810146257159,
+      "ci_high": 0.3980659619528323
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_nucleus95_certain",
+      "weight": "event_dataset_macro",
+      "mean": 0.4696931969411148,
+      "ci_low": 0.4624793752976388,
+      "ci_high": 0.4764001636125316
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_nucleus95_possible",
+      "weight": "event_dataset_macro",
+      "mean": 0.4723397514788493,
+      "ci_low": 0.46517083964831657,
+      "ci_high": 0.4790678735934561
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_entropy",
+      "weight": "event_dataset_macro",
+      "mean": 0.6021363847598413,
+      "ci_low": 0.5935612834938371,
+      "ci_high": 0.6107546615776787
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "s_entropy",
+      "weight": "event_dataset_macro",
+      "mean": 0.480488206287421,
+      "ci_low": 0.47029401265446247,
+      "ci_high": 0.4906985956884193
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_masked_entropy",
+      "weight": "event_dataset_macro",
+      "mean": 0.71339414653481,
+      "ci_low": 0.7009441027096538,
+      "ci_high": 0.7250426116491014
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "s_masked_entropy",
+      "weight": "event_dataset_macro",
+      "mean": 0.41296792890144507,
+      "ci_low": 0.4030424754005108,
+      "ci_high": 0.42300821222489154
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "entropy_delta",
+      "weight": "event_dataset_macro",
+      "mean": 0.12164817847242032,
+      "ci_low": 0.11378053264031249,
+      "ci_high": 0.1294612604366567
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "masked_entropy_delta",
+      "weight": "event_dataset_macro",
+      "mean": 0.3004262176333649,
+      "ci_low": 0.2913644707806831,
+      "ci_high": 0.3093806241479703
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "weak_higher",
+      "weight": "event_dataset_macro",
+      "mean": 0.6144502135969682,
+      "ci_low": 0.6074218596431408,
+      "ci_high": 0.6211717383008101
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "gap_flip",
+      "weight": "event_dataset_macro",
+      "mean": 0.018796864117044725,
+      "ci_low": 0.01708412178601764,
+      "ci_high": 0.02055805283555057
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "high",
+      "weight": "question_dataset_macro",
+      "mean": 0.5472706203731135,
+      "ci_low": 0.5379418970335234,
+      "ci_high": 0.5560990868709311
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "middle",
+      "weight": "question_dataset_macro",
+      "mean": 0.3955659567303543,
+      "ci_low": 0.3863850176453282,
+      "ci_high": 0.40500449229617064
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "low",
+      "weight": "question_dataset_macro",
+      "mean": 0.057163422896532305,
+      "ci_low": 0.053604285274318875,
+      "ci_high": 0.06075967968082253
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_py",
+      "weight": "question_dataset_macro",
+      "mean": 0.09954406372947971,
+      "ci_low": 0.0971398464616229,
+      "ci_high": 0.10202898109124725
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_qy",
+      "weight": "question_dataset_macro",
+      "mean": 0.5069273982076409,
+      "ci_low": 0.49945111055831376,
+      "ci_high": 0.5142983307669845
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "p_lt001",
+      "weight": "question_dataset_macro",
+      "mean": 0.31914704203477384,
+      "ci_low": 0.3109604797327328,
+      "ci_high": 0.327288063459768
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "p_ge01",
+      "weight": "question_dataset_macro",
+      "mean": 0.5613207134508562,
+      "ci_low": 0.5521538231817018,
+      "ci_high": 0.570136499749102
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "p_ge10",
+      "weight": "question_dataset_macro",
+      "mean": 0.3266710744131356,
+      "ci_low": 0.31834404319395465,
+      "ci_high": 0.33455836651086274
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "low_p_high_q",
+      "weight": "question_dataset_macro",
+      "mean": 0.09029701541740551,
+      "ci_low": 0.0840209558255784,
+      "ci_high": 0.0967370039628009
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top1_certain",
+      "weight": "question_dataset_macro",
+      "mean": 0.011461767700967858,
+      "ci_low": 0.009498308883570662,
+      "ci_high": 0.013696195398132636
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top5_certain",
+      "weight": "question_dataset_macro",
+      "mean": 0.7944139806547518,
+      "ci_low": 0.7884412916956016,
+      "ci_high": 0.8001038984060608
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top10_certain",
+      "weight": "question_dataset_macro",
+      "mean": 0.87398599480605,
+      "ci_low": 0.8691171065476485,
+      "ci_high": 0.8786712712854114
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top50_certain",
+      "weight": "question_dataset_macro",
+      "mean": 0.942235956841551,
+      "ci_low": 0.9385663019719734,
+      "ci_high": 0.9458090857326767
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top1_possible",
+      "weight": "question_dataset_macro",
+      "mean": 0.03322405362526561,
+      "ci_low": 0.029990856768556055,
+      "ci_high": 0.03648206050708478
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top5_possible",
+      "weight": "question_dataset_macro",
+      "mean": 0.7994457093372799,
+      "ci_low": 0.7934661793855421,
+      "ci_high": 0.8051598470811372
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top10_possible",
+      "weight": "question_dataset_macro",
+      "mean": 0.876726234406038,
+      "ci_low": 0.8719892497103894,
+      "ci_high": 0.8813849374399045
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_top50_possible",
+      "weight": "question_dataset_macro",
+      "mean": 0.9428085406902487,
+      "ci_low": 0.9392339373305526,
+      "ci_high": 0.9463689560162303
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_nucleus90_certain",
+      "weight": "question_dataset_macro",
+      "mean": 0.37505822032386393,
+      "ci_low": 0.3668979009322604,
+      "ci_high": 0.3834541167529928
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_nucleus90_possible",
+      "weight": "question_dataset_macro",
+      "mean": 0.3784667327281588,
+      "ci_low": 0.3701799057739744,
+      "ci_high": 0.38676292989794
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_nucleus95_certain",
+      "weight": "question_dataset_macro",
+      "mean": 0.4539056252860041,
+      "ci_low": 0.44523522097695273,
+      "ci_high": 0.4627968592015314
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_nucleus95_possible",
+      "weight": "question_dataset_macro",
+      "mean": 0.45600818831099654,
+      "ci_low": 0.4473320191205623,
+      "ci_high": 0.4648760925864037
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_entropy",
+      "weight": "question_dataset_macro",
+      "mean": 0.5609558667000789,
+      "ci_low": 0.5515831800970384,
+      "ci_high": 0.5706986660666045
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "s_entropy",
+      "weight": "question_dataset_macro",
+      "mean": 0.42441393734325317,
+      "ci_low": 0.41529642162216546,
+      "ci_high": 0.4339459670462458
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "w_masked_entropy",
+      "weight": "question_dataset_macro",
+      "mean": 0.6627516813777647,
+      "ci_low": 0.6500912956891254,
+      "ci_high": 0.6748116228468228
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "s_masked_entropy",
+      "weight": "question_dataset_macro",
+      "mean": 0.3569411695662015,
+      "ci_low": 0.3480357193113624,
+      "ci_high": 0.3663299708663486
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "entropy_delta",
+      "weight": "question_dataset_macro",
+      "mean": 0.1365419293568258,
+      "ci_low": 0.12785705444948858,
+      "ci_high": 0.14534747546993954
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "masked_entropy_delta",
+      "weight": "question_dataset_macro",
+      "mean": 0.3058105118115633,
+      "ci_low": 0.2958082038139128,
+      "ci_high": 0.31584577741565417
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "weak_higher",
+      "weight": "question_dataset_macro",
+      "mean": 0.6255961929343015,
+      "ci_low": 0.617084109034276,
+      "ci_high": 0.6340264566511532
+    },
+    {
+      "dataset": "MACRO",
+      "metric": "gap_flip",
+      "weight": "question_dataset_macro",
+      "mean": 0.017723085176922244,
+      "ci_low": 0.01574964048380905,
+      "ci_high": 0.019729018747641734
+    }
+  ],
+  "semantic_review_cases": 120,
+  "semantic_review_status": "Prepared, not human annotated; lexical categories are not logical-path labels"
+}

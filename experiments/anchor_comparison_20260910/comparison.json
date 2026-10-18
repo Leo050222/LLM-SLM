@@ -1,0 +1,218 @@
+{
+  "same_subset": {
+    "student64": {
+      "questions": 958,
+      "samples": 61312,
+      "correct": 24192,
+      "accuracy": 0.3945720250521921,
+      "solved": 837,
+      "pass_any": 0.8736951983298539
+    },
+    "teacher": {
+      "questions": 958,
+      "samples": 7664,
+      "correct": 4526,
+      "accuracy": 0.590553235908142,
+      "solved": 833,
+      "pass_any": 0.8695198329853863
+    },
+    "h32": {
+      "questions": 958,
+      "samples": 61312,
+      "correct": 24421,
+      "accuracy": 0.3983070198329854,
+      "solved": 843,
+      "pass_any": 0.8799582463465553
+    },
+    "h64": {
+      "questions": 958,
+      "samples": 61312,
+      "correct": 24396,
+      "accuracy": 0.39789926931106473,
+      "solved": 851,
+      "pass_any": 0.8883089770354906
+    },
+    "h128": {
+      "questions": 958,
+      "samples": 61312,
+      "correct": 24649,
+      "accuracy": 0.4020257045929019,
+      "solved": 847,
+      "pass_any": 0.884133611691023
+    },
+    "h256": {
+      "questions": 958,
+      "samples": 61312,
+      "correct": 25614,
+      "accuracy": 0.41776487473903967,
+      "solved": 853,
+      "pass_any": 0.8903966597077244
+    },
+    "anchor": {
+      "questions": 958,
+      "samples": 61312,
+      "correct": 26569,
+      "accuracy": 0.4333409446764092,
+      "solved": 838,
+      "pass_any": 0.8747390396659708
+    }
+  },
+  "full1000": {
+    "student64": {
+      "questions": 1000,
+      "samples": 64000,
+      "correct": 25961,
+      "accuracy": 0.405640625,
+      "solved": 876,
+      "pass_any": 0.876
+    },
+    "teacher": {
+      "questions": 1000,
+      "samples": 8000,
+      "correct": 4772,
+      "accuracy": 0.5965,
+      "solved": 869,
+      "pass_any": 0.869
+    },
+    "h32": {
+      "questions": 1000,
+      "samples": 64000,
+      "correct": 26204,
+      "accuracy": 0.4094375,
+      "solved": 880,
+      "pass_any": 0.88
+    },
+    "h64": {
+      "questions": 1000,
+      "samples": 64000,
+      "correct": 26201,
+      "accuracy": 0.409390625,
+      "solved": 889,
+      "pass_any": 0.889
+    },
+    "h128": {
+      "questions": 1000,
+      "samples": 64000,
+      "correct": 26435,
+      "accuracy": 0.413046875,
+      "solved": 888,
+      "pass_any": 0.888
+    },
+    "h256": {
+      "questions": 1000,
+      "samples": 64000,
+      "correct": 27477,
+      "accuracy": 0.429328125,
+      "solved": 893,
+      "pass_any": 0.893
+    }
+  },
+  "overlap": {
+    "student64": {
+      "both": 804,
+      "anchor_only": 34,
+      "baseline_only": 33,
+      "neither": 87
+    },
+    "teacher": {
+      "both": 789,
+      "anchor_only": 49,
+      "baseline_only": 44,
+      "neither": 76
+    },
+    "h32": {
+      "both": 809,
+      "anchor_only": 29,
+      "baseline_only": 34,
+      "neither": 86
+    },
+    "h64": {
+      "both": 808,
+      "anchor_only": 30,
+      "baseline_only": 43,
+      "neither": 77
+    },
+    "h128": {
+      "both": 815,
+      "anchor_only": 23,
+      "baseline_only": 32,
+      "neither": 88
+    },
+    "h256": {
+      "both": 818,
+      "anchor_only": 20,
+      "baseline_only": 35,
+      "neither": 85
+    }
+  },
+  "scoring_changes": {
+    "student64": {
+      "false_to_true": 8047,
+      "true_to_false": 0
+    },
+    "teacher": {
+      "false_to_true": 1373,
+      "true_to_false": 0
+    },
+    "h32": {
+      "false_to_true": 8095,
+      "true_to_false": 0
+    },
+    "h64": {
+      "false_to_true": 7986,
+      "true_to_false": 0
+    },
+    "h128": {
+      "false_to_true": 8143,
+      "true_to_false": 0
+    },
+    "h256": {
+      "false_to_true": 8426,
+      "true_to_false": 0
+    }
+  },
+  "no_anchor_indices": [
+    11,
+    48,
+    62,
+    66,
+    149,
+    181,
+    183,
+    187,
+    193,
+    206,
+    212,
+    251,
+    287,
+    297,
+    327,
+    336,
+    350,
+    354,
+    357,
+    421,
+    426,
+    451,
+    484,
+    487,
+    495,
+    505,
+    518,
+    595,
+    617,
+    643,
+    651,
+    655,
+    672,
+    718,
+    828,
+    848,
+    864,
+    886,
+    917,
+    925,
+    938,
+    962
+  ]
+}

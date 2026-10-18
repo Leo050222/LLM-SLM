@@ -1,0 +1,23 @@
+{
+  "job_id": 106064,
+  "nodes": 1,
+  "gpus": 2,
+  "gpu_type": "H800",
+  "time_limit": "UNLIMITED",
+  "phases": [
+    "split8",
+    "split4",
+    "colocated4",
+    "split8_repeat"
+  ],
+  "real_tasks_per_phase": 54,
+  "real_total": 216,
+  "stress_context_lengths": [
+    8192,
+    16384,
+    32768,
+    40896
+  ],
+  "main_experiments_changed": false,
+  "status": "submitted; GPU runtime validation awaits allocation"
+}

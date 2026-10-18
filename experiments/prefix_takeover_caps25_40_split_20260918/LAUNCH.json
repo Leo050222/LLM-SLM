@@ -1,0 +1,12 @@
+{
+  "job_id": 106430,
+  "source_job": 106421,
+  "submitted_epoch": 1789704934.7506022,
+  "completed_preserved_at_snapshot": 1774,
+  "pre_switch_last120s": 264,
+  "gpus": 4,
+  "pairs": 2,
+  "batch_size": 8,
+  "concurrency": 64,
+  "time_limit": "UNLIMITED"
+}

@@ -1,0 +1,1491 @@
+{
+  "status": "PASS",
+  "configs": 25,
+  "outputs": 56350,
+  "scores": 56350,
+  "stopping_policy": "Mixed: prior completed traces retained; later unfinished traces have900second active wall-time deadline, timeout counted incorrect",
+  "scoring_policy": "User authorized completed-group early scoring; source hashes verified",
+  "results": [
+    {
+      "config": "k1_t2",
+      "k": 1,
+      "threshold": 2,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 419,
+      "accuracy": 0.838,
+      "mean_tokens": 842.026,
+      "median_tokens": 539.0,
+      "mean_takeovers": 9.71,
+      "teacher_token_share": 0.011531710422243494,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k1_t2",
+      "k": 1,
+      "threshold": 2,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 299,
+      "accuracy": 0.443620178041543,
+      "mean_tokens": 1510.3293768545993,
+      "median_tokens": 1176.0,
+      "mean_takeovers": 17.940652818991097,
+      "teacher_token_share": 0.01187863594122374,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 674
+      }
+    },
+    {
+      "config": "k1_t2",
+      "k": 1,
+      "threshold": 2,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 830,
+      "accuracy": 0.7685185185185185,
+      "mean_tokens": 269.0759259259259,
+      "median_tokens": 221.0,
+      "mean_takeovers": 18.605555555555554,
+      "teacher_token_share": 0.06914611737014886,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1080
+      }
+    },
+    {
+      "config": "k1_t2p5",
+      "k": 1,
+      "threshold": 2.5,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 411,
+      "accuracy": 0.822,
+      "mean_tokens": 829.13,
+      "median_tokens": 537.0,
+      "mean_takeovers": 6.29,
+      "teacher_token_share": 0.007586265121271694,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k1_t2p5",
+      "k": 1,
+      "threshold": 2.5,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 301,
+      "accuracy": 0.4465875370919881,
+      "mean_tokens": 1479.9658753709198,
+      "median_tokens": 1149.5,
+      "mean_takeovers": 10.961424332344214,
+      "teacher_token_share": 0.007406538566030775,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 674
+      }
+    },
+    {
+      "config": "k1_t2p5",
+      "k": 1,
+      "threshold": 2.5,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 835,
+      "accuracy": 0.7731481481481481,
+      "mean_tokens": 339.21944444444443,
+      "median_tokens": 214.0,
+      "mean_takeovers": 15.780555555555555,
+      "teacher_token_share": 0.04652019751226263,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1078,
+        "length": 2
+      }
+    },
+    {
+      "config": "k1_t3",
+      "k": 1,
+      "threshold": 3,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 411,
+      "accuracy": 0.822,
+      "mean_tokens": 841.226,
+      "median_tokens": 552.0,
+      "mean_takeovers": 4.412,
+      "teacher_token_share": 0.005244726149691046,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k1_t3",
+      "k": 1,
+      "threshold": 3,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 279,
+      "accuracy": 0.413946587537092,
+      "mean_tokens": 1482.9629080118693,
+      "median_tokens": 1171.0,
+      "mean_takeovers": 7.329376854599406,
+      "teacher_token_share": 0.0049423871730045615,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 674
+      }
+    },
+    {
+      "config": "k1_t3",
+      "k": 1,
+      "threshold": 3,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 836,
+      "accuracy": 0.774074074074074,
+      "mean_tokens": 304.23055555555555,
+      "median_tokens": 218.0,
+      "mean_takeovers": 13.797222222222222,
+      "teacher_token_share": 0.04535120476977438,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1079,
+        "length": 1
+      }
+    },
+    {
+      "config": "k1_t3p5",
+      "k": 1,
+      "threshold": 3.5,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 395,
+      "accuracy": 0.79,
+      "mean_tokens": 866.488,
+      "median_tokens": 539.5,
+      "mean_takeovers": 3.076,
+      "teacher_token_share": 0.003549962607676044,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k1_t3p5",
+      "k": 1,
+      "threshold": 3.5,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 270,
+      "accuracy": 0.40059347181008903,
+      "mean_tokens": 1462.0816023738873,
+      "median_tokens": 1200.0,
+      "mean_takeovers": 5.376854599406528,
+      "teacher_token_share": 0.003677533860405929,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 674
+      }
+    },
+    {
+      "config": "k1_t3p5",
+      "k": 1,
+      "threshold": 3.5,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 823,
+      "accuracy": 0.7620370370370371,
+      "mean_tokens": 336.78055555555557,
+      "median_tokens": 210.5,
+      "mean_takeovers": 12.118518518518519,
+      "teacher_token_share": 0.03598342694852951,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1078,
+        "length": 2
+      }
+    },
+    {
+      "config": "k1_t4",
+      "k": 1,
+      "threshold": 4,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 401,
+      "accuracy": 0.802,
+      "mean_tokens": 822.838,
+      "median_tokens": 564.5,
+      "mean_takeovers": 2.154,
+      "teacher_token_share": 0.0026177692328259025,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k1_t4",
+      "k": 1,
+      "threshold": 4,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 268,
+      "accuracy": 0.39762611275964393,
+      "mean_tokens": 1523.206231454006,
+      "median_tokens": 1203.0,
+      "mean_takeovers": 3.764094955489614,
+      "teacher_token_share": 0.0024711656752457773,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 674
+      }
+    },
+    {
+      "config": "k1_t4",
+      "k": 1,
+      "threshold": 4,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 817,
+      "accuracy": 0.7564814814814815,
+      "mean_tokens": 380.8768518518518,
+      "median_tokens": 215.0,
+      "mean_takeovers": 10.937037037037037,
+      "teacher_token_share": 0.028715415452160827,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1077,
+        "length": 3
+      }
+    },
+    {
+      "config": "k4_t2",
+      "k": 4,
+      "threshold": 2,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 426,
+      "accuracy": 0.852,
+      "mean_tokens": 824.528,
+      "median_tokens": 547.0,
+      "mean_takeovers": 8.67,
+      "teacher_token_share": 0.04202161721615276,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k4_t2",
+      "k": 4,
+      "threshold": 2,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 298,
+      "accuracy": 0.4421364985163205,
+      "mean_tokens": 1458.8382789317507,
+      "median_tokens": 1165.5,
+      "mean_takeovers": 15.543026706231455,
+      "teacher_token_share": 0.04230430091013845,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 674
+      }
+    },
+    {
+      "config": "k4_t2",
+      "k": 4,
+      "threshold": 2,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 840,
+      "accuracy": 0.7777777777777778,
+      "mean_tokens": 303.92314814814813,
+      "median_tokens": 222.0,
+      "mean_takeovers": 13.094444444444445,
+      "teacher_token_share": 0.16874087930367387,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1079,
+        "length": 1
+      }
+    },
+    {
+      "config": "k4_t2p5",
+      "k": 4,
+      "threshold": 2.5,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 414,
+      "accuracy": 0.828,
+      "mean_tokens": 807.284,
+      "median_tokens": 555.5,
+      "mean_takeovers": 5.718,
+      "teacher_token_share": 0.028319649590478693,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k4_t2p5",
+      "k": 4,
+      "threshold": 2.5,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 297,
+      "accuracy": 0.4406528189910979,
+      "mean_tokens": 1482.6424332344213,
+      "median_tokens": 1167.0,
+      "mean_takeovers": 9.783382789317507,
+      "teacher_token_share": 0.026206318216433287,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 673,
+        "length": 1
+      }
+    },
+    {
+      "config": "k4_t2p5",
+      "k": 4,
+      "threshold": 2.5,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 836,
+      "accuracy": 0.774074074074074,
+      "mean_tokens": 451.2157407407407,
+      "median_tokens": 210.0,
+      "mean_takeovers": 11.366666666666667,
+      "teacher_token_share": 0.09855677972883957,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1075,
+        "length": 5
+      }
+    },
+    {
+      "config": "k4_t3",
+      "k": 4,
+      "threshold": 3,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 411,
+      "accuracy": 0.822,
+      "mean_tokens": 823.16,
+      "median_tokens": 552.5,
+      "mean_takeovers": 3.826,
+      "teacher_token_share": 0.01856990135575101,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k4_t3",
+      "k": 4,
+      "threshold": 3,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 292,
+      "accuracy": 0.4332344213649852,
+      "mean_tokens": 1414.206231454006,
+      "median_tokens": 1143.5,
+      "mean_takeovers": 6.56973293768546,
+      "teacher_token_share": 0.01832192409578514,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 674
+      }
+    },
+    {
+      "config": "k4_t3",
+      "k": 4,
+      "threshold": 3,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 830,
+      "accuracy": 0.7685185185185185,
+      "mean_tokens": 307.8287037037037,
+      "median_tokens": 215.0,
+      "mean_takeovers": 10.052777777777777,
+      "teacher_token_share": 0.12741874840203937,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1079,
+        "length": 1
+      }
+    },
+    {
+      "config": "k4_t3p5",
+      "k": 4,
+      "threshold": 3.5,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 409,
+      "accuracy": 0.818,
+      "mean_tokens": 834.258,
+      "median_tokens": 560.5,
+      "mean_takeovers": 2.694,
+      "teacher_token_share": 0.012904880744326096,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k4_t3p5",
+      "k": 4,
+      "threshold": 3.5,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 287,
+      "accuracy": 0.4258160237388724,
+      "mean_tokens": 1443.6083086053413,
+      "median_tokens": 1168.0,
+      "mean_takeovers": 4.764094955489615,
+      "teacher_token_share": 0.012988801552325199,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 674
+      }
+    },
+    {
+      "config": "k4_t3p5",
+      "k": 4,
+      "threshold": 3.5,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 837,
+      "accuracy": 0.775,
+      "mean_tokens": 341.025,
+      "median_tokens": 208.5,
+      "mean_takeovers": 9.07037037037037,
+      "teacher_token_share": 0.1034381643574518,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1078,
+        "length": 2
+      }
+    },
+    {
+      "config": "k4_t4",
+      "k": 4,
+      "threshold": 4,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 405,
+      "accuracy": 0.81,
+      "mean_tokens": 885.794,
+      "median_tokens": 556.0,
+      "mean_takeovers": 2.116,
+      "teacher_token_share": 0.009546237612808395,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k4_t4",
+      "k": 4,
+      "threshold": 4,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 250,
+      "accuracy": 0.37091988130563797,
+      "mean_tokens": 1504.1632047477744,
+      "median_tokens": 1171.0,
+      "mean_takeovers": 3.50593471810089,
+      "teacher_token_share": 0.009107265098056235,
+      "score_status": {
+        "ok": 673,
+        "missing": 1
+      },
+      "finish_counts": {
+        "stop": 674
+      }
+    },
+    {
+      "config": "k4_t4",
+      "k": 4,
+      "threshold": 4,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 826,
+      "accuracy": 0.7648148148148148,
+      "mean_tokens": 305.8898148148148,
+      "median_tokens": 207.5,
+      "mean_takeovers": 8.150925925925925,
+      "teacher_token_share": 0.10340808993797694,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1079,
+        "length": 1
+      }
+    },
+    {
+      "config": "k8_t2",
+      "k": 8,
+      "threshold": 2,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 430,
+      "accuracy": 0.86,
+      "mean_tokens": 837.388,
+      "median_tokens": 534.5,
+      "mean_takeovers": 8.0,
+      "teacher_token_share": 0.07625139123082729,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k8_t2",
+      "k": 8,
+      "threshold": 2,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 308,
+      "accuracy": 0.456973293768546,
+      "mean_tokens": 1482.3442136498516,
+      "median_tokens": 1167.0,
+      "mean_takeovers": 14.170623145400594,
+      "teacher_token_share": 0.07583124812331098,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 673,
+        "length": 1
+      }
+    },
+    {
+      "config": "k8_t2",
+      "k": 8,
+      "threshold": 2,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 829,
+      "accuracy": 0.7675925925925926,
+      "mean_tokens": 274.3861111111111,
+      "median_tokens": 221.0,
+      "mean_takeovers": 10.25462962962963,
+      "teacher_token_share": 0.2870549408275038,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1080
+      }
+    },
+    {
+      "config": "k8_t2p5",
+      "k": 8,
+      "threshold": 2.5,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 419,
+      "accuracy": 0.838,
+      "mean_tokens": 830.828,
+      "median_tokens": 544.5,
+      "mean_takeovers": 5.156,
+      "teacher_token_share": 0.04954334711877789,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k8_t2p5",
+      "k": 8,
+      "threshold": 2.5,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 293,
+      "accuracy": 0.43471810089020774,
+      "mean_tokens": 1440.4881305637982,
+      "median_tokens": 1188.5,
+      "mean_takeovers": 9.387240356083087,
+      "teacher_token_share": 0.05160219139366086,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 674
+      }
+    },
+    {
+      "config": "k8_t2p5",
+      "k": 8,
+      "threshold": 2.5,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 835,
+      "accuracy": 0.7731481481481481,
+      "mean_tokens": 304.97407407407405,
+      "median_tokens": 213.0,
+      "mean_takeovers": 9.012037037037038,
+      "teacher_token_share": 0.22609086382570467,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1079,
+        "length": 1
+      }
+    },
+    {
+      "config": "k8_t3",
+      "k": 8,
+      "threshold": 3,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 414,
+      "accuracy": 0.828,
+      "mean_tokens": 814.26,
+      "median_tokens": 553.5,
+      "mean_takeovers": 3.688,
+      "teacher_token_share": 0.036187458551322674,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k8_t3",
+      "k": 8,
+      "threshold": 3,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 278,
+      "accuracy": 0.4124629080118694,
+      "mean_tokens": 1456.419881305638,
+      "median_tokens": 1173.0,
+      "mean_takeovers": 6.474777448071217,
+      "teacher_token_share": 0.03503163625287405,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 674
+      }
+    },
+    {
+      "config": "k8_t3",
+      "k": 8,
+      "threshold": 3,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 825,
+      "accuracy": 0.7638888888888888,
+      "mean_tokens": 267.48148148148147,
+      "median_tokens": 215.5,
+      "mean_takeovers": 8.125,
+      "teacher_token_share": 0.2314421212960399,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1080
+      }
+    },
+    {
+      "config": "k8_t3p5",
+      "k": 8,
+      "threshold": 3.5,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 408,
+      "accuracy": 0.816,
+      "mean_tokens": 818.366,
+      "median_tokens": 549.0,
+      "mean_takeovers": 2.76,
+      "teacher_token_share": 0.02692682736086299,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k8_t3p5",
+      "k": 8,
+      "threshold": 3.5,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 277,
+      "accuracy": 0.41097922848664686,
+      "mean_tokens": 1505.7166172106824,
+      "median_tokens": 1191.5,
+      "mean_takeovers": 4.615727002967359,
+      "teacher_token_share": 0.024058656770980624,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 673,
+        "length": 1
+      }
+    },
+    {
+      "config": "k8_t3p5",
+      "k": 8,
+      "threshold": 3.5,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 817,
+      "accuracy": 0.7564814814814815,
+      "mean_tokens": 342.8435185185185,
+      "median_tokens": 209.5,
+      "mean_takeovers": 9.33611111111111,
+      "teacher_token_share": 0.2091954271330998,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1078,
+        "length": 2
+      }
+    },
+    {
+      "config": "k8_t4",
+      "k": 8,
+      "threshold": 4,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 395,
+      "accuracy": 0.79,
+      "mean_tokens": 869.406,
+      "median_tokens": 568.0,
+      "mean_takeovers": 2.062,
+      "teacher_token_share": 0.01893936779824386,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k8_t4",
+      "k": 8,
+      "threshold": 4,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 250,
+      "accuracy": 0.37091988130563797,
+      "mean_tokens": 1515.1172106824927,
+      "median_tokens": 1178.5,
+      "mean_takeovers": 3.5519287833827895,
+      "teacher_token_share": 0.01839522360699146,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 673,
+        "length": 1
+      }
+    },
+    {
+      "config": "k8_t4",
+      "k": 8,
+      "threshold": 4,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 814,
+      "accuracy": 0.7537037037037037,
+      "mean_tokens": 340.9990740740741,
+      "median_tokens": 210.0,
+      "mean_takeovers": 6.742592592592593,
+      "teacher_token_share": 0.14932700479799282,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1078,
+        "length": 2
+      }
+    },
+    {
+      "config": "k16_t2",
+      "k": 16,
+      "threshold": 2,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 424,
+      "accuracy": 0.848,
+      "mean_tokens": 879.396,
+      "median_tokens": 550.0,
+      "mean_takeovers": 7.462,
+      "teacher_token_share": 0.13516322566852704,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k16_t2",
+      "k": 16,
+      "threshold": 2,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 305,
+      "accuracy": 0.45252225519287836,
+      "mean_tokens": 1494.4080118694362,
+      "median_tokens": 1179.0,
+      "mean_takeovers": 12.900593471810089,
+      "teacher_token_share": 0.13659527953369188,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 673,
+        "length": 1
+      }
+    },
+    {
+      "config": "k16_t2",
+      "k": 16,
+      "threshold": 2,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 838,
+      "accuracy": 0.7759259259259259,
+      "mean_tokens": 306.162962962963,
+      "median_tokens": 223.0,
+      "mean_takeovers": 7.491666666666666,
+      "teacher_token_share": 0.36551582309106745,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1079,
+        "length": 1
+      }
+    },
+    {
+      "config": "k16_t2p5",
+      "k": 16,
+      "threshold": 2.5,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 424,
+      "accuracy": 0.848,
+      "mean_tokens": 809.57,
+      "median_tokens": 543.0,
+      "mean_takeovers": 4.79,
+      "teacher_token_share": 0.09418333189223908,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k16_t2p5",
+      "k": 16,
+      "threshold": 2.5,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 291,
+      "accuracy": 0.4317507418397626,
+      "mean_tokens": 1441.712166172107,
+      "median_tokens": 1167.0,
+      "mean_takeovers": 8.691394658753708,
+      "teacher_token_share": 0.09476862533626149,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 674
+      }
+    },
+    {
+      "config": "k16_t2p5",
+      "k": 16,
+      "threshold": 2.5,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 825,
+      "accuracy": 0.7638888888888888,
+      "mean_tokens": 306.81944444444446,
+      "median_tokens": 215.5,
+      "mean_takeovers": 6.787962962962963,
+      "teacher_token_share": 0.3269959108535905,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1079,
+        "length": 1
+      }
+    },
+    {
+      "config": "k16_t3",
+      "k": 16,
+      "threshold": 3,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 412,
+      "accuracy": 0.824,
+      "mean_tokens": 808.414,
+      "median_tokens": 552.0,
+      "mean_takeovers": 3.462,
+      "teacher_token_share": 0.06807650535492953,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k16_t3",
+      "k": 16,
+      "threshold": 3,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 293,
+      "accuracy": 0.43471810089020774,
+      "mean_tokens": 1438.132047477745,
+      "median_tokens": 1178.5,
+      "mean_takeovers": 5.9955489614243325,
+      "teacher_token_share": 0.06539248386208206,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 674
+      }
+    },
+    {
+      "config": "k16_t3",
+      "k": 16,
+      "threshold": 3,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 831,
+      "accuracy": 0.7694444444444445,
+      "mean_tokens": 306.75,
+      "median_tokens": 217.0,
+      "mean_takeovers": 6.222222222222222,
+      "teacher_token_share": 0.2984575447493133,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1079,
+        "length": 1
+      }
+    },
+    {
+      "config": "k16_t3p5",
+      "k": 16,
+      "threshold": 3.5,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 413,
+      "accuracy": 0.826,
+      "mean_tokens": 838.94,
+      "median_tokens": 546.0,
+      "mean_takeovers": 2.648,
+      "teacher_token_share": 0.05017998903378072,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k16_t3p5",
+      "k": 16,
+      "threshold": 3.5,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 261,
+      "accuracy": 0.38724035608308605,
+      "mean_tokens": 1387.820474777448,
+      "median_tokens": 1174.0,
+      "mean_takeovers": 4.468842729970326,
+      "teacher_token_share": 0.05029875207266266,
+      "score_status": {
+        "ok": 674
+      },
+      "finish_counts": {
+        "stop": 674
+      }
+    },
+    {
+      "config": "k16_t3p5",
+      "k": 16,
+      "threshold": 3.5,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 826,
+      "accuracy": 0.7648148148148148,
+      "mean_tokens": 341.4972222222222,
+      "median_tokens": 216.0,
+      "mean_takeovers": 5.661111111111111,
+      "teacher_token_share": 0.24146121247122557,
+      "score_status": {
+        "ok": 1080
+      },
+      "finish_counts": {
+        "stop": 1078,
+        "length": 2
+      }
+    },
+    {
+      "config": "k16_t4",
+      "k": 16,
+      "threshold": 4,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 398,
+      "accuracy": 0.796,
+      "mean_tokens": 840.68,
+      "median_tokens": 558.5,
+      "mean_takeovers": 1.826,
+      "teacher_token_share": 0.03455298092020745,
+      "score_status": {
+        "ok": 490,
+        "trace_timeout": 10
+      },
+      "finish_counts": {
+        "stop": 490,
+        "trace_timeout": 10
+      }
+    },
+    {
+      "config": "k16_t4",
+      "k": 16,
+      "threshold": 4,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 265,
+      "accuracy": 0.39317507418397624,
+      "mean_tokens": 1485.2299703264096,
+      "median_tokens": 1185.5,
+      "mean_takeovers": 3.2833827893175074,
+      "teacher_token_share": 0.034522923544895584,
+      "score_status": {
+        "ok": 658,
+        "trace_timeout": 16
+      },
+      "finish_counts": {
+        "stop": 658,
+        "trace_timeout": 16
+      }
+    },
+    {
+      "config": "k16_t4",
+      "k": 16,
+      "threshold": 4,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 808,
+      "accuracy": 0.7481481481481481,
+      "mean_tokens": 284.97777777777776,
+      "median_tokens": 214.0,
+      "mean_takeovers": 5.271296296296296,
+      "teacher_token_share": 0.26785064462466207,
+      "score_status": {
+        "ok": 1072,
+        "trace_timeout": 8
+      },
+      "finish_counts": {
+        "stop": 1072,
+        "trace_timeout": 8
+      }
+    },
+    {
+      "config": "k32_t2",
+      "k": 32,
+      "threshold": 2,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 416,
+      "accuracy": 0.832,
+      "mean_tokens": 808.498,
+      "median_tokens": 550.5,
+      "mean_takeovers": 6.094,
+      "teacher_token_share": 0.23827393512414377,
+      "score_status": {
+        "ok": 486,
+        "trace_timeout": 14
+      },
+      "finish_counts": {
+        "stop": 486,
+        "trace_timeout": 14
+      }
+    },
+    {
+      "config": "k32_t2",
+      "k": 32,
+      "threshold": 2,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 288,
+      "accuracy": 0.42729970326409494,
+      "mean_tokens": 1409.540059347181,
+      "median_tokens": 1133.5,
+      "mean_takeovers": 10.47626112759644,
+      "teacher_token_share": 0.2336199909476543,
+      "score_status": {
+        "ok": 630,
+        "trace_timeout": 44
+      },
+      "finish_counts": {
+        "stop": 630,
+        "trace_timeout": 44
+      }
+    },
+    {
+      "config": "k32_t2",
+      "k": 32,
+      "threshold": 2,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 824,
+      "accuracy": 0.762962962962963,
+      "mean_tokens": 268.2472222222222,
+      "median_tokens": 214.0,
+      "mean_takeovers": 5.239814814814815,
+      "teacher_token_share": 0.5578774416910879,
+      "score_status": {
+        "ok": 1065,
+        "trace_timeout": 15
+      },
+      "finish_counts": {
+        "stop": 1065,
+        "trace_timeout": 15
+      }
+    },
+    {
+      "config": "k32_t2p5",
+      "k": 32,
+      "threshold": 2.5,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 414,
+      "accuracy": 0.828,
+      "mean_tokens": 832.384,
+      "median_tokens": 553.0,
+      "mean_takeovers": 4.496,
+      "teacher_token_share": 0.17095955712747962,
+      "score_status": {
+        "ok": 485,
+        "trace_timeout": 15
+      },
+      "finish_counts": {
+        "stop": 485,
+        "trace_timeout": 15
+      }
+    },
+    {
+      "config": "k32_t2p5",
+      "k": 32,
+      "threshold": 2.5,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 291,
+      "accuracy": 0.4317507418397626,
+      "mean_tokens": 1383.8160237388724,
+      "median_tokens": 1127.0,
+      "mean_takeovers": 7.5044510385756675,
+      "teacher_token_share": 0.1695264889159551,
+      "score_status": {
+        "ok": 636,
+        "trace_timeout": 38
+      },
+      "finish_counts": {
+        "stop": 636,
+        "trace_timeout": 38
+      }
+    },
+    {
+      "config": "k32_t2p5",
+      "k": 32,
+      "threshold": 2.5,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 818,
+      "accuracy": 0.7574074074074074,
+      "mean_tokens": 268.36944444444447,
+      "median_tokens": 214.0,
+      "mean_takeovers": 4.864814814814815,
+      "teacher_token_share": 0.511708224221033,
+      "score_status": {
+        "ok": 1069,
+        "trace_timeout": 11
+      },
+      "finish_counts": {
+        "stop": 1069,
+        "trace_timeout": 11
+      }
+    },
+    {
+      "config": "k32_t3",
+      "k": 32,
+      "threshold": 3,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 404,
+      "accuracy": 0.808,
+      "mean_tokens": 854.732,
+      "median_tokens": 552.5,
+      "mean_takeovers": 3.22,
+      "teacher_token_share": 0.119281833369992,
+      "score_status": {
+        "ok": 489,
+        "trace_timeout": 11
+      },
+      "finish_counts": {
+        "stop": 489,
+        "trace_timeout": 11
+      }
+    },
+    {
+      "config": "k32_t3",
+      "k": 32,
+      "threshold": 3,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 279,
+      "accuracy": 0.413946587537092,
+      "mean_tokens": 1377.9376854599407,
+      "median_tokens": 1105.5,
+      "mean_takeovers": 5.363501483679525,
+      "teacher_token_share": 0.12087366618931229,
+      "score_status": {
+        "ok": 645,
+        "trace_timeout": 29
+      },
+      "finish_counts": {
+        "stop": 645,
+        "trace_timeout": 29
+      }
+    },
+    {
+      "config": "k32_t3",
+      "k": 32,
+      "threshold": 3,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 809,
+      "accuracy": 0.7490740740740741,
+      "mean_tokens": 284.81851851851854,
+      "median_tokens": 217.0,
+      "mean_takeovers": 4.561111111111111,
+      "teacher_token_share": 0.4481248618353467,
+      "score_status": {
+        "ok": 1068,
+        "trace_timeout": 12
+      },
+      "finish_counts": {
+        "stop": 1068,
+        "trace_timeout": 12
+      }
+    },
+    {
+      "config": "k32_t3p5",
+      "k": 32,
+      "threshold": 3.5,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 412,
+      "accuracy": 0.824,
+      "mean_tokens": 868.774,
+      "median_tokens": 541.0,
+      "mean_takeovers": 2.522,
+      "teacher_token_share": 0.0915335864102747,
+      "score_status": {
+        "ok": 491,
+        "trace_timeout": 9
+      },
+      "finish_counts": {
+        "stop": 491,
+        "trace_timeout": 9
+      }
+    },
+    {
+      "config": "k32_t3p5",
+      "k": 32,
+      "threshold": 3.5,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 261,
+      "accuracy": 0.38724035608308605,
+      "mean_tokens": 1406.146884272997,
+      "median_tokens": 1092.0,
+      "mean_takeovers": 4.035608308605341,
+      "teacher_token_share": 0.08863056756947822,
+      "score_status": {
+        "ok": 645,
+        "trace_timeout": 29
+      },
+      "finish_counts": {
+        "stop": 645,
+        "trace_timeout": 29
+      }
+    },
+    {
+      "config": "k32_t3p5",
+      "k": 32,
+      "threshold": 3.5,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 805,
+      "accuracy": 0.7453703703703703,
+      "mean_tokens": 292.6925925925926,
+      "median_tokens": 215.0,
+      "mean_takeovers": 4.2518518518518515,
+      "teacher_token_share": 0.3996355675908234,
+      "score_status": {
+        "ok": 1067,
+        "trace_timeout": 13
+      },
+      "finish_counts": {
+        "stop": 1067,
+        "trace_timeout": 13
+      }
+    },
+    {
+      "config": "k32_t4",
+      "k": 32,
+      "threshold": 4,
+      "dataset": "math500",
+      "n": 500,
+      "correct": 403,
+      "accuracy": 0.806,
+      "mean_tokens": 854.408,
+      "median_tokens": 559.0,
+      "mean_takeovers": 1.846,
+      "teacher_token_share": 0.06833269351410567,
+      "score_status": {
+        "ok": 500
+      },
+      "finish_counts": {
+        "stop": 500
+      }
+    },
+    {
+      "config": "k32_t4",
+      "k": 32,
+      "threshold": 4,
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 253,
+      "accuracy": 0.37537091988130566,
+      "mean_tokens": 1379.4020771513353,
+      "median_tokens": 1056.5,
+      "mean_takeovers": 2.9421364985163203,
+      "teacher_token_share": 0.06585444818154342,
+      "score_status": {
+        "trace_timeout": 27,
+        "ok": 647
+      },
+      "finish_counts": {
+        "trace_timeout": 27,
+        "stop": 647
+      }
+    },
+    {
+      "config": "k32_t4",
+      "k": 32,
+      "threshold": 4,
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 816,
+      "accuracy": 0.7555555555555555,
+      "mean_tokens": 292.0796296296296,
+      "median_tokens": 216.0,
+      "mean_takeovers": 4.026851851851852,
+      "teacher_token_share": 0.3767459406681334,
+      "score_status": {
+        "ok": 1079,
+        "trace_timeout": 1
+      },
+      "finish_counts": {
+        "stop": 1079,
+        "trace_timeout": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rows": 2314,
+  "sources": [
+    {
+      "path": "experiments/hard_three_20260911/artifacts/prompts.jsonl",
+      "sha256": "f4b49d47e8d73f157a28e16d6bc18e9de1060f78939733164edaaf451c67394b"
+    },
+    {
+      "path": "experiments/math500_three_20260911/results/prompts.jsonl",
+      "sha256": "69d04e7f2c95b4ca771207e1dd3ea25e8664ae5a4817cda03171888122eef783"
+    }
+  ],
+  "seed": 20260911,
+  "policy": "uniform feasible subset of baseline token offsets separated by at least8",
+  "prompts_sha256": "2bf1b43420ad3cd0e4ea90950e6f810fed8cf0441686f14d85c58c808b56ac77"
+}

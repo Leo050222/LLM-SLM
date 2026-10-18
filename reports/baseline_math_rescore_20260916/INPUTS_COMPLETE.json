@@ -1,0 +1,17 @@
+{
+  "rows": 4508,
+  "counts": {
+    "student_only/olympiad_bench": 674,
+    "student_only/bbh": 1080,
+    "teacher_only/olympiad_bench": 674,
+    "teacher_only/bbh": 1080,
+    "student_only/math500": 500,
+    "teacher_only/math500": 500
+  },
+  "extraction_methods": {
+    "cached_old_predicted": 4508
+  },
+  "inputs_sha256": "36bdcf8286c44c8c83ced9b35e241f75daf67a683481c17fc9eae9322ecfdbba",
+  "prompt_identical_to_grid": true,
+  "all_problem_reference_and_prompt_tokens_match_grid": true
+}

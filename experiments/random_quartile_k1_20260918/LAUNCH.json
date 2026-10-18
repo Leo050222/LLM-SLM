@@ -1,0 +1,23 @@
+{
+  "job_id": 106061,
+  "gpus": 4,
+  "rows": 4571,
+  "planned_interventions": 49507,
+  "source_timeout_rows": 32,
+  "source_group": "r1_k1_t2",
+  "hashes": {
+    "worker.py": "969f59d94c5a8f71bbe7fbbb9f4ddf4e51bbcfb554063a46b065bb035338a998",
+    "run.py": "9ac3238feb6015e63010b7f26400af3e45e072810bbd26ed156a9bbce80c512b",
+    "test_quartile.py": "3c988f5b2fb7d3ca35c9c30c7f6bff6f85ad9d8f6c28624e6764a12fcf270b29",
+    "dispatch.py": "f9dada5810860d4b47d9332ba3f813496f0e0695d815179eebb70ecf7a468209",
+    "queue_rpc.py": "0c522389642f405526c7420b4315b7cc52500b7b200c38f2e2e7416d86a68908",
+    "node.sh": "8a1d2fbfa10ddf0944cb2d52dd3905e0d9d7bb27530548c244a71b2c9200056e",
+    "worker_rank.sh": "82d54511d4a279894a5c49ea4c3fa3df0b0141c9d4faca28bbf95a376089bc5b",
+    "ablation_core.py": "3fe4b5607e6011ea509644c6f3b0dc9caf156bf0e08bfad7185b06fe8cb3e580",
+    "deadline.py": "f61a2772497a2e62427d811a05cbb67dffd3b308bbfc4f3c7450c8279685d373",
+    "migration.py": "6dd16e8ce6047000d3d776793fbf0f7a4e24fce0653bcb2df6353d7bb995fa28",
+    "prepare.py": "36aafe9728cfee4a275e7f3177a92672bf4b960c7cfcd43775b0349da36abec1",
+    "gpu.slurm": "5fb54fd6d9f5f1df6fabc1bbe1c41688264348eaae99b3b500675a75f773e896",
+    "smoke.py": "9d7909e21ad1139b103ae8ee34df3c05a7efc967412e06afdb315578e254c45c"
+  }
+}

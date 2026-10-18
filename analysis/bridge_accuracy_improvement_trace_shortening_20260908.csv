@@ -1,0 +1,5 @@
+horizon_tokens,clean_bridges,improved_bridges,improved_and_shorter,shorter_given_improved_percent,improved_mean_trace_reduction_tokens,not_improved_bridges,not_improved_and_shorter,shorter_given_not_improved_percent,not_improved_mean_trace_reduction_tokens,shorter_rate_gap_pp,shorter_risk_ratio,shorter_odds_ratio
+32,105821,31362,16903,53.8964,29.2199,74459,36326,48.7866,-2.4913,5.1099,1.1047,1.2272
+64,105821,32340,17535,54.2208,35.3040,73481,35198,47.9008,-4.1717,6.3200,1.1319,1.2882
+128,105798,34142,18476,54.1152,42.5302,71656,33118,46.2180,-10.6525,7.8971,1.1709,1.3724
+256,105663,37627,20271,53.8735,45.3324,68036,29236,42.9714,-29.9520,10.9022,1.2537,1.5500

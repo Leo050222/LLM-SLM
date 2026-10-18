@@ -1,0 +1,79 @@
+{
+  "online": {
+    "counts": {
+      "aime24": 30,
+      "aime25": 30,
+      "olympiad_bench": 674,
+      "bbh": 1080
+    },
+    "correct": {
+      "aime24": 3,
+      "aime25": 7,
+      "olympiad_bench": 232,
+      "bbh": 484
+    },
+    "statuses": {
+      "ok": 1814
+    },
+    "teacher_tokens": 55451,
+    "takeovers": 7068,
+    "max_takeovers": 90,
+    "judge_calls": 32702
+  },
+  "student": {
+    "counts": {
+      "aime24": 30,
+      "aime25": 30,
+      "olympiad_bench": 674,
+      "bbh": 1080
+    },
+    "correct": {
+      "aime24": 5,
+      "aime25": 4,
+      "olympiad_bench": 202,
+      "bbh": 378
+    },
+    "statuses": {
+      "ok": 1813,
+      "missing": 1
+    },
+    "teacher_tokens": 0,
+    "takeovers": 0,
+    "max_takeovers": 0,
+    "judge_calls": 0
+  },
+  "teacher": {
+    "counts": {
+      "aime24": 30,
+      "aime25": 30,
+      "olympiad_bench": 674,
+      "bbh": 1080
+    },
+    "correct": {
+      "aime24": 8,
+      "aime25": 8,
+      "olympiad_bench": 314,
+      "bbh": 835
+    },
+    "statuses": {
+      "ok": 1814
+    },
+    "teacher_tokens": 0,
+    "takeovers": 0,
+    "max_takeovers": 0,
+    "judge_calls": 0
+  },
+  "overlap": {
+    "student": {
+      "both": 402,
+      "online_only": 324,
+      "baseline_only": 187
+    },
+    "teacher": {
+      "both": 633,
+      "online_only": 93,
+      "baseline_only": 532
+    }
+  },
+  "verified": "5442 rows, all dataset/subset identities and shared prompts, source data/output hashes, temporal all-generation-before-any-score gate, per-intervention teacher tokens<=8"
+}

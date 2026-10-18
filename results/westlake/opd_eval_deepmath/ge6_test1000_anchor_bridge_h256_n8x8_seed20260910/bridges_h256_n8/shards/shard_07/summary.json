@@ -1,0 +1,17 @@
+{
+  "status": "BRIDGE_SHARD_COMPLETE",
+  "shard_id": 7,
+  "num_shards": 8,
+  "expected_records": 119,
+  "cached_records": 0,
+  "generated_records": 119,
+  "requested_rollouts_per_trace": 8,
+  "generated_bridges": 952,
+  "requested_bridge_length": 256,
+  "teacher_model": "/storage/yukaichengLab/share/model/Qwen3-14B",
+  "trace_batch_size": 8,
+  "max_num_seqs": 64,
+  "prefix_length_max": 1802,
+  "prefix_length_median": 310,
+  "elapsed_seconds": 223.26922249794006
+}

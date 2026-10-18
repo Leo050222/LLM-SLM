@@ -1,0 +1,1 @@
+PASS sampling parameters identical except FINAL_ONLY delivery mode; explicit engine arguments identical; AsyncLLM uses same LLM_CLASS configuration context.

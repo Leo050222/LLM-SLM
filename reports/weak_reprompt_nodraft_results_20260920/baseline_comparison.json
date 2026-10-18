@@ -1,0 +1,110 @@
+[
+  {
+    "dataset": "bbh",
+    "n": 1080,
+    "student_correct": 465,
+    "reprompt_correct": 702,
+    "teacher_correct": 862,
+    "student": 43.05555555555556,
+    "reprompt": 65.0,
+    "teacher": 79.81481481481481,
+    "delta_student": 21.944444444444443,
+    "delta_teacher": -14.814814814814815
+  },
+  {
+    "dataset": "cruxeval_i",
+    "n": 800,
+    "student_correct": 158,
+    "reprompt_correct": 52,
+    "teacher_correct": 406,
+    "student": 19.75,
+    "reprompt": 6.5,
+    "teacher": 50.75,
+    "delta_student": -13.25,
+    "delta_teacher": -44.25
+  },
+  {
+    "dataset": "cruxeval_o",
+    "n": 800,
+    "student_correct": 175,
+    "reprompt_correct": 125,
+    "teacher_correct": 374,
+    "student": 21.875,
+    "reprompt": 15.625,
+    "teacher": 46.75,
+    "delta_student": -6.25,
+    "delta_teacher": -31.125
+  },
+  {
+    "dataset": "humaneval_plus",
+    "n": 164,
+    "student_correct": 103,
+    "reprompt_correct": 122,
+    "teacher_correct": 143,
+    "student": 62.80487804878049,
+    "reprompt": 74.39024390243902,
+    "teacher": 87.1951219512195,
+    "delta_student": 11.585365853658537,
+    "delta_teacher": -12.804878048780488
+  },
+  {
+    "dataset": "livecodebench",
+    "n": 175,
+    "student_correct": 31,
+    "reprompt_correct": 40,
+    "teacher_correct": 54,
+    "student": 17.714285714285715,
+    "reprompt": 22.857142857142858,
+    "teacher": 30.857142857142858,
+    "delta_student": 5.142857142857143,
+    "delta_teacher": -8.0
+  },
+  {
+    "dataset": "math500",
+    "n": 500,
+    "student_correct": 358,
+    "reprompt_correct": 396,
+    "teacher_correct": 423,
+    "student": 71.6,
+    "reprompt": 79.2,
+    "teacher": 84.6,
+    "delta_student": 7.6,
+    "delta_teacher": -5.4
+  },
+  {
+    "dataset": "mbpp_plus",
+    "n": 378,
+    "student_correct": 196,
+    "reprompt_correct": 240,
+    "teacher_correct": 274,
+    "student": 51.851851851851855,
+    "reprompt": 63.492063492063494,
+    "teacher": 72.48677248677248,
+    "delta_student": 11.640211640211641,
+    "delta_teacher": -8.994708994708995
+  },
+  {
+    "dataset": "olympiad_bench",
+    "n": 674,
+    "student_correct": 281,
+    "reprompt_correct": 337,
+    "teacher_correct": 371,
+    "student": 41.69139465875371,
+    "reprompt": 50.0,
+    "teacher": 55.04451038575667,
+    "delta_student": 8.308605341246292,
+    "delta_teacher": -5.044510385756676
+  },
+  {
+    "dataset": "总体（按题加权）",
+    "n": 4571,
+    "student_correct": 1767,
+    "reprompt_correct": 2014,
+    "teacher_correct": 2907,
+    "student": 38.65674907022533,
+    "reprompt": 44.06038066068694,
+    "teacher": 63.59658718004813,
+    "delta_student": 5.403631590461606,
+    "delta_teacher": -19.53620651936119
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "gpu_job": "102155",
+  "score_job": "102156",
+  "coordinator_pid": 2527000,
+  "nodes": [
+    "gnho011",
+    "gnho034"
+  ],
+  "gpus": 16,
+  "replicas": 8,
+  "student_gpus": 8,
+  "teacher_gpus": 8,
+  "concurrency": 256,
+  "questions": 1000,
+  "chunk_tokens": 64,
+  "teacher_tokens": 8,
+  "gap_threshold": 2.0,
+  "rollouts_per_question": 1,
+  "takeover_count_limit": null,
+  "resource_ceiling_nodes": 2,
+  "resource_ceiling_h800": 16,
+  "migration": {
+    "traces": 134,
+    "completed": 72,
+    "judge_cache": 2553
+  }
+}

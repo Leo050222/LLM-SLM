@@ -1,0 +1,31 @@
+{
+  "job_id": 107861,
+  "status": "PENDING_PRIORITY",
+  "nodes": 1,
+  "gpus": 8,
+  "rows": 4571,
+  "rollouts_per_problem": 1,
+  "trace_limit_seconds": 2000,
+  "group": "r1_weak_resample_t2_k1",
+  "prompt": "unchanged original task prompt and exact accepted prefix",
+  "trigger": "earliest signed logP_student minus logP_teacher strictly >2",
+  "replacement": "one student token from original-context logits with original token banned",
+  "code_sha256": {
+    "worker.py": "31e74c23aa4c956e58f1f28e43d71a697944e4aa59559251324a115e487c6a7f",
+    "run.py": "9ac3238feb6015e63010b7f26400af3e45e072810bbd26ed156a9bbce80c512b",
+    "resample.py": "7f475c7b8ea65a91ab7584a3f4bed094fb48cb0607cdaf2c5174f4dd21728206",
+    "dispatch.py": "5d4d9b5008a012ac1cd3dd8701f5012fc54346768344dd30b28eb513ab72604f",
+    "queue_rpc.py": "0c522389642f405526c7420b4315b7cc52500b7b200c38f2e2e7416d86a68908",
+    "node.sh": "a29974dc4c02e1524614fc972edf08fe9d4975052bf70cf6f784e1f507e39ba9",
+    "preflight.sh": "121469c4a5117511dd430cc2a7ad0dcd192cc9b01727bc1622b1011bb6b2308f",
+    "runtime_smoke.py": "eb3642fbcf680022003de837af61c395df1a6a66627bfb56063cb1a8692783aa",
+    "test_resample.py": "0ee135fca69a3733bfe363fc86174ae592c9760f2dfc8c5d88024bf22c0807fd",
+    "worker_rank.sh": "82d54511d4a279894a5c49ea4c3fa3df0b0141c9d4faca28bbf95a376089bc5b",
+    "ablation_core.py": "a3fedad95a937b746d9735a9b82980838a7d8511b719917de49d1896bd101a80",
+    "deadline.py": "f61a2772497a2e62427d811a05cbb67dffd3b308bbfc4f3c7450c8279685d373",
+    "migration.py": "10dd7be797f04464d249c7b271941a0f27a6b0a5f07d61bdd701afc72e21ffbb",
+    "prepare.py": "8cecce7adc31f4fe2e4e6bf23944db629ac6203d9631b8f0ff56ec2f5c4a10d6",
+    "gpu.slurm": "f3ca9123f3e6dbbf47955fb50b42983469d1ca69bb74fc5c7c4d745159da5028",
+    "smoke.py": "2640dab9bb043d72da3510262ca9eefc0f2a4586467446d965ad13b8b92be8ae"
+  }
+}

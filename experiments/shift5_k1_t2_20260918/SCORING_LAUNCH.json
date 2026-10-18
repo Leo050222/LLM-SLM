@@ -1,0 +1,17 @@
+{
+  "code_job": 106832,
+  "code_rows": 2317,
+  "math_rows": 2254,
+  "math_status": "submitted",
+  "destination": "api.openlux.ai",
+  "model": "gpt-4o-mini",
+  "fields": [
+    "candidate_answer",
+    "reference_answer"
+  ],
+  "math_job": 106837,
+  "api_probe": "passed",
+  "external_scoring_approved": true,
+  "relay_host": "login01",
+  "authorization": "User: 推一下评分 in reply to explicit new-batch data/destination approval question"
+}

@@ -1,0 +1,12 @@
+{
+  "extra_artifact_count": 0,
+  "first_token_differs_count": 7664,
+  "missing_artifact_count": 0,
+  "num_shards": 8,
+  "requested_bridge_length": 256,
+  "requested_rollouts_per_trace": 8,
+  "status": "BRIDGE_BATCH_COMPLETE",
+  "teacher_model": "/storage/yukaichengLab/share/model/Qwen3-14B",
+  "verified_bridge_rollout_count": 7664,
+  "verified_trace_count": 958
+}

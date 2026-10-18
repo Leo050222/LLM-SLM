@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>__PAGE_TITLE__</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: light-dark(#f7f8fa, #0d1016);
+      --surface: light-dark(#ffffff, #151a23);
+      --surface-soft: light-dark(#f0f3f7, #1d2430);
+      --text: light-dark(#18202b, #edf2f7);
+      --muted: light-dark(#657184, #a7b1c0);
+      --border: light-dark(#d9dee7, #303948);
+      --accent: light-dark(#315efb, #7c9cff);
+      --accent-soft: light-dark(#dce5ff, #263866);
+      --negative: light-dark(#b84675, #ff86b2);
+      --shadow: light-dark(rgba(20, 35, 60, .08), rgba(0, 0, 0, .28));
+      --heat-1: light-dark(hsl(190 32% 88%), hsl(190 32% 22%));
+      --heat-2: light-dark(hsl(202 46% 82%), hsl(202 46% 28%));
+      --heat-3: light-dark(hsl(218 60% 76%), hsl(218 60% 34%));
+      --heat-4: light-dark(hsl(245 74% 70%), hsl(245 74% 40%));
+      --heat-5: light-dark(hsl(285 88% 64%), hsl(285 88% 44%));
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); }
+    main { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 48px; }
+    h1 { margin: 0; font-size: clamp(24px, 4vw, 36px); font-weight: 650; letter-spacing: -.03em; }
+    .subtitle { margin: 8px 0 24px; color: var(--muted); }
+    .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; box-shadow: 0 10px 30px var(--shadow); }
+    .controls { display: grid; grid-template-columns: 1.3fr 1fr; gap: 16px; padding: 18px; }
+    .field { display: grid; gap: 7px; min-width: 0; }
+    .field-wide { grid-column: 1 / -1; }
+    label, .field-label { font-size: 13px; color: var(--muted); font-weight: 600; }
+    select, input[type="range"], button { font: inherit; }
+    select { width: 100%; padding: 10px 12px; color: var(--text); background: var(--surface-soft); border: 1px solid var(--border); border-radius: 9px; }
+    input[type="range"] { width: 100%; accent-color: var(--accent); }
+    button { padding: 8px 12px; color: var(--text); background: var(--surface-soft); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; }
+    button:hover { border-color: var(--accent); }
+    button:disabled, select:disabled, input:disabled { opacity: .55; cursor: wait; }
+    .position-row { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: center; }
+    .status { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 16px 0 10px; color: var(--muted); font-size: 13px; }
+    .status strong { color: var(--text); font-weight: 650; }
+    .legend { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; margin-bottom: 12px; color: var(--muted); font-size: 12px; }
+    .legend-step { width: 34px; height: 20px; border-radius: 4px; display: inline-grid; place-items: center; color: var(--text); font-weight: 650; }
+    .viewer { padding: 18px; }
+    .token-stream { min-height: 240px; white-space: pre-wrap; overflow-wrap: anywhere; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; line-height: 1.9; }
+    .heat-token { border-radius: 2px; cursor: default; }
+    .heat-level-1 { background: var(--heat-1); }
+    .heat-level-2 { background: var(--heat-2); }
+    .heat-level-3 { background: var(--heat-3); }
+    .heat-level-4 { background: var(--heat-4); }
+    .heat-level-5 { background: var(--heat-5); }
+    .heat-token.negative { text-decoration-line: underline; text-decoration-style: dotted; text-decoration-color: var(--negative); text-decoration-thickness: 2px; }
+    .detail { min-height: 22px; margin: 14px 0 0; color: var(--muted); font-size: 13px; }
+    .tooltip { position: fixed; z-index: 10; max-width: min(420px, calc(100vw - 24px)); padding: 8px 10px; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 8px 24px var(--shadow); font-size: 12px; pointer-events: none; opacity: 0; transform: translateY(4px); transition: opacity .08s ease, transform .08s ease; }
+    .tooltip.show { opacity: 1; transform: translateY(0); }
+    footer { margin-top: 18px; color: var(--muted); font-size: 12px; }
+    code { color: var(--text); }
+    .error { color: var(--negative); }
+    @media (max-width: 680px) {
+      main { width: min(100% - 20px, 1120px); padding-top: 20px; }
+      .controls { grid-template-columns: 1fr; padding: 14px; }
+      .field-wide { grid-column: auto; }
+      .position-row { grid-template-columns: 1fr 1fr; }
+      .position-row input { grid-column: 1 / -1; grid-row: 1; }
+      .viewer { padding: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 id="page-title"></h1>
+      <p id="page-subtitle" class="subtitle">正在载入 token 数据…</p>
+    </header>
+
+    <section class="panel controls" aria-label="Heatmap controls">
+      <div class="field">
+        <label for="rollout-select">Rollout</label>
+        <select id="rollout-select" disabled></select>
+      </div>
+      <div class="field">
+        <label for="metric-select">KL 类型</label>
+        <select id="metric-select" disabled>
+          <option value="fwd">Forward KL · teacher top-128</option>
+          <option value="k1">Reverse KL · k1（按 |k1| 着色）</option>
+          <option value="k3">Reverse KL · k3</option>
+        </select>
+      </div>
+      <div class="field field-wide">
+        <span id="position-label" class="field-label">Token window</span>
+        <div class="position-row">
+          <button id="previous-button" type="button" disabled>上一段</button>
+          <input id="position-input" type="range" min="0" max="0" step="512" value="0" disabled aria-labelledby="position-label">
+          <button id="next-button" type="button" disabled>下一段</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="status" class="status" aria-live="polite"></div>
+    <div class="legend" aria-label="差异由低到高分为五档，颜色和饱和度逐档增强">
+      <span>差异低</span>
+      <span class="legend-step heat-level-1" aria-label="等级 1">1</span>
+      <span class="legend-step heat-level-2" aria-label="等级 2">2</span>
+      <span class="legend-step heat-level-3" aria-label="等级 3">3</span>
+      <span class="legend-step heat-level-4" aria-label="等级 4">4</span>
+      <span class="legend-step heat-level-5" aria-label="等级 5">5</span>
+      <span>差异高（p99.9+）</span>
+      <span id="sign-note"></span>
+    </div>
+
+    <section class="panel viewer">
+      <div id="token-stream" class="token-stream" role="img" aria-label="所选 rollout 的逐 token KL 热力图"></div>
+      <p id="detail" class="detail">悬停或点击 token 查看位置和近似数值。</p>
+    </section>
+
+    <footer>
+      页面完全离线运行。Token 文本无损保存；悬停数值采用 8-bit log1p 定量压缩，rollout 汇总统计保持原始精度。
+    </footer>
+  </main>
+
+  <div id="tooltip" class="tooltip" role="tooltip"></div>
+  <script type="application/octet-stream" id="meta-gzip">__META_B64__</script>
+  <script type="application/octet-stream" id="data-gzip">__DATA_B64__</script>
+  <script>
+    (() => {
+      const windowSize = __WINDOW_SIZE__;
+      const pageTitle = document.getElementById('page-title');
+      const pageSubtitle = document.getElementById('page-subtitle');
+      const rolloutSelect = document.getElementById('rollout-select');
+      const metricSelect = document.getElementById('metric-select');
+      const positionInput = document.getElementById('position-input');
+      const positionLabel = document.getElementById('position-label');
+      const previousButton = document.getElementById('previous-button');
+      const nextButton = document.getElementById('next-button');
+      const status = document.getElementById('status');
+      const stream = document.getElementById('token-stream');
+      const detail = document.getElementById('detail');
+      const tooltip = document.getElementById('tooltip');
+      const signNote = document.getElementById('sign-note');
+      const metricIndex = {fwd: 0, k1: 1, k3: 2};
+      const metricLabels = {fwd: 'Forward KL', k1: 'Reverse k1', k3: 'Reverse k3'};
+      let meta, payload, tokenIndices, metricBytes;
+
+      pageTitle.textContent = document.title;
+
+      function b64Bytes(text) {
+        const binary = atob(text.replace(/\s/g, ''));
+        const result = new Uint8Array(binary.length);
+        for (let i = 0; i < binary.length; i++) result[i] = binary.charCodeAt(i);
+        return result;
+      }
+
+      async function gunzip(text) {
+        const source = b64Bytes(text);
+        const stream = new Blob([source]).stream().pipeThrough(new DecompressionStream('gzip'));
+        return new Uint8Array(await new Response(stream).arrayBuffer());
+      }
+
+      function decodeValue(metric, byte) {
+        const cap = meta.caps[metric];
+        if (metric === 'k1') {
+          const signed = byte - 128;
+          const magnitude = Math.expm1(Math.abs(signed) / 127 * Math.log1p(cap));
+          return signed < 0 ? -magnitude : magnitude;
+        }
+        return Math.expm1(byte / 255 * Math.log1p(cap));
+      }
+
+      function formatValue(value) {
+        const magnitude = Math.abs(value);
+        if (!Number.isFinite(value)) return String(value);
+        if (magnitude === 0) return '0';
+        if (magnitude < 0.001) return value.toExponential(3);
+        if (magnitude < 10) return value.toFixed(5);
+        return value.toFixed(3);
+      }
+
+      function displayToken(text) {
+        if (text === '') return '∅';
+        return text.replace(/\t/g, '⇥').replace(/\n/g, '↵\n');
+      }
+
+      function selectedRollout() {
+        return meta.rollouts[Number(rolloutSelect.value)];
+      }
+
+      function updatePositionBounds(rollout, reset) {
+        positionInput.max = String(Math.max(0, rollout.n - windowSize));
+        if (reset) positionInput.value = '0';
+      }
+
+      function render() {
+        const rollout = selectedRollout();
+        const metric = metricSelect.value;
+        const metricOffset = metricIndex[metric];
+        const start = Math.min(Number(positionInput.value), Math.max(0, rollout.n - 1));
+        const end = Math.min(rollout.n, start + windowSize);
+        const colorCap = meta.colorCaps[metric];
+        const fragment = document.createDocumentFragment();
+
+        for (let local = start; local < end; local++) {
+          const global = rollout.offset + local;
+          const value = decodeValue(metric, metricBytes[global * 3 + metricOffset]);
+          const magnitude = metric === 'k1' ? Math.abs(value) : Math.max(0, value);
+          const intensity = Math.min(1, Math.log1p(magnitude) / Math.log1p(colorCap));
+          const mark = document.createElement('span');
+          const level = Math.min(5, Math.floor(intensity * 5) + 1);
+          mark.className = `heat-token heat-level-${level}` + (metric === 'k1' && value < 0 ? ' negative' : '');
+          const tokenText = meta.dictionary[tokenIndices[global]];
+          mark.textContent = displayToken(tokenText);
+          mark.dataset.position = String(local);
+          mark.dataset.value = formatValue(value);
+          mark.dataset.token = tokenText;
+          fragment.appendChild(mark);
+        }
+        stream.replaceChildren(fragment);
+
+        const stats = rollout.stats[metric];
+        const verdict = rollout.correct ? '正确' : '错误';
+        status.replaceChildren();
+        const statusParts = [
+          ['题目 ', rollout.problem, ''],
+          ['', verdict, ''],
+          ['', rollout.n.toLocaleString(), ' tokens'],
+          [metricLabels[metric] + ' mean ', formatValue(stats.mean), ''],
+          ['|value| p99 ', formatValue(stats.p99), '']
+        ];
+        statusParts.forEach(([prefix, value, suffix]) => {
+          const item = document.createElement('span');
+          item.append(prefix);
+          const strong = document.createElement('strong');
+          strong.textContent = value;
+          item.append(strong, suffix);
+          status.appendChild(item);
+        });
+        positionLabel.textContent = `Token window ${start.toLocaleString()}–${(end - 1).toLocaleString()} / ${(rollout.n - 1).toLocaleString()}`;
+        signNote.textContent = metric === 'k1' ? '· 点状下划线表示 k1 < 0' : '';
+        previousButton.disabled = start === 0;
+        nextButton.disabled = end === rollout.n;
+        detail.textContent = '悬停或点击 token 查看位置和近似数值。';
+      }
+
+      function tokenDescription(mark) {
+        return `token ${Number(mark.dataset.position).toLocaleString()} · ${metricLabels[metricSelect.value]} ≈ ${mark.dataset.value} · ${JSON.stringify(mark.dataset.token)}`;
+      }
+
+      stream.addEventListener('pointermove', event => {
+        const mark = event.target.closest('.heat-token');
+        if (!mark) {
+          tooltip.classList.remove('show');
+          return;
+        }
+        tooltip.textContent = tokenDescription(mark);
+        tooltip.classList.add('show');
+        const width = tooltip.offsetWidth;
+        const height = tooltip.offsetHeight;
+        tooltip.style.left = Math.max(8, Math.min(window.innerWidth - width - 8, event.clientX + 12)) + 'px';
+        tooltip.style.top = Math.max(8, Math.min(window.innerHeight - height - 8, event.clientY + 14)) + 'px';
+      });
+      stream.addEventListener('pointerleave', () => tooltip.classList.remove('show'));
+      stream.addEventListener('click', event => {
+        const mark = event.target.closest('.heat-token');
+        if (mark) detail.textContent = tokenDescription(mark);
+      });
+
+      rolloutSelect.addEventListener('change', () => {
+        updatePositionBounds(selectedRollout(), true);
+        render();
+      });
+      metricSelect.addEventListener('change', render);
+      positionInput.addEventListener('input', render);
+      previousButton.addEventListener('click', () => {
+        positionInput.value = String(Math.max(0, Number(positionInput.value) - windowSize));
+        render();
+      });
+      nextButton.addEventListener('click', () => {
+        positionInput.value = String(Math.min(Number(positionInput.max), Number(positionInput.value) + windowSize));
+        render();
+      });
+
+      Promise.all([
+        gunzip(document.getElementById('meta-gzip').textContent),
+        gunzip(document.getElementById('data-gzip').textContent)
+      ]).then(([metaBytes, dataBytes]) => {
+        meta = JSON.parse(new TextDecoder().decode(metaBytes));
+        payload = dataBytes;
+        const dictionaryBytes = meta.total * meta.indexBytes;
+        tokenIndices = meta.indexBytes === 2
+          ? new Uint16Array(payload.buffer, payload.byteOffset, meta.total)
+          : new Uint32Array(payload.buffer, payload.byteOffset, meta.total);
+        metricBytes = payload.subarray(dictionaryBytes);
+        if (metricBytes.length !== meta.total * 3) throw new Error('Invalid metric payload length');
+
+        meta.rollouts.forEach((rollout, arrayIndex) => {
+          const option = document.createElement('option');
+          option.value = String(arrayIndex);
+          option.textContent = `#${rollout.index} · 题目 ${rollout.problem} · ${rollout.correct ? '✓' : '✗'} · ${rollout.n.toLocaleString()} tokens`;
+          rolloutSelect.appendChild(option);
+        });
+        pageSubtitle.textContent = `${meta.dataset} · ${meta.numRollouts} rollouts · ${meta.total.toLocaleString()} response tokens · accuracy ${(meta.accuracy * 100).toFixed(1)}%`;
+        rolloutSelect.value = '0';
+        updatePositionBounds(selectedRollout(), true);
+        rolloutSelect.disabled = false;
+        metricSelect.disabled = false;
+        positionInput.disabled = false;
+        previousButton.disabled = true;
+        nextButton.disabled = false;
+        render();
+      }).catch(error => {
+        pageSubtitle.textContent = '载入失败';
+        status.textContent = error.stack || error.message;
+        status.classList.add('error');
+      });
+    })();
+  </script>
+</body>
+</html>

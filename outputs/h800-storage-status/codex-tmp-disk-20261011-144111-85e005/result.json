@@ -1,0 +1,7 @@
+{
+  "node": "172.16.1.5",
+  "job_name": "codex-tmp-disk-20261011-144111-85e005",
+  "job_uid": "c397a9ce-c660-4be5-b1bf-bacb4b712ca0",
+  "log": "READ_ONLY_TEMP_DISK_CHECK\nnode=172.16.1.5\nFilesystem     1024-blocks     Used  Available Capacity Mounted on\noverlay         7499379032 99517872 7399861160       2% /\noverlay         7499379032 99517872 7399861160       2% /\n/dev/nvme4n1p3   419225600 13507748  405717852       4% /scratch\nTEMP_DISK_CHECK_FINISHED\n",
+  "cleanup_confirmed": true
+}

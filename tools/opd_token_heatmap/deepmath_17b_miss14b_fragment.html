@@ -1,0 +1,554 @@
+<div id="deepmath-17b-miss14b-token-difference">
+  <style>
+    #deepmath-17b-miss14b-token-difference {
+      --d17-subset: var(--viz-series-1);
+      --d17-all: var(--viz-series-2);
+      --d17-heat-1: color-mix(in srgb, var(--viz-series-1) 35%, transparent);
+      --d17-heat-2: color-mix(in srgb, var(--viz-series-2) 48%, transparent);
+      --d17-heat-3: color-mix(in srgb, var(--viz-series-3) 61%, transparent);
+      --d17-heat-4: color-mix(in srgb, var(--viz-series-4) 74%, transparent);
+      --d17-heat-5: color-mix(in srgb, var(--viz-series-5) 88%, transparent);
+      display: grid;
+      gap: 22px;
+      color: var(--foreground);
+      min-width: 0;
+    }
+    #deepmath-17b-miss14b-token-difference [hidden] { display: none !important; }
+    #deepmath-17b-miss14b-token-difference .d17-section { display: grid; gap: 10px; min-width: 0; }
+    #deepmath-17b-miss14b-token-difference .d17-section h2,
+    #deepmath-17b-miss14b-token-difference .d17-section h3 { margin: 0; }
+    #deepmath-17b-miss14b-token-difference .d17-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-legend {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-swatch {
+      width: 12px;
+      height: 3px;
+      border-radius: 2px;
+      background: var(--swatch-color);
+    }
+    #deepmath-17b-miss14b-token-difference .d17-chart {
+      width: 100%;
+      height: auto;
+      display: block;
+      overflow: visible;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-axis,
+    #deepmath-17b-miss14b-token-difference .d17-gridline {
+      stroke: var(--border);
+      stroke-width: 1;
+      vector-effect: non-scaling-stroke;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-gridline { opacity: .7; }
+    #deepmath-17b-miss14b-token-difference .d17-label {
+      fill: var(--muted-foreground);
+      font-size: 11px;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-value {
+      fill: var(--foreground);
+      font-size: 11px;
+      font-weight: 500;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-dot-subset { fill: var(--d17-subset); }
+    #deepmath-17b-miss14b-token-difference .d17-dot-all { fill: var(--d17-all); }
+    #deepmath-17b-miss14b-token-difference .d17-line-subset,
+    #deepmath-17b-miss14b-token-difference .d17-line-all {
+      fill: none;
+      stroke-width: 2;
+      vector-effect: non-scaling-stroke;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-line-subset { stroke: var(--d17-subset); }
+    #deepmath-17b-miss14b-token-difference .d17-line-all { stroke: var(--d17-all); }
+    #deepmath-17b-miss14b-token-difference .d17-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      min-width: 0;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-grid > * { min-width: 0; }
+    #deepmath-17b-miss14b-token-difference .d17-topic { max-width: 330px; }
+    #deepmath-17b-miss14b-token-difference .d17-controls { align-items: end; }
+    #deepmath-17b-miss14b-token-difference .d17-control {
+      display: grid;
+      gap: 6px;
+      min-width: min(100%, 190px);
+      flex: 1 1 190px;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-window-control { flex: 2 1 290px; }
+    #deepmath-17b-miss14b-token-difference .d17-window-row {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 8px;
+      align-items: center;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-card-inner {
+      padding: 14px;
+      display: grid;
+      gap: 9px;
+      min-width: 0;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-case-line {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-answer-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-answer-grid > div { min-width: 0; }
+    #deepmath-17b-miss14b-token-difference .d17-answer {
+      overflow-wrap: anywhere;
+      margin: 3px 0 0;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-token-stream {
+      min-height: 220px;
+      max-height: 430px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      line-height: 1.9;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-token {
+      border-radius: 2px;
+      cursor: default;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-heat-level-1 { background: var(--d17-heat-1); }
+    #deepmath-17b-miss14b-token-difference .d17-heat-level-2 { background: var(--d17-heat-2); }
+    #deepmath-17b-miss14b-token-difference .d17-heat-level-3 { background: var(--d17-heat-3); }
+    #deepmath-17b-miss14b-token-difference .d17-heat-level-4 { background: var(--d17-heat-4); }
+    #deepmath-17b-miss14b-token-difference .d17-heat-level-5 { background: var(--d17-heat-5); }
+    #deepmath-17b-miss14b-token-difference .d17-heat-scale .d17-swatch {
+      width: 30px;
+      height: 18px;
+      display: inline-grid;
+      place-items: center;
+      color: var(--foreground);
+    }
+    #deepmath-17b-miss14b-token-difference .d17-token.d17-negative {
+      text-decoration-line: underline;
+      text-decoration-style: dotted;
+      text-decoration-color: var(--destructive);
+      text-decoration-thickness: 2px;
+    }
+    #deepmath-17b-miss14b-token-difference .d17-detail { min-height: 24px; margin: 0; }
+    #deepmath-17b-miss14b-token-difference .d17-loading {
+      min-height: 180px;
+      display: grid;
+      place-items: center;
+      padding: 14px;
+    }
+    @media (max-width: 680px) {
+      #deepmath-17b-miss14b-token-difference .d17-grid,
+      #deepmath-17b-miss14b-token-difference .d17-answer-grid { grid-template-columns: 1fr; }
+      #deepmath-17b-miss14b-token-difference .d17-window-row { grid-template-columns: 1fr 1fr; }
+      #deepmath-17b-miss14b-token-difference .d17-window-row input {
+        grid-column: 1 / -1;
+        grid-row: 1;
+      }
+      #deepmath-17b-miss14b-token-difference .d17-topic { max-width: 220px; }
+    }
+  </style>
+
+  <div id="d17-loading" class="card"><div class="d17-loading" role="status">正在解压 209 条配对样本的 Token 差异数据…</div></div>
+
+  <section id="d17-overview" class="d17-section" hidden>
+    <div class="d17-head">
+      <h2>错误子集与全部 1.7B rollout</h2>
+      <div class="d17-legend text-small text-muted" aria-label="图例">
+        <span class="d17-legend-item"><span class="d17-swatch" style="--swatch-color: var(--d17-subset)"></span>14B 对、1.7B 错（n=209）</span>
+        <span class="d17-legend-item"><span class="d17-swatch" style="--swatch-color: var(--d17-all)"></span>全部 1.7B（n=1000）</span>
+      </div>
+    </div>
+    <svg id="d17-overview-chart" class="d17-chart" viewBox="0 0 720 260" role="img" aria-labelledby="d17-overview-title d17-overview-desc">
+      <title id="d17-overview-title">1.7B错误而14B正确的子集与全部rollout的logits差异</title>
+      <desc id="d17-overview-desc">对比 Reverse KL K1、K3、Top-1 一致率和 Teacher Top-K 重合率。</desc>
+    </svg>
+  </section>
+
+  <div id="d17-trends" class="d17-grid" hidden>
+    <section class="d17-section">
+      <div class="d17-head"><h3>按难度：rollout K1</h3><span class="text-small text-muted">横轴括号为子集题数</span></div>
+      <svg id="d17-difficulty-chart" class="d17-chart" viewBox="0 0 350 250" role="img" aria-labelledby="d17-difficulty-title d17-difficulty-desc">
+        <title id="d17-difficulty-title">错误子集按难度的Reverse KL K1</title>
+        <desc id="d17-difficulty-desc">每个难度上的rollout平均K1和样本数。</desc>
+      </svg>
+    </section>
+    <section class="d17-section">
+      <div class="d17-head"><h3>按生成位置：Token K1</h3><span class="text-small text-muted">1.7B轨迹四等分</span></div>
+      <svg id="d17-position-chart" class="d17-chart" viewBox="0 0 350 250" role="img" aria-labelledby="d17-position-title d17-position-desc">
+        <title id="d17-position-title">错误子集按生成位置的Token加权Reverse KL K1</title>
+        <desc id="d17-position-desc">将每条1.7B response按相对位置分成四段。</desc>
+      </svg>
+    </section>
+  </div>
+
+  <section id="d17-regions" class="d17-section" hidden>
+    <div class="d17-head"><h2>Thinking 与最终答案区域</h2></div>
+    <div class="table-responsive">
+      <table class="table table-sm">
+        <thead><tr><th>区域</th><th class="text-end">Tokens</th><th class="text-end">K1</th><th class="text-end">K3</th><th class="text-end">Top-1</th><th id="d17-overlap-heading" class="text-end">Top-K</th></tr></thead>
+        <tbody id="d17-region-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="d17-topics" class="d17-section" hidden>
+    <div class="d17-head"><h2>子集数量最多的 Topic</h2><span class="text-small text-muted">按“14B 对、1.7B 错”的题数排序</span></div>
+    <div class="table-responsive">
+      <table class="table table-sm">
+        <thead><tr><th>Topic</th><th class="text-end">子集/全部</th><th class="text-end">发生率</th><th class="text-end">K1</th><th class="text-end">Top-1</th></tr></thead>
+        <tbody id="d17-topic-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="d17-viewer" class="d17-section" hidden>
+    <div class="d17-head"><h2>任意题目的逐 Token 热力图</h2><span class="text-small text-muted">全部 209 条“14B 对、1.7B 错”样本</span></div>
+    <div class="d17-legend d17-heat-scale text-small text-muted" aria-label="差异由低到高分为五档，颜色和饱和度逐档增强">
+      <span>差异低</span>
+      <span class="d17-swatch d17-heat-level-1">1</span>
+      <span class="d17-swatch d17-heat-level-2">2</span>
+      <span class="d17-swatch d17-heat-level-3">3</span>
+      <span class="d17-swatch d17-heat-level-4">4</span>
+      <span class="d17-swatch d17-heat-level-5">5</span>
+      <span>差异高</span>
+    </div>
+    <div class="viz-controls d17-controls">
+      <label class="form-label d17-control" for="d17-case-search">搜索题目
+        <input id="d17-case-search" class="form-select" type="search" placeholder="题号 / Topic / 难度">
+      </label>
+      <label class="form-label d17-control" for="d17-case-select">题目
+        <select id="d17-case-select" class="form-select"></select>
+      </label>
+      <label class="form-label d17-control" for="d17-metric-select">Token 指标
+        <select id="d17-metric-select" class="form-select">
+          <option value="k1">Reverse KL · K1</option>
+          <option value="k3">Reverse KL · K3</option>
+          <option id="d17-fwd-option" value="fwd">Forward KL · teacher Top-K</option>
+        </select>
+      </label>
+      <div class="d17-control d17-window-control">
+        <span id="d17-window-label" class="form-label">Token window</span>
+        <div class="d17-window-row">
+          <button id="d17-prev" class="btn" type="button">上一段</button>
+          <input id="d17-position" class="form-range" type="range" min="0" max="0" step="512" value="0" aria-labelledby="d17-window-label">
+          <button id="d17-next" class="btn" type="button">下一段</button>
+        </div>
+      </div>
+    </div>
+    <div class="card"><div id="d17-case-detail" class="d17-card-inner" aria-live="polite"></div></div>
+    <div class="card">
+      <div class="d17-card-inner">
+        <div class="d17-case-line"><span>Qwen3-1.7B rollout</span><span id="d17-stream-status" class="text-small text-muted"></span></div>
+        <div id="d17-token-stream" class="d17-token-stream" aria-label="1.7B逐Token logits差异热力图"></div>
+        <p id="d17-token-detail" class="d17-detail text-small text-muted" aria-live="polite">悬停或点击 Token 查看实际散度值与两模型 log-probability。</p>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/octet-stream" id="d17-payload">__PAYLOAD_B64__</script>
+  <script>
+    (() => {
+      const root = document.getElementById('deepmath-17b-miss14b-token-difference');
+      const $ = id => root.querySelector('#' + id);
+      const ns = 'http://www.w3.org/2000/svg';
+      const supportLabel = () => `Top-${data?.protocol?.supportTopK || 128}`;
+      const metricLabel = {k1: 'Reverse KL K1', k3: 'Reverse KL K3', fwd: 'Forward KL'};
+      let data;
+      let caps = {};
+
+      function svg(tag, attrs = {}, text = '') {
+        const node = document.createElementNS(ns, tag);
+        Object.entries(attrs).forEach(([key, value]) => node.setAttribute(key, value));
+        if (text) node.textContent = text;
+        return node;
+      }
+
+      function fmt(value, digits = 3) { return Number(value).toFixed(digits); }
+      function pct(value, digits = 1) { return fmt(Number(value) * 100, digits) + '%'; }
+      function linePath(points) { return points.map((point, i) => `${i ? 'L' : 'M'}${point[0]},${point[1]}`).join(' '); }
+
+      function drawOverview() {
+        const chart = $('d17-overview-chart');
+        const metrics = [
+          {key: 'k1', label: 'Reverse KL K1 ↓', domain: [0, .30], format: v => fmt(v, 3)},
+          {key: 'k3', label: 'Reverse KL K3 ↓', domain: [0, .30], format: v => fmt(v, 3)},
+          {key: 'top1', label: 'Top-1 agreement ↑', domain: [.75, 1], format: v => pct(v)},
+          {key: 'overlap', label: `${supportLabel()} overlap ↑`, domain: [0, 1], format: v => pct(v)}
+        ];
+        const left = 174, right = 650, top = 31, gap = 57;
+        metrics.forEach((metric, row) => {
+          const y = top + row * gap;
+          chart.append(svg('text', {x: 6, y: y + 4, class: 'd17-value'}, metric.label));
+          chart.append(svg('line', {x1: left, x2: right, y1: y, y2: y, class: 'd17-axis'}));
+          [metric.domain[0], metric.domain[1]].forEach((value, i) => {
+            chart.append(svg('text', {x: i ? right : left, y: y + 26, 'text-anchor': i ? 'end' : 'start', class: 'd17-label'}, metric.format(value)));
+          });
+          ['selected', 'all'].forEach((group, i) => {
+            const value = data.overview[group][metric.key];
+            const x = left + (value - metric.domain[0]) / (metric.domain[1] - metric.domain[0]) * (right - left);
+            const offset = i ? 7 : -7;
+            chart.append(svg('circle', {cx: x, cy: y + offset, r: 5, class: `d17-dot-${group}`}));
+            chart.append(svg('text', {x: Math.min(700, x + 8), y: y + offset + 4, class: 'd17-value'}, metric.format(value)));
+          });
+        });
+      }
+
+      function drawLineChart(chart, rows, valueKey, labels, yLabel) {
+        const width = 350, left = 44, right = 335, top = 20, bottom = 195;
+        const values = rows.map(row => row[valueKey]).filter(value => value !== null);
+        const min = Math.max(0, Math.min(...values) * .82);
+        const max = Math.max(...values) * 1.12;
+        const x = i => left + i / Math.max(1, rows.length - 1) * (right - left);
+        const y = value => bottom - (value - min) / Math.max(1e-9, max - min) * (bottom - top);
+        [0, .5, 1].forEach(fraction => {
+          const value = min + fraction * (max - min);
+          const py = y(value);
+          chart.append(svg('line', {x1: left, x2: right, y1: py, y2: py, class: 'd17-gridline'}));
+          chart.append(svg('text', {x: left - 6, y: py + 4, 'text-anchor': 'end', class: 'd17-label'}, fmt(value, 2)));
+        });
+        const points = rows.map((row, i) => [x(i), y(row[valueKey])]);
+        chart.append(svg('path', {d: linePath(points), class: 'd17-line-subset'}));
+        points.forEach((point, i) => {
+          const dot = svg('circle', {cx: point[0], cy: point[1], r: 3.5, class: 'd17-dot-subset'});
+          dot.append(svg('title', {}, `${labels[i]} · ${valueKey}=${fmt(rows[i][valueKey], 4)}`));
+          chart.append(dot);
+          chart.append(svg('text', {x: point[0], y: bottom + 20, 'text-anchor': 'middle', class: 'd17-label'}, labels[i]));
+        });
+        chart.append(svg('text', {x: left, y: 11, class: 'd17-label'}, yLabel));
+      }
+
+      function drawTrends() {
+        const difficultyRows = data.difficulty.filter(row => row.k1 !== null);
+        drawLineChart(
+          $('d17-difficulty-chart'),
+          difficultyRows,
+          'k1',
+          difficultyRows.map(row => `${String(row.difficulty).replace('.0', '')}(${row.selectedN})`),
+          'rollout mean K1'
+        );
+        drawLineChart(
+          $('d17-position-chart'),
+          data.position,
+          'k1',
+          ['0–25%', '25–50%', '50–75%', '75–100%'],
+          'token mean K1'
+        );
+      }
+
+      function fillRegions() {
+        const body = $('d17-region-body');
+        data.regions.forEach(row => {
+          const tr = document.createElement('tr');
+          [row.region === 'thinking' ? 'Thinking' : '最终答案', row.tokens.toLocaleString(), fmt(row.k1), fmt(row.k3), pct(row.top1), pct(row.overlap)].forEach((value, i) => {
+            const cell = document.createElement(i ? 'td' : 'th');
+            if (!i) cell.scope = 'row'; else cell.className = 'text-end text-nowrap';
+            cell.textContent = value;
+            tr.appendChild(cell);
+          });
+          body.appendChild(tr);
+        });
+      }
+
+      function fillTopics() {
+        const body = $('d17-topic-body');
+        data.topics.forEach(row => {
+          const tr = document.createElement('tr');
+          const short = row.topic.replace('Mathematics -> ', '');
+          [short, `${row.n}/${row.allN}`, pct(row.rate), fmt(row.k1), pct(row.top1)].forEach((value, i) => {
+            const cell = document.createElement(i ? 'td' : 'th');
+            if (!i) { cell.scope = 'row'; cell.className = 'd17-topic'; }
+            else cell.className = 'text-end text-nowrap';
+            cell.textContent = value;
+            tr.appendChild(cell);
+          });
+          body.appendChild(tr);
+        });
+      }
+
+      function computeCaps() {
+        if (data.colorCaps) {
+          caps = data.colorCaps;
+          return;
+        }
+        ['fwd', 'k1', 'k3'].forEach(metric => {
+          const values = [];
+          Object.values(data.streams).forEach(stream => stream[metric].forEach(value => values.push(metric === 'k1' ? Math.abs(value) : Math.max(0, value))));
+          values.sort((a, b) => a - b);
+          caps[metric] = Math.max(1e-6, values[Math.floor(values.length * .995)] || 1);
+        });
+      }
+
+      function displayToken(value) {
+        if (value === '') return '∅';
+        return value.replace(/\t/g, '⇥').replace(/\n/g, '↵\n');
+      }
+
+      function selectedCase() { return data.cases[Number($('d17-case-select').value)]; }
+
+      function tokenDescription(stream, position, token) {
+        const student = stream.studentLogp[position];
+        const teacher = student - stream.k1[position];
+        return `token ${position.toLocaleString()} · K1=${fmt(stream.k1[position], 6)} · K3=${fmt(stream.k3[position], 6)} · Forward KL (${supportLabel()})=${fmt(stream.fwd[position], 6)} · log p1.7B=${fmt(student, 6)} · log p14B=${fmt(teacher, 6)} · top1=${stream.top1[position] ? '同' : '不同'} · ${supportLabel()} overlap=${pct(stream.overlap[position])} · ${JSON.stringify(token)}`;
+      }
+
+      function renderViewer(reset = false) {
+        const caseInfo = selectedCase();
+        const stream = data.streams[String(caseInfo.index)];
+        const metric = $('d17-metric-select').value;
+        const slider = $('d17-position');
+        const windowSize = data.windowSize;
+        slider.max = String(Math.max(0, stream.tokens.length - windowSize));
+        if (reset) slider.value = '0';
+        const start = Math.min(Number(slider.value), Math.max(0, stream.tokens.length - 1));
+        const end = Math.min(stream.tokens.length, start + windowSize);
+        $('d17-window-label').textContent = `Token window ${start.toLocaleString()}–${Math.max(start, end - 1).toLocaleString()} / ${(stream.tokens.length - 1).toLocaleString()}`;
+        $('d17-prev').disabled = start === 0;
+        $('d17-next').disabled = end >= stream.tokens.length;
+
+        const detail = $('d17-case-detail');
+        detail.replaceChildren();
+        const line = document.createElement('div');
+        line.className = 'd17-case-line';
+        const identity = document.createElement('span');
+        identity.textContent = `#${caseInfo.index} · ${caseInfo.reason} · difficulty ${caseInfo.difficulty}`;
+        const metrics = document.createElement('span');
+        metrics.className = 'text-small text-muted';
+        metrics.textContent = `K1 ${fmt(caseInfo.k1)} · K3 ${fmt(caseInfo.k3)} · Top-1 ${pct(caseInfo.top1)} · ${supportLabel()} ${pct(caseInfo.overlap)}`;
+        line.append(identity, metrics);
+        const topic = document.createElement('div');
+        topic.className = 'text-small text-muted';
+        topic.textContent = caseInfo.topic.replace('Mathematics -> ', '');
+        const answers = document.createElement('div');
+        answers.className = 'd17-answer-grid';
+        [['1.7B 错误答案', caseInfo.studentAnswer, caseInfo.studentTokens], ['14B 正确答案', caseInfo.teacherAnswer, caseInfo.teacherTokens]].forEach(([label, answer, tokens]) => {
+          const box = document.createElement('div');
+          const heading = document.createElement('span');
+          heading.className = 'text-small text-muted';
+          heading.textContent = `${label} · ${Number(tokens).toLocaleString()} tokens`;
+          const text = document.createElement('p');
+          text.className = 'd17-answer';
+          text.textContent = String(answer);
+          box.append(heading, text);
+          answers.appendChild(box);
+        });
+        detail.append(line, topic, answers);
+
+        const fragment = document.createDocumentFragment();
+        for (let position = start; position < end; position++) {
+          const value = stream[metric][position];
+          const magnitude = metric === 'k1' ? Math.abs(value) : Math.max(0, value);
+          const intensity = Math.min(1, Math.log1p(magnitude) / Math.log1p(caps[metric]));
+          const mark = document.createElement('span');
+          const level = Math.min(5, Math.floor(intensity * 5) + 1);
+          mark.className = `d17-token d17-heat-level-${level}` + (metric === 'k1' && value < 0 ? ' d17-negative' : '');
+          mark.textContent = displayToken(stream.tokens[position]);
+          mark.dataset.position = String(position);
+          mark.title = tokenDescription(stream, position, stream.tokens[position]);
+          fragment.appendChild(mark);
+        }
+        $('d17-token-stream').replaceChildren(fragment);
+        $('d17-stream-status').textContent = `${stream.tokens.length.toLocaleString()} tokens · 1.7B错误 / 14B正确`;
+        $('d17-token-detail').textContent = metric === 'k1' ? '悬停 Token 查看实际散度值；点状下划线表示 K1 < 0。' : '悬停 Token 查看 K1、K3、Forward KL 与两模型 log-probability。';
+      }
+
+      function bindViewer() {
+        const select = $('d17-case-select');
+        function fillCaseOptions(query = '') {
+          const normalized = query.trim().toLowerCase();
+          const previous = select.value;
+          const matches = data.cases
+            .map((item, index) => ({item, index}))
+            .filter(({item}) => !normalized || `${item.index} ${item.problemId} ${item.topic} ${item.difficulty}`.toLowerCase().includes(normalized));
+          select.replaceChildren();
+          matches.forEach(({item, index}) => {
+            const option = document.createElement('option');
+            option.value = String(index);
+            const topic = item.topic.replace('Mathematics -> ', '').split(' -> ').pop();
+            option.textContent = `#${item.index} · d=${item.difficulty} · ${topic}`;
+            select.appendChild(option);
+          });
+          select.disabled = matches.length === 0;
+          if (!matches.length) {
+            const option = document.createElement('option');
+            option.textContent = '没有匹配题目';
+            select.appendChild(option);
+            return false;
+          }
+          if (matches.some(({index}) => String(index) === previous)) select.value = previous;
+          return true;
+        }
+        fillCaseOptions();
+        select.addEventListener('change', () => renderViewer(true));
+        $('d17-case-search').addEventListener('input', event => {
+          if (fillCaseOptions(event.target.value)) renderViewer(true);
+        });
+        $('d17-metric-select').addEventListener('change', () => renderViewer(false));
+        $('d17-position').addEventListener('input', () => renderViewer(false));
+        $('d17-prev').addEventListener('click', () => {
+          $('d17-position').value = String(Math.max(0, Number($('d17-position').value) - data.windowSize));
+          renderViewer(false);
+        });
+        $('d17-next').addEventListener('click', () => {
+          $('d17-position').value = String(Math.min(Number($('d17-position').max), Number($('d17-position').value) + data.windowSize));
+          renderViewer(false);
+        });
+        function showTokenDetail(event) {
+          const mark = event.target.closest('.d17-token');
+          if (!mark) return;
+          const caseInfo = selectedCase();
+          const stream = data.streams[String(caseInfo.index)];
+          const position = Number(mark.dataset.position);
+          $('d17-token-detail').textContent = tokenDescription(stream, position, stream.tokens[position]);
+        }
+        $('d17-token-stream').addEventListener('pointerover', showTokenDetail);
+        $('d17-token-stream').addEventListener('click', showTokenDetail);
+        renderViewer(true);
+      }
+
+      async function load() {
+        try {
+          const b64 = $('d17-payload').textContent.replace(/\s/g, '');
+          const binary = atob(b64);
+          const bytes = new Uint8Array(binary.length);
+          for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+          const decompressed = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+          data = JSON.parse(await new Response(decompressed).text());
+          $('d17-overlap-heading').textContent = supportLabel();
+          $('d17-fwd-option').textContent = `Forward KL · teacher ${supportLabel()}`;
+          computeCaps();
+          drawOverview();
+          drawTrends();
+          fillRegions();
+          fillTopics();
+          bindViewer();
+          $('d17-loading').hidden = true;
+          ['d17-overview', 'd17-trends', 'd17-regions', 'd17-topics', 'd17-viewer'].forEach(id => $(id).hidden = false);
+        } catch (error) {
+          $('d17-loading').textContent = `载入失败：${error.message}`;
+          $('d17-loading').classList.add('text-destructive');
+        }
+      }
+      load();
+    })();
+  </script>
+</div>

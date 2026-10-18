@@ -1,0 +1,11 @@
+{
+  "job_id": 106405,
+  "submitted_at": "2026-09-18T11:22:10+08:00",
+  "state": "PENDING",
+  "reason": "Resources",
+  "gpus": 8,
+  "pairs": 8,
+  "time_limit": "UNLIMITED",
+  "resume_completed": 87339,
+  "previous_cancelled_job": 106176
+}

@@ -1,0 +1,432 @@
+{
+  "root": "/storage/yukaichengLab/wangxin/test_eiloeo/benchmarks/vision",
+  "purpose": "Complete publicly available evaluation data for eight requested visual benchmarks",
+  "datasets": [
+    {
+      "name": "MathVista",
+      "repo_id": "AI4Math/MathVista",
+      "revision": "2b6ad69445fbb5695c9b165475e8decdbeb97747",
+      "source": "https://huggingface.co/datasets/AI4Math/MathVista",
+      "notes": "testmini: 1000 labeled questions; test: 5141 questions with hidden answers. Image bytes are embedded.",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size": 2307,
+          "url": "https://huggingface.co/datasets/AI4Math/MathVista/resolve/2b6ad69445fbb5695c9b165475e8decdbeb97747/.gitattributes"
+        },
+        {
+          "path": "README.md",
+          "size": 11600,
+          "url": "https://huggingface.co/datasets/AI4Math/MathVista/resolve/2b6ad69445fbb5695c9b165475e8decdbeb97747/README.md"
+        },
+        {
+          "path": "data/test-00000-of-00002-6b81bd7f7e2065e6.parquet",
+          "size": 357852357,
+          "url": "https://huggingface.co/datasets/AI4Math/MathVista/resolve/2b6ad69445fbb5695c9b165475e8decdbeb97747/data/test-00000-of-00002-6b81bd7f7e2065e6.parquet",
+          "sha256": "4212a3a9cbbaa08f314e0a3ca88421562caf97c95144dcf9e79fba0dd204e94d"
+        },
+        {
+          "path": "data/test-00001-of-00002-6a611c71596db30f.parquet",
+          "size": 386399007,
+          "url": "https://huggingface.co/datasets/AI4Math/MathVista/resolve/2b6ad69445fbb5695c9b165475e8decdbeb97747/data/test-00001-of-00002-6a611c71596db30f.parquet",
+          "sha256": "039934fda97bf910613c885ca13d3562d73c4a5a99f6100b5a230d6329de9e7a"
+        },
+        {
+          "path": "data/testmini-00000-of-00001-725687bf7a18d64b.parquet",
+          "size": 141568126,
+          "url": "https://huggingface.co/datasets/AI4Math/MathVista/resolve/2b6ad69445fbb5695c9b165475e8decdbeb97747/data/testmini-00000-of-00001-725687bf7a18d64b.parquet",
+          "sha256": "373f6c0b412a9be2cec36711cee724e03f4c5db6908f3c13db903aa9694d4f2d"
+        }
+      ]
+    },
+    {
+      "name": "MathVision",
+      "repo_id": "MathLLMs/MathVision",
+      "revision": "2837ddb3f13abaf6b3997c12d80753e5470bd46a",
+      "source": "https://huggingface.co/datasets/MathLLMs/MathVision",
+      "notes": "test: all 3040 labeled questions; testmini: overlapping 304-question subset. Image bytes are embedded.",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size": 2307,
+          "url": "https://huggingface.co/datasets/MathLLMs/MathVision/resolve/2837ddb3f13abaf6b3997c12d80753e5470bd46a/.gitattributes"
+        },
+        {
+          "path": "README.md",
+          "size": 11982,
+          "url": "https://huggingface.co/datasets/MathLLMs/MathVision/resolve/2837ddb3f13abaf6b3997c12d80753e5470bd46a/README.md"
+        },
+        {
+          "path": "data/test-00000-of-00001-3532b8d3f1b4047a.parquet",
+          "size": 56906090,
+          "url": "https://huggingface.co/datasets/MathLLMs/MathVision/resolve/2837ddb3f13abaf6b3997c12d80753e5470bd46a/data/test-00000-of-00001-3532b8d3f1b4047a.parquet",
+          "sha256": "bcb3078a77bd6ee0e4e22135d53b9a48604fcd1b62dec69e279e812ba4dd7d37"
+        },
+        {
+          "path": "data/testmini-00000-of-00001-f8ff70fcb2f29b1d.parquet",
+          "size": 6987282,
+          "url": "https://huggingface.co/datasets/MathLLMs/MathVision/resolve/2837ddb3f13abaf6b3997c12d80753e5470bd46a/data/testmini-00000-of-00001-f8ff70fcb2f29b1d.parquet",
+          "sha256": "303b551466029f694b201ed61d9115bc9cff370006e8908cbe85c0495e79e76d"
+        }
+      ]
+    },
+    {
+      "name": "MathVerse",
+      "repo_id": "AI4Math/MathVerse",
+      "revision": "3bc86196678bad115a923d2851c6821dbe235939",
+      "source": "https://huggingface.co/datasets/AI4Math/MathVerse",
+      "notes": "All publicly released evaluation data: 3940 visual instances (788 base problems x 5 versions) plus 788 Text Only instances. The larger paper dataset is not publicly released.",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size": 2307,
+          "url": "https://huggingface.co/datasets/AI4Math/MathVerse/resolve/3bc86196678bad115a923d2851c6821dbe235939/.gitattributes"
+        },
+        {
+          "path": "README.md",
+          "size": 6151,
+          "url": "https://huggingface.co/datasets/AI4Math/MathVerse/resolve/3bc86196678bad115a923d2851c6821dbe235939/README.md"
+        },
+        {
+          "path": "testmini.parquet",
+          "size": 166892640,
+          "url": "https://huggingface.co/datasets/AI4Math/MathVerse/resolve/3bc86196678bad115a923d2851c6821dbe235939/testmini.parquet",
+          "sha256": "c159e547d9fd076447d84cd6dd1a962f94e4c4d470bd93ff9ceb8f04b21dde4d"
+        },
+        {
+          "path": "testmini_text_only.parquet",
+          "size": 322846,
+          "url": "https://huggingface.co/datasets/AI4Math/MathVerse/resolve/3bc86196678bad115a923d2851c6821dbe235939/testmini_text_only.parquet",
+          "sha256": "19926acbcbb4209b1f23fe5d8f9ea2a163e726b918d19dd853da0cac83475726"
+        }
+      ]
+    },
+    {
+      "name": "CV-Bench",
+      "repo_id": "nyu-visionx/CV-Bench",
+      "revision": "bc284db50d036958861cb60cdd7b77612052ce0d",
+      "source": "https://huggingface.co/datasets/nyu-visionx/CV-Bench",
+      "notes": "Complete 2D and 3D evaluation (2638 questions). Images and answers are embedded.",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size": 2307,
+          "url": "https://huggingface.co/datasets/nyu-visionx/CV-Bench/resolve/bc284db50d036958861cb60cdd7b77612052ce0d/.gitattributes"
+        },
+        {
+          "path": "README.md",
+          "size": 6136,
+          "url": "https://huggingface.co/datasets/nyu-visionx/CV-Bench/resolve/bc284db50d036958861cb60cdd7b77612052ce0d/README.md"
+        },
+        {
+          "path": "test_2d.parquet",
+          "size": 184906137,
+          "url": "https://huggingface.co/datasets/nyu-visionx/CV-Bench/resolve/bc284db50d036958861cb60cdd7b77612052ce0d/test_2d.parquet",
+          "sha256": "33196034ef4bf3265cae4a7ff5c4071b2ff1cc21123e8e285c6a91393897ecbc"
+        },
+        {
+          "path": "test_3d.parquet",
+          "size": 219902227,
+          "url": "https://huggingface.co/datasets/nyu-visionx/CV-Bench/resolve/bc284db50d036958861cb60cdd7b77612052ce0d/test_3d.parquet",
+          "sha256": "ef91fe8b5392eb2a16e318ca68fa02449d45ba1e152afece12a0a526e9fbbc25"
+        }
+      ]
+    },
+    {
+      "name": "BLINK",
+      "repo_id": "BLINK-Benchmark/BLINK",
+      "revision": "a3666eb249237ba3d5eca8db21176cc47967e040",
+      "source": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK",
+      "notes": "All 14 tasks, val and test. Val answers are public; test answers are hidden. Report actual parquet row counts (the upstream prose and metadata differ).",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size": 2307,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/.gitattributes"
+        },
+        {
+          "path": "Art_Style/test-00000-of-00001.parquet",
+          "size": 144684586,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Art_Style/test-00000-of-00001.parquet",
+          "sha256": "f5ec715865314dc16715fa163d078319453358df4ff28796599df7298ac66fdc"
+        },
+        {
+          "path": "Art_Style/val-00000-of-00001.parquet",
+          "size": 146389711,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Art_Style/val-00000-of-00001.parquet",
+          "sha256": "9400707b7d0e54809146f0f6e9eec058803bef7f50b58b7d21c75b95b90e37d4"
+        },
+        {
+          "path": "Counting/test-00000-of-00001.parquet",
+          "size": 5320976,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Counting/test-00000-of-00001.parquet",
+          "sha256": "595801ca8aceaf4582e6b6f93f6375987a17144603d539090b60d9261145247d"
+        },
+        {
+          "path": "Counting/val-00000-of-00001.parquet",
+          "size": 4694898,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Counting/val-00000-of-00001.parquet",
+          "sha256": "7404d7b8e3c4a97a9ab5015739ad3b76a505bbe073286c8c3412f60f4d2b13e5"
+        },
+        {
+          "path": "Forensic_Detection/test-00000-of-00001.parquet",
+          "size": 19699266,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Forensic_Detection/test-00000-of-00001.parquet",
+          "sha256": "f2a95c7255d3dac2fadbb33480e5dfc11fa814c431da99fa56367b0bb5642037"
+        },
+        {
+          "path": "Forensic_Detection/val-00000-of-00001.parquet",
+          "size": 19573243,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Forensic_Detection/val-00000-of-00001.parquet",
+          "sha256": "48499d694cfffe81fa1eac3dcb1a84804d30cee8ffb501d7ff7020d8c20dd00c"
+        },
+        {
+          "path": "Functional_Correspondence/test-00000-of-00001.parquet",
+          "size": 27590875,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Functional_Correspondence/test-00000-of-00001.parquet",
+          "sha256": "c71cd03552f2e507a5071656f9aa5a5786fabd205e9642759621646de5b114ef"
+        },
+        {
+          "path": "Functional_Correspondence/val-00000-of-00001.parquet",
+          "size": 25636347,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Functional_Correspondence/val-00000-of-00001.parquet",
+          "sha256": "fa3b85a94002be63939088627224d53bca84b20efcebb2cfa95fd246004514c1"
+        },
+        {
+          "path": "IQ_Test/test-00000-of-00001.parquet",
+          "size": 3370561,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/IQ_Test/test-00000-of-00001.parquet",
+          "sha256": "b554661983fddc53b07d80a399ea7f5a2e7766543aecac921b13dab34a0fb4f4"
+        },
+        {
+          "path": "IQ_Test/val-00000-of-00001.parquet",
+          "size": 3785491,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/IQ_Test/val-00000-of-00001.parquet",
+          "sha256": "5753ee46f95354f5d3207ff51df6cb0a70a3ffd63114e80718ab465a3997ca61"
+        },
+        {
+          "path": "Jigsaw/test-00000-of-00001.parquet",
+          "size": 4374925,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Jigsaw/test-00000-of-00001.parquet",
+          "sha256": "374f9bd343c3dfec1edecd0eaec9e2a7543f769649d556fc801fa33dfef0b38a"
+        },
+        {
+          "path": "Jigsaw/val-00000-of-00001.parquet",
+          "size": 3710771,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Jigsaw/val-00000-of-00001.parquet",
+          "sha256": "cf6ae1c48389667e0c245e56c48479f86e9f0bc1f5d33f0559da5fc2f37b671f"
+        },
+        {
+          "path": "Multi-view_Reasoning/test-00000-of-00001.parquet",
+          "size": 9533415,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Multi-view_Reasoning/test-00000-of-00001.parquet",
+          "sha256": "968bf7d6f8561ac3a19be69ea969c1de692ad97b0aa28e3a983c05678e08eddb"
+        },
+        {
+          "path": "Multi-view_Reasoning/val-00000-of-00001.parquet",
+          "size": 9736586,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Multi-view_Reasoning/val-00000-of-00001.parquet",
+          "sha256": "f4e81718f844747bce372bcf046ffe207f82a1ea8b7ce308655c11f536114e19"
+        },
+        {
+          "path": "Object_Localization/test-00000-of-00001.parquet",
+          "size": 6395090,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Object_Localization/test-00000-of-00001.parquet",
+          "sha256": "60791d98f94be544c178c6a8db77b54750b4afcf8274dd0b445f5ba52f03ec63"
+        },
+        {
+          "path": "Object_Localization/val-00000-of-00001.parquet",
+          "size": 6196076,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Object_Localization/val-00000-of-00001.parquet",
+          "sha256": "cce5f661cc5c6ddde12d37c2a70e4f7dc4f18e613a5e647d6f5ae35c05799532"
+        },
+        {
+          "path": "README.md",
+          "size": 16684,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/README.md"
+        },
+        {
+          "path": "Relative_Depth/test-00000-of-00001.parquet",
+          "size": 4599186,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Relative_Depth/test-00000-of-00001.parquet",
+          "sha256": "f3b98acd1a5ff1cd75875e8a258d9224599054f62a1d08feacec19ab03d45303"
+        },
+        {
+          "path": "Relative_Depth/val-00000-of-00001.parquet",
+          "size": 4604789,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Relative_Depth/val-00000-of-00001.parquet",
+          "sha256": "4cd1d5840a2f9e3ad86b310865bd44a29555344b0c6b67b36f9ab1c1029a4d1a"
+        },
+        {
+          "path": "Relative_Reflectance/test-00000-of-00001.parquet",
+          "size": 18237450,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Relative_Reflectance/test-00000-of-00001.parquet",
+          "sha256": "b85219e71fecbf6aa4da0e0c2a158f4acd691cdf668af5b9283ffc15a7c895ce"
+        },
+        {
+          "path": "Relative_Reflectance/val-00000-of-00001.parquet",
+          "size": 18539198,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Relative_Reflectance/val-00000-of-00001.parquet",
+          "sha256": "f6d6a7605b50f7283b09b4a2f98f7552bacd6a256ad61e6ecafa12e49b38e3ca"
+        },
+        {
+          "path": "Semantic_Correspondence/test-00000-of-00001.parquet",
+          "size": 43698825,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Semantic_Correspondence/test-00000-of-00001.parquet",
+          "sha256": "8dc8065dfe3a0cdab1968e2ce3e8559058244d7684d6046200fd95cc437f97c6"
+        },
+        {
+          "path": "Semantic_Correspondence/val-00000-of-00001.parquet",
+          "size": 46793618,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Semantic_Correspondence/val-00000-of-00001.parquet",
+          "sha256": "83b9882aca27f740e32d8973c2454e8b78203d3958d189cb5a5fe00a34b88e05"
+        },
+        {
+          "path": "Spatial_Relation/test-00000-of-00001.parquet",
+          "size": 7388856,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Spatial_Relation/test-00000-of-00001.parquet",
+          "sha256": "9babeebfde626046c964f6995b5be4c89d9f879a6752df0b6937a7883d172c44"
+        },
+        {
+          "path": "Spatial_Relation/val-00000-of-00001.parquet",
+          "size": 7207871,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Spatial_Relation/val-00000-of-00001.parquet",
+          "sha256": "7ce3f778ac870af32151eb8a71512c203314404bd0d903f3bff6c80ff89322c2"
+        },
+        {
+          "path": "Visual_Correspondence/test-00000-of-00001.parquet",
+          "size": 56688611,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Visual_Correspondence/test-00000-of-00001.parquet",
+          "sha256": "69ba38eae99dac7f6a39d2d534e9424d47ff5f47b61237318650a667da0a3671"
+        },
+        {
+          "path": "Visual_Correspondence/val-00000-of-00001.parquet",
+          "size": 59759962,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Visual_Correspondence/val-00000-of-00001.parquet",
+          "sha256": "c7c54374f3016df3781d306890c8921ed04ef5b8abd3fa404c6560b2f503d827"
+        },
+        {
+          "path": "Visual_Similarity/test-00000-of-00001.parquet",
+          "size": 45007407,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Visual_Similarity/test-00000-of-00001.parquet",
+          "sha256": "f320e028e46d520e91603b3adf80c2f1f0f9b94fe963a263242a2ccd6cc574e5"
+        },
+        {
+          "path": "Visual_Similarity/val-00000-of-00001.parquet",
+          "size": 44061241,
+          "url": "https://huggingface.co/datasets/BLINK-Benchmark/BLINK/resolve/a3666eb249237ba3d5eca8db21176cc47967e040/Visual_Similarity/val-00000-of-00001.parquet",
+          "sha256": "15857cd004055977c2486e39523a913762e9e6551603bc57b5bc097a70d19aa0"
+        }
+      ]
+    },
+    {
+      "name": "MMBench",
+      "version": "1.1",
+      "source": "https://github.com/open-compass/MMBench",
+      "checksum_source": "https://github.com/open-compass/VLMEvalKit/blob/main/vlmeval/dataset/image_mcq.py",
+      "notes": "Official v1.1 TSVs, EN/CN DEV/TEST. Image fields may reference other row indices; use the supplied offline loader. Answer availability is measured from the actual current files.",
+      "files": [
+        {
+          "path": "MMBench_DEV_EN_V11.tsv",
+          "size": 52285836,
+          "md5": "30c05be8f2f347a50be25aa067248184",
+          "url": "https://opencompass.oss-cn-shanghai.aliyuncs.com/utils/benchmarks/MMBench/MMBench_DEV_EN_V11.tsv"
+        },
+        {
+          "path": "MMBench_DEV_CN_V11.tsv",
+          "size": 52199109,
+          "md5": "593f9b5f6bea453d870a798b34ae4f37",
+          "url": "https://opencompass.oss-cn-shanghai.aliyuncs.com/utils/benchmarks/MMBench/MMBench_DEV_CN_V11.tsv"
+        },
+        {
+          "path": "MMBench_TEST_EN_V11.tsv",
+          "size": 72968653,
+          "md5": "aab598a927c183aa6657de9097e2be09",
+          "url": "https://opencompass.oss-cn-shanghai.aliyuncs.com/utils/benchmarks/MMBench/MMBench_TEST_EN_V11.tsv",
+          "sha256": "c8fb8b7ead6e52e5c09f805049bc3f16740a2f8664d3a8d71e7294943584516a"
+        },
+        {
+          "path": "MMBench_TEST_CN_V11.tsv",
+          "size": 72832414,
+          "md5": "4cba097fd698201a68632d31f07afdc2",
+          "url": "https://opencompass.oss-cn-shanghai.aliyuncs.com/utils/benchmarks/MMBench/MMBench_TEST_CN_V11.tsv",
+          "sha256": "9eff3496b2d050e2807ebb6abeaee40a1bd51c5b8636f0ce588881ad8a37bde1"
+        }
+      ],
+      "registry_hash_discrepancy": {
+        "MMBench_TEST_EN_V11.tsv": {
+          "registered_md5": "8d1a704e791df6f5d9fb3ef782b65365",
+          "actual_md5": "aab598a927c183aa6657de9097e2be09",
+          "actual_sha256": "c8fb8b7ead6e52e5c09f805049bc3f16740a2f8664d3a8d71e7294943584516a",
+          "last_modified": "Tue, 24 Feb 2026 09:01:19 GMT",
+          "content_hash_origin": "Whole-file download of official OSS object, cross-checked with an independent download on another host.",
+          "note": "Current official files include public answers. Their byte hashes differ from the VLMEvalKit registry; the registry values have not been represented as matching."
+        },
+        "MMBench_TEST_CN_V11.tsv": {
+          "registered_md5": "156e6569f9547afb16603eca16e85373",
+          "actual_md5": "4cba097fd698201a68632d31f07afdc2",
+          "actual_sha256": "9eff3496b2d050e2807ebb6abeaee40a1bd51c5b8636f0ce588881ad8a37bde1",
+          "last_modified": "Tue, 24 Feb 2026 09:01:16 GMT",
+          "content_hash_origin": "Whole-file download of official OSS object, cross-checked with an independent download on another host.",
+          "note": "Current official files include public answers. Their byte hashes differ from the VLMEvalKit registry; the registry values have not been represented as matching."
+        }
+      }
+    },
+    {
+      "name": "MMStar",
+      "repo_id": "Lin-Chen/MMStar",
+      "revision": "bc98d668301da7b14f648724866e57302778ab27",
+      "source": "https://huggingface.co/datasets/Lin-Chen/MMStar",
+      "notes": "Complete 1500-question val split, including image bytes and answers.",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size": 2349,
+          "url": "https://huggingface.co/datasets/Lin-Chen/MMStar/resolve/bc98d668301da7b14f648724866e57302778ab27/.gitattributes"
+        },
+        {
+          "path": "README.md",
+          "size": 4224,
+          "url": "https://huggingface.co/datasets/Lin-Chen/MMStar/resolve/bc98d668301da7b14f648724866e57302778ab27/README.md"
+        },
+        {
+          "path": "mmstar.parquet",
+          "size": 41798712,
+          "url": "https://huggingface.co/datasets/Lin-Chen/MMStar/resolve/bc98d668301da7b14f648724866e57302778ab27/mmstar.parquet",
+          "sha256": "29afd74b0134cfab083a8909b5358577ab18fd41c1e612031577cfb3635531c2"
+        }
+      ]
+    },
+    {
+      "name": "RealWorldQA",
+      "repo_id": "xai-org/RealworldQA",
+      "revision": "17e7f75e092e47169732462ea3cdfebe911105dd",
+      "source": "https://huggingface.co/datasets/xai-org/RealworldQA",
+      "notes": "Complete 765-question test split, including image bytes and public answers.",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size": 2307,
+          "url": "https://huggingface.co/datasets/xai-org/RealworldQA/resolve/17e7f75e092e47169732462ea3cdfebe911105dd/.gitattributes"
+        },
+        {
+          "path": "README.md",
+          "size": 947,
+          "url": "https://huggingface.co/datasets/xai-org/RealworldQA/resolve/17e7f75e092e47169732462ea3cdfebe911105dd/README.md"
+        },
+        {
+          "path": "data/test-00000-of-00002.parquet",
+          "size": 337443936,
+          "url": "https://huggingface.co/datasets/xai-org/RealworldQA/resolve/17e7f75e092e47169732462ea3cdfebe911105dd/data/test-00000-of-00002.parquet",
+          "sha256": "2cf29e308a34e0255f23520796fc04445a01b8baab18686f1a4b3c3943f695b2"
+        },
+        {
+          "path": "data/test-00001-of-00002.parquet",
+          "size": 340887239,
+          "url": "https://huggingface.co/datasets/xai-org/RealworldQA/resolve/17e7f75e092e47169732462ea3cdfebe911105dd/data/test-00001-of-00002.parquet",
+          "sha256": "dac5b9f7cfb947a4865ea3424abfbdb3449d09e0a0b911a787cdc930cefefdc0"
+        }
+      ]
+    }
+  ]
+}

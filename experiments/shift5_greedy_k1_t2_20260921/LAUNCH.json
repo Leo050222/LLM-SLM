@@ -1,0 +1,90 @@
+{
+  "job_id": 107976,
+  "status": "RUNNING",
+  "pending_reason": null,
+  "node_requested": "gnho008",
+  "allocated_gpus_requested": 5,
+  "active_gpus": 4,
+  "replicas": 2,
+  "concurrency": 64,
+  "rows": 4571,
+  "rollouts": 1,
+  "student": "Qwen3-1.7B",
+  "teacher": "Qwen3-14B",
+  "k": 1,
+  "threshold": 2,
+  "threshold_operator": ">",
+  "sampling": {
+    "temperature": 0,
+    "top_p": 1,
+    "top_k": -1
+  },
+  "score_temperature": 1,
+  "seed": 20260912,
+  "shift_seed": 2026091802,
+  "offsets": [
+    -5,
+    -4,
+    -3,
+    -2,
+    -1,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "trace_limit_seconds": 900,
+  "slurm_time_limit": "UNLIMITED",
+  "input_sha256": "2c21e5857b8efbc41e1c5bb445d714e0dad41df39e0a7f28e93432aa8d9d64a1",
+  "excluded_gpu_uuid": "GPU-c33c45c6-61d6-36bc-e5ac-6d80e3bc4968",
+  "tests_passed_local": 12,
+  "tests_passed_remote": 12,
+  "submitted_at": "2026-09-21T02:29:28+08:00",
+  "output_root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_ablation/shift5_greedy_k1_t2_20260921",
+  "files_sha256": {
+    "test_dispatch.py": "20052e8d2d897c52b1bd31a9c071b7f6d9a53689bc5ba33997c6b47ebdfa7bc9",
+    "worker.py": "e6cc61772f497dad563b94d73bb28997280ae7b7e1d559dc556ad225c087ca15",
+    "run.py": "214ed17b41d7519eeae8558ca3dd652fc09842f707f770965b23762de3b0356a",
+    "test_shift.py": "59f718bff6b7bf2326298fe44c875aa6f778a5dc53bdc291b9cd64aa9baa946a",
+    "select_gpus.py": "9608b6af2bf54783fd9c0b58d9f7adbb81077ce73609c4e0a60c72a717d5d2a1",
+    "dispatch.py": "e7f3024cae3b363c99ea354a744ef489c8155ee25ca3cba25e7b7b4b6a2c4b36",
+    "system_prompt.txt": "b0baf7c0e5d392d0ae10c286c7c0da4f941e44ba72a5d17796667fa88d42b3af",
+    "queue_rpc.py": "0c522389642f405526c7420b4315b7cc52500b7b200c38f2e2e7416d86a68908",
+    "node.sh": "a632333d2e5fe716274ccab5a859c65fc96e081d97791a5abf9687236b86707b",
+    "runtime_smoke.py": "319e7ea9a835f9a5d99cdf84db7357c04f6f6fab2b21454e395c25598e7374e0",
+    "worker_rank.sh": "1d002d1af9d5f24522aaeafbbf9d2093f63d11653420b38a12a49c9c3ea518e3",
+    "ablation_core.py": "8e979c0a129e5b560ce17b952edf5e9b79c18913ddb5632d68fac692079c7518",
+    "deadline.py": "f61a2772497a2e62427d811a05cbb67dffd3b308bbfc4f3c7450c8279685d373",
+    "migration.py": "89f027337d50fe161f07f342b2186eb851cb2551cb172a2bdac4cfa3369b335c",
+    "prepare.py": "0d2272ce9f1cc2f4215b0c986564aecc0b779aea735fa0ccd70b70f514a3b1de",
+    "gpu.slurm": "81150b8cf0d166f39178ffeb6dab9116ab71e77ffdda3f20ba8f3fd93cb72641",
+    "smoke.py": "ccbb51c08dfa4ae8750d1e1c7bb221da406d4bfc3cd41bd45557e92b0030cd60",
+    "uuid_compat/sitecustomize.py": "d71d23b6cf78c0805d1fc1ee2013d0fbfef133fead0e60aefb75d8afdbf03fce"
+  },
+  "superseded_job": 107970,
+  "superseded_reason": "GPU identity preflight caught NVML cgroup renumbering before generation; fixed UUID-to-physical-index validation",
+  "gpu_selection_regression_test": "passed",
+  "phase": "formal_generation",
+  "node": "gnho008",
+  "physical_gpus": [
+    0,
+    1,
+    4,
+    6
+  ],
+  "failed_startups": [
+    {
+      "job_id": 107970,
+      "cause": "cgroup GPU renumbering; stopped before generation"
+    },
+    {
+      "job_id": 107972,
+      "cause": "vLLM lacks UUID parsing; CUDA witness passed, model initialization failed, cancelled"
+    }
+  ],
+  "start_time": "2026-09-21T02:29:40+08:00",
+  "ready_models": 4,
+  "service_smokes_passed": 2,
+  "shift_rollout_smokes_passed": 2
+}

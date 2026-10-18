@@ -1,0 +1,8 @@
+{
+  "job_id": 115355,
+  "node": "gnho011",
+  "main_model": "Qwen3-1.7B",
+  "intervention_model": "Qwen3-8B",
+  "status": "RUNNING",
+  "startup_smoke": "passed"
+}

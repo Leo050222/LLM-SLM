@@ -1,0 +1,478 @@
+{
+  "status": "DEEPMATH_NONTHINKING_UNRECOGNIZED_TOKEN_ANALYSIS_OK",
+  "source": "reports/deepmath_nonthinking_sample_gap",
+  "metric": "g_t = log pi_S(y_t|s_t) - log pi_T(y_t|s_t)",
+  "primary_unit": "rollout",
+  "rollouts": 1000,
+  "tokens": 1303870,
+  "correct": 283,
+  "wrong": 717,
+  "quantization_note": "Uses int16 visualization payload; threshold error is at most each trace scale/32767.",
+  "threshold_results": [
+    {
+      "name": "page_strong_student",
+      "definition": "teacher-rejected token iff g_t > 0.58569984436",
+      "threshold": 0.5856998443603523,
+      "overall_token_fraction": 0.08871820043409236,
+      "deciles": [
+        {
+          "decile": 1,
+          "relative_position": "0-10%",
+          "rollout_mean_fraction": 0.07064179988847888,
+          "rollout_mean_fraction_correct": 0.059938884137156145,
+          "rollout_mean_fraction_wrong": 0.07486624222826181,
+          "token_weighted_fraction": 0.0706932524245875,
+          "tokens": 130847
+        },
+        {
+          "decile": 2,
+          "relative_position": "10-20%",
+          "rollout_mean_fraction": 0.10120399030698436,
+          "rollout_mean_fraction_correct": 0.08740384356864478,
+          "rollout_mean_fraction_wrong": 0.10665091014931365,
+          "token_weighted_fraction": 0.09550880746332781,
+          "tokens": 130344
+        },
+        {
+          "decile": 3,
+          "relative_position": "20-30%",
+          "rollout_mean_fraction": 0.10622695687506581,
+          "rollout_mean_fraction_correct": 0.08883360494731517,
+          "rollout_mean_fraction_wrong": 0.11309211530680004,
+          "token_weighted_fraction": 0.09668440504853773,
+          "tokens": 130414
+        },
+        {
+          "decile": 4,
+          "relative_position": "30-40%",
+          "rollout_mean_fraction": 0.10702839287389283,
+          "rollout_mean_fraction_correct": 0.08653289298832818,
+          "rollout_mean_fraction_wrong": 0.11511796953723283,
+          "token_weighted_fraction": 0.09581453864801007,
+          "tokens": 130356
+        },
+        {
+          "decile": 5,
+          "relative_position": "40-50%",
+          "rollout_mean_fraction": 0.10319771105164423,
+          "rollout_mean_fraction_correct": 0.08163951054399203,
+          "rollout_mean_fraction_wrong": 0.11170673579873712,
+          "token_weighted_fraction": 0.09253797828057078,
+          "tokens": 130206
+        },
+        {
+          "decile": 6,
+          "relative_position": "50-60%",
+          "rollout_mean_fraction": 0.10158411779839475,
+          "rollout_mean_fraction_correct": 0.08298885790886051,
+          "rollout_mean_fraction_wrong": 0.10892366947027506,
+          "token_weighted_fraction": 0.09171128524484684,
+          "tokens": 130551
+        },
+        {
+          "decile": 7,
+          "relative_position": "60-70%",
+          "rollout_mean_fraction": 0.10042811689617412,
+          "rollout_mean_fraction_correct": 0.07815691731518044,
+          "rollout_mean_fraction_wrong": 0.10921856247695684,
+          "token_weighted_fraction": 0.09003097114470578,
+          "tokens": 130444
+        },
+        {
+          "decile": 8,
+          "relative_position": "70-80%",
+          "rollout_mean_fraction": 0.09832638295484285,
+          "rollout_mean_fraction_correct": 0.07397239224389428,
+          "rollout_mean_fraction_wrong": 0.10793890648510567,
+          "token_weighted_fraction": 0.0871890490001995,
+          "tokens": 130326
+        },
+        {
+          "decile": 9,
+          "relative_position": "80-90%",
+          "rollout_mean_fraction": 0.09817921812465775,
+          "rollout_mean_fraction_correct": 0.07635821917587454,
+          "rollout_mean_fraction_wrong": 0.10679196945311753,
+          "token_weighted_fraction": 0.08828355004906771,
+          "tokens": 130432
+        },
+        {
+          "decile": 10,
+          "relative_position": "90-100%",
+          "rollout_mean_fraction": 0.08138235941427141,
+          "rollout_mean_fraction_correct": 0.06173086066081442,
+          "rollout_mean_fraction_wrong": 0.08913880871305567,
+          "token_weighted_fraction": 0.07876106194690266,
+          "tokens": 129950
+        }
+      ],
+      "front_back": {
+        "front_0_20_vs_back_80_100": {
+          "left_rollout_mean_fraction": 0.08592289509773164,
+          "right_rollout_mean_fraction": 0.08978078876946458,
+          "left_minus_right": -0.0038578936717329456,
+          "bootstrap_95ci": [
+            -0.0071532771838832415,
+            -0.0006360600657415324
+          ],
+          "paired_sign_flip_p": 0.02036979630203698,
+          "holm_p_across_thresholds": 0.02036979630203698
+        },
+        "first_0_50_vs_second_50_100": {
+          "left_rollout_mean_fraction": 0.09765977019921322,
+          "right_rollout_mean_fraction": 0.09598003903766818,
+          "left_minus_right": 0.0016797311615450537,
+          "bootstrap_95ci": [
+            -0.0005474855713507471,
+            0.003979439671486965
+          ],
+          "paired_sign_flip_p": 0.14842851571484286,
+          "holm_p_across_thresholds": 0.14842851571484286
+        },
+        "middle_early_20_40_vs_back_80_100": {
+          "left_rollout_mean_fraction": 0.10662767487447931,
+          "right_rollout_mean_fraction": 0.08978078876946458,
+          "left_minus_right": 0.01684688610501473,
+          "bootstrap_95ci": [
+            0.01341339904715167,
+            0.020256793699790474
+          ],
+          "paired_sign_flip_p": 9.99990000099999e-06,
+          "holm_p_across_thresholds": 2.999970000299997e-05
+        }
+      },
+      "accuracy": {
+        "correct_rollouts": 283,
+        "wrong_rollouts": 717,
+        "correct_mean_fraction": 0.07775268612199411,
+        "wrong_mean_fraction": 0.10434028674942299,
+        "wrong_minus_correct": 0.026587600627428876,
+        "bootstrap_95ci": [
+          0.02154102653684862,
+          0.03166535590930311
+        ],
+        "label_permutation_p": 1.999960000799984e-05,
+        "auc_predict_wrong": 0.6847854478071667,
+        "adjusted_logistic": {
+          "odds_ratio_wrong_per_1pp": 1.2226275589110012,
+          "coefficient": 0.20100227959105818,
+          "standard_error": 0.023320004565319786,
+          "wald_z": 8.619307042931613,
+          "wald_p": 6.736050791503919e-18,
+          "adjusted_for": "log(response_tokens), difficulty"
+        },
+        "holm_p_across_thresholds": 5.9998800023999525e-05
+      }
+    },
+    {
+      "name": "global_p95_abs",
+      "definition": "teacher-rejected token iff g_t > 1.17139968872",
+      "threshold": 1.1713996887207045,
+      "overall_token_fraction": 0.04206324250116959,
+      "deciles": [
+        {
+          "decile": 1,
+          "relative_position": "0-10%",
+          "rollout_mean_fraction": 0.03592849442802611,
+          "rollout_mean_fraction_correct": 0.028729386958111777,
+          "rollout_mean_fraction_wrong": 0.038769983150460915,
+          "token_weighted_fraction": 0.035178490909229865,
+          "tokens": 130847
+        },
+        {
+          "decile": 2,
+          "relative_position": "10-20%",
+          "rollout_mean_fraction": 0.052303714863905955,
+          "rollout_mean_fraction_correct": 0.04208472242146836,
+          "rollout_mean_fraction_wrong": 0.056337152606179094,
+          "token_weighted_fraction": 0.04826459215614067,
+          "tokens": 130344
+        },
+        {
+          "decile": 3,
+          "relative_position": "20-30%",
+          "rollout_mean_fraction": 0.055676789853555654,
+          "rollout_mean_fraction_correct": 0.04399069352471044,
+          "rollout_mean_fraction_wrong": 0.06028929370441088,
+          "token_weighted_fraction": 0.04839971168739553,
+          "tokens": 130414
+        },
+        {
+          "decile": 4,
+          "relative_position": "30-40%",
+          "rollout_mean_fraction": 0.05521622422725713,
+          "rollout_mean_fraction_correct": 0.042521282328008295,
+          "rollout_mean_fraction_wrong": 0.06022691956545437,
+          "token_weighted_fraction": 0.04704808370922704,
+          "tokens": 130356
+        },
+        {
+          "decile": 5,
+          "relative_position": "40-50%",
+          "rollout_mean_fraction": 0.051692522009476306,
+          "rollout_mean_fraction_correct": 0.03975054994799385,
+          "rollout_mean_fraction_wrong": 0.05640602004769042,
+          "token_weighted_fraction": 0.04461391948143711,
+          "tokens": 130206
+        },
+        {
+          "decile": 6,
+          "relative_position": "50-60%",
+          "rollout_mean_fraction": 0.04993032909603589,
+          "rollout_mean_fraction_correct": 0.03944331429654844,
+          "rollout_mean_fraction_wrong": 0.054069555300017676,
+          "token_weighted_fraction": 0.04284915473646315,
+          "tokens": 130551
+        },
+        {
+          "decile": 7,
+          "relative_position": "60-70%",
+          "rollout_mean_fraction": 0.048913084971415416,
+          "rollout_mean_fraction_correct": 0.03539155901903813,
+          "rollout_mean_fraction_wrong": 0.05425003315066615,
+          "token_weighted_fraction": 0.04173438410352335,
+          "tokens": 130444
+        },
+        {
+          "decile": 8,
+          "relative_position": "70-80%",
+          "rollout_mean_fraction": 0.046492741106811196,
+          "rollout_mean_fraction_correct": 0.03387344967951608,
+          "rollout_mean_fraction_wrong": 0.051473577193177314,
+          "token_weighted_fraction": 0.03942421312708132,
+          "tokens": 130326
+        },
+        {
+          "decile": 9,
+          "relative_position": "80-90%",
+          "rollout_mean_fraction": 0.04420938290092305,
+          "rollout_mean_fraction_correct": 0.031938785425614465,
+          "rollout_mean_fraction_wrong": 0.049052589435807765,
+          "token_weighted_fraction": 0.03837248527968597,
+          "tokens": 130432
+        },
+        {
+          "decile": 10,
+          "relative_position": "90-100%",
+          "rollout_mean_fraction": 0.03710903192880453,
+          "rollout_mean_fraction_correct": 0.02707171219459042,
+          "rollout_mean_fraction_wrong": 0.041070763427803955,
+          "token_weighted_fraction": 0.03475182762601001,
+          "tokens": 129950
+        }
+      ],
+      "front_back": {
+        "front_0_20_vs_back_80_100": {
+          "left_rollout_mean_fraction": 0.044116104645966034,
+          "right_rollout_mean_fraction": 0.04065920741486379,
+          "left_minus_right": 0.0034568972311022437,
+          "bootstrap_95ci": [
+            0.0015271560466153737,
+            0.0053802284177743055
+          ],
+          "paired_sign_flip_p": 0.0004699953000469995,
+          "holm_p_across_thresholds": 0.000939990600093999
+        },
+        "first_0_50_vs_second_50_100": {
+          "left_rollout_mean_fraction": 0.05016354907644423,
+          "right_rollout_mean_fraction": 0.045330914000798014,
+          "left_minus_right": 0.004832635075646217,
+          "bootstrap_95ci": [
+            0.003482114146101895,
+            0.006193500221074421
+          ],
+          "paired_sign_flip_p": 9.99990000099999e-06,
+          "holm_p_across_thresholds": 2.999970000299997e-05
+        },
+        "middle_early_20_40_vs_back_80_100": {
+          "left_rollout_mean_fraction": 0.055446507040406386,
+          "right_rollout_mean_fraction": 0.04065920741486379,
+          "left_minus_right": 0.014787299625542602,
+          "bootstrap_95ci": [
+            0.012636208814762169,
+            0.016950751142445375
+          ],
+          "paired_sign_flip_p": 9.99990000099999e-06,
+          "holm_p_across_thresholds": 2.999970000299997e-05
+        }
+      },
+      "accuracy": {
+        "correct_rollouts": 283,
+        "wrong_rollouts": 717,
+        "correct_mean_fraction": 0.03647795751135309,
+        "wrong_mean_fraction": 0.05219453560693524,
+        "wrong_minus_correct": 0.015716578095582148,
+        "bootstrap_95ci": [
+          0.012757415115048812,
+          0.018658167710084855
+        ],
+        "label_permutation_p": 1.999960000799984e-05,
+        "auc_predict_wrong": 0.6848322663630853,
+        "adjusted_logistic": {
+          "odds_ratio_wrong_per_1pp": 1.4906242258634022,
+          "coefficient": 0.3991949757575131,
+          "standard_error": 0.04360008333120975,
+          "wald_z": 9.155830568602651,
+          "wald_p": 5.394124615988766e-20,
+          "adjusted_for": "log(response_tokens), difficulty"
+        },
+        "holm_p_across_thresholds": 5.9998800023999525e-05
+      }
+    },
+    {
+      "name": "strict_2nat",
+      "definition": "teacher-rejected token iff g_t > 2",
+      "threshold": 2.0,
+      "overall_token_fraction": 0.018597712962181812,
+      "deciles": [
+        {
+          "decile": 1,
+          "relative_position": "0-10%",
+          "rollout_mean_fraction": 0.016382001793299822,
+          "rollout_mean_fraction_correct": 0.012714790891091505,
+          "rollout_mean_fraction_wrong": 0.0178294504478674,
+          "token_weighted_fraction": 0.01585057357065886,
+          "tokens": 130847
+        },
+        {
+          "decile": 2,
+          "relative_position": "10-20%",
+          "rollout_mean_fraction": 0.026257662057829336,
+          "rollout_mean_fraction_correct": 0.01895292703120036,
+          "rollout_mean_fraction_wrong": 0.029140841991631295,
+          "token_weighted_fraction": 0.02337660344933407,
+          "tokens": 130344
+        },
+        {
+          "decile": 3,
+          "relative_position": "20-30%",
+          "rollout_mean_fraction": 0.027684250311475197,
+          "rollout_mean_fraction_correct": 0.020846725708758642,
+          "rollout_mean_fraction_wrong": 0.030383022225797068,
+          "token_weighted_fraction": 0.023302712898921895,
+          "tokens": 130414
+        },
+        {
+          "decile": 4,
+          "relative_position": "30-40%",
+          "rollout_mean_fraction": 0.027182417153492615,
+          "rollout_mean_fraction_correct": 0.01969460654403222,
+          "rollout_mean_fraction_wrong": 0.030137857045371686,
+          "token_weighted_fraction": 0.021947589677498543,
+          "tokens": 130356
+        },
+        {
+          "decile": 5,
+          "relative_position": "40-50%",
+          "rollout_mean_fraction": 0.024189629985172004,
+          "rollout_mean_fraction_correct": 0.01799555233792153,
+          "rollout_mean_fraction_wrong": 0.026634433296429866,
+          "token_weighted_fraction": 0.020098920172649495,
+          "tokens": 130206
+        },
+        {
+          "decile": 6,
+          "relative_position": "50-60%",
+          "rollout_mean_fraction": 0.022626593487039454,
+          "rollout_mean_fraction_correct": 0.017922763383701697,
+          "rollout_mean_fraction_wrong": 0.024483195884870117,
+          "token_weighted_fraction": 0.01847553829537882,
+          "tokens": 130551
+        },
+        {
+          "decile": 7,
+          "relative_position": "60-70%",
+          "rollout_mean_fraction": 0.021708495299593893,
+          "rollout_mean_fraction_correct": 0.015397481913687902,
+          "rollout_mean_fraction_wrong": 0.02419945316320811,
+          "token_weighted_fraction": 0.017823740455674465,
+          "tokens": 130444
+        },
+        {
+          "decile": 8,
+          "relative_position": "70-80%",
+          "rollout_mean_fraction": 0.01968283165424712,
+          "rollout_mean_fraction_correct": 0.013663601159553082,
+          "rollout_mean_fraction_wrong": 0.02205862277000502,
+          "token_weighted_fraction": 0.01612111167380262,
+          "tokens": 130326
+        },
+        {
+          "decile": 9,
+          "relative_position": "80-90%",
+          "rollout_mean_fraction": 0.01813302613795532,
+          "rollout_mean_fraction_correct": 0.013008060353392708,
+          "rollout_mean_fraction_wrong": 0.020155850847901235,
+          "token_weighted_fraction": 0.015233991658488714,
+          "tokens": 130432
+        },
+        {
+          "decile": 10,
+          "relative_position": "90-100%",
+          "rollout_mean_fraction": 0.015347787497084339,
+          "rollout_mean_fraction_correct": 0.009995846480215287,
+          "rollout_mean_fraction_wrong": 0.01746019936287784,
+          "token_weighted_fraction": 0.013743747595228934,
+          "tokens": 129950
+        }
+      ],
+      "front_back": {
+        "front_0_20_vs_back_80_100": {
+          "left_rollout_mean_fraction": 0.021319831925564577,
+          "right_rollout_mean_fraction": 0.01674040681751983,
+          "left_minus_right": 0.004579425108044751,
+          "bootstrap_95ci": [
+            0.0034066552047706425,
+            0.005774821491204136
+          ],
+          "paired_sign_flip_p": 9.99990000099999e-06,
+          "holm_p_across_thresholds": 2.999970000299997e-05
+        },
+        "first_0_50_vs_second_50_100": {
+          "left_rollout_mean_fraction": 0.024339192260253797,
+          "right_rollout_mean_fraction": 0.019499746815184026,
+          "left_minus_right": 0.0048394454450697705,
+          "bootstrap_95ci": [
+            0.004006047686121961,
+            0.005662651161544497
+          ],
+          "paired_sign_flip_p": 9.99990000099999e-06,
+          "holm_p_across_thresholds": 2.999970000299997e-05
+        },
+        "middle_early_20_40_vs_back_80_100": {
+          "left_rollout_mean_fraction": 0.027433333732483904,
+          "right_rollout_mean_fraction": 0.01674040681751983,
+          "left_minus_right": 0.010692926914964079,
+          "bootstrap_95ci": [
+            0.00932983814465957,
+            0.012072577994629508
+          ],
+          "paired_sign_flip_p": 9.99990000099999e-06,
+          "holm_p_across_thresholds": 2.999970000299997e-05
+        }
+      },
+      "accuracy": {
+        "correct_rollouts": 283,
+        "wrong_rollouts": 717,
+        "correct_mean_fraction": 0.016018802719910887,
+        "wrong_mean_fraction": 0.024249371227687475,
+        "wrong_minus_correct": 0.008230568507776589,
+        "bootstrap_95ci": [
+          0.006591886948224641,
+          0.009841270171426808
+        ],
+        "label_permutation_p": 1.999960000799984e-05,
+        "auc_predict_wrong": 0.6792263603254629,
+        "adjusted_logistic": {
+          "odds_ratio_wrong_per_1pp": 2.0484970068183515,
+          "coefficient": 0.7171063568459723,
+          "standard_error": 0.08090739776881926,
+          "wald_z": 8.86329775300642,
+          "wald_p": 7.768175140755872e-19,
+          "adjusted_for": "log(response_tokens), difficulty"
+        },
+        "holm_p_across_thresholds": 5.9998800023999525e-05
+      }
+    }
+  ]
+}

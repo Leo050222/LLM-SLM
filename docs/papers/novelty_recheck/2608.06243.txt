@@ -1,0 +1,1715 @@
+DASH: Divergence-Adaptive Supervision Horizons for On-Policy Self-Distillation
+of Reasoning Models
+ZhiYan Hou∗1,2,3, Xinyu Tang∗2,3, Hongyan An1,2,3, Jianjin Zhang2,3,
+Weizhen Wang2,3, Yunyun Han2,3, Gengsheng Li1, Xiangzhao Hao1,
+Haiyun Guo1,4, Wenbin Hu6,†, Jinqiao Wang1,4,5, Yafeng Deng2,3,†
+1Institute of Automation, Chinese Academy of Sciences
+2EverMind
+3Shanda Group
+4University of Chinese Academy of Sciences
+5Wuhan AI Research
+6Wuhan University
+†Corresponding authors.
+Abstract
+Reinforcement learning with verifiable rewards (RLVR) im-
+proves the reasoning capabilities of large language models
+using automatically verifiable outcome signals, but these sig-
+nals are typically sparse and at the sequence-level. On-policy
+self-distillation (OPSD) mitigates this sparsity by querying
+a privileged teacher at student-visited prefixes and providing
+dense token-level distributional supervision. Although this
+dense supervision alleviates signal sparsity, we find that stan-
+dard OPSD still underexploits the temporal structure of the
+rollout.Itassignseverylocaldivergencethesamecoefficient,
+regardlessofitspositionorthedivergencesequenceinwhich
+it occurs. In on-policy autoregressive generation, the same
+divergence magnitude can follow different discrepancy histo-
+ries, reflecting different evolutions of the mismatch between
+theteacherandstudent.Sincethelocalscalaralonecannotdis-
+tinguishthesetemporalcontexts,standardOPSDcannotadapt
+its token-level weights to the realized discrepancy sequence.
+To address this limitation, we proposeDivergence-Adaptive
+Supervision Horizons(DASH). DASH maps the gap between
+eachlocaldistillationsignalandthesequence-levelmeantoan
+adaptivepropagationgateandthenusesthesegatestocontrol
+backwardmulti-stepaggregation.Bydoingso,DASHadjusts
+token-levelsupervisionweightsaccordingtohowlocaldiver-
+gencesevolveduringgeneration.Experimentsonthreemathe-
+maticalreasoningbenchmarksacrossthreemodelscalesshow
+thatDASHimprovesoverourmatchedvanillaOPSDrerunson
+every benchmark at all three scales. DASH reuses the teacher
+andstudentdistributionsthatOPSDalreadycomputes,sothe
+gains require no additional teacher or student forward pass.
+Code— https://github.com/DBtxy/DASH-OPSD
+1 Introduction
+Reinforcement learning with verifiable rewards (RLVR) has
+become an important post-training paradigm for improving
+themathematicalreasoningandcodegenerationcapabilities
+of large language models (Lambert et al. 2024; Shao et al.
+∗These authors contributed equally.
+2024; Guo et al. 2025). It optimizes models using automati-
+cally verifiable signals, such as answer correctness and pro-
+gram execution results (Cobbe et al. 2021; Hendrycks et al.
+2021; Chen et al. 2021), avoiding costly human preference
+annotations (Ouyang et al. 2022; Rafailov et al. 2023) and
+scales effectively (Yu et al. 2025). However, standard RLVR
+typicallyappliesthesamesparsesequence-leveloutcomere-
+ward to all token-level decisions in a response, making it
+difficulttodistinguishtheirindividualcontributionstothefi-
+nal outcome (Uesato et al. 2022; Lightman et al. 2024).This
+temporal credit assignment challenge limits both sample ef-
+ficiency and optimization stability in long-horizon reason-
+ing(Sutton1988;Kazemnejadetal.2024;Parthasarathietal.
+2025).
+Tomitigatethiscoarsecreditassignment,recentworkhas
+introduced on-policy distillation (OPD) and on-policy self-
+distillation(OPSD)(Agarwaletal.2024;Guetal.2024;Zhao
+etal.2026),whichprovidedensetoken-levelsupervisionon
+student-generated trajectories (Hinton, Vinyals, and Dean
+2015;Zelikmanetal.2022).InOPSD,thestudentgenerates
+aresponse,whilethesamemodel,conditionedonareference
+answer or other privileged information (Vapnik and Vashist
+2009;Lopez-Pazetal.2016),actsastheteacherandprovides
+distributional supervision at the student-visited prefixes.
+However, dense token-level supervision primarily allevi-
+ates signal sparsity, while leaving the temporal structure of
+the rollout underexploited. This is because vanilla OPSD
+aggregates position-wise distributional discrepancies using
+uniformcoefficientsthatareindependentofbothtokenposi-
+tion and the temporal discrepancy profile along the rollout.
+But in on-policy autoregressive generation (Ross, Gordon,
+and Bagnell 2011; Bengio et al. 2015), the same local dis-
+crepancyvaluecanariseafterdifferentdiscrepancyhistories
+that reflect how the mismatch between teacher and student
+has evolved over student-visited prefixes. The local scalar
+alone cannot distinguish these temporal contexts, yet vanilla
+OPSD assigns the same explicit aggregation coefficient in
+everycase.Consequently,vanillaOPSDcannotadapttoken-
+arXiv:2608.06243v2  [cs.AI]  7 Aug 2026
+
+10 4
+10 3
+10 2
+10 1
+Local divergence  Dt  (n = 2,500 tokens)
+1
+3
+10
+30
+Mean downstream divergence  D > t
+Similar local-FKL region
+×10 3
+Within-trajectory
+median Spearman  = 1.5×10 3
+Token density
+Binned median
+Middle 50% of tokens
+High D > t = 0.0113
+Low D > t = 0.0014
+(a) Weak local-to-future association.
+0 2 4 6 8 10 12
+Tokens after the fork
+0
+5
+10
+15Future local FKL  Dt + k
+×10 3
+same Dt
+at the fork
+In the numerator, the highest ...
+In both the numerator and ...
+correct rollout, D> t=0.0014
+failed rollout, D> t=0.0113
+ (b) Matched local divergence, divergent futures.
+0
+5
+10
+15
+×10−3
+Standard OPSD — local gap  Dt
+matched Dt = 0.002
+correct rollout
+failed rollout
+fork token
+-20 -10 t +10 +20
+Token position in the rollout
+0
+10
+20
+30
+×10−3
+DASH — aggregated signal  At
+At (failed)  ≫   At (correct)
+OPSD DASH
+38
+41.87
+45.07
++3.20
+Average accuracy (%)
+on Qwen3-1.7B(c)DASH:Sequence-awaresignalallocation.
+Figure1:MotivationandmechanismofDASH.(a)ThecurrentlocaldivergenceD t isweaklyassociatedwiththemeanfuture
+divergence ¯D>t within student-generated trajectories. The plot visualizes 2,500 of the 30k analyzed tokens. (b) Two rollouts
+matchedbylocaldivergenceatareasoningforksubsequentlyexhibitsharplydifferentdivergenceprofilesandterminaloutcomes.
+(c)VanillaOPSDaggregatesthematchedlocaldivergenceswiththesamecoefficient,regardlessoftemporaldiscrepancyprofiles.
+DASH instead uses the realized discrepancy sequence to produce path-dependent aggregated supervision signals.
+level distillation weights to the temporal evolution of the
+discrepancy sequence.
+To make coefficient allocation sensitive to the temporal
+discrepancyprofile,weproposeDivergence-AdaptiveSuper-
+vision Horizons(DASH), a divergence-adaptive multi-step
+aggregationmethodforOPSD.Ateachposition,DASHcon-
+verts the gap between the local distillation signal and its
+sequence-level mean into an adaptive propagation gateλt.
+Thesegatescontrolabackwardmulti-steprecursion,yielding
+a dynamic coefficient for each local loss that is determined
+by its preceding gate path. DASH thus replaces the uniform
+coefficient profile of vanilla OPSD with a path-dependent
+sequence-level objective whose effective supervision hori-
+zon adapts to the realized discrepancy sequence.
+Ourcontributionsarethreefold.Firstly,weidentifyatem-
+poral coefficient allocation gap in vanilla OPSD: assigning
+thesameweighttoeverylocaldivergencemakestheobjective
+invariant to different temporal arrangements of the same di-
+vergencevalues,preventingsupervisionweightsfromadapt-
+ingtotemporalstructure(Section4.1).Secondly,wepropose
+Divergence-Adaptive Supervision Horizons(DASH), which
+usesthegapbetweeneachlocaldivergenceandthesequence-
+levelmeantoadapttheeffectivesupervisionhorizonandpro-
+duces temporally conditioned token-level weights through
+multi-step aggregation, enabling dense distillation supervi-
+sion to exploit temporal structure (Section 4.2).Thirdly,
+with negligible additional training overhead, DASH obtains
+thehighestoverallscoresamongthecomparedresultsacross
+three mathematical reasoning benchmarks and three model
+scales (Table 1), supported by comprehensive ablation stud-
+ies (Sections 5.3 and 5.4).
+2 Related Work
+2.1 Reinforcement Learning with Verifiable
+Rewards
+Reinforcement learning with verifiable rewards (RLVR)
+improves language-model reasoning using automatically
+checked signals, such as answer matching, program exe-
+cution, and unit tests (Lambert et al. 2024; Cobbe et al.
+2021; Chen et al. 2021). DeepSeekMath introduced Group
+Relative Policy Optimization (GRPO), while DeepSeek-
+R1 demonstrated the effectiveness of large-scale RLVR for
+mathematical and coding reasoning (Shao et al. 2024; Guo
+et al. 2025). Standard RLVR nevertheless relies primarily
+on sparse sequence-level rewards (Schulman et al. 2017; Yu
+et al. 2025; Yue et al. 2025), providing limited direct super-
+vision for intermediate decisions in long reasoning trajecto-
+ries (Wei et al. 2022; Uesato et al. 2022). Process supervi-
+sion introduces step-level feedback through process reward
+models (Lightman et al. 2024; Uesato et al. 2022; Wang
+et al. 2024; Setlur et al. 2025), whereas temporal credit-
+assignment methods such as GRPO-λredistribute outcome-
+levelsignalsacrosssampleddecisionsusingeligibilitytraces
+and critic-free temporal-difference estimates (Parthasarathi
+etal.2025;Sutton1988;Schulmanetal.2016;Kazemnejad
+et al. 2024). These approaches address learning from sparse
+reward signals; Our work investigates how dense, differen-
+tiable token-level supervision in OPSD should be allocated
+across a rollout.
+2.2 On-Policy Self-Distillation
+On-policyself-distillation(OPSD)trainsamodelonitsown
+rollouts by using the same model under different contexts
+asanunprivilegedstudentandaprivilegedteacher(Agarwal
+etal.2024;Guetal.2024;Zelikmanetal.2022).Theteacher
+conditions on reference solutions or other privileged infor-
+mationandprovidestoken-leveldistributionalsupervisionat
+student-visitedprefixes(Zhaoetal.2026;VapnikandVashist
+2009; Lopez-Paz et al. 2016; Pinto et al. 2018; Weihs et al.
+2021).RecentOPSDmethodsrefineeitherprivilegedsuper-
+vision or token weighting (Jin et al. 2026; Li et al. 2026;
+Xie et al. 2026; Lin, Chen, and Zhang 2026; Shen et al.
+2026; Liu et al. 2026b). AVSD combines cross-view con-
+sensus with view-specific signals from multiple privileged
+teacher contexts (Nguyen et al. 2026), while PW-OPSD ap-
+plies fixed position-dependent weights motivated by vari-
+
+ation in teacher-token reliability (Liu et al. 2026a). These
+methods improve the supervision source or impose prede-
+fined positional weighting. DASH instead focuses on how
+local distillation signals are aggregated across the rollout.
+It uses sequence-relative divergence gaps to construct adap-
+tive propagation gates and temporally conditioned token-
+level coefficients through multi-step aggregation, allowing
+dense supervision to exploit the temporal evolution of local
+discrepancies.
+3 Preliminaries
+Letπ θ denote the student policy. Given a problemx, the
+student samples a responsey= (y 1, . . . , yT )∼P θ(· |x).
+We denote the student-generated prefix at positiontbyst =
+(x, y<t).
+On-policy self-distillation (OPSD) (Agarwal et al. 2024;
+Zhaoetal.2026)usesasinglemodelasboththestudentand
+a privileged teacher under different conditioning contexts.
+The student generates the rollout from the problemx, while
+theteacheradditionallyconditionsonprivilegedinformation
+z,suchasareferencesolution.Ateachstudent-visitedprefix
+st, their distributions are
+πS
+t =π θ(· |s t), π T
+t = sg [π¯θ(· |s t, z)],(1)
+where ¯θdenotes the teacher parameters andsg[·]blocks
+gradientsthroughtheteachertarget.Queryingtheprivileged
+teacher along the student rollout provides dense token-level
+distributional supervision (Agarwal et al. 2024; Liu et al.
+2026b).
+Our main setting uses the forward KL divergence from
+the privileged teacher to the student as the local distillation
+loss(Hinton,Vinyals,andDean2015;KimandRush2016):
+dt =D KL
+ 
+πT
+t
+ πS
+t
+
+=
+X
+v∈A
+πT
+t (v) log πT
+t (v)
+πS
+t (v) . (2)
+Forasampledresponsey,vanillaOPSDuniformlyaggre-
+gates the local distillation losses:
+LOPSD(θ;y) = 1
+T
+TX
+t=1
+dt.(3)
+VanillaOPSDtreatsthesampledresponseasfixedduringop-
+timizationanddifferentiatesEq.(3)onlythroughthestudent
+distributions (Agarwal et al. 2024; Liu et al. 2026b).
+4 Method
+Vanilla OPSD assigns the same explicit coefficient to every
+local distillation loss, regardless of its position or the sur-
+rounding evolution of discrepancies along the rollout. We
+firstcharacterizethislimitationandusetheexactgradientof
+the corresponding expected on-policy objective as a struc-
+tural reference. Beyond the direct distillation term retained
+by standard training, the exact gradient contains a trajectory
+term whose coefficient depends on subsequent divergences.
+Motivated by this order-dependent structure, we introduce
+DASH,whichusessequence-relativedivergencegaps,adap-
+tivepropagationgates,andbackwardmulti-stepaggregation
+to construct temporally conditioned coefficients for direct
+distillation gradients. Figure 2 provides an overview.
+4.1 Coefficient Structure of Vanilla OPSD
+For a sampled rollouty, vanilla OPSD retains the detached
+gradient
+∇θLOPSD(θ;y) = 1
+T
+TX
+t=1
+∇loc
+θ dt.(4)
+Thus, every local gradient has the same explicit coeffi-
+cient1/T, independent of the ordered discrepancy profile
+d= (d 1, . . . , dT ). This does not make the local gradients
+sequence-independent: each∇ loc
+θ dt is still evaluated at its
+corresponding student-generated prefixst. Only the explicit
+coefficientprofileisindependentofhowthelocaldiscrepan-
+cies evolve along the rollout.
+To isolate coefficient structure, consider the following
+fixed-horizon surrogate. LetHbe a deterministic trunca-
+tion horizon; after EOS, the trajectory enters a parameter-
+independent absorbing state anddt = 0thereafter.
+JH(θ) =E (x,z)∼D Ey∼Pθ(·|x)
+"
+1
+H
+HX
+t=1
+dt
+#
+.(5)
+Proposition 1(Fixed-Horizon Gradient Decomposition).
+Under the fixed-horizon construction above, the gradient of
+Eq.(5)is
+∇θJH(θ) =E
+"
+1
+H
+HX
+t=1
+∇loc
+θ dt
++ 1
+H
+HX
+u=1
+GD
+u+1∇θ logπ θ(yu |s u)
+#
+,
+(6)
+whereG D
+u+1 = PH
+t=u+1 dt is the future divergence-to-go
+after positionu.
+Proof.LetD tot(y;θ) = PH
+t=1 dt. Applying the log-
+derivative identity (Williams 1992; Sutton et al. 2000) to
+the trajectory expectation gives
+∇θJH(θ) = 1
+H E
+" HX
+t=1
+∇loc
+θ dt
++D tot
+HX
+u=1
+∇θ logπ θ(yu |s u)
+#
+.
+(7)
+Fort≤u, the value ofd t is determined beforey u is
+sampledandisthereforemeasurablewithrespecttos u.Using
+the zero conditional mean of the score function,
+Eyu∼πθ(·|su) [dt∇θ logπ θ(yu |s u)|s u] = 0, t≤u.
+(8)
+Hence,thescoretermatpositionuretainsonlylossesatposi-
+tionst > u,whosesumisG D
+u+1 =PH
+t=u+1 dt.Substituting
+this result into Eq. (7) yields Eq. (6).
+
+...
+hint
+Teacher Student
+...
+rt rt+1 rn-1 rn
+rt = clip(dt, τ)
+yt yt+1 yT-1 yT
+AT=rT
+At = rt + λt At+1
+Even incorrect token still 
+have a small divergence.
+gt = rt - �
+λt = sg [σ ( -kgt ) ]
+lower gap
+more gains
+...
+mean �
+rt
+rt+1
+rT-1
+...
+At+1
+AT-1
+rT
+AT
+Incorrect token has a bigger 
+divergence after re-allocation.
+1. On-policy Self distillation 2. Divergence-Adaptive 
+Propagation Gates
+3. Backward Multi-Step 
+Aggregation
+ rT-1
+rT
+ rt
+rT-1 + λT-1 ×rt + λt ×
+...At  At+1  AT-1  AT
+At
+ rt+1
+Figure 2: Overview of DASH. A privileged teacher evaluates a student-generated rollout to produce local distillation signals.
+DASH converts their sequence-relative gaps into adaptive propagation gates and applies backward multi-step aggregation to
+construct temporally conditioned token-level weights and adaptive supervision horizons.
+The first term is the direct distillation gradient retained
+by vanilla OPSD. The second is a trajectory score-function
+term with future-divergence coefficients, reflecting changes
+infuturevisitedprefixeswhenthesamplingpathisdifferen-
+tiated(Ross,Gordon,andBagnell2011;Bengioetal.2015).
+This fixed-horizon decomposition provides only structural
+motivation:DASHdoesnotestimateG D
+u+1,introducescore-
+function gradients, or perform future-to-past credit assign-
+ment.
+4.2 Divergence-Adaptive Supervision Horizons
+Thefixed-horizondecompositionhighlightsastructuralcon-
+trast:orderdependenceappearsinthetrajectorycoefficients,
+whereasthedirectdistillationtermretainedbyvanillaOPSD
+uses constant explicit coefficients. Motivated by this con-
+trast,DASHmakesthecoefficientsofdirectlocaldistillation
+losses depend on the realized discrepancy sequence through
+adaptive supervision horizons.
+Using the propagation gates, DASH applies the backward
+recursion (Sutton 1988; Schulman et al. 2016)
+AT =r T , A t =r t+λ tAt+1, t=T−1, . . . ,1,(9)
+and minimizes
+LDASH = 1
+T
+TX
+t=1
+At.(10)
+Here,λ t controls how strongly later local signals propagate
+acrosstheboundarybetweenpositionstandt+1(Hochreiter
+and Schmidhuber 1997; Cho et al. 2014). In particular, for
+k > t, the contribution ofr k toA t is scaled byQk−1
+j=t λj.
+Summing these contributions over all aggregation starting
+positions gives the weighted form
+LDASH = 1
+T
+TX
+k=1
+ckrk, c 1 = 1, c k = 1+λk−1ck−1.
+(11)
+Algorithm1:DASHaggregationforonestudentrollout.Gra-
+dients flow only through the local signalsrt.
+Input: Local KL contributions{ℓt,v}, clipping thresholdτ, and
+propagation sensitivityκ
+1:fort= 1, . . . , Tdo
+2:r t ← P
+v∈A min(ℓt,v, τ)
+3:end for
+4:¯r← 1
+T
+PT
+t=1 rt
+5:fort= 1, . . . , T−1do
+6:λ t ←sg [σ(−κ(r t −¯r))]
+7:end for
+8:A T ←r T
+9:fort=T−1, T−2, . . . ,1do
+10:A t ←r t +λ tAt+1
+11:end for
+12:return 1
+T
+PT
+t=1 At
+Thus,c k aggregates the contributions tork from all start-
+ing positions up tok, weighted by the intervening gates. Al-
+thoughitsrecursioninvolvesλ 1, . . . , λk−1,eachgateiscom-
+puted relative to the sequence-level mean¯r. Consequently,
+ck is conditioned on the realized discrepancy sequence.
+Letℓ t,v denote the vocabulary-level summand in Eq. (2).
+Algorithm 1 summarizes the additional DASH computation
+after the local KL contributions have been obtained along a
+rollout.
+5 Experiments
+5.1 Experimental Setup
+Models and Datasets.We conduct experiments with the
+Qwen3-1.7B, Qwen3-4B, and Qwen3-8B Instruct mod-
+els (Yang et al. 2025). Our reruns use OpenThoughts-Math-
+30K (Guha et al. 2025), which contains 29,434 mathemat-
+ical reasoning examples, each with a problem, reference
+solution, and final answer. In every on-policy distillation
+run, the student receives only the problem and generates its
+own rollout. For OPSD, EOPD, PW-OPSD, and DASH, the
+matched privileged teacher additionally receives the refer-
+
+ence solution, including the final answer; AVSD retains its
+method-defining multi-view privileged contexts. We evalu-
+ate on AIME 2024 (Mathematical Association of America
+2024), AIME 2025 (Mathematical Association of America
+2025), and HMMT February 2025 (Harvard-MIT Mathe-
+maticsTournament2025),eachcontaining30problems,and
+determine correctness using the official answer keys. For
+eachbenchmark,Avg@12averagesthebinarycorrectnessof
+12 independently sampled responses per problem and then
+averages over all problems. We additionally report the un-
+weighted mean across the three benchmarks.
+Baselines.We compare DASH with seven baselines.Base
+denotes the original model without additional training.
+SFTperforms supervised fine-tuning on the reference so-
+lutions (Ouyang et al. 2022).GRPOoptimizes verifiable
+rewards based on final-answer correctness (Shao et al.
+2024).OPSDuniformly aggregates token-level distillation
+lossesalongstudent-generatedtrajectories(Zhaoetal.2026).
+EOPDadapts token-level distillation using teacher en-
+tropy (Jin et al. 2026).AVSDcombines supervision from
+multiple privileged teacher views (Nguyen et al. 2026).
+PW-OPSDappliespredefinedposition-dependentweightsto
+token-leveldistillationlosses(Liuetal.2026a).Table1com-
+bines externally reported reference results with our reruns.
+Base, SFT, and GRPO are taken from Zhao et al. (Zhao
+et al. 2026) and marked with†. We rerun OPSD, EOPD,
+AVSD, PW-OPSD, and DASH. OPSD, EOPD, PW-OPSD,
+and DASH use the same privileged-OPSD backbone while
+retainingtheirmethod-specificobjectivesorweightingrules;
+AVSD retains its original multi-view teacher construction.
+Exact method instantiations, run counts, and result prove-
+nance are provided in Appendix B.
+Implementation Details.All methods rerun by us start
+from the corresponding Qwen3 Instruct checkpoint, train
+for the full 200-step budget, and use the same checkpoint-
+selection and benchmark-evaluation procedures. We save
+checkpointsevery20stepsand,foreachmethod,modelscale,
+andtrainingseed,selectthecheckpointwithin200stepsthat
+maximizes the unweighted average across the three bench-
+marks;allthreebenchmarkscoresaretakenfromthatsingle
+checkpoint.Werefertothisasbest-within-200-stepreporting
+rather than held-out validation selection.
+Followingtheshort-rolloutOPSDsettingstudiedbyZhao
+et al. (Zhao et al. 2026), the matched privileged-OPSD runs
+use a maximum student completion length of 1,024 tokens.
+We additionally evaluate maximum lengths of 2,048 and
+4,096 tokens; because they yield comparable performance,
+weuse1,024tokensforcomputationalefficiency.Unlessoth-
+erwise specified, these runs use LoRA (Hu et al. 2022) with
+rank 64 and scaling factor 128, a learning rate of5×10−6,
+and a global batch size of 64. Student rollouts are sampled
+with temperature 1.1, top-p0.95, and top-k20. DASH uses
+full-vocabularyforwardKLasitslocaldistillationloss,caps
+each vocabulary-level divergence contribution atτ= 0.05,
+and setsκ= 5. For Avg@12 evaluation, we independently
+sample 12 responses per problem in thinking mode using
+temperature 1.0, top-p1.0, and a maximum of 38,912 newly
+generated tokens. OPSD, DASH, and every DASH ablation
+configuration use training seedss∈ {0,1,2,3}and report
+four-seedmeans.Completeprovenance,method-specificset-
+tings, checkpoint selection, prompts, run counts, and seed
+statistics are provided in Appendices B and C.
+5.2 Main Results
+Table 1 compares DASH with standard training baselines
+andrecenton-policydistillationmethodsacrossthreemodel
+scales and three mathematical reasoning benchmarks.
+Overall performance.DASH obtains the highest score
+among the compared results in all nine benchmark–model
+settings and the highest macro-average at each model scale.
+Under the matched rerun protocol, DASH raises the four-
+seed OPSD average from 41.87 to 45.07 on Qwen3-1.7B,
+from 63.60 to 65.00 on Qwen3-4B, and from 64.80 to 66.40
+on Qwen3-8B. The corresponding gains are 3.20, 1.40, and
+1.60 points. DASH also improves over the matched OPSD
+rerun on every benchmark at every model scale, indicating
+that its gains are not confined to a particular model capacity
+or dataset.
+Comparison with recent distillation methods.Among the
+displayedcomparisons,PW-OPSDprovidesthehighestcom-
+peting macro-average at the 1.7B and 8B scales, whereas
+OPSD provides the highest at the 4B scale. DASH exceeds
+the compared PW-OPSD result by 1.64 points on Qwen3-
+1.7B and by 1.17 points on Qwen3-8B, and it exceeds the
+matched OPSD result by 1.40 points on Qwen3-4B. Thus,
+DASH attains the best displayed scores among the com-
+pared methods, without implying a statistical significance
+test against the single-run baselines.
+5.3 Component Ablation
+Having established the overall effectiveness of DASH, we
+next examine which aspects of its adaptive coefficient allo-
+cationaccountfortheobservedgains.Unlessotherwisespec-
+ified,allexperimentsinthissubsectionuseQwen3-1.7B,the
+same four training seeds, and the same training, checkpoint-
+selection, and evaluation protocol as the matched OPSD
+comparison. We investigate three possible sources of im-
+provement: whether sequence-adaptive propagation is more
+effective than fixed multi-step aggregation, whether the di-
+rection of the gap-to-gate mapping matters, and whether the
+gains can be explained by the increase in average coefficient
+scale.
+Adaptive versus fixed propagation.We first examine
+whether adapting the propagation gates to the discrepancy
+sequence provides benefits beyond multi-step aggregation
+alone. We replace the token-wise gatesλt with a fixed co-
+efficientλshared across all positions and rollouts. These
+variants retain the same backward aggregation structure as
+DASH but remove its dependence on the realized discrep-
+ancy sequence. We evaluateλ∈ {0.1,0.3,0.5,0.7,0.9},
+withλ= 0recovering vanilla OPSD.
+As shown in Figure 3a, every tested fixed coefficient im-
+proves over vanilla OPSD, and the best setting,λ= 0.1,
+raisesthemacro-averagefrom41.87to43.63.Thisindicates
+that extending supervision beyond independent local losses
+
+Qwen3-1.7B Qwen3-4B Qwen3-8B
+Method
+AIME
+2024
+AIME
+2025
+HMMT
+2025 Average
+AIME
+2024
+AIME
+2025
+HMMT
+2025 Average
+AIME
+2024
+AIME
+2025
+HMMT
+2025 Average
+Base† 51.50 36.70 23.10 37.10 74.90 66.40 42.20 61.17 75.80 65.60 43.90 61.77
+SFT† 48.40 36.30 22.70 35.80 70.20 62.30 43.40 58.63 72.30 64.20 42.90 59.80
+GRPO† 51.10 38.30 23.70 37.70 75.60 68.10 44.40 62.70 76.40 68.90 46.70 64.00
+OPSD 55.60 40.80 29.20 41.87 76.40 68.30 46.10 63.60 77.80 70.80 45.80 64.80
+EOPD 51.90 38.10 26.40 38.80 73.90 64.70 41.90 60.17 77.80 70.80 46.40 65.00
+AVSD 55.30 37.50 24.70 39.17 76.20 68.30 44.20 62.90 75.40 69.60 47.10 64.03
+PW-OPSD 57.80 42.20 30.30 43.43 76.20 67.78 43.33 62.44 77.80 70.80 47.10 65.23
+DASH (Ours) 58.30 45.80 31.10 45.07 77.20 71.10 46.70 65.00 78.90 71.40 48.90 66.40
+Table 1: Main results across three model scales. Scores are Avg@12 and Average is the unweighted mean across benchmarks.
+†denotes results reported by Zhao et al. (Zhao et al. 2026); all other entries are our reruns. OPSD and DASH report four-seed
+means.Ineachcolumn,thetop-threedistinctcomparedresultsarehighlighted: 1st, 2nd ,and 3rd ;tiedscoressharethesame
+rank.
+is beneficial even with a fixed effective horizon. DASH fur-
+therimprovesthemacro-averageto45.07,outperformingthe
+best fixed setting by 1.44 points. Thus, fixed multi-step ag-
+gregation accounts for part of the gain, while adapting the
+propagation gates to the realized discrepancy sequence pro-
+vides an additional improvement.
+Thefixed-λcomparisonshowsthatadaptivepropagationis
+beneficial,butitdoesnotestablishhowthesequence-relative
+gap should control the gate. Letgt =r t −¯r. DASH and
+Inverse-gap use the same gap, sensitivity, and aggregation
+recursion, differing only in the sign inside the gate function:
+λDASH
+t = sg[σ(−κgt)], λ Inv
+t = sg[σ(+κgt)].(12)
+Sinceλ t controls whether subsequent local signals cross the
+boundary after positiont, DASH assigns a larger gate when
+gt <0andasmallergatewheng t >0.Itthereforeproduces
+a longer effective supervision horizon after a below-average
+localsignalandashorterhorizonafteranabove-averageone.
+Inverse-gap reverses exactly this behavior. This comparison
+directly tests our design hypothesis that propagation should
+remain more open after relatively small discrepancies and
+become more restricted after unusually large ones.
+As shown in Figure 3a, Inverse-gap reaches a macro-
+average of 42.10. It is only 0.23 points above vanilla OPSD,
+1.53 points below the best fixed coefficient, and 2.97 points
+below DASH. Thus, the gain does not arise from introduc-
+inganarbitrarygap-conditionedgate.Theresultsupportsthe
+signusedbyDASHamongthetwotestedadaptivemappings.
+Coefficient allocation versus average scale.Finally, we
+examinewhetherDASHbenefitsfromitsrelativecoefficient
+profile or merely from stronger overall supervision. In the
+weighted objectiveL DASH =T −1P
+k ckrk, the recursive
+aggregation producesck ≥1.DASH thereforechanges both
+the relative allocation of token-level supervision and the av-
+erage coefficient scale. This introduces an alternative expla-
+nation:uniformlyincreasingallcoefficientsmightreproduce
+the improvement without using discrepancy-conditioned al-
+location.
+We disentangle relative coefficient allocation from aver-
+age coefficient scale using the2×2factorial comparison in
+Figure 3b. Normalized DASH preserves the relative coeffi-
+cient profile at the OPSD scale, while scale-matched OPSD
+appliesuniformcoefficientsattheDASHscale.Dynamical-
+location improves performance by 2.40 points at the OPSD
+scale and 2.50 points at the DASH scale. In contrast, in-
+creasingtheaveragescalecontributesonly0.70pointsunder
+uniform allocation and 0.80 points under dynamic alloca-
+tion. The consistent advantage at both scales shows that the
+improvement primarily comes from DASH’s discrepancy-
+conditioned coefficient allocation, with the increased scale
+providing only a smaller complementary benefit.
+Overall, the component ablations show that the gains of
+DASHcannotbereproducedbyfixedmulti-stepaggregation,
+a reversed adaptive mapping, or uniform coefficient scaling.
+Its effectiveness primarily arises from adapting the relative
+coefficient allocation to the discrepancy sequence using the
+proposed gap-to-gate direction.
+5.4 Design Choices and Sensitivity
+We examine three design choices that govern how DASH
+constructs and propagates token-level supervision. The dis-
+tillation divergence and vocabulary support determine the
+local signal used for both direct distillation and gate con-
+struction,whilethepropagationsensitivitycontrolshowthis
+signal shapes the adaptive supervision horizon. These anal-
+yses assess the robustness of DASH to its main configura-
+tion choices and support the settings used in the main ex-
+periments. Unless otherwise specified, all experiments use
+Qwen3-1.7B, the same four training seeds, and the same
+training,checkpoint-selection,andevaluationprotocolasthe
+matched OPSD comparison.
+Propagation sensitivityκ.The sensitivityκcontrols the
+sharpness of the propagation gates. Smaller values make
+the gates less responsive to sequence-relative gaps, while
+larger values produce sharper changes around the sequence
+mean. We evaluateκ∈ {1,2,5,10,20}. As shown in Fig-
+ure 4a, every tested value outperforms the standard OPSD
+
+0 0.1 0.3 0.5 0.7 0.9
+Fixed propagation coefficient 
+41
+42
+43
+44
+45Macro-average accuracy (%)
+OPSD
++1.44
+1.53
+DASH
+Fixed aggregation
+Inverse-gap gating
+(a) Fixed values ofλand Inverse-gap.
+AIME24 AIME25 HMMT25 Avg
+0
+1
+2
+3
+4
+5Improvement over OPSD
+OPSD
+56.40
+57.80
+58.30
+41.90
+44.40
+45.80
+29.40
+30.60
+31.10
+42.57
+44.27
+45.07
+55.60 40.80 29.20 41.87
+Scale aligned to OPSD DASH-level scale
+Uniform
+Dynamic
+OPSD (baseline)
+Normalized DASH
+Scale-matched OPSD
+DASH (b) Coefficient allocation and average scale.
+Figure3:ComponentablationsofDASHonQwen3-1.7B.(a)Fixedvaluesofthepropagationcoefficientλtestadaptiveagainst
+fixed aggregation, while Inverse-gap reverses the sign of the DASH gate function. (b) Scale-matched OPSD and normalized
+DASH separate the relative coefficient profile from its average scale. Panel (a) reports the unweighted mean across the three
+benchmarks. Panel (b) plots improvements over the matched OPSD rerun, with annotations showing absolute Avg@12 scores.
+All values are means over training seeds0,1,2,3.
+1 2 5 10 20
+42
+43
+44
+45
+46Macro-average accuracy (%)
+(a) Propagation sensitivity
+43.33
+42.97
+45.07
+42.87
+43.70
+(a) Propagation sensitivityκ.
+0 0.5 1
+(b) Divergence geometry
+45.07
+38.23
+41.47
+F-KL
+JSD
+R-KL (b) Local divergence.
+Figure 4: Parameter ablations of DASH on Qwen3-1.7B. (a)
+Macro-average accuracy under different propagation sensi-
+tivitiesκ. (b) Comparison of forward KL, symmetric JSD,
+and reverse KL as the local distillation objective. Stars in-
+dicate the settings used in the main experiments. Values are
+means over training seeds0,1,2,3.
+macro-average of 41.87, indicating that the improvement is
+not limited to a single value ofκ. Among the tested set-
+tings,κ= 5achieves the highest macro-average of 45.07.
+The lower performance at both smaller and larger values
+suggeststhatmoderategatesensitivitybetterbalancesinsuf-
+ficient adaptation and overly sharp responses to local gap
+variations. We therefore useκ= 5in the main experiments.
+Choice of distillation divergence.We examine the effect
+of the distillation divergence by replacing the forward KL
+used in the main configuration with symmetric JSD and re-
+verse KL (Agarwal et al. 2024; Gu et al. 2024; Ko et al.
+2024), while keeping all other settings fixed. As shown in
+Figure 4b, forward KL achieves the highest macro-average
+Variant
+AIME
+2024
+AIME
+2025
+HMMT
+2025 Avg.
+OPSD, full vocab. 55.60 40.80 29.20 41.87
+DASH, full vocab.58.30 45.80 31.10 45.07
+DASH, top-100+tail 58.10 45.00 30.00 44.37
+DASH, top-1+tail 48.10 33.60 22.80 34.83
+Table 2: Effect of vocabulary support on Qwen3-1.7B. The
+top-kplus tail variants retain the teacher’s top-ktokens and
+merge the remaining vocabulary into a single tail term. Val-
+ues are four-seed means.
+score of 45.07, outperforming symmetric JSD and reverse
+KL by 6.84 and 3.60 points, respectively. It also performs
+bestonallthreebenchmarks.Theseresultsshowthatthedi-
+vergence choice substantially affects DASH and support the
+use of forward KL in the main configuration.
+Vocabulary support.The main configuration computes
+thelocalforward-KLsignaloverthefullvocabulary.Weex-
+aminewhetherthisdistributionalsupportcanbecompressed
+by retaining the teacher’s top-ktokens and merging the re-
+mainingvocabularyintoasingletailterm,whilekeepingall
+other settings unchanged.
+As shown in Table 2, retaining the top 100 teacher tokens
+yields an average score of 44.37, only 0.70 points below the
+full-vocabularyconfigurationand2.50pointsabovestandard
+OPSD. In contrast, reducing the explicit support to only the
+topteachertokenlowerstheaveragescoreto34.83,adropof
+10.24 points from the main configuration. These results in-
+dicate that a moderately compressed support preserves most
+of the benefit of DASH, whereas an overly concentrated ap-
+proximation discards important distributional information.
+Wethereforeusethefullvocabularyinthemainexperiments.
+
+6 Conclusion
+In this work, we revisit how dense token-level supervision
+should be allocated in on-policy self-distillation. Vanilla
+OPSD assigns uniform weights to local distillation signals,
+overlooking the temporal evolution of teacher–student dis-
+crepancies along each trajectory. To address this limita-
+tion,weproposeDivergence-AdaptiveSupervisionHorizons
+(DASH), a sequence-aware method for adaptive supervision
+allocation. DASH transforms sequence-relative divergence
+gapsintoadaptivepropagationgatesandperformsbackward
+multi-step aggregation to construct temporally conditioned
+token-level weights and adaptive supervision horizons. Ex-
+periments across three mathematical reasoning benchmarks
+and three model scales show that DASH improves the four-
+seed mean of our matched vanilla OPSD reruns and obtains
+thehighestscoresamongthecomparedresults.DASHreuses
+the local teacher and student distributions already computed
+byvanillaOPSDandrequiresnoadditionalteacherorstudent
+forwardpasses.Wehopeourworkcanoffernewinsightsfor
+improvingdensesupervisionallocationinon-policylearning
+and long-horizon reasoning.
+References
+Agarwal, R.; Vieillard, N.; Zhou, Y.; Stanczyk, P.;
+Ramos Garea, S.; Geist, M.; and Bachem, O. 2024. On-
+PolicyDistillationofLanguageModels:LearningfromSelf-
+Generated Mistakes. InInternational Conference on Learn-
+ing Representations.
+Bengio, S.; Vinyals, O.; Jaitly, N.; and Shazeer, N. 2015.
+Scheduled Sampling for Sequence Prediction with Recur-
+rent Neural Networks. InAdvances in Neural Information
+Processing Systems.
+Chen, M.; Tworek, J.; Jun, H.; Yuan, Q.; Pinto, H. P. d. O.;
+Kaplan, J.; Edwards, H.; Burda, Y.; Joseph, N.; Brockman,
+G.; et al. 2021. Evaluating Large Language Models Trained
+on Code.arXiv preprint arXiv:2107.03374.
+Cho, K.; van Merriënboer, B.; Gulcehre, C.; Bahdanau, D.;
+Bougares, F.; Schwenk, H.; and Bengio, Y. 2014. Learn-
+ing Phrase Representations Using RNN Encoder–Decoder
+for Statistical Machine Translation. InProceedings of the
+ConferenceonEmpiricalMethodsinNaturalLanguagePro-
+cessing.
+Cobbe, K.; Kosaraju, V.; Bavarian, M.; Chen, M.; Jun, H.;
+Kaiser, L.; Plappert, M.; Tworek, J.; Hilton, J.; Nakano, R.;
+Hesse,C.;andSchulman,J.2021. TrainingVerifierstoSolve
+Math Word Problems.arXiv preprint arXiv:2110.14168.
+Gu, Y.; Dong, L.; Wei, F.; and Huang, M. 2024. MiniLLM:
+KnowledgeDistillationofLargeLanguageModels. InInter-
+national Conference on Learning Representations.
+Guha, E.; Marten, R.; Keh, S.; Raoof, N.; Smyrnis, G.;
+Bansal, H.; Nezhurina, M.; Mercat, J.; Vu, T.; Sprague, Z.;
+et al. 2025. OpenThoughts: Data Recipes for Reasoning
+Models.arXiv preprint arXiv:2506.04178.
+Guo, D.; Yang, D.; Zhang, H.; et al. 2025. DeepSeek-
+R1 Incentivizes Reasoning in LLMs through Reinforcement
+Learning.Nature, 645: 633–638.
+Harvard-MIT Mathematics Tournament. 2025. HMMT
+February2025:ProblemsandSolutions. https://www.hmmt.
+org/www/archive/282.
+Hendrycks,D.;Burns,C.;Kadavath,S.;Arora,A.;Basart,S.;
+Tang,E.;Song,D.;andSteinhardt,J.2021.MeasuringMath-
+ematical Problem Solving with the MATH Dataset. InAd-
+vances in Neural Information Processing Systems Datasets
+and Benchmarks Track.
+Hinton, G.; Vinyals, O.; and Dean, J. 2015. Distill-
+ing the Knowledge in a Neural Network.arXiv preprint
+arXiv:1503.02531.
+Hochreiter, S.; and Schmidhuber, J. 1997. Long Short-Term
+Memory.Neural Computation, 9(8): 1735–1780.
+Hu,E.J.;Shen,Y.;Wallis,P.;Allen-Zhu,Z.;Li,Y.;Wang,S.;
+Wang,L.;andChen,W.2022. LoRA:Low-RankAdaptation
+of Large Language Models. InInternational Conference on
+Learning Representations.
+Jin, W.; Min, T.; Yang, Y.; Kadhe, S. R.; Zhou, Y.; Wei,
+D.; Baracaldo, N.; and Lee, K. 2026. Entropy-Aware On-
+Policy Distillation of Language Models.arXiv preprint
+arXiv:2603.07079.
+Kazemnejad, A.; Aghajohari, M.; Portelance, E.; Sor-
+doni, A.; Reddy, S.; Courville, A.; and Le Roux, N.
+2024. VinePPO: Unlocking RL Potential for LLM Rea-
+soning through Refined Credit Assignment.arXiv preprint
+arXiv:2410.01679.
+Kim,Y.;andRush,A.M.2016. Sequence-LevelKnowledge
+Distillation. InProceedings of the Conference on Empirical
+Methods in Natural Language Processing.
+Ko,J.;Kim,S.;Chen,T.;andYun,S.-Y.2024.DistiLLM:To-
+wards Streamlined Distillation for Large Language Models.
+InInternational Conference on Machine Learning.
+Lambert, N.; Morrison, J.; Pyatkin, V.; Huang, S.; Ivison,
+H.; Brahman, F.; Miranda, L. J. V.; Liu, A.; Dziri, N.; Lyu,
+S.; Gu, Y.; Malik, S.; Graf, V.; Hwang, J. D.; Yang, J.; Bras,
+R. L.; Tafjord, O.; Wilhelm, C.; Soldaini, L.; Smith, N. A.;
+Wang, Y.; Dasigi, P.; and Hajishirzi, H. 2024. TÜLU 3:
+Pushing Frontiers in Open Language Model Post-Training.
+arXiv preprint arXiv:2411.15124.
+Li, Y.; Zhang, M.; Shen, D.; and Sun, Y. 2026. PHF: Priv-
+ileged Hidden Flow for On-Policy Self-Distillation.arXiv
+preprint arXiv:2606.29340.
+Lightman, H.; Kosaraju, V.; Burda, Y.; Edwards, H.; Baker,
+B.;Lee,T.;Leike,J.;Schulman,J.;Sutskever,I.;andCobbe,
+K.2024. Let’sVerifyStepbyStep. InInternationalConfer-
+ence on Learning Representations.
+Lin,C.;Chen,K.;andZhang,W.2026. ReNIO:Reweighting
+Negative Trajectory Importance for LLM On-Policy Distil-
+lation.arXiv preprint arXiv:2606.23104.
+Liu, X.; Wang, X.; Ma, Y.; Zhang, Y.; and Xiao, C. 2026a.
+When Are Teacher Tokens Reliable? Position-Weighted
+On-Policy Self-Distillation for Reasoning.arXiv preprint
+arXiv:2605.21606.
+Liu, Y.; Lou, J.; Guan, X.; Ji, Y.; Lin, H.; He, B.; Han, X.;
+Sun, L.; Yu, X.; and Lu, Y. 2026b. Your Teacher Can’t
+Help You Here: Combating Supervision Fidelity Decay in
+On-Policy Distillation.arXiv preprint arXiv:2605.30833.
+
+Lopez-Paz, D.; Bottou, L.; Schölkopf, B.; and Vapnik, V.
+2016. Unifying Distillation and Privileged Information. In
+International Conference on Learning Representations.
+Mathematical Association of America. 2024. 2024 Ameri-
+can Invitational Mathematics Examination. https://maa.org/
+maa-invitational-competitions/.
+Mathematical Association of America. 2025. 2025 Ameri-
+can Invitational Mathematics Examination. https://maa.org/
+maa-invitational-competitions/.
+Nguyen,D.;Xiao,H.;Prasad,A.;Khan,Z.;Das,A.;Zhang,
+A.; Sahu, S.; Lee, H.; Stengel-Eskin, E.; and Bansal, M.
+2026. AVSD: Adaptive-View Self-Distillation by Balancing
+Consensus and Teacher-Specific Privileged Signals.arXiv
+preprint arXiv:2605.20643.
+Ouyang, L.; Wu, J.; Jiang, X.; Almeida, D.; Wainwright, C.;
+Mishkin, P.; Zhang, C.; Agarwal, S.; Slama, K.; Ray, A.;
+Schulman, J.; Hilton, J.; Kelton, F.; Miller, L.; Simens, M.;
+Askell, A.; Welinder, P.; Christiano, P.; Leike, J.; and Lowe,
+R. 2022. Training Language Models to Follow Instructions
+with Human Feedback. InAdvances in Neural Information
+Processing Systems.
+Parthasarathi,P.;Reymond,M.;Chen,B.;Cui,Y.;andChan-
+dar, S. 2025. GRPO-λ: Credit Assignment Improves LLM
+Reasoning.arXiv preprint arXiv:2510.00194.
+Pinto,L.;Andrychowicz,M.;Welinder,P.;Zaremba,W.;and
+Abbeel, P. 2018. Asymmetric Actor Critic for Image-Based
+Robot Learning. InRobotics: Science and Systems.
+Rafailov, R.; Sharma, A.; Mitchell, E.; Ermon, S.; Manning,
+C. D.; and Finn, C. 2023. Direct Preference Optimization:
+Your Language Model is Secretly a Reward Model. InAd-
+vances in Neural Information Processing Systems.
+Ross, S.; Gordon, G. J.; and Bagnell, J. A. 2011. A Re-
+duction of Imitation Learning and Structured Prediction to
+No-Regret Online Learning. InProceedings of the Interna-
+tional Conference on Artificial Intelligence and Statistics.
+Schulman,J.;Moritz,P.;Levine,S.;Jordan,M.;andAbbeel,
+P.2016. High-DimensionalContinuousControlUsingGen-
+eralized Advantage Estimation. InInternational Conference
+on Learning Representations.
+Schulman, J.; Wolski, F.; Dhariwal, P.; Radford, A.; and
+Klimov,O.2017. ProximalPolicyOptimizationAlgorithms.
+arXiv preprint arXiv:1707.06347.
+Setlur, A.; Nagpal, C.; Fisch, A.; Geng, X.; Eisenstein, J.;
+Agarwal, R.; Agarwal, A.; Berant, J.; and Kumar, A. 2025.
+Rewarding Progress: Scaling Automated Process Verifiers
+for LLM Reasoning. InInternational Conference on Learn-
+ing Representations.
+Shao, Z.; Wang, P.; Zhu, Q.; Xu, R.; Song, J.; Bi, X.;
+Zhang, H.; Zhang, M.; Li, Y. K.; Wu, Y.; and Guo, D.
+2024. DeepSeekMath: Pushing the Limits of Mathemati-
+cal Reasoning in Open Language Models.arXiv preprint
+arXiv:2402.03300.
+Shen, Z.; Tong, J.; Yan, S.; Shen, C.; Chen, H.; Ye, W.; Hu,
+X.;Miao, R.;Wang,H.; Zhao,J.; Chen,G.;and Ye,J.2026.
+Purified OPSD: On-Policy Self-Distillation Without Losing
+How to Think.arXiv preprint arXiv:2607.02234.
+Sutton, R. S. 1988. Learning to Predict by the Methods of
+Temporal Differences.Machine Learning, 3(1): 9–44.
+Sutton, R. S.; McAllester, D.; Singh, S.; and Mansour, Y.
+2000. Policy Gradient Methods for Reinforcement Learn-
+ing with Function Approximation. InAdvances in Neural
+Information Processing Systems.
+Uesato, J.; Kushman, N.; Kumar, R.; Song, F.; Siegel, N.;
+Wang, L.; Creswell, A.; Irving, G.; and Higgins, I. 2022.
+Solving Math Word Problems with Process- and Outcome-
+Based Feedback.arXiv preprint arXiv:2211.14275.
+Vapnik,V.;andVashist,A.2009.ANewLearningParadigm:
+Learning Using Privileged Information.Neural Networks,
+22(5–6): 544–557.
+Wang, P.; Li, L.; Shao, Z.; Xu, R.; Dai, D.; Li, Y.; Chen,
+D.; Wu, Y.; and Sui, Z. 2024. Math-Shepherd: Verify and
+Reinforce LLMs Step-by-Step without Human Annotations.
+InProceedings of the Annual Meeting of the Association for
+Computational Linguistics.
+Wei, J.; Wang, X.; Schuurmans, D.; Bosma, M.; Ichter, B.;
+Xia, F.; Chi, E.; Le, Q. V.; and Zhou, D. 2022. Chain-
+of-Thought Prompting Elicits Reasoning in Large Language
+Models. InAdvancesinNeuralInformationProcessingSys-
+tems.
+Weihs, L.; Jain, U.; Liu, I.-J.; Salvador, J.; Lazebnik, S.;
+Kembhavi,A.;andSchwing,A.2021.BridgingtheImitation
+Gap by Adaptive Insubordination. InAdvances in Neural
+Information Processing Systems.
+Williams, R. J. 1992. Simple Statistical Gradient-Following
+AlgorithmsforConnectionistReinforcementLearning.Ma-
+chine Learning, 8(3–4): 229–256.
+Xie, Y.; Zhu, S.; Wen, T.; Chen, B.; and Wang, Y. 2026. On
+the Position Bias of On-Policy Distillation.arXiv preprint
+arXiv:2606.22600.
+Yang,A.;Li,A.;Yang,B.;Zhang,B.;Hui,B.;Zheng,B.;Yu,
+B.;Gao,C.;Huang,C.;Lv,C.;etal.2025. Qwen3Technical
+Report.arXiv preprint arXiv:2505.09388.
+Yu, Q.; Zhang, Z.; Zhu, R.; Yuan, Y.; Zuo, X.; Yue, Y.; Fan,
+T.; Liu, G.; Liu, L.; Liu, X.; Lin, H.; Lin, Z.; Ma, B.; Sheng,
+G.; Tong, Y.; Zhang, C.; Zhang, M.; Zhang, W.; Zhu, H.;
+Zhang, J.; Wang, Y.; Wu, Y.; Wang, Y.; et al. 2025. DAPO:
+An Open-Source LLM Reinforcement Learning System at
+Scale.arXiv preprint arXiv:2503.14476.
+Yue, Y.; Chen, Z.; Lu, R.; Zhao, A.; Wang, Z.; Yue, Y.;
+Song,S.;andHuang,G.2025.DoesReinforcementLearning
+ReallyIncentivizeReasoningCapacityinLLMsBeyondthe
+Base Model?arXiv preprint arXiv:2504.13837.
+Zelikman, E.; Wu, Y.; Mu, J.; and Goodman, N. D. 2022.
+STaR: Bootstrapping Reasoning with Reasoning. InAd-
+vances in Neural Information Processing Systems.
+Zhao, S.; Xie, Z.; Liu, M.; Huang, J.; Pang, G.; Chen, F.;
+and Grover, A. 2026. Self-Distilled Reasoner: On-Policy
+Self-DistillationforLargeLanguageModels.arXivpreprint
+arXiv:2601.18734.
+
+Overview.This appendix is organized into five parts. Ap-
+pendix A provides supplementary theoretical analysis of
+DASH, including the fixed-horizon gradient decomposition,
+the clipped local signal, the aggregation coefficients, the ef-
+fective supervision horizon, and the implemented gradient.
+Appendix B records result provenance, baseline instantia-
+tions, the exact checkpoint-selection rule, and implementa-
+tiondetailsnotincludedinthemainpaper,includingthecom-
+pleteLoRAconfiguration,optimizeranddistributed-training
+settings,teacherprompts,answerverification,andhardware.
+Appendix C reports the four-seed OPSD and DASH proto-
+col and uncertainty estimates over random seeds0,1,2,3.
+Appendix D presents the complete component and design-
+choice ablations, including fixed propagation coefficients,
+gatedirectionandsignals,coefficientscale,propagationsen-
+sitivity, divergence geometry, and vocabulary support. Ap-
+pendixEexaminesthecompatibilityofDASHwithoutcome-
+level optimization through the complete GRPO grid and a
+cross-scaleextension.Together,thesematerialscomplement
+the theoretical and empirical results in the main text with
+complete derivations, reproducibility details, and additional
+experimental evidence.
+A Supplementary Theoretical Analysis
+This section expands the theoretical analysis in the main
+text. It first restates and proves the fixed-horizon gradient
+decomposition, then connects that result to the local signal,
+aggregation coefficients, effective supervision horizons, and
+gradients used by DASH.
+A.1 Fixed-Horizon Construction
+Letπ θ denotethestudentpolicy.Foraproblemxwithprivi-
+legedinformationz,definethefiltrationF u =σ(x, z, y <u).
+Training rollouts use a deterministic maximum completion
+length(1,024tokensinthemainconfiguration).Wetherefore
+fixatruncationhorizonH≥1andrepresenteachrolloutas
+apaddedsequencey= (y 1, . . . , yH).Ifanend-of-sequence
+tokenisemittedatpositionT≤H,theprocesssubsequently
+remains in a parameter-independent absorbing state:
+πθ(⊥|s u) = 1,∇ θ logπ θ(⊥|s u) = 0, u > T,
+(13)
+wheres u = (x, y <u). We set every local signal to zero
+after termination. Conditional onx, the padded trajectory
+distribution is
+Pθ(y|x) =
+HY
+u=1
+πθ(yu |s u).(14)
+The main analysis considers the fixed-horizon surrogate
+JH(θ) =E (x,z)∼D Ey∼Pθ(·|x)
+"
+1
+H
+HX
+t=1
+dt
+#
+.(15)
+For fixed(x, z), the padded trajectory space is finite, so the
+gradient and the inner trajectory expectation commute term
+by term. Moreover,1/His deterministic and can be moved
+outsidethatexpectation.Thesearethetwopropertiesneeded
+below;theywouldnotfollowfromtreatingtherealizedlength
+Tas a constant outside an expectation over variable-length
+trajectories.
+A.2 Privileged Teacher
+Adapter-disabled privileged teacher.The privileged
+teacher is the frozen base network evaluated with the LoRA
+adapter disabled. Its parameters¯θtherefore remain indepen-
+dent of the trainable adapter parametersθ. Thus,
+πT
+t = sg[π¯θ(· |s t, z)],∇ θπT
+t = 0.(16)
+Under this frozen-teacher setting, the local forward KL
+dt =D KL
+ 
+πT
+t
+ πθ(· |s t)
+
+(17)
+dependsexplicitlyonθonlythroughthestudentconditional.
+Accordingly,∇loc
+θ dtdenotesdifferentiationthroughthatcon-
+ditional at the fixed sampled prefix, with both the teacher
+target and the discrete sampling path detached.
+A.3 Decomposition and Proof
+Proposition 2(Fixed-Horizon Gradient Decomposition).
+Letρ t be anF t-measurable per-position scalar whose ex-
+plicit dependence onθat a fixed sampled prefix is differen-
+tiable almost surely, and setρt = 0fort > T. Define
+J ρ
+H(θ) =E
+"
+1
+H
+HX
+t=1
+ρt
+#
+.(18)
+Then
+∇θJ ρ
+H(θ) =E
+"
+1
+H
+HX
+t=1
+∇loc
+θ ρt
++ 1
+H
+HX
+u=1
+Gρ
+u+1∇θ logπ θ(yu |s u)
+#
+,
+(19)
+whereG ρ
+u+1 :=PH
+t=u+1 ρt is the future signal-to-go after
+positionu.
+Proof.LetR(y;θ) = PH
+t=1 ρt.Thefinite-horizonconstruc-
+tion and the log-derivative identity give
+∇θJ ρ
+H(θ) = 1
+H E
+" HX
+t=1
+∇loc
+θ ρt
++R(y;θ)∇ θ logP θ(y|x)
+#
+.
+(20)
+By Eq. (14),
+∇θ logP θ(y|x) =
+HX
+u=1
+∇θ logπ θ(yu |s u).(21)
+The trajectory-dependent component is therefore
+HX
+u=1
+HX
+t=1
+ρt ∇θ logπ θ(yu |s u).(22)
+Fixt≤u. Becauseρ t isF t-measurable andF t ⊆ F u,
+it can be taken outside the conditional expectation overyu.
+Thescorehaszeroconditionalmeanevenafterconditioning
+
+on the privileged informationz, sincey u is sampled from
+πθ(· |s u). Hence, by the tower property,
+E[ρt∇θ logπ θ(yu |s u)]
+=E[ρ t E[∇θ logπ θ(yu |s u)| F u]] = 0. (23)
+Onlytermswitht > uremaininEq.(22);theirinnersumis
+Gρ
+u+1. Substitution into Eq. (20) proves Eq. (19).
+Specialization and padded positions.Takingρ t =d t
+recovers Proposition 1. The causal cancellation above also
+applies to the clipped signalr t defined below because it
+is determined by(s t, z)beforey t is sampled. For padded
+positions, both the local signal and the score are zero by
+construction, so the result is unaffected by the amount of
+padding betweenTandH.
+A.4 Clipped Local Signal
+Let
+ℓt,v =π T
+t (v) log πT
+t (v)
+πS
+t (v) (24)
+bethevocabulary-levelsummandoftheforwardKL,sothat
+dt = P
+v∈A ℓt,v. DASH applies the same pointwise upper
+clipping used in the main text:
+rt =
+X
+v∈A
+min(ℓt,v, τ).(25)
+Thus,r t ≤d t andr t ≤τ|A|. Because individual forward-
+KLsummandscanbenegative,theupper-clippedsumisnot
+guaranteed to be non-negative. This does not affect its use
+as the centered gate signal or as a local differentiable loss:
+rt isF t-measurable, and the usual automatic-differentiation
+subgradient is used at the clipping threshold.
+A.5 Aggregation Coefficients and Supervision
+Horizons
+The DASH recursion
+AT =r T , A t =r t +λ tAt+1 (26)
+unrolls as
+At =
+TX
+k=t
+
+
+k−1Y
+j=t
+λj
+
+ rk,(27)
+whereanemptyproductequalsone.Summingoverallstart-
+ing positions and exchanging the order of summation gives
+LDASH = 1
+T
+TX
+k=1
+ckrk, c k =
+kX
+t=1
+k−1Y
+j=t
+λj.(28)
+Separating thet=kterm yields the recursion stated in the
+main paper:
+c1 = 1, c k = 1 +λ k−1ck−1.(29)
+Since each sigmoid gate satisfies0< λj <1,
+1≤c k ≤k.(30)
+For a constant gateλ, the exact finite-length expression is
+ck = 1−λ k
+1−λ .(31)
+The effective supervision horizon beginning at positiont
+isthetotalpropagationmassassignedtothecurrentandlater
+positions:
+ht =
+TX
+k=t
+k−1Y
+j=t
+λj.(32)
+For a constant gate,
+ht = 1−λ T−t+1
+1−λ ,(33)
+which approaches1/(1−λ)as the remaining rollout length
+grows. Under DASH,λt = sg[σ(−κ(r t −¯r))], so a below-
+averagesignalleavestheboundaryafterpositiontmoreopen,
+whereasanabove-averagesignalrestrictspropagationacross
+that boundary. The coefficient and horizon views satisfy
+TX
+k=1
+ck =
+TX
+t=1
+ht,(34)
+becausebothsidessumthesamegateproductsoverallpairs
+1≤t≤k≤T.
+A.6 Gradient of the Implemented DASH
+Objective
+The gate construction is detached:
+λt = sg[σ(−κ(rt −¯r))],¯r= 1
+T
+TX
+t=1
+rt.(35)
+The sequence mean and all subsequent operations used to
+constructλ t andc k therefore carry no gradient. Conditional
+on a sampled rollout, the implemented backward pass is
+∇θLDASH = 1
+T
+TX
+k=1
+ck ∇loc
+θ rk.(36)
+Thus, DASH performs sequence-conditioned coefficient al-
+location over direct local-distillation gradients. The mean¯r
+couples positions when the detached coefficients are con-
+structed, but it does not introduce cross-position gradients
+through the gates.
+A.7 Relation to the Implemented Length
+Normalization
+Proposition 2 deliberately concerns the fixed-horizon surro-
+gateJ ρ
+H, whereas the implemented losses normalize each
+sampled rollout by its realized lengthT. For a fixed rollout,
+replacing1/Hwith1/Trescalesalllocalcoefficientsbythe
+same positive scalar. It therefore preserves both the uniform
+within-rollout coefficient profile of vanilla OPSD and the
+relativeDASHprofile(c 1, . . . , cT ).Wedonotclaimthatthe
+gradientofthevariable-lengthexpectedobjectiveisidentical
+to Eq. (19).
+A.8 Scope of the Decomposition
+The second term in Eq. (19) is a score-function trajectory
+term weighted by a sum of subsequent local signals. DASH
+
+does not estimate this term, introduce score-function gradi-
+ents, or perform future-to-past credit assignment. The coef-
+ficient families are also structurally different:Gρ
+u+1 aggre-
+gates signals after positionuand multiplies the score term,
+whereasc kisdeterminedbytheprecedinggatepathandmul-
+tipliesthedirectlocal-distillationgradientatpositionk.The
+decomposition is used only to motivate order-dependent co-
+efficient allocation within the differentiable local distillation
+channel; it does not imply that DASH recovers the omitted
+trajectory gradient.
+B Additional Reproducibility Details
+This section makes explicit which results are externally re-
+ported,whichareproducedbyourreruns,howeachcompari-
+sonmethodisinstantiated,andhowcheckpointsareselected.
+It then records the remaining implementation details recov-
+ered from the saved run artifacts and launch scripts.
+B.1 Result Provenance and Comparison Scope
+Table 3 separates external reference results from our reruns.
+Base, SFT, and GRPO are taken from Zhao et al. (Zhao
+etal.2026)andaremarkedwith†inTable1.Theseexternal
+valuesarenotsubjectedtoour200-stepbudgetorcheckpoint-
+selectionrule.AllremainingentriesinTable1areproduced
+by us.
+Method Source Training runs
+Base Zhao et al. Not applicable
+SFT, GRPO Zhao et al. As reported
+OPSD Our reruns∈ {0,1,2,3}
+EOPD Our rerun One (s= 0)
+AVSD Our rerun One (s= 0)
+PW-OPSD Our rerun One (s= 0)
+DASH Our reruns∈ {0,1,2,3}
+DASH ablations Our rerunss∈ {0,1,2,3}
+Table 3: Sources and training repetitions of the compared
+results.
+Thefour-seedOPSDandDASHmeansreducedependence
+onanysingletraininginitialization.Theyarenotinterpreted
+asstatisticalsignificancetestsagainstEOPD,AVSD,orPW-
+OPSD, which are single-run reruns, or against the external
+Base,SFT,andGRPOresults.Accordingly,claimsinvolving
+these methods refer to the compared or displayed results
+rather than to statistically significant differences.
+B.2 Baseline Instantiations
+For OPSD, EOPD, PW-OPSD, and DASH, the student re-
+ceivesonlytheproblemandgeneratesitsownon-policyroll-
+out. Theprivileged teacheruses the samebase networkwith
+the LoRA adapter disabled, additionally conditions on the
+referencesolution(includingthefinalanswer),andscoresthe
+student-generated tokens by teacher forcing on that rollout.
+Thesemethodssharethesamebasecheckpoint,dataprepro-
+cessing,studentrolloutconfiguration,andprivileged-teacher
+context in our reruns, while retaining their method-specific
+objectives.
+OPSD uniformly averages the local forward-KL sig-
+nals. EOPD instantiates its entropy-aware objective on this
+matchedprivileged-OPSDbackbone;itthereforeisolatesthe
+transfer of the EOPD objective rather than reproducing the
+external-teacherarchitectureused intheoriginalpaper.PW-
+OPSD retains its predefined position-dependent weights.
+DASH replaces uniform or predefined weighting with the
+proposed sequence-conditioned multi-step aggregation.
+AVSDretainsitsmethod-definingmulti-viewteachercon-
+struction rather than using the single reference-conditioned
+teacherabove.Itsteacherviewsareconstructedfromthefull
+solution, a partial solution, and the final answer. Apart from
+this method-specific construction and objective, our AVSD
+run uses the same base model, training data, 200-step outer
+budget, checkpoint-selection rule, and final evaluation pro-
+cedure as the other reruns.
+B.3 Training Budget and Checkpoint Selection
+Everymethodrerunbyusistrainedforthecomplete200op-
+timization steps. We save checkpoints every 20 steps, giving
+the candidate set
+C={20,40, . . . ,200}.(37)
+Fixamethodandmodelscale.Fortrainingseeds,candidate
+checkpointt∈ C, and benchmarkb, letm s,t,b denote the
+correspondingAvg@12 score.Wedefine theselectionscore
+as,t = 1
+3
+X
+b∈B
+ms,t,b,B={AIME24,AIME25,HMMT25},
+(38)
+and select
+t⋆
+s = arg max
+t∈C
+as,t.(39)
+All three benchmark scores for seedscome from this single
+selected checkpoint:
+ms,b =m s,t⋆s ,b.(40)
+For a single-run rerun,s= 0and the selected scores are
+reporteddirectlywithoutaveragingacrosstrainingruns.Be-
+causeBisalsothefinalbenchmarkset,thisisabest-within-
+200-step reporting protocol, not held-out validation selec-
+tion.
+Adapters and optimization.For the matched privileged-
+OPSDruns,theadapterconfigurationisidenticalatallthree
+model scales. LoRA is applied to the attention projections
+q_proj,k_proj,v_proj,ando_proj,andtotheMLP
+projectionsgate_proj,up_proj, anddown_proj.
+The effective scaling isα/r= 2.0and the adapter dropout
+is 0.05. For causal language modeling, bias, rank-stabilized
+LoRA,DoRA,andadditionaltrainablemodulesaredisabled.
+TheAmatrixusesKaiminginitializationandBisinitialized
+to zero. The base model, embeddings, and language-model
+head remain frozen.
+We use fused AdamW withβ 1 = 0.9,β 2 = 0.999,
+ϵ= 10 −8, and zero weight decay. The learning rate decays
+linearlyfromthevaluestatedinthemaintexttozerooverthe
+fixed optimization horizon, without warmup. Although the
+trainer storesnum_train_epochs=30, the step limit is
+
+reached first and therefore determines the training duration.
+Trainingusesbfloat16mixedprecision,DeepSpeedZeRO-2
+with optimizer-state offloading, gradient checkpointing, and
+FlashAttention-2. The maximum combined sequence length
+is20,000tokens.Theprivileged-teacherforwardpassiseval-
+uated with the adapter disabled, so only the student LoRA
+path receives parameter updates.
+Batchdecompositionandruntime.Table4combinesthe
+scale-specific DASH batch decomposition and runtime in-
+formation that previously required two separate tables. All
+threeconfigurationsrealizethesharedeffectivebatchsizeof
+64.
+Model Micro/accum./GPU Hardware; time
+Qwen3-1.7B4/2/8 8×A800;∼45 min
+Qwen3-4B2/4/8 8×A800;∼2.3 h
+Qwen3-8B1/16/4 4×A800;∼15 h
+Table 4: DASH batch decomposition and approximate run-
+time. The middle column reports per-device batch size, gra-
+dientaccumulation,andGPUcount;runtimeincludessched-
+uler and queue overhead.
+All DASH runs use NVIDIA A800-SXM4-80GB GPUs.
+On-policy rollout generation dominates runtime. Relative to
+vanilla OPSD, DASH requires no additional teacher or stu-
+dent forward pass; its extra scalar backward scan accounts
+forlessthan1%ofthesteptimeinmatchedruntimestamps.
+Matched OPSD-family prompts.For OPSD,
+EOPD, PW-OPSD, and DASH, the student receives
+only the problem, rendered with the Qwen3 chat
+template usingenable_thinking=Trueand
+add_generation_prompt=True; no additional
+instruction is appended. It then generates its own on-policy
+rollout. The privileged teacher uses the same base network
+with the LoRA adapter disabled. It receives the problem
+and reference solution, including the final answer, followed
+by the two instruction strings below, and scores the
+student-generated tokens by teacher forcing on the same
+rollout.
+The reference reasoning above arrives at
+the correct answer. Please analyze
+this solution and explain the key
+reasoning steps and problem-solving
+strategies employed. Do NOT use <
+think> tags. Do NOT derive your own
+solution. Simply analyze and explain
+the reference solution provided above
+.
+After reading the reference solution
+above, make sure you truly understand
+the reasoning behind each step -- do
+not copy or paraphrase it. Now,
+using your own words and independent
+reasoning, derive the same final
+answer to the problem above. Think
+step by step, explore different
+approaches, and don’t be afraid to
+backtrack or reconsider if something
+doesn’t work out:
+In these matched OPSD-family runs, the privileged refer-
+ence is never provided to the student during rollout genera-
+tion or benchmark evaluation. Training sequences use right
+padding.
+Answer extraction and equivalence checking.The
+reported benchmark scores use a symbolic veri-
+fier. For each model response, the evaluator extracts
+the last occurrence of\boxed{...}. If the ex-
+tracted prediction contains no math delimiters, it is
+wrapped in dollar signs. The prediction and ground
+truth are parsed withmath_verify.parse(...,
+fallback_mode="no_fallback"), and equiv-
+alence is checked with a five-second timeout using
+math_verify.verify. If parsing or verification raises
+an exception, the evaluator falls back to exact comparison
+after removing dollar signs and spaces and converting both
+strings to lowercase.
+The optional outcome-level extension uses a separate
+reward-timegrader.Itextractsthelastboxedanswer,applies
+the EleutherAI-stylestrip_stringnormalization, and
+checks exact string equality. The normalization canonical-
+izescommonformsinvolvingfractions,squareroots,delim-
+iters,units,percentages,degreesymbols,spaces,andsimple
+decimal or division expressions. This grader is used only
+by the optional outcome-level training objective, not for any
+reported benchmark score.
+C Four-Seed Results and Statistical
+Robustness
+ThematchedOPSDconfigurations,themainDASHconfigu-
+rations,andallDASHablationsaretrainedwithfourrandom
+seeds,s∈ {0,1,2,3}. For benchmarkb, letm s,b denote the
+Avg@12 score from the checkpoint selected for seedsby
+Eq.(39).Wereportthearithmeticmeanandsamplestandard
+deviation
+µb = 1
+4
+3X
+s=0
+ms,b,Std b =
+vuut1
+3
+3X
+s=0
+(ms,b −µ b)2.
+(41)
+The four training seeds are distinct from the 12 indepen-
+dentlysampledresponsesusedtocomputeAvg@12foreach
+problem.
+The OPSD and DASH entries in Table 1 are four-
+seed means. In particular, the Qwen3-1.7B OPSD mean
+(55.60,40.80,29.20), with macro-average41.87, is our
+matched rerun and serves as the common OPSD anchor in
+all Qwen3-1.7Bablations. Itis not theOPSD valuereported
+by Zhao et al. (Zhao et al. 2026).
+The benchmark-level standard deviations range from 0.30
+to 1.30 points across the three model scales. The means in
+Table 5 are those reported in the main paper. We do not
+derive a standard deviation for the macro-average from the
+three marginal standard deviations because the benchmark
+
+Benchmark 1.7B 4B 8B
+AIME 202458.30±0.90 77.20±0.70 78.90±0.90
+AIME 202545.80±1.20 71.10±0.80 71.40±1.00
+HMMT 202531.10±0.30 46.70±0.70 48.90±1.30
+Macro avg. 45.07 65.00 66.40
+Table 5: Four-seed DASH results. Benchmark rows report
+mean±sample standarddeviationoverseeds0,1,2,3(n=
+4);thelastrowisthearithmeticmeanofthethreebenchmark
+means.
+scores are paired within each training seed. The four-seed
+means reduce dependence on any single training initializa-
+tion;theyarenotusedtoclaimstatisticalsignificanceagainst
+the single-run or externally reported baselines.
+D Complete Ablation Results
+This section expands the ablations summarized in the main
+textwithcompletebenchmark-levelresultsandtheadditional
+gate-signal study. Unless otherwise specified, all variants
+useQwen3-1.7Bandthesametraining,checkpoint-selection,
+and evaluation protocol. Each entry, including the OPSD
+configuration obtained withλ= 0, is the mean Avg@12
+score over training seeds0,1,2,3; the final column is the
+unweighted mean of the three benchmark scores. Thus, the
+OPSD reference of 41.87 is our matched four-seed rerun
+ratherthananexternalresult.A24,A25,andH25abbreviate
+AIME 2024, AIME 2025, and HMMT February 2025.
+Propagation coefficient and gate direction.To separate
+multi-stepaggregationfromsequence-adaptivepropagation,
+we replace the token-wise gates with a constantλshared by
+allpositionsandrollouts;λ= 0recoversvanillaOPSD.The
+inverse-gap control instead preserves the sequence-relative
+gap, sigmoid gate, sensitivity, and backward recursion but
+reverses the sign of the gate input:
+λInv
+t = sg[σ(+κ(rt −¯r))].(42)
+Setting A24 A25 H25 Avg.
+OPSD (λ= 0) 55.60 40.80 29.20 41.87
+Fixedλ= 0.158.10 44.20 28.60 43.63
+Fixedλ= 0.358.10 42.20 29.40 43.23
+Fixedλ= 0.555.60 42.20 30.30 42.70
+Fixedλ= 0.756.40 41.90 29.40 42.57
+Fixedλ= 0.956.70 41.90 28.90 42.50
+Inverse-gap 56.90 41.90 27.50 42.10
+DASH 58.30 45.80 31.10 45.07
+Table 6: Four-seed means for fixed-coefficient and gate-
+direction controls;λ= 0is the matched OPSD reference.
+Every fixed coefficient improves over OPSD in macro-
+average;λ= 0.1is strongest among them at 43.63. Inverse-
+gapreaches42.10,whereasDASHreaches45.07,supporting
+sequence-conditioned propagation and the selected gap-to-
+gate direction.
+Coefficientallocation,averagescale,andgatesignal.Ta-
+ble 7 separates relative coefficient allocation from average
+scale and then varies the propagation-gate signal. Soft-OR
+smoothly combines the entropy and divergence-gap gates;
+the OPSD and DASH rows in the first panel serve as shared
+anchors.
+Variant A24 A25 H25 Avg.
+Coefficient allocation and scale
+OPSD 55.60 40.80 29.20 41.87
+Scale-matched OPSD 56.40 41.90 29.40 42.57
+Normalized DASH 57.80 44.40 30.60 44.27
+DASH 58.30 45.80 31.10 45.07
+Propagation-gate signal
+Entropy (κ= 1)58.6045.60 28.90 44.37
+Entropy (κ= 2) 55.80 42.50 30.30 42.87
+Entropy (κ= 5) 54.70 43.90 27.50 42.03
+Soft-OR (κ= 5) 56.90 41.9032.5043.77
+Table 7: Four-seed means for coefficient-allocation controls
+andalternativegatesignals.OPSDandDASHaretheshared
+anchors.
+Dynamic allocation improves macro-average by 2.40
+pointsattheOPSDscaleand2.50attheDASHscale;increas-
+ing scale alone contributes 0.70 and 0.80 points. Entropy
+and Soft-OR gates also improve over OPSD for suitable set-
+tings, while the divergence-gap anchor is strongest. Entropy
+changes from 44.37 atκ= 1to 42.03 atκ= 5.
+Sensitivity, divergence geometry, and vocabulary sup-
+port.Table 8 collects the remaining choices. The OPSD
+and DASH rows are shared anchors; tail rows merge teacher
+mass outside the retained top-kvocabulary.
+Setting A24 A25 H25 Avg.
+Shared anchors
+OPSD 55.60 40.80 29.20 41.87
+DASH 58.30 45.80 31.10 45.07
+Propagation sensitivity (alternatives toκ= 5)
+κ= 158.6042.20 29.20 43.33
+κ= 257.50 43.10 28.30 42.97
+κ= 1055.80 43.60 29.20 42.87
+κ= 2058.6043.10 29.40 43.70
+Local divergence (alternatives to forward KL)
+Symmetric JSD 51.90 38.10 24.70 38.23
+Reverse KL 54.70 41.10 28.60 41.47
+Vocabulary support (alternatives to full vocabulary)
+Top-100+tail 58.10 45.00 30.00 44.37
+Top-1+tail 48.10 33.60 22.80 34.83
+Table 8: Four-seed means for propagation sensitivity, diver-
+gence, and vocabulary support. DASH denotesκ= 5, for-
+ward KL, and full vocabulary.
+All sensitivities exceed OPSD, withκ= 5strongest at
+45.07. Forward KL exceeds symmetric JSD and reverse KL
+by 6.84 and 3.60 macro-average points. Top-100 support is
+
+only 0.70 points below the full vocabulary and remains 2.50
+above OPSD; top-1 support falls to 34.83.
+E Compatibility with Outcome-Level RL
+We optionally add a GRPO correctness term (weightη,
+Krollouts) to DASH;γ=λ= 0.95aggregation affects
+only the GRPO path. Results are four-seed Avg@12 means.
+Aggregation improves all four matched 1.7B settings (Ta-
+ble 9). The strongest hybrid,η= 0.3, K= 8, obtains
+(57.80,45.00,31.70; 44.83)on A24, A25, H25, and aver-
+age, versus(58.30,45.80,31.10; 45.07)for DASH. At 8B,
+the same hybrid reaches(80.00,73.30,48.60; 67.30)ver-
+sus DASH’s(78.90,71.40,48.90; 66.40), so compatibility
+is scale-dependent.
+η KNo agg. Agg. Gain
+0.3 4 42.80 43.17 +0.37
+0.3 8 43.1344.83+1.70
+0.5 4 42.50 42.97 +0.47
+0.5 8 42.50 44.50+2.00
+Table 9: Four-seed Qwen3-1.7B macro-averages for GRPO-
+path aggregation.

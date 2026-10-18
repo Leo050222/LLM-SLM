@@ -1,0 +1,37 @@
+{
+  "job_id": 105560,
+  "replaces_cancelled_job": 105524,
+  "preserved_main_jobs": [
+    105320,
+    105262
+  ],
+  "gpus": 4,
+  "nodes": 1,
+  "time_limit": "UNLIMITED",
+  "caps": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "prefix_count": 800,
+  "rollouts_per_cap_prefix": 8,
+  "total": 64000,
+  "code_scores": 40000,
+  "math_reasoning_scores": 24000,
+  "external_scoring_approved": true,
+  "input_sha256": "3404d4b6e760c37e18844dae80d793cc60574553d49d7b37f086e533d174eae7",
+  "validation": [
+    "byte-identical old800prefixes",
+    "same seeds",
+    "four cap0\u201320 tests pass",
+    "API_PROBE_PASSED"
+  ],
+  "note": "Runtime GPU witnesses await Slurm allocation."
+}

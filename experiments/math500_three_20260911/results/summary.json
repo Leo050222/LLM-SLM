@@ -1,0 +1,29 @@
+{
+  "student": {
+    "questions": 500,
+    "correct": 364,
+    "accuracy": 0.728,
+    "score_status": {
+      "ok": 500
+    },
+    "mean_tokens": 885.078
+  },
+  "online": {
+    "questions": 500,
+    "correct": 407,
+    "accuracy": 0.814,
+    "score_status": {
+      "ok": 500
+    },
+    "mean_tokens": 882.754
+  },
+  "prefix256": {
+    "questions": 500,
+    "correct": 376,
+    "accuracy": 0.752,
+    "score_status": {
+      "ok": 500
+    },
+    "mean_tokens": 876.026
+  }
+}

@@ -1,0 +1,9 @@
+# Clean corrective prompt: validation-gated formal launch
+
+User authorized actual validation followed by formal submission on 2026-09-21. Validation job 107923 replaces cancelled pending job 107920 and requests one node / two H800, one model pair. Eleven local and remote tests and actual Qwen tokenizer boundary checks passed. No logits reuse or sampling policy change.
+
+Validation gates: per-GPU seeded witness, the one-pair service smoke and forced-trigger handoff smoke, then 12 fixed pilot samples (first per each of eight datasets plus original indices 5,14,22,218 from previous failure analysis). Each pilot allows 1024 output tokens and 600 seconds, with one sequential trace. Exact prompt reconstruction and masked-token replacement are checked on actual requests. A periodic suffix with period 1..32 spanning 256 tokens fails the pilot. This is a conservative screening gate, not evidence of general accuracy or elimination of later loops. Formal generation retains its original stopping rules.
+
+Only if every gate passes, submit_formal.py submits one independent formal Slurm job with afterok on the validation job. It verifies unchanged Python code hashes and writes FORMAL_SUBMITTED.json under the output root. Failure blocks automatic formal submission and keeps diagnostics under slots/job_107923/pilot. No formal job has been pre-submitted.
+
+Formal: one node / eight H800, 64 CPUs / 512 GiB, 128 concurrent traces; 4571 frozen inputs, R1 seed 20260912, strict threshold >2, one weak replacement with original token banned, cumulative 2000s per trace. Full old draft is quoted once without artificial branch markers or tokenizer control tokens; final prefix IDs are exact; resume original context. Output root: /storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_ablation/weak_reprompt_clean_t2_k1_20260921.

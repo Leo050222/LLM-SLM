@@ -1,0 +1,14 @@
+{
+  "job_name": "codex-model-list-20261010-181455-8eba4b",
+  "job_uid": "ea6670b0-c662-44c3-a0fa-80d817551f17",
+  "namespace": "dcloud-auwomo",
+  "node": "172.16.1.4",
+  "phase": "Succeeded",
+  "exit_code": 0,
+  "matching_directory_found": true,
+  "search_completed": true,
+  "pvc": "prod-awomo-self-hosted-pvc01",
+  "read_only_storage": true,
+  "cleanup": "confirmed",
+  "remaining_test_pods": 0
+}

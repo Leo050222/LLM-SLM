@@ -1,0 +1,151 @@
+{
+  "rows": 9262,
+  "groups": [
+    {
+      "experiment": "strong4_weak17",
+      "dataset": "aime24",
+      "n": 30,
+      "correct": 5,
+      "accuracy": 0.16666666666666666
+    },
+    {
+      "experiment": "strong4_weak17",
+      "dataset": "aime25",
+      "n": 30,
+      "correct": 4,
+      "accuracy": 0.13333333333333333
+    },
+    {
+      "experiment": "strong4_weak17",
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 658,
+      "accuracy": 0.6092592592592593
+    },
+    {
+      "experiment": "strong4_weak17",
+      "dataset": "cruxeval_i",
+      "n": 800,
+      "correct": 62,
+      "accuracy": 0.0775
+    },
+    {
+      "experiment": "strong4_weak17",
+      "dataset": "cruxeval_o",
+      "n": 800,
+      "correct": 172,
+      "accuracy": 0.215
+    },
+    {
+      "experiment": "strong4_weak17",
+      "dataset": "humaneval_plus",
+      "n": 164,
+      "correct": 112,
+      "accuracy": 0.6829268292682927
+    },
+    {
+      "experiment": "strong4_weak17",
+      "dataset": "livecodebench",
+      "n": 175,
+      "correct": 39,
+      "accuracy": 0.22285714285714286
+    },
+    {
+      "experiment": "strong4_weak17",
+      "dataset": "math500",
+      "n": 500,
+      "correct": 384,
+      "accuracy": 0.768
+    },
+    {
+      "experiment": "strong4_weak17",
+      "dataset": "mbpp_plus",
+      "n": 378,
+      "correct": 209,
+      "accuracy": 0.5529100529100529
+    },
+    {
+      "experiment": "strong4_weak17",
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 314,
+      "accuracy": 0.4658753709198813
+    },
+    {
+      "experiment": "strong8_weak17",
+      "dataset": "aime24",
+      "n": 30,
+      "correct": 4,
+      "accuracy": 0.13333333333333333
+    },
+    {
+      "experiment": "strong8_weak17",
+      "dataset": "aime25",
+      "n": 30,
+      "correct": 5,
+      "accuracy": 0.16666666666666666
+    },
+    {
+      "experiment": "strong8_weak17",
+      "dataset": "bbh",
+      "n": 1080,
+      "correct": 609,
+      "accuracy": 0.5638888888888889
+    },
+    {
+      "experiment": "strong8_weak17",
+      "dataset": "cruxeval_i",
+      "n": 800,
+      "correct": 104,
+      "accuracy": 0.13
+    },
+    {
+      "experiment": "strong8_weak17",
+      "dataset": "cruxeval_o",
+      "n": 800,
+      "correct": 180,
+      "accuracy": 0.225
+    },
+    {
+      "experiment": "strong8_weak17",
+      "dataset": "humaneval_plus",
+      "n": 164,
+      "correct": 112,
+      "accuracy": 0.6829268292682927
+    },
+    {
+      "experiment": "strong8_weak17",
+      "dataset": "livecodebench",
+      "n": 175,
+      "correct": 41,
+      "accuracy": 0.2342857142857143
+    },
+    {
+      "experiment": "strong8_weak17",
+      "dataset": "math500",
+      "n": 500,
+      "correct": 384,
+      "accuracy": 0.768
+    },
+    {
+      "experiment": "strong8_weak17",
+      "dataset": "mbpp_plus",
+      "n": 378,
+      "correct": 207,
+      "accuracy": 0.5476190476190477
+    },
+    {
+      "experiment": "strong8_weak17",
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "correct": 295,
+      "accuracy": 0.43768545994065283
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3218792,
+    "completion_tokens": 102597,
+    "total_tokens": 3321389
+  },
+  "scoring_signature": "f97dc3d042667802f2c8e3393d69b57447dba0a52ca8d65610f709f93257be30"
+}

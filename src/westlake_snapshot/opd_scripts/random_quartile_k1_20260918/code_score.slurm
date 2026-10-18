@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH -J random_quartile_code_score
+#SBATCH -p yukaichenglab
+#SBATCH --account=yukaicheng
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=32
+#SBATCH --mem=64G
+#SBATCH --time=UNLIMITED
+#SBATCH --output=/storage/yukaichengLab/wangxin/test_eiloeo/opd_logs/random_quartile_code_score.%j.log
+#SBATCH --error=/storage/yukaichengLab/wangxin/test_eiloeo/opd_logs/random_quartile_code_score.%j.err
+set -Eeuo pipefail
+export PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
+unset HTTP_PROXY HTTPS_PROXY ALL_PROXY http_proxy https_proxy all_proxy
+S=/storage/yukaichengLab/wangxin/test_eiloeo/opd_scripts/random_quartile_k1_20260918
+P=/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_ablation/random_quartile_k1_20260918
+PY=/storage/yukaichengLab/wangxin/miniconda3/envs/verl-opd/bin/python
+mkdir -p "$P/judge"
+cp "$S/system_prompt.txt" "$P/judge/system_prompt.txt"
+cd "$S"
+$PY - <<'SMOKE'
+import json
+from code_scorer import sandbox,R
+p=json.loads((R/'opd_eval_code/code_reasoning_grid_20260913/data/HumanEvalPlus.jsonl').read_text().splitlines()[0])
+r=sandbox(dict(dataset='humaneval_plus',problem=p,solution=p['prompt']+p['canonical_solution']))
+assert r['correct'],r
+print('CODE_SCORING_SMOKE_PASSED',flush=True)
+SMOKE
+$PY "$S/score.py" --code-only

@@ -1,0 +1,22 @@
+{
+  "status": "NOT_SUBMITTED_CLUSTER_UNREACHABLE",
+  "checked_ports": [
+    10024,
+    10025
+  ],
+  "host": "172.16.78.35",
+  "reason": "TCP connection timed out from the authorized execution environment",
+  "prepared_jobs": [
+    "qwen3_4b",
+    "qwen3_8b"
+  ],
+  "datasets": {
+    "math500": 500,
+    "cruxeval_o": 800,
+    "cruxeval_i": 800,
+    "humaneval_plus": 164,
+    "mbpp_plus": 378,
+    "livecodebench": 175
+  },
+  "total_per_model": 2817
+}

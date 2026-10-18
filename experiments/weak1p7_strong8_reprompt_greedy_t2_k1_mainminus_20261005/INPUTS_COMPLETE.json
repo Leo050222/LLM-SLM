@@ -1,0 +1,28 @@
+{
+  "rows": 4631,
+  "sha256": "b45f1290d23ecb333512b1b57b985024e559b19dd3603f4bade2fb52bc20d877",
+  "counts": {
+    "cruxeval_o": 800,
+    "cruxeval_i": 800,
+    "humaneval_plus": 164,
+    "mbpp_plus": 378,
+    "livecodebench": 175,
+    "olympiad_bench": 674,
+    "bbh": 1080,
+    "math500": 500,
+    "aime24": 30,
+    "aime25": 30
+  },
+  "main_model": "Qwen3-1.7B",
+  "intervention_model": "Qwen3-8B",
+  "threshold": 2.0,
+  "k": 1,
+  "topk": 100,
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": -1
+  },
+  "trigger": "main_model_logprob(main_token) - intervention_model_logprob(main_token) > 2",
+  "intervention": "main model prompt repair; original main token banned; exactly one replacement token"
+}

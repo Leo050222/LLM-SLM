@@ -1,0 +1,24 @@
+{
+  "job_id": 107011,
+  "rows": 326830,
+  "existing_validated": 2254,
+  "max_new": 324576,
+  "shards": [
+    0,
+    1
+  ],
+  "model": "gpt-4o-mini",
+  "endpoint": "https://api.openlux.ai/v1/chat/completions",
+  "workers": 256,
+  "cpus": 16,
+  "memory": "48G",
+  "gpus": 0,
+  "time_limit": "UNLIMITED",
+  "status": "RUNNING",
+  "authorized": true,
+  "output": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rescore/math_grid_score_029041_20260919",
+  "node": "gnho011",
+  "processed_at_verification": 2300,
+  "reused_at_verification": 2254,
+  "unresolved_errors": 0
+}

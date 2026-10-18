@@ -1,0 +1,7 @@
+teacher_extra_tokens,prefixes,accuracy_increased,accuracy_increased_pct,accuracy_equal,accuracy_equal_pct,accuracy_decreased,accuracy_decreased_pct,mean_accuracy_change_pp
+0_to_100,1954,1025,52.46,667,34.14,262,13.41,16.22
+100_to_250,2283,1204,52.74,709,31.06,370,16.21,15.50
+250_to_500,2201,1165,52.93,645,29.30,391,17.76,14.66
+500_to_1000,1428,736,51.54,427,29.90,265,18.56,13.48
+ge_1000,373,188,50.40,127,34.05,58,15.55,11.63
+total_gt_0,8239,4318,52.41,2575,31.25,1346,16.34,14.92

@@ -1,0 +1,146 @@
+{
+  "accuracy": 0.701,
+  "accuracy_delta": 0.076,
+  "baseline_accuracy": 0.625,
+  "baseline_correct": 625,
+  "baseline_rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/ge6_test1000_qwen3_1_7b_baseline_seed20260811/merged/rollouts.jsonl",
+  "by_difficulty": {
+    "6.0": {
+      "accuracy_delta": 0.03257328990228013,
+      "baseline_accuracy": 0.6872964169381107,
+      "baseline_correct": 211,
+      "checkpoint_accuracy": 0.7198697068403909,
+      "checkpoint_correct": 221,
+      "mean_response_tokens": 12526.530944625407,
+      "paired": {
+        "baseline_only_correct": 24,
+        "both_correct": 187,
+        "both_wrong": 62,
+        "checkpoint_only_correct": 34
+      },
+      "rows": 307
+    },
+    "6.5": {
+      "accuracy_delta": 0.022222222222222223,
+      "baseline_accuracy": 0.6814814814814815,
+      "baseline_correct": 92,
+      "checkpoint_accuracy": 0.7037037037037037,
+      "checkpoint_correct": 95,
+      "mean_response_tokens": 11890.54074074074,
+      "paired": {
+        "baseline_only_correct": 13,
+        "both_correct": 79,
+        "both_wrong": 27,
+        "checkpoint_only_correct": 16
+      },
+      "rows": 135
+    },
+    "7.0": {
+      "accuracy_delta": 0.07236842105263158,
+      "baseline_accuracy": 0.625,
+      "baseline_correct": 95,
+      "checkpoint_accuracy": 0.6973684210526315,
+      "checkpoint_correct": 106,
+      "mean_response_tokens": 12372.348684210527,
+      "paired": {
+        "baseline_only_correct": 8,
+        "both_correct": 87,
+        "both_wrong": 38,
+        "checkpoint_only_correct": 19
+      },
+      "rows": 152
+    },
+    "7.5": {
+      "accuracy_delta": 0.11864406779661017,
+      "baseline_accuracy": 0.6016949152542372,
+      "baseline_correct": 71,
+      "checkpoint_accuracy": 0.7203389830508474,
+      "checkpoint_correct": 85,
+      "mean_response_tokens": 13194.406779661016,
+      "paired": {
+        "baseline_only_correct": 8,
+        "both_correct": 63,
+        "both_wrong": 25,
+        "checkpoint_only_correct": 22
+      },
+      "rows": 118
+    },
+    "8.0": {
+      "accuracy_delta": 0.11616161616161616,
+      "baseline_accuracy": 0.5808080808080808,
+      "baseline_correct": 115,
+      "checkpoint_accuracy": 0.696969696969697,
+      "checkpoint_correct": 138,
+      "mean_response_tokens": 14129.277777777777,
+      "paired": {
+        "baseline_only_correct": 17,
+        "both_correct": 98,
+        "both_wrong": 43,
+        "checkpoint_only_correct": 40
+      },
+      "rows": 198
+    },
+    "8.5": {
+      "accuracy_delta": 0.208955223880597,
+      "baseline_accuracy": 0.44776119402985076,
+      "baseline_correct": 30,
+      "checkpoint_accuracy": 0.6567164179104478,
+      "checkpoint_correct": 44,
+      "mean_response_tokens": 12392.462686567163,
+      "paired": {
+        "baseline_only_correct": 8,
+        "both_correct": 22,
+        "both_wrong": 15,
+        "checkpoint_only_correct": 22
+      },
+      "rows": 67
+    },
+    "9.0": {
+      "accuracy_delta": 0.043478260869565216,
+      "baseline_accuracy": 0.4782608695652174,
+      "baseline_correct": 11,
+      "checkpoint_accuracy": 0.5217391304347826,
+      "checkpoint_correct": 12,
+      "mean_response_tokens": 10822.826086956522,
+      "paired": {
+        "baseline_only_correct": 4,
+        "both_correct": 7,
+        "both_wrong": 7,
+        "checkpoint_only_correct": 5
+      },
+      "rows": 23
+    }
+  },
+  "checkpoint_step": 80,
+  "correct": 701,
+  "data": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_data/deepmath_ge6_opd_train15pct_seed20260811/test_1000.parquet",
+  "data_sha256": "6ef8e66d181b7522bad2904ad1fcf20d8fc152af0c9d7eb05e07a9f2f0415ae0",
+  "elapsed_seconds_generate_sum_shards": 9227.99290060997,
+  "finish_reason": {
+    "length": 3,
+    "stop": 997
+  },
+  "max_response_tokens_observed": 40264,
+  "mean_response_tokens": 12765.222,
+  "model": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_checkpoints/qwen3_1_7b_from_14b_deepmath_ge6_train15pct_student_top16_rkl_16h800/global_step_80/actor/huggingface",
+  "paired": {
+    "baseline_only_correct": 82,
+    "both_correct": 543,
+    "both_wrong": 217,
+    "checkpoint_only_correct": 158
+  },
+  "rows": 1000,
+  "sampling": {
+    "max_model_len": 40960,
+    "max_response_tokens": 40264,
+    "seed": 20260811,
+    "temperature": 1.0,
+    "thinking": true,
+    "top_k": -1,
+    "top_p": 1.0
+  },
+  "status": "DEEPMATH_GE6_TOP16_RKL_CHECKPOINT_EVAL_OK",
+  "thinking_close_tag": 997,
+  "thinking_open_tag": 1000,
+  "total_response_tokens": 12765222
+}

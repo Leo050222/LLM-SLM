@@ -1,0 +1,37 @@
+{
+  "counts": {
+    "cruxeval_o": 800,
+    "cruxeval_i": 800,
+    "humaneval_plus": 164,
+    "mbpp_plus": 378,
+    "livecodebench": 175
+  },
+  "total_rows": 2317,
+  "configurations": 27,
+  "total_rollouts": 62559,
+  "thinking": false,
+  "temperature": 1,
+  "top_p": 1,
+  "versions": {
+    "humaneval_plus": "v0.1.10",
+    "mbpp_plus": "v0.2.0",
+    "livecodebench": "incremental v6 175 (not cumulative release_v6)"
+  },
+  "lcb_dates": [
+    "2025-01-04T00:00:00",
+    "2025-04-06T00:00:00"
+  ],
+  "sha256": {
+    "MbppPlus.jsonl": "b54e762755248ca411b523c917fa9f93c07b5ff2966bf60b3917b853926a3dad",
+    "HumanEvalPlus.jsonl.gz": "272720b90ac375502c8ed23cd791c2a93dfb22a911641a494da74a426c09f101",
+    "MbppPlus.jsonl.gz": "af43697e8791c4c149bdfd6b489d8b5412507551ac20e28a439f650b8225db63",
+    "cruxeval.jsonl": "8368b81047dc5014e4caf5a2f97604eff7644e0ecd7415e3ceeb184bbc2e0c96",
+    "HumanEvalPlus.jsonl": "42526ec0e7d5f3ee0b06d6ced98f8c8bae3d76519151bfb3d36f79010645bd7f",
+    "livecodebench_v6_incremental.jsonl": "bb4c364f71921c4495a6ad15abe1a927350b720009f4933e2e71f8af0f6fd1f5"
+  },
+  "repos": {
+    "cruxeval": "190faf16d175b5847b0af05d937872b1fb395942",
+    "evalplus": "26d6d00bb1fd0fa37f39c99d5290da67891d1c5e",
+    "LiveCodeBench": "28fef95ea8c9f7a547c8329f2cd3d32b92c1fa24"
+  }
+}

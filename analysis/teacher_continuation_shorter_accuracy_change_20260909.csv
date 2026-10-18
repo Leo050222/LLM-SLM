@@ -1,0 +1,7 @@
+teacher_minus_student_continuation_tokens,prefixes,accuracy_increased_count,accuracy_increased_percent,accuracy_equal_count,accuracy_equal_percent,accuracy_decreased_count,accuracy_decreased_percent,mean_accuracy_lift_pp
+less_than_-1000,136,85,62.5000,42,30.8824,9,6.6176,30.6985
+-1000_to_-500,571,421,73.7303,109,19.0893,41,7.1804,32.8371
+-500_to_-250,1084,740,68.2657,249,22.9705,95,8.7638,27.1333
+-250_to_-100,1520,934,61.4474,404,26.5789,182,11.9737,21.3240
+-100_to_0,1682,947,56.3020,538,31.9857,197,11.7122,18.5419
+combined_less_than_0,4993,3127,62.6277,1342,26.8776,524,10.4947,23.2200

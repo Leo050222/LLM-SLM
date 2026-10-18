@@ -1,0 +1,32 @@
+{
+  "job_name": "codex-jfs-user-search-20261011-140947-de4f20",
+  "job_uid": "680b6ab7-72ff-4e74-994c-8f6dff262b7c",
+  "wait_exit_code": 0,
+  "status": {
+    "completionTime": "2026-10-11T06:10:13Z",
+    "conditions": [
+      {
+        "lastProbeTime": "2026-10-11T06:10:13Z",
+        "lastTransitionTime": "2026-10-11T06:10:13Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "SuccessCriteriaMet"
+      },
+      {
+        "lastProbeTime": "2026-10-11T06:10:13Z",
+        "lastTransitionTime": "2026-10-11T06:10:13Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "Complete"
+      }
+    ],
+    "ready": 0,
+    "startTime": "2026-10-11T06:09:52Z",
+    "succeeded": 1,
+    "terminating": 0,
+    "uncountedTerminatedPods": {}
+  },
+  "cleanup_confirmed": true
+}

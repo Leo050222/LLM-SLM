@@ -1,0 +1,25 @@
+{
+  "status": "STUDENT_TOP16_TRACE_DIAGNOSTIC_OK",
+  "topk": 16,
+  "selected_rollouts": 47,
+  "tokens": 620434,
+  "metric": "renormalized KL(student || teacher) on student-selected Top-16 support",
+  "token_weighted_mean": {
+    "student_top16_renorm_kl": 0.2067379355430603,
+    "student_teacher_top16_overlap": 0.7298077940940857,
+    "top1_agreement": 0.8671429999000699,
+    "student_sample_logprob": -0.3301849365234375,
+    "teacher_sample_logprob": -0.5415627360343933,
+    "sample_logprob_gap_student_minus_teacher": 0.21137776970863342,
+    "sampled_reverse_kl_k3": 0.21236485242843628
+  },
+  "rollout_weighted_mean": {
+    "student_top16_renorm_kl": 0.21309874951839447,
+    "student_teacher_top16_overlap": 0.7280701398849487,
+    "top1_agreement": 0.862843982952036,
+    "student_sample_logprob": -0.3400896191596985,
+    "teacher_sample_logprob": -0.5587336421012878,
+    "sample_logprob_gap_student_minus_teacher": 0.21864399313926697,
+    "sampled_reverse_kl_k3": 0.2171781063079834
+  }
+}

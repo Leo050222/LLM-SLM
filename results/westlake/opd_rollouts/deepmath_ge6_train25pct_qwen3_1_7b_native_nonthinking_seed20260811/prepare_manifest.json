@@ -1,0 +1,156 @@
+{
+  "num_shards": 16,
+  "padding_rows": 50,
+  "rows": 14208,
+  "rows_per_shard": 888,
+  "sharding": "dataset_index modulo 16",
+  "shards": [
+    {
+      "max_dataset_index": 14192,
+      "min_dataset_index": 0,
+      "padding_rows": 3,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_00.parquet",
+      "rows": 888,
+      "sha256": "6743c523ea13efd392b5738684a212286564ce67c3ac1b37b20d659c5c503e63",
+      "shard_index": 0
+    },
+    {
+      "max_dataset_index": 14193,
+      "min_dataset_index": 1,
+      "padding_rows": 3,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_01.parquet",
+      "rows": 888,
+      "sha256": "a1740f2b74af9d6e23bd80f2b1e35b86ddf37458ed0a717de0451e01f38804d4",
+      "shard_index": 1
+    },
+    {
+      "max_dataset_index": 14194,
+      "min_dataset_index": 2,
+      "padding_rows": 3,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_02.parquet",
+      "rows": 888,
+      "sha256": "2cda3988a3842ff8ecbe7abb4f5927795488071e553bc5c7e732a40583a5d8af",
+      "shard_index": 2
+    },
+    {
+      "max_dataset_index": 14195,
+      "min_dataset_index": 3,
+      "padding_rows": 3,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_03.parquet",
+      "rows": 888,
+      "sha256": "063c6198cd01508975ef4ebb4e1868f2ae0618a90297df979a7f65834e9739a3",
+      "shard_index": 3
+    },
+    {
+      "max_dataset_index": 14196,
+      "min_dataset_index": 4,
+      "padding_rows": 3,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_04.parquet",
+      "rows": 888,
+      "sha256": "4a93cfcb6017c3aa36c813fcbfaf23c78275dc0780033d083f1de4a5b94f07f8",
+      "shard_index": 4
+    },
+    {
+      "max_dataset_index": 14197,
+      "min_dataset_index": 5,
+      "padding_rows": 3,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_05.parquet",
+      "rows": 888,
+      "sha256": "4433c9c740d6f3e255b7bd5b9bec5dea9f2b2a03e6057cfb259b9ddd813213f6",
+      "shard_index": 5
+    },
+    {
+      "max_dataset_index": 14198,
+      "min_dataset_index": 6,
+      "padding_rows": 3,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_06.parquet",
+      "rows": 888,
+      "sha256": "d3cc041799b0f11ebcd2d8f4f203ba4657bfef18c155afc4c047bef275b8b860",
+      "shard_index": 6
+    },
+    {
+      "max_dataset_index": 14199,
+      "min_dataset_index": 7,
+      "padding_rows": 3,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_07.parquet",
+      "rows": 888,
+      "sha256": "6a8494bf323495887c05a6997b9d0578049d8bf90d1475600a55f1536ff7bc5f",
+      "shard_index": 7
+    },
+    {
+      "max_dataset_index": 14200,
+      "min_dataset_index": 8,
+      "padding_rows": 3,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_08.parquet",
+      "rows": 888,
+      "sha256": "30b4dd709d4acce0581e1a0eb4463411b4efada7bb920d271bfb658adc5a2606",
+      "shard_index": 8
+    },
+    {
+      "max_dataset_index": 14201,
+      "min_dataset_index": 9,
+      "padding_rows": 3,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_09.parquet",
+      "rows": 888,
+      "sha256": "0d780e4493bdc3afd16513aab16fa06eb93358929e21c2617b68990b89b02f44",
+      "shard_index": 9
+    },
+    {
+      "max_dataset_index": 14202,
+      "min_dataset_index": 10,
+      "padding_rows": 3,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_10.parquet",
+      "rows": 888,
+      "sha256": "f430c44df1b7afd41d9abfcc2211b608ac41c07b8dc83a83795c691a5150d481",
+      "shard_index": 10
+    },
+    {
+      "max_dataset_index": 14203,
+      "min_dataset_index": 11,
+      "padding_rows": 3,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_11.parquet",
+      "rows": 888,
+      "sha256": "790c9bd7f184b0ad2d984692b51ec70119156de96c3c4d5efdeaa5edd9d65bfc",
+      "shard_index": 11
+    },
+    {
+      "max_dataset_index": 14204,
+      "min_dataset_index": 12,
+      "padding_rows": 3,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_12.parquet",
+      "rows": 888,
+      "sha256": "80657abacf027c7ca26daaee54ccc85dab0bb19c65281227e6c61017f4f875f3",
+      "shard_index": 12
+    },
+    {
+      "max_dataset_index": 14205,
+      "min_dataset_index": 13,
+      "padding_rows": 3,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_13.parquet",
+      "rows": 888,
+      "sha256": "ed42631780bc9d4b31ba32c2929dd3dbc9c373a6a573f4f3a44eefdc0357d28c",
+      "shard_index": 13
+    },
+    {
+      "max_dataset_index": 14206,
+      "min_dataset_index": 14,
+      "padding_rows": 4,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_14.parquet",
+      "rows": 888,
+      "sha256": "8f1ed48eb9b0542f4d4761dbe6be371b4637f9cfc48b0c15026d7ddc4f319ed6",
+      "shard_index": 14
+    },
+    {
+      "max_dataset_index": 14207,
+      "min_dataset_index": 15,
+      "padding_rows": 4,
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/inputs/shard_15.parquet",
+      "rows": 888,
+      "sha256": "16b789c1a66e2eb013caaba3dca0401ce15e310ef79bc0102408ab724c3e9504",
+      "shard_index": 15
+    }
+  ],
+  "source": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_data/deepmath_ge6_opd_train25pct_perdifficulty_seed20260823/train.parquet",
+  "source_sha256": "fdcb58732d22f5ab27d111f07c8746836d983c5d15d1d800970154ea1f3cfc91",
+  "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_PREPARED"
+}

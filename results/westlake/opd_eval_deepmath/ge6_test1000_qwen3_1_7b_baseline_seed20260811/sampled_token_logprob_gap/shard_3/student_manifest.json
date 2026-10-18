@@ -1,0 +1,1510 @@
+{
+  "status": "DEEPMATH_BASELINE_STUDENT_SAMPLED_LOGPROB_OK",
+  "model": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+  "rows": 250,
+  "tokens": 2469206,
+  "definition": "log pi_model(y_t | s_t) for the actual baseline student-sampled token",
+  "elapsed_seconds": 80.98830143199302,
+  "items": [
+    {
+      "dataset_index": 3,
+      "response_tokens": 16207,
+      "mean_logprob": -0.3375716209411621,
+      "cached": false
+    },
+    {
+      "dataset_index": 7,
+      "response_tokens": 5550,
+      "mean_logprob": -0.25427818298339844,
+      "cached": false
+    },
+    {
+      "dataset_index": 11,
+      "response_tokens": 7553,
+      "mean_logprob": -0.26835325360298157,
+      "cached": false
+    },
+    {
+      "dataset_index": 15,
+      "response_tokens": 7476,
+      "mean_logprob": -0.43485715985298157,
+      "cached": false
+    },
+    {
+      "dataset_index": 19,
+      "response_tokens": 28825,
+      "mean_logprob": -0.2533230781555176,
+      "cached": false
+    },
+    {
+      "dataset_index": 23,
+      "response_tokens": 27996,
+      "mean_logprob": -0.2132054567337036,
+      "cached": false
+    },
+    {
+      "dataset_index": 27,
+      "response_tokens": 7885,
+      "mean_logprob": -0.40755078196525574,
+      "cached": false
+    },
+    {
+      "dataset_index": 31,
+      "response_tokens": 9278,
+      "mean_logprob": -0.24559327960014343,
+      "cached": false
+    },
+    {
+      "dataset_index": 35,
+      "response_tokens": 8715,
+      "mean_logprob": -0.395327091217041,
+      "cached": false
+    },
+    {
+      "dataset_index": 39,
+      "response_tokens": 9035,
+      "mean_logprob": -0.4275864362716675,
+      "cached": false
+    },
+    {
+      "dataset_index": 43,
+      "response_tokens": 4531,
+      "mean_logprob": -0.3022814393043518,
+      "cached": false
+    },
+    {
+      "dataset_index": 47,
+      "response_tokens": 8526,
+      "mean_logprob": -0.35829976201057434,
+      "cached": false
+    },
+    {
+      "dataset_index": 51,
+      "response_tokens": 13342,
+      "mean_logprob": -0.2761801481246948,
+      "cached": false
+    },
+    {
+      "dataset_index": 55,
+      "response_tokens": 9891,
+      "mean_logprob": -0.24400343000888824,
+      "cached": false
+    },
+    {
+      "dataset_index": 59,
+      "response_tokens": 7360,
+      "mean_logprob": -0.23261162638664246,
+      "cached": false
+    },
+    {
+      "dataset_index": 63,
+      "response_tokens": 10810,
+      "mean_logprob": -0.26746925711631775,
+      "cached": false
+    },
+    {
+      "dataset_index": 67,
+      "response_tokens": 5745,
+      "mean_logprob": -0.406015545129776,
+      "cached": false
+    },
+    {
+      "dataset_index": 71,
+      "response_tokens": 34974,
+      "mean_logprob": -0.2120496779680252,
+      "cached": false
+    },
+    {
+      "dataset_index": 75,
+      "response_tokens": 10372,
+      "mean_logprob": -0.2559894025325775,
+      "cached": false
+    },
+    {
+      "dataset_index": 79,
+      "response_tokens": 7665,
+      "mean_logprob": -0.46184614300727844,
+      "cached": false
+    },
+    {
+      "dataset_index": 83,
+      "response_tokens": 24665,
+      "mean_logprob": -0.3261384069919586,
+      "cached": false
+    },
+    {
+      "dataset_index": 87,
+      "response_tokens": 7442,
+      "mean_logprob": -0.33733469247817993,
+      "cached": false
+    },
+    {
+      "dataset_index": 91,
+      "response_tokens": 9184,
+      "mean_logprob": -0.378741979598999,
+      "cached": false
+    },
+    {
+      "dataset_index": 95,
+      "response_tokens": 12597,
+      "mean_logprob": -0.27244335412979126,
+      "cached": false
+    },
+    {
+      "dataset_index": 99,
+      "response_tokens": 7079,
+      "mean_logprob": -0.5084697604179382,
+      "cached": false
+    },
+    {
+      "dataset_index": 103,
+      "response_tokens": 8623,
+      "mean_logprob": -0.1559528261423111,
+      "cached": false
+    },
+    {
+      "dataset_index": 107,
+      "response_tokens": 7264,
+      "mean_logprob": -0.3330844044685364,
+      "cached": false
+    },
+    {
+      "dataset_index": 111,
+      "response_tokens": 8794,
+      "mean_logprob": -0.3816043734550476,
+      "cached": false
+    },
+    {
+      "dataset_index": 115,
+      "response_tokens": 12868,
+      "mean_logprob": -0.24341651797294617,
+      "cached": false
+    },
+    {
+      "dataset_index": 119,
+      "response_tokens": 8982,
+      "mean_logprob": -0.47445112466812134,
+      "cached": false
+    },
+    {
+      "dataset_index": 123,
+      "response_tokens": 26309,
+      "mean_logprob": -0.22806786000728607,
+      "cached": false
+    },
+    {
+      "dataset_index": 127,
+      "response_tokens": 6480,
+      "mean_logprob": -0.2656536400318146,
+      "cached": false
+    },
+    {
+      "dataset_index": 131,
+      "response_tokens": 6922,
+      "mean_logprob": -0.3489390015602112,
+      "cached": false
+    },
+    {
+      "dataset_index": 135,
+      "response_tokens": 12035,
+      "mean_logprob": -0.37998318672180176,
+      "cached": false
+    },
+    {
+      "dataset_index": 139,
+      "response_tokens": 4032,
+      "mean_logprob": -0.3347615897655487,
+      "cached": false
+    },
+    {
+      "dataset_index": 143,
+      "response_tokens": 8526,
+      "mean_logprob": -0.3267975151538849,
+      "cached": false
+    },
+    {
+      "dataset_index": 147,
+      "response_tokens": 7280,
+      "mean_logprob": -0.44881999492645264,
+      "cached": false
+    },
+    {
+      "dataset_index": 151,
+      "response_tokens": 9245,
+      "mean_logprob": -0.4276280701160431,
+      "cached": false
+    },
+    {
+      "dataset_index": 155,
+      "response_tokens": 6937,
+      "mean_logprob": -0.41358840465545654,
+      "cached": false
+    },
+    {
+      "dataset_index": 159,
+      "response_tokens": 9826,
+      "mean_logprob": -0.3602086007595062,
+      "cached": false
+    },
+    {
+      "dataset_index": 163,
+      "response_tokens": 6914,
+      "mean_logprob": -0.29570499062538147,
+      "cached": false
+    },
+    {
+      "dataset_index": 167,
+      "response_tokens": 16364,
+      "mean_logprob": -0.40640097856521606,
+      "cached": false
+    },
+    {
+      "dataset_index": 171,
+      "response_tokens": 7317,
+      "mean_logprob": -0.2757296562194824,
+      "cached": false
+    },
+    {
+      "dataset_index": 175,
+      "response_tokens": 8486,
+      "mean_logprob": -0.27289852499961853,
+      "cached": false
+    },
+    {
+      "dataset_index": 179,
+      "response_tokens": 7242,
+      "mean_logprob": -0.29778069257736206,
+      "cached": false
+    },
+    {
+      "dataset_index": 183,
+      "response_tokens": 4173,
+      "mean_logprob": -0.3582872152328491,
+      "cached": false
+    },
+    {
+      "dataset_index": 187,
+      "response_tokens": 6756,
+      "mean_logprob": -0.23898711800575256,
+      "cached": false
+    },
+    {
+      "dataset_index": 191,
+      "response_tokens": 4314,
+      "mean_logprob": -0.3460058271884918,
+      "cached": false
+    },
+    {
+      "dataset_index": 195,
+      "response_tokens": 4264,
+      "mean_logprob": -0.3469662666320801,
+      "cached": false
+    },
+    {
+      "dataset_index": 199,
+      "response_tokens": 7614,
+      "mean_logprob": -0.30041784048080444,
+      "cached": false
+    },
+    {
+      "dataset_index": 203,
+      "response_tokens": 4280,
+      "mean_logprob": -0.44131138920783997,
+      "cached": false
+    },
+    {
+      "dataset_index": 207,
+      "response_tokens": 5304,
+      "mean_logprob": -0.3156432509422302,
+      "cached": false
+    },
+    {
+      "dataset_index": 211,
+      "response_tokens": 9981,
+      "mean_logprob": -0.4360974431037903,
+      "cached": false
+    },
+    {
+      "dataset_index": 215,
+      "response_tokens": 13253,
+      "mean_logprob": -0.2928512990474701,
+      "cached": false
+    },
+    {
+      "dataset_index": 219,
+      "response_tokens": 5438,
+      "mean_logprob": -0.4226638078689575,
+      "cached": false
+    },
+    {
+      "dataset_index": 223,
+      "response_tokens": 6852,
+      "mean_logprob": -0.37626373767852783,
+      "cached": false
+    },
+    {
+      "dataset_index": 227,
+      "response_tokens": 6456,
+      "mean_logprob": -0.41448718309402466,
+      "cached": false
+    },
+    {
+      "dataset_index": 231,
+      "response_tokens": 3884,
+      "mean_logprob": -0.280921995639801,
+      "cached": false
+    },
+    {
+      "dataset_index": 235,
+      "response_tokens": 17600,
+      "mean_logprob": -0.4109390676021576,
+      "cached": false
+    },
+    {
+      "dataset_index": 239,
+      "response_tokens": 9255,
+      "mean_logprob": -0.5009065270423889,
+      "cached": false
+    },
+    {
+      "dataset_index": 243,
+      "response_tokens": 5643,
+      "mean_logprob": -0.432861328125,
+      "cached": false
+    },
+    {
+      "dataset_index": 247,
+      "response_tokens": 7181,
+      "mean_logprob": -0.4547637403011322,
+      "cached": false
+    },
+    {
+      "dataset_index": 251,
+      "response_tokens": 20138,
+      "mean_logprob": -0.33534684777259827,
+      "cached": false
+    },
+    {
+      "dataset_index": 255,
+      "response_tokens": 4401,
+      "mean_logprob": -0.405891090631485,
+      "cached": false
+    },
+    {
+      "dataset_index": 259,
+      "response_tokens": 24073,
+      "mean_logprob": -0.23153521120548248,
+      "cached": false
+    },
+    {
+      "dataset_index": 263,
+      "response_tokens": 17787,
+      "mean_logprob": -0.3044404089450836,
+      "cached": false
+    },
+    {
+      "dataset_index": 267,
+      "response_tokens": 5750,
+      "mean_logprob": -0.29808464646339417,
+      "cached": false
+    },
+    {
+      "dataset_index": 271,
+      "response_tokens": 11386,
+      "mean_logprob": -0.18978361785411835,
+      "cached": false
+    },
+    {
+      "dataset_index": 275,
+      "response_tokens": 17609,
+      "mean_logprob": -0.2369803637266159,
+      "cached": false
+    },
+    {
+      "dataset_index": 279,
+      "response_tokens": 3184,
+      "mean_logprob": -0.3815937042236328,
+      "cached": false
+    },
+    {
+      "dataset_index": 283,
+      "response_tokens": 9622,
+      "mean_logprob": -0.29374757409095764,
+      "cached": false
+    },
+    {
+      "dataset_index": 287,
+      "response_tokens": 2424,
+      "mean_logprob": -0.36264485120773315,
+      "cached": false
+    },
+    {
+      "dataset_index": 291,
+      "response_tokens": 21913,
+      "mean_logprob": -0.35343822836875916,
+      "cached": false
+    },
+    {
+      "dataset_index": 295,
+      "response_tokens": 6584,
+      "mean_logprob": -0.3360181450843811,
+      "cached": false
+    },
+    {
+      "dataset_index": 299,
+      "response_tokens": 14374,
+      "mean_logprob": -0.33292272686958313,
+      "cached": false
+    },
+    {
+      "dataset_index": 303,
+      "response_tokens": 6707,
+      "mean_logprob": -0.5424169898033142,
+      "cached": false
+    },
+    {
+      "dataset_index": 307,
+      "response_tokens": 9146,
+      "mean_logprob": -0.40862101316452026,
+      "cached": false
+    },
+    {
+      "dataset_index": 311,
+      "response_tokens": 19181,
+      "mean_logprob": -0.2804488241672516,
+      "cached": false
+    },
+    {
+      "dataset_index": 315,
+      "response_tokens": 7472,
+      "mean_logprob": -0.4432351589202881,
+      "cached": false
+    },
+    {
+      "dataset_index": 319,
+      "response_tokens": 8179,
+      "mean_logprob": -0.29882559180259705,
+      "cached": false
+    },
+    {
+      "dataset_index": 323,
+      "response_tokens": 15578,
+      "mean_logprob": -0.4094383716583252,
+      "cached": false
+    },
+    {
+      "dataset_index": 327,
+      "response_tokens": 16187,
+      "mean_logprob": -0.322178453207016,
+      "cached": false
+    },
+    {
+      "dataset_index": 331,
+      "response_tokens": 3783,
+      "mean_logprob": -0.2187669724225998,
+      "cached": false
+    },
+    {
+      "dataset_index": 335,
+      "response_tokens": 20936,
+      "mean_logprob": -0.19630028307437897,
+      "cached": false
+    },
+    {
+      "dataset_index": 339,
+      "response_tokens": 6242,
+      "mean_logprob": -0.41553640365600586,
+      "cached": false
+    },
+    {
+      "dataset_index": 343,
+      "response_tokens": 14920,
+      "mean_logprob": -0.4222884774208069,
+      "cached": false
+    },
+    {
+      "dataset_index": 347,
+      "response_tokens": 9351,
+      "mean_logprob": -0.48599690198898315,
+      "cached": false
+    },
+    {
+      "dataset_index": 351,
+      "response_tokens": 5126,
+      "mean_logprob": -0.3050474226474762,
+      "cached": false
+    },
+    {
+      "dataset_index": 355,
+      "response_tokens": 4713,
+      "mean_logprob": -0.26028361916542053,
+      "cached": false
+    },
+    {
+      "dataset_index": 359,
+      "response_tokens": 7274,
+      "mean_logprob": -0.3260781466960907,
+      "cached": false
+    },
+    {
+      "dataset_index": 363,
+      "response_tokens": 6325,
+      "mean_logprob": -0.46264752745628357,
+      "cached": false
+    },
+    {
+      "dataset_index": 367,
+      "response_tokens": 7442,
+      "mean_logprob": -0.3687375485897064,
+      "cached": false
+    },
+    {
+      "dataset_index": 371,
+      "response_tokens": 12989,
+      "mean_logprob": -0.47546473145484924,
+      "cached": false
+    },
+    {
+      "dataset_index": 375,
+      "response_tokens": 10443,
+      "mean_logprob": -0.22567006945610046,
+      "cached": false
+    },
+    {
+      "dataset_index": 379,
+      "response_tokens": 7327,
+      "mean_logprob": -0.37190160155296326,
+      "cached": false
+    },
+    {
+      "dataset_index": 383,
+      "response_tokens": 7676,
+      "mean_logprob": -0.4494292140007019,
+      "cached": false
+    },
+    {
+      "dataset_index": 387,
+      "response_tokens": 3948,
+      "mean_logprob": -0.2614823579788208,
+      "cached": false
+    },
+    {
+      "dataset_index": 391,
+      "response_tokens": 21799,
+      "mean_logprob": -0.25985002517700195,
+      "cached": false
+    },
+    {
+      "dataset_index": 395,
+      "response_tokens": 17040,
+      "mean_logprob": -0.37240374088287354,
+      "cached": false
+    },
+    {
+      "dataset_index": 399,
+      "response_tokens": 6153,
+      "mean_logprob": -0.3748650848865509,
+      "cached": false
+    },
+    {
+      "dataset_index": 403,
+      "response_tokens": 16504,
+      "mean_logprob": -0.3673298954963684,
+      "cached": false
+    },
+    {
+      "dataset_index": 407,
+      "response_tokens": 7202,
+      "mean_logprob": -0.44599786400794983,
+      "cached": false
+    },
+    {
+      "dataset_index": 411,
+      "response_tokens": 5991,
+      "mean_logprob": -0.3066136837005615,
+      "cached": false
+    },
+    {
+      "dataset_index": 415,
+      "response_tokens": 22924,
+      "mean_logprob": -0.25223979353904724,
+      "cached": false
+    },
+    {
+      "dataset_index": 419,
+      "response_tokens": 8008,
+      "mean_logprob": -0.31461676955223083,
+      "cached": false
+    },
+    {
+      "dataset_index": 423,
+      "response_tokens": 7776,
+      "mean_logprob": -0.4279083013534546,
+      "cached": false
+    },
+    {
+      "dataset_index": 427,
+      "response_tokens": 4263,
+      "mean_logprob": -0.18195296823978424,
+      "cached": false
+    },
+    {
+      "dataset_index": 431,
+      "response_tokens": 7118,
+      "mean_logprob": -0.3909575045108795,
+      "cached": false
+    },
+    {
+      "dataset_index": 435,
+      "response_tokens": 9879,
+      "mean_logprob": -0.24050576984882355,
+      "cached": false
+    },
+    {
+      "dataset_index": 439,
+      "response_tokens": 14694,
+      "mean_logprob": -0.357466459274292,
+      "cached": false
+    },
+    {
+      "dataset_index": 443,
+      "response_tokens": 7513,
+      "mean_logprob": -0.3594960868358612,
+      "cached": false
+    },
+    {
+      "dataset_index": 447,
+      "response_tokens": 5439,
+      "mean_logprob": -0.23894670605659485,
+      "cached": false
+    },
+    {
+      "dataset_index": 451,
+      "response_tokens": 5981,
+      "mean_logprob": -0.26526468992233276,
+      "cached": false
+    },
+    {
+      "dataset_index": 455,
+      "response_tokens": 5480,
+      "mean_logprob": -0.33191153407096863,
+      "cached": false
+    },
+    {
+      "dataset_index": 459,
+      "response_tokens": 11634,
+      "mean_logprob": -0.4479321837425232,
+      "cached": false
+    },
+    {
+      "dataset_index": 463,
+      "response_tokens": 7344,
+      "mean_logprob": -0.31944555044174194,
+      "cached": false
+    },
+    {
+      "dataset_index": 467,
+      "response_tokens": 16501,
+      "mean_logprob": -0.39934131503105164,
+      "cached": false
+    },
+    {
+      "dataset_index": 471,
+      "response_tokens": 6856,
+      "mean_logprob": -0.27169269323349,
+      "cached": false
+    },
+    {
+      "dataset_index": 475,
+      "response_tokens": 13656,
+      "mean_logprob": -0.3150921165943146,
+      "cached": false
+    },
+    {
+      "dataset_index": 479,
+      "response_tokens": 7930,
+      "mean_logprob": -0.44744718074798584,
+      "cached": false
+    },
+    {
+      "dataset_index": 483,
+      "response_tokens": 7517,
+      "mean_logprob": -0.2389800250530243,
+      "cached": false
+    },
+    {
+      "dataset_index": 487,
+      "response_tokens": 6560,
+      "mean_logprob": -0.2180175930261612,
+      "cached": false
+    },
+    {
+      "dataset_index": 491,
+      "response_tokens": 12199,
+      "mean_logprob": -0.36260131001472473,
+      "cached": false
+    },
+    {
+      "dataset_index": 495,
+      "response_tokens": 5193,
+      "mean_logprob": -0.2752864360809326,
+      "cached": false
+    },
+    {
+      "dataset_index": 499,
+      "response_tokens": 11901,
+      "mean_logprob": -0.24196220934391022,
+      "cached": false
+    },
+    {
+      "dataset_index": 503,
+      "response_tokens": 7763,
+      "mean_logprob": -0.4362693727016449,
+      "cached": false
+    },
+    {
+      "dataset_index": 507,
+      "response_tokens": 12804,
+      "mean_logprob": -0.35137322545051575,
+      "cached": false
+    },
+    {
+      "dataset_index": 511,
+      "response_tokens": 16068,
+      "mean_logprob": -0.28951185941696167,
+      "cached": false
+    },
+    {
+      "dataset_index": 515,
+      "response_tokens": 7232,
+      "mean_logprob": -0.34345853328704834,
+      "cached": false
+    },
+    {
+      "dataset_index": 519,
+      "response_tokens": 6711,
+      "mean_logprob": -0.2283952534198761,
+      "cached": false
+    },
+    {
+      "dataset_index": 523,
+      "response_tokens": 12818,
+      "mean_logprob": -0.22983010113239288,
+      "cached": false
+    },
+    {
+      "dataset_index": 527,
+      "response_tokens": 16398,
+      "mean_logprob": -0.367235392332077,
+      "cached": false
+    },
+    {
+      "dataset_index": 531,
+      "response_tokens": 8434,
+      "mean_logprob": -0.235038623213768,
+      "cached": false
+    },
+    {
+      "dataset_index": 535,
+      "response_tokens": 7367,
+      "mean_logprob": -0.25368762016296387,
+      "cached": false
+    },
+    {
+      "dataset_index": 539,
+      "response_tokens": 2469,
+      "mean_logprob": -0.40151333808898926,
+      "cached": false
+    },
+    {
+      "dataset_index": 543,
+      "response_tokens": 5504,
+      "mean_logprob": -0.5080005526542664,
+      "cached": false
+    },
+    {
+      "dataset_index": 547,
+      "response_tokens": 3755,
+      "mean_logprob": -0.3291812837123871,
+      "cached": false
+    },
+    {
+      "dataset_index": 551,
+      "response_tokens": 20861,
+      "mean_logprob": -0.3554050028324127,
+      "cached": false
+    },
+    {
+      "dataset_index": 555,
+      "response_tokens": 8278,
+      "mean_logprob": -0.28885751962661743,
+      "cached": false
+    },
+    {
+      "dataset_index": 559,
+      "response_tokens": 13339,
+      "mean_logprob": -0.41680485010147095,
+      "cached": false
+    },
+    {
+      "dataset_index": 563,
+      "response_tokens": 13015,
+      "mean_logprob": -0.2644970118999481,
+      "cached": false
+    },
+    {
+      "dataset_index": 567,
+      "response_tokens": 1537,
+      "mean_logprob": -0.23025906085968018,
+      "cached": false
+    },
+    {
+      "dataset_index": 571,
+      "response_tokens": 9242,
+      "mean_logprob": -0.24601471424102783,
+      "cached": false
+    },
+    {
+      "dataset_index": 575,
+      "response_tokens": 2456,
+      "mean_logprob": -0.3325357735157013,
+      "cached": false
+    },
+    {
+      "dataset_index": 579,
+      "response_tokens": 3819,
+      "mean_logprob": -0.2492796629667282,
+      "cached": false
+    },
+    {
+      "dataset_index": 583,
+      "response_tokens": 3142,
+      "mean_logprob": -0.300613671541214,
+      "cached": false
+    },
+    {
+      "dataset_index": 587,
+      "response_tokens": 4388,
+      "mean_logprob": -0.2723534405231476,
+      "cached": false
+    },
+    {
+      "dataset_index": 591,
+      "response_tokens": 8581,
+      "mean_logprob": -0.49982109665870667,
+      "cached": false
+    },
+    {
+      "dataset_index": 595,
+      "response_tokens": 12287,
+      "mean_logprob": -0.28717783093452454,
+      "cached": false
+    },
+    {
+      "dataset_index": 599,
+      "response_tokens": 7759,
+      "mean_logprob": -0.3390572965145111,
+      "cached": false
+    },
+    {
+      "dataset_index": 603,
+      "response_tokens": 13294,
+      "mean_logprob": -0.5131838917732239,
+      "cached": false
+    },
+    {
+      "dataset_index": 607,
+      "response_tokens": 19596,
+      "mean_logprob": -0.3960951566696167,
+      "cached": false
+    },
+    {
+      "dataset_index": 611,
+      "response_tokens": 4579,
+      "mean_logprob": -0.4300655126571655,
+      "cached": false
+    },
+    {
+      "dataset_index": 615,
+      "response_tokens": 5832,
+      "mean_logprob": -0.24946652352809906,
+      "cached": false
+    },
+    {
+      "dataset_index": 619,
+      "response_tokens": 12245,
+      "mean_logprob": -0.329719215631485,
+      "cached": false
+    },
+    {
+      "dataset_index": 623,
+      "response_tokens": 14288,
+      "mean_logprob": -0.33298027515411377,
+      "cached": false
+    },
+    {
+      "dataset_index": 627,
+      "response_tokens": 13712,
+      "mean_logprob": -0.2686164081096649,
+      "cached": false
+    },
+    {
+      "dataset_index": 631,
+      "response_tokens": 4621,
+      "mean_logprob": -0.37260350584983826,
+      "cached": false
+    },
+    {
+      "dataset_index": 635,
+      "response_tokens": 13788,
+      "mean_logprob": -0.3614477515220642,
+      "cached": false
+    },
+    {
+      "dataset_index": 639,
+      "response_tokens": 5079,
+      "mean_logprob": -0.2749144434928894,
+      "cached": false
+    },
+    {
+      "dataset_index": 643,
+      "response_tokens": 6266,
+      "mean_logprob": -0.25629329681396484,
+      "cached": false
+    },
+    {
+      "dataset_index": 647,
+      "response_tokens": 7340,
+      "mean_logprob": -0.5011188387870789,
+      "cached": false
+    },
+    {
+      "dataset_index": 651,
+      "response_tokens": 5539,
+      "mean_logprob": -0.28812310099601746,
+      "cached": false
+    },
+    {
+      "dataset_index": 655,
+      "response_tokens": 4405,
+      "mean_logprob": -0.23517359793186188,
+      "cached": false
+    },
+    {
+      "dataset_index": 659,
+      "response_tokens": 13164,
+      "mean_logprob": -0.2670341432094574,
+      "cached": false
+    },
+    {
+      "dataset_index": 663,
+      "response_tokens": 8209,
+      "mean_logprob": -0.3620043992996216,
+      "cached": false
+    },
+    {
+      "dataset_index": 667,
+      "response_tokens": 7934,
+      "mean_logprob": -0.3464694619178772,
+      "cached": false
+    },
+    {
+      "dataset_index": 671,
+      "response_tokens": 8162,
+      "mean_logprob": -0.4289408326148987,
+      "cached": false
+    },
+    {
+      "dataset_index": 675,
+      "response_tokens": 5633,
+      "mean_logprob": -0.37293076515197754,
+      "cached": false
+    },
+    {
+      "dataset_index": 679,
+      "response_tokens": 8348,
+      "mean_logprob": -0.3536650538444519,
+      "cached": false
+    },
+    {
+      "dataset_index": 683,
+      "response_tokens": 15198,
+      "mean_logprob": -0.21813569962978363,
+      "cached": false
+    },
+    {
+      "dataset_index": 687,
+      "response_tokens": 8066,
+      "mean_logprob": -0.29063692688941956,
+      "cached": false
+    },
+    {
+      "dataset_index": 691,
+      "response_tokens": 3502,
+      "mean_logprob": -0.37394869327545166,
+      "cached": false
+    },
+    {
+      "dataset_index": 695,
+      "response_tokens": 4073,
+      "mean_logprob": -0.29147738218307495,
+      "cached": false
+    },
+    {
+      "dataset_index": 699,
+      "response_tokens": 3866,
+      "mean_logprob": -0.18735814094543457,
+      "cached": false
+    },
+    {
+      "dataset_index": 703,
+      "response_tokens": 5453,
+      "mean_logprob": -0.2941388487815857,
+      "cached": false
+    },
+    {
+      "dataset_index": 707,
+      "response_tokens": 6749,
+      "mean_logprob": -0.2903682589530945,
+      "cached": false
+    },
+    {
+      "dataset_index": 711,
+      "response_tokens": 5751,
+      "mean_logprob": -0.26685580611228943,
+      "cached": false
+    },
+    {
+      "dataset_index": 715,
+      "response_tokens": 8446,
+      "mean_logprob": -0.5034030675888062,
+      "cached": false
+    },
+    {
+      "dataset_index": 719,
+      "response_tokens": 8937,
+      "mean_logprob": -0.48188966512680054,
+      "cached": false
+    },
+    {
+      "dataset_index": 723,
+      "response_tokens": 10497,
+      "mean_logprob": -0.4098220765590668,
+      "cached": false
+    },
+    {
+      "dataset_index": 727,
+      "response_tokens": 5156,
+      "mean_logprob": -0.24814867973327637,
+      "cached": false
+    },
+    {
+      "dataset_index": 731,
+      "response_tokens": 6226,
+      "mean_logprob": -0.23759706318378448,
+      "cached": false
+    },
+    {
+      "dataset_index": 735,
+      "response_tokens": 5736,
+      "mean_logprob": -0.29233571887016296,
+      "cached": false
+    },
+    {
+      "dataset_index": 739,
+      "response_tokens": 18665,
+      "mean_logprob": -0.2701391279697418,
+      "cached": false
+    },
+    {
+      "dataset_index": 743,
+      "response_tokens": 15597,
+      "mean_logprob": -0.28141018748283386,
+      "cached": false
+    },
+    {
+      "dataset_index": 747,
+      "response_tokens": 4697,
+      "mean_logprob": -0.3232728838920593,
+      "cached": false
+    },
+    {
+      "dataset_index": 751,
+      "response_tokens": 11964,
+      "mean_logprob": -0.3397860527038574,
+      "cached": false
+    },
+    {
+      "dataset_index": 755,
+      "response_tokens": 5566,
+      "mean_logprob": -0.3029942810535431,
+      "cached": false
+    },
+    {
+      "dataset_index": 759,
+      "response_tokens": 6938,
+      "mean_logprob": -0.284107506275177,
+      "cached": false
+    },
+    {
+      "dataset_index": 763,
+      "response_tokens": 9262,
+      "mean_logprob": -0.5152848362922668,
+      "cached": false
+    },
+    {
+      "dataset_index": 767,
+      "response_tokens": 10711,
+      "mean_logprob": -0.41460585594177246,
+      "cached": false
+    },
+    {
+      "dataset_index": 771,
+      "response_tokens": 7640,
+      "mean_logprob": -0.2467188686132431,
+      "cached": false
+    },
+    {
+      "dataset_index": 775,
+      "response_tokens": 26983,
+      "mean_logprob": -0.3446834683418274,
+      "cached": false
+    },
+    {
+      "dataset_index": 779,
+      "response_tokens": 14121,
+      "mean_logprob": -0.2976033687591553,
+      "cached": false
+    },
+    {
+      "dataset_index": 783,
+      "response_tokens": 9695,
+      "mean_logprob": -0.3608655631542206,
+      "cached": false
+    },
+    {
+      "dataset_index": 787,
+      "response_tokens": 7231,
+      "mean_logprob": -0.21705262362957,
+      "cached": false
+    },
+    {
+      "dataset_index": 791,
+      "response_tokens": 8483,
+      "mean_logprob": -0.3301829993724823,
+      "cached": false
+    },
+    {
+      "dataset_index": 795,
+      "response_tokens": 12492,
+      "mean_logprob": -0.43118274211883545,
+      "cached": false
+    },
+    {
+      "dataset_index": 799,
+      "response_tokens": 16014,
+      "mean_logprob": -0.36489298939704895,
+      "cached": false
+    },
+    {
+      "dataset_index": 803,
+      "response_tokens": 5786,
+      "mean_logprob": -0.2177906483411789,
+      "cached": false
+    },
+    {
+      "dataset_index": 807,
+      "response_tokens": 12742,
+      "mean_logprob": -0.3203142285346985,
+      "cached": false
+    },
+    {
+      "dataset_index": 811,
+      "response_tokens": 16998,
+      "mean_logprob": -0.2836684584617615,
+      "cached": false
+    },
+    {
+      "dataset_index": 815,
+      "response_tokens": 6321,
+      "mean_logprob": -0.36694228649139404,
+      "cached": false
+    },
+    {
+      "dataset_index": 819,
+      "response_tokens": 13947,
+      "mean_logprob": -0.24240389466285706,
+      "cached": false
+    },
+    {
+      "dataset_index": 823,
+      "response_tokens": 11163,
+      "mean_logprob": -0.40038108825683594,
+      "cached": false
+    },
+    {
+      "dataset_index": 827,
+      "response_tokens": 7030,
+      "mean_logprob": -0.43852517008781433,
+      "cached": false
+    },
+    {
+      "dataset_index": 831,
+      "response_tokens": 14379,
+      "mean_logprob": -0.34768134355545044,
+      "cached": false
+    },
+    {
+      "dataset_index": 835,
+      "response_tokens": 13319,
+      "mean_logprob": -0.2706979513168335,
+      "cached": false
+    },
+    {
+      "dataset_index": 839,
+      "response_tokens": 9468,
+      "mean_logprob": -0.38731151819229126,
+      "cached": false
+    },
+    {
+      "dataset_index": 843,
+      "response_tokens": 5619,
+      "mean_logprob": -0.25987401604652405,
+      "cached": false
+    },
+    {
+      "dataset_index": 847,
+      "response_tokens": 14825,
+      "mean_logprob": -0.38157328963279724,
+      "cached": false
+    },
+    {
+      "dataset_index": 851,
+      "response_tokens": 4939,
+      "mean_logprob": -0.2846628427505493,
+      "cached": false
+    },
+    {
+      "dataset_index": 855,
+      "response_tokens": 13603,
+      "mean_logprob": -0.30024242401123047,
+      "cached": false
+    },
+    {
+      "dataset_index": 859,
+      "response_tokens": 12901,
+      "mean_logprob": -0.5364299416542053,
+      "cached": false
+    },
+    {
+      "dataset_index": 863,
+      "response_tokens": 7840,
+      "mean_logprob": -0.38668912649154663,
+      "cached": false
+    },
+    {
+      "dataset_index": 867,
+      "response_tokens": 5709,
+      "mean_logprob": -0.4550773501396179,
+      "cached": false
+    },
+    {
+      "dataset_index": 871,
+      "response_tokens": 13025,
+      "mean_logprob": -0.3794087767601013,
+      "cached": false
+    },
+    {
+      "dataset_index": 875,
+      "response_tokens": 16956,
+      "mean_logprob": -0.27027055621147156,
+      "cached": false
+    },
+    {
+      "dataset_index": 879,
+      "response_tokens": 14353,
+      "mean_logprob": -0.34992796182632446,
+      "cached": false
+    },
+    {
+      "dataset_index": 883,
+      "response_tokens": 8733,
+      "mean_logprob": -0.3219214081764221,
+      "cached": false
+    },
+    {
+      "dataset_index": 887,
+      "response_tokens": 7075,
+      "mean_logprob": -0.3018093705177307,
+      "cached": false
+    },
+    {
+      "dataset_index": 891,
+      "response_tokens": 10684,
+      "mean_logprob": -0.3956381678581238,
+      "cached": false
+    },
+    {
+      "dataset_index": 895,
+      "response_tokens": 4546,
+      "mean_logprob": -0.26305344700813293,
+      "cached": false
+    },
+    {
+      "dataset_index": 899,
+      "response_tokens": 3639,
+      "mean_logprob": -0.35801804065704346,
+      "cached": false
+    },
+    {
+      "dataset_index": 903,
+      "response_tokens": 14660,
+      "mean_logprob": -0.23316951096057892,
+      "cached": false
+    },
+    {
+      "dataset_index": 907,
+      "response_tokens": 10864,
+      "mean_logprob": -0.4766972064971924,
+      "cached": false
+    },
+    {
+      "dataset_index": 911,
+      "response_tokens": 11071,
+      "mean_logprob": -0.43269091844558716,
+      "cached": false
+    },
+    {
+      "dataset_index": 915,
+      "response_tokens": 13444,
+      "mean_logprob": -0.22757084667682648,
+      "cached": false
+    },
+    {
+      "dataset_index": 919,
+      "response_tokens": 8293,
+      "mean_logprob": -0.2579208016395569,
+      "cached": false
+    },
+    {
+      "dataset_index": 923,
+      "response_tokens": 11370,
+      "mean_logprob": -0.286070853471756,
+      "cached": false
+    },
+    {
+      "dataset_index": 927,
+      "response_tokens": 5377,
+      "mean_logprob": -0.32555851340293884,
+      "cached": false
+    },
+    {
+      "dataset_index": 931,
+      "response_tokens": 11692,
+      "mean_logprob": -0.19914700090885162,
+      "cached": false
+    },
+    {
+      "dataset_index": 935,
+      "response_tokens": 8553,
+      "mean_logprob": -0.35448262095451355,
+      "cached": false
+    },
+    {
+      "dataset_index": 939,
+      "response_tokens": 6042,
+      "mean_logprob": -0.3147031366825104,
+      "cached": false
+    },
+    {
+      "dataset_index": 943,
+      "response_tokens": 13172,
+      "mean_logprob": -0.4246307611465454,
+      "cached": false
+    },
+    {
+      "dataset_index": 947,
+      "response_tokens": 10991,
+      "mean_logprob": -0.2841935157775879,
+      "cached": false
+    },
+    {
+      "dataset_index": 951,
+      "response_tokens": 7677,
+      "mean_logprob": -0.2692439556121826,
+      "cached": false
+    },
+    {
+      "dataset_index": 955,
+      "response_tokens": 2943,
+      "mean_logprob": -0.21158261597156525,
+      "cached": false
+    },
+    {
+      "dataset_index": 959,
+      "response_tokens": 8127,
+      "mean_logprob": -0.36760106682777405,
+      "cached": false
+    },
+    {
+      "dataset_index": 963,
+      "response_tokens": 6253,
+      "mean_logprob": -0.18335160613059998,
+      "cached": false
+    },
+    {
+      "dataset_index": 967,
+      "response_tokens": 10323,
+      "mean_logprob": -0.31554245948791504,
+      "cached": false
+    },
+    {
+      "dataset_index": 971,
+      "response_tokens": 13887,
+      "mean_logprob": -0.34086835384368896,
+      "cached": false
+    },
+    {
+      "dataset_index": 975,
+      "response_tokens": 12517,
+      "mean_logprob": -0.23515336215496063,
+      "cached": false
+    },
+    {
+      "dataset_index": 979,
+      "response_tokens": 9049,
+      "mean_logprob": -0.26822370290756226,
+      "cached": false
+    },
+    {
+      "dataset_index": 983,
+      "response_tokens": 16692,
+      "mean_logprob": -0.28911930322647095,
+      "cached": false
+    },
+    {
+      "dataset_index": 987,
+      "response_tokens": 16298,
+      "mean_logprob": -0.4004633128643036,
+      "cached": false
+    },
+    {
+      "dataset_index": 991,
+      "response_tokens": 27374,
+      "mean_logprob": -0.2894328534603119,
+      "cached": false
+    },
+    {
+      "dataset_index": 995,
+      "response_tokens": 4344,
+      "mean_logprob": -0.16806544363498688,
+      "cached": false
+    },
+    {
+      "dataset_index": 999,
+      "response_tokens": 4175,
+      "mean_logprob": -0.40055811405181885,
+      "cached": false
+    }
+  ]
+}

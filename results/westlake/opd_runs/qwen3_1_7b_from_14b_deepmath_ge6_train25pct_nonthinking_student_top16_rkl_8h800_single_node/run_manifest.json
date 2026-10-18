@@ -1,0 +1,43 @@
+{
+  "checkpoint_contents": [
+    "huggingface",
+    "model",
+    "optimizer",
+    "extra_state"
+  ],
+  "chunk_tokens": 256,
+  "data_manifest_sha256": "2657ca31294cc30b41a53825733a3f6ab8c55339e36fa99c515ec26d22a392ae",
+  "global_batch_size": 64,
+  "hf_max_shard_size": "2GB",
+  "learning_rate": 1e-06,
+  "local_batch_size": 16,
+  "loss_support_selection": "student rollout distribution; stop-gradient; renormalized over selected support",
+  "loss_support_topk": 16,
+  "max_model_len": 40960,
+  "max_prompt_tokens": 699,
+  "max_response_tokens": 40264,
+  "model_vocab_size": 151936,
+  "objective": "student_top_16_renormalized_kl_student_to_teacher",
+  "order_sha256": "446d088c598b69321378cf3675bf87b22ab2ecf08079401c5d92ef0b3adf8698",
+  "save_steps": [
+    44,
+    89,
+    133,
+    178,
+    222
+  ],
+  "seed": 20260811,
+  "status": "DEEPMATH_RKL_INITIALIZED",
+  "student_model": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+  "student_world_size": 4,
+  "teacher_model": "/storage/yukaichengLab/share/model/Qwen3-14B",
+  "temperature": 1.0,
+  "thinking": false,
+  "tokenizer_vocab_size": 151669,
+  "top_k": -1,
+  "top_p": 1.0,
+  "total_steps": 222,
+  "train_file": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_data/deepmath_ge6_opd_train25pct_perdifficulty_seed20260823/train.parquet",
+  "train_file_sha256": "fdcb58732d22f5ab27d111f07c8746836d983c5d15d1d800970154ea1f3cfc91",
+  "train_rows": 14208
+}

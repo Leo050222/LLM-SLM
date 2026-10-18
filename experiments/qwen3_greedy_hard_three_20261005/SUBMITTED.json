@@ -1,0 +1,27 @@
+{
+  "submitted_at": "2026-10-05T01:53:48+08:00",
+  "jobs": {
+    "qwen3_4b": "115089",
+    "qwen3_8b": "115090"
+  },
+  "resources_each": {
+    "nodes": 1,
+    "gpus": 8,
+    "gpu_type": "H800",
+    "partition": "yukaichenglab"
+  },
+  "datasets": {
+    "aime24": 30,
+    "aime25": 30,
+    "olympiad_bench": 674,
+    "bbh": 1080,
+    "total": 1814
+  },
+  "generation": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "n": 1,
+    "tensor_parallel_size": 8,
+    "max_context": 40960
+  }
+}

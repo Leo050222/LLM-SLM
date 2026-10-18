@@ -1,0 +1,13 @@
+{
+  "files_before": 63691,
+  "missing_files": 2735,
+  "unexpected_missing_files": [],
+  "size_changed_files": [
+    ".gitignore"
+  ],
+  "broken_symlinks": [],
+  "task_generated_superseded_files": [
+    "tools/storage/storage-job.json",
+    "tools/storage/shared_storage.py"
+  ]
+}

@@ -1,0 +1,843 @@
+{
+  "date": "2026-10-19",
+  "moves": [
+    {
+      "from": "tmp",
+      "to": "artifacts/legacy_tmp",
+      "compatibility_symlink": true
+    },
+    {
+      "from": "downloads",
+      "to": "tools/downloads",
+      "compatibility_symlink": true
+    },
+    {
+      "from": "refine-logs",
+      "to": "docs/research/refine-logs",
+      "compatibility_symlink": true
+    },
+    {
+      "from": "idea-stage",
+      "to": "docs/research/idea-stage",
+      "compatibility_symlink": true
+    },
+    {
+      "from": "papers",
+      "to": "docs/papers",
+      "compatibility_symlink": true
+    },
+    {
+      "from": "MANIFEST.md",
+      "to": "docs/research/MANIFEST.md",
+      "compatibility_symlink": true
+    },
+    {
+      "from": "EXPERIMENT_AUDIT.md",
+      "to": "docs/audits/EXPERIMENT_AUDIT.md",
+      "compatibility_symlink": true
+    },
+    {
+      "from": "EXPERIMENT_AUDIT.json",
+      "to": "docs/audits/EXPERIMENT_AUDIT.json",
+      "compatibility_symlink": true
+    },
+    {
+      "from": "analysis_current_greedy_triplets.csv",
+      "to": "results/tables/analysis_current_greedy_triplets.csv",
+      "compatibility_symlink": true
+    },
+    {
+      "from": "remote_patch",
+      "to": "src/patches",
+      "compatibility_symlink": true
+    }
+  ],
+  "links": [
+    {
+      "path": "src/pipeline",
+      "target": "ocrd_pipeline"
+    },
+    {
+      "path": "src/experiments",
+      "target": "experiments"
+    },
+    {
+      "path": "visualization/browser",
+      "target": "code/bridge-rollout-browser"
+    },
+    {
+      "path": "visualization/analysis",
+      "target": "analysis"
+    },
+    {
+      "path": "visualization/reports",
+      "target": "reports"
+    },
+    {
+      "path": "visualization/figures",
+      "target": "figures"
+    },
+    {
+      "path": "results/reports",
+      "target": "reports"
+    },
+    {
+      "path": "results/figures",
+      "target": "figures"
+    },
+    {
+      "path": "results/analysis",
+      "target": "analysis"
+    },
+    {
+      "path": "datasets/local",
+      "target": "data"
+    },
+    {
+      "path": "artifacts/outputs",
+      "target": "outputs"
+    }
+  ],
+  "deleted": [
+    {
+      "path": ".pnpm-store",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 8192
+    },
+    {
+      "path": ".mplcache",
+      "kind": "rebuildable_directory",
+      "files": 2,
+      "bytes": 415692
+    },
+    {
+      "path": "tools/downloads/qwen3vl_models_20261016/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 3,
+      "bytes": 43845
+    },
+    {
+      "path": "tools/downloads/qwen25vl32b_20261016/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 3,
+      "bytes": 61492
+    },
+    {
+      "path": "tools/downloads/vision_benchmarks_20261015/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 5,
+      "bytes": 71877
+    },
+    {
+      "path": "analysis/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 6,
+      "bytes": 111642
+    },
+    {
+      "path": "experiments/shift5_greedy_k1_t2_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 13,
+      "bytes": 102842
+    },
+    {
+      "path": "experiments/random_quartile_k1_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 16,
+      "bytes": 150775
+    },
+    {
+      "path": "experiments/weak_reprompt_nodraft_t2_k1_20260920/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 12,
+      "bytes": 92709
+    },
+    {
+      "path": "experiments/weak_reprompt_nodraft_greedy_t2_k1_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 13,
+      "bytes": 95352
+    },
+    {
+      "path": "experiments/code_grid_x8_20260916/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 2,
+      "bytes": 25285
+    },
+    {
+      "path": "experiments/full_teacher_student_x8_8gpu_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 15,
+      "bytes": 119866
+    },
+    {
+      "path": "experiments/quartile_greedy_baselines_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 14,
+      "bytes": 100194
+    },
+    {
+      "path": "experiments/reverse_greedy_t2_k1_8gpu_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 9,
+      "bytes": 75253
+    },
+    {
+      "path": "experiments/shift5_k1_t2_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 13,
+      "bytes": 112459
+    },
+    {
+      "path": "experiments/weak1p7_strong8_reprompt_greedy_t2_k1_mainminus_20261005/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 5,
+      "bytes": 57946
+    },
+    {
+      "path": "experiments/weak_reprompt_clean_score_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 6,
+      "bytes": 59844
+    },
+    {
+      "path": "experiments/grid_math_8gpu_20260917/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 2425
+    },
+    {
+      "path": "experiments/prefix_takeover_caps5_10_20260917/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 15,
+      "bytes": 117989
+    },
+    {
+      "path": "experiments/weak_resample_t2_k1_20260920/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 3,
+      "bytes": 22201
+    },
+    {
+      "path": "experiments/logits_threshold2_replay_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 16114
+    },
+    {
+      "path": "experiments/teacher8_student8_20260909/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 3,
+      "bytes": 32858
+    },
+    {
+      "path": "experiments/full_teacher_student_greedy_score_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 7,
+      "bytes": 74441
+    },
+    {
+      "path": "experiments/weak1p7_strong4_reprompt_greedy_t2_k1_mainminus_20261005/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 5,
+      "bytes": 57946
+    },
+    {
+      "path": "experiments/weak_resample_greedy_8gpu_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 3,
+      "bytes": 22219
+    },
+    {
+      "path": "experiments/full_teacher_student_greedy_8gpu_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 7,
+      "bytes": 31876
+    },
+    {
+      "path": "experiments/grid_math_4gpu_20260917/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 2425
+    },
+    {
+      "path": "experiments/quartile_support_k_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 13,
+      "bytes": 101739
+    },
+    {
+      "path": "experiments/math_reasoning_grid_x8_20260916/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 5,
+      "bytes": 40865
+    },
+    {
+      "path": "experiments/weak_reprompt_score_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 6,
+      "bytes": 59774
+    },
+    {
+      "path": "experiments/weak_resample_greedy_t2_k1_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 12,
+      "bytes": 92994
+    },
+    {
+      "path": "experiments/shift5_greedy_score_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 6,
+      "bytes": 69972
+    },
+    {
+      "path": "experiments/code_reasoning_grid_20260913/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 8,
+      "bytes": 59156
+    },
+    {
+      "path": "experiments/code_reasoning_grid_20260913/scale8/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 3,
+      "bytes": 31842
+    },
+    {
+      "path": "experiments/strong4_weak17_reprompt_greedy_t2_k1_20261005/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 9870
+    },
+    {
+      "path": "experiments/strong_reprompt_score_20261005/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 6,
+      "bytes": 65135
+    },
+    {
+      "path": "experiments/teacher_only_sample100_x8_20260917/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 2,
+      "bytes": 13922
+    },
+    {
+      "path": "experiments/threshold3_mathteacher_20260911/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 8986
+    },
+    {
+      "path": "experiments/qwen3vl_greedy_bench_20261016/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 5,
+      "bytes": 108804
+    },
+    {
+      "path": "experiments/grid_async_retry_20260916/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 13,
+      "bytes": 94887
+    },
+    {
+      "path": "experiments/prefix_takeover_caps_20260917/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 15,
+      "bytes": 122589
+    },
+    {
+      "path": "experiments/grid_math_gpt4o_mini_rescore_20260916/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 22012
+    },
+    {
+      "path": "experiments/grid_fifo_20260916/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 8,
+      "bytes": 58634
+    },
+    {
+      "path": "experiments/random_quartile_greedy_k1_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 6,
+      "bytes": 38969
+    },
+    {
+      "path": "experiments/token_entropy_distribution_20260914/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 22454
+    },
+    {
+      "path": "experiments/weak1p7_strong8_reprompt_greedy_t2_k1_postlogit_20261005/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 4,
+      "bytes": 55438
+    },
+    {
+      "path": "experiments/intervention_entropy_20260914/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 22818
+    },
+    {
+      "path": "experiments/cruxeval_i_fresh100_cap1_20260917/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 2,
+      "bytes": 15999
+    },
+    {
+      "path": "experiments/intervention_logits_bf16_x8_20260920/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 2,
+      "bytes": 42259
+    },
+    {
+      "path": "experiments/reverse_greedy_score_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 7,
+      "bytes": 73424
+    },
+    {
+      "path": "experiments/nojudge_grid_20260912/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 2,
+      "bytes": 17881
+    },
+    {
+      "path": "experiments/nojudge_grid_20260912/deadline_scheduler/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 3709
+    },
+    {
+      "path": "experiments/full_teacher_student_greedy_20260920/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 15,
+      "bytes": 120300
+    },
+    {
+      "path": "experiments/k1_top1_agreement_20260914/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 15139
+    },
+    {
+      "path": "experiments/r1_math_score_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 3,
+      "bytes": 37038
+    },
+    {
+      "path": "experiments/weak1p7_strong4_reprompt_greedy_t2_k1_postlogit_20261005/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 4,
+      "bytes": 55438
+    },
+    {
+      "path": "experiments/grid_async_20260916/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 12,
+      "bytes": 92954
+    },
+    {
+      "path": "experiments/prefix_takeover_caps11_20_20260917/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 2,
+      "bytes": 16001
+    },
+    {
+      "path": "experiments/math_grid_score_029041_20260919/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 3,
+      "bytes": 40319
+    },
+    {
+      "path": "experiments/weak_to_8b_prefix_handoff_20261005/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 7,
+      "bytes": 82201
+    },
+    {
+      "path": "experiments/weak_reprompt_t2_k1_20260920/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 12,
+      "bytes": 91803
+    },
+    {
+      "path": "experiments/logits_replay_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 10340
+    },
+    {
+      "path": "experiments/grid_math_colocated8_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 6,
+      "bytes": 43947
+    },
+    {
+      "path": "experiments/prefix_takeover_caps25_40_split_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 16,
+      "bytes": 120265
+    },
+    {
+      "path": "experiments/full_teacher_student_x8_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 14,
+      "bytes": 117839
+    },
+    {
+      "path": "experiments/math500_three_20260911/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 2,
+      "bytes": 14437
+    },
+    {
+      "path": "experiments/threshold_k8_nojudge_20260911/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 8984
+    },
+    {
+      "path": "experiments/hard_three_20260911/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 3,
+      "bytes": 21585
+    },
+    {
+      "path": "experiments/weak1p7_strong8_reprompt_greedy_t2_k1_20261005/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 7,
+      "bytes": 68012
+    },
+    {
+      "path": "experiments/weak_reprompt_clean_greedy_t2_k1_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 15,
+      "bytes": 104827
+    },
+    {
+      "path": "experiments/takeover_ablation_20260911/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 10861
+    },
+    {
+      "path": "experiments/prefix_takeover_caps25_40_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 15,
+      "bytes": 118375
+    },
+    {
+      "path": "experiments/weak1p7_strong4_reprompt_greedy_t2_k1_20261005/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 7,
+      "bytes": 68012
+    },
+    {
+      "path": "experiments/weak_reprompt_8gpu_2000s_20260920/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 7,
+      "bytes": 38766
+    },
+    {
+      "path": "experiments/dynamic_k_entropy_20260914/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 13,
+      "bytes": 111098
+    },
+    {
+      "path": "experiments/math_grid_score_all_2000_20260919/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 3,
+      "bytes": 49714
+    },
+    {
+      "path": "experiments/strong8_weak17_reprompt_greedy_t2_k1_20261005/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 9870
+    },
+    {
+      "path": "experiments/teacher_prefix_handoff_20260909/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 3,
+      "bytes": 28650
+    },
+    {
+      "path": "experiments/qwen3_greedy_remaining_20261005/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 6,
+      "bytes": 34958
+    },
+    {
+      "path": "experiments/reverse_t2_k1_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 9,
+      "bytes": 75530
+    },
+    {
+      "path": "experiments/weak_reprompt_nodraft_score_20260920/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 6,
+      "bytes": 59750
+    },
+    {
+      "path": "experiments/grid_math_colocated22_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 7,
+      "bytes": 49368
+    },
+    {
+      "path": "experiments/weak_resample_score_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 6,
+      "bytes": 59774
+    },
+    {
+      "path": "experiments/weak_reprompt_16gpu_2000s_20260920/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 7,
+      "bytes": 38794
+    },
+    {
+      "path": "experiments/weak_reprompt_clean_t2_k1_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 16,
+      "bytes": 114406
+    },
+    {
+      "path": "experiments/grid_math_colocated16_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 7,
+      "bytes": 48041
+    },
+    {
+      "path": "experiments/intervention_logits_bf16_greedy_20260921/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 3,
+      "bytes": 51598
+    },
+    {
+      "path": "experiments/reverse_t2_k1_score_20260918/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 6,
+      "bytes": 70365
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 9,
+      "bytes": 176445
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 7,
+      "bytes": 66746
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/tests/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 9078
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 11,
+      "bytes": 79821
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/tests/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 4,
+      "bytes": 25824
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 15,
+      "bytes": 224514
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/tests/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 2,
+      "bytes": 19484
+    },
+    {
+      "path": "code/bridge-rollout-browser/dist",
+      "kind": "rebuildable_directory",
+      "files": 1011,
+      "bytes": 16314493
+    },
+    {
+      "path": "bridge-rollout-browser/dist",
+      "kind": "rebuildable_directory",
+      "files": 1011,
+      "bytes": 16314493
+    },
+    {
+      "path": "bridge-rollout-browser/node_modules",
+      "kind": "rebuildable_directory",
+      "files": 5013,
+      "bytes": 107301436
+    },
+    {
+      "path": "figures/main_grid_x8_20260920/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 2,
+      "bytes": 14658
+    },
+    {
+      "path": "scripts/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 64,
+      "bytes": 902562
+    },
+    {
+      "path": "scripts/test1000_anchor_bridge_20260910/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 2,
+      "bytes": 16788
+    },
+    {
+      "path": "outputs/h800-bos-inspection/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 3,
+      "bytes": 32054
+    },
+    {
+      "path": "outputs/benchmark-viz/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 3104
+    },
+    {
+      "path": "reports/kv_reuse_20260911/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 2,
+      "bytes": 11691
+    },
+    {
+      "path": "reports/prefix_caps_analysis_20260917/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 8067
+    },
+    {
+      "path": "reports/scoring_rules_20260916/sources/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 6577
+    },
+    {
+      "path": "reports/takeover_baseline_comparison/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 7019
+    },
+    {
+      "path": "reports/online_chunk64_k8_20260911/scale_2nodes/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 3,
+      "bytes": 16318
+    },
+    {
+      "path": "reports/crux_length_20260916/__pycache__",
+      "kind": "rebuildable_directory",
+      "files": 9,
+      "bytes": 41849
+    },
+    {
+      "path": "reports/intervention_distribution_20260911/.mplcache",
+      "kind": "rebuildable_directory",
+      "files": 1,
+      "bytes": 125096
+    },
+    {
+      "path": ".DS_Store",
+      "kind": "regenerable_file",
+      "bytes": 14340,
+      "sha256": "2680c8e49b0223b54ecd9c92349d7e211883a456aa1d6193de65128fd80891d3"
+    },
+    {
+      "path": "tools/downloads/.DS_Store",
+      "kind": "regenerable_file",
+      "bytes": 6148,
+      "sha256": "5bedc3396ea7049ebc5ac6344e3f3622b940fe1a2350e6ebd72d7ace8efc48ca"
+    },
+    {
+      "path": "analysis/.DS_Store",
+      "kind": "regenerable_file",
+      "bytes": 6148,
+      "sha256": "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3"
+    },
+    {
+      "path": "code/bridge-rollout-browser/tsconfig.tsbuildinfo",
+      "kind": "regenerable_file",
+      "bytes": 54188,
+      "sha256": "2be4ad68aa7812f9b4280396a219dd0eccd3386549916a3990db9b97f793fb5b"
+    },
+    {
+      "path": "bridge-rollout-browser/tsconfig.tsbuildinfo",
+      "kind": "regenerable_file",
+      "bytes": 54188,
+      "sha256": "2be4ad68aa7812f9b4280396a219dd0eccd3386549916a3990db9b97f793fb5b"
+    },
+    {
+      "path": "bridge-rollout-browser/vite.config 2.ts",
+      "kind": "unused_template",
+      "bytes": 1807,
+      "sha256": "3c028e727dde6c92022197ba7241a424ccd1e3d335f1f46cc9bbf91a8a3a968c"
+    },
+    {
+      "path": "bridge-rollout-browser/app/page 2.tsx",
+      "kind": "unused_template",
+      "bytes": 4466,
+      "sha256": "c2293d77b0cff0d149cc153eae96eb6f807f0967b12a177b387f8d9b695f6d7f"
+    },
+    {
+      "path": "bridge-rollout-browser/app/globals 2.css",
+      "kind": "unused_template",
+      "bytes": 4390,
+      "sha256": "a6c0d301dac8d2338d1232d26b26f28e775f9f46399a60b9d828d7f1e86119c3"
+    },
+    {
+      "path": "code/bridge-rollout-browser/vite.config 2.ts",
+      "kind": "unused_template",
+      "bytes": 1807,
+      "sha256": "3c028e727dde6c92022197ba7241a424ccd1e3d335f1f46cc9bbf91a8a3a968c"
+    },
+    {
+      "path": "code/bridge-rollout-browser/app/page 2.tsx",
+      "kind": "unused_template",
+      "bytes": 4466,
+      "sha256": "c2293d77b0cff0d149cc153eae96eb6f807f0967b12a177b387f8d9b695f6d7f"
+    },
+    {
+      "path": "code/bridge-rollout-browser/app/globals 2.css",
+      "kind": "unused_template",
+      "bytes": 4390,
+      "sha256": "a6c0d301dac8d2338d1232d26b26f28e775f9f46399a60b9d828d7f1e86119c3"
+    },
+    {
+      "path": "tools/storage/storage-job.json",
+      "kind": "task_created_superseded",
+      "bytes": 1925,
+      "reason": "Temporary new-PVC connector from this task replaced with the user-confirmed Westlake SSH connector."
+    },
+    {
+      "path": "tools/storage/shared_storage.py",
+      "kind": "task_created_superseded",
+      "bytes": 3462,
+      "reason": "Temporary new-PVC connector from this task replaced with the user-confirmed Westlake SSH connector."
+    }
+  ],
+  "deleted_files": 7749,
+  "deleted_bytes": 147319092
+}

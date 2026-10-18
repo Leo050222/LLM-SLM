@@ -1,0 +1,19 @@
+{
+  "status": "SHARD_CANDIDATES_COMPLETE",
+  "trace_shard": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/ge6_test1000_anchor_bridge_h256_n8x8_seed20260910/source/shards/shard_03/rollouts.jsonl",
+  "trace_shard_sha256": "e360019a63b245f1b8a9afbbd06054df4ec0244c487ee0f2dfd3045be66cb44c",
+  "rows": 125,
+  "response_tokens": 159447,
+  "padding_included": false,
+  "student": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+  "tokenizer": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+  "vocab_size": 151669,
+  "tokenizer_vocab_sha256": "f83422fc4348225bd0a571b69f9f96040db221d2238b227d6762aa1f8b6da1f4",
+  "threshold": 2.0,
+  "candidate_count": 3311,
+  "elapsed_seconds": 8.314230680465698,
+  "resumed_rows": 0,
+  "slurm_job_id": "101789",
+  "slurm_array_task_id": null,
+  "node": "gnho041"
+}

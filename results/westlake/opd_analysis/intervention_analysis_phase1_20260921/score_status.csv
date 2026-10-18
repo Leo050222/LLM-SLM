@@ -1,0 +1,24 @@
+dataset,score_status,traces
+bbh,ok,8640
+cruxeval_i,fail,3219
+cruxeval_i,pass,3169
+cruxeval_i,trace_timeout,12
+cruxeval_o,fail,3429
+cruxeval_o,pass,2934
+cruxeval_o,trace_timeout,37
+humaneval_plus,trace_timeout,1
+humaneval_plus,"{""base"": ""fail"", ""plus"": ""fail""}",146
+humaneval_plus,"{""base"": ""pass"", ""plus"": ""fail""}",68
+humaneval_plus,"{""base"": ""pass"", ""plus"": ""pass""}",1097
+livecodebench,fail,979
+livecodebench,pass,405
+livecodebench,scoring_execution_timeout,3
+livecodebench,solution_process_crash,2
+livecodebench,trace_timeout,11
+math500,ok,4000
+mbpp_plus,"{""base"": ""fail"", ""plus"": ""fail""}",412
+mbpp_plus,"{""base"": ""fail"", ""plus"": ""pass""}",9
+mbpp_plus,"{""base"": ""pass"", ""plus"": ""fail""}",391
+mbpp_plus,"{""base"": ""pass"", ""plus"": ""pass""}",2212
+olympiad_bench,extraction_missing,1
+olympiad_bench,ok,5391

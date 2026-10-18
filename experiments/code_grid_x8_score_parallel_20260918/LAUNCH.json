@@ -1,0 +1,10 @@
+{
+  "array_job_id": 106192,
+  "aggregate_job_id": 106193,
+  "original_job_id": 106160,
+  "original_cancel_requested": true,
+  "shards": 4,
+  "cpus_each": 64,
+  "workers_each": 48,
+  "previous_processed": 288000
+}

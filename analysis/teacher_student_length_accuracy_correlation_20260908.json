@@ -1,0 +1,348 @@
+{
+  "all": {
+    "accuracy_improved_group": {
+      "mean_teacher_minus_student_full_tokens": 71.55450610656288,
+      "prefixes": 7451,
+      "teacher_longer_fraction": 0.5795195275801905
+    },
+    "accuracy_lift_buckets": {
+      "-1": {
+        "accuracy_lift_pp": -12.5,
+        "mean_teacher_minus_student_full_tokens": 165.22995666305525,
+        "median_teacher_minus_student_full_tokens": 138.375,
+        "prefixes": 923,
+        "teacher_longer_fraction": 0.6912242686890574
+      },
+      "-2": {
+        "accuracy_lift_pp": -25.0,
+        "mean_teacher_minus_student_full_tokens": 207.69450431034483,
+        "median_teacher_minus_student_full_tokens": 178.3125,
+        "prefixes": 464,
+        "teacher_longer_fraction": 0.7543103448275862
+      },
+      "-3": {
+        "accuracy_lift_pp": -37.5,
+        "mean_teacher_minus_student_full_tokens": 201.65162037037038,
+        "median_teacher_minus_student_full_tokens": 184.1875,
+        "prefixes": 216,
+        "teacher_longer_fraction": 0.6898148148148148
+      },
+      "-4": {
+        "accuracy_lift_pp": -50.0,
+        "mean_teacher_minus_student_full_tokens": 285.51909722222223,
+        "median_teacher_minus_student_full_tokens": 203.5625,
+        "prefixes": 144,
+        "teacher_longer_fraction": 0.8194444444444444
+      },
+      "-5": {
+        "accuracy_lift_pp": -62.5,
+        "mean_teacher_minus_student_full_tokens": 186.6625,
+        "median_teacher_minus_student_full_tokens": 124.8125,
+        "prefixes": 80,
+        "teacher_longer_fraction": 0.6875
+      },
+      "-6": {
+        "accuracy_lift_pp": -75.0,
+        "mean_teacher_minus_student_full_tokens": 215.3448275862069,
+        "median_teacher_minus_student_full_tokens": 199.75,
+        "prefixes": 29,
+        "teacher_longer_fraction": 0.7931034482758621
+      },
+      "-7": {
+        "accuracy_lift_pp": -87.5,
+        "mean_teacher_minus_student_full_tokens": 219.75892857142858,
+        "median_teacher_minus_student_full_tokens": 268.0625,
+        "prefixes": 14,
+        "teacher_longer_fraction": 0.7857142857142857
+      },
+      "-8": {
+        "accuracy_lift_pp": -100.0,
+        "mean_teacher_minus_student_full_tokens": 189.0625,
+        "median_teacher_minus_student_full_tokens": 189.0625,
+        "prefixes": 2,
+        "teacher_longer_fraction": 1.0
+      },
+      "0": {
+        "accuracy_lift_pp": 0.0,
+        "mean_teacher_minus_student_full_tokens": 138.2361961234379,
+        "median_teacher_minus_student_full_tokens": 91.125,
+        "prefixes": 3921,
+        "teacher_longer_fraction": 0.6569752614129049
+      },
+      "1": {
+        "accuracy_lift_pp": 12.5,
+        "mean_teacher_minus_student_full_tokens": 126.31029338637494,
+        "median_teacher_minus_student_full_tokens": 89.0,
+        "prefixes": 2011,
+        "teacher_longer_fraction": 0.6384883142715068
+      },
+      "2": {
+        "accuracy_lift_pp": 25.0,
+        "mean_teacher_minus_student_full_tokens": 106.41551000645578,
+        "median_teacher_minus_student_full_tokens": 81.125,
+        "prefixes": 1549,
+        "teacher_longer_fraction": 0.5990961910910265
+      },
+      "3": {
+        "accuracy_lift_pp": 37.5,
+        "mean_teacher_minus_student_full_tokens": 83.46005367464905,
+        "median_teacher_minus_student_full_tokens": 58.125,
+        "prefixes": 1211,
+        "teacher_longer_fraction": 0.5895953757225434
+      },
+      "4": {
+        "accuracy_lift_pp": 50.0,
+        "mean_teacher_minus_student_full_tokens": 27.688291139240505,
+        "median_teacher_minus_student_full_tokens": 32.125,
+        "prefixes": 948,
+        "teacher_longer_fraction": 0.5348101265822784
+      },
+      "5": {
+        "accuracy_lift_pp": 62.5,
+        "mean_teacher_minus_student_full_tokens": -4.763485477178423,
+        "median_teacher_minus_student_full_tokens": 4.25,
+        "prefixes": 723,
+        "teacher_longer_fraction": 0.5034578146611342
+      },
+      "6": {
+        "accuracy_lift_pp": 75.0,
+        "mean_teacher_minus_student_full_tokens": 29.8875250501002,
+        "median_teacher_minus_student_full_tokens": 27.75,
+        "prefixes": 499,
+        "teacher_longer_fraction": 0.5390781563126252
+      },
+      "7": {
+        "accuracy_lift_pp": 87.5,
+        "mean_teacher_minus_student_full_tokens": -45.51099706744868,
+        "median_teacher_minus_student_full_tokens": -28.375,
+        "prefixes": 341,
+        "teacher_longer_fraction": 0.4750733137829912
+      },
+      "8": {
+        "accuracy_lift_pp": 100.0,
+        "mean_teacher_minus_student_full_tokens": -53.04289940828402,
+        "median_teacher_minus_student_full_tokens": 14.25,
+        "prefixes": 169,
+        "teacher_longer_fraction": 0.5325443786982249
+      }
+    },
+    "accuracy_not_improved_group": {
+      "mean_teacher_minus_student_full_tokens": 155.3954557224236,
+      "prefixes": 5793,
+      "teacher_longer_fraction": 0.6770239944760919
+    },
+    "continuation_delta_vs_accuracy_lift": {
+      "accuracy_pp_per_100_extra_tokens": -0.9499870041582352,
+      "n": 13244,
+      "pearson_p": 2.235386545586149e-55,
+      "pearson_r": -0.13559158717935985,
+      "spearman_p": 8.72467861732667e-59,
+      "spearman_rho": -0.13979812687269857
+    },
+    "full_length_delta_vs_accuracy_lift": {
+      "accuracy_pp_per_100_extra_tokens": -0.9499870041582352,
+      "n": 13244,
+      "pearson_p": 2.235386545586149e-55,
+      "pearson_r": -0.13559158717935985,
+      "spearman_p": 8.72467861732667e-59,
+      "spearman_rho": -0.13979812687269857
+    },
+    "mean_accuracy_lift_pp": 18.04496375717306,
+    "mean_teacher_minus_student_continuation_tokens": 108.22700845665962,
+    "mean_teacher_minus_student_full_tokens": 108.22700845665962,
+    "median_teacher_minus_student_full_tokens": 81.125,
+    "partial_pearson_controlling_student_length_and_accuracy": {
+      "p": 1.7405006868034107e-109,
+      "r": -0.1913999083329334
+    },
+    "prefixes": 13244,
+    "teacher_longer_group": {
+      "accuracy_improves_fraction": 0.5240291262135922,
+      "fraction": 0.6221685291452733,
+      "mean_accuracy_lift_pp": 14.919599514563107,
+      "prefixes": 8240
+    },
+    "teacher_not_longer_group": {
+      "accuracy_improves_fraction": 0.6260991207034372,
+      "fraction": 0.3778314708547267,
+      "mean_accuracy_lift_pp": 23.191446842525977,
+      "prefixes": 5004
+    }
+  },
+  "clean": {
+    "accuracy_improved_group": {
+      "mean_teacher_minus_student_full_tokens": 74.84053518667741,
+      "prefixes": 7446,
+      "teacher_longer_fraction": 0.5799086757990868
+    },
+    "accuracy_lift_buckets": {
+      "-1": {
+        "accuracy_lift_pp": -12.5,
+        "mean_teacher_minus_student_full_tokens": 165.22995666305525,
+        "median_teacher_minus_student_full_tokens": 138.375,
+        "prefixes": 923,
+        "teacher_longer_fraction": 0.6912242686890574
+      },
+      "-2": {
+        "accuracy_lift_pp": -25.0,
+        "mean_teacher_minus_student_full_tokens": 207.69450431034483,
+        "median_teacher_minus_student_full_tokens": 178.3125,
+        "prefixes": 464,
+        "teacher_longer_fraction": 0.7543103448275862
+      },
+      "-3": {
+        "accuracy_lift_pp": -37.5,
+        "mean_teacher_minus_student_full_tokens": 213.16918604651164,
+        "median_teacher_minus_student_full_tokens": 185.75,
+        "prefixes": 215,
+        "teacher_longer_fraction": 0.6930232558139535
+      },
+      "-4": {
+        "accuracy_lift_pp": -50.0,
+        "mean_teacher_minus_student_full_tokens": 285.51909722222223,
+        "median_teacher_minus_student_full_tokens": 203.5625,
+        "prefixes": 144,
+        "teacher_longer_fraction": 0.8194444444444444
+      },
+      "-5": {
+        "accuracy_lift_pp": -62.5,
+        "mean_teacher_minus_student_full_tokens": 186.6625,
+        "median_teacher_minus_student_full_tokens": 124.8125,
+        "prefixes": 80,
+        "teacher_longer_fraction": 0.6875
+      },
+      "-6": {
+        "accuracy_lift_pp": -75.0,
+        "mean_teacher_minus_student_full_tokens": 215.3448275862069,
+        "median_teacher_minus_student_full_tokens": 199.75,
+        "prefixes": 29,
+        "teacher_longer_fraction": 0.7931034482758621
+      },
+      "-7": {
+        "accuracy_lift_pp": -87.5,
+        "mean_teacher_minus_student_full_tokens": 219.75892857142858,
+        "median_teacher_minus_student_full_tokens": 268.0625,
+        "prefixes": 14,
+        "teacher_longer_fraction": 0.7857142857142857
+      },
+      "-8": {
+        "accuracy_lift_pp": -100.0,
+        "mean_teacher_minus_student_full_tokens": 189.0625,
+        "median_teacher_minus_student_full_tokens": 189.0625,
+        "prefixes": 2,
+        "teacher_longer_fraction": 1.0
+      },
+      "0": {
+        "accuracy_lift_pp": 0.0,
+        "mean_teacher_minus_student_full_tokens": 140.16153944345163,
+        "median_teacher_minus_student_full_tokens": 91.375,
+        "prefixes": 3917,
+        "teacher_longer_fraction": 0.6573908603523104
+      },
+      "1": {
+        "accuracy_lift_pp": 12.5,
+        "mean_teacher_minus_student_full_tokens": 136.27391629297458,
+        "median_teacher_minus_student_full_tokens": 89.375,
+        "prefixes": 2007,
+        "teacher_longer_fraction": 0.6397608370702541
+      },
+      "2": {
+        "accuracy_lift_pp": 25.0,
+        "mean_teacher_minus_student_full_tokens": 106.41551000645578,
+        "median_teacher_minus_student_full_tokens": 81.125,
+        "prefixes": 1549,
+        "teacher_longer_fraction": 0.5990961910910265
+      },
+      "3": {
+        "accuracy_lift_pp": 37.5,
+        "mean_teacher_minus_student_full_tokens": 83.46005367464905,
+        "median_teacher_minus_student_full_tokens": 58.125,
+        "prefixes": 1211,
+        "teacher_longer_fraction": 0.5895953757225434
+      },
+      "4": {
+        "accuracy_lift_pp": 50.0,
+        "mean_teacher_minus_student_full_tokens": 32.594244984160504,
+        "median_teacher_minus_student_full_tokens": 32.25,
+        "prefixes": 947,
+        "teacher_longer_fraction": 0.5353748680042238
+      },
+      "5": {
+        "accuracy_lift_pp": 62.5,
+        "mean_teacher_minus_student_full_tokens": -4.763485477178423,
+        "median_teacher_minus_student_full_tokens": 4.25,
+        "prefixes": 723,
+        "teacher_longer_fraction": 0.5034578146611342
+      },
+      "6": {
+        "accuracy_lift_pp": 75.0,
+        "mean_teacher_minus_student_full_tokens": 29.8875250501002,
+        "median_teacher_minus_student_full_tokens": 27.75,
+        "prefixes": 499,
+        "teacher_longer_fraction": 0.5390781563126252
+      },
+      "7": {
+        "accuracy_lift_pp": 87.5,
+        "mean_teacher_minus_student_full_tokens": -45.51099706744868,
+        "median_teacher_minus_student_full_tokens": -28.375,
+        "prefixes": 341,
+        "teacher_longer_fraction": 0.4750733137829912
+      },
+      "8": {
+        "accuracy_lift_pp": 100.0,
+        "mean_teacher_minus_student_full_tokens": -53.04289940828402,
+        "median_teacher_minus_student_full_tokens": 14.25,
+        "prefixes": 169,
+        "teacher_longer_fraction": 0.5325443786982249
+      }
+    },
+    "accuracy_not_improved_group": {
+      "mean_teacher_minus_student_full_tokens": 157.13011834830684,
+      "prefixes": 5788,
+      "teacher_longer_fraction": 0.6774360746371804
+    },
+    "continuation_delta_vs_accuracy_lift": {
+      "accuracy_pp_per_100_extra_tokens": -1.0516295605147405,
+      "n": 13234,
+      "pearson_p": 1.0612128327485786e-61,
+      "pearson_r": -0.14334804700786377,
+      "spearman_p": 4.2370800589149615e-59,
+      "spearman_rho": -0.14023113919354302
+    },
+    "full_length_delta_vs_accuracy_lift": {
+      "accuracy_pp_per_100_extra_tokens": -1.0516295605147405,
+      "n": 13234,
+      "pearson_p": 1.0612128327485786e-61,
+      "pearson_r": -0.14334804700786377,
+      "spearman_p": 4.2370800589149615e-59,
+      "spearman_rho": -0.14023113919354302
+    },
+    "mean_accuracy_lift_pp": 18.053876379023727,
+    "mean_teacher_minus_student_continuation_tokens": 110.83056898896781,
+    "mean_teacher_minus_student_full_tokens": 110.83056898896781,
+    "median_teacher_minus_student_full_tokens": 81.25,
+    "partial_pearson_controlling_student_length_and_accuracy": {
+      "p": 8.456095519045781e-117,
+      "r": -0.1977506916831447
+    },
+    "prefixes": 13234,
+    "teacher_longer_group": {
+      "accuracy_improves_fraction": 0.5240927297002064,
+      "fraction": 0.6225630950581834,
+      "mean_accuracy_lift_pp": 14.9214103653356,
+      "prefixes": 8239
+    },
+    "teacher_not_longer_group": {
+      "accuracy_improves_fraction": 0.6262262262262263,
+      "fraction": 0.37743690494181653,
+      "mean_accuracy_lift_pp": 23.22072072072072,
+      "prefixes": 4995
+    }
+  },
+  "definitions": {
+    "accuracy_lift": "Teacher accuracy minus Student accuracy for the same prefix",
+    "clean": "exclude a prefix if either model has any finish_reason=length rollout",
+    "length_delta": "Teacher mean trace tokens minus Student mean trace tokens; positive means Teacher is longer",
+    "unit": "one anchor prefix; both models have 8 rollouts"
+  }
+}

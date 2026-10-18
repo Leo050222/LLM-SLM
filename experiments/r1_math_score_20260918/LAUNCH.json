@@ -1,0 +1,14 @@
+{
+  "job_id": 106595,
+  "rows": 2254,
+  "source_group": "r1_k1_t2",
+  "source_seed": 20260912,
+  "model": "gpt-4o-mini",
+  "provider": "api.openlux.ai",
+  "api_probe": "passed",
+  "external_scoring_authorized": true,
+  "cpus": 8,
+  "gpus": 0,
+  "output": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rescore/r1_math_score_20260918",
+  "scores": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_hard/math_reasoning_grid_x8_20260916/r1_k1_t2/scores"
+}

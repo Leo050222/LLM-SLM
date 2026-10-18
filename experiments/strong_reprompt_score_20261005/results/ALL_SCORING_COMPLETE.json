@@ -1,0 +1,10 @@
+{
+  "rows": 9262,
+  "completed_at": 1791176920.6993802,
+  "scoring_signature": "f97dc3d042667802f2c8e3393d69b57447dba0a52ca8d65610f709f93257be30",
+  "usage": {
+    "prompt_tokens": 3218792,
+    "completion_tokens": 102597,
+    "total_tokens": 3321389
+  }
+}

@@ -1,0 +1,1 @@
+{"questions": 8, "accuracy": 0.0, "correct": 0, "takeovers": 44, "teacher_tokens": 352, "student_draft_tokens": 9252, "discarded_tokens": 1610, "judge_calls": 179, "scoring": "existing anchor boolean-normalized scorer", "rollouts_per_question": 1}

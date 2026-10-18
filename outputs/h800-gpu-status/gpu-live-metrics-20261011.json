@@ -1,0 +1,1212 @@
+{
+  "status": "success",
+  "data": {
+    "resultType": "vector",
+    "result": [
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-166f0967-bc45-f1ac-56e0-a954d3a725e7",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia0",
+          "endpoint": "metrics",
+          "gpu": "0",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:1B:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-85acd755-bc52-28f1-1eae-f16c2fb93e77",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia1",
+          "endpoint": "metrics",
+          "gpu": "1",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:1C:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-ab0ff0b0-8bdd-065f-3b9a-1e3932706488",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia2",
+          "endpoint": "metrics",
+          "gpu": "2",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:41:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-06c68820-499f-7c48-d344-481f3ed5cfbf",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia3",
+          "endpoint": "metrics",
+          "gpu": "3",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:44:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-2f6ea7ec-5af4-903e-8160-b0fbc30397e2",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia4",
+          "endpoint": "metrics",
+          "gpu": "4",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:86:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-0ac93db4-730d-f1e7-a9dd-e2451b61e3fb",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia5",
+          "endpoint": "metrics",
+          "gpu": "5",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:87:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-0fc80d70-87c5-d836-5362-1e0cdf81ed23",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia6",
+          "endpoint": "metrics",
+          "gpu": "6",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:BE:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-a33a3157-1543-7223-729c-eca77d96d4a6",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia7",
+          "endpoint": "metrics",
+          "gpu": "7",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:C1:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-cfe8b3f9-ba11-8e1b-21dd-74f4f6a17b61",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia0",
+          "endpoint": "metrics",
+          "gpu": "0",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:1B:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-2f9180e8-fa07-fbb2-3030-a9cb50ee5582",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia1",
+          "endpoint": "metrics",
+          "gpu": "1",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:1C:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-c33c45c6-61d6-36bc-e5ac-6d80e3bc4968",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia2",
+          "endpoint": "metrics",
+          "gpu": "2",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:41:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-24ff6dd2-c945-0876-6d2a-064dd4bed3f7",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia3",
+          "endpoint": "metrics",
+          "gpu": "3",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:44:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-050edb0f-9a6e-1ad5-ee48-c5ca77592845",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia4",
+          "endpoint": "metrics",
+          "gpu": "4",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:86:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-4e119421-71b9-06a5-054f-cdf880bb4687",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia5",
+          "endpoint": "metrics",
+          "gpu": "5",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:87:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-a62b0061-fce8-b11c-d392-df53adab095b",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia6",
+          "endpoint": "metrics",
+          "gpu": "6",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:BE:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_FREE",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-6aa50f92-b9ab-cbfb-f010-6b06dd885d4f",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia7",
+          "endpoint": "metrics",
+          "gpu": "7",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:C1:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "81081"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-166f0967-bc45-f1ac-56e0-a954d3a725e7",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia0",
+          "endpoint": "metrics",
+          "gpu": "0",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:1B:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-85acd755-bc52-28f1-1eae-f16c2fb93e77",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia1",
+          "endpoint": "metrics",
+          "gpu": "1",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:1C:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-ab0ff0b0-8bdd-065f-3b9a-1e3932706488",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia2",
+          "endpoint": "metrics",
+          "gpu": "2",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:41:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-06c68820-499f-7c48-d344-481f3ed5cfbf",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia3",
+          "endpoint": "metrics",
+          "gpu": "3",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:44:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-2f6ea7ec-5af4-903e-8160-b0fbc30397e2",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia4",
+          "endpoint": "metrics",
+          "gpu": "4",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:86:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-0ac93db4-730d-f1e7-a9dd-e2451b61e3fb",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia5",
+          "endpoint": "metrics",
+          "gpu": "5",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:87:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-0fc80d70-87c5-d836-5362-1e0cdf81ed23",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia6",
+          "endpoint": "metrics",
+          "gpu": "6",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:BE:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-a33a3157-1543-7223-729c-eca77d96d4a6",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia7",
+          "endpoint": "metrics",
+          "gpu": "7",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:C1:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-cfe8b3f9-ba11-8e1b-21dd-74f4f6a17b61",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia0",
+          "endpoint": "metrics",
+          "gpu": "0",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:1B:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-2f9180e8-fa07-fbb2-3030-a9cb50ee5582",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia1",
+          "endpoint": "metrics",
+          "gpu": "1",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:1C:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-c33c45c6-61d6-36bc-e5ac-6d80e3bc4968",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia2",
+          "endpoint": "metrics",
+          "gpu": "2",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:41:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-24ff6dd2-c945-0876-6d2a-064dd4bed3f7",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia3",
+          "endpoint": "metrics",
+          "gpu": "3",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:44:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-050edb0f-9a6e-1ad5-ee48-c5ca77592845",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia4",
+          "endpoint": "metrics",
+          "gpu": "4",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:86:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-4e119421-71b9-06a5-054f-cdf880bb4687",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia5",
+          "endpoint": "metrics",
+          "gpu": "5",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:87:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-a62b0061-fce8-b11c-d392-df53adab095b",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia6",
+          "endpoint": "metrics",
+          "gpu": "6",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:BE:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_FB_USED",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-6aa50f92-b9ab-cbfb-f010-6b06dd885d4f",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia7",
+          "endpoint": "metrics",
+          "gpu": "7",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:C1:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-166f0967-bc45-f1ac-56e0-a954d3a725e7",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia0",
+          "endpoint": "metrics",
+          "gpu": "0",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:1B:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-85acd755-bc52-28f1-1eae-f16c2fb93e77",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia1",
+          "endpoint": "metrics",
+          "gpu": "1",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:1C:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-ab0ff0b0-8bdd-065f-3b9a-1e3932706488",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia2",
+          "endpoint": "metrics",
+          "gpu": "2",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:41:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-06c68820-499f-7c48-d344-481f3ed5cfbf",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia3",
+          "endpoint": "metrics",
+          "gpu": "3",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:44:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-2f6ea7ec-5af4-903e-8160-b0fbc30397e2",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia4",
+          "endpoint": "metrics",
+          "gpu": "4",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:86:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-0ac93db4-730d-f1e7-a9dd-e2451b61e3fb",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia5",
+          "endpoint": "metrics",
+          "gpu": "5",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:87:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-0fc80d70-87c5-d836-5362-1e0cdf81ed23",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia6",
+          "endpoint": "metrics",
+          "gpu": "6",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:BE:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-a33a3157-1543-7223-729c-eca77d96d4a6",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia7",
+          "endpoint": "metrics",
+          "gpu": "7",
+          "hostname": "172.16.1.5",
+          "instance": "10.76.12.3:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:C1:00.0",
+          "pod": "dcgm-exporter-m5g6z",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-cfe8b3f9-ba11-8e1b-21dd-74f4f6a17b61",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia0",
+          "endpoint": "metrics",
+          "gpu": "0",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:1B:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-2f9180e8-fa07-fbb2-3030-a9cb50ee5582",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia1",
+          "endpoint": "metrics",
+          "gpu": "1",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:1C:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-c33c45c6-61d6-36bc-e5ac-6d80e3bc4968",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia2",
+          "endpoint": "metrics",
+          "gpu": "2",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:41:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-24ff6dd2-c945-0876-6d2a-064dd4bed3f7",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia3",
+          "endpoint": "metrics",
+          "gpu": "3",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:44:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-050edb0f-9a6e-1ad5-ee48-c5ca77592845",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia4",
+          "endpoint": "metrics",
+          "gpu": "4",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:86:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-4e119421-71b9-06a5-054f-cdf880bb4687",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia5",
+          "endpoint": "metrics",
+          "gpu": "5",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:87:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-a62b0061-fce8-b11c-d392-df53adab095b",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia6",
+          "endpoint": "metrics",
+          "gpu": "6",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:BE:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "DCGM_FI_DEV_GPU_UTIL",
+          "DCGM_FI_DRIVER_VERSION": "595.45.04",
+          "UUID": "GPU-6aa50f92-b9ab-cbfb-f010-6b06dd885d4f",
+          "cluster": "h800",
+          "container": "exporter",
+          "device": "nvidia7",
+          "endpoint": "metrics",
+          "gpu": "7",
+          "hostname": "172.16.1.4",
+          "instance": "10.76.69.135:9400",
+          "job": "dcgm-exporter",
+          "modelName": "NVIDIA H800",
+          "namespace": "kube-system",
+          "pci_bus_id": "00000000:C1:00.0",
+          "pod": "dcgm-exporter-jff5b",
+          "prometheus": "monitoring/h800-vm-victoria-metrics-k8s-stack",
+          "service": "dcgm-exporter"
+        },
+        "value": [
+          1791699232,
+          "0"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "seriesFetched": "48",
+    "executionTimeMsec": 17
+  }
+}

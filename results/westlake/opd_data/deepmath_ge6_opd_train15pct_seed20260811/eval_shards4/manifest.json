@@ -1,0 +1,21 @@
+{
+  "flat_file": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_data/deepmath_ge6_opd_train15pct_seed20260811/eval_shards4/test_1000_flat.parquet",
+  "flat_sha256": "2e6e76afa1a5d7121481abb549456fe8a97b01dcc62304f16e6379e17b744ee6",
+  "input": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_data/deepmath_ge6_opd_train15pct_seed20260811/test_1000.parquet",
+  "input_sha256": "6ef8e66d181b7522bad2904ad1fcf20d8fc152af0c9d7eb05e07a9f2f0415ae0",
+  "num_rows": 1000,
+  "num_shards": 4,
+  "shard_rows": [
+    250,
+    250,
+    250,
+    250
+  ],
+  "shard_sha256": [
+    "5c5eca41493076cac7e511fa6c1fd770ad52b3d875f2d3b1fb5acc27f4d54fe9",
+    "e84825edb595933848657ee578ad6a4f1e3c70f247e5554191b54ecae33c72f9",
+    "392df74476bdbe70eaa6a5dab8f2262ebc6eb0b9f270f5b389b6b10aa12d5bd8",
+    "f2996e686ebfdad0475842c67ecbf786b6e46f6d6a8d699fad83c70e0414bb30"
+  ],
+  "status": "DEEPMATH_GE6_EVAL_SHARDS_OK"
+}

@@ -1,0 +1,67 @@
+{
+  "verified": true,
+  "rows": 2314,
+  "statistics": {
+    "aime24": {
+      "n": 30,
+      "correct": 3,
+      "tokens": 74041,
+      "teacher_tokens": 6633,
+      "takeovers": 830,
+      "max_takeovers": 52,
+      "zero_takeovers": 0,
+      "finish_reasons": {
+        "stop": 30
+      }
+    },
+    "aime25": {
+      "n": 30,
+      "correct": 6,
+      "tokens": 61105,
+      "teacher_tokens": 5736,
+      "takeovers": 717,
+      "max_takeovers": 57,
+      "zero_takeovers": 0,
+      "finish_reasons": {
+        "stop": 30
+      }
+    },
+    "olympiad_bench": {
+      "n": 674,
+      "correct": 311,
+      "tokens": 1003841,
+      "teacher_tokens": 86292,
+      "takeovers": 10854,
+      "max_takeovers": 80,
+      "zero_takeovers": 3,
+      "finish_reasons": {
+        "stop": 673,
+        "length": 1
+      }
+    },
+    "bbh": {
+      "n": 1080,
+      "correct": 818,
+      "tokens": 293136,
+      "teacher_tokens": 87109,
+      "takeovers": 11331,
+      "max_takeovers": 54,
+      "zero_takeovers": 13,
+      "finish_reasons": {
+        "stop": 1080
+      }
+    },
+    "math500": {
+      "n": 500,
+      "correct": 421,
+      "tokens": 431226,
+      "teacher_tokens": 36923,
+      "takeovers": 4624,
+      "max_takeovers": 53,
+      "zero_takeovers": 15,
+      "finish_reasons": {
+        "stop": 500
+      }
+    }
+  }
+}

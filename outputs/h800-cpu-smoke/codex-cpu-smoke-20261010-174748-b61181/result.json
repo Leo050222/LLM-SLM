@@ -1,0 +1,33 @@
+{
+  "job_name": "codex-cpu-smoke-20261010-174748-b61181",
+  "namespace": "dcloud-auwomo",
+  "job_uid": "6442b7b4-3b32-4a35-af0c-92b1a9164e9a",
+  "job_complete": true,
+  "success": true,
+  "pods": [
+    {
+      "pod_name": "codex-cpu-smoke-20261010-174748-b61181-qtcc8",
+      "node": "172.16.1.5",
+      "phase": "Succeeded",
+      "container_exit_code": 0,
+      "started_at": "2026-10-10T09:48:14Z",
+      "finished_at": "2026-10-10T09:48:14Z",
+      "resources": {
+        "limits": {
+          "cpu": "1",
+          "memory": "128Mi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "128Mi"
+        }
+      },
+      "success_marker": true,
+      "sum_verified": true,
+      "log_file": "/Users/leolee/Documents/OPD/outputs/h800-cpu-smoke/codex-cpu-smoke-20261010-174748-b61181/codex-cpu-smoke-20261010-174748-b61181-qtcc8.log"
+    }
+  ],
+  "cleanup": "confirmed",
+  "cleanup_checked_at": "2026-10-10T17:49:54.327591+08:00",
+  "remaining_test_pods": 0
+}

@@ -1,0 +1,1542 @@
+Look Ahead Before You Distill: Future Trajectory Validation of Teacher
+Guidance for Agentic On-Policy Distillation
+Chishui Chen1,3,* Yaoyou Fan1,4,* Te Sun2,* Yi Yang1,5,* Chenghao Sun6
+Delin Mao2 Hongbo Qiao7 Zuowei Zhang8 Junxi Wang3 Chenxing Sun1,†
+Yangen Hu1 Lu Pan1 Xuyang Liu9 Linfeng Zhang2,†
+1Meituan LongCat Interaction 2Shanghai Jiao Tong University 3Fudan University
+4Peking University 5Nanjing University 6University of Chinese Academy of Sciences
+7Jilin University 8University of Science and Technology of China
+9The Hong Kong Polytechnic University
+Abstract
+On-policy distillation (OPD) provides teacher supervision
+on states visited by the student, reducing the distribution
+gap between training and inference. However, in multi-turn
+agentic tasks, student deviations may accumulate over
+time, gradually moving the trajectory away from states
+where teacher guidance remains effective. Our quantita-
+tive analysis further shows that high-disagreement states
+offer promising opportunities for teacher guidance, but
+determining whether such guidance is beneficial requires
+examining its effect on subsequent student trajectories.
+We proposeFutureBridge-OPD(FTB), which executes
+a short teacher bridge at a high disagreement state and
+uses the resulting student continuation to assess whether
+the bridge increases the density of positive distillation
+signals relative to the teacher. On ALFWorld, WebShop,
+and ScienceWorld, under the main Qwen3-32B teacher
+to Qwen3-1.7B student setting, FTB outperforms vanilla
+OPD and TCOD by an average of16.6and7.6points,
+respectively, and remains effective across student scales
+and teacher settings. Our code is publicly available at
+https://github.com/ChenChiShui/FutureBridge-OPD.
+1 Introduction
+On-policy distillation (OPD) has recently emerged as an
+effective approach for transferring the capabilities of large
+language models to smaller models Agarwal et al. (2024).
+By providing teacher supervision on states visited by the
+student itself, OPD alleviates the distribution mismatch
+between offline distillation and actual inference Ross et al.
+(2011); Bengio et al. (2015). However, in multi-turn agentic
+tasks, early deviations made by the student alter the
+subsequent state distribution and accumulate along the
+trajectory, gradually weakening the effectiveness of later
+teacher supervision Zhong et al. (2026); Liao et al. (2026).
+*Equal contribution. †Corresponding authors.
+Email: chishui.chen@outlook.com.
+Work done during an internship at Meituan.
+Existing agentic OPD methods mainly tackle this issue
+in two ways. Methods such as TCOD and Guided-OPD
+regulate student takeover through teacher prefixes, cur-
+riculum schedules, or adaptive rollout depths Wang et al.
+(2026a); Li et al. (2026a); Zhou et al. (2026b). Another line
+of work filters or reweights distillation signals using KL
+divergence, model confidence, or environment feedback Xu
+et al. (2026b); Zheng et al. (2026); Zhou et al. (2026a).
+The former reshapes the student-visited state distribution,
+whereas the latter estimates supervision value from local
+information at the current state. However, both largely
+overlook one question:Can teacher guidance steer
+the student’s future trajectory toward regions with
+higher teacher preference?
+To study this question, we analyze 1,000 failed trajecto-
+ries from ALFWorld, WebShop, and ScienceWorld Shrid-
+har et al. (2021); Yao et al. (2022); Wang et al. (2022).
+We replay the history prefix, replace the student action
+at positions with large teacher–student disagreement, and
+then let the same student policy complete the remaining
+interaction. Further details are given in Appendix B. This
+analysis reveals two useful properties of teacher guidance
+in multi-turn agentic OPD:
+(I) Key Action Replacement Improves Outcomes.
+As illustrated in the second panel of Figure 1, replacing the
+student action with the teacher action at positions with
+large teacher–student KL divergence improves environ-
+ment rewards in approximately31%of the trajectories,
+compared with only6%when actions are replaced at
+random positions. However, even among these high-KL
+positions, approximately19%of the interventions still de-
+grade trajectory performance. This indicates that teacher–
+student KL divergence is useful for identifying candidate
+intervention positions, but insufficient for determining
+whether the corresponding teacher guidance is beneficial.
+(II) Teacher Guidance Redirects Students Toward
+Teacher-Preferred Regions.We further examine how
+teacher guidance affects the continuation autonomously
+1
+arXiv:2608.01953v2  [cs.CL]  5 Aug 2026
+
+1. Multi-turn OPD
+2. Key Action Replacement
+3. FutureBridge-OPDBetter
+Worse
+domain drift
+teacher trajectory
+student trajectory
+31%
+6%large teacher–student KL position
+random position
+overlap
+env reward
+student continuation
+teacher bridge
+Teacher bridges steer students toward higher-preference regions.
+env reward
+teacher domain
+student domain
+Figure 1: Motivation and overview of FutureBridge-OPD. (1) Student deviations accumulate over multi-turn interactions.
+(2) High KL positions offer promising intervention opportunities. (3) The induced student continuation validates the
+teacher bridge, which redirects the student toward teacher preferred regions.
+generated by the student. After adopting the teacher
+action, the proportion of teacher preferred tokens in the
+subsequent student trajectory increases by approximately
+10.8%in relative terms, conceptually illustrated in the
+third panel of Figure 1 as the student continuation shifting
+toward the teacher preferred region. This result suggests
+that the effect of appropriate local guidance is not confined
+to the current decision, but persists across subsequent
+interactions. Therefore, assessing the value of candidate
+teacher guidance also requires looking ahead to the future
+student trajectory that it induces.
+We thus proposeFutureBridge-OPD(FTB), a
+two-stage framework that locates candidate interven-
+tions through teacher–student disagreement and validates
+teacher guidance through the induced future student
+trajectory. FTB first identifies a candidate position and
+executes ateacher bridgeby replacing the student decision
+with a teacher action. The same student policy then
+generates a short continuation from the bridged state,
+and the resulting future trajectory determines whether the
+guidance redirects subsequent student behavior toward
+regions with higher teacher preference and should be
+retained for distillation.
+Our main contributions are summarized as follows:
+• Systematic Analysis of Teacher Guidance in
+Agentic OPD.We analyze the interplay among
+student rollout depth, teacher–student disagreement,
+and future distillation signals in multi-turn agentic
+OPD. We show that high-disagreement interventions
+more often improve outcomes and steer future student
+trajectories toward denser positive distillation signals.
+• A Framework for Future Validation of Teacher
+Guidance.We propose FutureBridge-OPD, which
+executes a teacher bridge at a candidate decision and
+validates it through the induced student continuation
+before distillation.
+• Consistent Gains across Tasks and Models.
+Across ALFWorld, WebShop, and ScienceWorld,
+FutureBridge-OPD improves the average success rate
+by16.6and7.6points over vanilla OPD Agarwal
+et al. (2024) and TCOD-B2F Wang et al. (2026a),
+respectively, and remains effective across student
+scales and teacher settings.
+2 Related Work
+On-Policy Distillation for Agents.Knowledge dis-
+tillation transfers the predictive distribution of a large
+teacher to a smaller student, enabling model compression
+and capability transfer Hinton et al. (2015). Distillation at
+the sequence level extends this principle to autoregressive
+sequence generation Kim and Rush (2016), while MiniLLM
+further investigates reverse KL objectives tailored to large
+language model generation Gu et al. (2024). On-policy
+distillation (OPD) provides teacher supervision on data
+generated and states visited by the student, thereby reduc-
+ing the distribution mismatch between offline distillation
+and actual inference Agarwal et al. (2024).
+Recent studies further examine the mechanisms, applica-
+ble conditions, and potential failure modes of OPD under
+long horizon generation Li et al. (2026b); Fu et al. (2026);
+Yang et al. (2026); Liu et al. (2026). For multi-turn agent
+tasks, TCOD uses a temporal curriculum to control how
+2
+
+deeply the student takes over the trajectory Wang et al.
+(2026a), while Guided-OPD mixes teacher and student
+turns according to a curriculum schedule Li et al. (2026a).
+Other studies improve trajectory construction and teacher
+guidance in multi-turn OPD through prefix replay, short-
+to-long rollouts, adaptive rollout depths, adjustment at
+the turn level, or environment feedback Liao et al. (2026);
+Zhang et al. (2026b); Zhou et al. (2026b); Tan et al. (2026);
+Zhou et al. (2026a).
+Selective Supervision and Reweighting in OPD.
+Another line of work focuses on selecting or reweighting
+distillation supervision across different tokens, turns, or
+reasoning steps. Existing methods use signals such as
+generation position, teacher entropy, student uncertainty,
+causal lookahead, teacher–student divergence, trajectory
+outcomes, or model perplexity to identify high value
+supervision or adjust its distillation strength Zhang et al.
+(2026a); Jin et al. (2026); Ke et al. (2026); Xu et al.
+(2026b); Zheng et al. (2026); Zhong et al. (2026); Xing
+et al. (2026). These methods generally estimate supervision
+value primarily from the current response, local model
+distributions, or outcomes of trajectories already generated
+by the student itself.
+Future Information for Supervision and Credit
+Assignment.In language model reasoning and policy
+optimization, several studies use future continuations to
+estimate the downstream effects of local decisions. Existing
+approaches reshape advantages at the token level using
+future KL divergence, perform detailed credit assign-
+ment through counterfactual perturbations or gradient
+approximations, resample continuations from intermediate
+reasoning states, or combine local uncertainty with future
+continuation signals for branching and guidance Ma et al.
+(2026); Li et al. (2026c); Samanta et al. (2026); Wang
+et al. (2026b); Jiang and Ferraro (2026). These studies
+demonstrate the value of future information for evaluating
+local decisions.
+3 Method
+3.1 Preliminary: On-Policy Distillation
+We consider a finite horizon, multi-turn interaction be-
+tween an agent and an environment. At turnt, the agent
+receives an observationot, generates a responseat, and ex-
+ecutes it as a single environment action. The environment
+then returns the next observationot+1. We denote the
+interaction history byht = (o1,a 1,...,ot−1,at−1,ot)and
+a complete trajectory byτ= (o1,a 1,...,oT,aT,oT+1 ).
+On-policy distillation (OPD) aligns a student policy
+πθwith a teacher policy πϕon states visited by the
+student, thereby reducing the mismatch between training
+and inference as follows:
+LOPD(θ) =Eτ∼pπθ
+[ T∑
+t=1
+DKL (πθ(·|ht)∥πϕ(·|ht))
+]
+.
+(1)
+For multi-turn tasks, we adopt the Back-to-Forward
+curriculum (B2F) from TCOD. Given a successful trajec-
+tory of lengthL, B2F replays its firstL−kturns and lets
+the student complete the remaining interaction, withk
+gradually increasing during training. Following TCOD’s
+public implementation, trajectories are collected using a
+frozen student policyπ¯θ, and Eq.(1) is optimized with a
+sampled token estimator during training.
+For a student responseat = (xt,1,...,xt,Mt), letct,i =
+(ht,xt,<i)be the context of tokenxt,i. We denote the raw
+sampled distillation advantage by
+At,i =β[logπϕ(xt,i|ct,i)−logπ¯θ(xt,i|ct,i)],(2)
+where β >0is the distillation coefficient. A positive value
+indicates that the teacher assigns the sampled token higher
+likelihood than the frozen student. We explicitly callAt,i
+rawhere to distinguish it from clipped or normalized
+variants used during optimization.
+3.2 FutureBridge-OPD
+FTB uses a local sampled signal to propose a candidate
+teacher intervention and paired future continuations to
+validate its downstream effect, as illustrated in Figure 2.
+Candidate Localization.Given a B2F student rollout
+τ, we score the response actually executed at each turn
+controlled by the student:
+ˆdt = 1
+Mt
+Mt∑
+i=1
+log π¯θ(xt,i|ct,i)
+πϕ(xt,i|ct,i).(3)
+Let At =M−1
+t
+∑Mt
+i=1At,i. By autoregressive factorization,
+ˆdt = 1
+Mt
+log π¯θ(at|ht)
+πϕ(at|ht) =−1
+βAt.
+We therefore select
+t⋆= arg max
+t∈TS(τ)
+ˆdt = arg min
+t∈TS(τ)
+At,(4)
+whereTS(τ)contains the turns generated by the student
+after the replayed teacher prefix, excluding the final turn.
+Thus, FTB selects the realized student response with the
+lowest averagedistillation advantagerelativeto theteacher.
+Here, ˆdt directly evaluates the response that induced
+the observed environment transition. It is a directional
+sampled score and is used only to localize a potentially
+correctable turn; whether the teacher replacement is ben-
+eficial is determined by the future validation below. At
+most one bridge is attempted per trajectory, bounding
+validation cost and isolating a single intervention.
+Teacher Bridge and Paired Continuations.Letastu
+t⋆
+denote the original student response. Conditioned on the
+same historyht⋆, the teacher generates a bridge response
+abr
+t⋆using the student’s decoding configuration. We restore
+the environment state att⋆, executeabr
+t⋆in place ofastu
+t⋆,
+and return control to the frozen studentπ¯θfor anH-turn
+continuationξbr.Thecorrespondingcontinuationfollowing
+the original student response is denoted byξbase.
+3
+
+1. On-Policy Student Rollout
+2. Candidate Localization
+3.Teacher Bridge and Paired Continuations
+<think>     I      should  search    the    kitchen</think><action>   open   fridge </action>……0.4 0.50.5 0.30.60.20.40.70.9 0.81.0B2F start learning on the backward turns
+Not calculatedSuccessfultrajectories prefix
+teacher
+student
+step1
+d1d2
+d5
+d3d4
+step2step3step4step5
+positive
+negative
+OPD
+𝐭∗=𝐚𝐫𝐠𝐦𝐚𝐱𝐭∈𝓣𝐒𝛕𝟏𝐌𝐭*𝐢'𝟏
+𝐌𝐭𝐥𝐨𝐠𝛑*𝛉𝐱𝐭,𝐢∣𝐜𝐭,𝐢𝛑𝛟𝐱𝐭,𝐢∣𝐜𝐭,𝐢
+step5step4step3step2step1
+ step6
+step1step2step3
+Step4+
+step5Step4-
+ step6
+The Teacher  Bridge           replaces the selectedStudent         Step 4− with a Teacher        Step 4+, followed by Student Continuation to test whether it increases Future Teacher Preference.
+Bridge StudentTeacher
+Teacher-Bridge Branch
+Original-Response Branch
+Figure 2: Overview of FutureBridge-OPD: (1) on-policy student rollouts provide distillation signals; (2) maximum
+teacher–student disagreement identifies a candidate bridge turn; (3) paired continuations validate the teacher bridge.
+Both continuations start from the same history before
+intervention and, after the alternative actions, are gener-
+ated by the same frozen student. Their difference therefore
+reflects the downstream effect of replacing the realized
+student response with the teacher bridge.
+Future Validation Gate.For any sequence generated
+by the studenty= (y 1,...,y|y|), we define
+ρ(y) =1
+|y|
+|y|∑
+i=1
+1[Ai(y)>0],(5)
+where Ai(y)denotes Eq. (2) evaluated on tokenyi and
+its context. Equivalently,ρ(y)is the fraction of tokens
+to which the teacher assigns higher likelihood than the
+frozen student. It measures the teacher preferred token
+ratio along the generated student continuation. This ratio
+is normalized by the total number of generated tokens,
+facilitating comparisons between continuations of different
+lengths and preventing a small number of large log proba-
+bility differences from dominating the aggregate statistic.
+The bridge acceptance indicator is
+g(τ) =1
+[
+ρ(ξbr)>ρ(ξbase)
+]
+.(6)
+A bridge is retained only when its induced student contin-
+uation has a higher teacher preferred token ratio than the
+corresponding original continuation.
+The paired continuations are used only as validation
+evidence. For an accepted bridge, onlyabr
+t⋆is added to the
+B2F experience buffer. Beyond the successful reference
+trajectories inherited from B2F, this procedure uses no
+additional environment reward or task success label.
+3.3 Future Teacher Preference
+Let ξH(h,a ;π¯θ)denote the continuation obtained by exe-
+cuting actiona under historyh and subsequently rolling
+out the frozen student forH turns. We define an auxiliary
+future teacher preference value by
+UH
+ϕ,¯θ(h,a) =E[ρ(ξH(h,a;π¯θ))].(7)
+It measures the expected teacher preferred token ratio in
+the student continuation induced bya.
+For the teacher bridge and the original student response,
+define the future teacher preference gain
+∆ H
+ϕ,¯θ=U H
+ϕ,¯θ(ht⋆,a br)−UH
+ϕ,¯θ(ht⋆,a stu),(8)
+with the paired sample estimate
+ˆ∆ H
+ϕ,¯θ=ρ(ξbr)−ρ(ξbase).(9)
+The gate retains bridges satisfyingˆ∆ H
+ϕ,¯θ> 0, i.e., bridges
+with a positive sampled future teacher preference gain.
+Candidate localization and future validation use com-
+plementary aggregations of the same sampled OPD signal.
+The signed average advantage localizes a realized response
+receiving weak teacher relative support, while the teacher
+preferred token ratio characterizes the student continua-
+tion induced by replacing that response.
+Accepted teacher bridges are optimized with
+Lbridge(θ) =−E
+[
+g(τ)
+Mbr
+Mbr∑
+i=1
+sg[Abr
+i ] logπθ(xbr
+i |cbr
+i )
+]
+.
+(10)
+At θ= ¯θ, treating the accepted bridge data and gate
+as fixed, its gradient matches that of a sampled squared
+teacher–student log probability discrepancy objective. The
+formal statement and proof are provided in Appendix D.
+4
+
+Method ALFW orld W ebShop ScienceW orld
+SR↑Score↑SR↑Score↑SR↑
+Qwen3-32B teacher→Qwen3-1.7B student
+Student (zero-shot) 7.5 39.0 31.0 6.4 2.0
+Teacher (zero-shot) 50.0 52.8 51.0 28.8 12.0
+OPD 21.5±3.0 32.6±2.2 31.7±2.9 22.2±1.3 2.0±1.5
+TCOD-F2B 30.7±3.2↑9.239.6±1.7↑7.038.3±1.2↑6.6 26.1±0.0↑3.95.8±0.8↑3.8
+TCOD-B2F 35.0±3.3↑13.541.8±3.7↑9.240.3±3.3↑8.622.3±0.4↑0.1 6.7±0.6↑4.7
+Guided-OPD 33.1±5.4↑11.644.6±11.7↑12.041.7±10.6↑10.023.5±2.3↑1.34.7±0.6↑2.7
+FTB w/o Bridge Exec. 31.4±3.2↑9.9 58.4±3.4↑25.855.3±3.7↑23.618.7±3.3↓3.53.7±1.2↑1.7
+FTB (Ours) 40.4±3.4↑18.958.1±1.5↑25.557.7±1.7↑26.026.4±0.4↑4.2 6.8±0.6↑4.8
+Qwen3-32B teacher→Qwen3-4B student
+Student (zero-shot) 20.9 32.9 29.0 23.1 8.5
+Teacher (zero-shot) 50.0 52.8 51.0 28.8 12.0
+OPD 42.3±4.9 43.2±1.7 40.3±2.6 29.0±0.37.3±1.0
+TCOD-F2B 47.5±4.6↑5.249.7±7.9↑6.546.7±6.8↑6.423.9±0.4↓5.111.3±2.5↑4.0
+TCOD-B2F 39.8±4.8↓2.5 50.9±1.2↑7.747.3±2.6↑7.024.5±2.1↓4.59.5±0.4↑2.2
+Guided-OPD 47.0±9.3↑4.747.7±5.8↑4.547.0±5.9↑6.728.3±1.7↓0.711.3±2.0↑4.0
+FTB w/o Bridge Exec. 48.5±9.2↑6.2 50.7±0.3↑7.5 48.3±1.2↑8.024.6±3.7↓4.4 12.5±3.3↑5.2
+FTB (Ours) 48.3±1.9↑6.0 50.9±5.9↑7.7 50.0±5.7↑9.7 28.4±2.9↓0.6 14.0±0.4↑6.7
+Table 1: Main results with Qwen3-32B as the teacher, reported as mean±standard deviation over three seeds;
+annotations show absolute changes over OPD, whileblueandredbackgrounds denote the best and second-best trained
+methods, respectively.
+4 Experiments
+4.1 Experimental Setup
+Benchmarks and Models.We conduct experiments
+on three multi-turn agent benchmarks: ALFWorld Shrid-
+har et al. (2021), WebShop Yao et al. (2022), and
+ScienceWorld Wang et al. (2022). We follow TCOD Wang
+et al. (2026a) in using the same data splits, environment
+configurations, and prompt templates. The maximum
+numbers of environment interaction steps are set to 30,
+15, and 30 for ALFWorld, WebShop, and ScienceWorld,
+respectively. Our main experiments use Qwen3-32B as
+the teacher and we further evaluate Qwen3-4B as the stu-
+dent and a Qwen3-8B teacher trained with reinforcement
+learning Yang et al. (2025); Shao et al. (2024); Feng et al.
+(2025). Further details of the teacher training are provided
+in Appendix C.3. We report success rate for ALFWorld,
+and both task score and success rate for WebShop and
+ScienceWorld.
+Training Setup.All methods use the same training
+budget of 200 optimization steps. FTB is built upon
+the B2F curriculum introduced by TCOD Wang et al.
+(2026a), where the teacher prefix is shortened by one
+environment step every five training steps, allowing the
+student to progressively take control from earlier states.
+Further experimental details are provided in Appendix C.
+Baselines.We compare with several agentic on-policy dis-
+tillation methods. Vanilla OPD directly performs teacher–
+student distillation on states visited by the student Agar-
+wal et al. (2024). TCOD-F2B starts from the early part
+of the trajectory and progressively increases the student
+rollout depth, while TCOD-B2F initializes the student
+from intermediate states using prefixes of successful ref-
+erence trajectories and gradually shortens these prefixes
+during training Wang et al. (2026a). Guided-OPD mixes
+teacher and student turns through a curriculum schedule,
+progressively increasing the student’s control over the full
+trajectory Li et al. (2026a). All baselines are implemented
+following the core settings of their original papers.
+4.2 Main Results
+Results with the Qwen3-32B Teacher.As shown in
+Table 1, with the Qwen3-1.7B student, FTB improves the
+average success rate over OPD and TCOD-B2F by 16.6
+and 7.6 percentage points, respectively. When scaling the
+student to Qwen3-4B, FTB still yields improvements of
+7.5 and 5.2 percentage points, demonstrating consistent
+gains across student scales. Notably, on WebShop, the
+1.7B student trained with FTB outperforms both the 4B
+student and the zero-shot 32B teacher. Trajectory analysis
+shows that the 1.7B student follows simpler and more
+direct paths, averaging 7.67 steps with a 32% maximum
+step rate, while the 4B student averages 11.37 steps with a
+51% maximum step rate and more often becomes trapped
+in redundant interactions. FTB trains the student on
+validated local guidance and supports the development of
+a task specific policy with more efficient execution, helping
+the student surpass the zero-shot teacher.
+Results with a Teacher Trained with RL.As shown
+in Table 2, when using the Qwen3-8B teacher trained
+with RL, FTB achieves the best performance on all three
+reported metrics. Its average success rate across ALFWorld
+and WebShop exceeds OPD and TCOD-B2F by 4.5 and 4.3
+percentage points, respectively, confirming its effectiveness
+under different teacher configurations considered here.
+5
+
+0 25 50 75 100 125 150 175
+0.00
+0.25
+0.50
+0.75
+1.00
+Completion Rate
+a. Completion Rate
+0 25 50 75 100 125 150 175
+0
+20
+40
+60
+KL per Round
+b. Teacher–Student KL per Round
+0 25 50 75 100 125 150 175
+0
+10
+20
+Mean Number of Rounds
+c. Number of Rounds
+0 25 50 75 100 125 150 175
+−1.00
+−0.75
+−0.50
+−0.25
+0.00
+Mean Advantage
+d. Mean Advantage
+0 25 50 75 100 125 150 175
+Training Steps
+0.00
+0.25
+0.50
+0.75
+1.00
+Completion Rate
+a. Completion Rate
+0 25 50 75 100 125 150 175
+Training Steps
+0
+10
+20
+30
+40
+50
+KL per Round
+b. Teacher–Student KL per Round
+0 25 50 75 100 125 150 175
+Training Steps
+0
+5
+10
+15
+Mean Number of Rounds
+c. Number of Rounds
+0 25 50 75 100 125 150 175
+Training Steps
+−0.4
+−0.2
+0.0
+Mean Advantage
+d. Mean Advantage
+ALFWorld: Qwen3-8B-RL → Qwen3-4B
+WebShop: Qwen3-8B-RL → Qwen3-4B
+OPD B2F F2B FTB
+Figure 3: Training dynamics on ALFWorld and WebShop under the Qwen3-8B-RL teacher→Qwen3-4B student setting.
+The top and bottom rows correspond to ALFWorld and WebShop, respectively. From left to right, the four columns
+report the trajectory completion rate, teacher–student KL divergence per interaction round, mean number of interaction
+rounds, and mean sampled distillation advantage over training.
+Method ALFW orld W ebShop
+SR↑Score↑SR↑
+Qwen3-8B-RL teacher→Qwen3-4B student
+Student (zero-shot) 20.9 32.9 29.0
+Teacher (zero-shot) 79.9 62.6 61.0
+OPD 67.4±3.7 63.7±2.5 64.0±1.6
+TCOD-F2B 66.5±1.3 63.3±2.6 64.7±2.1
+TCOD-B2F 68.6±2.3 61.7±1.7 63.3±1.2
+Guided-OPD 72.6±3.4 63.8±3.962.0±5.0
+FTB w/o Bridge Exec. 70.8±1.6 63.0±0.8 63.0±1.4
+FTB (Ours) 74.1±3.1 65.7±1.2 66.3±0.5
+Table 2: Results with an RL-trained teacher, reported as
+mean±standard deviation over three seeds;blueand
+redbackgrounds denote the best and second-best trained
+methods for each reported metric, respectively.
+Training Dynamics.Figure 3 compares the training
+dynamics under the Qwen3-8B-RL teacher→Qwen3-4B
+student setting. On both benchmarks, FTB improves the
+completion rate earlier and rapidly reduces the teacher–
+student KL difference. As training progresses, the numbers
+of interaction rounds gradually converge to similar levels
+across methods, while FTB achieves a faster increase
+in mean distillation advantage, indicating more effective
+optimization of the student policy during training.
+4.3 Ablation Study
+Following the Qwen3-8B-RL teacher→Qwen3-4B student
+setting in Table 2, we conduct the ablation study in Table 3
+to examine candidate position selection, teacher bridge ex-
+ecution, and future trajectory validation.FTB w/ Random
+Method ALFW orld W ebShop
+SR↑Score↑SR↑
+Qwen3-8B-RL teacher→Qwen3-4B student
+Student (zero-shot) 20.9 32.9 29.0
+Teacher (zero-shot) 79.9 62.6 61.0
+TCOD-B2F 68.6±2.3 61.7±1.7 63.3±1.2
+FTB w/ Random Turn 62.3±3.0 58.3±1.3 60.3±1.2
+FTB w/o Bridge Exec. 70.8±1.6 63.0±0.8 63.0±1.4
+FTB w/o Future Validation 71.9±5.8 65.0±1.164.3±3.2
+FTB (F ull) 74.1±3.1 65.7±1.266.3±0.5
+Table 3: Ablation results with an RL-trained teacher,
+reported as mean±standard deviation over three seeds;
+blueandredbackgroundsdenotethebestandsecond-best
+trained methods for each reported metric, respectively.
+Turnreplaces the turn with the largest teacher–student
+disagreement with a randomly selected turn, evaluating
+the importance of locating critical intervention positions.
+FTB w/o Bridge Exec.does not execute the teacher bridge
+in the environment. It determines whether to include the
+corresponding teacher action in training by comparing the
+teacher preferred token ratios of the trajectory segments
+before and after the candidate position in the original
+student trajectory.FTB w/o Future Validationexecutes
+the teacher bridge and lets the student continue from the
+resulting state, but no longer filters the teacher action
+according to whether the subsequent trajectory achieves
+a higher teacher preferred token ratio than the original
+trajectory. Random turn selection causes the largest per-
+formance degradation, while removing bridge execution
+6
+
+1 3 5 7 9 11 13 15
+Student Turn Index
+0.0
+0.1
+0.2
+0.3
+0.4Teacher Preferred Token Ratio
+a. ALFWorld
+1 3 5 7 9 11 13 15
+Student Turn Index
+0.0
+0.1
+0.2
+0.3
+0.4Teacher Preferred Token Ratio
+b. WebShop
+OPD B2F FTB w/o Bridge Exec. FTB w/o Future Validation FTB
+Figure 4: Teacher preferred token ratio over student turns
+on ALFWorld and WebShop.
+or future validation also consistently reduces performance.
+The full FTB achieves the best results across all metrics.
+5 Analysis
+Teacher Preferred Token Ratio over Student Turns.
+We measure the teacher preferred token ratio at each turn
+after the student takes control. As shown in Figure 4, FTB
+achieves a higher teacher preferred token ratio over most
+turns on both ALFWorld and WebShop, whereas removing
+bridge execution or future validation generally degrades it.
+Moreover, although bridge tokens constitute only 8.8% of
+the tokens used for optimization, they contribute 75.2% of
+the total positive distillation advantage. These results sug-
+gest that future trajectory validation identifies a small set
+of informative teacher actions that improve the alignment
+of subsequent student trajectories with the teacher.
+Bridge Characteristics.We analyze retained teacher
+bridges in terms of their trigger positions, disagreement
+dynamics, and modifications to student actions.
+Trigger Positions and Acceptance Rates.Figure 5
+(a) shows the cumulative distribution of retained bridges
+over student turns and the fraction of candidates with
+high disagreement accepted by the future validation gate.
+More than half of the bridges occur at the first student
+turn, and approximately 85% occur within the first five
+turns. The acceptance rate also decreases over turns,
+from 39.7% at the first turn to 18.6% at the second and
+approximately 4–7% at later turns. Early positions are
+therefore selected more often and are more likely to yield
+improved student continuations. This is consistent with
+our earlier observation that early deviations have stronger
+effects on subsequent interactions.
+Disagreement at Trigger Positions.Figure 5(b)
+shows the KL divergence between the teacher and student
+at the selected trigger positions over training. Under full
+FTB, the KL divergence decreases rapidly and remains
+low. Removing bridge execution or future validation causes
+it to rebound during later training. Local disagreement
+can identify positions that may benefit from correction,
+but cannot determine by itself whether a teacher action
+is useful. Bridge execution and future validation further
+50%
+75%
+100%
+a. Early-stage Bridge Invocation
+1 5 10 15
+Student Turn Index
+0%
+20%
+40%
+0 25 50 75 100 125 150 175
+Training Steps
+0
+20
+40
+60
+80
+100
+120Trigger-point KL
+b. Trigger-point KL
+Cumulative ShareAcceptance Rate
+FTB w/o Bridge Exec. FTB w/o Future Validation FTB
+Figure 5: Bridge invocation, acceptance, and trigger point
+disagreement during training.
+Method Qwen3-32B teacher
+Qwen3-1.7B student Qwen3-4B student
+OPD 481.5 (1.00×) 908.2 (1.00×)
+TCOD-B2F 296.3 (0.62×) 500.8 (0.55×)
+TCOD-F2B 193.1 (0.40×) 212.2 (0.23×)
+FTB (Ours) 416.7 (0.86×) 577.9 (0.64×)
+Table 4: Training time per step on ALFWorld, averaged
+over 200 steps under the same 8×A100 setup. Relative
+costs with respect to OPD are shown in parentheses.
+remove candidates that fail to improve the subsequent
+trajectory.
+Modifications to Student Actions.Retained bridges
+are rarely identical to the original student actions. In
+ALFWorld, 91.5% of bridges modify the action. Among
+them, 58.9% preserve the action type but change its target
+or argument, while 32.7% change the action type. In
+WebShop, 68.9% of bridges modify the action. Among
+them, 64.2% adjust the arguments while preserving the
+search or click type, and only 4.8% change the action type.
+These patterns show that retained bridges can either alter
+the action structure or preserve the high level operation
+while making fine grained corrections to the student policy.
+Training Efficiency.Table 4 reports the average runtime
+per step on ALFWorld. Despite performing an additional
+teacher bridge and a short student validation continuation,
+FTB is consistently faster than OPD across student scales,
+achieving0 .86×and0 .64×of OPD’s runtime for the
+1.7B and 4B students, respectively. The reason is that
+OPD requires a full student rollout at every training
+step and thus scales strongly with student size, whereas
+FTB inherits the shortened student rollouts of the B2F
+curriculum and only adds bounded validation overhead on
+top. Compared with B2F, FTB introduces roughly120s
+and77s of additional runtime on the 1.7B and 4B stu-
+dents, respectively, indicating that the validation overhead
+remains moderate and does not grow proportionally with
+student size. Overall, future validation adds no substantial
+training-time penalty, and its efficiency advantage over
+OPD grows with student size.
+7
+
+6 Conclusion
+We propose FutureBridge-OPD (FTB) to mitigate error
+accumulation in multi-turn agentic on-policy distillation
+by identifying high-disagreement states, executing local
+teacher bridges, and validating them through induced stu-
+dent continuations. Unlike methods that assess guidance
+using local teacher–student disagreement, FTB explicitly
+evaluates whether an intervention redirects future student
+behavior toward regions with stronger teacher preference.
+Experiments on ALFWorld, WebShop, and ScienceWorld
+demonstrate consistent gains across student scales and
+teacher configurations. Ablations and trajectory analyses
+further confirm the complementary roles of candidate
+localization, bridge execution, and future validation. These
+results establish future trajectory validation as an effective
+way to select useful guidance in agentic distillation.
+References
+Rishabh Agarwal, Nino Vieillard, Yongchao Zhou, Piotr
+Stanczyk, Sabela Ramos Garea, Matthieu Geist, and
+Olivier Bachem. On-policy distillation of language
+models: Learning from self-generated mistakes. InThe
+Twelfth International Conference on Learning Represen-
+tations, ICLR 2024, Vienna, Austria, May 7-11, 2024.
+OpenReview.net, 2024. URL https://openreview.net/
+forum?id=3zKtaqxLhW.
+Samy Bengio, Oriol Vinyals, Navdeep Jaitly, and
+Noam Shazeer. Scheduled sampling for sequence
+prediction with recurrent neural networks. In
+Corinna Cortes, Neil D. Lawrence, Daniel D. Lee,
+Masashi Sugiyama, and Roman Garnett, editors,
+Advances in Neural Information Processing Sys-
+tems 28: Annual Conference on Neural Informa-
+tion Processing Systems 2015, December 7-12, 2015,
+Montreal, Quebec, Canada, pages 1171–1179, 2015.
+URL https://proceedings.neurips.cc/paper/2015/hash/
+e995f98d56967d946471af29d7bf99f1-Abstract.html.
+Lang Feng, Zhenghai Xue, Tingcong Liu, and
+Bo An. Group-in-group policy optimization for
+llm agent training. In D. Belgrave, C. Zhang,
+H. Lin, R. Pascanu, P. Koniusz, M. Ghassemi, and
+N. Chen, editors,Advances in Neural Information
+Processing Systems, volume 38, pages 46375–46408.
+Curran Associates, Inc., 2025. URL https:
+//proceedings.neurips.cc/paper_files/paper/2025/file/
+420c9f777c0b4f78d515e53cf74d58b2-Paper-Conference.
+pdf.
+Yuqian Fu, Haohuan Huang, Kaiwen Jiang, Jiacai Liu,
+Zhuo Jiang, Yuanheng Zhu, and Dongbin Zhao. Revis-
+iting on-policy distillation: Empirical failure modes and
+simple fixes, 2026. URL https://arxiv.org/abs/2603.
+25562.
+YuxianGu,LiDong,FuruWei,andMinlieHuang. Minillm:
+Knowledge distillation of large language models. InThe
+Twelfth International Conference on Learning Represen-
+tations, ICLR 2024, Vienna, Austria, May 7-11, 2024.
+OpenReview.net, 2024. URL https://openreview.net/
+forum?id=5h0qf7IBZZ.
+Geoffrey Hinton, Oriol Vinyals, and Jeff Dean. Distilling
+the knowledge in a neural network, 2015. URL https:
+//arxiv.org/abs/1503.02531.
+Yuxuan Jiang and Francis Ferraro. Bridging reasoning
+trajectories in on-policy distillation via near-future guid-
+ance, 2026. URL https://arxiv.org/abs/2606.00305.
+Woogyeol Jin, Taywon Min, Yongjin Yang, Dennis Wei,
+Yi Zhou, Swanand Ravindra Kadhe, Nathalie Bara-
+caldo, and Kimin Lee. Entropy-aware on-policy dis-
+tillation of language models. InForty-third Interna-
+tional Conference on Machine Learning, 2026. URL
+https://openreview.net/forum?id=J5i09faOOf.
+Junlong Ke, Zichen Wen, Weijia Li, Conghui He, and
+Linfeng Zhang. Respecting self-uncertainty in on-policy
+self-distillation for efficient llm reasoning, 2026. URL
+https://arxiv.org/abs/2605.13255.
+Yoon Kim and Alexander M. Rush. Sequence-level knowl-
+edge distillation. In Jian Su, Xavier Carreras, and
+Kevin Duh, editors,Proceedings of the 2016 Conference
+on Empirical Methods in Natural Language Processing,
+EMNLP 2016, Austin, Texas, USA, November 1-4, 2016,
+pages 1317–1327. The Association for Computational
+Linguistics, 2016. doi: 10.18653/V1/D16-1139. URL
+https://doi.org/10.18653/v1/d16-1139.
+Gengsheng Li, Mao Zheng, Mingyang Song, Ruiqi Liu,
+Tianyu Yang, Jie Sun, Qiyong Zhong, Haiyun Guo,
+Junfeng Fang, Dan Zhang, and Jinqiao Wang. On-
+policy distillation with curriculum turn-level guidance
+for multi-turn agents, 2026a. URL https://arxiv.org/
+abs/2606.15912.
+Yaxuan Li, Yuxin Zuo, Bingxiang He, Jinqian Zhang,
+Chaojun Xiao, Cheng Qian, Tianyu Yu, Huan ang
+Gao, Wenkai Yang, Zhiyuan Liu, and Ning Ding. Re-
+thinking on-policy distillation of large language models:
+Phenomenology, mechanism, and recipe, 2026b. URL
+https://arxiv.org/abs/2604.13016.
+Ziheng Li, Liu Kang, Feng Xiao, Luxi Xing, Qingyi Si,
+Zhuoran Li, Weikang Gong, Deqing Yang, Yanghua
+Xiao, and Hongcheng Guo. Outcome-grounded ad-
+vantage reshaping for fine-grained credit assignment
+in mathematical reasoning. In Maria Liakata, Vi-
+viane P. Moreira, Jiajun Zhang, and David Jurgens,
+editors,Proceedings of the 64th Annual Meeting of
+the Association for Computational Linguistics (Volume
+1: Long Papers), ACL 2026, San Diego, California,
+United States, July 2-7, 2026, pages 24681–24693. As-
+sociation for Computational Linguistics, 2026c. URL
+https://aclanthology.org/2026.acl-long.1132/.
+8
+
+Baohao Liao, Hanze Dong, Christof Monz, Xinxing Xu,
+Li Dong, and Furu Wei. Multi-turn on-policy distillation
+with prefix replay, 2026. URL https://arxiv.org/abs/
+2607.04763.
+Yanjiang Liu, Jie Lou, Xinyan Guan, Yuqiu Ji, Hongyu Lin,
+Ben He, Xianpei Han, Le Sun, Xing Yu, and Yaojie Lu.
+Your teacher can’t help you here: Combating supervision
+fidelity decay in on-policy distillation, 2026. URL https:
+//arxiv.org/abs/2605.30833.
+Chiyu Ma, Shuo Yang, Kexin Huang, Jinda Lu, Haoming
+Meng, Shangshang Wang, Bolin Ding, Soroush Vosoughi,
+Guoyin Wang, and Jingren Zhou. Fipo: Eliciting deep
+reasoning with future-kl influenced policy optimization,
+2026. URL https://arxiv.org/abs/2603.19835.
+Stéphane Ross, Geoffrey J. Gordon, and Drew Bagnell. A
+reductionofimitationlearningandstructuredprediction
+to no-regret online learning. In Geoffrey J. Gordon,
+David B. Dunson, and Miroslav Dudík, editors,Proceed-
+ings of the Fourteenth International Conference on Ar-
+tificial Intelligence and Statistics, AISTATS 2011, Fort
+Lauderdale, USA, April 11-13, 2011, volume 15 ofJMLR
+Proceedings, pages 627–635. JMLR.org, 2011. URL http:
+//proceedings.mlr.press/v15/ross11a/ross11a.pdf.
+Ankur Samanta, Akshayaa Magesh, Ayush Jain, Youliang
+Yu, Daniel Jiang, Kavosh Asadi, Kaveh Hassani, Paul
+Sajda, Jalaj Bhandari, and Yonathan Efroni. Credit
+assignment with resets in language model reasoning,
+2026. URL https://arxiv.org/abs/2605.25507.
+Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junx-
+iao Song, Xiao Bi, Haowei Zhang, Mingchuan Zhang,
+Y. K. Li, Y. Wu, and Daya Guo. Deepseekmath: Pushing
+the limits of mathematical reasoning in open language
+models, 2024. URL https://arxiv.org/abs/2402.03300.
+Mohit Shridhar, Xingdi Yuan, Marc-Alexandre Côté,
+Yonatan Bisk, Adam Trischler, and Matthew J.
+Hausknecht. Alfworld: Aligning text and embodied
+environments for interactive learning. In9th Interna-
+tional Conference on Learning Representations, ICLR
+2021, Virtual Event, Austria, May 3-7, 2021. OpenRe-
+view.net, 2021. URL https://openreview.net/forum?
+id=0IOX0YcCdTn.
+Qitai Tan, Zefang Zong, Mo Li, Yipeng Shi, Yang Li,
+and Peng Chen. Atod: Annealed turn-aware on-policy
+distillation for multi-turn autonomous agents, 2026.
+URL https://arxiv.org/abs/2606.27814.
+Jiaqi Wang, Wenhao Zhang, Weijie Shi, Yaliang Li, and
+James Cheng. Tcod: Exploring temporal curriculum in
+on-policy distillation for multi-turn autonomous agents,
+2026a. URL https://arxiv.org/abs/2604.24005.
+Ruoyao Wang, Peter A. Jansen, Marc-Alexandre Côté,
+and Prithviraj Ammanabrolu. Scienceworld: Is your
+agent smarter than a 5th grader? In Yoav Goldberg,
+Zornitsa Kozareva, and Yue Zhang, editors,Proceedings
+of the 2022 Conference on Empirical Methods in Natural
+Language Processing, EMNLP 2022, Abu Dhabi, United
+Arab Emirates, December 7-11, 2022, pages 11279–11298.
+Association for Computational Linguistics, 2022. doi:
+10.18653/V1/2022.EMNLP-MAIN.775. URL https://
+doi.org/10.18653/v1/2022.emnlp-main.775.
+Xucong Wang, Ziyu Ma, Yong Wang, Yuxiang Ji, Shidong
+Yang, Guanhua Chen, Pengkun Wang, and Xiangxiang
+Chu. Appo: Agentic procedural policy optimization,
+2026b. URL https://arxiv.org/abs/2606.12384.
+Xingrun Xing, Haoqing Wang, Boyan Gao, Ziheng Li, and
+Yehui Tang. Trust region on-policy distillation, 2026.
+URL https://arxiv.org/abs/2606.01249.
+Haolei Xu, Xiaowen Xu, Haiwen Hong, Zixuan Ni, Hongx-
+ing Li, Yiwen Qiu, Weiming Lu, and Yongliang Shen.
+Pass the baton: Trajectory-relayed on-policy distillation,
+2026a. URL https://arxiv.org/abs/2607.26057.
+Yuanda Xu, Hejian Sang, Zhengze Zhou, Ran He, Zhipeng
+Wang, and Alborz Geramifard. Tip: Token importance
+in on-policy distillation, 2026b. URL https://arxiv.org/
+abs/2604.14084.
+An Yang, Anfeng Li, Baosong Yang, Beichen Zhang,
+Binyuan Hui, Bo Zheng, Bowen Yu, Chang Gao, Chen-
+gen Huang, Chenxu Lv, Chujie Zheng, Dayiheng Liu,
+Fan Zhou, Fei Huang, Feng Hu, Hao Ge, Haoran Wei,
+Huan Lin, Jialong Tang, Jian Yang, Jianhong Tu, Jian-
+wei Zhang, Jianxin Yang, Jiaxi Yang, Jing Zhou, Jingren
+Zhou, Junyang Lin, Kai Dang, Keqin Bao, Kexin Yang,
+Le Yu, Lianghao Deng, Mei Li, Mingfeng Xue, Mingze
+Li, Pei Zhang, Peng Wang, Qin Zhu, Rui Men, Ruize
+Gao, Shixuan Liu, Shuang Luo, Tianhao Li, Tianyi
+Tang, Wenbiao Yin, Xingzhang Ren, Xinyu Wang,
+Xinyu Zhang, Xuancheng Ren, Yang Fan, Yang Su,
+Yichang Zhang, Yinger Zhang, Yu Wan, Yuqiong Liu,
+Zekun Wang, Zeyu Cui, Zhenru Zhang, Zhipeng Zhou,
+and Zihan Qiu. Qwen3 technical report, 2025. URL
+https://arxiv.org/abs/2505.09388.
+Zhicheng Yang, Zhijiang Guo, Yifan Song, Minrui Xu,
+Yongxin Wang, Yiwei Wang, Xiaodan Liang, and Jing
+Tang. Prune-opd: Efficient and reliable on-policy dis-
+tillation for long-horizon reasoning, 2026. URL https:
+//arxiv.org/abs/2605.07804.
+Shunyu Yao, Howard Chen, John Yang, and Karthik
+Narasimhan. Webshop: Towards scalable real-world
+web interaction with grounded language agents. In
+Sanmi Koyejo, S. Mohamed, A. Agarwal, Danielle
+Belgrave, K. Cho, and A. Oh, editors,Advances
+in Neural Information Processing Systems 35:
+Annual Conference on Neural Information Processing
+Systems 2022, NeurIPS 2022, New Orleans, LA,
+USA, November 28 - December 9, 2022, 2022. URL
+9
+
+http://papers.nips.cc/paper_files/paper/2022/hash/
+82ad13ec01f9fe44c01cb91814fd7b8c-Abstract-Conference.
+html.
+Dongxu Zhang, Zhichao Yang, Sepehr Janghorbani, Jun
+Han, Andrew Ressler II, Qian Qian, Gregory D. Lyng,
+Sanjit Singh Batra, and Robert E. Tillman. Fast and
+effective on-policy distillation from reasoning prefixes.
+In Maria Liakata, Viviane P. Moreira, Jiajun Zhang,
+and David Jurgens, editors,Findings of the Association
+for Computational Linguistics, ACL 2026, San Diego,
+California, United States, July 2-7, 2026, pages 25553–
+25569. Association for Computational Linguistics, 2026a.
+URL https://aclanthology.org/2026.findings-acl.1276/.
+Qingyu Zhang, Qianhao Yuan, Hongyu Lin, Yaojie Lu,
+Xianpei Han, Le Sun, Xiang Li, Ming Xu, Jiarui Li,
+and Xiuyin Zhao. Shortopd: Recovering pruned llms
+with short-to-long on-policy distillation, 2026b. URL
+https://arxiv.org/abs/2607.13124.
+Binbin Zheng, Xing Ma, Yiheng Liang, Jingqing Ruan,
+Xiaoliang Fu, Kepeng Lin, Benchang Zhu, Ke Zeng, and
+Xunliang Cai. Scope: Signal-calibrated on-policy distil-
+lation enhancement with dual-path adaptive weighting,
+2026. URL https://arxiv.org/abs/2604.10688.
+Qiyong Zhong, Mao Zheng, Mingyang Song, Xin Lin, Jie
+Sun, Houcheng Jiang, Xiang Wang, and Junfeng Fang.
+Sod: Step-wise on-policy distillation for small language
+model agents, 2026. URL https://arxiv.org/abs/2605.
+07725.
+Yuhang Zhou, Lizhu Zhang, Yifan Wu, Mingyi Wang,
+Bo Peng, Jiayi Liu, Xiangjun Fan, and Zhuokai Zhao.
+Sage-opd: Selective agent-guided intervention for multi-
+turn on-policy distillation, 2026a. URL https://arxiv.
+org/abs/2606.19659.
+Yuhang Zhou, Kai Zheng, Haoling Li, Dengyun Peng, Can
+Xu, and Jingjing Chen. Turnopd: Making on-policy
+distillation turn-aware for efficient long-horizon agent
+training, 2026b. URL https://arxiv.org/abs/2607.05804.
+10
+
+A Overview
+This supplement reports the intervention analysis motivat-
+ing FTB, experimental settings and additional implemen-
+tation details, formal results for sampled-token reverse-KL
+estimation and future-trajectory validation, sensitivity to
+the validation horizon, distinctions from closely related
+methods, and limitations.
+B Motivating Intervention Analysis
+We analyze 1,000 trajectories that are unsuccessful ac-
+cording to the terminal task-success criterion of each
+benchmark, comprising 500 ALFWorld, 250 WebShop,
+and 250 ScienceWorld trajectories.
+For each trajectory, we identify the eligible Student-
+controlled turn with the largest Teacher–Student disagree-
+ment, replace the original Student response at that turn
+with a Teacher response, and then let the same frozen
+Student policy complete the remaining interaction.
+Because the available outcome signals differ across
+benchmarks, we use a benchmark-specific comparison
+rule. For ALFWorld, only binary terminal task success
+is available for this analysis. An intervention is therefore
+classified as improved if it converts the originally failed
+episode into a successful one and unchanged otherwise;
+a degraded outcome is not applicable under this binary
+comparison. For WebShop and ScienceWorld, which ad-
+ditionally provide graded process rewards, we compare
+the benchmark-specific trajectory-level process score after
+interventionwiththatoftheoriginaltrajectoryandclassify
+the intervention as improved, unchanged, or degraded.
+For the random baseline, the intervention position is
+sampled uniformly from the same set of eligible Student-
+controlled turns and evaluated using the same benchmark-
+specific comparison rule.
+As shown in Table 5, across all 1,000 trajectories, in-
+terventions at high-disagreement positions improve 309
+trajectories (30.9%), compared with 57 trajectories (5.7%)
+when the intervention position is selected at random.
+Among the 500 WebShop and ScienceWorld trajectories,
+for which decreases are measurable using a graded process
+score, 95 high-disagreement interventions (19.0%) degrade
+trajectory performance.
+These results suggest that high-disagreement positions
+are more likely to contain critical errors, while local
+disagreement alone is insufficient to determine whether a
+Teacher intervention is beneficial.
+Teacher preference after local intervention.We
+further examine whether a local Teacher intervention
+changes the density of positive distillation signals in the
+subsequent Student trajectory. Following the Teacher-
+preferred token ratio defined in the main paper, we first
+compute the fraction of Student-generated continuation
+tokens for which the Teacher assigns a higher likelihood
+than the frozen Student, and then average this ratio across
+trajectories.
+Before intervention, the mean Teacher-preferred token
+ratio is 25.45%. After replacing the Student response at
+the selected high-disagreement position with a Teacher
+response and returning control to the same frozen Student,
+the ratio increases to 28.20%. This corresponds to an
+absolute increase of 2.75 percentage points and a relative
+increase of 10.8%, computed from the unrounded values.
+This analysis is conducted over all high-disagreement
+interventions before applying the future-preference gate.
+Therefore,theobservedincreaseisnotadirectconsequence
+of selecting trajectories according to the same Teacher-
+preference criterion. The result suggests that local Teacher
+guidance can shift the subsequent Student continuation
+toward regions with denser positive distillation signals.
+Training Signal and Evaluation Protocol.FTB
+does not use environment rewards as online optimization
+signals or in candidate localization and future-trajectory
+validation. Following TCOD-B2F, however, the tempo-
+ral curriculum is initialized from pre-collected successful
+reference trajectories. Thus, beyond the success-based tra-
+jectory selection inherited from B2F, FTB uses distillation
+signals derived from the Teacher and Student policies
+during interactive training.
+Candidate localization uses sampled Teacher–Student
+disagreement, and bridge retention is determined by the
+Teacher-preferred token ratio along paired Student contin-
+uations. Environment outcomes, including the benchmark-
+specific signals used in the motivating intervention analysis
+above, are used only for downstream performance evalua-
+tion and post-hoc analysis. They are not incorporated as
+additional reward signals into the FTB-specific candidate
+localization, bridge retention, or optimization procedure.
+This protocol allows the comparison with TCOD-B2F
+to isolate the effect of future-trajectory validation: FTB
+introduces no additional reward-based training supervision
+beyond the successful reference trajectories already used
+by the underlying B2F curriculum.
+In FTB, the Teacher-preferred token ratio measures the
+density of positive distillation signals along the subsequent
+Student continuation. It is used to select Teacher guidance
+that is consistent with the OPD objective, and its effec-
+tiveness is evaluated through the downstream performance
+of the resulting Student policy.
+C Experimental Details
+This section provides the benchmark splits, model configu-
+rations, generation parameters, optimization settings, and
+implementation details used in our experiments. Within
+each benchmark and Teacher–Student configuration, all
+methods use the same Student initialization, Teacher
+checkpoint, training steps, and evaluation setup.
+C.1 Benchmarks and Evaluation
+We evaluate all methods on ALFWorld, WebShop, and
+ScienceWorld. The data splits, interaction limits, and
+evaluation metrics are summarized in Table 6.
+11
+
+Benchmark # T rajectories High-disagreement Improve No Change Degrade Random Improve
+ALFWorld 500 159 (31.8%) 341 (68.2%) N/A 28 (5.6%)
+WebShop 250 92 (36.8%) 119 (47.6%) 39 (15.6%) 18 (7.2%)
+ScienceWorld 250 58 (23.2%) 136 (54.4%) 56 (22.4%) 11 (4.4%)
+Aggregated statistics
+All benchmarks 1,000 309 (30.9%) – – 57 (5.7%)
+Graded-score benchmarks 500 150 (30.0%) 255 (51.0%) 95 (19.0%) 29 (5.8%)
+Table 5: Teacher intervention results on trajectories that fail the terminal task-success criterion. ALFWorld uses binary
+terminal success, whereas WebShop and ScienceWorld additionally use their graded trajectory-level process scores.
+Benchmark T raining Data Evaluation Data Max. Steps Metrics
+ALFWorld Standard training split Unseen evaluation split 30 Success rate
+WebShop Subset of the training split (aligned with TCOD) 100 held-out sessions 15 Task score and success rate
+ScienceWorld Task-type training split Disjoint task-type split 30 Task score and success rate
+Table 6: Benchmark data, maximum numbers of environment interactions, and evaluation metrics.
+For ALFWorld, success rate is the percentage of episodes
+completed successfully. WebShop reports task score and
+success rate. Letri∈[0, 1]denote the environment reward
+for sessioni. The two metrics are computed as
+Score = 100
+N
+N∑
+i=1
+ri,SR = 100
+N
+N∑
+i=1
+1[ri >0.5].(11)
+The zero-shot and offline WebShop evaluations use 100
+sessions with indices from 4096 to 4195. For ScienceWorld,
+we report task score and success rate.
+C.2 Models and Training Configuration
+The main experiments use Qwen3-32B as the Teacher and
+Qwen3-1.7B or Qwen3-4B as the Student. All methods
+within the same experimental setting share the same frozen
+Teacher checkpoint and Student initialization.
+TheexperimentswithanRL-trainedTeacheruseQwen3-
+8B as the Teacher and Qwen3-4B as the Student. The
+Teacher checkpoint and Student initialization are fixed
+across methods in this setting.
+Generation and optimization settings.All generation
+processes during training use a temperature of 1.0. This
+setting applies to Student rollouts, Teacher prefixes, and
+Teacher bridge actions. Student rollouts retain token-level
+log-probabilities for OPD supervision, Teacher–Student
+disagreement, and continuation alignment. We do not
+use beam search, multi-candidate search, or candidate
+reranking.
+Evaluation uses a temperature of 0.4, with thinking
+mode disabled for all main results.
+We set the distillation coefficient toβ= 1.0. Both
+B2F and accepted bridge samples are optimized using
+the same PPO policy loss. During PPO optimization, the
+importance ratio is restricted to[0.8, 1.2]. For negative
+advantages, the auxiliary lower-bound factor is set to 3.0.
+Losses are averaged over valid response tokens, and the
+gradient norm is capped at 1.0.
+The shared training hyperparameters are listed in Ta-
+ble 7.
+Hyperparameter V alue
+Optimizer AdamW
+Learning rate1×10 −6
+Distillation coefficientβ1.0
+Importance-ratio clipping interval[0.8,1.2]
+Negative-advantage lower-bound factor 3.0
+Loss aggregation Token average
+Rollout batch size 16
+Train batch size 64
+Gradient clipping 1.0
+Training steps 200
+Maximum prompt length 10,240 tokens
+Maximum response length 512 tokens
+Table 7: Shared generation and optimization settings.
+C.3 RL Teacher Training
+We additionally train Qwen3-8B agents with GiGPO to
+construct stronger Teachers for the subsequent distillation
+experiments. Their shared and benchmark-specific settings
+are summarized together in Table 8.
+The maximum numbers of environment interactions
+are 50 and 15 for ALFWorld and WebShop, respectively.
+Validation rollouts use sampling with a temperature of
+0.4, and thinking mode is disabled during RL training.
+C.4 Additional Implementation Details
+Beyond the procedure described in the main paper, the
+B2F prefix is shortened by one environment step every five
+optimization steps. Each Student trajectory contains at
+most one bridge attempt, and the final Student-controlled
+turn is excluded because it has no subsequent continuation
+for validation.
+At the selected position, the Teacher generates one
+bridge candidate with a temperature of 1.0. The same
+frozen Student is then rolled out forH = 3Student-
+controlled turns on both the original and bridge branches.
+Before this paired validation, the environment is reinitial-
+ized and all interactions preceding the selected position
+are replayed to recover the same state.
+12
+
+Hyperparameter ALFW orld RL T eacher W ebShop RL T eacher
+Base model Qwen3-8B Qwen3-8B
+RL algorithm GiGPO GiGPO
+Optimizer AdamW AdamW
+Learning rate1×10 −6 1×10−6
+Weight decay 0.01 0.01
+Discount factorγ0.95 0.95
+Rollout group size 8 8
+Invalid-action penalty 0.1 0.1
+Maximum prompt length 4,096 tokens 4,096 tokens
+Maximum response length 512 tokens 512 tokens
+Maximum environment interactions 50 15
+Train batch size 32 16
+PPO mini-batch size 64 64
+PPO micro-batch size per GPU 4 4
+Rollout micro-batch size per GPU 4 4
+Log-prob micro-batch size per GPU 8 8
+Tensor parallel size 2 2
+Number of GPUs 8 8
+Table 8: Configurations used to train the Qwen3-8B RL Teachers for ALFWorld and WebShop.
+The original B2F samples and accepted bridge samples
+are optimized through separate loss terms. Specifically,
+the overall FTB objective is
+LFTB =L B2F +λbrLbridge, λ br = 1.(12)
+The B2F loss and bridge loss are independently averaged
+over their valid response tokens and then summed with
+equal coefficients. Bridge supervision therefore augments
+rather than replaces the standard B2F objective, and both
+sample types use the same optimization settings.
+The benchmark-specific prompt templates follow TCOD
+and are provided with the released code.
+D Formal Analysis
+This section complements the definitions in the main paper.
+We first clarify the sampled-token reverse-KL estimator,
+then formalize how the paired continuation difference
+estimates the underlying future-preference advantage, and
+give a local interpretation of accepted bridge optimization.
+D.1 Sampled-Token Estimation of Reverse KL
+The main paper defines candidate disagreement using
+tokens sampled by the Student. For any visited token
+contextc,
+Ex∼π¯θ(·|c)
+[
+log π¯θ(x|c)
+πϕ(x|c)
+]
+=D KL (π¯θ(·|c)∥πϕ(·|c)).
+(13)
+Recent OPD methods commonly estimate the reverse-KL
+objective through Student-sampled tokens rather than
+explicitly summing over the full vocabulary (Zhong et al.,
+2026; Xing et al., 2026). FTB follows the same sampled-
+token estimator. Its realized value is used only to rank
+candidate positions; bridge utility is decided by the paired
+future validation.
+D.2 Estimating the Future-Preference Advantage
+Fix the intervention context
+C= (h t⋆,a br,a stu).(14)
+Let
+Xbr =ρ(ξbr), X base =ρ(ξbase),(15)
+where both variables lie in[0, 1]. The true auxiliary future-
+preference advantage of the bridge is
+∆ H
+ϕ,¯θ=E
+[
+Xbr−Xbase|C
+]
+.(16)
+The gate uses the one-pair estimate
+ˆ∆ H
+1 =X br−Xbase.(17)
+Proposition 1 (Unbiased paired estimate).If the
+two branches have the intended marginal rollout distribu-
+tions, then
+E
+[
+ˆ∆ H
+1 |C
+]
+= ∆ H
+ϕ,¯θ.(18)
+Proof.By linearity of conditional expectation,
+E
+[
+ˆ∆ H
+1 |C
+]
+=E[X br|C]−E[Xbase|C]
+= ∆ H
+ϕ,¯θ.(19)
+□
+The proposition does not require the two branches
+within a pair to be independent; it only requires each
+branch to have the intended marginal distribution.
+To make the relation to the true value more explicit,
+considerKindependent continuation pairs and define
+ˆ∆ H
+K = 1
+K
+K∑
+k=1
+(
+Xbr
+k −Xbase
+k
+)
+.(20)
+13
+
+Proposition 2 (Concentration around the true
+advantage).For everyϵ>0,
+Pr
+(⏐⏐⏐ˆ∆ H
+K−∆H
+ϕ,¯θ
+⏐⏐⏐≥ϵ|C
+)
+≤2 exp
+(
+−Kϵ2
+2
+)
+.(21)
+Proof.For each pair, Zk =Xbr
+k −Xbase
+k ∈[−1, 1]and
+E[Zk|C] = ∆ H
+ϕ,¯θ. Applying Hoeffding’s inequality to the
+independent bounded variables{Zk}K
+k=1 gives Eq.(21). □
+A useful one-sided consequence is that, for any margin
+m>0and any fixed contextCsatisfying∆ H
+ϕ,¯θ≤0,
+Pr
+(
+ˆ∆ H
+K≥m|C
+)
+≤exp
+(
+−Km2
+2
+)
+.(22)
+Thus, a larger positive observed bridge gain is expo-
+nentially less likely to arise from a bridge whose true
+future-preference advantage is non-positive. With more
+paired samples, the estimate approaches the true auxiliary
+future-preference advantage. FTB usesK = 1for efficiency,
+so the gate remains a noisy estimate.
+D.3 Local Interpretation of Bridge Optimization
+The accepted bridge samples are optimized together with
+the B2F samples using the PPO policy loss. Let
+ℓi(θ) = logπθ(xbr
+i |cbr
+i ), ℓϕ
+i = logπϕ(xbr
+i |cbr
+i ),(23)
+δi(θ) =ℓi(θ)−ℓϕ
+i.(24)
+Consider the accepted-token discrepancy
+Dbridge(θ) =E
+[
+βg(τ)
+2Mbr
+Mbr∑
+i=1
+δi(θ)2
+]
+.(25)
+Proposition 3 (First-order bridge update).Treat
+the sampled bridge data, advantages, and gate as fixed. At
+the rollout parametersθ= ¯θ, the gradient of the clipped
+PPO loss on accepted bridge tokens equals the gradient
+ofD bridge:
+∇θLbridge
+PPO (θ)
+⏐⏐⏐¯θ
+=∇θDbridge(θ)|¯θ.(26)
+Proof.Let
+ri(θ) =πθ(xbr
+i |cbr
+i )
+π¯θ(xbr
+i |cbr
+i ).(27)
+At θ= ¯θ, ri = 1and all ratio-clipping branches agree
+locally, while
+∇θri(¯θ) =∇θℓi(¯θ).(28)
+Moreover,
+Abr
+i =β
+(
+ℓϕ
+i−ℓi(¯θ)
+)
+=−βδi(¯θ).(29)
+Therefore, the bridge part of the PPO gradient at the
+rollout policy is
+∇θLbridge
+PPO (θ)
+⏐⏐⏐¯θ
+=−E
+[
+g(τ)
+Mbr
+∑
+i
+Abr
+i ∇θri(¯θ)
+]
+=E
+[
+βg(τ)
+Mbr
+∑
+i
+δi(¯θ)∇θℓi(¯θ)
+]
+,(30)
+which is exactly∇θDbridge(¯θ).□
+For a sufficiently small gradient step from¯θ, a first-order
+expansion therefore gives
+Dbridge(θ+) =D bridge(¯θ)−η
+∇θDbridge(¯θ)
+2
+2 +O(η2).
+(31)
+Hence, the accepted bridge update locally reduces the sam-
+pled Teacher–Student log-probability discrepancy on the
+bridge tokens. This is a local optimization statement and
+does not imply monotonic improvement in environment
+return or global policy divergence.
+Taken together, Propositions 1–2 formalize how the
+observed bridge gain estimates the true auxiliary future-
+preference advantage, while Proposition 3 explains how
+an accepted bridge locally moves the Student toward the
+Teacher on the selected bridge tokens.
+E Sensitivity to the Validation Horizon
+Beyond the shared training and generation settings, the
+only method-specific tunable hyperparameter introduced
+by FTB is the validation horizonH, which controls the
+number of Student-controlled continuation turns used to
+evaluate a candidate Teacher bridge. We useH = 3in the
+main experiments and further evaluateH∈{1, 3, 5}under
+a fixed 200-step optimization schedule. These sensitivity
+results are obtained from single-seed runs under the main
+Qwen3-32B Teacher to Qwen3-1.7B Student configuration.
+As shown in Table 9, FTB remains effective across
+all tested horizons. The best value ofH varies across
+benchmarks and evaluation metrics: H = 5achieves
+the highest success rates on ALFWorld and WebShop,
+whereas H = 3obtains the highest WebShop score and
+ScienceWorld success rate. On ScienceWorld, H = 5
+instead achieves the highest task score. The absence of a
+consistently dominant horizon, together with the broadly
+comparable performance across the tested values, indicates
+that FTB is not strongly sensitive to the exact choice of
+H.
+F Comparison with Closely Related W ork
+We focus on methods whose mechanisms are most likely to
+be confused with FTB. FTB executes the original Student
+action and a candidate Teacher bridge from the same
+restored environment state. The same frozen Student then
+generates both bounded continuations, which are used
+only to decide whether the Teacher bridge is retained.
+Guided-OPD.Guided-OPD mixes Teacher- and Student-
+generated turns within each rollout and decreases the
+Teacher-intervention probability through a curriculum (Li
+14
+
+HorizonH ALFW orld W ebShop ScienceW orld
+SR↑SR↑Score↑SR↑Score↑
+1 39.0 53.0 55.4 3.5 27.3
+3 41.0 60.060.2 7.526.0
+543.0 62.056.7 4.528.9
+Table 9: Single-seed sensitivity to the future-validation horizonH at 200 optimization steps under the main Qwen3-32B
+Teacher to Qwen3-1.7B Student configuration. Success rates and task scores are reported on a 0–100 scale. The best
+horizon varies across benchmarks and metrics, indicating that FTB is not strongly sensitive to the exact choice ofH.
+et al., 2026a). A selected Teacher turn directly changes the
+rollout trajectory. FTB instead preserves the original Stu-
+dent branch as a comparison and validates each candidate
+Teacher action through the Student future it induces.
+SAGE-OPD.SAGE-OPD uses environment feedback
+and Teacher judgment to assign turn-level intervention
+strengths, and further weights token-level OPD by Teacher
+confidence (Zhou et al., 2026a). It therefore changes how
+strongly an already executed Student response is distilled.
+FTB instead generates and executes an alternative Teacher
+action, then decides whether that action should be added
+as auxiliary supervision.
+ReOPD.ReOPD reuses pre-collected Teacher trajectories
+as replayed prefixes and performs Student training without
+new environment interactions (Liao et al., 2026). Its
+main design problem is selecting a prefix distribution
+that balances Student relevance and Teacher reliability.
+FTB operates on states reached during interactive Student
+rollouts and uses environment restoration to compare the
+consequences of two executable actions.
+TOPD.TOPD compares short Teacher and Student
+continuations from the same textual prefix, uses their near-
+future divergence to identify genuine reasoning forks, and
+injects trajectory discrepancy into a multi-token objective
+through trajectory alignment (Jiang and Ferraro, 2026).
+In FTB, both continuations are generated by the same
+frozen Student after different environment actions. The
+future signal is used as an acceptance gate rather than as
+a trajectory-alignment loss.
+Relay-OPD.Relay-OPD detects a handoff when the
+Teacher prefers a reflection token while the Student’s top-
+K support contains no reflection token (Xu et al., 2026a).
+The Teacher then generates a bounded reasoning leg, after
+which the Student may resume, and the resulting relay
+trajectory is optimized. FTB does not directly trigger
+Teacher takeover from this local asymmetry; it retains a
+paired original branch and accepts the Teacher bridge only
+after comparing the two induced Student futures.
+TCOD-B2F.TCOD-B2F progressively shortens a suc-
+cessful Teacher or expert prefix so that the Student takes
+control from increasingly earlier states (Wang et al.,
+2026a). FTB retains this temporal curriculum and adds
+action-level bridge selection, execution, and paired future
+validation inside the Student-controlled suffix.
+G Limitations
+Our experiments use Qwen3 teacher–student pairs with
+a shared tokenizer, and extending agentic distillation
+across model families with different tokenizers remains
+unvalidated. Computational constraints also limit our
+evaluation to a modest range of model scales, leaving
+larger teachers and students for future work.
+15

@@ -1,0 +1,50 @@
+[
+  {
+    "h": 32,
+    "n": 1000,
+    "correct": 293,
+    "accuracy": 0.293,
+    "delta_pp_vs_student": 1.0,
+    "rescued": 85,
+    "harmed": 75,
+    "teacher_already_finished": 0,
+    "length_stops": 0,
+    "score_timeouts_or_errors": 0
+  },
+  {
+    "h": 64,
+    "n": 1000,
+    "correct": 283,
+    "accuracy": 0.283,
+    "delta_pp_vs_student": 0.0,
+    "rescued": 81,
+    "harmed": 81,
+    "teacher_already_finished": 0,
+    "length_stops": 0,
+    "score_timeouts_or_errors": 0
+  },
+  {
+    "h": 128,
+    "n": 1000,
+    "correct": 293,
+    "accuracy": 0.293,
+    "delta_pp_vs_student": 1.0,
+    "rescued": 89,
+    "harmed": 79,
+    "teacher_already_finished": 0,
+    "length_stops": 0,
+    "score_timeouts_or_errors": 0
+  },
+  {
+    "h": 256,
+    "n": 1000,
+    "correct": 276,
+    "accuracy": 0.276,
+    "delta_pp_vs_student": -0.7,
+    "rescued": 88,
+    "harmed": 95,
+    "teacher_already_finished": 1,
+    "length_stops": 0,
+    "score_timeouts_or_errors": 0
+  }
+]

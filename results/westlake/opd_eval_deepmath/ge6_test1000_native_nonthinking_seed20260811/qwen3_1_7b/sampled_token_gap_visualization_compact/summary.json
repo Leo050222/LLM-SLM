@@ -1,0 +1,21 @@
+{
+  "status": "DEEPMATH_BASELINE_SAMPLED_TOKEN_LOGPROB_GAP_VIS_OK",
+  "definition": "g_t = log pi_S(y_t|s_t) - log pi_T(y_t|s_t)",
+  "student": "Qwen3-1.7B non-thinking",
+  "teacher": "Qwen3-14B frozen",
+  "rows": 1000,
+  "tokens": 1303870,
+  "mean_gap": 0.13988550007343292,
+  "mean_abs_gap": 0.22036318480968475,
+  "median_gap": 4.9591064453125e-05,
+  "positive_fraction": 0.618238014525988,
+  "negative_fraction": 0.16350479725739528,
+  "abs_gap_quantiles": {
+    "0.5": 0.00193023681640625,
+    "0.9": 0.6557699203491216,
+    "0.95": 1.1713996887207045,
+    "0.99": 2.8457116508483926
+  },
+  "case_encoding": "gzip(base64(binary[n:uint32,scale:float32,(gap:int16,text_len:uint16,text:utf8)*n]))",
+  "case_data_bytes": 5097290
+}

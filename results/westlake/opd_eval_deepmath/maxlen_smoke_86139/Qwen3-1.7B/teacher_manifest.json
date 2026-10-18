@@ -1,0 +1,8 @@
+[
+  {
+    "dataset_index": 0,
+    "response_tokens": 27136,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_smoke_86139/Qwen3-1.7B/teacher_topk/example_000.npz",
+    "teacher_mass_mean": 0.9999592900276184
+  }
+]

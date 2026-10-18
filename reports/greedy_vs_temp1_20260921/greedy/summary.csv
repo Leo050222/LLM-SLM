@@ -1,0 +1,17 @@
+dataset,role,n,correct,accuracy,replicate_accuracy_sd
+bbh,student,1080,474,0.4388888888888889,0.0
+bbh,teacher,1080,866,0.8018518518518518,0.0
+cruxeval_i,student,800,159,0.19875,0.0
+cruxeval_i,teacher,800,393,0.49125,0.0
+cruxeval_o,student,800,186,0.2325,0.0
+cruxeval_o,teacher,800,370,0.4625,0.0
+humaneval_plus,student,164,106,0.6463414634146342,0.0
+humaneval_plus,teacher,164,139,0.8475609756097561,0.0
+livecodebench,student,175,34,0.19428571428571428,0.0
+livecodebench,teacher,175,50,0.2857142857142857,0.0
+math500,student,500,360,0.72,0.0
+math500,teacher,500,418,0.836,0.0
+mbpp_plus,student,378,198,0.5238095238095238,0.0
+mbpp_plus,teacher,378,275,0.7275132275132276,0.0
+olympiad_bench,student,674,283,0.4198813056379822,0.0
+olympiad_bench,teacher,674,401,0.5949554896142433,0.0

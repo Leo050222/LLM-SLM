@@ -1,0 +1,14 @@
+{
+  "job_id": 106738,
+  "submitted_at": "2026-09-18T19:10:17+08:00",
+  "nodes": [
+    "gnho005",
+    "gnho029"
+  ],
+  "total_gpus": 16,
+  "model_pairs": 16,
+  "total_concurrency": 512,
+  "batch_size": 4,
+  "source_job": 106405,
+  "completed_at_submission": 88571
+}

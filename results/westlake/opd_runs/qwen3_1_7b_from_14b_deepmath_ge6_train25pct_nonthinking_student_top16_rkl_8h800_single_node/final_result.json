@@ -1,0 +1,14 @@
+{
+  "checkpoints": [
+    44,
+    89,
+    133,
+    178,
+    222
+  ],
+  "loss_support_topk": 16,
+  "objective": "student_top_16_renormalized_kl_student_to_teacher",
+  "status": "DEEPMATH_RKL_COMPLETE",
+  "thinking": false,
+  "total_steps": 222
+}

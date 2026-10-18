@@ -1,0 +1,31 @@
+{
+  "dtype": "BF16",
+  "jobs": {
+    "student": "107906",
+    "teacher": "107907",
+    "verify": "107892"
+  },
+  "manifest_sha256": "ced4ae7505ffea1e401b3e262b68c5bec38574ede3217d658396817033b4f75a",
+  "output": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_analysis/intervention_logits_bf16_x8_20260920",
+  "requested_gpu_total": 2,
+  "script_sha256": {
+    "run.py": "7b8c6839a394a2d525ae001e4d97b06dd5d5ccaf4bfb2fc91d43b5d135e9cce7",
+    "gpu.slurm": "b5668a3569c49a8adeab421bef107e64d90a0521f46d8afc51e102d5a84a02e9",
+    "verify.slurm": "f50e580805dd032d44de1d13a168a26c90e9e367151e59fe9311947874db9f1f"
+  },
+  "submitted": 1789916722.0360618,
+  "replaces_jobs": [
+    "107900",
+    "107901"
+  ],
+  "node": null,
+  "binding": "normal queue; gnho008 single-GPU Slurm physical ID mapped to UUID before torch initialization",
+  "migration_time": 1789918820.6337152,
+  "excluded_nodes": [
+    "gnho005",
+    "gnho009",
+    "gnho018"
+  ],
+  "restriction_corrected_at": 1789918742.2834275,
+  "recovery_reason": "single-GPU cgroup nvidia-smi renumbers physical index; use sole visible UUID"
+}

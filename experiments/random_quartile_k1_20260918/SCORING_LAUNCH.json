@@ -1,0 +1,17 @@
+{
+  "code_job": 106537,
+  "code_rows": 2317,
+  "math_rows": 2254,
+  "math_status": "submitted",
+  "destination": "api.openlux.ai",
+  "model": "gpt-4o-mini",
+  "fields": [
+    "candidate_answer",
+    "reference_answer"
+  ],
+  "timeout_policy": "score saved answer; primary correct forced false for generation trace_timeout; preserve answer_correct separately",
+  "math_job": 106539,
+  "external_scoring_approved": true,
+  "authorization": "User explicitly approved api.openlux.ai GPT-4o-mini scoring of extracted candidate and reference answers",
+  "api_probe": "passed"
+}

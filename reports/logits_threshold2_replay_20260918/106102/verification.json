@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": [
+    "prefix excludes trigger",
+    "earliest strict signed threshold >2",
+    "full tensor differences",
+    "both controls bitwise equal",
+    "top8/top16 ordering"
+  ],
+  "sha256": {
+    "original_decode.pt": "6eb76d19f0a84f60223e26b7d2e7f4ba8c95d04792f9c22c29ef6fa6e2337758",
+    "incremental_repeat.pt": "8f8a235901cb9d1bc011dd6ae417346acc582cedf5bb7f832a0758e62de858e7",
+    "threshold_trace.json": "2e5c275dfe8adab56ff68320969e2cc55dbca059ba4389568909fe98da522b7d",
+    "result.json": "d85523ee841363208f8d6005a3b2a7643d7d6e3d217523e8a23cf080e8bf3096",
+    "prefix_token_ids.json": "e48af6bb91023d1bc1bd686955ec1e2ebe886b0c84fec0400c034bb21ea35d70",
+    "fresh_prefill_repeat.pt": "07677dbfa3f38c784129ce8dd6c439b156a061afc8ffba3a285512dd807c8369",
+    "sample.json": "e2c89849452b9b9e21b8651ad25899557eb7440e7ca07d3d50249512e293d68c",
+    "search_history.json": "5b5f1a74e2cd2ad694a6edebf27d91e3656061285c54fea0bc81f7048298ab11",
+    "fresh_prefill.pt": "0501ec2e3b50436689c0075d9a2645484b18fb9e5e5cbf5574f9c0c350867bb2"
+  }
+}

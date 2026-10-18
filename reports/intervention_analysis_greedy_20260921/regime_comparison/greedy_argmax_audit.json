@@ -1,0 +1,22 @@
+{
+  "events": 43879,
+  "student_original_is_replay_top1": 0.9806969165204312,
+  "teacher_actual_is_replay_masked_top1": 0.994211353950637,
+  "D_negative_events": 443,
+  "D_zero_events": 975,
+  "note": "Historical T=0 actions can differ from replay argmax due to backend/BF16 drift; do not infer stochastic sampling from D<0.",
+  "weak_argmax_regret": {
+    "0.5": 0.0,
+    "0.9": 2.086162567138672e-07,
+    "0.95": 4.172325134277344e-07,
+    "0.99": 0.25,
+    "1.0": 4.999999948777258
+  },
+  "teacher_argmax_regret": {
+    "0.5": 1.3877787807814457e-17,
+    "0.9": 1.1102230246251565e-16,
+    "0.95": 1.214306433183765e-16,
+    "0.99": 2.220446049250313e-16,
+    "1.0": 1.3750000596046448
+  }
+}

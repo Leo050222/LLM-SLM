@@ -1,0 +1,73 @@
+{
+  "accuracy": 0.313,
+  "by_difficulty": {
+    "6.0": {
+      "accuracy": 0.4234527687296417,
+      "correct": 130,
+      "mean_response_tokens": 1808.0032573289902,
+      "rows": 307
+    },
+    "6.5": {
+      "accuracy": 0.3333333333333333,
+      "correct": 45,
+      "mean_response_tokens": 1754.362962962963,
+      "rows": 135
+    },
+    "7.0": {
+      "accuracy": 0.3355263157894737,
+      "correct": 51,
+      "mean_response_tokens": 1856.75,
+      "rows": 152
+    },
+    "7.5": {
+      "accuracy": 0.3135593220338983,
+      "correct": 37,
+      "mean_response_tokens": 1827.7542372881355,
+      "rows": 118
+    },
+    "8.0": {
+      "accuracy": 0.20202020202020202,
+      "correct": 40,
+      "mean_response_tokens": 1902.419191919192,
+      "rows": 198
+    },
+    "8.5": {
+      "accuracy": 0.08955223880597014,
+      "correct": 6,
+      "mean_response_tokens": 1507.134328358209,
+      "rows": 67
+    },
+    "9.0": {
+      "accuracy": 0.17391304347826086,
+      "correct": 4,
+      "mean_response_tokens": 1394.391304347826,
+      "rows": 23
+    }
+  },
+  "correct": 313,
+  "data": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_data/deepmath_ge6_opd_train15pct_seed20260811/test_1000.parquet",
+  "data_sha256": "6ef8e66d181b7522bad2904ad1fcf20d8fc152af0c9d7eb05e07a9f2f0415ae0",
+  "elapsed_seconds_generate_sum_shards": 3245.5537610054016,
+  "finish_reason": {
+    "stop": 1000
+  },
+  "max_response_tokens_observed": 8130,
+  "mean_response_tokens": 1799.525,
+  "model": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_checkpoints/qwen3_1_7b_bridge_h256_n8_student_top16_rkl_seed20260827/global_step_1324/actor/huggingface",
+  "model_label": "qwen3_1_7b_bridge_h256_n8_student_top16_rkl_step1324",
+  "rows": 1000,
+  "sampling": {
+    "max_model_len": 40960,
+    "max_response_tokens": 40264,
+    "seed": 20260811,
+    "temperature": 1.0,
+    "thinking": false,
+    "top_k": -1,
+    "top_p": 1.0
+  },
+  "status": "DEEPMATH_GE6_NATIVE_NONTHINKING_OK",
+  "thinking_close_tag": 0,
+  "thinking_open_tag": 0,
+  "tokenizer": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+  "total_response_tokens": 1799525
+}

@@ -1,0 +1,49 @@
+{
+  "expected_rows": 1000,
+  "num_shards": 8,
+  "shards": [
+    {
+      "rows": 125,
+      "sha256": "bab18b19d9659e5672edb2ab04a7656f568967d37ccbd4826375281cb2b1084e",
+      "shard_id": 0
+    },
+    {
+      "rows": 125,
+      "sha256": "c742a9140bb5484d0ef84b662981445b57aaadff76ee29604d9ace4a3aedc536",
+      "shard_id": 1
+    },
+    {
+      "rows": 125,
+      "sha256": "c59c4641a7900174c18b86eb5176f2724695ca2ea5beffd7f47cf9db65461109",
+      "shard_id": 2
+    },
+    {
+      "rows": 125,
+      "sha256": "e360019a63b245f1b8a9afbbd06054df4ec0244c487ee0f2dfd3045be66cb44c",
+      "shard_id": 3
+    },
+    {
+      "rows": 125,
+      "sha256": "6d0a277a8a2b087d1ab71ff3aa9b76e03b5c288851f41df873a926f1c3326b63",
+      "shard_id": 4
+    },
+    {
+      "rows": 125,
+      "sha256": "374c6ee8a278659645ebb6bf432a4066a203d6c041ecf3a5b3fcefa9eb323bd3",
+      "shard_id": 5
+    },
+    {
+      "rows": 125,
+      "sha256": "7fc2d4ff379e800ae5a0fd3d63608546315d63e45cc9e012d4b327156fb4b20b",
+      "shard_id": 6
+    },
+    {
+      "rows": 125,
+      "sha256": "2ad610359c7f2142a8177cfa3ee45592aedcb325924699c26ce1e03b5a80106e",
+      "shard_id": 7
+    }
+  ],
+  "source": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/ge6_test1000_native_nonthinking_seed20260811/qwen3_1_7b/merged/rollouts.jsonl",
+  "source_sha256": "aa5e4c48f905b1bb8da284b506c1fa6f5cec678506a508b3ef48b3bac589a5a3",
+  "status": "TEST1000_ANCHOR_SOURCE_SHARDS_COMPLETE"
+}

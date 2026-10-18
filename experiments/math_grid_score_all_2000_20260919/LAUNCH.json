@@ -1,0 +1,36 @@
+{
+  "job_id": 107039,
+  "replaced_job": 107011,
+  "rows": 394450,
+  "first_round_already_scored": 56350,
+  "all8_total": 450800,
+  "stages": [
+    256,
+    512,
+    1000,
+    2000
+  ],
+  "stage_seconds": 90,
+  "cpus": 32,
+  "memory": "96G",
+  "gpus": 0,
+  "time_limit": "UNLIMITED",
+  "async_proxy_probe": "passed",
+  "status": "ALL_SCORING_COMPLETE",
+  "node": "gnho011",
+  "reused_validated": 36047,
+  "measured_256_success_per_second": 72.8218,
+  "actual_peak_observed": 2000,
+  "selected_concurrency": 2000,
+  "processed_snapshot": 177160,
+  "unresolved_failures_snapshot": 0,
+  "all8_scored": 450800,
+  "additional_scored": 394450,
+  "finalize_job": 107075,
+  "completed_at": "2026-09-19T19:21:45+08:00",
+  "repair_rows": 1,
+  "repair_override": {
+    "max_tokens": 512,
+    "frequency_penalty": 0.5
+  }
+}

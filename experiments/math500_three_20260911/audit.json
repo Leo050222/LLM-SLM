@@ -1,0 +1,42 @@
+{
+  "student": {
+    "count": 500,
+    "correct": 364,
+    "think_tags": 0,
+    "teacher_tokens": 0,
+    "takeovers": 0,
+    "max_takeovers": 0,
+    "teacher_early_stop": 0
+  },
+  "online": {
+    "count": 500,
+    "correct": 407,
+    "think_tags": 0,
+    "teacher_tokens": 8997,
+    "takeovers": 1125,
+    "max_takeovers": 47,
+    "teacher_early_stop": 0
+  },
+  "prefix256": {
+    "count": 500,
+    "correct": 376,
+    "think_tags": 0,
+    "teacher_tokens": 125980,
+    "takeovers": 0,
+    "max_takeovers": 0,
+    "teacher_early_stop": 47
+  },
+  "overlap": {
+    "student": {
+      "both": 345,
+      "online_only": 62,
+      "baseline_only": 19
+    },
+    "prefix256": {
+      "both": 355,
+      "online_only": 52,
+      "baseline_only": 21
+    }
+  },
+  "verified": "1500 identities, answers, shared prompts, complete status, score source hashes, scoring after all generation, prefix continuity, online bridge length cap"
+}

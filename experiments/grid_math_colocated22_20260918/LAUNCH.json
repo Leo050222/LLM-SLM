@@ -1,0 +1,35 @@
+{
+  "jobs": {
+    "extra6": 106827,
+    "main16": 106828
+  },
+  "source_job": 106743,
+  "nodes": [
+    "gnho029",
+    "gnho041",
+    "gnho020"
+  ],
+  "gpus": [
+    8,
+    8,
+    6
+  ],
+  "time_limit": "UNLIMITED",
+  "root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_hard/math_reasoning_grid_x8_20260916",
+  "status": "verified all22 model pairs ready and smoke passed; all3 shards generating",
+  "preserved_completed": 147139,
+  "pending_per_shard": [
+    90149,
+    89542,
+    67620
+  ],
+  "completed_at_verification": 147285,
+  "new_since_cutover": 146,
+  "trace_errors": 0,
+  "smoke_passed": 22,
+  "observed_done_per_shard": {
+    "0": 52,
+    "1": 82,
+    "2": 11
+  }
+}

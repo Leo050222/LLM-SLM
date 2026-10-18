@@ -1,0 +1,8 @@
+{
+  "state": "COMPLETE",
+  "pid": 440724,
+  "updated_at_utc": "2026-10-16T08:08:21Z",
+  "model": "Qwen2.5-VL-32B-Instruct",
+  "verification_exit_code": 0,
+  "publish_path": "/storage/yukaichengLab/share/model/Qwen2.5-VL-32B-Instruct"
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "dataset": "bbh",
+    "config": "student_only",
+    "n": 1080,
+    "old_correct": 378,
+    "new_correct": 465,
+    "wrong_to_right": 87,
+    "right_to_wrong": 0,
+    "old_accuracy_percent": 35.0,
+    "new_accuracy_percent": 43.05555555555556,
+    "delta_pp": 8.055555555555555
+  },
+  {
+    "dataset": "bbh",
+    "config": "teacher_only",
+    "n": 1080,
+    "old_correct": 835,
+    "new_correct": 862,
+    "wrong_to_right": 27,
+    "right_to_wrong": 0,
+    "old_accuracy_percent": 77.31481481481481,
+    "new_accuracy_percent": 79.81481481481481,
+    "delta_pp": 2.5
+  },
+  {
+    "dataset": "math500",
+    "config": "student_only",
+    "n": 500,
+    "old_correct": 364,
+    "new_correct": 358,
+    "wrong_to_right": 5,
+    "right_to_wrong": 11,
+    "old_accuracy_percent": 72.8,
+    "new_accuracy_percent": 71.6,
+    "delta_pp": -1.2
+  },
+  {
+    "dataset": "math500",
+    "config": "teacher_only",
+    "n": 500,
+    "old_correct": 437,
+    "new_correct": 423,
+    "wrong_to_right": 4,
+    "right_to_wrong": 18,
+    "old_accuracy_percent": 87.4,
+    "new_accuracy_percent": 84.6,
+    "delta_pp": -2.8
+  },
+  {
+    "dataset": "olympiad_bench",
+    "config": "student_only",
+    "n": 674,
+    "old_correct": 202,
+    "new_correct": 281,
+    "wrong_to_right": 83,
+    "right_to_wrong": 4,
+    "old_accuracy_percent": 29.97032640949555,
+    "new_accuracy_percent": 41.69139465875371,
+    "delta_pp": 11.72106824925816
+  },
+  {
+    "dataset": "olympiad_bench",
+    "config": "teacher_only",
+    "n": 674,
+    "old_correct": 314,
+    "new_correct": 371,
+    "wrong_to_right": 63,
+    "right_to_wrong": 6,
+    "old_accuracy_percent": 46.58753709198813,
+    "new_accuracy_percent": 55.04451038575667,
+    "delta_pp": 8.456973293768545
+  }
+]

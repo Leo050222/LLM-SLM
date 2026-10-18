@@ -1,0 +1,10 @@
+{
+  "job_id": 108113,
+  "resumes_job": 108001,
+  "completed_preserved": 3594,
+  "remaining": 977,
+  "gpus": 8,
+  "slurm_time_limit": "02:00:00",
+  "source_hashes_verified": true,
+  "submitted_at": "2026-09-21T11:46:23.528199+08:00"
+}

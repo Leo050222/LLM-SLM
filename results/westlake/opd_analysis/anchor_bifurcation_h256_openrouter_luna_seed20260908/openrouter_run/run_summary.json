@@ -1,0 +1,11 @@
+{
+  "status": "ANCHOR_BIFURCATION_OPENROUTER_RUN_INCOMPLETE",
+  "model": "openai/gpt-5.6-luna",
+  "inputs": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_analysis/anchor_bifurcation_h256_openrouter_luna_seed20260908/inputs/judge_inputs.jsonl",
+  "inputs_sha256": "c102e60206cb61d91a79d33ebb88ba12b5923523f609a8242e4c65815cd24b4d",
+  "requested": 1,
+  "ok": 0,
+  "reused": 0,
+  "failed": 1,
+  "elapsed_seconds": 1.2272319793701172
+}

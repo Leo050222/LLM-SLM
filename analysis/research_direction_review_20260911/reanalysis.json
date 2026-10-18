@@ -1,0 +1,355 @@
+{
+  "note": "Exploratory, paired-question uncertainty conditional on existing single-seed outputs. No multiplicity correction, no inference of causal location effects or equal-budget superiority. BBH uses the existing fixed 27-task mixture; no unseen-task generalization inference.",
+  "metrics": {
+    "nojudge/aime24": {
+      "questions": 30,
+      "output_tokens": 74041,
+      "teacher_tokens": 6633,
+      "student_draft_tokens": 99787,
+      "discarded_tokens": 32379,
+      "judge_calls": 0,
+      "rounds": 1575,
+      "interventions": 830,
+      "negative_gap": 94,
+      "teacher_original_top1": 25,
+      "positive_gap": 736,
+      "teacher_output_fraction": 0.08958549992571684,
+      "discarded_draft_fraction": 0.32448114483850604,
+      "negative_intervention_fraction": 0.11325301204819277,
+      "mean_teacher_tokens": 221.1,
+      "mean_rounds": 52.5
+    },
+    "nojudge/aime25": {
+      "questions": 30,
+      "output_tokens": 61105,
+      "teacher_tokens": 5736,
+      "student_draft_tokens": 83005,
+      "discarded_tokens": 27636,
+      "judge_calls": 0,
+      "rounds": 1317,
+      "interventions": 717,
+      "positive_gap": 640,
+      "teacher_original_top1": 13,
+      "negative_gap": 77,
+      "teacher_output_fraction": 0.09387120530234842,
+      "discarded_draft_fraction": 0.3329437985663514,
+      "negative_intervention_fraction": 0.10739191073919108,
+      "mean_teacher_tokens": 191.2,
+      "mean_rounds": 43.9
+    },
+    "nojudge/olympiad_bench": {
+      "questions": 674,
+      "output_tokens": 1003841,
+      "teacher_tokens": 86292,
+      "student_draft_tokens": 1343457,
+      "discarded_tokens": 425908,
+      "judge_calls": 0,
+      "rounds": 21365,
+      "interventions": 10854,
+      "positive_gap": 9572,
+      "teacher_original_top1": 346,
+      "negative_gap": 1282,
+      "teacher_output_fraction": 0.08596182064689528,
+      "discarded_draft_fraction": 0.3170239166568041,
+      "negative_intervention_fraction": 0.11811313801363553,
+      "mean_teacher_tokens": 128.02967359050444,
+      "mean_rounds": 31.698813056379823
+    },
+    "nojudge/bbh": {
+      "questions": 1080,
+      "output_tokens": 293136,
+      "teacher_tokens": 87109,
+      "student_draft_tokens": 720102,
+      "discarded_tokens": 514075,
+      "judge_calls": 0,
+      "rounds": 12579,
+      "interventions": 11331,
+      "positive_gap": 10897,
+      "teacher_original_top1": 230,
+      "negative_gap": 434,
+      "teacher_output_fraction": 0.2971624092571366,
+      "discarded_draft_fraction": 0.7138919208667661,
+      "negative_intervention_fraction": 0.03830200335363163,
+      "mean_teacher_tokens": 80.65648148148148,
+      "mean_rounds": 11.647222222222222
+    },
+    "nojudge/math500": {
+      "questions": 500,
+      "output_tokens": 431226,
+      "teacher_tokens": 36923,
+      "student_draft_tokens": 572139,
+      "discarded_tokens": 177836,
+      "judge_calls": 0,
+      "rounds": 9254,
+      "interventions": 4624,
+      "positive_gap": 4148,
+      "teacher_original_top1": 132,
+      "negative_gap": 476,
+      "teacher_output_fraction": 0.08562331584830228,
+      "discarded_draft_fraction": 0.31082656487322136,
+      "negative_intervention_fraction": 0.10294117647058823,
+      "mean_teacher_tokens": 73.846,
+      "mean_rounds": 18.508
+    },
+    "judge_hard/aime24": {
+      "questions": 30,
+      "output_tokens": 69659,
+      "teacher_tokens": 1960,
+      "student_draft_tokens": 75805,
+      "discarded_tokens": 8106,
+      "judge_calls": 867,
+      "rounds": 1199,
+      "interventions": 245,
+      "positive_gap": 237,
+      "teacher_original_top1": 2,
+      "negative_gap": 8,
+      "teacher_output_fraction": 0.028137067715585926,
+      "discarded_draft_fraction": 0.10693226040498648,
+      "negative_intervention_fraction": 0.0326530612244898,
+      "mean_teacher_tokens": 65.33333333333333,
+      "mean_rounds": 39.96666666666667
+    },
+    "judge_hard/aime25": {
+      "questions": 30,
+      "output_tokens": 63137,
+      "teacher_tokens": 1504,
+      "student_draft_tokens": 68167,
+      "discarded_tokens": 6534,
+      "judge_calls": 775,
+      "rounds": 1081,
+      "interventions": 188,
+      "positive_gap": 171,
+      "teacher_original_top1": 3,
+      "negative_gap": 17,
+      "teacher_output_fraction": 0.023821214185026213,
+      "discarded_draft_fraction": 0.09585283201549137,
+      "negative_intervention_fraction": 0.09042553191489362,
+      "mean_teacher_tokens": 50.13333333333333,
+      "mean_rounds": 36.03333333333333
+    },
+    "judge_hard/olympiad_bench": {
+      "questions": 674,
+      "output_tokens": 1022670,
+      "teacher_tokens": 24461,
+      "student_draft_tokens": 1105359,
+      "discarded_tokens": 107150,
+      "judge_calls": 12783,
+      "rounds": 17617,
+      "interventions": 3058,
+      "positive_gap": 2930,
+      "teacher_original_top1": 20,
+      "negative_gap": 128,
+      "teacher_output_fraction": 0.023918761672875904,
+      "discarded_draft_fraction": 0.09693683228706691,
+      "negative_intervention_fraction": 0.041857423152387184,
+      "mean_teacher_tokens": 36.29228486646884,
+      "mean_rounds": 26.137982195845698
+    },
+    "judge_hard/bbh": {
+      "questions": 1080,
+      "output_tokens": 335163,
+      "teacher_tokens": 27526,
+      "student_draft_tokens": 440852,
+      "discarded_tokens": 133215,
+      "judge_calls": 18277,
+      "rounds": 7624,
+      "interventions": 3577,
+      "positive_gap": 3557,
+      "teacher_original_top1": 4,
+      "negative_gap": 20,
+      "teacher_output_fraction": 0.08212720377846003,
+      "discarded_draft_fraction": 0.3021762405523849,
+      "negative_intervention_fraction": 0.005591277606933185,
+      "mean_teacher_tokens": 25.487037037037037,
+      "mean_rounds": 7.059259259259259
+    },
+    "judge_math/math500": {
+      "questions": 500,
+      "output_tokens": 441377,
+      "teacher_tokens": 8997,
+      "student_draft_tokens": 471951,
+      "discarded_tokens": 39571,
+      "judge_calls": 5406,
+      "rounds": 7620,
+      "interventions": 1125,
+      "positive_gap": 1085,
+      "teacher_original_top1": 3,
+      "negative_gap": 40,
+      "teacher_output_fraction": 0.020383934822158833,
+      "discarded_draft_fraction": 0.0838455687137012,
+      "negative_intervention_fraction": 0.035555555555555556,
+      "mean_teacher_tokens": 17.994,
+      "mean_rounds": 15.24
+    }
+  },
+  "paired_comparisons": [
+    {
+      "comparison": "nojudge_minus_student",
+      "dataset": "aime24",
+      "n": 30,
+      "rescued": 2,
+      "harmed": 4,
+      "delta_pp": -6.666666666666667,
+      "question_paired_bootstrap_95ci_pp": [
+        -23.333333333333332,
+        10.0
+      ]
+    },
+    {
+      "comparison": "nojudge_minus_student",
+      "dataset": "aime25",
+      "n": 30,
+      "rescued": 3,
+      "harmed": 1,
+      "delta_pp": 6.666666666666667,
+      "question_paired_bootstrap_95ci_pp": [
+        -6.666666666666667,
+        20.0
+      ]
+    },
+    {
+      "comparison": "nojudge_minus_student",
+      "dataset": "bbh",
+      "n": 1080,
+      "rescued": 475,
+      "harmed": 35,
+      "delta_pp": 40.74074074074074,
+      "question_paired_bootstrap_95ci_pp": [
+        37.407407407407405,
+        43.98148148148148
+      ]
+    },
+    {
+      "comparison": "nojudge_minus_student",
+      "dataset": "math500",
+      "n": 500,
+      "rescued": 70,
+      "harmed": 13,
+      "delta_pp": 11.4,
+      "question_paired_bootstrap_95ci_pp": [
+        8.0,
+        14.799999999999999
+      ]
+    },
+    {
+      "comparison": "nojudge_minus_student",
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "rescued": 152,
+      "harmed": 43,
+      "delta_pp": 16.172106824925816,
+      "question_paired_bootstrap_95ci_pp": [
+        12.314540059347182,
+        20.02967359050445
+      ]
+    },
+    {
+      "comparison": "nojudge_minus_judge",
+      "dataset": "aime24",
+      "n": 30,
+      "rescued": 3,
+      "harmed": 3,
+      "delta_pp": 0.0,
+      "question_paired_bootstrap_95ci_pp": [
+        -16.666666666666664,
+        16.666666666666664
+      ]
+    },
+    {
+      "comparison": "nojudge_minus_judge",
+      "dataset": "aime25",
+      "n": 30,
+      "rescued": 1,
+      "harmed": 2,
+      "delta_pp": -3.3333333333333335,
+      "question_paired_bootstrap_95ci_pp": [
+        -16.666666666666664,
+        6.666666666666667
+      ]
+    },
+    {
+      "comparison": "nojudge_minus_judge",
+      "dataset": "bbh",
+      "n": 1080,
+      "rescued": 386,
+      "harmed": 52,
+      "delta_pp": 30.925925925925924,
+      "question_paired_bootstrap_95ci_pp": [
+        27.59259259259259,
+        34.25925925925926
+      ]
+    },
+    {
+      "comparison": "nojudge_minus_judge",
+      "dataset": "math500",
+      "n": 500,
+      "rescued": 38,
+      "harmed": 24,
+      "delta_pp": 2.8000000000000003,
+      "question_paired_bootstrap_95ci_pp": [
+        -0.2,
+        5.800000000000001
+      ]
+    },
+    {
+      "comparison": "nojudge_minus_judge",
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "rescued": 123,
+      "harmed": 44,
+      "delta_pp": 11.72106824925816,
+      "question_paired_bootstrap_95ci_pp": [
+        8.160237388724036,
+        15.43026706231454
+      ]
+    },
+    {
+      "comparison": "nojudge_minus_teacher",
+      "dataset": "aime24",
+      "n": 30,
+      "rescued": 0,
+      "harmed": 5,
+      "delta_pp": -16.666666666666664,
+      "question_paired_bootstrap_95ci_pp": [
+        -30.0,
+        -3.3333333333333335
+      ]
+    },
+    {
+      "comparison": "nojudge_minus_teacher",
+      "dataset": "aime25",
+      "n": 30,
+      "rescued": 1,
+      "harmed": 3,
+      "delta_pp": -6.666666666666667,
+      "question_paired_bootstrap_95ci_pp": [
+        -20.0,
+        6.666666666666667
+      ]
+    },
+    {
+      "comparison": "nojudge_minus_teacher",
+      "dataset": "bbh",
+      "n": 1080,
+      "rescued": 48,
+      "harmed": 65,
+      "delta_pp": -1.574074074074074,
+      "question_paired_bootstrap_95ci_pp": [
+        -3.5185185185185186,
+        0.3703703703703704
+      ]
+    },
+    {
+      "comparison": "nojudge_minus_teacher",
+      "dataset": "olympiad_bench",
+      "n": 674,
+      "rescued": 69,
+      "harmed": 72,
+      "delta_pp": -0.44510385756676557,
+      "question_paired_bootstrap_95ci_pp": [
+        -3.857566765578635,
+        2.967359050445104
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-10-19",
+  "executed_by_this_audit": false,
+  "safe_candidates": [
+    {
+      "path": ".DS_Store",
+      "reason": "macOS folder metadata; no experimental content"
+    },
+    {
+      "path": "analysis/.DS_Store",
+      "reason": "macOS folder metadata; no experimental content"
+    },
+    {
+      "path": "downloads/.DS_Store",
+      "reason": "macOS folder metadata; no experimental content"
+    },
+    {
+      "path": ".mplcache",
+      "reason": "regenerable Matplotlib font cache"
+    },
+    {
+      "path": ".pnpm-store",
+      "reason": "reinstallable pnpm package store"
+    },
+    {
+      "path": "bridge-rollout-browser/node_modules",
+      "reason": "reinstallable dependencies specified by package.json and pnpm-lock.yaml"
+    }
+  ],
+  "safe_globs": [
+    {
+      "glob": "**/__pycache__",
+      "reason": "regenerable Python bytecode cache"
+    },
+    {
+      "glob": "**/*.pyc",
+      "reason": "regenerable Python bytecode cache"
+    },
+    {
+      "glob": "**/tsconfig.tsbuildinfo",
+      "reason": "regenerable TypeScript incremental compilation cache"
+    }
+  ],
+  "unused_template_candidates": [
+    {
+      "path": "code/bridge-rollout-browser/vite.config 2.ts",
+      "reason": "Unreferenced initial Sites/Next template superseded by src/main.tsx, app/page.tsx, app/globals.css and vite.config.ts; 2-suffix files are not imported by active app and are excluded from active tsconfig include list"
+    },
+    {
+      "path": "code/bridge-rollout-browser/app/page 2.tsx",
+      "reason": "Unreferenced initial Sites/Next template superseded by src/main.tsx, app/page.tsx, app/globals.css and vite.config.ts; 2-suffix files are not imported by active app and are excluded from active tsconfig include list"
+    },
+    {
+      "path": "code/bridge-rollout-browser/app/globals 2.css",
+      "reason": "Unreferenced initial Sites/Next template superseded by src/main.tsx, app/page.tsx, app/globals.css and vite.config.ts; 2-suffix files are not imported by active app and are excluded from active tsconfig include list"
+    },
+    {
+      "path": "bridge-rollout-browser/vite.config 2.ts",
+      "reason": "Unreferenced initial Sites/Next template superseded by src/main.tsx, app/page.tsx, app/globals.css and vite.config.ts; 2-suffix files are not imported by active app and are excluded from active tsconfig include list"
+    },
+    {
+      "path": "bridge-rollout-browser/app/page 2.tsx",
+      "reason": "Unreferenced initial Sites/Next template superseded by src/main.tsx, app/page.tsx, app/globals.css and vite.config.ts; 2-suffix files are not imported by active app and are excluded from active tsconfig include list"
+    },
+    {
+      "path": "bridge-rollout-browser/app/globals 2.css",
+      "reason": "Unreferenced initial Sites/Next template superseded by src/main.tsx, app/page.tsx, app/globals.css and vite.config.ts; 2-suffix files are not imported by active app and are excluded from active tsconfig include list"
+    }
+  ],
+  "preserve": [
+    "tmp/ (contains judge results, baseline summaries, and candidate bundle; archive rather than blanket delete)",
+    "remote_patch/attention_utils.py (external dependency patch, preserve provenance)",
+    "reports/**/data_legacy_json/* 2.js (not checked for byte equality or published references)",
+    "refine-logs/EXPERIMENT_TRACKER 2.md (not verified equivalent to current tracker)",
+    "bridge-rollout-browser/.git (independent repository history)",
+    "bridge-rollout-browser/public/data (browser input, not cache)",
+    "code/bridge-rollout-browser/public/data (browser input, not cache)"
+  ],
+  "browser_duplicate_assessment": {
+    "roots": [
+      "code/bridge-rollout-browser",
+      "bridge-rollout-browser"
+    ],
+    "source_files_compared": 81,
+    "source_files_identical": 81,
+    "excluded_from_comparison": [
+      ".git",
+      "node_modules",
+      "dist",
+      "public"
+    ],
+    "recommendation": "Publish one source tree (code/bridge-rollout-browser); preserve independent root .git locally. Do not delete full duplicate data directories until data and independent history are separately verified."
+  }
+}

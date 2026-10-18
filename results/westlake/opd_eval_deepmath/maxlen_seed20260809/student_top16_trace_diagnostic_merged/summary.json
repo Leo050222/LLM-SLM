@@ -1,0 +1,25 @@
+{
+  "status": "STUDENT_TOP16_TRACE_MERGE_OK",
+  "topk": 16,
+  "support": "student-selected; stop-gradient; renormalized",
+  "selected_rollouts": 209,
+  "tokens": 2711591,
+  "token_weighted_mean": {
+    "student_top16_renorm_kl": 0.19773298501968384,
+    "student_teacher_top16_overlap": 0.733083188533783,
+    "top1_agreement": 0.871050611983887,
+    "student_sample_logprob": -0.32909247279167175,
+    "teacher_sample_logprob": -0.5313996076583862,
+    "sample_logprob_gap_student_minus_teacher": 0.20230701565742493,
+    "sampled_reverse_kl_k3": 0.20119091868400574
+  },
+  "rollout_weighted_mean": {
+    "student_top16_renorm_kl": 0.21091587841510773,
+    "student_teacher_top16_overlap": 0.7302659153938293,
+    "top1_agreement": 0.8635767140704895,
+    "student_sample_logprob": -0.3447519838809967,
+    "teacher_sample_logprob": -0.5609772801399231,
+    "sample_logprob_gap_student_minus_teacher": 0.21622532606124878,
+    "sampled_reverse_kl_k3": 0.2137349396944046
+  }
+}

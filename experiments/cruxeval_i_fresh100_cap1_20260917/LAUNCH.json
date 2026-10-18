@@ -1,0 +1,27 @@
+{
+  "job_id": "105524",
+  "status_at_submission_check": "PENDING",
+  "reason": "Priority",
+  "submit_time": "2026-09-17T14:33:11+08:00",
+  "nodes": 1,
+  "gpus": 4,
+  "gpu_type": "H800",
+  "cpus": 32,
+  "memory_gib": 256,
+  "time_limit": "UNLIMITED",
+  "input_sha256": "a5b1dd244d0f6a53579a830c6261f9c5708df080824cbfbd6c57bcf26bbfcf96",
+  "prefixes": 100,
+  "previous_problem_overlap": 0,
+  "previous_prefix_overlap": 0,
+  "rollouts_per_prefix": 8,
+  "caps": [
+    1
+  ],
+  "expected_outputs": 800,
+  "tests_passed": 4,
+  "gpu_witness": "pending allocation",
+  "scoring": "automatic CPU job after GPU success",
+  "final_status": "CANCELLED",
+  "elapsed": "00:00:00",
+  "cancellation_reason": "User replaced experiment with old-prefix caps11\u201320"
+}

@@ -1,0 +1,30 @@
+{
+  "events": 399601,
+  "input_sha256": "839bb5020a2876983035e14a02bc1500d52746d470d3223e9cebacbc7a4002e5",
+  "script_sha256": "3908a3fbdc3e8984c58cfd458f14f487fc4af4f544bb789975a349060868a0d3",
+  "interpretation": "Primary comparisons use SAME unmasked student distribution; s_qy is secondary teacher sampling distribution after banning x. Replay probabilities, not original vLLM tensors.",
+  "plot_note": "Log-ratio plot displays [-12,3]; all tails included in statistics and CSV.",
+  "summary": {
+    "dataset": "ALL",
+    "events": 399601,
+    "w_px": 0.613584192175332,
+    "w_py": 0.16051824236886866,
+    "delta": -0.4530659498064634,
+    "abs_delta": 0.5969614032739999,
+    "teacher_higher": 0.1829274701514761,
+    "tie": 0.019659610461435283,
+    "within_factor2": 0.1283305096834092,
+    "within_factor10": 0.4066831664585424,
+    "teacher_lt_tenth": 0.5489675951761882,
+    "teacher_lt_hundredth": 0.3604920908606335,
+    "abs_gap_le1pp": 0.027955385497033292,
+    "abs_gap_le5pp": 0.06017502458702556,
+    "abs_gap_le10pp": 0.09843819209661638,
+    "close_both": 0.03947437568975053,
+    "student_at_least90_teacher_below1": 0.23010452926794478,
+    "p_student_median": 0.6836638450622559,
+    "p_teacher_median": 0.031246306374669075,
+    "paired_delta_median": -0.567258894443512,
+    "ratio_median": 0.06392785358591312
+  }
+}

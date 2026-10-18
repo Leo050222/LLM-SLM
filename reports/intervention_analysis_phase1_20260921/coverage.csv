@@ -1,0 +1,9 @@
+dataset,traces,questions,events,no_intervention,missing_scores
+bbh,8640,1080,159435,99,0
+cruxeval_i,6400,800,25768,8,0
+cruxeval_o,6400,800,16483,348,0
+humaneval_plus,1312,164,8385,16,0
+livecodebench,1400,175,39716,7,0
+math500,4000,500,39250,109,0
+mbpp_plus,3024,378,18055,198,0
+olympiad_bench,5392,674,92509,31,0

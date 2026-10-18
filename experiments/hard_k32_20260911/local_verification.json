@@ -1,0 +1,9 @@
+{
+  "hash_pairs": 1814,
+  "identical_prompts": true,
+  "bbh_subtasks": 27,
+  "user_aborted": [
+    436,
+    900
+  ]
+}

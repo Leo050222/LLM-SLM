@@ -1,0 +1,14 @@
+{
+  "job_id": 106160,
+  "cpus": 64,
+  "workers": 48,
+  "memory_gib": 128,
+  "gpus": 0,
+  "rows": 463400,
+  "replicates": 8,
+  "old_rows_rescored_into_new_root": 57925,
+  "new_rows": 405475,
+  "scorer": "original code_scorer sandbox and score_one",
+  "trace_timeout_policy": "preserve 900s generation timeouts as incorrect",
+  "source_outputs_modified": false
+}

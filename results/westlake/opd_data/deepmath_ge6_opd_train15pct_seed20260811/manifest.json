@@ -1,0 +1,86 @@
+{
+  "actual_unique_fraction": 0.150008829242451,
+  "batch_size": 64,
+  "files": {
+    "selected_source_indices.json": {
+      "bytes": 92472,
+      "sha256": "7394eefaaf2147507885fe4046a121a52ef9bc5b00e0052d8fd16bb97d0eb3c4"
+    },
+    "test_1000.parquet": {
+      "bytes": 196124,
+      "sha256": "6ef8e66d181b7522bad2904ad1fcf20d8fc152af0c9d7eb05e07a9f2f0415ae0"
+    },
+    "train.parquet": {
+      "bytes": 1544000,
+      "sha256": "4e3b711079515c1748269ef89fd818fc7c895df6229a1264ee0c5235bcedd758"
+    },
+    "train_unique.parquet": {
+      "bytes": 1541380,
+      "sha256": "c8328c40b3da042e39f5e8ed38511af93b7ff45f27b5c12dcc88c0af140d0d68"
+    }
+  },
+  "maximum_difficulty_share_error_pp": 0.00677757386968203,
+  "padded_train_difficulty_counts": {
+    "10.0": 1,
+    "6.0": 2582,
+    "6.5": 1142,
+    "7.0": 1264,
+    "7.5": 998,
+    "8.0": 1727,
+    "8.5": 589,
+    "9.0": 201,
+    "9.5": 8
+  },
+  "padding_rows": 17,
+  "parent_difficulty_counts": {
+    "10.0": 3,
+    "6.0": 17181,
+    "6.5": 7615,
+    "7.0": 8409,
+    "7.5": 6628,
+    "8.0": 11488,
+    "8.5": 3922,
+    "9.0": 1333,
+    "9.5": 51
+  },
+  "requested_difficulty_allocation": {
+    "10.0": 1,
+    "6.0": 2577,
+    "6.5": 1142,
+    "7.0": 1262,
+    "7.5": 994,
+    "8.0": 1723,
+    "8.5": 588,
+    "9.0": 200,
+    "9.5": 8
+  },
+  "requested_fraction": 0.15,
+  "sampled_nonempty_strata": 432,
+  "sampled_topics": 73,
+  "sampled_unique_difficulty_counts": {
+    "10.0": 1,
+    "6.0": 2577,
+    "6.5": 1142,
+    "7.0": 1262,
+    "7.5": 994,
+    "8.0": 1723,
+    "8.5": 588,
+    "9.0": 200,
+    "9.5": 8
+  },
+  "sampled_unique_rows": 8495,
+  "sampling": "hierarchical largest remainder: difficulty first, then full topic within each difficulty",
+  "seed": 20260811,
+  "source_dir": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_data/deepmath_ge6_opd",
+  "source_manifest_sha256": "d07e2ec2c4e5f9bfa390f7e264c95d556c66b732fda269490b2d83808a639941",
+  "source_strata": 504,
+  "source_test_sha256": "6ef8e66d181b7522bad2904ad1fcf20d8fc152af0c9d7eb05e07a9f2f0415ae0",
+  "source_topics": 78,
+  "source_train_sha256": "adf7972d6f2f5811f10ff69474fa08f4d1e60616b4c498174583f3591649bad5",
+  "source_unique_train_rows": 56630,
+  "status": "DEEPMATH_GE6_TRAIN15PCT_OK",
+  "test_reused_unchanged": true,
+  "test_rows": 1000,
+  "train_steps": 133,
+  "train_total_rows": 8512
+}

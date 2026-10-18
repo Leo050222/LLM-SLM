@@ -1,0 +1,393 @@
+{
+  "k1_t2": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 299,
+      "accuracy": 0.443620178041543,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 830,
+      "accuracy": 0.7685185185185185,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 419,
+      "accuracy": 0.838,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k1_t2p5": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 301,
+      "accuracy": 0.4465875370919881,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 835,
+      "accuracy": 0.7731481481481481,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 411,
+      "accuracy": 0.822,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k1_t3": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 279,
+      "accuracy": 0.413946587537092,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 836,
+      "accuracy": 0.774074074074074,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 411,
+      "accuracy": 0.822,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k1_t3p5": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 270,
+      "accuracy": 0.40059347181008903,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 823,
+      "accuracy": 0.7620370370370371,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 395,
+      "accuracy": 0.79,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k1_t4": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 268,
+      "accuracy": 0.39762611275964393,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 817,
+      "accuracy": 0.7564814814814815,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 401,
+      "accuracy": 0.802,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k4_t2": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 298,
+      "accuracy": 0.4421364985163205,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 840,
+      "accuracy": 0.7777777777777778,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 426,
+      "accuracy": 0.852,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k4_t2p5": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 297,
+      "accuracy": 0.4406528189910979,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 836,
+      "accuracy": 0.774074074074074,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 414,
+      "accuracy": 0.828,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k4_t3": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 292,
+      "accuracy": 0.4332344213649852,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 830,
+      "accuracy": 0.7685185185185185,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 411,
+      "accuracy": 0.822,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k4_t3p5": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 287,
+      "accuracy": 0.4258160237388724,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 837,
+      "accuracy": 0.775,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 409,
+      "accuracy": 0.818,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k4_t4": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 250,
+      "accuracy": 0.37091988130563797,
+      "score_status": {
+        "ok": 673,
+        "missing": 1
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 826,
+      "accuracy": 0.7648148148148148,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 405,
+      "accuracy": 0.81,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k8_t2": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 308,
+      "accuracy": 0.456973293768546,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 829,
+      "accuracy": 0.7675925925925926,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 430,
+      "accuracy": 0.86,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k8_t2p5": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 293,
+      "accuracy": 0.43471810089020774,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 835,
+      "accuracy": 0.7731481481481481,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 419,
+      "accuracy": 0.838,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k8_t3": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 278,
+      "accuracy": 0.4124629080118694,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 825,
+      "accuracy": 0.7638888888888888,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 414,
+      "accuracy": 0.828,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k8_t3p5": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 277,
+      "accuracy": 0.41097922848664686,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 817,
+      "accuracy": 0.7564814814814815,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 408,
+      "accuracy": 0.816,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k8_t4": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 250,
+      "accuracy": 0.37091988130563797,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 814,
+      "accuracy": 0.7537037037037037,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 395,
+      "accuracy": 0.79,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  }
+}

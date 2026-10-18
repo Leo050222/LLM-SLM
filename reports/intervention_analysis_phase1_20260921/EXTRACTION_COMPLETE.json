@@ -1,0 +1,20 @@
+{
+  "events": 399601,
+  "traces": 36568,
+  "seconds": 273.3638690649532,
+  "events_sha256": "839bb5020a2876983035e14a02bc1500d52746d470d3223e9cebacbc7a4002e5",
+  "traces_sha256": "0729e61f6d0438d117dfacc5bf023181b8dfee311c25afe58aa37532f5077bac",
+  "spec": {
+    "version": 1,
+    "archive_manifest": "ced4ae7505ffea1e401b3e262b68c5bec38574ede3217d658396817033b4f75a",
+    "temperature": 1,
+    "softmax_dtype": "float32",
+    "high_support": "w_rank_max<=5 and w_py>=0.01",
+    "low_support": "w_rank_min>50 and w_py<0.001",
+    "bootstrap_seed": 20260921,
+    "bootstrap_repeats": 2000,
+    "tie_rule": "strictly greater / greater-or-equal rank bounds; nucleus all possible tie orders",
+    "weights": "event; equal question then equal nonempty replicate then equal event; dataset macro",
+    "script_sha256": "2b3d0b9a257f6f00e4c59f8f175daab39dd8957998076e59bc664e4689ab23f1"
+  }
+}

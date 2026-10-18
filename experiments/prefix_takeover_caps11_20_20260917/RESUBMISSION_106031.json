@@ -1,0 +1,12 @@
+{
+  "job_id": 106031,
+  "previous_job": 105560,
+  "completed_preserved": 34886,
+  "target": 64000,
+  "trace_checkpoints": 34949,
+  "gpus": 4,
+  "nodes": 1,
+  "time_limit": "UNLIMITED",
+  "math_job_105320": "cancelled; do not resubmit without user request",
+  "api_probe_passed": true
+}

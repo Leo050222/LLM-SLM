@@ -1,0 +1,25 @@
+{
+  "accepted_eos_token_ids": [
+    151643,
+    151645
+  ],
+  "extra_artifact_count": 0,
+  "finish_reason_counts": {
+    "length": 6,
+    "stop": 7658
+  },
+  "first_token_differs_count": null,
+  "first_token_matches_original_student_anchor_count": null,
+  "max_model_len": 40960,
+  "missing_artifact_count": 0,
+  "mode": "student_after_bridge",
+  "model": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+  "num_shards": 8,
+  "requested_rollouts_per_trace": 8,
+  "source_bridge_token_limit": null,
+  "status": "FULL_ROLLOUT_BATCH_COMPLETE",
+  "thinking_tag_rollout_count": 0,
+  "verified_generated_token_count": 6523216,
+  "verified_rollout_count": 7664,
+  "verified_trace_count": 958
+}

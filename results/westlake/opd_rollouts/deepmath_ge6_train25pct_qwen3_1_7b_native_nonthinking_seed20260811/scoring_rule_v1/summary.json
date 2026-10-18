@@ -1,0 +1,461 @@
+{
+  "all_rows_including_padding": {
+    "accuracy": 0.27822353603603606,
+    "accuracy_percent": 27.822353603603602,
+    "correct": 3953,
+    "rows": 14208,
+    "score_methods": {
+      "missing": 3,
+      "normalized_exact": 3953,
+      "symbolic": 10252
+    },
+    "wilson_95": [
+      0.27091572031915895,
+      0.2856512440492331
+    ]
+  },
+  "by_difficulty_unique": {
+    "10.0": {
+      "accuracy": 0.0,
+      "accuracy_percent": 0.0,
+      "correct": 0,
+      "rows": 1,
+      "score_methods": {
+        "symbolic": 1
+      },
+      "wilson_95": [
+        0.0,
+        0.7934506856227626
+      ]
+    },
+    "6.0": {
+      "accuracy": 0.37159487776484285,
+      "accuracy_percent": 37.15948777648428,
+      "correct": 1596,
+      "rows": 4295,
+      "score_methods": {
+        "missing": 1,
+        "normalized_exact": 1596,
+        "symbolic": 2698
+      },
+      "wilson_95": [
+        0.35726384770865527,
+        0.3861553942974021
+      ]
+    },
+    "6.5": {
+      "accuracy": 0.3230042016806723,
+      "accuracy_percent": 32.30042016806723,
+      "correct": 615,
+      "rows": 1904,
+      "score_methods": {
+        "normalized_exact": 615,
+        "symbolic": 1289
+      },
+      "wilson_95": [
+        0.3023742471332952,
+        0.3443469220268385
+      ]
+    },
+    "7.0": {
+      "accuracy": 0.2987630827783064,
+      "accuracy_percent": 29.87630827783064,
+      "correct": 628,
+      "rows": 2102,
+      "score_methods": {
+        "normalized_exact": 628,
+        "symbolic": 1474
+      },
+      "wilson_95": [
+        0.2795774358781925,
+        0.3186829191659266
+      ]
+    },
+    "7.5": {
+      "accuracy": 0.2703681351840676,
+      "accuracy_percent": 27.03681351840676,
+      "correct": 448,
+      "rows": 1657,
+      "score_methods": {
+        "missing": 1,
+        "normalized_exact": 448,
+        "symbolic": 1208
+      },
+      "wilson_95": [
+        0.24953205211801238,
+        0.2922664765986542
+      ]
+    },
+    "8.0": {
+      "accuracy": 0.19011142061281336,
+      "accuracy_percent": 19.011142061281337,
+      "correct": 546,
+      "rows": 2872,
+      "score_methods": {
+        "missing": 1,
+        "normalized_exact": 546,
+        "symbolic": 2325
+      },
+      "wilson_95": [
+        0.1761782907335829,
+        0.20487242938158975
+      ]
+    },
+    "8.5": {
+      "accuracy": 0.09174311926605505,
+      "accuracy_percent": 9.174311926605505,
+      "correct": 90,
+      "rows": 981,
+      "score_methods": {
+        "normalized_exact": 90,
+        "symbolic": 891
+      },
+      "wilson_95": [
+        0.07523701497794054,
+        0.11143410571273031
+      ]
+    },
+    "9.0": {
+      "accuracy": 0.06306306306306306,
+      "accuracy_percent": 6.306306306306307,
+      "correct": 21,
+      "rows": 333,
+      "score_methods": {
+        "normalized_exact": 21,
+        "symbolic": 312
+      },
+      "wilson_95": [
+        0.04161369848175281,
+        0.09447839357006388
+      ]
+    },
+    "9.5": {
+      "accuracy": 0.0,
+      "accuracy_percent": 0.0,
+      "correct": 0,
+      "rows": 13,
+      "score_methods": {
+        "symbolic": 13
+      },
+      "wilson_95": [
+        0.0,
+        0.22809537235419838
+      ]
+    }
+  },
+  "comparison_note": "Descriptive only: training split and held-out set contain different problems.",
+  "heldout_same_protocol_accuracy": 0.283,
+  "padding_only": {
+    "accuracy": 0.18,
+    "accuracy_percent": 18.0,
+    "correct": 9,
+    "rows": 50,
+    "score_methods": {
+      "normalized_exact": 9,
+      "symbolic": 41
+    },
+    "wilson_95": [
+      0.09770192670234178,
+      0.30796053674300783
+    ]
+  },
+  "run_root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811",
+  "score_timeout_seconds": 20.0,
+  "scorer": "run_opd_logit_diagnostic.score_math_response",
+  "scores_sha256": "1c5899c0ea0c9232f84f7935ca652f13e06f37818dce532aeca9459e2ee9ae29",
+  "shards": [
+    {
+      "correct": 245,
+      "elapsed_seconds": 2462.488686323166,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_00/rollouts.jsonl",
+      "rollouts_sha256": "10160605c3bcfd752a57e988119a7f97428ff35f987ad6d8eb78bfb47a6f68e4",
+      "rows": 888,
+      "score_methods": {
+        "missing": 1,
+        "normalized_exact": 245,
+        "symbolic": 642
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "7d312219b603f4cf281116d918c81b2295e47fe77bc72ca52aab633c907c8de9",
+      "shard_index": 0,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 274,
+      "elapsed_seconds": 2368.0905792713165,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_01/rollouts.jsonl",
+      "rollouts_sha256": "c52bf33206bb59661bbe71f9ef59744c33955e4acbab3093fb679ff9149300b0",
+      "rows": 888,
+      "score_methods": {
+        "normalized_exact": 274,
+        "symbolic": 614
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "0327d0e4281b8fee59cf3f7b2b92a407f1d227f47d181d23ca6a3bda3f6fed7d",
+      "shard_index": 1,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 258,
+      "elapsed_seconds": 2431.096396446228,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_02/rollouts.jsonl",
+      "rollouts_sha256": "0eb934340bd3817f3479a05d0aefde02808bd82149ac16a457b0b15a02616aab",
+      "rows": 888,
+      "score_methods": {
+        "normalized_exact": 258,
+        "symbolic": 630
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "4de6afd11773e8f82b4e33d00f313311bd402161fa6f626693c0d3932781cb97",
+      "shard_index": 2,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 252,
+      "elapsed_seconds": 2435.0353174209595,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_03/rollouts.jsonl",
+      "rollouts_sha256": "8af8ef8a458848961b6115d20e3f9659543926d7e4001d9f1f82e4ac352bebea",
+      "rows": 888,
+      "score_methods": {
+        "normalized_exact": 252,
+        "symbolic": 636
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "6996c4c991057c4ee32389a3f6deaa4f223b7fef49865e4e553ec673f61575ba",
+      "shard_index": 3,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 232,
+      "elapsed_seconds": 2504.794582605362,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_04/rollouts.jsonl",
+      "rollouts_sha256": "49c045813113a926edad5d21556669c1984994be61ae093072ee019b8738a31a",
+      "rows": 888,
+      "score_methods": {
+        "normalized_exact": 232,
+        "symbolic": 656
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "2cf969dada4c7757d24ccdae99f2f9bdfa65224e2bc0af254acddafd162a2f06",
+      "shard_index": 4,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 237,
+      "elapsed_seconds": 2447.5186097621918,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_05/rollouts.jsonl",
+      "rollouts_sha256": "574257211b930db0056a5ac3d7d293179b491561e2521bcf3eadf989eb9e08e0",
+      "rows": 888,
+      "score_methods": {
+        "normalized_exact": 237,
+        "symbolic": 651
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "f40ed9164c8df64b1359c046740249b24622a59d1e8f5f2e1937fc8f21745eeb",
+      "shard_index": 5,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 238,
+      "elapsed_seconds": 2493.0529940128326,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_06/rollouts.jsonl",
+      "rollouts_sha256": "5fb86ef12ce26671586560a061f49a1ddda63b0f47929f8144ace20b33fdd7a3",
+      "rows": 888,
+      "score_methods": {
+        "normalized_exact": 238,
+        "symbolic": 650
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "a9cfce4e1055b1430c96afe5fe9fc71ea15add798c3487f5cab837110c8a29f9",
+      "shard_index": 6,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 246,
+      "elapsed_seconds": 2422.7502937316895,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_07/rollouts.jsonl",
+      "rollouts_sha256": "92e56472373f16a2b05f40993ac9e153a4d903450398675c54fa254c3486905f",
+      "rows": 888,
+      "score_methods": {
+        "missing": 1,
+        "normalized_exact": 246,
+        "symbolic": 641
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "35816b4e6118cfaed8b3637975642f01fcfcc0daa9bb0fe657202c4d2609b821",
+      "shard_index": 7,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 250,
+      "elapsed_seconds": 2397.4812376499176,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_08/rollouts.jsonl",
+      "rollouts_sha256": "be7f90a14a8f30581411c6ff04c160bf458e62fec24f5fc418e5556fa1fb11e4",
+      "rows": 888,
+      "score_methods": {
+        "normalized_exact": 250,
+        "symbolic": 638
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "6dd9b86094695c634663f144846a6c3cb42005d7b658925b82e5ed1c44ec7af5",
+      "shard_index": 8,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 253,
+      "elapsed_seconds": 2400.482135295868,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_09/rollouts.jsonl",
+      "rollouts_sha256": "ab1e9e9fd053c62d15223ca8bf580c7703196d22d5ba4171fd3298993601d72a",
+      "rows": 888,
+      "score_methods": {
+        "normalized_exact": 253,
+        "symbolic": 635
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "dea5eb13774c2159306b6449fdffa825b56b421e6f99df82563c6770a3f56f49",
+      "shard_index": 9,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 240,
+      "elapsed_seconds": 2488.4968061447144,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_10/rollouts.jsonl",
+      "rollouts_sha256": "b12b4c7056448c3abdab8e47e1f183731a9e03d2728799acd9fc4f1e7fc9abd3",
+      "rows": 888,
+      "score_methods": {
+        "normalized_exact": 240,
+        "symbolic": 648
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "aeaab625fcff07107dd52dfcc9ec6da1d51dbecc333ab4435fa86cad2686e51f",
+      "shard_index": 10,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 242,
+      "elapsed_seconds": 2470.073875427246,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_11/rollouts.jsonl",
+      "rollouts_sha256": "e3b62dd8e2c1577aac864aa1cbbaf64516b741e385a4ba28bce7a61292d6939d",
+      "rows": 888,
+      "score_methods": {
+        "normalized_exact": 242,
+        "symbolic": 646
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "2dcaa2e4237a206e8d1dc4ca5d760010f3ae5911fcdddd9ad7acd0094025bc78",
+      "shard_index": 11,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 234,
+      "elapsed_seconds": 2474.7572009563446,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_12/rollouts.jsonl",
+      "rollouts_sha256": "505aa43990ab077d2cd2d07446e6c2d59c03a21256895dd249bd782aef04d585",
+      "rows": 888,
+      "score_methods": {
+        "normalized_exact": 234,
+        "symbolic": 654
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "f76d2dfa3529e80478695cb186332008a60f67399a74bc7963ab42e774b8cdb2",
+      "shard_index": 12,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 261,
+      "elapsed_seconds": 2421.1319625377655,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_13/rollouts.jsonl",
+      "rollouts_sha256": "7ff574b9e1c8f0f2c68acb547a5f6d30e50fd4be9fcd67a0322bfba54130cba8",
+      "rows": 888,
+      "score_methods": {
+        "missing": 1,
+        "normalized_exact": 261,
+        "symbolic": 626
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "5b791965d0ad963bb7f3189d004fcb5079b1e5708e1ba791905eda8a22cb2590",
+      "shard_index": 13,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 245,
+      "elapsed_seconds": 2436.9963014125824,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_14/rollouts.jsonl",
+      "rollouts_sha256": "da2de460b89ecae2b3885fc0c31e31f7110ecb54ab476cf2c295451638674d69",
+      "rows": 888,
+      "score_methods": {
+        "normalized_exact": 245,
+        "symbolic": 643
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "4f363eb16e314bc68538feee54f6695b8f4163a4a6327d67a5a8fb727424b6bc",
+      "shard_index": 14,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    },
+    {
+      "correct": 246,
+      "elapsed_seconds": 2293.1721680164337,
+      "num_shards": 16,
+      "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_1_7b_native_nonthinking_seed20260811/shards/shard_15/rollouts.jsonl",
+      "rollouts_sha256": "be0d1ff4a5b28da8236b076d484595ac3b0c9736efd0d8299157dd1d08fbaedf",
+      "rows": 888,
+      "score_methods": {
+        "normalized_exact": 246,
+        "symbolic": 642
+      },
+      "score_timeout_seconds": 20.0,
+      "scorer": "run_opd_logit_diagnostic.score_math_response",
+      "scores_sha256": "3807f6b67d6e67e7f3ea433639fe5bae8a7a28af9d0a663330f6628e53116858",
+      "shard_index": 15,
+      "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+    }
+  ],
+  "source_sha256": "fdcb58732d22f5ab27d111f07c8746836d983c5d15d1d800970154ea1f3cfc91",
+  "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORING_OK",
+  "unique": {
+    "accuracy": 0.278570419550784,
+    "accuracy_percent": 27.8570419550784,
+    "correct": 3944,
+    "rows": 14158,
+    "score_methods": {
+      "missing": 3,
+      "normalized_exact": 3944,
+      "symbolic": 10211
+    },
+    "wilson_95": [
+      0.27124690182152084,
+      0.2860140646826103
+    ]
+  },
+  "unique_delta_vs_heldout_percentage_points": -0.4429580449215986
+}

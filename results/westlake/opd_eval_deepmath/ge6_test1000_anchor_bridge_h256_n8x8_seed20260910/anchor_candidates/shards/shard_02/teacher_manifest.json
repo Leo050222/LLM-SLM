@@ -1,0 +1,22 @@
+{
+  "status": "SHARD_TEACHER_COMPLETE",
+  "backend": "transformers_hidden_lm_head",
+  "trace_shard": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/ge6_test1000_anchor_bridge_h256_n8x8_seed20260910/source/shards/shard_02/rollouts.jsonl",
+  "trace_shard_sha256": "c59c4641a7900174c18b86eb5176f2724695ca2ea5beffd7f47cf9db65461109",
+  "rows": 125,
+  "response_tokens": 169795,
+  "padding_included": false,
+  "teacher": "/storage/yukaichengLab/share/model/Qwen3-14B",
+  "tokenizer": "/storage/yukaichengLab/share/model/Qwen3-14B",
+  "vocab_size": 151669,
+  "tokenizer_vocab_sha256": "f83422fc4348225bd0a571b69f9f96040db221d2238b227d6762aa1f8b6da1f4",
+  "topk": 16,
+  "max_model_len": 40960,
+  "logit_chunk_size": 256,
+  "attention_implementation": "sdpa",
+  "elapsed_seconds": 18.421547651290894,
+  "resumed_rows": 0,
+  "slurm_job_id": "101789",
+  "slurm_array_task_id": null,
+  "node": "gnho041"
+}

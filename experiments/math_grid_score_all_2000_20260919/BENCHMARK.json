@@ -1,0 +1,41 @@
+{
+  "stage_seconds": 90,
+  "stages": [
+    {
+      "concurrency": 256,
+      "actual_peak": 256,
+      "success_per_second": 72.8218,
+      "http429": 0,
+      "retry_errors": 1,
+      "attempts": 6554
+    },
+    {
+      "concurrency": 512,
+      "actual_peak": 512,
+      "success_per_second": 135.1314,
+      "http429": 0,
+      "retry_errors": 3,
+      "attempts": 12422
+    },
+    {
+      "concurrency": 1000,
+      "actual_peak": 1000,
+      "success_per_second": 250.8839,
+      "http429": 0,
+      "retry_errors": 24,
+      "attempts": 23081
+    },
+    {
+      "concurrency": 2000,
+      "actual_peak": 2000,
+      "success_per_second": 436.6649,
+      "http429": 0,
+      "retry_errors": 113,
+      "attempts": 40426
+    }
+  ],
+  "selected_concurrency": 2000,
+  "processed_snapshot": 177160,
+  "total_additional": 394450,
+  "reused": 36047
+}

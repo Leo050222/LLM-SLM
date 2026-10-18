@@ -1,0 +1,20 @@
+{
+  "all_bridges_covered_once": true,
+  "bridge_tokens": 256,
+  "bridges_per_trace": 8,
+  "checkpoints": [
+    331,
+    662,
+    993,
+    1324,
+    1656
+  ],
+  "epochs": 1,
+  "loss_mask": "bridge_tokens_only",
+  "loss_support_topk": 16,
+  "objective": "bridge_student_top_16_renormalized_kl_student_to_teacher",
+  "status": "BRIDGE_TOP16_RKL_COMPLETE",
+  "total_steps": 1656,
+  "trace_count": 13244,
+  "train_rows": 105952
+}

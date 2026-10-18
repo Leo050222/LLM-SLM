@@ -1,0 +1,52 @@
+{
+  "state": "COMPLETE",
+  "models": {
+    "Qwen3-VL-2B-Instruct": {
+      "state": "DOWNLOADED",
+      "attempt": 2,
+      "endpoint": "https://huggingface.co",
+      "proxy": true,
+      "disable_xet": true,
+      "path": "/storage/yukaichengLab/share/model/.staging/qwen3vl_20261016/Qwen3-VL-2B-Instruct",
+      "pid": 1184573,
+      "files_present": 12,
+      "files_total": 12,
+      "complete_file_bytes": 4266648961,
+      "partial_allocated_bytes": 768000000,
+      "expected_bytes": 4266648961,
+      "last_exit_code": -15
+    },
+    "Qwen3-VL-2B-Thinking": {
+      "state": "DOWNLOADED",
+      "attempt": 2,
+      "endpoint": "https://huggingface.co",
+      "proxy": true,
+      "disable_xet": true,
+      "path": "/storage/yukaichengLab/share/model/.staging/qwen3vl_20261016/Qwen3-VL-2B-Thinking",
+      "pid": 1108173,
+      "files_present": 12,
+      "files_total": 12,
+      "complete_file_bytes": 4266648849,
+      "partial_allocated_bytes": 67045033,
+      "expected_bytes": 4266648849,
+      "last_exit_code": -15
+    },
+    "Qwen3-VL-8B-Thinking": {
+      "state": "DOWNLOADED",
+      "attempt": 4,
+      "endpoint": "https://hf-mirror.com",
+      "proxy": false,
+      "disable_xet": true,
+      "path": "/storage/yukaichengLab/share/model/.staging/qwen3vl_20261016/Qwen3-VL-8B-Thinking",
+      "pid": 2312982,
+      "files_present": 16,
+      "files_total": 16,
+      "complete_file_bytes": 17545915778,
+      "partial_allocated_bytes": 725319099,
+      "expected_bytes": 17545915778,
+      "last_exit_code": 1
+    }
+  },
+  "updated_at": "2026-10-15T17:47:15Z",
+  "verification_exit_code": 0
+}

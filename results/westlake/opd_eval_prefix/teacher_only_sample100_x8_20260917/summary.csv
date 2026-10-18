@@ -1,0 +1,9 @@
+dataset,condition,n,correct,actual_takeovers_total,accuracy,mean_actual_takeovers
+bbh,teacher_only,800,617,0,0.77125,0.0
+cruxeval_i,teacher_only,800,400,0,0.5,0.0
+cruxeval_o,teacher_only,800,359,0,0.44875,0.0
+humaneval_plus,teacher_only,800,650,0,0.8125,0.0
+livecodebench,teacher_only,800,248,0,0.31,0.0
+math500,teacher_only,800,702,0,0.8775,0.0
+mbpp_plus,teacher_only,800,580,0,0.725,0.0
+olympiad_bench,teacher_only,800,508,0,0.635,0.0

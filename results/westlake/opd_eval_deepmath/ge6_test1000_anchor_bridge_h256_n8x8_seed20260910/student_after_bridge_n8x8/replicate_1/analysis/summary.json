@@ -1,0 +1,1696 @@
+{
+  "analysis_root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/ge6_test1000_anchor_bridge_h256_n8x8_seed20260910/student_after_bridge_n8x8/replicate_1/analysis",
+  "by_difficulty": {
+    "6.0": {
+      "accuracy": 0.44649122807017544,
+      "correct_count": 1018,
+      "finish_reason_counts": {
+        "length": 4,
+        "stop": 2276
+      },
+      "reached_model_length_count": 4,
+      "rollout_count": 2280,
+      "score_method_counts": {
+        "boolean_normalized": 165,
+        "normalized_exact": 892,
+        "symbolic": 1223
+      }
+    },
+    "6.5": {
+      "accuracy": 0.4312977099236641,
+      "correct_count": 452,
+      "finish_reason_counts": {
+        "length": 1,
+        "stop": 1047
+      },
+      "reached_model_length_count": 1,
+      "rollout_count": 1048,
+      "score_method_counts": {
+        "boolean_normalized": 154,
+        "normalized_exact": 352,
+        "symbolic": 542
+      }
+    },
+    "7.0": {
+      "accuracy": 0.4175347222222222,
+      "correct_count": 481,
+      "finish_reason_counts": {
+        "length": 1,
+        "stop": 1151
+      },
+      "reached_model_length_count": 1,
+      "rollout_count": 1152,
+      "score_method_counts": {
+        "boolean_normalized": 235,
+        "normalized_exact": 324,
+        "symbolic": 593
+      }
+    },
+    "7.5": {
+      "accuracy": 0.45217391304347826,
+      "correct_count": 416,
+      "finish_reason_counts": {
+        "stop": 920
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 920,
+      "score_method_counts": {
+        "boolean_normalized": 206,
+        "normalized_exact": 278,
+        "symbolic": 436
+      }
+    },
+    "8.0": {
+      "accuracy": 0.37242268041237114,
+      "correct_count": 578,
+      "finish_reason_counts": {
+        "stop": 1552
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 1552,
+      "score_method_counts": {
+        "boolean_normalized": 456,
+        "normalized_exact": 287,
+        "symbolic": 809
+      }
+    },
+    "8.5": {
+      "accuracy": 0.5606060606060606,
+      "correct_count": 296,
+      "finish_reason_counts": {
+        "stop": 528
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 528,
+      "score_method_counts": {
+        "boolean_normalized": 307,
+        "normalized_exact": 64,
+        "symbolic": 157
+      }
+    },
+    "9.0": {
+      "accuracy": 0.41304347826086957,
+      "correct_count": 76,
+      "finish_reason_counts": {
+        "stop": 184
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 184,
+      "score_method_counts": {
+        "boolean_normalized": 111,
+        "normalized_exact": 13,
+        "symbolic": 60
+      }
+    }
+  },
+  "by_topic": {
+    "Mathematics -> Algebra -> Abstract Algebra -> Field Theory": {
+      "accuracy": 0.4847560975609756,
+      "correct_count": 159,
+      "finish_reason_counts": {
+        "stop": 328
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 328,
+      "score_method_counts": {
+        "boolean_normalized": 147,
+        "normalized_exact": 62,
+        "symbolic": 119
+      }
+    },
+    "Mathematics -> Algebra -> Abstract Algebra -> Group Theory": {
+      "accuracy": 0.2838541666666667,
+      "correct_count": 109,
+      "finish_reason_counts": {
+        "stop": 384
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 384,
+      "score_method_counts": {
+        "boolean_normalized": 139,
+        "normalized_exact": 24,
+        "symbolic": 221
+      }
+    },
+    "Mathematics -> Algebra -> Abstract Algebra -> Other": {
+      "accuracy": 0.5113636363636364,
+      "correct_count": 90,
+      "finish_reason_counts": {
+        "stop": 176
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 176,
+      "score_method_counts": {
+        "boolean_normalized": 63,
+        "normalized_exact": 38,
+        "symbolic": 75
+      }
+    },
+    "Mathematics -> Algebra -> Abstract Algebra -> Ring Theory": {
+      "accuracy": 0.4791666666666667,
+      "correct_count": 115,
+      "finish_reason_counts": {
+        "stop": 240
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 240,
+      "score_method_counts": {
+        "boolean_normalized": 105,
+        "normalized_exact": 34,
+        "symbolic": 101
+      }
+    },
+    "Mathematics -> Algebra -> Algebra -> Algebraic Expressions": {
+      "accuracy": 0.5,
+      "correct_count": 24,
+      "finish_reason_counts": {
+        "stop": 48
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 48,
+      "score_method_counts": {
+        "normalized_exact": 24,
+        "symbolic": 24
+      }
+    },
+    "Mathematics -> Algebra -> Algebra -> Equations and Inequalities": {
+      "accuracy": 0.4,
+      "correct_count": 48,
+      "finish_reason_counts": {
+        "stop": 120
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 120,
+      "score_method_counts": {
+        "normalized_exact": 48,
+        "symbolic": 72
+      }
+    },
+    "Mathematics -> Algebra -> Algebra -> Polynomial Operations": {
+      "accuracy": 0.35119047619047616,
+      "correct_count": 59,
+      "finish_reason_counts": {
+        "stop": 168
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 168,
+      "score_method_counts": {
+        "boolean_normalized": 8,
+        "normalized_exact": 59,
+        "symbolic": 101
+      }
+    },
+    "Mathematics -> Algebra -> Intermediate Algebra -> Complex Numbers": {
+      "accuracy": 0.375,
+      "correct_count": 36,
+      "finish_reason_counts": {
+        "stop": 96
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 96,
+      "score_method_counts": {
+        "boolean_normalized": 8,
+        "normalized_exact": 33,
+        "symbolic": 55
+      }
+    },
+    "Mathematics -> Algebra -> Intermediate Algebra -> Exponential Functions": {
+      "accuracy": 0.515625,
+      "correct_count": 66,
+      "finish_reason_counts": {
+        "stop": 128
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 128,
+      "score_method_counts": {
+        "boolean_normalized": 15,
+        "normalized_exact": 55,
+        "symbolic": 58
+      }
+    },
+    "Mathematics -> Algebra -> Intermediate Algebra -> Logarithmic Functions": {
+      "accuracy": 0.375,
+      "correct_count": 9,
+      "finish_reason_counts": {
+        "stop": 24
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 24,
+      "score_method_counts": {
+        "normalized_exact": 9,
+        "symbolic": 15
+      }
+    },
+    "Mathematics -> Algebra -> Intermediate Algebra -> Other": {
+      "accuracy": 0.38125,
+      "correct_count": 61,
+      "finish_reason_counts": {
+        "stop": 160
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 160,
+      "score_method_counts": {
+        "boolean_normalized": 7,
+        "normalized_exact": 54,
+        "symbolic": 99
+      }
+    },
+    "Mathematics -> Algebra -> Intermediate Algebra -> Quadratic Functions": {
+      "accuracy": 0.125,
+      "correct_count": 2,
+      "finish_reason_counts": {
+        "stop": 16
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 16,
+      "score_method_counts": {
+        "normalized_exact": 2,
+        "symbolic": 14
+      }
+    },
+    "Mathematics -> Algebra -> Linear Algebra -> Determinants": {
+      "accuracy": 0.125,
+      "correct_count": 1,
+      "finish_reason_counts": {
+        "stop": 8
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 8,
+      "score_method_counts": {
+        "normalized_exact": 1,
+        "symbolic": 7
+      }
+    },
+    "Mathematics -> Algebra -> Linear Algebra -> Linear Transformations": {
+      "accuracy": 0.5416666666666666,
+      "correct_count": 78,
+      "finish_reason_counts": {
+        "stop": 144
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 144,
+      "score_method_counts": {
+        "boolean_normalized": 65,
+        "normalized_exact": 29,
+        "symbolic": 50
+      }
+    },
+    "Mathematics -> Algebra -> Linear Algebra -> Matrices": {
+      "accuracy": 0.3715277777777778,
+      "correct_count": 107,
+      "finish_reason_counts": {
+        "stop": 288
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 288,
+      "score_method_counts": {
+        "boolean_normalized": 90,
+        "normalized_exact": 50,
+        "symbolic": 148
+      }
+    },
+    "Mathematics -> Algebra -> Linear Algebra -> Other": {
+      "accuracy": 1.0,
+      "correct_count": 8,
+      "finish_reason_counts": {
+        "stop": 8
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 8,
+      "score_method_counts": {
+        "normalized_exact": 8
+      }
+    },
+    "Mathematics -> Algebra -> Linear Algebra -> Vectors": {
+      "accuracy": 0.4027777777777778,
+      "correct_count": 29,
+      "finish_reason_counts": {
+        "stop": 72
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 72,
+      "score_method_counts": {
+        "boolean_normalized": 24,
+        "normalized_exact": 15,
+        "symbolic": 33
+      }
+    },
+    "Mathematics -> Algebra -> Other": {
+      "accuracy": 0.1875,
+      "correct_count": 3,
+      "finish_reason_counts": {
+        "stop": 16
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 16,
+      "score_method_counts": {
+        "boolean_normalized": 3,
+        "symbolic": 13
+      }
+    },
+    "Mathematics -> Algebra -> Prealgebra -> Integers": {
+      "accuracy": 0.0,
+      "correct_count": 0,
+      "finish_reason_counts": {
+        "stop": 8
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 8,
+      "score_method_counts": {
+        "symbolic": 8
+      }
+    },
+    "Mathematics -> Applied Mathematics -> Statistics -> Mathematical Statistics": {
+      "accuracy": 0.25,
+      "correct_count": 28,
+      "finish_reason_counts": {
+        "length": 1,
+        "stop": 111
+      },
+      "reached_model_length_count": 1,
+      "rollout_count": 112,
+      "score_method_counts": {
+        "boolean_normalized": 25,
+        "normalized_exact": 9,
+        "symbolic": 78
+      }
+    },
+    "Mathematics -> Applied Mathematics -> Statistics -> Probability -> Counting Methods -> Combinations": {
+      "accuracy": 0.3,
+      "correct_count": 12,
+      "finish_reason_counts": {
+        "length": 1,
+        "stop": 39
+      },
+      "reached_model_length_count": 1,
+      "rollout_count": 40,
+      "score_method_counts": {
+        "normalized_exact": 12,
+        "symbolic": 28
+      }
+    },
+    "Mathematics -> Applied Mathematics -> Statistics -> Probability -> Other": {
+      "accuracy": 0.3353658536585366,
+      "correct_count": 110,
+      "finish_reason_counts": {
+        "stop": 328
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 328,
+      "score_method_counts": {
+        "boolean_normalized": 25,
+        "normalized_exact": 93,
+        "symbolic": 210
+      }
+    },
+    "Mathematics -> Calculus -> Differential Calculus -> Applications of Derivatives": {
+      "accuracy": 0.4403846153846154,
+      "correct_count": 229,
+      "finish_reason_counts": {
+        "length": 2,
+        "stop": 518
+      },
+      "reached_model_length_count": 2,
+      "rollout_count": 520,
+      "score_method_counts": {
+        "boolean_normalized": 110,
+        "normalized_exact": 151,
+        "symbolic": 259
+      }
+    },
+    "Mathematics -> Calculus -> Differential Calculus -> Derivatives": {
+      "accuracy": 0.5108695652173914,
+      "correct_count": 94,
+      "finish_reason_counts": {
+        "stop": 184
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 184,
+      "score_method_counts": {
+        "boolean_normalized": 26,
+        "normalized_exact": 69,
+        "symbolic": 89
+      }
+    },
+    "Mathematics -> Calculus -> Differential Calculus -> Other": {
+      "accuracy": 0.453125,
+      "correct_count": 29,
+      "finish_reason_counts": {
+        "stop": 64
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 64,
+      "score_method_counts": {
+        "boolean_normalized": 16,
+        "normalized_exact": 20,
+        "symbolic": 28
+      }
+    },
+    "Mathematics -> Calculus -> Integral Calculus -> Applications of Integrals": {
+      "accuracy": 0.4027777777777778,
+      "correct_count": 174,
+      "finish_reason_counts": {
+        "stop": 432
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 432,
+      "score_method_counts": {
+        "boolean_normalized": 81,
+        "normalized_exact": 111,
+        "symbolic": 240
+      }
+    },
+    "Mathematics -> Calculus -> Integral Calculus -> Integrals": {
+      "accuracy": 0.46875,
+      "correct_count": 15,
+      "finish_reason_counts": {
+        "stop": 32
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 32,
+      "score_method_counts": {
+        "boolean_normalized": 1,
+        "normalized_exact": 14,
+        "symbolic": 17
+      }
+    },
+    "Mathematics -> Calculus -> Integral Calculus -> Techniques of Integration -> Multi-variable": {
+      "accuracy": 0.4364406779661017,
+      "correct_count": 206,
+      "finish_reason_counts": {
+        "stop": 472
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 472,
+      "score_method_counts": {
+        "boolean_normalized": 24,
+        "normalized_exact": 183,
+        "symbolic": 265
+      }
+    },
+    "Mathematics -> Calculus -> Integral Calculus -> Techniques of Integration -> Single-variable": {
+      "accuracy": 0.46629213483146065,
+      "correct_count": 332,
+      "finish_reason_counts": {
+        "length": 1,
+        "stop": 711
+      },
+      "reached_model_length_count": 1,
+      "rollout_count": 712,
+      "score_method_counts": {
+        "boolean_normalized": 10,
+        "normalized_exact": 326,
+        "symbolic": 376
+      }
+    },
+    "Mathematics -> Calculus -> Other": {
+      "accuracy": 0.475,
+      "correct_count": 19,
+      "finish_reason_counts": {
+        "stop": 40
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 40,
+      "score_method_counts": {
+        "normalized_exact": 19,
+        "symbolic": 21
+      }
+    },
+    "Mathematics -> Differential Equations -> Ordinary Differential Equations (ODEs)": {
+      "accuracy": 0.23863636363636365,
+      "correct_count": 21,
+      "finish_reason_counts": {
+        "stop": 88
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 88,
+      "score_method_counts": {
+        "boolean_normalized": 1,
+        "normalized_exact": 20,
+        "symbolic": 67
+      }
+    },
+    "Mathematics -> Differential Equations -> Partial Differential Equations (PDEs)": {
+      "accuracy": 0.42857142857142855,
+      "correct_count": 24,
+      "finish_reason_counts": {
+        "stop": 56
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 56,
+      "score_method_counts": {
+        "boolean_normalized": 9,
+        "normalized_exact": 15,
+        "symbolic": 32
+      }
+    },
+    "Mathematics -> Discrete Mathematics -> Algorithms": {
+      "accuracy": 0.14583333333333334,
+      "correct_count": 7,
+      "finish_reason_counts": {
+        "stop": 48
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 48,
+      "score_method_counts": {
+        "boolean_normalized": 16,
+        "normalized_exact": 5,
+        "symbolic": 27
+      }
+    },
+    "Mathematics -> Discrete Mathematics -> Combinatorics": {
+      "accuracy": 0.23706896551724138,
+      "correct_count": 55,
+      "finish_reason_counts": {
+        "stop": 232
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 232,
+      "score_method_counts": {
+        "boolean_normalized": 34,
+        "normalized_exact": 37,
+        "symbolic": 161
+      }
+    },
+    "Mathematics -> Discrete Mathematics -> Graph Theory": {
+      "accuracy": 0.42045454545454547,
+      "correct_count": 37,
+      "finish_reason_counts": {
+        "stop": 88
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 88,
+      "score_method_counts": {
+        "boolean_normalized": 47,
+        "normalized_exact": 19,
+        "symbolic": 22
+      }
+    },
+    "Mathematics -> Discrete Mathematics -> Logic": {
+      "accuracy": 0.5,
+      "correct_count": 48,
+      "finish_reason_counts": {
+        "stop": 96
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 96,
+      "score_method_counts": {
+        "boolean_normalized": 50,
+        "normalized_exact": 12,
+        "symbolic": 34
+      }
+    },
+    "Mathematics -> Geometry -> Differential Geometry -> Curvature": {
+      "accuracy": 0.25,
+      "correct_count": 10,
+      "finish_reason_counts": {
+        "stop": 40
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 40,
+      "score_method_counts": {
+        "normalized_exact": 10,
+        "symbolic": 30
+      }
+    },
+    "Mathematics -> Geometry -> Differential Geometry -> Manifolds": {
+      "accuracy": 0.49404761904761907,
+      "correct_count": 83,
+      "finish_reason_counts": {
+        "stop": 168
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 168,
+      "score_method_counts": {
+        "boolean_normalized": 96,
+        "normalized_exact": 15,
+        "symbolic": 57
+      }
+    },
+    "Mathematics -> Geometry -> Differential Geometry -> Other": {
+      "accuracy": 0.65625,
+      "correct_count": 21,
+      "finish_reason_counts": {
+        "stop": 32
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 32,
+      "score_method_counts": {
+        "boolean_normalized": 32
+      }
+    },
+    "Mathematics -> Geometry -> Plane Geometry -> Angles": {
+      "accuracy": 0.53125,
+      "correct_count": 17,
+      "finish_reason_counts": {
+        "stop": 32
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 32,
+      "score_method_counts": {
+        "normalized_exact": 17,
+        "symbolic": 15
+      }
+    },
+    "Mathematics -> Geometry -> Plane Geometry -> Area": {
+      "accuracy": 0.375,
+      "correct_count": 3,
+      "finish_reason_counts": {
+        "stop": 8
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 8,
+      "score_method_counts": {
+        "normalized_exact": 3,
+        "symbolic": 5
+      }
+    },
+    "Mathematics -> Geometry -> Plane Geometry -> Other": {
+      "accuracy": 0.475,
+      "correct_count": 19,
+      "finish_reason_counts": {
+        "stop": 40
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 40,
+      "score_method_counts": {
+        "normalized_exact": 19,
+        "symbolic": 21
+      }
+    },
+    "Mathematics -> Geometry -> Plane Geometry -> Polygons": {
+      "accuracy": 0.46875,
+      "correct_count": 15,
+      "finish_reason_counts": {
+        "stop": 32
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 32,
+      "score_method_counts": {
+        "boolean_normalized": 24,
+        "symbolic": 8
+      }
+    },
+    "Mathematics -> Geometry -> Plane Geometry -> Triangulations": {
+      "accuracy": 0.2708333333333333,
+      "correct_count": 13,
+      "finish_reason_counts": {
+        "stop": 48
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 48,
+      "score_method_counts": {
+        "normalized_exact": 13,
+        "symbolic": 35
+      }
+    },
+    "Mathematics -> Geometry -> Solid Geometry -> 3D Shapes": {
+      "accuracy": 0.390625,
+      "correct_count": 25,
+      "finish_reason_counts": {
+        "stop": 64
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 64,
+      "score_method_counts": {
+        "boolean_normalized": 16,
+        "normalized_exact": 21,
+        "symbolic": 27
+      }
+    },
+    "Mathematics -> Number Theory -> Congruences": {
+      "accuracy": 0.5069444444444444,
+      "correct_count": 73,
+      "finish_reason_counts": {
+        "stop": 144
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 144,
+      "score_method_counts": {
+        "boolean_normalized": 29,
+        "normalized_exact": 49,
+        "symbolic": 66
+      }
+    },
+    "Mathematics -> Number Theory -> Factorization": {
+      "accuracy": 0.55,
+      "correct_count": 22,
+      "finish_reason_counts": {
+        "stop": 40
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 40,
+      "score_method_counts": {
+        "boolean_normalized": 7,
+        "normalized_exact": 15,
+        "symbolic": 18
+      }
+    },
+    "Mathematics -> Number Theory -> Greatest Common Divisors (GCD)": {
+      "accuracy": 0.0,
+      "correct_count": 0,
+      "finish_reason_counts": {
+        "stop": 8
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 8,
+      "score_method_counts": {
+        "symbolic": 8
+      }
+    },
+    "Mathematics -> Number Theory -> Other": {
+      "accuracy": 0.3541666666666667,
+      "correct_count": 17,
+      "finish_reason_counts": {
+        "stop": 48
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 48,
+      "score_method_counts": {
+        "boolean_normalized": 31,
+        "symbolic": 17
+      }
+    },
+    "Mathematics -> Number Theory -> Prime Numbers": {
+      "accuracy": 0.5357142857142857,
+      "correct_count": 60,
+      "finish_reason_counts": {
+        "stop": 112
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 112,
+      "score_method_counts": {
+        "boolean_normalized": 32,
+        "normalized_exact": 38,
+        "symbolic": 42
+      }
+    },
+    "Mathematics -> Other": {
+      "accuracy": 0.5023584905660378,
+      "correct_count": 213,
+      "finish_reason_counts": {
+        "length": 1,
+        "stop": 423
+      },
+      "reached_model_length_count": 1,
+      "rollout_count": 424,
+      "score_method_counts": {
+        "boolean_normalized": 190,
+        "normalized_exact": 82,
+        "symbolic": 152
+      }
+    },
+    "Mathematics -> Precalculus -> Functions": {
+      "accuracy": 0.3125,
+      "correct_count": 5,
+      "finish_reason_counts": {
+        "stop": 16
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 16,
+      "score_method_counts": {
+        "boolean_normalized": 8,
+        "normalized_exact": 3,
+        "symbolic": 5
+      }
+    },
+    "Mathematics -> Precalculus -> Limits": {
+      "accuracy": 0.6781914893617021,
+      "correct_count": 255,
+      "finish_reason_counts": {
+        "stop": 376
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 376,
+      "score_method_counts": {
+        "boolean_normalized": 20,
+        "normalized_exact": 243,
+        "symbolic": 113
+      }
+    },
+    "Mathematics -> Precalculus -> Trigonometric Functions": {
+      "accuracy": 0.39285714285714285,
+      "correct_count": 22,
+      "finish_reason_counts": {
+        "stop": 56
+      },
+      "reached_model_length_count": 0,
+      "rollout_count": 56,
+      "score_method_counts": {
+        "normalized_exact": 22,
+        "symbolic": 34
+      }
+    }
+  },
+  "lengths_all": {
+    "completion_token_count": {
+      "count": 7664,
+      "max": 40391,
+      "mean": 851.1503131524008,
+      "median": 631.0,
+      "min": 1,
+      "p10": 155.30000000000007,
+      "p25": 343.0,
+      "p75": 1079.25,
+      "p90": 1690.0,
+      "p95": 2215.7999999999956,
+      "p99": 3682.0
+    },
+    "full_trace_token_count": {
+      "count": 7664,
+      "max": 40885,
+      "mean": 1373.786012526096,
+      "median": 1151.0,
+      "min": 272,
+      "p10": 646.0,
+      "p25": 842.0,
+      "p75": 1620.0,
+      "p90": 2245.7,
+      "p95": 2776.8499999999995,
+      "p99": 4280.439999999999
+    },
+    "response_prefix_token_count": {
+      "count": 7664,
+      "max": 1665,
+      "mean": 266.6356993736952,
+      "median": 196.0,
+      "min": 3,
+      "p10": 61.0,
+      "p25": 121.0,
+      "p75": 335.0,
+      "p90": 564.0,
+      "p95": 737.3999999999978,
+      "p99": 1222.0
+    },
+    "source_bridge_token_count": {
+      "count": 7664,
+      "max": 256,
+      "mean": 256.0,
+      "median": 256.0,
+      "min": 256,
+      "p10": 256.0,
+      "p25": 256.0,
+      "p75": 256.0,
+      "p90": 256.0,
+      "p95": 256.0,
+      "p99": 256.0
+    },
+    "student_continuation_token_count": {
+      "count": 7664,
+      "max": 40391,
+      "mean": 851.1503131524008,
+      "median": 631.0,
+      "min": 1,
+      "p10": 155.30000000000007,
+      "p25": 343.0,
+      "p75": 1079.25,
+      "p90": 1690.0,
+      "p95": 2215.7999999999956,
+      "p99": 3682.0
+    }
+  },
+  "lengths_correct": {
+    "completion_token_count": {
+      "count": 3317,
+      "max": 40391,
+      "mean": 705.0030147723846,
+      "median": 514,
+      "min": 1,
+      "p10": 100.60000000000002,
+      "p25": 257.0,
+      "p75": 884.0,
+      "p90": 1356.4,
+      "p95": 1693.3999999999996,
+      "p99": 2583.5200000000004
+    },
+    "full_trace_token_count": {
+      "count": 3317,
+      "max": 40884,
+      "mean": 1209.1751582755503,
+      "median": 1010,
+      "min": 272,
+      "p10": 587.0,
+      "p25": 754.0,
+      "p75": 1406.0,
+      "p90": 1896.4,
+      "p95": 2236.3999999999996,
+      "p99": 3166.0000000000036
+    },
+    "response_prefix_token_count": {
+      "count": 3317,
+      "max": 1498,
+      "mean": 248.1721435031655,
+      "median": 194,
+      "min": 4,
+      "p10": 57.60000000000002,
+      "p25": 121.0,
+      "p75": 317.0,
+      "p90": 522.0,
+      "p95": 668.0,
+      "p99": 889.0
+    },
+    "source_bridge_token_count": {
+      "count": 3317,
+      "max": 256,
+      "mean": 256.0,
+      "median": 256,
+      "min": 256,
+      "p10": 256.0,
+      "p25": 256.0,
+      "p75": 256.0,
+      "p90": 256.0,
+      "p95": 256.0,
+      "p99": 256.0
+    },
+    "student_continuation_token_count": {
+      "count": 3317,
+      "max": 40391,
+      "mean": 705.0030147723846,
+      "median": 514,
+      "min": 1,
+      "p10": 100.60000000000002,
+      "p25": 257.0,
+      "p75": 884.0,
+      "p90": 1356.4,
+      "p95": 1693.3999999999996,
+      "p99": 2583.5200000000004
+    }
+  },
+  "lengths_incorrect": {
+    "completion_token_count": {
+      "count": 4347,
+      "max": 39967,
+      "mean": 962.6687370600414,
+      "median": 731,
+      "min": 1,
+      "p10": 217.60000000000002,
+      "p25": 425.0,
+      "p75": 1237.5,
+      "p90": 1955.6000000000004,
+      "p95": 2546.2999999999984,
+      "p99": 4111.48
+    },
+    "full_trace_token_count": {
+      "count": 4347,
+      "max": 40885,
+      "mean": 1499.3931446974925,
+      "median": 1275,
+      "min": 405,
+      "p10": 721.2,
+      "p25": 924.5,
+      "p75": 1818.0,
+      "p90": 2535.4,
+      "p95": 3136.7999999999993,
+      "p99": 4693.499999999999
+    },
+    "response_prefix_token_count": {
+      "count": 4347,
+      "max": 1665,
+      "mean": 280.7244076374511,
+      "median": 202,
+      "min": 3,
+      "p10": 64.0,
+      "p25": 123.0,
+      "p75": 348.0,
+      "p90": 621.0000000000005,
+      "p95": 771.0,
+      "p99": 1381.0
+    },
+    "source_bridge_token_count": {
+      "count": 4347,
+      "max": 256,
+      "mean": 256.0,
+      "median": 256,
+      "min": 256,
+      "p10": 256.0,
+      "p25": 256.0,
+      "p75": 256.0,
+      "p90": 256.0,
+      "p95": 256.0,
+      "p99": 256.0
+    },
+    "student_continuation_token_count": {
+      "count": 4347,
+      "max": 39967,
+      "mean": 962.6687370600414,
+      "median": 731,
+      "min": 1,
+      "p10": 217.60000000000002,
+      "p25": 425.0,
+      "p75": 1237.5,
+      "p90": 1955.6000000000004,
+      "p95": 2546.2999999999984,
+      "p99": 4111.48
+    }
+  },
+  "rollout_kind": "student_after_bridge",
+  "rollout_level": {
+    "accuracy": 0.4328027139874739,
+    "correct_count": 3317,
+    "finish_reason_counts": {
+      "length": 6,
+      "stop": 7658
+    },
+    "reached_model_length_count": 6,
+    "rollout_count": 7664,
+    "score_method_counts": {
+      "boolean_normalized": 1634,
+      "normalized_exact": 2210,
+      "symbolic": 3820
+    }
+  },
+  "rollout_root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/ge6_test1000_anchor_bridge_h256_n8x8_seed20260910/student_after_bridge_n8x8/replicate_1",
+  "scores_sha256": "eecaf1b26adca746f51c513619b3954d62a65cb27422b7679b69f0b0ee95c858",
+  "shards": [
+    {
+      "cached_trace_count": 0,
+      "correct_count": 116,
+      "elapsed_seconds": 1299.1077780723572,
+      "num_shards": 32,
+      "rollout_count": 240,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 63,
+        "normalized_exact": 70,
+        "symbolic": 107
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 30,
+      "scores_sha256": "0a163958b6c6131ae09cb4558f059bb5f12c0364c25bb12464517eb2a2582b08",
+      "shard_index": 0,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 30
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 95,
+      "elapsed_seconds": 1470.1028153896332,
+      "num_shards": 32,
+      "rollout_count": 248,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 42,
+        "normalized_exact": 75,
+        "symbolic": 131
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 31,
+      "scores_sha256": "fb767e4487ef89814d5996f88d200ed7a63c7c826a418e33823686d1f6b98edc",
+      "shard_index": 1,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 31
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 88,
+      "elapsed_seconds": 1509.2032525539398,
+      "num_shards": 32,
+      "rollout_count": 232,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 21,
+        "normalized_exact": 74,
+        "symbolic": 137
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 29,
+      "scores_sha256": "1edbe4ff0684a2e137f01776d7fa041cc18e9762039591ef7a09f80ae3b69b43",
+      "shard_index": 2,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 29
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 149,
+      "elapsed_seconds": 958.6219902038574,
+      "num_shards": 32,
+      "rollout_count": 240,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 69,
+        "normalized_exact": 95,
+        "symbolic": 76
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 30,
+      "scores_sha256": "0388c2c1df0d8d56269cbe8e3f4d438fbb1519a65a1464de77d2fd6ba8350f18",
+      "shard_index": 3,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 30
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 102,
+      "elapsed_seconds": 1478.3563725948334,
+      "num_shards": 32,
+      "rollout_count": 248,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 36,
+        "normalized_exact": 80,
+        "symbolic": 132
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 31,
+      "scores_sha256": "3b762d7d6b75b49e59ac34975d8adbde7ee23a536fc115851e9885b8968af5e6",
+      "shard_index": 4,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 31
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 108,
+      "elapsed_seconds": 1350.0496187210083,
+      "num_shards": 32,
+      "rollout_count": 240,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 53,
+        "normalized_exact": 72,
+        "symbolic": 115
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 30,
+      "scores_sha256": "cae4a552ecf1f57dd1cd466ffe0847c969a374e553f2cc880c8303c74ebfb695",
+      "shard_index": 5,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 30
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 116,
+      "elapsed_seconds": 1358.21923995018,
+      "num_shards": 32,
+      "rollout_count": 248,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 65,
+        "normalized_exact": 68,
+        "symbolic": 115
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 31,
+      "scores_sha256": "a17ac4f34853678b6f0c7422066bd5b02041e907106b67313ec988efcc9cd402",
+      "shard_index": 6,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 31
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 118,
+      "elapsed_seconds": 1339.0858232975006,
+      "num_shards": 32,
+      "rollout_count": 240,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 51,
+        "normalized_exact": 77,
+        "symbolic": 112
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 30,
+      "scores_sha256": "95351e18eeee38b333552c209cffac4a221933a94ec446f0c844265746fc7cfd",
+      "shard_index": 7,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 30
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 87,
+      "elapsed_seconds": 1600.324744939804,
+      "num_shards": 32,
+      "rollout_count": 248,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 24,
+        "normalized_exact": 70,
+        "symbolic": 154
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 31,
+      "scores_sha256": "67c488ec519b6aa55d93a7f47b4699a24316f8e3cc4110100ebf0fb4e0ae9c97",
+      "shard_index": 8,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 31
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 89,
+      "elapsed_seconds": 1349.4767997264862,
+      "num_shards": 32,
+      "rollout_count": 232,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 55,
+        "normalized_exact": 65,
+        "symbolic": 112
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 29,
+      "scores_sha256": "db857c4a59bc7700896c962e6cee64038be56c0b41b369613a74e205460c8308",
+      "shard_index": 9,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 29
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 96,
+      "elapsed_seconds": 1379.0357983112335,
+      "num_shards": 32,
+      "rollout_count": 232,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 42,
+        "normalized_exact": 74,
+        "symbolic": 116
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 29,
+      "scores_sha256": "9e7917ba28049a00bbfe432a753414018a7e6255c08b61b34aa9c538eb126e00",
+      "shard_index": 10,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 29
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 87,
+      "elapsed_seconds": 1469.1244337558746,
+      "num_shards": 32,
+      "rollout_count": 232,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 52,
+        "normalized_exact": 50,
+        "symbolic": 130
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 29,
+      "scores_sha256": "edbec915b5e0db8c482ce59eb8fcba94aabc860e598cbd6ba5729e017eb098d3",
+      "shard_index": 11,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 29
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 109,
+      "elapsed_seconds": 1446.0462770462036,
+      "num_shards": 32,
+      "rollout_count": 248,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 41,
+        "normalized_exact": 79,
+        "symbolic": 128
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 31,
+      "scores_sha256": "7f57cfda78cb5dae131f99ec1bb929ef68c27c461a8d34def6fbf9e556cbb6e2",
+      "shard_index": 12,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 31
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 92,
+      "elapsed_seconds": 1487.2242419719696,
+      "num_shards": 32,
+      "rollout_count": 248,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 55,
+        "normalized_exact": 60,
+        "symbolic": 133
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 31,
+      "scores_sha256": "905183b3ec18712beb92453605cb0b0dad71f620c1a693967f2a794cdf6e451e",
+      "shard_index": 13,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 31
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 101,
+      "elapsed_seconds": 1319.0903911590576,
+      "num_shards": 32,
+      "rollout_count": 232,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 41,
+        "normalized_exact": 80,
+        "symbolic": 111
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 29,
+      "scores_sha256": "79de5f271bf10a19e7096dad02a6b09ae17c57ace2fbba69a82fa0b01632292c",
+      "shard_index": 14,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 29
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 85,
+      "elapsed_seconds": 1433.557255268097,
+      "num_shards": 32,
+      "rollout_count": 232,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 46,
+        "normalized_exact": 62,
+        "symbolic": 124
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 29,
+      "scores_sha256": "bc4ed5598b6fa89e673e242dbebbc46bd84789faa7c73fe0f5f13a9855bfc8ef",
+      "shard_index": 15,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 29
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 97,
+      "elapsed_seconds": 1356.3612623214722,
+      "num_shards": 32,
+      "rollout_count": 224,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 52,
+        "normalized_exact": 58,
+        "symbolic": 114
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 28,
+      "scores_sha256": "e58309795c1ae4532d5fe6955c27b7b2c50fe20dd67c065f1b6638e075b52ab3",
+      "shard_index": 16,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 28
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 94,
+      "elapsed_seconds": 1489.797492980957,
+      "num_shards": 32,
+      "rollout_count": 248,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 62,
+        "normalized_exact": 51,
+        "symbolic": 135
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 31,
+      "scores_sha256": "cfcfe42457f7ca8c95ba29f31ec4a5f927c6832ac7a5cf8c43989f0f1fdc8258",
+      "shard_index": 17,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 31
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 113,
+      "elapsed_seconds": 1334.102977514267,
+      "num_shards": 32,
+      "rollout_count": 248,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 52,
+        "normalized_exact": 84,
+        "symbolic": 112
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 31,
+      "scores_sha256": "74a1420db92748d59fdddb977a6d8a5af7b89f3fc9f524722bc6c914ab513dad",
+      "shard_index": 18,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 31
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 94,
+      "elapsed_seconds": 1505.5930490493774,
+      "num_shards": 32,
+      "rollout_count": 240,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 24,
+        "normalized_exact": 78,
+        "symbolic": 138
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 30,
+      "scores_sha256": "3ff96ec53e910369fc203d96d17f4f8dc48a3e91b1d7dbefa82b5e6c3df18be3",
+      "shard_index": 19,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 30
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 112,
+      "elapsed_seconds": 1299.479255914688,
+      "num_shards": 32,
+      "rollout_count": 240,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 65,
+        "normalized_exact": 68,
+        "symbolic": 107
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 30,
+      "scores_sha256": "cf85509c044039114a54748dc4c0709c66e75da810c8799bc1275043b1ca81d7",
+      "shard_index": 20,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 30
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 65,
+      "elapsed_seconds": 1552.9488594532013,
+      "num_shards": 32,
+      "rollout_count": 224,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 39,
+        "normalized_exact": 39,
+        "symbolic": 146
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 28,
+      "scores_sha256": "0d668f139a81eac4640301502d6cec86035c5b095dfeb86193829ea1a5e0a348",
+      "shard_index": 21,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 28
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 94,
+      "elapsed_seconds": 1474.986370563507,
+      "num_shards": 32,
+      "rollout_count": 240,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 36,
+        "normalized_exact": 72,
+        "symbolic": 132
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 30,
+      "scores_sha256": "56b03e0ff6d03f5e9e98ea5869546ee97d8cfe843b9e4adc925dc8e75d772785",
+      "shard_index": 22,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 30
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 130,
+      "elapsed_seconds": 1231.43421626091,
+      "num_shards": 32,
+      "rollout_count": 240,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 47,
+        "normalized_exact": 93,
+        "symbolic": 100
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 30,
+      "scores_sha256": "6e319053022470f8f62a34ddd9c91be69ac5e8332816b2843cd71881654d5be9",
+      "shard_index": 23,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 30
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 117,
+      "elapsed_seconds": 1433.7746078968048,
+      "num_shards": 32,
+      "rollout_count": 248,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 45,
+        "normalized_exact": 79,
+        "symbolic": 124
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 31,
+      "scores_sha256": "8635867fcfde39c22be395c171252c17b26a88a1446e1130a03c4301fc16ced4",
+      "shard_index": 24,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 31
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 80,
+      "elapsed_seconds": 1525.2387166023254,
+      "num_shards": 32,
+      "rollout_count": 240,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 63,
+        "normalized_exact": 37,
+        "symbolic": 140
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 30,
+      "scores_sha256": "3f31fa58790b79cff9e48c9ef7a3aa28c9fc7f703eb1742a0fe91cf0e210c039",
+      "shard_index": 25,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 30
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 88,
+      "elapsed_seconds": 1513.187168121338,
+      "num_shards": 32,
+      "rollout_count": 248,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 80,
+        "normalized_exact": 29,
+        "symbolic": 139
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 31,
+      "scores_sha256": "6893ac0a45f582f7535dd78d48f4525e2147ae1220c1e02e3d4aadb51cfc7f72",
+      "shard_index": 26,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 31
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 123,
+      "elapsed_seconds": 1136.965405702591,
+      "num_shards": 32,
+      "rollout_count": 232,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 73,
+        "normalized_exact": 67,
+        "symbolic": 92
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 29,
+      "scores_sha256": "1399378c0edfaf3802d1629f60f7b4b4282610fa49c36c3ba433e20bbd72b522",
+      "shard_index": 27,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 29
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 113,
+      "elapsed_seconds": 1343.638558626175,
+      "num_shards": 32,
+      "rollout_count": 240,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 60,
+        "normalized_exact": 68,
+        "symbolic": 112
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 30,
+      "scores_sha256": "b46238d2b2e5ec1f649d6f4afb1ac45049f76a59e1240f4181c64884802c0f50",
+      "shard_index": 28,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 30
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 119,
+      "elapsed_seconds": 1225.8119940757751,
+      "num_shards": 32,
+      "rollout_count": 240,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 62,
+        "normalized_exact": 77,
+        "symbolic": 101
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 30,
+      "scores_sha256": "d6eff30710961a228bcce1e014deda22d8aeb7a3e00d2252937003c21a1e9553",
+      "shard_index": 29,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 30
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 145,
+      "elapsed_seconds": 758.7416071891785,
+      "num_shards": 32,
+      "rollout_count": 232,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 82,
+        "normalized_exact": 90,
+        "symbolic": 60
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 29,
+      "scores_sha256": "a1af860bcfdb06d59609d6c25d88d6b8b022ab75eb2d610d83acf41a315b0caf",
+      "shard_index": 30,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 29
+    },
+    {
+      "cached_trace_count": 0,
+      "correct_count": 95,
+      "elapsed_seconds": 1487.223319530487,
+      "num_shards": 32,
+      "rollout_count": 240,
+      "rollout_kind": "student_after_bridge",
+      "score_methods": {
+        "boolean_normalized": 36,
+        "normalized_exact": 69,
+        "symbolic": 135
+      },
+      "score_timeout_seconds": 20.0,
+      "scored_trace_count_now": 30,
+      "scores_sha256": "4fadd72ac3540d6f1e2e3f4f59314bef9e335994f45eaedf4310926605310ece",
+      "shard_index": 31,
+      "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_SHARD_COMPLETE",
+      "trace_count": 30
+    }
+  ],
+  "source_required_marker": "GPU_GENERATION_COMPLETE",
+  "source_strict_verification_complete": true,
+  "status": "STUDENT_AFTER_BRIDGE_ROLLOUT_ANALYSIS_COMPLETE",
+  "trace_level": {
+    "all_8_correct_count": 126,
+    "all_8_correct_rate": 0.1315240083507307,
+    "correct_rollout_count_histogram": {
+      "0": 244,
+      "1": 103,
+      "2": 69,
+      "3": 83,
+      "4": 94,
+      "5": 77,
+      "6": 76,
+      "7": 86,
+      "8": 126
+    },
+    "mean_correct_rollouts_per_trace": 3.462421711899791,
+    "pass_at_8": 0.7453027139874739,
+    "pass_at_8_count": 714,
+    "trace_count": 958
+  }
+}

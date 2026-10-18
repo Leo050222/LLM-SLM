@@ -1,0 +1,42 @@
+{
+  "source": "Completed strong-main repair experiments; remote completed/*.json aggregated from all 4631 rows per group",
+  "status": "pre_intervention_analysis_complete; post_original_token_not_recorded; replay_not_submitted_due_to_ssh_timeout",
+  "models": {
+    "8B": {
+      "experiment": "strong8_weak17_reprompt_greedy_t2_k1_20261005",
+      "rollouts": 4631,
+      "all_round_events": 112203,
+      "actual_interventions": 84526,
+      "gap": {"mean": 6.02809110735353, "median": 4.255203947424889, "p10": 2.2883372008800507, "p90": 12.094335049841902},
+      "pre_original_strong_logprob": {"mean": -0.46548891048198143, "median": -0.4156021326780319},
+      "pre_original_weak_logprob": {"mean": -6.493580017835511, "median": -4.761801719665527},
+      "pre_original_weak_rank_median": 3,
+      "pre_original_weak_top100_covered": 83552,
+      "pre_original_weak_top100_missing": 974,
+      "post_replacement_logprob": {"mean": -1.8709210755913526, "median": -1.3107589483261108},
+      "post_original_logprob": null,
+      "post_original_rank": null
+    },
+    "4B": {
+      "experiment": "strong4_weak17_reprompt_greedy_t2_k1_20261005",
+      "rollouts": 4631,
+      "all_round_events": 93685,
+      "actual_interventions": 65866,
+      "gap": {"mean": 5.980725443004756, "median": 4.194373057456687, "p10": 2.28198966383934, "p90": 12.094072255305946},
+      "pre_original_strong_logprob": {"mean": -0.3695868268842851, "median": -0.2839065194129944},
+      "pre_original_weak_logprob": {"mean": -6.3503122698890415, "median": -4.58797287940979},
+      "pre_original_weak_rank_median": 3,
+      "pre_original_weak_top100_covered": 65088,
+      "pre_original_weak_top100_missing": 778,
+      "post_replacement_logprob": {"mean": -1.8326339343834375, "median": -1.3016345500946045},
+      "post_original_logprob": null,
+      "post_original_rank": null
+    }
+  },
+  "limitations": [
+    "Stored top100 values are normalized log probabilities, not raw logits.",
+    "Old repair requests ban the original token; the meaningful prompt effect is the unmasked post-prompt distribution.",
+    "Only the replacement token logprob was saved after repair; it cannot show how the original token probability changed.",
+    "All-round event counts include no-intervention rounds; actual_interventions are the appropriate denominator."
+  ]
+}

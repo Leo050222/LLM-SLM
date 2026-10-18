@@ -1,0 +1,73 @@
+{
+  "accuracy": 0.302,
+  "by_difficulty": {
+    "6.0": {
+      "accuracy": 0.4169381107491857,
+      "correct": 128,
+      "mean_response_tokens": 1881.3615635179153,
+      "rows": 307
+    },
+    "6.5": {
+      "accuracy": 0.35555555555555557,
+      "correct": 48,
+      "mean_response_tokens": 1774.088888888889,
+      "rows": 135
+    },
+    "7.0": {
+      "accuracy": 0.28289473684210525,
+      "correct": 43,
+      "mean_response_tokens": 1815.7697368421052,
+      "rows": 152
+    },
+    "7.5": {
+      "accuracy": 0.288135593220339,
+      "correct": 34,
+      "mean_response_tokens": 1920.550847457627,
+      "rows": 118
+    },
+    "8.0": {
+      "accuracy": 0.1919191919191919,
+      "correct": 38,
+      "mean_response_tokens": 1847.9848484848485,
+      "rows": 198
+    },
+    "8.5": {
+      "accuracy": 0.13432835820895522,
+      "correct": 9,
+      "mean_response_tokens": 1493.5223880597016,
+      "rows": 67
+    },
+    "9.0": {
+      "accuracy": 0.08695652173913043,
+      "correct": 2,
+      "mean_response_tokens": 1284.7391304347825,
+      "rows": 23
+    }
+  },
+  "correct": 302,
+  "data": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_data/deepmath_ge6_opd_train15pct_seed20260811/test_1000.parquet",
+  "data_sha256": "6ef8e66d181b7522bad2904ad1fcf20d8fc152af0c9d7eb05e07a9f2f0415ae0",
+  "elapsed_seconds_generate_sum_shards": 3355.4165465831757,
+  "finish_reason": {
+    "stop": 1000
+  },
+  "max_response_tokens_observed": 11208,
+  "mean_response_tokens": 1815.218,
+  "model": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_checkpoints/qwen3_1_7b_from_14b_deepmath_ge6_train25pct_nonthinking_student_top16_rkl_8h800_single_node/global_step_89/actor/huggingface",
+  "model_label": "qwen3_1_7b_train25pct_nonthinking_top16_rkl_step89",
+  "rows": 1000,
+  "sampling": {
+    "max_model_len": 40960,
+    "max_response_tokens": 40264,
+    "seed": 20260811,
+    "temperature": 1.0,
+    "thinking": false,
+    "top_k": -1,
+    "top_p": 1.0
+  },
+  "status": "DEEPMATH_GE6_NATIVE_NONTHINKING_OK",
+  "thinking_close_tag": 0,
+  "thinking_open_tag": 0,
+  "tokenizer": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+  "total_response_tokens": 1815218
+}

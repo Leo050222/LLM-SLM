@@ -1,0 +1,561 @@
+{
+  "date": "2026-10-19",
+  "project_root": "/storage/yukaichengLab/wangxin/test_eiloeo",
+  "links": [
+    {
+      "path": "organized/code/env_overlays",
+      "target": "env_overlays"
+    },
+    {
+      "path": "organized/code/eval_repos",
+      "target": "eval_repos"
+    },
+    {
+      "path": "organized/code/ocrd_pipeline",
+      "target": "ocrd_pipeline"
+    },
+    {
+      "path": "organized/code/opd_online_code",
+      "target": "opd_online_code"
+    },
+    {
+      "path": "organized/code/opd_scripts",
+      "target": "opd_scripts"
+    },
+    {
+      "path": "organized/code/verl",
+      "target": "verl"
+    },
+    {
+      "path": "organized/datasets/benchmarks",
+      "target": "benchmarks"
+    },
+    {
+      "path": "organized/datasets/dataset",
+      "target": "dataset"
+    },
+    {
+      "path": "organized/datasets/opd_data",
+      "target": "opd_data"
+    },
+    {
+      "path": "organized/results/analysis",
+      "target": "analysis"
+    },
+    {
+      "path": "organized/results/opd_analysis",
+      "target": "opd_analysis"
+    },
+    {
+      "path": "organized/results/opd_eval",
+      "target": "opd_eval"
+    },
+    {
+      "path": "organized/results/opd_eval_ablation",
+      "target": "opd_eval_ablation"
+    },
+    {
+      "path": "organized/results/opd_eval_baselines",
+      "target": "opd_eval_baselines"
+    },
+    {
+      "path": "organized/results/opd_eval_code",
+      "target": "opd_eval_code"
+    },
+    {
+      "path": "organized/results/opd_eval_deepmath",
+      "target": "opd_eval_deepmath"
+    },
+    {
+      "path": "organized/results/opd_eval_dynamic",
+      "target": "opd_eval_dynamic"
+    },
+    {
+      "path": "organized/results/opd_eval_hard",
+      "target": "opd_eval_hard"
+    },
+    {
+      "path": "organized/results/opd_eval_math500",
+      "target": "opd_eval_math500"
+    },
+    {
+      "path": "organized/results/opd_eval_prefix",
+      "target": "opd_eval_prefix"
+    },
+    {
+      "path": "organized/results/opd_eval_prefix_handoff_weak_to_8b_20261005",
+      "target": "opd_eval_prefix_handoff_weak_to_8b_20261005"
+    },
+    {
+      "path": "organized/results/opd_eval_vlm",
+      "target": "opd_eval_vlm"
+    },
+    {
+      "path": "organized/results/opd_logit_diagnostics",
+      "target": "opd_logit_diagnostics"
+    },
+    {
+      "path": "organized/results/opd_rescore",
+      "target": "opd_rescore"
+    },
+    {
+      "path": "organized/artifacts/ocrd_anchor_train25_qwen3_1_7b_nonthinking_seed20260811_transformers_v2",
+      "target": "ocrd_anchor_train25_qwen3_1_7b_nonthinking_seed20260811_transformers_v2"
+    },
+    {
+      "path": "organized/artifacts/opd_preflight",
+      "target": "opd_preflight"
+    },
+    {
+      "path": "organized/artifacts/opd_profile",
+      "target": "opd_profile"
+    },
+    {
+      "path": "organized/artifacts/opd_rollouts",
+      "target": "opd_rollouts"
+    },
+    {
+      "path": "organized/artifacts/opd_runs",
+      "target": "opd_runs"
+    },
+    {
+      "path": "organized/logs/opd_logs",
+      "target": "opd_logs"
+    },
+    {
+      "path": "organized/archive/archive",
+      "target": "archive"
+    },
+    {
+      "path": "organized/archive/archives_jsonl",
+      "target": "archives_jsonl"
+    },
+    {
+      "path": "organized/archive/rollout_archive",
+      "target": "rollout_archive"
+    },
+    {
+      "path": "organized/datasets/shared_models",
+      "target": "/storage/yukaichengLab/share/model",
+      "read_only_usage": true
+    },
+    {
+      "path": "organized/datasets/shared_datasets",
+      "target": "/storage/yukaichengLab/share/datasets",
+      "read_only_usage": true
+    }
+  ],
+  "deleted_caches": [
+    {
+      "path": "opd_scripts/__pycache__",
+      "files": 34,
+      "bytes": 501323
+    },
+    {
+      "path": "opd_scripts/test1000_anchor_bridge_20260910/__pycache__",
+      "files": 4,
+      "bytes": 37148
+    },
+    {
+      "path": "opd_scripts/takeover_ablation_20260911/__pycache__",
+      "files": 1,
+      "bytes": 12519
+    },
+    {
+      "path": "opd_scripts/nojudge_grid_deadline_20260912/__pycache__",
+      "files": 2,
+      "bytes": 22342
+    },
+    {
+      "path": "opd_scripts/grid_math_8gpu_20260917/__pycache__",
+      "files": 2,
+      "bytes": 11195
+    },
+    {
+      "path": "opd_scripts/grid_math_colocated8_20260918/__pycache__",
+      "files": 2,
+      "bytes": 11724
+    },
+    {
+      "path": "opd_scripts/weak_resample_t2_k1_20260920/__pycache__",
+      "files": 3,
+      "bytes": 25896
+    },
+    {
+      "path": "opd_scripts/reverse_greedy_t2_k1_8gpu_20260921/__pycache__",
+      "files": 9,
+      "bytes": 89547
+    },
+    {
+      "path": "opd_scripts/intervention_logits_bf16_greedy_20260921/__pycache__",
+      "files": 6,
+      "bytes": 114966
+    },
+    {
+      "path": "opd_scripts/weak_to_8b_prefix_handoff_20261005/__pycache__",
+      "files": 3,
+      "bytes": 33208
+    },
+    {
+      "path": "opd_scripts/weak1p7_strong8_reprompt_greedy_t2_k1_postlogit_20261005/__pycache__",
+      "files": 4,
+      "bytes": 66876
+    },
+    {
+      "path": "opd_scripts/code_reasoning_grid_20260913/__pycache__",
+      "files": 4,
+      "bytes": 42612
+    },
+    {
+      "path": "opd_scripts/grid_math_colocated16_20260918/__pycache__",
+      "files": 2,
+      "bytes": 11127
+    },
+    {
+      "path": "opd_scripts/full_teacher_student_greedy_20260920/__pycache__",
+      "files": 5,
+      "bytes": 32658
+    },
+    {
+      "path": "opd_scripts/intervention_logits_bf16_x8_20260920/__pycache__",
+      "files": 3,
+      "bytes": 68858
+    },
+    {
+      "path": "opd_scripts/weak1p7_strong8_reprompt_greedy_t2_k1_20261005/__pycache__",
+      "files": 6,
+      "bytes": 70094
+    },
+    {
+      "path": "opd_scripts/grid_async_retry_20260916/__pycache__",
+      "files": 15,
+      "bytes": 107877
+    },
+    {
+      "path": "opd_scripts/grid_math_4gpu_20260917/__pycache__",
+      "files": 2,
+      "bytes": 11195
+    },
+    {
+      "path": "opd_scripts/full_teacher_student_x8_8gpu_20260918/__pycache__",
+      "files": 2,
+      "bytes": 15171
+    },
+    {
+      "path": "opd_scripts/quartile_support_k_20260918/__pycache__",
+      "files": 6,
+      "bytes": 61096
+    },
+    {
+      "path": "opd_scripts/weak_resample_score_20260921/__pycache__",
+      "files": 1,
+      "bytes": 25937
+    },
+    {
+      "path": "opd_scripts/prefix_takeover_caps_20260917/__pycache__",
+      "files": 3,
+      "bytes": 27063
+    },
+    {
+      "path": "opd_scripts/weak_reprompt_clean_score_20260921/__pycache__",
+      "files": 1,
+      "bytes": 25949
+    },
+    {
+      "path": "opd_scripts/weak_resample_greedy_8gpu_20260921/__pycache__",
+      "files": 2,
+      "bytes": 11204
+    },
+    {
+      "path": "opd_scripts/qwen3_greedy_remaining_20261005/__pycache__",
+      "files": 5,
+      "bytes": 38767
+    },
+    {
+      "path": "opd_scripts/strong_reprompt_score_20261005/__pycache__",
+      "files": 12,
+      "bytes": 100594
+    },
+    {
+      "path": "opd_scripts/threshold_k8_nojudge_20260911/__pycache__",
+      "files": 1,
+      "bytes": 10352
+    },
+    {
+      "path": "opd_scripts/nojudge_grid_early_score_20260912/__pycache__",
+      "files": 1,
+      "bytes": 9005
+    },
+    {
+      "path": "opd_scripts/code_reasoning_grid_scale8_20260913/__pycache__",
+      "files": 4,
+      "bytes": 41588
+    },
+    {
+      "path": "opd_scripts/grid_fifo_20260916/__pycache__",
+      "files": 12,
+      "bytes": 85431
+    },
+    {
+      "path": "opd_scripts/random_quartile_k1_20260918/__pycache__",
+      "files": 6,
+      "bytes": 47474
+    },
+    {
+      "path": "opd_scripts/prefix_takeover_caps25_40_split_20260918/__pycache__",
+      "files": 2,
+      "bytes": 14897
+    },
+    {
+      "path": "opd_scripts/qwen3_greedy_hard_three_20261005/__pycache__",
+      "files": 2,
+      "bytes": 10614
+    },
+    {
+      "path": "opd_scripts/weak1p7_strong4_reprompt_greedy_t2_k1_20261005/__pycache__",
+      "files": 6,
+      "bytes": 70094
+    },
+    {
+      "path": "opd_scripts/teacher_prefix_handoff_20260909/__pycache__",
+      "files": 1,
+      "bytes": 12257
+    },
+    {
+      "path": "opd_scripts/prefix_takeover_caps5_10_20260917/__pycache__",
+      "files": 3,
+      "bytes": 27075
+    },
+    {
+      "path": "opd_scripts/reverse_t2_k1_20260918/__pycache__",
+      "files": 4,
+      "bytes": 43143
+    },
+    {
+      "path": "opd_scripts/prefix_takeover_caps25_40_20260918/__pycache__",
+      "files": 3,
+      "bytes": 27066
+    },
+    {
+      "path": "opd_scripts/full_teacher_student_x8_20260918/__pycache__",
+      "files": 4,
+      "bytes": 28446
+    },
+    {
+      "path": "opd_scripts/weak_reprompt_16gpu_2000s_20260920/__pycache__",
+      "files": 7,
+      "bytes": 45279
+    },
+    {
+      "path": "opd_scripts/weak_reprompt_nodraft_score_20260920/__pycache__",
+      "files": 1,
+      "bytes": 25953
+    },
+    {
+      "path": "opd_scripts/weak_reprompt_clean_t2_k1_20260921/__pycache__",
+      "files": 4,
+      "bytes": 34166
+    },
+    {
+      "path": "opd_scripts/random_quartile_greedy_k1_20260921/__pycache__",
+      "files": 12,
+      "bytes": 78701
+    },
+    {
+      "path": "opd_scripts/shift5_greedy_k1_t2_20260921/__pycache__",
+      "files": 7,
+      "bytes": 74834
+    },
+    {
+      "path": "opd_scripts/teacher8_student8_20260909/__pycache__",
+      "files": 2,
+      "bytes": 33443
+    },
+    {
+      "path": "opd_scripts/threshold3_mathteacher_20260911/__pycache__",
+      "files": 1,
+      "bytes": 10354
+    },
+    {
+      "path": "opd_scripts/weak_reprompt_t2_k1_20260920/__pycache__",
+      "files": 3,
+      "bytes": 26289
+    },
+    {
+      "path": "opd_scripts/intervention_analysis_phase1_20260921/__pycache__",
+      "files": 2,
+      "bytes": 65279
+    },
+    {
+      "path": "opd_scripts/main_greedy_k1_t2_20260921/__pycache__",
+      "files": 9,
+      "bytes": 90170
+    },
+    {
+      "path": "opd_scripts/strong8_weak17_reprompt_greedy_t2_k1_20261005/__pycache__",
+      "files": 1,
+      "bytes": 9870
+    },
+    {
+      "path": "opd_scripts/strong4_weak17_reprompt_greedy_t2_k1_20261005/__pycache__",
+      "files": 1,
+      "bytes": 9870
+    },
+    {
+      "path": "opd_scripts/weak1p7_strong4_reprompt_greedy_t2_k1_mainminus_20261005/__pycache__",
+      "files": 4,
+      "bytes": 65088
+    },
+    {
+      "path": "opd_scripts/weak1p7_strong8_reprompt_greedy_t2_k1_mainminus_20261005/__pycache__",
+      "files": 4,
+      "bytes": 65088
+    },
+    {
+      "path": "opd_scripts/weak_reprompt_8gpu_2000s_20260920/__pycache__",
+      "files": 7,
+      "bytes": 45251
+    },
+    {
+      "path": "opd_scripts/weak_reprompt_score_20260921/__pycache__",
+      "files": 1,
+      "bytes": 25937
+    },
+    {
+      "path": "opd_scripts/weak1p7_strong4_reprompt_greedy_t2_k1_postlogit_20261005/__pycache__",
+      "files": 4,
+      "bytes": 66876
+    },
+    {
+      "path": "opd_scripts/nojudge_grid_20260912/__pycache__",
+      "files": 3,
+      "bytes": 46511
+    },
+    {
+      "path": "opd_scripts/dynamic_k_entropy_20260914/__pycache__",
+      "files": 11,
+      "bytes": 98192
+    },
+    {
+      "path": "opd_scripts/grid_async_20260916/__pycache__",
+      "files": 16,
+      "bytes": 121656
+    },
+    {
+      "path": "opd_scripts/shift5_k1_t2_20260918/__pycache__",
+      "files": 7,
+      "bytes": 74539
+    },
+    {
+      "path": "opd_scripts/quartile_greedy_baselines_20260918/__pycache__",
+      "files": 4,
+      "bytes": 32327
+    },
+    {
+      "path": "opd_scripts/weak_reprompt_nodraft_t2_k1_20260920/__pycache__",
+      "files": 3,
+      "bytes": 27229
+    },
+    {
+      "path": "opd_scripts/full_teacher_student_greedy_8gpu_20260921/__pycache__",
+      "files": 7,
+      "bytes": 37653
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/__pycache__",
+      "files": 20,
+      "bytes": 305469
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/tests/__pycache__",
+      "files": 3,
+      "bytes": 26491
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/__pycache__",
+      "files": 4,
+      "bytes": 46073
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/__pycache__",
+      "files": 14,
+      "bytes": 269228
+    },
+    {
+      "path": "opd_online_code/20260911_random_k8_cap8/ocrd_pipeline/full_rollout/__pycache__",
+      "files": 2,
+      "bytes": 24474
+    },
+    {
+      "path": "opd_online_code/20260911_random_k8_cap8/ocrd_pipeline/anchor_selector/__pycache__",
+      "files": 3,
+      "bytes": 35709
+    },
+    {
+      "path": "opd_online_code/20260911_random_k8_cap8/ocrd_pipeline/online_rollout/__pycache__",
+      "files": 5,
+      "bytes": 54486
+    },
+    {
+      "path": "opd_online_code/20260911_chunk64_k8/ocrd_pipeline/online_rollout/__pycache__",
+      "files": 3,
+      "bytes": 28265
+    },
+    {
+      "path": "opd_online_code/20260911_chunk64_k8/ocrd_pipeline/anchor_selector/__pycache__",
+      "files": 3,
+      "bytes": 35688
+    },
+    {
+      "path": "opd_online_code/20260911_chunk64_k8/ocrd_pipeline/full_rollout/__pycache__",
+      "files": 2,
+      "bytes": 24460
+    },
+    {
+      "path": "opd_online_code/20260911_chunk64_k8_2nodes/ocrd_pipeline/full_rollout/__pycache__",
+      "files": 2,
+      "bytes": 24474
+    },
+    {
+      "path": "opd_online_code/20260911_chunk64_k8_2nodes/ocrd_pipeline/online_rollout/__pycache__",
+      "files": 3,
+      "bytes": 30787
+    },
+    {
+      "path": "opd_online_code/20260911_chunk64_k8_2nodes/ocrd_pipeline/anchor_selector/__pycache__",
+      "files": 3,
+      "bytes": 35709
+    },
+    {
+      "path": "opd_online_code/20260911_kv_reuse/ocrd_pipeline/full_rollout/__pycache__",
+      "files": 2,
+      "bytes": 24474
+    },
+    {
+      "path": "opd_online_code/20260911_kv_reuse/ocrd_pipeline/online_rollout/__pycache__",
+      "files": 4,
+      "bytes": 35942
+    },
+    {
+      "path": "opd_online_code/20260911_kv_reuse/ocrd_pipeline/anchor_selector/__pycache__",
+      "files": 3,
+      "bytes": 35709
+    },
+    {
+      "path": "opd_online_code/20260911_kv_reuse_v2/ocrd_pipeline/full_rollout/__pycache__",
+      "files": 2,
+      "bytes": 24474
+    },
+    {
+      "path": "opd_online_code/20260911_kv_reuse_v2/ocrd_pipeline/online_rollout/__pycache__",
+      "files": 4,
+      "bytes": 36596
+    },
+    {
+      "path": "opd_online_code/20260911_kv_reuse_v2/ocrd_pipeline/anchor_selector/__pycache__",
+      "files": 3,
+      "bytes": 35709
+    }
+  ],
+  "policy": "Original paths preserved. Only project code bytecode caches deleted."
+}

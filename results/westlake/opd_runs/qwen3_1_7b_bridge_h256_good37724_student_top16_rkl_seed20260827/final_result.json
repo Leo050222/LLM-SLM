@@ -1,0 +1,24 @@
+{
+  "all_bridges_covered_once": false,
+  "bridge_selection": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_good_bridge_selection_qwen3_1_7b_h256_n8_seed20260827/selection.json",
+  "bridge_selection_sha256": "1d0eed7f13952356948e2466ff38dff76c3df19490f221d88b73c0fcd85cb0c2",
+  "bridge_tokens": 256,
+  "bridges_per_trace": 8,
+  "checkpoints": [
+    118,
+    236,
+    354,
+    472,
+    590
+  ],
+  "epochs": 1,
+  "loss_mask": "bridge_tokens_only",
+  "loss_support_topk": 16,
+  "objective": "bridge_student_top_16_renormalized_kl_student_to_teacher",
+  "selected_bridges_covered_once": true,
+  "status": "BRIDGE_TOP16_RKL_COMPLETE",
+  "total_steps": 590,
+  "trace_count": 13244,
+  "train_rows": 37724,
+  "training_scope": "good_bridges_only"
+}

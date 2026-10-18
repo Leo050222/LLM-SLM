@@ -1,0 +1,43 @@
+{
+  "status": "DEEPMATH_CHECKPOINT_NONTHINKING_X8_SCORING_COMPLETE",
+  "model_label": "bridge_opd_step1656",
+  "model": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_checkpoints/qwen3_1_7b_bridge_h256_n8_student_top16_rkl_seed20260827/global_step_1656/actor/huggingface",
+  "questions": 1000,
+  "rollouts_per_question": 8,
+  "rollouts": 8000,
+  "correct_rollouts": 2382,
+  "accuracy": 0.29775,
+  "pass_at_8_count": 533,
+  "pass_at_8": 0.533,
+  "all_8_correct_count": 80,
+  "all_8_correct_rate": 0.08,
+  "correct_count_histogram": {
+    "0": 467,
+    "1": 90,
+    "2": 66,
+    "3": 48,
+    "4": 61,
+    "5": 61,
+    "6": 62,
+    "7": 65,
+    "8": 80
+  },
+  "mean_response_tokens": 1789.8105,
+  "total_response_tokens": 14318484,
+  "max_response_tokens_observed": 40264,
+  "thinking_open_tag": 0,
+  "thinking_close_tag": 0,
+  "generation_elapsed_seconds_sum_shards": 5206.146546363831,
+  "score_workers": 64,
+  "score_timeout_seconds": 20.0,
+  "source_shard_sha256": {
+    "0": "360eb5a918d224970aded2bb8026e7a0739d92f97b0230fb0faa585423d74d88",
+    "1": "d59b73e5f16c35801fb6c2fc1ce53e357902eb3eb3a45507efd78fbae9c181bb",
+    "2": "03e3a0b0d564c8a1eb6cc8286f760749a829d166381a72982eec4dc6a8187530",
+    "3": "9918ec06bc2dd50336f0c4d114ddbcca6093d3aac3e322772c61878449066bc8",
+    "4": "c5ea01dac90286e11247968146f26ef09173bb0b0516a09818715d17cb0d295c",
+    "5": "0c7ce22075385e52d321d050ad16ee1eb77f3eca557c0b2e61acfe9c0d397675",
+    "6": "9722d08a28fe19aa2769f05c2601286ea5ac53ad414b3c390d3ec13a558bb266",
+    "7": "2bfcf011f92a47b7f4352535193872adc8549c1b31061a6ae99d3e209021681d"
+  }
+}

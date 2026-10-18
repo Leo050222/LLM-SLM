@@ -1,0 +1,11 @@
+{
+  "api_url": "https://api.openlux.ai/v1/chat/completions",
+  "judge_model": "claude-opus-5",
+  "gap_threshold": 2.0,
+  "teacher_topk": 16,
+  "judge_temperature": 0.0,
+  "judge_max_tokens": 600,
+  "judge_timeout_seconds": 180,
+  "judge_max_retries": 3,
+  "prefix_max_chars": 120000
+}

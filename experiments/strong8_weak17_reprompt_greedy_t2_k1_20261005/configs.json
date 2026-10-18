@@ -1,0 +1,10 @@
+[
+  {
+    "name": "r0_strong_reprompt_t2_k1",
+    "k": 1,
+    "threshold": 2.0,
+    "seed": 20261005,
+    "replicate_index": 0,
+    "base_config": "strong_reprompt_t2_k1"
+  }
+]

@@ -1,0 +1,5 @@
+# Full baseline continuation on8GPUs
+
+User requested upgrade from4to8H800. Submitted106740 pinnedgnho017,8H80064CPU512GiBUNLIMITED,afterany106645; then cancelled only106645. Same baseline output root. Student36568alreadycomplete, teacher continues on8independent14B replicas (one model/GPU), batch8,256trace concurrency.69018total outputs preserved at migration snapshot,4118remaining then; actual stopped count can be slightly higher. No rerun of completed traces.
+
+Strict migration snapshot recovery_8gpu_20260918.json retains old student/teacher manifests, targetcodehashes andcount. Changes only replica/concurrency/codeprovenance; models,inputs,seeds,batch and900s scientificdeadline unchanged. Model fingerprint staysidentical. Both role migration/idempotency andseedtamper rejection passed; generationsemantic tests andsyntax/compile passed. Completed student phase skipped. Original full_teacher_student_x8_20260918 scoring scripts called afterGPUcompletion, preserving scoring signature and existing36064external grading authorization/relay. No duplicate scorer submitted or monitor enabled.

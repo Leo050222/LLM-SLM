@@ -1,0 +1,31 @@
+{
+  "job_name": "codex-storage-path-check-20261011-003920-7d7948",
+  "job_uid": "27d70d99-b7eb-4f4c-a051-f8657a6d7b52",
+  "status": {
+    "completionTime": "2026-10-10T16:40:14Z",
+    "conditions": [
+      {
+        "lastProbeTime": "2026-10-10T16:40:14Z",
+        "lastTransitionTime": "2026-10-10T16:40:14Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "SuccessCriteriaMet"
+      },
+      {
+        "lastProbeTime": "2026-10-10T16:40:14Z",
+        "lastTransitionTime": "2026-10-10T16:40:14Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "Complete"
+      }
+    ],
+    "ready": 0,
+    "startTime": "2026-10-10T16:40:00Z",
+    "succeeded": 1,
+    "terminating": 0,
+    "uncountedTerminatedPods": {}
+  },
+  "cleanup_confirmed": true
+}

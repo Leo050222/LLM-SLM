@@ -1,0 +1,17 @@
+{
+  "correct": 395,
+  "elapsed_seconds": 1874.6345987319946,
+  "num_shards": 16,
+  "rollouts": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rollouts/deepmath_ge6_train25pct_qwen3_14b_native_nonthinking_seed20260811_single_node_8h800/shards/shard_07/rollouts.jsonl",
+  "rollouts_sha256": "0305ece491701c504bcb3f27a2a5b220ddf11a4a9f231c6b14227bd5ab494f18",
+  "rows": 888,
+  "score_methods": {
+    "normalized_exact": 395,
+    "symbolic": 493
+  },
+  "score_timeout_seconds": 20.0,
+  "scorer": "run_opd_logit_diagnostic.score_math_response",
+  "scores_sha256": "cdd727fe7e6e5836bd3c754d5a21145ec28c738c4092e748045ec3ea1eb1a738",
+  "shard_index": 7,
+  "status": "DEEPMATH_TRAIN25_NATIVE_NONTHINKING_SCORE_SHARD_OK"
+}

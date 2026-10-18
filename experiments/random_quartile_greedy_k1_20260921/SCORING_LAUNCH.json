@@ -1,0 +1,13 @@
+{
+  "job_id": 108114,
+  "rows": 4571,
+  "code_rows": 2317,
+  "math_rows": 2254,
+  "cpus": 32,
+  "memory": "64G",
+  "gpus": 0,
+  "judge": "api.openlux.ai/gpt-4o-mini",
+  "api_probe": "passed",
+  "authorization": "帮我交评分任务",
+  "timeout_policy": "generation trace_timeout forced incorrect; preserve answer_correct"
+}

@@ -1,0 +1,16 @@
+{
+  "prefix_exact": true,
+  "tensor_elements": 151936,
+  "different_elements": 111225,
+  "max_abs_diff": 0.25,
+  "controls_bitwise_equal": true,
+  "sha256": {
+    "original_decode.pt": "5ae3bc4c56e60b2fddf858aa26f6ed051b14567f65c5e4828f48341a9559f0aa",
+    "incremental_repeat.pt": "f7056fb2a72a34cf6af675ad82e1f3f3f82f55549a21a47cc25e2ce8ee6a10c8",
+    "result.json": "a02227888be02316fb5cff42f825f283387a1ccdcf19658a5b30fd07498cfdaf",
+    "prefix_token_ids.json": "72df97a2145fa1f40d2b717341cd5dc85a4334f9e5a6511fba740cc7d0624f5b",
+    "fresh_prefill_repeat.pt": "5ca97163a3115d3725d3b2ec25cccf8eae2464bc8b5f07652969d58034fb7bc0",
+    "sample.json": "e2c89849452b9b9e21b8651ad25899557eb7440e7ca07d3d50249512e293d68c",
+    "fresh_prefill.pt": "756310bb887292a50e98d0e4858f39879f02782d7442b41222319b3b4aefe852"
+  }
+}

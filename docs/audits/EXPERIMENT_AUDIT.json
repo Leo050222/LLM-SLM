@@ -1,0 +1,40 @@
+{
+  "audit_skill": "experiment-audit",
+  "verdict": "WARN",
+  "reason_code": "scope_single_seed_single_rollout",
+  "summary": "Answer accounting passed for all 30 AIME24 records; scope remains one seed and one rollout per problem.",
+  "answer_accounting": "PASS",
+  "answer_extractions_verified": 30,
+  "mathematically_correct": 24,
+  "mathematically_incorrect": 6,
+  "format_false_negatives": 0,
+  "extraction_false_positives": 0,
+  "truncation_failures": 0,
+  "audited_input_hashes": {
+    "scripts/run_opd_logit_diagnostic.py": "sha256:23fc154d81b4357020ecbcfb8fbaf07251dd41556b6e209f15ab4725ee899977",
+    "rollouts.jsonl": "sha256:29be10698232a481bc47b51572e81ba2ff5f91fa6a5d8a7d8548e1cc2bb28648",
+    "run_config.json": "sha256:ac0134ea70f29bdc9a3c7d2419cf65afcee721d8c9d425086c89bae45cf5bde2",
+    "summary.json": "sha256:15473984475f5f5b9f517ffad79fe7e73a41bd0aa53f7c5152fe787100743287",
+    "aime24_source.parquet": "sha256:2602156eb2a0ab64393dc46617a3bfee3451ae3c985a7ea6ac2b55436e094a38"
+  },
+  "trace_path": ".aris/traces/experiment-audit/2026-08-07_run01/",
+  "agent_id": "/root/answer_extraction_audit",
+  "verdict_id": "/root/answer_extraction_audit",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviewer_family": "openai",
+  "reviewer_reasoning": "ultra",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "generated_at": "2026-08-07T00:00:00+08:00",
+  "date": "2026-08-07",
+  "overall_verdict": "warn",
+  "integrity_status": "warn",
+  "checks": {
+    "gt_provenance": {"status": "pass", "details": "Real dataset solution fields; 30/30 source rows matched."},
+    "score_normalization": {"status": "pass", "details": "Exact normalized answer equality."},
+    "result_existence": {"status": "pass", "details": "All audited artifacts existed and counts matched."},
+    "dead_code": {"status": "pass", "details": "The scorer is called in phase_generate."},
+    "scope": {"status": "warn", "details": "One seed and one rollout per problem."},
+    "eval_type": "real_gt"
+  }
+}

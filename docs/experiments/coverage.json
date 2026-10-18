@@ -1,0 +1,38 @@
+{
+  "snapshot_date": "2026-10-19 Asia/Shanghai",
+  "scope": [
+    "experiments",
+    "analysis",
+    "reports",
+    "outputs",
+    "figures",
+    "refine-logs",
+    "results/westlake",
+    "results/legacy/deepmath-heldout-1000",
+    "idea-stage",
+    "EXPERIMENT_AUDIT.json",
+    "EXPERIMENT_AUDIT.md"
+  ],
+  "top_level_experiment_directories": 99,
+  "cataloged_top_level_experiment_directories": 99,
+  "supplementary_series": 13,
+  "westlake_run_directories": 106,
+  "westlake_synced_files": 995,
+  "westlake_top_level_inventory_entries": 33,
+  "files_seen": 59154,
+  "indexed_artifacts": 814,
+  "aggregate_records": 17368,
+  "numeric_values": 311013,
+  "status_counts": {
+    "result_summary_available": 71,
+    "deployment_record_only": 11,
+    "code_or_status_only": 12,
+    "analysis_complete_semantic_and_counterfactual_partial": 2,
+    "archive_verified_payload_kept_on_westlake": 2,
+    "planned_or_code_only": 1
+  },
+  "parse_errors": [
+    "reports/intervention_analysis_20260923.json"
+  ],
+  "remote_recovery": "2026-10-19 已连接 gpu-wangxin 西湖旧共享存储 /storage/yukaichengLab/wangxin/test_eiloeo；小结果汇总和 manifest 下载到 results/westlake。大型 checkpoints/rollouts/logits 保留在西湖；新 PVC 的迁移缺口不代表西湖原盘缺失。"
+}

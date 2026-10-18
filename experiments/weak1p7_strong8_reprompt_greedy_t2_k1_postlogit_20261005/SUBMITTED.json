@@ -1,0 +1,9 @@
+{
+  "job_id": 115377,
+  "node": "gnho011",
+  "main_model": "Qwen3-1.7B",
+  "intervention_model": "Qwen3-8B",
+  "trigger": "main_minus_intervention_gt_2",
+  "post_logit_recording": true,
+  "status": "RUNNING"
+}

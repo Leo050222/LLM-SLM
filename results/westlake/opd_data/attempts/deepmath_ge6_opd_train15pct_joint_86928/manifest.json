@@ -1,0 +1,73 @@
+{
+  "actual_unique_fraction": 0.150008829242451,
+  "batch_size": 64,
+  "files": {
+    "selected_source_indices.json": {
+      "bytes": 92472,
+      "sha256": "7debf92b6ef4de6a5fa07139c2301877f08423a975114d271116ac94ef5e0c43"
+    },
+    "test_1000.parquet": {
+      "bytes": 196124,
+      "sha256": "6ef8e66d181b7522bad2904ad1fcf20d8fc152af0c9d7eb05e07a9f2f0415ae0"
+    },
+    "train.parquet": {
+      "bytes": 1543113,
+      "sha256": "19482ceb6f2639cbc6b672ae1eb15418a492bfd3921980c6911deab4ea5128ce"
+    },
+    "train_unique.parquet": {
+      "bytes": 1540497,
+      "sha256": "ec25a878e48984d1a129a8404f3087b9d85cd602061ab5f9a722fd90983bdb11"
+    }
+  },
+  "maximum_difficulty_share_error_pp": 0.06707833767450566,
+  "padded_train_difficulty_counts": {
+    "6.0": 2588,
+    "6.5": 1146,
+    "7.0": 1262,
+    "7.5": 999,
+    "8.0": 1727,
+    "8.5": 586,
+    "9.0": 198,
+    "9.5": 6
+  },
+  "padding_rows": 17,
+  "parent_difficulty_counts": {
+    "10.0": 3,
+    "6.0": 17181,
+    "6.5": 7615,
+    "7.0": 8409,
+    "7.5": 6628,
+    "8.0": 11488,
+    "8.5": 3922,
+    "9.0": 1333,
+    "9.5": 51
+  },
+  "requested_fraction": 0.15,
+  "sampled_nonempty_strata": 421,
+  "sampled_topics": 73,
+  "sampled_unique_difficulty_counts": {
+    "6.0": 2583,
+    "6.5": 1146,
+    "7.0": 1260,
+    "7.5": 995,
+    "8.0": 1723,
+    "8.5": 585,
+    "9.0": 197,
+    "9.5": 6
+  },
+  "sampled_unique_rows": 8495,
+  "sampling": "difficulty x full topic proportional largest remainder",
+  "seed": 20260811,
+  "source_dir": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_data/deepmath_ge6_opd",
+  "source_manifest_sha256": "d07e2ec2c4e5f9bfa390f7e264c95d556c66b732fda269490b2d83808a639941",
+  "source_strata": 504,
+  "source_test_sha256": "6ef8e66d181b7522bad2904ad1fcf20d8fc152af0c9d7eb05e07a9f2f0415ae0",
+  "source_topics": 78,
+  "source_train_sha256": "adf7972d6f2f5811f10ff69474fa08f4d1e60616b4c498174583f3591649bad5",
+  "source_unique_train_rows": 56630,
+  "status": "DEEPMATH_GE6_TRAIN15PCT_OK",
+  "test_reused_unchanged": true,
+  "test_rows": 1000,
+  "train_steps": 133,
+  "train_total_rows": 8512
+}

@@ -1,0 +1,104 @@
+{
+  "all": {
+    "log_shortening": {
+      "n": 4571,
+      "dataset_centered_pearson_r": 0.017593357207252743,
+      "permutation_two_sided_p": 0.2504874756262187,
+      "permutations": 20000
+    },
+    "any_shortening": {
+      "n": 4571,
+      "dataset_centered_pearson_r": -0.02190995965439798,
+      "permutation_two_sided_p": 0.13974301284935753,
+      "permutations": 20000
+    },
+    "groups": {
+      "True": {
+        "n": 2378,
+        "student_acc": 0.37973086627417996,
+        "k1_acc": 0.6211101766190076
+      },
+      "False": {
+        "n": 2193,
+        "student_acc": 0.32102143182854537,
+        "k1_acc": 0.5845873233014136
+      }
+    }
+  },
+  "both_normal": {
+    "log_shortening": {
+      "n": 4536,
+      "dataset_centered_pearson_r": 0.00430394957972057,
+      "permutation_two_sided_p": 0.7848107594620269,
+      "permutations": 20000
+    },
+    "any_shortening": {
+      "n": 4536,
+      "dataset_centered_pearson_r": -0.023424687186402258,
+      "permutation_two_sided_p": 0.1159442027898605,
+      "permutations": 20000
+    },
+    "groups": {
+      "True": {
+        "n": 2347,
+        "student_acc": 0.38432040903280784,
+        "k1_acc": 0.6246271836386876
+      },
+      "False": {
+        "n": 2189,
+        "student_acc": 0.32160804020100503,
+        "k1_acc": 0.5856555504796711
+      }
+    }
+  },
+  "per_dataset": {
+    "bbh": {
+      "n": 1080,
+      "dataset_centered_pearson_r": -0.049106992698987266,
+      "permutation_two_sided_p": 0.10779461026948653,
+      "permutations": 20000
+    },
+    "cruxeval_i": {
+      "n": 800,
+      "dataset_centered_pearson_r": 0.01651265234109567,
+      "permutation_two_sided_p": 0.647817609119544,
+      "permutations": 20000
+    },
+    "cruxeval_o": {
+      "n": 800,
+      "dataset_centered_pearson_r": 0.06462862246456423,
+      "permutation_two_sided_p": 0.06829658517074147,
+      "permutations": 20000
+    },
+    "humaneval_plus": {
+      "n": 164,
+      "dataset_centered_pearson_r": -0.06564089668974789,
+      "permutation_two_sided_p": 0.399830008499575,
+      "permutations": 20000
+    },
+    "livecodebench": {
+      "n": 175,
+      "dataset_centered_pearson_r": 0.18955010431727012,
+      "permutation_two_sided_p": 0.012299385030748462,
+      "permutations": 20000
+    },
+    "math500": {
+      "n": 500,
+      "dataset_centered_pearson_r": 0.04285729685767327,
+      "permutation_two_sided_p": 0.33883305834708266,
+      "permutations": 20000
+    },
+    "mbpp_plus": {
+      "n": 378,
+      "dataset_centered_pearson_r": 0.09173801450177468,
+      "permutation_two_sided_p": 0.07404629768511574,
+      "permutations": 20000
+    },
+    "olympiad_bench": {
+      "n": 674,
+      "dataset_centered_pearson_r": 0.14873108920600883,
+      "permutation_two_sided_p": 0.00024998750062496874,
+      "permutations": 20000
+    }
+  }
+}

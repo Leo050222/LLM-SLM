@@ -1,0 +1,192 @@
+{
+  "definition": "at least one correct answer across all available samples: 8 for baselines; 64 per prefix-length arm",
+  "counts": {
+    "Student": 508,
+    "Teacher": 615,
+    "H32": 641,
+    "H64": 648,
+    "H128": 647,
+    "H256": 653
+  },
+  "pairs": {
+    "Student vs Teacher": {
+      "intersection": 485,
+      "union": 638,
+      "jaccard_pct": 76.01880877742947,
+      "only_a": 23,
+      "only_b": 130
+    },
+    "Student vs H32": {
+      "intersection": 505,
+      "union": 644,
+      "jaccard_pct": 78.41614906832298,
+      "only_a": 3,
+      "only_b": 136
+    },
+    "Student vs H64": {
+      "intersection": 506,
+      "union": 650,
+      "jaccard_pct": 77.84615384615384,
+      "only_a": 2,
+      "only_b": 142
+    },
+    "Student vs H128": {
+      "intersection": 503,
+      "union": 652,
+      "jaccard_pct": 77.14723926380368,
+      "only_a": 5,
+      "only_b": 144
+    },
+    "Student vs H256": {
+      "intersection": 504,
+      "union": 657,
+      "jaccard_pct": 76.71232876712328,
+      "only_a": 4,
+      "only_b": 149
+    },
+    "Teacher vs H32": {
+      "intersection": 573,
+      "union": 683,
+      "jaccard_pct": 83.89458272327965,
+      "only_a": 42,
+      "only_b": 68
+    },
+    "Teacher vs H64": {
+      "intersection": 579,
+      "union": 684,
+      "jaccard_pct": 84.64912280701755,
+      "only_a": 36,
+      "only_b": 69
+    },
+    "Teacher vs H128": {
+      "intersection": 579,
+      "union": 683,
+      "jaccard_pct": 84.77306002928258,
+      "only_a": 36,
+      "only_b": 68
+    },
+    "Teacher vs H256": {
+      "intersection": 583,
+      "union": 685,
+      "jaccard_pct": 85.1094890510949,
+      "only_a": 32,
+      "only_b": 70
+    },
+    "H32 vs H64": {
+      "intersection": 608,
+      "union": 681,
+      "jaccard_pct": 89.28046989720998,
+      "only_a": 33,
+      "only_b": 40
+    },
+    "H32 vs H128": {
+      "intersection": 611,
+      "union": 677,
+      "jaccard_pct": 90.25110782865583,
+      "only_a": 30,
+      "only_b": 36
+    },
+    "H32 vs H256": {
+      "intersection": 608,
+      "union": 686,
+      "jaccard_pct": 88.62973760932945,
+      "only_a": 33,
+      "only_b": 45
+    },
+    "H64 vs H128": {
+      "intersection": 610,
+      "union": 685,
+      "jaccard_pct": 89.05109489051095,
+      "only_a": 38,
+      "only_b": 37
+    },
+    "H64 vs H256": {
+      "intersection": 613,
+      "union": 688,
+      "jaccard_pct": 89.09883720930233,
+      "only_a": 35,
+      "only_b": 40
+    },
+    "H128 vs H256": {
+      "intersection": 617,
+      "union": 683,
+      "jaccard_pct": 90.33674963396778,
+      "only_a": 30,
+      "only_b": 36
+    }
+  },
+  "all_six_intersection": 480,
+  "all_six_union": 736,
+  "prefix_four_intersection": 588,
+  "prefix_four_union": 721,
+  "matched8": {
+    "32": {
+      "mean_covered_questions": 512.875,
+      "Student": {
+        "intersection": 463.125,
+        "union": 557.75,
+        "jaccard_pct": 83.03619292810438,
+        "only_a": 44.875,
+        "only_b": 49.75
+      },
+      "Teacher": {
+        "intersection": 486.625,
+        "union": 641.25,
+        "jaccard_pct": 75.88581287159141,
+        "only_a": 128.375,
+        "only_b": 26.25
+      }
+    },
+    "64": {
+      "mean_covered_questions": 511.875,
+      "Student": {
+        "intersection": 462.25,
+        "union": 557.625,
+        "jaccard_pct": 82.90391878946213,
+        "only_a": 45.75,
+        "only_b": 49.625
+      },
+      "Teacher": {
+        "intersection": 486.25,
+        "union": 640.625,
+        "jaccard_pct": 75.90499883169576,
+        "only_a": 128.75,
+        "only_b": 25.625
+      }
+    },
+    "128": {
+      "mean_covered_questions": 510.5,
+      "Student": {
+        "intersection": 459.5,
+        "union": 559,
+        "jaccard_pct": 82.20474514112703,
+        "only_a": 48.5,
+        "only_b": 51
+      },
+      "Teacher": {
+        "intersection": 487.5,
+        "union": 638,
+        "jaccard_pct": 76.41235708200904,
+        "only_a": 127.5,
+        "only_b": 23
+      }
+    },
+    "256": {
+      "mean_covered_questions": 513.625,
+      "Student": {
+        "intersection": 457.75,
+        "union": 563.875,
+        "jaccard_pct": 81.18097492936094,
+        "only_a": 50.25,
+        "only_b": 55.875
+      },
+      "Teacher": {
+        "intersection": 487.25,
+        "union": 641.375,
+        "jaccard_pct": 75.97142889855691,
+        "only_a": 127.75,
+        "only_b": 26.375
+      }
+    }
+  }
+}

@@ -1,0 +1,3216 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-10-19",
+  "scope": "Local source and launch scripts; generated assets, browser copies and per-experiment scripts are documented separately.",
+  "physical_layout_policy": "Keep existing code and analysis paths; expose classified navigation aliases instead of moving them.",
+  "entries": [
+    {
+      "path": "analysis/bridge_length_analysis_20260901.py",
+      "category": "analysis/reproduction",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "json",
+        "math",
+        "pathlib",
+        "statistics"
+      ]
+    },
+    {
+      "path": "analysis/bridge_trace_shortening_accuracy_correlation_20260902.py",
+      "category": "analysis/reproduction",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "statistics"
+      ]
+    },
+    {
+      "path": "analysis/compare_bridge_h32_h64_h256_20260904.py",
+      "category": "analysis/reproduction",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "statistics"
+      ]
+    },
+    {
+      "path": "analysis/deepmath_train25_top16_rkl_logs/analyze_training.py",
+      "category": "analysis/reproduction",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "csv",
+        "json",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "analysis/plot_accuracy_lift_vs_trace_change_20260902.py",
+      "category": "visualization/plotting",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "matplotlib",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "analysis/plot_bridge_100pp_prefix_concentration_20260902.py",
+      "category": "visualization/plotting",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "matplotlib",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "analysis/plot_bridge_accuracy_lift_distribution_20260902.py",
+      "category": "visualization/plotting",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "matplotlib",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "analysis/plot_bridge_horizon_comparison_20260904.py",
+      "category": "visualization/plotting",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "csv",
+        "matplotlib",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "analysis/plot_bridge_lift_distribution_small_multiples_20260908.py",
+      "category": "visualization/plotting",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "matplotlib",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "analysis/plot_pass_all_8_comparison_20260908.py",
+      "category": "visualization/plotting",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "json",
+        "matplotlib",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "analysis/plot_pass_at_8_comparison_20260908.py",
+      "category": "visualization/plotting",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "json",
+        "matplotlib",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "analysis/plot_prefix_bridge_teacher_accuracy_20260908.py",
+      "category": "visualization/plotting",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "matplotlib",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "analysis/plot_rollout_shortening_accuracy_20260907.py",
+      "category": "visualization/plotting",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "csv",
+        "json",
+        "matplotlib",
+        "os",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "analysis/plot_teacher_trace_signed_distribution.py",
+      "category": "visualization/plotting",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "csv",
+        "matplotlib",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "analysis/prefix_rollout_trace_length_stats_20260902.py",
+      "category": "analysis/reproduction",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "json",
+        "math",
+        "pathlib",
+        "statistics"
+      ]
+    },
+    {
+      "path": "analysis/research_direction_review_20260911/recompute.py",
+      "category": "analysis/reproduction",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "collections",
+        "json",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "analysis/rollout_shortening_accuracy_20260907.py",
+      "category": "analysis/reproduction",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "argparse",
+        "csv",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "analysis/teacher_from_start_vs_prefix_length_20260909.py",
+      "category": "analysis/reproduction",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy"
+      ]
+    },
+    {
+      "path": "analysis/teacher_student_length_accuracy_correlation_20260908.py",
+      "category": "analysis/reproduction",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/__init__.py",
+      "category": "pipeline/anchor_selection",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/core.py",
+      "category": "pipeline/anchor_selection",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/launch_chrisclub_luna_remote_when_reachable.sh",
+      "category": "pipeline/anchor_selection",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/launch_deepmath_train25_anchor_judge_chrisclub_luna_login.sh",
+      "category": "pipeline/anchor_selection",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/launch_deepmath_train25_anchor_judge_openlux_luna_login.sh",
+      "category": "pipeline/anchor_selection",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/openlux_client.py",
+      "category": "pipeline/anchor_selection",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "pathlib",
+        "random",
+        "re",
+        "time",
+        "typing",
+        "urllib"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/run_anchor_judge_batch.py",
+      "category": "pipeline/anchor_selection",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "anchor_selector",
+        "argparse",
+        "collections",
+        "concurrent",
+        "json",
+        "os",
+        "pathlib",
+        "statistics",
+        "sys",
+        "threading",
+        "time",
+        "transformers",
+        "typing"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/run_anchor_selector.py",
+      "category": "pipeline/anchor_selection",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "anchor_selector",
+        "argparse",
+        "gc",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys",
+        "transformers",
+        "typing",
+        "vllm"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/run_anchor_shard.py",
+      "category": "pipeline/anchor_selection",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "anchor_selector",
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys",
+        "time",
+        "torch",
+        "transformers",
+        "typing",
+        "vllm"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/run_deepmath_train25_anchor_shard_worker.sh",
+      "category": "pipeline/anchor_selection",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/run_evidence_judge_calibration.py",
+      "category": "pipeline/anchor_selection",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "anchor_selector",
+        "argparse",
+        "collections",
+        "concurrent",
+        "json",
+        "math",
+        "pathlib",
+        "statistics",
+        "sys",
+        "time",
+        "typing"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/run_judge_calibration.py",
+      "category": "pipeline/anchor_selection",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "anchor_selector",
+        "argparse",
+        "collections",
+        "concurrent",
+        "json",
+        "pathlib",
+        "random",
+        "statistics",
+        "sys",
+        "time",
+        "transformers",
+        "typing"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/submit_deepmath_anchor_smoke.slurm",
+      "category": "pipeline/anchor_selection",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/submit_deepmath_nonthinking_anchor_random20.slurm",
+      "category": "pipeline/anchor_selection",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/submit_deepmath_nonthinking_anchor_smoke.slurm",
+      "category": "pipeline/anchor_selection",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/submit_deepmath_train25_anchor_judge_chrisclub_luna.slurm",
+      "category": "pipeline/anchor_selection",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/submit_deepmath_train25_anchor_judge_openlux_luna_resume.slurm",
+      "category": "pipeline/anchor_selection",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/submit_deepmath_train25_anchor_judge_remote.slurm",
+      "category": "pipeline/anchor_selection",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/submit_deepmath_train25_anchor_node8.slurm",
+      "category": "pipeline/anchor_selection",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/submit_deepmath_train25_anchor_shards.slurm",
+      "category": "pipeline/anchor_selection",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/submit_qwen35_27b_judge_8gpu.slurm",
+      "category": "pipeline/anchor_selection",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/submit_qwen35_27b_judge_calibration.slurm",
+      "category": "pipeline/anchor_selection",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/submit_qwen35_27b_judge_smoke.slurm",
+      "category": "pipeline/anchor_selection",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/tests/test_anchor_selector.py",
+      "category": "pipeline/anchor_selection",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "anchor_selector",
+        "concurrent",
+        "json",
+        "numpy",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "threading",
+        "time",
+        "unittest"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/anchor_selector/verify_qwen35_judge_deployment.py",
+      "category": "pipeline/anchor_selection",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "anchor_selector",
+        "hashlib",
+        "json",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/__init__.py",
+      "category": "pipeline/teacher_bridges",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/audit_bridge_inputs.py",
+      "category": "pipeline/teacher_bridges",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "bridge_generator",
+        "json",
+        "pathlib",
+        "statistics",
+        "sys",
+        "transformers"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/core.py",
+      "category": "pipeline/teacher_bridges",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "json",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/export_bridge_samples.py",
+      "category": "pipeline/teacher_bridges",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "pathlib",
+        "random",
+        "transformers",
+        "typing"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/run_bridge_batch.py",
+      "category": "pipeline/teacher_bridges",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "bridge_generator",
+        "json",
+        "pathlib",
+        "statistics",
+        "sys",
+        "time",
+        "transformers",
+        "typing",
+        "vllm"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/run_bridge_generator.py",
+      "category": "pipeline/teacher_bridges",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "bridge_generator",
+        "math",
+        "pathlib",
+        "sys",
+        "transformers",
+        "typing",
+        "vllm"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/run_bridge_h256_shard_worker.sh",
+      "category": "pipeline/teacher_bridges",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/submit_bridge_launch_probe_gnho036.slurm",
+      "category": "pipeline/teacher_bridges",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/submit_deepmath_bridge_h256_node8.slurm",
+      "category": "pipeline/teacher_bridges",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/submit_deepmath_bridge_h256_smoke32.slurm",
+      "category": "pipeline/teacher_bridges",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/submit_deepmath_bridge_h256_verify.slurm",
+      "category": "pipeline/teacher_bridges",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/submit_deepmath_bridge_smoke.slurm",
+      "category": "pipeline/teacher_bridges",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/tests/test_bridge_generator.py",
+      "category": "pipeline/teacher_bridges",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "bridge_generator",
+        "json",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "unittest"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/bridge_generator/verify_bridge_batch.py",
+      "category": "pipeline/teacher_bridges",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "bridge_generator",
+        "json",
+        "os",
+        "pathlib",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/__init__.py",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/aggregate_student_after_bridge_horizons_x8.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/aggregate_student_after_bridge_x8.py",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/aggregate_student_after_bridge_x8.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/analyze_student_prefix_rollout_single_job.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/analyze_student_rollout_single_job.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/analyze_teacher_rollout_array.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/analyze_teacher_rollout_shard.py",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "multiprocessing",
+        "os",
+        "pandas",
+        "pathlib",
+        "re",
+        "sys",
+        "time",
+        "typing",
+        "verl"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/analyze_teacher_rollout_single_job.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/audit_teacher_full_n8.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/merge_teacher_rollout_analysis.py",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "statistics",
+        "typing"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/merge_teacher_rollout_analysis.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/refresh_student_after_bridge_analysis_strict.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/repair_teacher_gpu_marker.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/run_full_rollout_batch.py",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "bridge_generator",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "statistics",
+        "sys",
+        "time",
+        "transformers",
+        "typing",
+        "vllm"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/run_full_rollout_node8.sh",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/run_full_rollout_worker.sh",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/run_student_after_bridge_replicate_group.sh",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/run_student_after_bridge_replicate_node8.sh",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/run_student_after_bridge_replicate_worker.sh",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/score_student_after_bridge_horizon_root.sh",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/score_student_after_bridge_horizon_shard.sh",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/score_student_after_bridge_horizons_x8.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/score_student_after_bridge_horizons_x8_single_node.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/score_student_after_bridge_horizons_x8_three_node_worker.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/score_student_after_bridge_replicates_array.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/score_student_after_bridge_root.sh",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/smoke_student_after_bridge_horizons_x8.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/smoke_student_after_bridge_n8.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/smoke_student_after_bridge_n8_retry1.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/smoke_student_after_bridge_n8_retry2.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/smoke_student_analysis_checkpoint_resume.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/smoke_student_from_anchor_prefix_n8.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/smoke_teacher_analysis_checkpoint_resume.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/smoke_teacher_full_n8.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/submit_student_after_bridge_horizons_x8_24gpu.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/submit_student_after_bridge_n8_node8.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/submit_student_after_bridge_replicates_2node.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/submit_student_from_anchor_prefix_n8_node8.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/submit_teacher_full_n8_node8.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/verify_and_refresh_student_after_bridge_n8_multieos.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/verify_full_rollout_batch.py",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "full_rollout",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "sys",
+        "transformers",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/verify_student_after_bridge_n8.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/verify_student_from_anchor_prefix_n8.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/full_rollout/verify_teacher_full_n8.slurm",
+      "category": "pipeline/continuation_evaluation",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/__init__.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/core.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "dataclasses",
+        "hashlib",
+        "json",
+        "pathlib",
+        "time",
+        "uuid"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/evaluate.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "argparse",
+        "full_rollout",
+        "json",
+        "online_rollout",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/launch_coordinator.sh",
+      "category": "pipeline/online_intervention",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/launch_coordinator_2nodes.sh",
+      "category": "pipeline/online_intervention",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/launch_workers.slurm",
+      "category": "pipeline/online_intervention",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/launch_workers_2nodes.slurm",
+      "category": "pipeline/online_intervention",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/migrate_run.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "argparse",
+        "dataclasses",
+        "fcntl",
+        "json",
+        "online_rollout",
+        "os",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/prefix_logprobs.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "hashlib",
+        "struct"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/prepare.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "online_rollout",
+        "pathlib",
+        "pyarrow",
+        "sys",
+        "transformers"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/probe_judge.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "anchor_selector",
+        "argparse",
+        "json",
+        "online_rollout",
+        "pathlib",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/random_policy.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "dataclasses",
+        "online_rollout",
+        "random"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/run.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "anchor_selector",
+        "argparse",
+        "concurrent",
+        "dataclasses",
+        "fcntl",
+        "json",
+        "numpy",
+        "online_rollout",
+        "os",
+        "pathlib",
+        "sys",
+        "time",
+        "transformers"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/run_random.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "anchor_selector",
+        "argparse",
+        "concurrent",
+        "dataclasses",
+        "fcntl",
+        "json",
+        "numpy",
+        "online_rollout",
+        "os",
+        "pathlib",
+        "sys",
+        "time",
+        "transformers"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/score.slurm",
+      "category": "pipeline/online_intervention",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/tests/test_backend.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "online_rollout",
+        "pathlib",
+        "sys",
+        "unittest"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/tests/test_online.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "copy",
+        "online_rollout",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "unittest"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/tests/test_prefix_logprobs.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "online_rollout",
+        "unittest"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/tests/test_random_policy.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "copy",
+        "online_rollout",
+        "unittest"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/validate_service.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "anchor_selector",
+        "argparse",
+        "json",
+        "online_rollout",
+        "pathlib",
+        "sys",
+        "transformers"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/worker.py",
+      "category": "pipeline/online_intervention",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "anchor_selector",
+        "argparse",
+        "fcntl",
+        "json",
+        "online_rollout",
+        "pathlib",
+        "sys",
+        "time",
+        "torch",
+        "vllm"
+      ]
+    },
+    {
+      "path": "ocrd_pipeline/online_rollout/worker_rank.sh",
+      "category": "pipeline/online_intervention",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/analyze_anchor_bifurcation_openlux.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "csv",
+        "json",
+        "math",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "scripts/analyze_deepmath_baseline_gap_position.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "json",
+        "numpy",
+        "pathlib",
+        "transformers",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/analyze_deepmath_nonthinking_unrecognized_tokens.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "base64",
+        "gzip",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "re",
+        "struct",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/analyze_format_free_failures.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "argparse",
+        "json",
+        "pathlib",
+        "score_format_free_final_answer",
+        "transformers"
+      ]
+    },
+    {
+      "path": "scripts/analyze_opd_eval.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "argparse",
+        "json",
+        "math",
+        "pathlib",
+        "re"
+      ]
+    },
+    {
+      "path": "scripts/analyze_sampled_reverse_kl.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "html",
+        "json",
+        "math",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "re",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/analyze_verl_val_only.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "argparse",
+        "json",
+        "math",
+        "pathlib",
+        "re"
+      ]
+    },
+    {
+      "path": "scripts/build_anchor_bifurcation_openrouter_inputs.py",
+      "category": "datasets/preparation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "pathlib",
+        "random",
+        "transformers",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/build_deepmath_17b_miss14b_token_vis.py",
+      "category": "visualization/viewers_and_exports",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "base64",
+        "gzip",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/build_deepmath_baseline_gap_vis.py",
+      "category": "visualization/viewers_and_exports",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "base64",
+        "gzip",
+        "json",
+        "numpy",
+        "pathlib",
+        "struct",
+        "transformers",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/build_deepmath_ge6_opd_data.py",
+      "category": "datasets/preparation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "copy",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pyarrow",
+        "transformers"
+      ]
+    },
+    {
+      "path": "scripts/build_deepmath_ge6_train15pct.py",
+      "category": "datasets/preparation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "copy",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "pyarrow",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/build_deepmath_ge6_train25pct_perdifficulty.py",
+      "category": "datasets/preparation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "copy",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "pyarrow",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/build_deepmath_student_top16_trace_vis.py",
+      "category": "visualization/viewers_and_exports",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "base64",
+        "gzip",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "scripts/build_deepmath_token_vis_payload.py",
+      "category": "visualization/viewers_and_exports",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "gzip",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/build_good_bridge_selection.py",
+      "category": "datasets/preparation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/build_gsm8k_math_opd_data.py",
+      "category": "datasets/preparation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "datasets",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "scripts/compact_json_files.py",
+      "category": "maintenance/utilities",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "os",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "path": "scripts/compare_deepmath_ge6_native_nonthinking.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "json",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/compare_response_length_evals.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "argparse",
+        "json",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "scripts/download_deepmath_103k.sh",
+      "category": "datasets/preparation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/eval_qwen_opd_models.py",
+      "category": "evaluation/scoring",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "argparse",
+        "datasets",
+        "json",
+        "pathlib",
+        "transformers",
+        "verl",
+        "vllm"
+      ]
+    },
+    {
+      "path": "scripts/export_bridge_100pp_browser_data.py",
+      "category": "visualization/viewers_and_exports",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "io",
+        "json",
+        "pathlib",
+        "sys",
+        "tarfile",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/export_opd_token_heatmap.py",
+      "category": "visualization/viewers_and_exports",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "base64",
+        "gzip",
+        "html",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/inspect_math_final_answers.py",
+      "category": "validation/preflight_and_integrity",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "argparse",
+        "json",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "scripts/launch_anchor_bifurcation_openrouter.sh",
+      "category": "evaluation/generation_and_orchestration",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/make_opd_smoke_data.py",
+      "category": "datasets/preparation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "datasets",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "scripts/merge_deepmath_checkpoint_nonthinking_x8.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "pathlib",
+        "pyarrow",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/merge_deepmath_eval_diagnostic.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/merge_deepmath_ge6_baseline.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "pathlib",
+        "pyarrow",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/merge_deepmath_ge6_native_nonthinking.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "pathlib",
+        "pyarrow",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/merge_deepmath_ge6_step53_eval.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "pyarrow",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/merge_deepmath_student_top16_trace_diagnostic.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "scripts/merge_deepmath_teacher_rollouts.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/merge_deepmath_train25_nonthinking_scores.py",
+      "category": "analysis/aggregation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/prepare_deepmath_ge6_eval_shards.py",
+      "category": "datasets/preparation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "pandas",
+        "pathlib",
+        "pyarrow"
+      ]
+    },
+    {
+      "path": "scripts/prepare_deepmath_stratified_sample.py",
+      "category": "datasets/preparation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pyarrow"
+      ]
+    },
+    {
+      "path": "scripts/prepare_deepmath_train25_nonthinking_rollout.py",
+      "category": "datasets/preparation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "pathlib",
+        "pyarrow",
+        "shutil",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/resume_three_checkpoint_nonthinking_x8_generation_8h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/run_anchor_bifurcation_openrouter.py",
+      "category": "evaluation/generation_and_orchestration",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "random",
+        "time",
+        "typing",
+        "urllib"
+      ]
+    },
+    {
+      "path": "scripts/run_bridge_top16_8h800_single_node_launcher.sh",
+      "category": "training/on_policy_distillation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/run_bridge_top16_reverse_kl_train.py",
+      "category": "training/on_policy_distillation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "gc",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "random",
+        "run_deepmath_full_vocab_reverse_kl_train",
+        "shutil",
+        "sys",
+        "time",
+        "torch",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/run_deepmath_baseline_sample_gap.py",
+      "category": "evaluation/generation_and_orchestration",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "gc",
+        "json",
+        "numpy",
+        "pathlib",
+        "time",
+        "torch",
+        "transformers",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/run_deepmath_checkpoint_nonthinking_x8.py",
+      "category": "evaluation/generation_and_orchestration",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "os",
+        "pandas",
+        "pathlib",
+        "run_opd_logit_diagnostic",
+        "time",
+        "transformers",
+        "typing",
+        "vllm"
+      ]
+    },
+    {
+      "path": "scripts/run_deepmath_full_vocab_reverse_kl_train.py",
+      "category": "training/on_policy_distillation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "datetime",
+        "gc",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "pyarrow",
+        "random",
+        "shutil",
+        "time",
+        "torch",
+        "transformers",
+        "typing",
+        "vllm"
+      ]
+    },
+    {
+      "path": "scripts/run_deepmath_student_top16_trace_diagnostic.py",
+      "category": "evaluation/generation_and_orchestration",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "gc",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "time",
+        "torch",
+        "transformers",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/run_deepmath_top16_16h800_launcher.sh",
+      "category": "training/on_policy_distillation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/run_deepmath_top16_8h800_single_node_launcher.sh",
+      "category": "training/on_policy_distillation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/run_deepmath_train25_nonthinking_rollout.py",
+      "category": "training/on_policy_distillation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "os",
+        "pandas",
+        "pathlib",
+        "time",
+        "transformers",
+        "typing",
+        "vllm"
+      ]
+    },
+    {
+      "path": "scripts/run_full_vocab_reverse_kl_smoke.py",
+      "category": "training/on_policy_distillation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "gc",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "pyarrow",
+        "time",
+        "torch",
+        "transformers",
+        "typing",
+        "vllm"
+      ]
+    },
+    {
+      "path": "scripts/run_opd_logit_diagnostic.py",
+      "category": "evaluation/generation_and_orchestration",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "gc",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "re",
+        "time",
+        "torch",
+        "transformers",
+        "typing",
+        "verl",
+        "vllm"
+      ]
+    },
+    {
+      "path": "scripts/run_qwen3_1_7b_from_14b_reverse_kl_deepmath_ge6.sh",
+      "category": "training/on_policy_distillation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/run_qwen3_1_7b_math500_baseline.sh",
+      "category": "evaluation/generation_and_orchestration",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/run_qwen3_4b_from_14b_gkd_gsm8k_math.sh",
+      "category": "training/on_policy_distillation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/run_qwen3_4b_from_14b_gkd_smoke.sh",
+      "category": "training/on_policy_distillation",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/run_qwen3_hard_eval.py",
+      "category": "evaluation/generation_and_orchestration",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "evalscope",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "scripts/run_qwen3_hard_eval.sh",
+      "category": "evaluation/generation_and_orchestration",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/run_qwen3_hard_eval_nonthinking.py",
+      "category": "evaluation/generation_and_orchestration",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "evalscope",
+        "multiprocessing",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "scripts/run_qwen3_hard_eval_nonthinking.sh",
+      "category": "evaluation/generation_and_orchestration",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/run_qwen3_math500_baseline.py",
+      "category": "evaluation/generation_and_orchestration",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "evalscope"
+      ]
+    },
+    {
+      "path": "scripts/run_student_only_nonthinking_x8_4h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/run_verl_val_only_qwen.sh",
+      "category": "evaluation/generation_and_orchestration",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/run_vllm_api_no_metrics.py",
+      "category": "evaluation/generation_and_orchestration",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "runpy",
+        "vllm"
+      ]
+    },
+    {
+      "path": "scripts/scan_deepmath_full_prompt_lengths.py",
+      "category": "datasets/preparation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "numpy",
+        "pathlib",
+        "pyarrow",
+        "transformers"
+      ]
+    },
+    {
+      "path": "scripts/score_deepmath_checkpoint_nonthinking_x8.py",
+      "category": "evaluation/scoring",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "concurrent",
+        "hashlib",
+        "json",
+        "pathlib",
+        "run_opd_logit_diagnostic",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/score_deepmath_train25_nonthinking_rollout.py",
+      "category": "evaluation/scoring",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "pathlib",
+        "run_opd_logit_diagnostic",
+        "time",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/score_format_free_final_answer.py",
+      "category": "evaluation/scoring",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "argparse",
+        "decimal",
+        "fractions",
+        "json",
+        "math",
+        "pathlib",
+        "re",
+        "verl"
+      ]
+    },
+    {
+      "path": "scripts/score_student_only_nonthinking_x8_cpu.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/score_three_checkpoint_nonthinking_x8_cpu.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/serve_deepmath_baseline_gap.py",
+      "category": "visualization/viewers_and_exports",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "http",
+        "pathlib",
+        "re",
+        "subprocess",
+        "threading"
+      ]
+    },
+    {
+      "path": "scripts/smoke_three_checkpoint_nonthinking_x8_h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_bridge_top16_rkl_formal_8h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_bridge_top16_rkl_smoke_8h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_build_deepmath_17b_miss14b_vis.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_build_deepmath_ge6_opd_data.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_build_deepmath_ge6_train15pct.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_build_deepmath_ge6_train25pct_perdifficulty.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_cuda_probe_h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_17b_diagnostic_full_h100.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_17b_diagnostic_merge.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_17b_diagnostic_smoke_h100.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_17b_top16_merge_vis.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_17b_top16_rescore_h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_baseline_gap_position_analysis.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_baseline_sample_gap_h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_baseline_sample_gap_merge.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_eval_diagnostic_full_h100.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_eval_diagnostic_merge.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_eval_diagnostic_smoke_h100.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_17b_baseline_h100.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_17b_baseline_h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_17b_baseline_merge.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_full_vocab_reverse_kl_formal.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_full_vocab_reverse_kl_smoke.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_native_nonthinking_compare.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_native_nonthinking_h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_native_nonthinking_merge.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_top16_rkl_formal_16h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_top16_rkl_remaining_eval_h100.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_top16_rkl_remaining_eval_h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_top16_rkl_remaining_eval_merge.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_top16_rkl_smoke2_16h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_top16_rkl_smoke_16h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_top16_rkl_step53_eval_h100.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_ge6_top16_rkl_step53_eval_merge.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_maxlen_merge.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_maxlen_smoke_h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_maxlen_student_h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_maxlen_teacher_h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_maxlen_teacher_merge.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_nonthinking_sample_gap_h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_nonthinking_sample_gap_merge.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_student_top16_trace_diagnostic_h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_student_top16_trace_merge.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_train25_14b_nonthinking_rollout_8h800_single_node.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_train25_14b_nonthinking_rollout_h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_train25_nonthinking_ckpt_eval_8h800_single_node.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_train25_nonthinking_ckpt_eval_merge.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_train25_nonthinking_rollout_h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_train25_nonthinking_top16_rkl_formal_8h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_deepmath_train25_nonthinking_top16_rkl_smoke_8h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_good_bridge_top16_rkl_formal_8h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_good_bridge_top16_rkl_smoke_8h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_merge_deepmath_train25_14b_nonthinking_scores.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_merge_deepmath_train25_nonthinking_scores.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_opd_logit_diagnostic_aime24.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_opd_logit_diagnostic_dataset.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_prepare_deepmath_ge6_17b_baseline.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_prepare_deepmath_train25_14b_nonthinking_rollout.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_prepare_deepmath_train25_14b_nonthinking_rollout_8h800_single_node.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_prepare_deepmath_train25_nonthinking_rollout.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_qwen3_1_7b_from_14b_reverse_kl_deepmath_ge6.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_qwen3_1_7b_from_14b_reverse_kl_deepmath_ge6_smoke.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_qwen3_1_7b_math500_baseline_h100.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_qwen3_4b_from_14b_gkd_gsm8k_math.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_qwen3_4b_from_14b_gkd_smoke.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_qwen3_hard_eval_full.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_qwen3_hard_eval_nonthinking_full.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_qwen3_hard_eval_nonthinking_resume_4b.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_qwen3_hard_eval_nonthinking_smoke.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_qwen3_hard_eval_smoke.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_qwen_opd_baseline_eval.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_score_deepmath_train25_14b_nonthinking_rollout.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_score_deepmath_train25_nonthinking_rollout.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_smoke_deepmath_train25_14b_nonthinking_rollout.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_smoke_deepmath_train25_nonthinking_rollout.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_three_checkpoint_nonthinking_x8_8h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_verify_bridge_top16_rkl_formal.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_verify_deepmath_ge6_train25pct_perdifficulty.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_verify_deepmath_maxlen.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_verify_deepmath_train25_14b_nonthinking_rollout.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_verify_deepmath_train25_14b_nonthinking_rollout_8h800_single_node.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_verify_deepmath_train25_nonthinking_rollout.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_verify_deepmath_train25_nonthinking_top16_rkl_8h800.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_verify_good_bridge_top16_rkl_formal.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_verl_val_only_qwen.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_verl_val_only_qwen_4096.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/submit_verl_val_only_qwen_max.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/sync_deepmath_baseline_gap_artifact.sh",
+      "category": "visualization/viewers_and_exports",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/test1000_anchor_bridge_20260910/aggregate.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/test1000_anchor_bridge_20260910/aggregate_n8x8.py",
+      "category": "maintenance/utilities",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "scripts/test1000_anchor_bridge_20260910/anchor_candidates_node8.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/test1000_anchor_bridge_20260910/bridges_node8.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/test1000_anchor_bridge_20260910/judge_anchors_openlux.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/test1000_anchor_bridge_20260910/judge_and_submit_downstream_login.sh",
+      "category": "maintenance/utilities",
+      "kind": "shell",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/test1000_anchor_bridge_20260910/prepare_anchor_shards.py",
+      "category": "datasets/preparation",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "scripts/test1000_anchor_bridge_20260910/rollout_replicate_node8.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/test1000_anchor_bridge_20260910/score_replicate_cpu.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/test_nonthinking_symbolic_timeout.py",
+      "category": "validation/preflight_and_integrity",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "evalscope",
+        "run_qwen3_hard_eval_nonthinking"
+      ]
+    },
+    {
+      "path": "scripts/validate_verl_opd_env.py",
+      "category": "validation/preflight_and_integrity",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "numpy",
+        "random",
+        "torch"
+      ]
+    },
+    {
+      "path": "scripts/validate_verl_opd_env.slurm",
+      "category": "launch/slurm",
+      "kind": "slurm_launch",
+      "keep_physical_path": true,
+      "imports": []
+    },
+    {
+      "path": "scripts/verify_bridge_top16_reverse_kl_train.py",
+      "category": "validation/preflight_and_integrity",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "torch",
+        "transformers"
+      ]
+    },
+    {
+      "path": "scripts/verify_deepmath_eval.py",
+      "category": "validation/preflight_and_integrity",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "pyarrow",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/verify_deepmath_full_vocab_formal_preflight.py",
+      "category": "validation/preflight_and_integrity",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "importlib",
+        "json",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "scripts/verify_deepmath_ge6_train15pct.py",
+      "category": "validation/preflight_and_integrity",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "hashlib",
+        "json",
+        "pathlib",
+        "pyarrow"
+      ]
+    },
+    {
+      "path": "scripts/verify_deepmath_ge6_train25pct_perdifficulty.py",
+      "category": "validation/preflight_and_integrity",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "pyarrow",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/verify_deepmath_maxlen_eval.py",
+      "category": "validation/preflight_and_integrity",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "json",
+        "math",
+        "pathlib",
+        "pyarrow",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/verify_deepmath_top16_smoke.py",
+      "category": "validation/preflight_and_integrity",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "math",
+        "pathlib",
+        "torch",
+        "transformers"
+      ]
+    },
+    {
+      "path": "scripts/verify_deepmath_train25_14b_nonthinking_rollout.py",
+      "category": "validation/preflight_and_integrity",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "json",
+        "pathlib",
+        "sys",
+        "verify_deepmath_train25_nonthinking_rollout"
+      ]
+    },
+    {
+      "path": "scripts/verify_deepmath_train25_nonthinking_rollout.py",
+      "category": "validation/preflight_and_integrity",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "pyarrow",
+        "transformers",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/verify_hf_checkpoint.py",
+      "category": "validation/preflight_and_integrity",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "argparse",
+        "math",
+        "pathlib",
+        "safetensors",
+        "transformers"
+      ]
+    },
+    {
+      "path": "scripts/verify_qwen3_hard_eval_nonthinking.py",
+      "category": "validation/preflight_and_integrity",
+      "kind": "python",
+      "keep_physical_path": true,
+      "imports": [
+        "__future__",
+        "collections",
+        "glob",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess"
+      ]
+    }
+  ]
+}

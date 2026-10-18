@@ -1,0 +1,31 @@
+{
+  "job_id": 107833,
+  "generation_job": 107647,
+  "status": "COMPLETED",
+  "node": "gnho020",
+  "cpus": 32,
+  "memory_gib": 64,
+  "gpus": 0,
+  "rows": 4571,
+  "code_rows": 2317,
+  "math_rows": 2254,
+  "judge_model": "gpt-4o-mini",
+  "destination": "api.openlux.ai",
+  "timeout_policy": "trace_timeout counted wrong; answer_correct retained separately",
+  "relay_host": "login02",
+  "relay_probe": "passed",
+  "code_sha256": {
+    "system_prompt.txt": "b0baf7c0e5d392d0ae10c286c7c0da4f941e44ba72a5d17796667fa88d42b3af",
+    "judge_client.py": "3daea1a2d6aa8ae10c56ca63bef74106e49f73ca51e62035b7bfe435d4d4e1c9",
+    "relay.py": "dfd7009b570289407c9e42176a58b780ac2219d831ae038dc1898f4a1b1da66b",
+    "code_scorer.py": "d3cadeadac0c8094855b9472dd8800988284a2e46fece54c9f3b02e6ced186f7",
+    "score.slurm": "c61c34335fa6cd22a8ea4f087bc2d1594f1eb312277bb0f32230bed7d2729272",
+    "ablation_core.py": "d142ae93b46dde738ae0d505204bd5cf6f3a5c88a6ec092173eb09d5d4fb00cb",
+    "score_one.py": "77111979c7536c337ade84cc131bfe680d558b3e0550bb5f339e21d8aec4fb0e",
+    "score.py": "d576aa99cb76f9d0d8858124e334a0b4b870142c7a8ac1bb2b439f6e5ed1f4e1"
+  },
+  "elapsed": "00:06:06",
+  "correct": 2014,
+  "accuracy": 0.4406038066068694,
+  "scoring_errors": 0
+}

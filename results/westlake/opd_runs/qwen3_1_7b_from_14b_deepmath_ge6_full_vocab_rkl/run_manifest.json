@@ -1,0 +1,32 @@
+{
+  "chunk_tokens": 256,
+  "data_manifest_sha256": "d07e2ec2c4e5f9bfa390f7e264c95d556c66b732fda269490b2d83808a639941",
+  "global_batch_size": 64,
+  "local_batch_size": 16,
+  "max_model_len": 40960,
+  "max_prompt_tokens": 695,
+  "max_response_tokens": 40264,
+  "model_vocab_size": 151936,
+  "objective": "exact_full_model_vocabulary_kl_student_to_teacher",
+  "order_sha256": "2c53556a5b696741531342a8cfda478310be8b17935707ecfe95736b5950a27d",
+  "save_steps": [
+    177,
+    354,
+    531,
+    708,
+    885
+  ],
+  "seed": 20260810,
+  "status": "DEEPMATH_FULL_VOCAB_RKL_FORMAL_INITIALIZED",
+  "student_model": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+  "teacher_model": "/storage/yukaichengLab/share/model/Qwen3-14B",
+  "temperature": 1.0,
+  "thinking": true,
+  "tokenizer_vocab_size": 151669,
+  "top_k": -1,
+  "top_p": 1.0,
+  "total_steps": 885,
+  "train_file": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_data/deepmath_ge6_opd/train.parquet",
+  "train_file_sha256": "adf7972d6f2f5811f10ff69474fa08f4d1e60616b4c498174583f3591649bad5",
+  "train_rows": 56640
+}

@@ -1,0 +1,18 @@
+{
+  "status": "VERIFIED",
+  "rows": 4571,
+  "source_hashes_checked": 4571,
+  "preserved_completed_checked": 120,
+  "correct": 2768,
+  "trace_timeout_pre_repair_exposure": 78,
+  "trace_timeout_fresh": 12,
+  "k_histogram": {
+    "1": 45046,
+    "2": 2297,
+    "3": 189,
+    "4": 17,
+    "6": 1,
+    "5": 3
+  },
+  "mean_k": 1.0576830063297793
+}

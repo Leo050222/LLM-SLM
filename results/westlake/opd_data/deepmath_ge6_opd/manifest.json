@@ -1,0 +1,84 @@
+{
+  "dataset": "zwhe99/DeepMath-103K",
+  "difficulty_counts": {
+    "10.0": 3,
+    "6.0": 17488,
+    "6.5": 7750,
+    "7.0": 8561,
+    "7.5": 6746,
+    "8.0": 11686,
+    "8.5": 3989,
+    "9.0": 1356,
+    "9.5": 51
+  },
+  "files": {
+    "smoke_train.parquet": {
+      "rows": 4,
+      "sha256": "098e56c251e02d54e3d436aaac23aaf5217d87e0ed01c1af640eaeac99b06720"
+    },
+    "test_1000.parquet": {
+      "rows": 1000,
+      "sha256": "6ef8e66d181b7522bad2904ad1fcf20d8fc152af0c9d7eb05e07a9f2f0415ae0"
+    },
+    "train.parquet": {
+      "rows": 56640,
+      "sha256": "adf7972d6f2f5811f10ff69474fa08f4d1e60616b4c498174583f3591649bad5"
+    }
+  },
+  "filtered_unique_rows": 57630,
+  "min_difficulty": 6.0,
+  "prompt_tokens": {
+    "max": 695,
+    "max_source_index": 12879,
+    "min": 35,
+    "p50": 91.0,
+    "p90": 153.0,
+    "p95": 181.0,
+    "p99": 254.0,
+    "p999": 389.0
+  },
+  "revision": "5cf055d1fe3d7a2eb19719ac020211469736ae44",
+  "seed": 20260810,
+  "smoke_source_indices": [
+    12879,
+    28981,
+    23125,
+    72565
+  ],
+  "source_rows": 103022,
+  "source_strata": 504,
+  "split": "difficulty x full topic proportional largest remainder",
+  "status": "DEEPMATH_GE6_OPD_DATA_OK",
+  "test_difficulty_counts": {
+    "6.0": 307,
+    "6.5": 135,
+    "7.0": 152,
+    "7.5": 118,
+    "8.0": 198,
+    "8.5": 67,
+    "9.0": 23
+  },
+  "test_rows": 1000,
+  "test_strata": 262,
+  "tokenizer_files": {
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+  },
+  "topics": 78,
+  "train_batch_size": 64,
+  "train_difficulty_counts": {
+    "10.0": 3,
+    "6.0": 17181,
+    "6.5": 7615,
+    "7.0": 8409,
+    "7.5": 6628,
+    "8.0": 11488,
+    "8.5": 3922,
+    "9.0": 1333,
+    "9.5": 51
+  },
+  "train_padding_rows": 10,
+  "train_steps": 885,
+  "train_total_rows": 56640,
+  "train_unique_rows": 56630
+}

@@ -1,0 +1,27 @@
+{
+  "status": "SUBMITTED",
+  "gpus": 8,
+  "nodes": 1,
+  "replicas": 4,
+  "concurrency": 128,
+  "rows": 4631,
+  "main_model": "Qwen3-1.7B",
+  "intervention_model": "Qwen3-8B",
+  "threshold": 2.0,
+  "k": 1,
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": -1
+  },
+  "topk": 100,
+  "trigger": "main_minus_intervention_gt_2",
+  "output_root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_ablation/weak1p7_strong8_reprompt_greedy_t2_k1_mainminus_20261005",
+  "code_root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_scripts/weak1p7_strong8_reprompt_greedy_t2_k1_mainminus_20261005",
+  "remote_code_root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_scripts/weak1p7_strong8_reprompt_greedy_t2_k1_mainminus_20261005",
+  "remote_output_root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_ablation/weak1p7_strong8_reprompt_greedy_t2_k1_mainminus_20261005",
+  "job_id": 115370,
+  "node": "gnho011",
+  "submitted_at": "2026-10-05T18:00:00+08:00",
+  "startup_smoke": "pending"
+}

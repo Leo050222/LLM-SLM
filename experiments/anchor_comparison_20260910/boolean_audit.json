@@ -1,0 +1,1573 @@
+{
+  "changed_count": 8047,
+  "categories": {
+    "bare / with_tail": 3807,
+    "bare / bare": 4240
+  },
+  "old_methods": {
+    "symbolic": 8047
+  },
+  "target_types_questions": {
+    "bare": 277
+  },
+  "affected_questions": 260,
+  "old_solved": 626,
+  "new_solved": 876,
+  "promoted_questions": 250,
+  "top_pairs": [
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes}",
+      "count": 2351
+    },
+    {
+      "target": "No",
+      "pred": "\\text{No}",
+      "count": 796
+    },
+    {
+      "target": "True",
+      "pred": "\\text{True}",
+      "count": 623
+    },
+    {
+      "target": "False",
+      "pred": "\\text{False}",
+      "count": 284
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, such a function exists.}",
+      "count": 94
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes.}",
+      "count": 89
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, it is possible.}",
+      "count": 60
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, } f \\text{ has a fixed point.}",
+      "count": 55
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, } B \\text{ must be continuous.}",
+      "count": 51
+    },
+    {
+      "target": "true",
+      "pred": "\\text{true}",
+      "count": 50
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, the quadrilateral must be a square.}",
+      "count": 47
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, the subset is compact.}",
+      "count": 44
+    },
+    {
+      "target": "No",
+      "pred": "\\text{No, } A \\text{ is not guaranteed to be diagonalizable over } \\mathbb{R}",
+      "count": 44
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, } 2^{xy} \\text{ is a positive definite kernel on } \\mathbb{N}",
+      "count": 44
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, it is possible for one infinity to be larger than another.}",
+      "count": 43
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, } f = \\limsup_n f_n \\text{ is measurable.}",
+      "count": 42
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, the two constructions of } K_0(A) \\text{ are isomorphic.}",
+      "count": 42
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, the converse is true.}",
+      "count": 41
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, the smallest complete metric space containing a given metric space is unique up to isometry.}",
+      "count": 38
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, } S \\text{ is necessarily a group.}",
+      "count": 35
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, the characteristic of } F \\text{ is strictly positive.}",
+      "count": 34
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, } f \\text{ is necessarily bounded in the punctured disk.}",
+      "count": 34
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, such a function must be a polynomial.}",
+      "count": 34
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, } f \\text{ is necessarily an isomorphism.}",
+      "count": 33
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, } A \\text{ and } B \\text{ must be square matrices.}",
+      "count": 33
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, every coordinate } a_i \\text{ is algebraic over } \\mathbb{Q}",
+      "count": 32
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, every smooth curve has a length.}",
+      "count": 32
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, such an automorphism exists.}",
+      "count": 31
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, it is always possible.}",
+      "count": 30
+    },
+    {
+      "target": "Yes",
+      "pred": "\\text{Yes, if every subset of } X \\text{ is bounded, then } X \\text{ itself is bounded.}",
+      "count": 30
+    }
+  ],
+  "examples": {
+    "bare / with_tail": [
+      {
+        "i": 3,
+        "target": "Yes",
+        "pred": "\\text{Yes, every traceless matrix is unitarily similar to a zero-diagonal matrix.}",
+        "problem": "Is every square traceless matrix unitarily similar to a zero-diagonal matrix? Provide a proof or counterexample to support your answer."
+      },
+      {
+        "i": 3,
+        "target": "Yes",
+        "pred": "\\text{Yes, every square traceless matrix is unitarily similar to a zero-diagonal matrix.}",
+        "problem": "Is every square traceless matrix unitarily similar to a zero-diagonal matrix? Provide a proof or counterexample to support your answer."
+      },
+      {
+        "i": 3,
+        "target": "Yes",
+        "pred": "\\text{Yes, every traceless matrix is unitarily similar to a zero-diagonal matrix.}",
+        "problem": "Is every square traceless matrix unitarily similar to a zero-diagonal matrix? Provide a proof or counterexample to support your answer."
+      },
+      {
+        "i": 3,
+        "target": "Yes",
+        "pred": "\\text{Yes, every traceless matrix is unitarily similar to a zero-diagonal matrix.}",
+        "problem": "Is every square traceless matrix unitarily similar to a zero-diagonal matrix? Provide a proof or counterexample to support your answer."
+      },
+      {
+        "i": 3,
+        "target": "Yes",
+        "pred": "\\text{Yes, every traceless matrix is unitarily similar to a zero-diagonal matrix.}",
+        "problem": "Is every square traceless matrix unitarily similar to a zero-diagonal matrix? Provide a proof or counterexample to support your answer."
+      },
+      {
+        "i": 14,
+        "target": "Yes",
+        "pred": "\\text{Yes, any bending of } M \\text{ must leave the bases planar.}",
+        "problem": "Consider the manifold \\(M=\\{(\\cos(\\theta),\\sin(\\theta),z):\\theta\\in[0,2\\pi],z\\in[0,1]\\}\\). A bending of \\(M\\) is defined as a smooth map \\(\\Gamma:M\\times [0,1]\\rightarrow \\mathbb{R}^3\\) such that:\n1) \\(\\Gamma[M\\times\\{t\\}]\\) is a submanifold with boundary of \\(\\mathbb{R}^3\\) (denoted as \\(M_t\\)).\n2) For every \\(m\\in M\\), \\(\\Gamma(m,0)=m\\).\n3) For every \\(t\\in[0,1]\\), the map \\(m\\rightarrow \\Gamma(m,t)\\) is an isometry between \\(M\\) and \\(M_t\\).\n\nMust any bending of \\(M\\) leave the bases planar?"
+      },
+      {
+        "i": 14,
+        "target": "Yes",
+        "pred": "\\text{Yes, any bending of } M \\text{ must leave the bases planar.}",
+        "problem": "Consider the manifold \\(M=\\{(\\cos(\\theta),\\sin(\\theta),z):\\theta\\in[0,2\\pi],z\\in[0,1]\\}\\). A bending of \\(M\\) is defined as a smooth map \\(\\Gamma:M\\times [0,1]\\rightarrow \\mathbb{R}^3\\) such that:\n1) \\(\\Gamma[M\\times\\{t\\}]\\) is a submanifold with boundary of \\(\\mathbb{R}^3\\) (denoted as \\(M_t\\)).\n2) For every \\(m\\in M\\), \\(\\Gamma(m,0)=m\\).\n3) For every \\(t\\in[0,1]\\), the map \\(m\\rightarrow \\Gamma(m,t)\\) is an isometry between \\(M\\) and \\(M_t\\).\n\nMust any bending of \\(M\\) leave the bases planar?"
+      },
+      {
+        "i": 14,
+        "target": "Yes",
+        "pred": "\\text{Yes, any bending of } M \\text{ must leave the bases planar.}",
+        "problem": "Consider the manifold \\(M=\\{(\\cos(\\theta),\\sin(\\theta),z):\\theta\\in[0,2\\pi],z\\in[0,1]\\}\\). A bending of \\(M\\) is defined as a smooth map \\(\\Gamma:M\\times [0,1]\\rightarrow \\mathbb{R}^3\\) such that:\n1) \\(\\Gamma[M\\times\\{t\\}]\\) is a submanifold with boundary of \\(\\mathbb{R}^3\\) (denoted as \\(M_t\\)).\n2) For every \\(m\\in M\\), \\(\\Gamma(m,0)=m\\).\n3) For every \\(t\\in[0,1]\\), the map \\(m\\rightarrow \\Gamma(m,t)\\) is an isometry between \\(M\\) and \\(M_t\\).\n\nMust any bending of \\(M\\) leave the bases planar?"
+      }
+    ],
+    "bare / bare": [
+      {
+        "i": 3,
+        "target": "Yes",
+        "pred": "\\text{Yes}",
+        "problem": "Is every square traceless matrix unitarily similar to a zero-diagonal matrix? Provide a proof or counterexample to support your answer."
+      },
+      {
+        "i": 3,
+        "target": "Yes",
+        "pred": "\\text{Yes}",
+        "problem": "Is every square traceless matrix unitarily similar to a zero-diagonal matrix? Provide a proof or counterexample to support your answer."
+      },
+      {
+        "i": 14,
+        "target": "Yes",
+        "pred": "\\text{Yes}",
+        "problem": "Consider the manifold \\(M=\\{(\\cos(\\theta),\\sin(\\theta),z):\\theta\\in[0,2\\pi],z\\in[0,1]\\}\\). A bending of \\(M\\) is defined as a smooth map \\(\\Gamma:M\\times [0,1]\\rightarrow \\mathbb{R}^3\\) such that:\n1) \\(\\Gamma[M\\times\\{t\\}]\\) is a submanifold with boundary of \\(\\mathbb{R}^3\\) (denoted as \\(M_t\\)).\n2) For every \\(m\\in M\\), \\(\\Gamma(m,0)=m\\).\n3) For every \\(t\\in[0,1]\\), the map \\(m\\rightarrow \\Gamma(m,t)\\) is an isometry between \\(M\\) and \\(M_t\\).\n\nMust any bending of \\(M\\) leave the bases planar?"
+      },
+      {
+        "i": 14,
+        "target": "Yes",
+        "pred": "\\text{Yes.}",
+        "problem": "Consider the manifold \\(M=\\{(\\cos(\\theta),\\sin(\\theta),z):\\theta\\in[0,2\\pi],z\\in[0,1]\\}\\). A bending of \\(M\\) is defined as a smooth map \\(\\Gamma:M\\times [0,1]\\rightarrow \\mathbb{R}^3\\) such that:\n1) \\(\\Gamma[M\\times\\{t\\}]\\) is a submanifold with boundary of \\(\\mathbb{R}^3\\) (denoted as \\(M_t\\)).\n2) For every \\(m\\in M\\), \\(\\Gamma(m,0)=m\\).\n3) For every \\(t\\in[0,1]\\), the map \\(m\\rightarrow \\Gamma(m,t)\\) is an isometry between \\(M\\) and \\(M_t\\).\n\nMust any bending of \\(M\\) leave the bases planar?"
+      },
+      {
+        "i": 14,
+        "target": "Yes",
+        "pred": "\\text{Yes}",
+        "problem": "Consider the manifold \\(M=\\{(\\cos(\\theta),\\sin(\\theta),z):\\theta\\in[0,2\\pi],z\\in[0,1]\\}\\). A bending of \\(M\\) is defined as a smooth map \\(\\Gamma:M\\times [0,1]\\rightarrow \\mathbb{R}^3\\) such that:\n1) \\(\\Gamma[M\\times\\{t\\}]\\) is a submanifold with boundary of \\(\\mathbb{R}^3\\) (denoted as \\(M_t\\)).\n2) For every \\(m\\in M\\), \\(\\Gamma(m,0)=m\\).\n3) For every \\(t\\in[0,1]\\), the map \\(m\\rightarrow \\Gamma(m,t)\\) is an isometry between \\(M\\) and \\(M_t\\).\n\nMust any bending of \\(M\\) leave the bases planar?"
+      },
+      {
+        "i": 14,
+        "target": "Yes",
+        "pred": "\\text{Yes}",
+        "problem": "Consider the manifold \\(M=\\{(\\cos(\\theta),\\sin(\\theta),z):\\theta\\in[0,2\\pi],z\\in[0,1]\\}\\). A bending of \\(M\\) is defined as a smooth map \\(\\Gamma:M\\times [0,1]\\rightarrow \\mathbb{R}^3\\) such that:\n1) \\(\\Gamma[M\\times\\{t\\}]\\) is a submanifold with boundary of \\(\\mathbb{R}^3\\) (denoted as \\(M_t\\)).\n2) For every \\(m\\in M\\), \\(\\Gamma(m,0)=m\\).\n3) For every \\(t\\in[0,1]\\), the map \\(m\\rightarrow \\Gamma(m,t)\\) is an isometry between \\(M\\) and \\(M_t\\).\n\nMust any bending of \\(M\\) leave the bases planar?"
+      },
+      {
+        "i": 14,
+        "target": "Yes",
+        "pred": "\\text{Yes}",
+        "problem": "Consider the manifold \\(M=\\{(\\cos(\\theta),\\sin(\\theta),z):\\theta\\in[0,2\\pi],z\\in[0,1]\\}\\). A bending of \\(M\\) is defined as a smooth map \\(\\Gamma:M\\times [0,1]\\rightarrow \\mathbb{R}^3\\) such that:\n1) \\(\\Gamma[M\\times\\{t\\}]\\) is a submanifold with boundary of \\(\\mathbb{R}^3\\) (denoted as \\(M_t\\)).\n2) For every \\(m\\in M\\), \\(\\Gamma(m,0)=m\\).\n3) For every \\(t\\in[0,1]\\), the map \\(m\\rightarrow \\Gamma(m,t)\\) is an isometry between \\(M\\) and \\(M_t\\).\n\nMust any bending of \\(M\\) leave the bases planar?"
+      },
+      {
+        "i": 14,
+        "target": "Yes",
+        "pred": "\\text{Yes}",
+        "problem": "Consider the manifold \\(M=\\{(\\cos(\\theta),\\sin(\\theta),z):\\theta\\in[0,2\\pi],z\\in[0,1]\\}\\). A bending of \\(M\\) is defined as a smooth map \\(\\Gamma:M\\times [0,1]\\rightarrow \\mathbb{R}^3\\) such that:\n1) \\(\\Gamma[M\\times\\{t\\}]\\) is a submanifold with boundary of \\(\\mathbb{R}^3\\) (denoted as \\(M_t\\)).\n2) For every \\(m\\in M\\), \\(\\Gamma(m,0)=m\\).\n3) For every \\(t\\in[0,1]\\), the map \\(m\\rightarrow \\Gamma(m,t)\\) is an isometry between \\(M\\) and \\(M_t\\).\n\nMust any bending of \\(M\\) leave the bases planar?"
+      }
+    ]
+  },
+  "questions": {
+    "3": {
+      "old": 0,
+      "new": 7,
+      "target": "Yes"
+    },
+    "14": {
+      "old": 0,
+      "new": 35,
+      "target": "Yes"
+    },
+    "17": {
+      "old": 0,
+      "new": 51,
+      "target": "Yes"
+    },
+    "18": {
+      "old": 1,
+      "new": 13,
+      "target": "Yes"
+    },
+    "22": {
+      "old": 0,
+      "new": 2,
+      "target": "Yes"
+    },
+    "24": {
+      "old": 0,
+      "new": 18,
+      "target": "Yes"
+    },
+    "28": {
+      "old": 0,
+      "new": 54,
+      "target": "Yes"
+    },
+    "32": {
+      "old": 0,
+      "new": 13,
+      "target": "No"
+    },
+    "35": {
+      "old": 0,
+      "new": 20,
+      "target": "Yes"
+    },
+    "38": {
+      "old": 0,
+      "new": 30,
+      "target": "No"
+    },
+    "39": {
+      "old": 0,
+      "new": 13,
+      "target": "False"
+    },
+    "44": {
+      "old": 0,
+      "new": 62,
+      "target": "Yes"
+    },
+    "47": {
+      "old": 0,
+      "new": 55,
+      "target": "True"
+    },
+    "57": {
+      "old": 0,
+      "new": 23,
+      "target": "No"
+    },
+    "61": {
+      "old": 0,
+      "new": 14,
+      "target": "Yes"
+    },
+    "64": {
+      "old": 0,
+      "new": 8,
+      "target": "Yes"
+    },
+    "65": {
+      "old": 0,
+      "new": 7,
+      "target": "Yes"
+    },
+    "67": {
+      "old": 0,
+      "new": 51,
+      "target": "Yes"
+    },
+    "68": {
+      "old": 0,
+      "new": 25,
+      "target": "Yes"
+    },
+    "69": {
+      "old": 0,
+      "new": 7,
+      "target": "Yes"
+    },
+    "75": {
+      "old": 0,
+      "new": 2,
+      "target": "Yes"
+    },
+    "79": {
+      "old": 0,
+      "new": 9,
+      "target": "Yes"
+    },
+    "84": {
+      "old": 0,
+      "new": 59,
+      "target": "Yes"
+    },
+    "87": {
+      "old": 0,
+      "new": 29,
+      "target": "Yes"
+    },
+    "91": {
+      "old": 0,
+      "new": 1,
+      "target": "No"
+    },
+    "94": {
+      "old": 0,
+      "new": 45,
+      "target": "No"
+    },
+    "97": {
+      "old": 0,
+      "new": 12,
+      "target": "Yes"
+    },
+    "98": {
+      "old": 0,
+      "new": 6,
+      "target": "No"
+    },
+    "101": {
+      "old": 0,
+      "new": 13,
+      "target": "Yes"
+    },
+    "102": {
+      "old": 0,
+      "new": 21,
+      "target": "Yes"
+    },
+    "109": {
+      "old": 0,
+      "new": 12,
+      "target": "Yes"
+    },
+    "114": {
+      "old": 0,
+      "new": 25,
+      "target": "Yes"
+    },
+    "116": {
+      "old": 0,
+      "new": 33,
+      "target": "Yes"
+    },
+    "118": {
+      "old": 0,
+      "new": 47,
+      "target": "Yes"
+    },
+    "124": {
+      "old": 0,
+      "new": 57,
+      "target": "Yes"
+    },
+    "126": {
+      "old": 0,
+      "new": 3,
+      "target": "Yes"
+    },
+    "127": {
+      "old": 0,
+      "new": 40,
+      "target": "No"
+    },
+    "132": {
+      "old": 0,
+      "new": 20,
+      "target": "No"
+    },
+    "142": {
+      "old": 0,
+      "new": 11,
+      "target": "Yes"
+    },
+    "144": {
+      "old": 0,
+      "new": 51,
+      "target": "Yes"
+    },
+    "148": {
+      "old": 0,
+      "new": 34,
+      "target": "Yes"
+    },
+    "151": {
+      "old": 0,
+      "new": 1,
+      "target": "Yes"
+    },
+    "153": {
+      "old": 0,
+      "new": 43,
+      "target": "True"
+    },
+    "155": {
+      "old": 0,
+      "new": 63,
+      "target": "Yes"
+    },
+    "158": {
+      "old": 0,
+      "new": 16,
+      "target": "Yes"
+    },
+    "160": {
+      "old": 0,
+      "new": 57,
+      "target": "Yes"
+    },
+    "167": {
+      "old": 0,
+      "new": 47,
+      "target": "No"
+    },
+    "171": {
+      "old": 0,
+      "new": 20,
+      "target": "True"
+    },
+    "173": {
+      "old": 0,
+      "new": 43,
+      "target": "No"
+    },
+    "188": {
+      "old": 0,
+      "new": 1,
+      "target": "Yes"
+    },
+    "202": {
+      "old": 0,
+      "new": 22,
+      "target": "Yes"
+    },
+    "203": {
+      "old": 0,
+      "new": 42,
+      "target": "Yes"
+    },
+    "205": {
+      "old": 0,
+      "new": 44,
+      "target": "Yes"
+    },
+    "206": {
+      "old": 0,
+      "new": 49,
+      "target": "Yes"
+    },
+    "208": {
+      "old": 0,
+      "new": 36,
+      "target": "Yes"
+    },
+    "217": {
+      "old": 0,
+      "new": 62,
+      "target": "Yes"
+    },
+    "219": {
+      "old": 0,
+      "new": 12,
+      "target": "Yes"
+    },
+    "221": {
+      "old": 0,
+      "new": 12,
+      "target": "Yes"
+    },
+    "227": {
+      "old": 0,
+      "new": 52,
+      "target": "No"
+    },
+    "233": {
+      "old": 0,
+      "new": 10,
+      "target": "Yes"
+    },
+    "234": {
+      "old": 0,
+      "new": 19,
+      "target": "Yes"
+    },
+    "239": {
+      "old": 0,
+      "new": 30,
+      "target": "Yes"
+    },
+    "243": {
+      "old": 0,
+      "new": 2,
+      "target": "No"
+    },
+    "247": {
+      "old": 0,
+      "new": 37,
+      "target": "No"
+    },
+    "249": {
+      "old": 0,
+      "new": 55,
+      "target": "Yes"
+    },
+    "254": {
+      "old": 0,
+      "new": 63,
+      "target": "Yes"
+    },
+    "257": {
+      "old": 0,
+      "new": 57,
+      "target": "Yes"
+    },
+    "261": {
+      "old": 0,
+      "new": 22,
+      "target": "True"
+    },
+    "267": {
+      "old": 0,
+      "new": 8,
+      "target": "Yes"
+    },
+    "270": {
+      "old": 0,
+      "new": 60,
+      "target": "Yes"
+    },
+    "273": {
+      "old": 0,
+      "new": 2,
+      "target": "Yes"
+    },
+    "277": {
+      "old": 0,
+      "new": 4,
+      "target": "Yes"
+    },
+    "282": {
+      "old": 0,
+      "new": 34,
+      "target": "Yes"
+    },
+    "286": {
+      "old": 0,
+      "new": 27,
+      "target": "No"
+    },
+    "291": {
+      "old": 0,
+      "new": 54,
+      "target": "Yes"
+    },
+    "293": {
+      "old": 0,
+      "new": 62,
+      "target": "Yes"
+    },
+    "304": {
+      "old": 1,
+      "new": 15,
+      "target": "Yes"
+    },
+    "306": {
+      "old": 0,
+      "new": 19,
+      "target": "Yes"
+    },
+    "312": {
+      "old": 0,
+      "new": 60,
+      "target": "Yes"
+    },
+    "315": {
+      "old": 0,
+      "new": 59,
+      "target": "Yes"
+    },
+    "322": {
+      "old": 0,
+      "new": 2,
+      "target": "Yes"
+    },
+    "323": {
+      "old": 0,
+      "new": 41,
+      "target": "Yes"
+    },
+    "324": {
+      "old": 0,
+      "new": 2,
+      "target": "Yes"
+    },
+    "332": {
+      "old": 0,
+      "new": 3,
+      "target": "No"
+    },
+    "338": {
+      "old": 0,
+      "new": 8,
+      "target": "Yes"
+    },
+    "346": {
+      "old": 0,
+      "new": 1,
+      "target": "Yes"
+    },
+    "347": {
+      "old": 0,
+      "new": 50,
+      "target": "Yes"
+    },
+    "349": {
+      "old": 0,
+      "new": 21,
+      "target": "No"
+    },
+    "351": {
+      "old": 0,
+      "new": 12,
+      "target": "No"
+    },
+    "353": {
+      "old": 0,
+      "new": 32,
+      "target": "Yes"
+    },
+    "358": {
+      "old": 0,
+      "new": 36,
+      "target": "Yes"
+    },
+    "359": {
+      "old": 0,
+      "new": 60,
+      "target": "Yes"
+    },
+    "361": {
+      "old": 0,
+      "new": 33,
+      "target": "False"
+    },
+    "362": {
+      "old": 0,
+      "new": 48,
+      "target": "No"
+    },
+    "363": {
+      "old": 0,
+      "new": 55,
+      "target": "Yes"
+    },
+    "365": {
+      "old": 0,
+      "new": 27,
+      "target": "Yes"
+    },
+    "369": {
+      "old": 0,
+      "new": 48,
+      "target": "No"
+    },
+    "372": {
+      "old": 0,
+      "new": 9,
+      "target": "Yes"
+    },
+    "374": {
+      "old": 0,
+      "new": 55,
+      "target": "Yes"
+    },
+    "377": {
+      "old": 0,
+      "new": 20,
+      "target": "False"
+    },
+    "381": {
+      "old": 0,
+      "new": 20,
+      "target": "Yes"
+    },
+    "385": {
+      "old": 0,
+      "new": 11,
+      "target": "Yes"
+    },
+    "386": {
+      "old": 0,
+      "new": 3,
+      "target": "Yes"
+    },
+    "391": {
+      "old": 0,
+      "new": 27,
+      "target": "Yes"
+    },
+    "392": {
+      "old": 0,
+      "new": 9,
+      "target": "No"
+    },
+    "400": {
+      "old": 0,
+      "new": 9,
+      "target": "Yes"
+    },
+    "403": {
+      "old": 0,
+      "new": 36,
+      "target": "Yes"
+    },
+    "407": {
+      "old": 0,
+      "new": 64,
+      "target": "Yes"
+    },
+    "408": {
+      "old": 0,
+      "new": 55,
+      "target": "False"
+    },
+    "412": {
+      "old": 0,
+      "new": 47,
+      "target": "Yes"
+    },
+    "416": {
+      "old": 1,
+      "new": 43,
+      "target": "Yes"
+    },
+    "418": {
+      "old": 0,
+      "new": 27,
+      "target": "Yes"
+    },
+    "419": {
+      "old": 0,
+      "new": 51,
+      "target": "Yes"
+    },
+    "424": {
+      "old": 0,
+      "new": 47,
+      "target": "Yes"
+    },
+    "425": {
+      "old": 0,
+      "new": 19,
+      "target": "Yes"
+    },
+    "433": {
+      "old": 0,
+      "new": 11,
+      "target": "Yes"
+    },
+    "434": {
+      "old": 0,
+      "new": 35,
+      "target": "Yes"
+    },
+    "441": {
+      "old": 0,
+      "new": 3,
+      "target": "Yes"
+    },
+    "442": {
+      "old": 1,
+      "new": 32,
+      "target": "Yes"
+    },
+    "445": {
+      "old": 0,
+      "new": 51,
+      "target": "Yes"
+    },
+    "449": {
+      "old": 0,
+      "new": 3,
+      "target": "No"
+    },
+    "455": {
+      "old": 0,
+      "new": 28,
+      "target": "Yes"
+    },
+    "459": {
+      "old": 0,
+      "new": 8,
+      "target": "Yes"
+    },
+    "460": {
+      "old": 0,
+      "new": 55,
+      "target": "Yes"
+    },
+    "461": {
+      "old": 0,
+      "new": 26,
+      "target": "Yes"
+    },
+    "462": {
+      "old": 0,
+      "new": 26,
+      "target": "True"
+    },
+    "472": {
+      "old": 0,
+      "new": 25,
+      "target": "True"
+    },
+    "475": {
+      "old": 0,
+      "new": 58,
+      "target": "True"
+    },
+    "476": {
+      "old": 0,
+      "new": 51,
+      "target": "Yes"
+    },
+    "480": {
+      "old": 0,
+      "new": 49,
+      "target": "No"
+    },
+    "486": {
+      "old": 0,
+      "new": 55,
+      "target": "Yes"
+    },
+    "497": {
+      "old": 0,
+      "new": 51,
+      "target": "true"
+    },
+    "503": {
+      "old": 0,
+      "new": 49,
+      "target": "Yes"
+    },
+    "506": {
+      "old": 0,
+      "new": 58,
+      "target": "False"
+    },
+    "508": {
+      "old": 0,
+      "new": 64,
+      "target": "Yes"
+    },
+    "509": {
+      "old": 0,
+      "new": 59,
+      "target": "Yes"
+    },
+    "512": {
+      "old": 0,
+      "new": 47,
+      "target": "True"
+    },
+    "515": {
+      "old": 0,
+      "new": 64,
+      "target": "True"
+    },
+    "520": {
+      "old": 0,
+      "new": 22,
+      "target": "Yes"
+    },
+    "525": {
+      "old": 1,
+      "new": 19,
+      "target": "Yes"
+    },
+    "528": {
+      "old": 0,
+      "new": 25,
+      "target": "No"
+    },
+    "530": {
+      "old": 0,
+      "new": 3,
+      "target": "No"
+    },
+    "532": {
+      "old": 0,
+      "new": 47,
+      "target": "Yes"
+    },
+    "538": {
+      "old": 0,
+      "new": 31,
+      "target": "Yes"
+    },
+    "539": {
+      "old": 1,
+      "new": 62,
+      "target": "Yes"
+    },
+    "543": {
+      "old": 0,
+      "new": 7,
+      "target": "Yes"
+    },
+    "544": {
+      "old": 0,
+      "new": 48,
+      "target": "Yes"
+    },
+    "553": {
+      "old": 0,
+      "new": 20,
+      "target": "No"
+    },
+    "557": {
+      "old": 0,
+      "new": 1,
+      "target": "No"
+    },
+    "561": {
+      "old": 0,
+      "new": 60,
+      "target": "True"
+    },
+    "562": {
+      "old": 0,
+      "new": 5,
+      "target": "No"
+    },
+    "565": {
+      "old": 0,
+      "new": 38,
+      "target": "True"
+    },
+    "569": {
+      "old": 0,
+      "new": 26,
+      "target": "Yes"
+    },
+    "570": {
+      "old": 0,
+      "new": 58,
+      "target": "Yes"
+    },
+    "574": {
+      "old": 0,
+      "new": 24,
+      "target": "Yes"
+    },
+    "582": {
+      "old": 0,
+      "new": 10,
+      "target": "Yes"
+    },
+    "584": {
+      "old": 0,
+      "new": 32,
+      "target": "Yes"
+    },
+    "588": {
+      "old": 0,
+      "new": 26,
+      "target": "True"
+    },
+    "589": {
+      "old": 0,
+      "new": 43,
+      "target": "True"
+    },
+    "591": {
+      "old": 0,
+      "new": 59,
+      "target": "Yes"
+    },
+    "596": {
+      "old": 0,
+      "new": 15,
+      "target": "No"
+    },
+    "598": {
+      "old": 0,
+      "new": 36,
+      "target": "Yes"
+    },
+    "599": {
+      "old": 0,
+      "new": 49,
+      "target": "Yes"
+    },
+    "601": {
+      "old": 0,
+      "new": 15,
+      "target": "Yes"
+    },
+    "603": {
+      "old": 0,
+      "new": 51,
+      "target": "Yes"
+    },
+    "606": {
+      "old": 0,
+      "new": 35,
+      "target": "Yes"
+    },
+    "612": {
+      "old": 0,
+      "new": 61,
+      "target": "True"
+    },
+    "624": {
+      "old": 0,
+      "new": 2,
+      "target": "Yes"
+    },
+    "625": {
+      "old": 0,
+      "new": 23,
+      "target": "Yes"
+    },
+    "634": {
+      "old": 0,
+      "new": 52,
+      "target": "Yes"
+    },
+    "637": {
+      "old": 0,
+      "new": 41,
+      "target": "Yes"
+    },
+    "640": {
+      "old": 0,
+      "new": 8,
+      "target": "Yes"
+    },
+    "646": {
+      "old": 0,
+      "new": 6,
+      "target": "Yes"
+    },
+    "647": {
+      "old": 0,
+      "new": 8,
+      "target": "Yes"
+    },
+    "650": {
+      "old": 0,
+      "new": 14,
+      "target": "Yes"
+    },
+    "651": {
+      "old": 1,
+      "new": 27,
+      "target": "Yes"
+    },
+    "656": {
+      "old": 0,
+      "new": 61,
+      "target": "Yes"
+    },
+    "657": {
+      "old": 0,
+      "new": 30,
+      "target": "True"
+    },
+    "661": {
+      "old": 0,
+      "new": 62,
+      "target": "Yes"
+    },
+    "662": {
+      "old": 0,
+      "new": 2,
+      "target": "No"
+    },
+    "678": {
+      "old": 0,
+      "new": 41,
+      "target": "Yes"
+    },
+    "679": {
+      "old": 0,
+      "new": 4,
+      "target": "Yes"
+    },
+    "691": {
+      "old": 1,
+      "new": 59,
+      "target": "Yes"
+    },
+    "698": {
+      "old": 0,
+      "new": 53,
+      "target": "Yes"
+    },
+    "700": {
+      "old": 0,
+      "new": 46,
+      "target": "No"
+    },
+    "701": {
+      "old": 0,
+      "new": 25,
+      "target": "Yes"
+    },
+    "702": {
+      "old": 0,
+      "new": 32,
+      "target": "Yes"
+    },
+    "708": {
+      "old": 0,
+      "new": 56,
+      "target": "Yes"
+    },
+    "709": {
+      "old": 0,
+      "new": 51,
+      "target": "Yes"
+    },
+    "710": {
+      "old": 0,
+      "new": 53,
+      "target": "Yes"
+    },
+    "714": {
+      "old": 0,
+      "new": 28,
+      "target": "Yes"
+    },
+    "715": {
+      "old": 0,
+      "new": 23,
+      "target": "Yes"
+    },
+    "717": {
+      "old": 1,
+      "new": 27,
+      "target": "Yes"
+    },
+    "719": {
+      "old": 0,
+      "new": 32,
+      "target": "Yes"
+    },
+    "720": {
+      "old": 0,
+      "new": 35,
+      "target": "False"
+    },
+    "722": {
+      "old": 0,
+      "new": 62,
+      "target": "Yes"
+    },
+    "723": {
+      "old": 0,
+      "new": 8,
+      "target": "No"
+    },
+    "724": {
+      "old": 0,
+      "new": 1,
+      "target": "Yes"
+    },
+    "728": {
+      "old": 0,
+      "new": 16,
+      "target": "Yes"
+    },
+    "730": {
+      "old": 0,
+      "new": 26,
+      "target": "Yes"
+    },
+    "736": {
+      "old": 0,
+      "new": 37,
+      "target": "Yes"
+    },
+    "750": {
+      "old": 0,
+      "new": 10,
+      "target": "Yes"
+    },
+    "754": {
+      "old": 0,
+      "new": 48,
+      "target": "Yes"
+    },
+    "756": {
+      "old": 0,
+      "new": 61,
+      "target": "No"
+    },
+    "764": {
+      "old": 0,
+      "new": 12,
+      "target": "Yes"
+    },
+    "769": {
+      "old": 0,
+      "new": 30,
+      "target": "No"
+    },
+    "773": {
+      "old": 0,
+      "new": 64,
+      "target": "Yes"
+    },
+    "774": {
+      "old": 0,
+      "new": 25,
+      "target": "Yes"
+    },
+    "778": {
+      "old": 0,
+      "new": 8,
+      "target": "False"
+    },
+    "783": {
+      "old": 0,
+      "new": 9,
+      "target": "Yes"
+    },
+    "784": {
+      "old": 0,
+      "new": 5,
+      "target": "No"
+    },
+    "785": {
+      "old": 0,
+      "new": 9,
+      "target": "No"
+    },
+    "791": {
+      "old": 0,
+      "new": 45,
+      "target": "No"
+    },
+    "792": {
+      "old": 0,
+      "new": 62,
+      "target": "Yes"
+    },
+    "794": {
+      "old": 0,
+      "new": 49,
+      "target": "Yes"
+    },
+    "795": {
+      "old": 0,
+      "new": 5,
+      "target": "Yes"
+    },
+    "800": {
+      "old": 0,
+      "new": 15,
+      "target": "Yes"
+    },
+    "807": {
+      "old": 0,
+      "new": 1,
+      "target": "Yes"
+    },
+    "809": {
+      "old": 0,
+      "new": 58,
+      "target": "Yes"
+    },
+    "812": {
+      "old": 0,
+      "new": 64,
+      "target": "Yes"
+    },
+    "817": {
+      "old": 0,
+      "new": 50,
+      "target": "Yes"
+    },
+    "827": {
+      "old": 0,
+      "new": 10,
+      "target": "No"
+    },
+    "829": {
+      "old": 0,
+      "new": 26,
+      "target": "Yes"
+    },
+    "830": {
+      "old": 0,
+      "new": 64,
+      "target": "No"
+    },
+    "831": {
+      "old": 0,
+      "new": 42,
+      "target": "Yes"
+    },
+    "839": {
+      "old": 0,
+      "new": 1,
+      "target": "Yes"
+    },
+    "849": {
+      "old": 0,
+      "new": 2,
+      "target": "True"
+    },
+    "853": {
+      "old": 0,
+      "new": 45,
+      "target": "Yes"
+    },
+    "854": {
+      "old": 0,
+      "new": 11,
+      "target": "Yes"
+    },
+    "858": {
+      "old": 0,
+      "new": 26,
+      "target": "Yes"
+    },
+    "860": {
+      "old": 0,
+      "new": 6,
+      "target": "No"
+    },
+    "862": {
+      "old": 0,
+      "new": 62,
+      "target": "False"
+    },
+    "867": {
+      "old": 0,
+      "new": 59,
+      "target": "No"
+    },
+    "869": {
+      "old": 0,
+      "new": 47,
+      "target": "No"
+    },
+    "871": {
+      "old": 1,
+      "new": 33,
+      "target": "Yes"
+    },
+    "890": {
+      "old": 0,
+      "new": 6,
+      "target": "Yes"
+    },
+    "891": {
+      "old": 0,
+      "new": 3,
+      "target": "Yes"
+    },
+    "894": {
+      "old": 0,
+      "new": 15,
+      "target": "Yes"
+    },
+    "897": {
+      "old": 0,
+      "new": 8,
+      "target": "No"
+    },
+    "905": {
+      "old": 0,
+      "new": 27,
+      "target": "True"
+    },
+    "907": {
+      "old": 0,
+      "new": 19,
+      "target": "Yes"
+    },
+    "909": {
+      "old": 0,
+      "new": 15,
+      "target": "Yes"
+    },
+    "916": {
+      "old": 0,
+      "new": 19,
+      "target": "Yes"
+    },
+    "922": {
+      "old": 0,
+      "new": 50,
+      "target": "No"
+    },
+    "926": {
+      "old": 0,
+      "new": 29,
+      "target": "Yes"
+    },
+    "927": {
+      "old": 0,
+      "new": 58,
+      "target": "No"
+    },
+    "930": {
+      "old": 0,
+      "new": 50,
+      "target": "Yes"
+    },
+    "939": {
+      "old": 0,
+      "new": 62,
+      "target": "Yes"
+    },
+    "942": {
+      "old": 0,
+      "new": 53,
+      "target": "Yes"
+    },
+    "943": {
+      "old": 0,
+      "new": 1,
+      "target": "Yes"
+    },
+    "944": {
+      "old": 0,
+      "new": 22,
+      "target": "Yes"
+    },
+    "949": {
+      "old": 0,
+      "new": 55,
+      "target": "No"
+    },
+    "956": {
+      "old": 0,
+      "new": 11,
+      "target": "Yes"
+    },
+    "959": {
+      "old": 0,
+      "new": 37,
+      "target": "Yes"
+    },
+    "965": {
+      "old": 0,
+      "new": 22,
+      "target": "Yes"
+    },
+    "969": {
+      "old": 0,
+      "new": 20,
+      "target": "Yes"
+    },
+    "980": {
+      "old": 0,
+      "new": 16,
+      "target": "Yes"
+    },
+    "985": {
+      "old": 0,
+      "new": 49,
+      "target": "Yes"
+    },
+    "987": {
+      "old": 0,
+      "new": 28,
+      "target": "No"
+    },
+    "998": {
+      "old": 0,
+      "new": 41,
+      "target": "Yes"
+    }
+  }
+}

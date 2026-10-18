@@ -1,0 +1,45 @@
+benchmark,method,teacher_k,gap_rule,threshold,luna,max_takeovers,ban_student_entry,questions,correct,accuracy_percent,delta_pp_vs_student,relative_gain_percent,metric,source
+AIME24,student,,,,False,,False,30,5,16.666666666666664,0.0,0.0,single_rollout_accuracy,experiments/hard_three_20260911/artifacts/summary.json
+AIME25,student,,,,False,,False,30,4,13.333333333333334,0.0,0.0,single_rollout_accuracy,experiments/hard_three_20260911/artifacts/summary.json
+OlympiadBench,student,,,,False,,False,674,202,29.970326409495552,0.0,0.0,single_rollout_accuracy,experiments/hard_three_20260911/artifacts/summary.json
+BBH,student,,,,False,,False,1080,378,35.0,0.0,0.0,single_rollout_accuracy,experiments/hard_three_20260911/artifacts/summary.json
+AIME24,teacher,,,,False,,False,30,8,26.666666666666668,10.0,60.00000000000001,single_rollout_accuracy,experiments/hard_three_20260911/artifacts/summary.json
+AIME25,teacher,,,,False,,False,30,8,26.666666666666668,13.333333333333334,100.0,single_rollout_accuracy,experiments/hard_three_20260911/artifacts/summary.json
+OlympiadBench,teacher,,,,False,,False,674,314,46.58753709198813,16.617210682492576,55.44554455445543,single_rollout_accuracy,experiments/hard_three_20260911/artifacts/summary.json
+BBH,teacher,,,,False,,False,1080,835,77.31481481481481,42.31481481481482,120.89947089947093,single_rollout_accuracy,experiments/hard_three_20260911/artifacts/summary.json
+AIME25,luna_k8,8,absolute,2,True,,True,30,7,23.333333333333332,10.0,75.0,single_rollout_accuracy,experiments/hard_three_20260911/artifacts/summary.json
+AIME24,luna_k8,8,absolute,2,True,,True,30,3,10.0,-6.666666666666665,-39.99999999999999,single_rollout_accuracy,experiments/hard_three_20260911/artifacts/summary.json
+OlympiadBench,luna_k8,8,absolute,2,True,,True,674,232,34.42136498516321,4.4510385756676545,14.851485148514843,single_rollout_accuracy,experiments/hard_three_20260911/artifacts/summary.json
+BBH,luna_k8,8,absolute,2,True,,True,1080,484,44.81481481481481,9.814814814814815,28.042328042328045,single_rollout_accuracy,experiments/hard_three_20260911/artifacts/summary.json
+MATH500,student,,,,False,,False,500,364,72.8,0.0,0.0,single_rollout_accuracy,experiments/math500_three_20260911/results/summary.json
+MATH500,luna_k8,8,absolute,2,True,,True,500,407,81.39999999999999,8.599999999999996,11.813186813186816,single_rollout_accuracy,experiments/math500_three_20260911/results/summary.json
+MATH500,prefix256,256,,,False,,False,500,376,75.2,2.400000000000002,3.296703296703307,single_rollout_accuracy,experiments/math500_three_20260911/results/summary.json
+AIME25,luna_k32,32,absolute,2,True,,True,30,3,10.0,-3.3333333333333326,-25.0,single_rollout_accuracy,experiments/hard_k32_20260911/artifacts/summary.json
+AIME24,luna_k32,32,absolute,2,True,,True,30,4,13.333333333333334,-3.3333333333333326,-19.999999999999996,single_rollout_accuracy,experiments/hard_k32_20260911/artifacts/summary.json
+OlympiadBench,luna_k32,32,absolute,2,True,,True,674,242,35.90504451038576,5.9347181008902075,19.8019801980198,single_rollout_accuracy,experiments/hard_k32_20260911/artifacts/summary.json
+BBH,luna_k32,32,absolute,2,True,,True,1080,568,52.59259259259259,17.59259259259259,50.26455026455028,single_rollout_accuracy,experiments/hard_k32_20260911/artifacts/summary.json
+AIME25,no_luna_t2,8,absolute,2,False,,True,30,6,20.0,6.666666666666668,50.0,single_rollout_accuracy,experiments/threshold_k8_nojudge_20260911/artifacts/summary.json
+AIME24,no_luna_t2,8,absolute,2,False,,True,30,3,10.0,-6.666666666666665,-39.99999999999999,single_rollout_accuracy,experiments/threshold_k8_nojudge_20260911/artifacts/summary.json
+OlympiadBench,no_luna_t2,8,absolute,2,False,,True,674,311,46.14243323442137,16.172106824925812,53.96039603960394,single_rollout_accuracy,experiments/threshold_k8_nojudge_20260911/artifacts/summary.json
+BBH,no_luna_t2,8,absolute,2,False,,True,1080,818,75.74074074074075,40.74074074074075,116.40211640211642,single_rollout_accuracy,experiments/threshold_k8_nojudge_20260911/artifacts/summary.json
+MATH500,no_luna_t2,8,absolute,2,False,,True,500,421,84.2,11.399999999999999,15.659340659340648,single_rollout_accuracy,experiments/threshold_k8_nojudge_20260911/artifacts/summary.json
+AIME25,no_luna_t3,8,absolute,3,False,,True,30,6,20.0,6.666666666666668,50.0,single_rollout_accuracy,experiments/threshold3_mathteacher_20260911/artifacts/summary.json
+AIME24,no_luna_t3,8,absolute,3,False,,True,30,7,23.333333333333332,6.666666666666668,40.000000000000014,single_rollout_accuracy,experiments/threshold3_mathteacher_20260911/artifacts/summary.json
+OlympiadBench,no_luna_t3,8,absolute,3,False,,True,674,286,42.433234421364986,12.462908011869434,41.58415841584158,single_rollout_accuracy,experiments/threshold3_mathteacher_20260911/artifacts/summary.json
+BBH,no_luna_t3,8,absolute,3,False,,True,1080,828,76.66666666666667,41.66666666666667,119.04761904761907,single_rollout_accuracy,experiments/threshold3_mathteacher_20260911/artifacts/summary.json
+MATH500,no_luna_t3,8,absolute,3,False,,True,500,412,82.39999999999999,9.599999999999998,13.186813186813184,single_rollout_accuracy,experiments/threshold3_mathteacher_20260911/artifacts/summary.json
+MATH500,teacher,,,,False,,False,500,437,87.4,14.600000000000001,20.05494505494505,single_rollout_accuracy,experiments/threshold3_mathteacher_20260911/artifacts/summary.json
+AIME25,random_cap8,8,,,False,8,True,30,5,16.666666666666664,3.3333333333333326,25.0,single_rollout_accuracy,experiments/random_k8_max8_20260911/artifacts/summary.json
+AIME24,random_cap8,8,,,False,8,True,30,3,10.0,-6.666666666666665,-39.99999999999999,single_rollout_accuracy,experiments/random_k8_max8_20260911/artifacts/summary.json
+OlympiadBench,random_cap8,8,,,False,8,True,674,127,18.84272997032641,-11.12759643916914,-37.12871287128713,single_rollout_accuracy,experiments/random_k8_max8_20260911/artifacts/summary.json
+BBH,random_cap8,8,,,False,8,True,1080,385,35.648148148148145,0.6481481481481477,1.85185185185186,single_rollout_accuracy,experiments/random_k8_max8_20260911/artifacts/summary.json
+MATH500,random_cap8,8,,,False,8,True,500,290,57.99999999999999,-14.800000000000002,-20.329670329670336,single_rollout_accuracy,experiments/random_k8_max8_20260911/artifacts/summary.json
+DeepMath,student,,,,False,,False,1000,399,39.900000000000006,0.0,0.0,single_rollout_accuracy,experiments/online_comparison_20260911/comparison.json
+DeepMath,teacher,,,,False,,False,1000,610,61.0,21.099999999999998,52.88220551378444,single_rollout_accuracy,experiments/online_comparison_20260911/comparison.json
+DeepMath,luna_k8,8,absolute,2,True,,True,1000,476,47.599999999999994,7.699999999999996,19.298245614035082,single_rollout_accuracy,experiments/online_comparison_20260911/comparison.json
+DeepMath,luna_k32,32,absolute,2,True,,True,1000,504,50.4,10.499999999999998,26.315789473684205,single_rollout_accuracy,remote:opd_eval_deepmath/online_chunk64_k32_test1000_h100_seed20260911/results/summary.json
+DeepMath,random_cap8,8,,,False,8,False,1000,426,42.6,2.6999999999999966,6.766917293233066,single_rollout_accuracy,remote:opd_eval_deepmath/random_k8_cap8_test1000_h100_seed20260911/results/summary.json
+DeepMath,prefix32,32,,,False,,False,1000,417,41.699999999999996,1.799999999999996,4.5112781954887105,single_rollout_accuracy,normalize_single_prefix.py: remote teacher_prefix_handoff_20260909/h32.json
+DeepMath,prefix64,64,,,False,,False,1000,414,41.4,1.4999999999999958,3.7593984962405846,single_rollout_accuracy,normalize_single_prefix.py: remote teacher_prefix_handoff_20260909/h64.json
+DeepMath,prefix128,128,,,False,,False,1000,424,42.4,2.4999999999999964,6.265664160400997,single_rollout_accuracy,normalize_single_prefix.py: remote teacher_prefix_handoff_20260909/h128.json
+DeepMath,prefix256,256,,,False,,False,1000,400,40.0,0.10000000000000009,0.25062656641603454,single_rollout_accuracy,normalize_single_prefix.py: remote teacher_prefix_handoff_20260909/h256.json

@@ -1,0 +1,96 @@
+{
+  "groups": [
+    "k16_t2",
+    "k16_t2p5",
+    "k1_t2",
+    "k1_t2p5",
+    "k1_t3",
+    "k1_t3p5",
+    "k1_t4",
+    "k4_t2",
+    "k4_t2p5",
+    "k4_t3",
+    "k4_t3p5",
+    "k4_t4",
+    "k8_t2",
+    "k8_t2p5",
+    "k8_t3",
+    "k8_t3p5",
+    "k8_t4"
+  ],
+  "stats": {
+    "bbh_correct": {
+      "n": 14093,
+      "mean": 274.1,
+      "median": 221,
+      "p90": 581,
+      "p95": 738,
+      "p99": 1054,
+      "max": 2775,
+      "over4096": 0,
+      "over8192": 0,
+      "over16384": 0
+    },
+    "bbh_wrong": {
+      "n": 4267,
+      "mean": 482.5,
+      "median": 197,
+      "p90": 544,
+      "p95": 812,
+      "p99": 1477,
+      "max": 40264,
+      "over4096": 25,
+      "over8192": 25,
+      "over16384": 25
+    },
+    "math500_correct": {
+      "n": 7016,
+      "mean": 629.2,
+      "median": 475,
+      "p90": 1187,
+      "p95": 1552,
+      "p99": 2747,
+      "max": 5538,
+      "over4096": 11,
+      "over8192": 0,
+      "over16384": 0
+    },
+    "math500_wrong": {
+      "n": 1484,
+      "mean": 1822.0,
+      "median": 1503,
+      "p90": 3499,
+      "p95": 4160,
+      "p99": 5661,
+      "max": 11681,
+      "over4096": 85,
+      "over8192": 3,
+      "over16384": 0
+    },
+    "olympiad_bench_correct": {
+      "n": 4843,
+      "mean": 931.6,
+      "median": 752,
+      "p90": 1698,
+      "p95": 2083,
+      "p99": 3061,
+      "max": 10001,
+      "over4096": 20,
+      "over8192": 6,
+      "over16384": 0
+    },
+    "olympiad_bench_wrong": {
+      "n": 6615,
+      "mean": 1875.2,
+      "median": 1528,
+      "p90": 3233,
+      "p95": 4068,
+      "p99": 6067,
+      "max": 40264,
+      "over4096": 317,
+      "over8192": 36,
+      "over16384": 14
+    }
+  },
+  "limitation": "No per-trace wall-time measurements recorded; lengths are not durations"
+}

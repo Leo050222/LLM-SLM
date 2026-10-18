@@ -1,0 +1,19 @@
+{
+  "job_id": 105614,
+  "nodes": 1,
+  "gpus": 4,
+  "gpu_type": "H800",
+  "model": "Qwen3-14B",
+  "input_sha256": "3404d4b6e760c37e18844dae80d793cc60574553d49d7b37f086e533d174eae7",
+  "problems": 800,
+  "replicates": 8,
+  "outputs": 6400,
+  "generation_start": "original prompt, ignoring saved student prefix",
+  "time_limit": "UNLIMITED",
+  "code_outputs": 4000,
+  "math_reasoning_outputs": 2400,
+  "external_scoring_approved": true,
+  "tests_passed": 3,
+  "api_probe_passed": true,
+  "gpu_service_witness": "awaiting allocation"
+}

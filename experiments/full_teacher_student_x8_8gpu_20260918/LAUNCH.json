@@ -1,0 +1,11 @@
+{
+  "job_id": 106740,
+  "source_job": 106645,
+  "node": "gnho017",
+  "gpus": 8,
+  "replicas": 8,
+  "concurrency": 256,
+  "batch_size": 8,
+  "preserved_completed": 69018,
+  "submitted_epoch": 1789730021.2122395
+}

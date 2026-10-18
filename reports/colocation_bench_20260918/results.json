@@ -1,0 +1,230 @@
+{
+  "colocated_vs_current": 1.43729100422755,
+  "colocated_vs_split_batch4": 1.5734221228588439,
+  "baseline_repeat_ratio": 0.8598146944852485,
+  "metrics": {
+    "split8": {
+      "n": 54,
+      "elapsed": 253.35093712806702,
+      "rollouts_per_hour": 767.3151013518147,
+      "response_tokens": 49838,
+      "tokens_per_second": 196.71527788668593,
+      "median_latency": 81.33255979092792,
+      "p95_latency": 216.5172932348214,
+      "measurement_end": 1789666319.4947784,
+      "model_info": {
+        "student": {
+          "model": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+          "tokenizer_sha256": "f83422fc4348225bd0a571b69f9f96040db221d2238b227d6762aa1f8b6da1f4",
+          "max_model_len": 40960,
+          "protocol": 2,
+          "worker_sha256": "e19cb4ba2e6bb9784ccd33474e459fa383ae2c3db86d311b4756712d5d9ac808",
+          "vllm_version": "0.23.0",
+          "eos_token_id": 151645
+        },
+        "teacher": {
+          "model": "/storage/yukaichengLab/share/model/Qwen3-14B",
+          "tokenizer_sha256": "f83422fc4348225bd0a571b69f9f96040db221d2238b227d6762aa1f8b6da1f4",
+          "max_model_len": 40960,
+          "protocol": 2,
+          "worker_sha256": "e19cb4ba2e6bb9784ccd33474e459fa383ae2c3db86d311b4756712d5d9ac808",
+          "vllm_version": "0.23.0",
+          "eos_token_id": 151645
+        }
+      },
+      "scientific_settings": {
+        "ks": [
+          1,
+          8,
+          32
+        ],
+        "threshold": 2,
+        "max_tokens": 40264,
+        "seed": 2026091801
+      },
+      "outputs": "no accuracy scoring; infrastructure timeout is failure, not incorrect answer",
+      "stress_passed": true,
+      "startup": {
+        "seconds": 154.01730346679688,
+        "pairs": 1,
+        "batch": 8
+      },
+      "gpu_peak_mib": 75645.0,
+      "mean_gpu_utilization": 33.75925925925926,
+      "preemption_log_lines": 0,
+      "binding": [
+        "CUDA_WITNESS_OK NVIDIA H800 -883.65576171875",
+        "CUDA_WITNESS_OK NVIDIA H800 -883.65576171875"
+      ]
+    },
+    "split4": {
+      "n": 54,
+      "elapsed": 277.3467364311218,
+      "rollouts_per_hour": 700.9276636946424,
+      "response_tokens": 52337,
+      "tokens_per_second": 188.70602435589765,
+      "median_latency": 87.69789753202349,
+      "p95_latency": 244.53688922105357,
+      "measurement_end": 1789666770.033627,
+      "model_info": {
+        "student": {
+          "model": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+          "tokenizer_sha256": "f83422fc4348225bd0a571b69f9f96040db221d2238b227d6762aa1f8b6da1f4",
+          "max_model_len": 40960,
+          "protocol": 2,
+          "worker_sha256": "e19cb4ba2e6bb9784ccd33474e459fa383ae2c3db86d311b4756712d5d9ac808",
+          "vllm_version": "0.23.0",
+          "eos_token_id": 151645
+        },
+        "teacher": {
+          "model": "/storage/yukaichengLab/share/model/Qwen3-14B",
+          "tokenizer_sha256": "f83422fc4348225bd0a571b69f9f96040db221d2238b227d6762aa1f8b6da1f4",
+          "max_model_len": 40960,
+          "protocol": 2,
+          "worker_sha256": "e19cb4ba2e6bb9784ccd33474e459fa383ae2c3db86d311b4756712d5d9ac808",
+          "vllm_version": "0.23.0",
+          "eos_token_id": 151645
+        }
+      },
+      "scientific_settings": {
+        "ks": [
+          1,
+          8,
+          32
+        ],
+        "threshold": 2,
+        "max_tokens": 40264,
+        "seed": 2026091801
+      },
+      "outputs": "no accuracy scoring; infrastructure timeout is failure, not incorrect answer",
+      "stress_passed": true,
+      "startup": {
+        "seconds": 146.01856994628906,
+        "pairs": 1,
+        "batch": 4
+      },
+      "gpu_peak_mib": 75309.0,
+      "mean_gpu_utilization": 44.64965986394558,
+      "preemption_log_lines": 0,
+      "binding": [
+        "CUDA_WITNESS_OK NVIDIA H800 -883.65576171875",
+        "CUDA_WITNESS_OK NVIDIA H800 -883.65576171875"
+      ]
+    },
+    "colocated4": {
+      "n": 54,
+      "elapsed": 176.26975774765015,
+      "rollouts_per_hour": 1102.855092580914,
+      "response_tokens": 50433,
+      "tokens_per_second": 286.1126074286689,
+      "median_latency": 73.79255106812343,
+      "p95_latency": 162.04739027982578,
+      "measurement_end": 1789667268.793965,
+      "model_info": {
+        "student": {
+          "model": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+          "tokenizer_sha256": "f83422fc4348225bd0a571b69f9f96040db221d2238b227d6762aa1f8b6da1f4",
+          "max_model_len": 40960,
+          "protocol": 2,
+          "worker_sha256": "e19cb4ba2e6bb9784ccd33474e459fa383ae2c3db86d311b4756712d5d9ac808",
+          "vllm_version": "0.23.0",
+          "eos_token_id": 151645
+        },
+        "teacher": {
+          "model": "/storage/yukaichengLab/share/model/Qwen3-14B",
+          "tokenizer_sha256": "f83422fc4348225bd0a571b69f9f96040db221d2238b227d6762aa1f8b6da1f4",
+          "max_model_len": 40960,
+          "protocol": 2,
+          "worker_sha256": "e19cb4ba2e6bb9784ccd33474e459fa383ae2c3db86d311b4756712d5d9ac808",
+          "vllm_version": "0.23.0",
+          "eos_token_id": 151645
+        }
+      },
+      "scientific_settings": {
+        "ks": [
+          1,
+          8,
+          32
+        ],
+        "threshold": 2,
+        "max_tokens": 40264,
+        "seed": 2026091801
+      },
+      "outputs": "no accuracy scoring; infrastructure timeout is failure, not incorrect answer",
+      "stress_passed": true,
+      "startup": {
+        "seconds": 286.0383472442627,
+        "pairs": 2,
+        "batch": 4
+      },
+      "gpu_peak_mib": 68858.0,
+      "mean_gpu_utilization": 63.396039603960396,
+      "preemption_log_lines": 0,
+      "binding": [
+        "CUDA_WITNESS_OK NVIDIA H800 -883.65576171875",
+        "CUDA_WITNESS_OK NVIDIA H800 -883.65576171875",
+        "CUDA_WITNESS_OK NVIDIA H800 -883.65576171875",
+        "CUDA_WITNESS_OK NVIDIA H800 -883.65576171875"
+      ]
+    },
+    "split8_repeat": {
+      "n": 54,
+      "elapsed": 294.657603263855,
+      "rollouts_per_hour": 659.7487994427281,
+      "response_tokens": 52419,
+      "tokens_per_second": 177.89800575096893,
+      "median_latency": 84.32129571400583,
+      "p95_latency": 266.2906925138086,
+      "measurement_end": 1789667736.5794065,
+      "model_info": {
+        "student": {
+          "model": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+          "tokenizer_sha256": "f83422fc4348225bd0a571b69f9f96040db221d2238b227d6762aa1f8b6da1f4",
+          "max_model_len": 40960,
+          "protocol": 2,
+          "worker_sha256": "e19cb4ba2e6bb9784ccd33474e459fa383ae2c3db86d311b4756712d5d9ac808",
+          "vllm_version": "0.23.0",
+          "eos_token_id": 151645
+        },
+        "teacher": {
+          "model": "/storage/yukaichengLab/share/model/Qwen3-14B",
+          "tokenizer_sha256": "f83422fc4348225bd0a571b69f9f96040db221d2238b227d6762aa1f8b6da1f4",
+          "max_model_len": 40960,
+          "protocol": 2,
+          "worker_sha256": "e19cb4ba2e6bb9784ccd33474e459fa383ae2c3db86d311b4756712d5d9ac808",
+          "vllm_version": "0.23.0",
+          "eos_token_id": 151645
+        }
+      },
+      "scientific_settings": {
+        "ks": [
+          1,
+          8,
+          32
+        ],
+        "threshold": 2,
+        "max_tokens": 40264,
+        "seed": 2026091801
+      },
+      "outputs": "no accuracy scoring; infrastructure timeout is failure, not incorrect answer",
+      "stress_passed": true,
+      "startup": {
+        "seconds": 146.02607464790344,
+        "pairs": 1,
+        "batch": 8
+      },
+      "gpu_peak_mib": 75359.0,
+      "mean_gpu_utilization": 37.99354838709677,
+      "preemption_log_lines": 0,
+      "binding": [
+        "CUDA_WITNESS_OK NVIDIA H800 -883.65576171875",
+        "CUDA_WITNESS_OK NVIDIA H800 -883.65576171875"
+      ]
+    }
+  },
+  "caveats": [
+    "single selected workload; not full-benchmark result",
+    "numerical/batching differences may change rollout lengths; examine tokens/sec too",
+    "GPU utilization is sampled, not a kernel occupancy metric"
+  ]
+}

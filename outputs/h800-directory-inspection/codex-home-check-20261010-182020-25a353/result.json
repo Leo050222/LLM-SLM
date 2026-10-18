@@ -1,0 +1,9 @@
+{
+  "job_name": "codex-home-check-20261010-182020-25a353",
+  "job_uid": "2fdb7472-8458-4e1a-ae65-1f218d3b2be1",
+  "namespace": "dcloud-auwomo",
+  "phase": "Succeeded",
+  "exit_code": 0,
+  "scope": "current_test_container_home_and_limited_shared_home_candidates",
+  "cleanup": "confirmed"
+}

@@ -1,0 +1,8 @@
+{
+  "job_id": "105045",
+  "failed_preflight_job": "105031",
+  "remote_output": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rescore/grid_math_gpt4o_mini_openlux_20260916",
+  "model": "gpt-4o-mini",
+  "max_concurrency": 128,
+  "expected_rows": 56350
+}

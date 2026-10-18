@@ -1,0 +1,19 @@
+{
+  "anchor_pass_at_64": 0.8747390396659708,
+  "anchor_pass_at_64_count": 838,
+  "anchor_scores_sha256": "7781b022b6f5f22ba58526780607f8df65a53cb55d9ee45275bc22f5bbcbd002",
+  "bridge_all_8_correct_count": 1327,
+  "bridge_all_8_correct_rate": 0.1731471816283925,
+  "bridge_count": 7664,
+  "bridge_pass_at_8": 0.7098121085594989,
+  "bridge_pass_at_8_count": 5440,
+  "bridge_scores_sha256": "68670cda26a0a4855385bad5f2bfc1b523e6604214b8802313a95b74d258e757",
+  "continuation_accuracy_conditional_on_anchor": 0.4333409446764092,
+  "continuations_per_bridge": 8,
+  "correct_continuations": 26569,
+  "frozen_test_rows": 1000,
+  "no_anchor_count": 42,
+  "selected_anchor_count": 958,
+  "status": "TEST1000_ANCHOR_BRIDGE_N8X8_ANALYSIS_COMPLETE",
+  "total_continuations": 61312
+}

@@ -1,0 +1,13 @@
+{
+  "job_id": 108115,
+  "source_generation_job": 107971,
+  "rows": 4571,
+  "code_rows": 2317,
+  "math_bbh_rows": 2254,
+  "cpus": 32,
+  "memory_gib": 64,
+  "gpus": 0,
+  "time_limit": "02:00:00",
+  "api_probe": "passed",
+  "output_root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_ablation/reverse_greedy_t2_k1_8gpu_20260921"
+}

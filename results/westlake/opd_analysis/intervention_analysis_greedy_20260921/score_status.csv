@@ -1,0 +1,17 @@
+dataset,score_status,traces
+bbh,ok,1080
+cruxeval_i,fail,406
+cruxeval_i,pass,394
+cruxeval_o,fail,430
+cruxeval_o,pass,370
+humaneval_plus,"{""base"": ""fail"", ""plus"": ""fail""}",19
+humaneval_plus,"{""base"": ""pass"", ""plus"": ""fail""}",10
+humaneval_plus,"{""base"": ""pass"", ""plus"": ""pass""}",135
+livecodebench,fail,125
+livecodebench,pass,50
+math500,ok,500
+mbpp_plus,"{""base"": ""fail"", ""plus"": ""fail""}",49
+mbpp_plus,"{""base"": ""fail"", ""plus"": ""pass""}",1
+mbpp_plus,"{""base"": ""pass"", ""plus"": ""fail""}",52
+mbpp_plus,"{""base"": ""pass"", ""plus"": ""pass""}",276
+olympiad_bench,ok,674

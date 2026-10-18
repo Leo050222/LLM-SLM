@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "job_id": 115290,
+  "node": "gnho009",
+  "rows": 9262,
+  "math_judge_rows": 4628,
+  "code_local_rows": 4634,
+  "judge_provider": "api.openlux.ai",
+  "judge_model": "gpt-4o-mini",
+  "judge_concurrency": 64,
+  "code_concurrency": 24,
+  "api_errors": 0,
+  "probe": "passed",
+  "output_root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_ablation/strong_reprompt_score_20261005",
+  "summary_local": "experiments/strong_reprompt_score_20261005/results/summary.json",
+  "completed_at": "2026-10-05T12:28:40+08:00"
+}

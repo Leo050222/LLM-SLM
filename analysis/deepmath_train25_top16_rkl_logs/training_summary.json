@@ -1,0 +1,92 @@
+{
+  "steps": 222,
+  "kl": {
+    "first": 0.12687946909659314,
+    "last": 0.12665620644274894,
+    "mean": 0.12245798003093801,
+    "std": 0.00726702435132145,
+    "min": 0.10668143211190015,
+    "max": 0.14512581510817704,
+    "first_20_mean": 0.1295016330196869,
+    "last_20_mean": 0.12182601723294686
+  },
+  "grad_norm": {
+    "mean": 0.6297987298117028,
+    "std": 0.23711023111072724,
+    "min": 0.45972391963005066,
+    "max": 1.9149889945983887,
+    "last": 0.5353502631187439
+  },
+  "response_tokens": {
+    "per_step_mean": 113513.2027027027,
+    "per_step_std": 10822.639716949308,
+    "per_sample_mean": 1773.6437922297298,
+    "max_observed": 11011
+  },
+  "timing_seconds": {
+    "student_mean": 62.57487092332061,
+    "teacher_mean": 56.2394377147996,
+    "student_p95": 71.70097351192962,
+    "teacher_p95": 64.8916094327229
+  },
+  "memory_gib": {
+    "student_peak_allocated_max": 32.16749668121338,
+    "student_peak_reserved_max": 34.841796875,
+    "teacher_peak_allocated_max": 29.049412727355957
+  },
+  "integrity": {
+    "total_thinking_tags": 0,
+    "all_batches_64_stops": true,
+    "all_checksum_deltas_nonzero": true
+  },
+  "duplicate_step_134": {
+    "93637": {
+      "step": 134,
+      "reverse_kl": 0.11153331375844007,
+      "grad_norm": 0.4806801676750183,
+      "response_tokens": 119025,
+      "mean_response_tokens": 1859.765625,
+      "max_response_tokens": 5451,
+      "teacher_seconds": 49.509862231090665,
+      "student_seconds": 55.0310808129143,
+      "student_peak_allocated_gib": 32.11654472351074,
+      "student_peak_reserved_gib": 32.638671875,
+      "teacher_peak_allocated_gib": 28.29396390914917,
+      "checksum_delta": -3.13507002829283e-05,
+      "thinking_tags": 0,
+      "stop_count": 64
+    },
+    "93862": {
+      "step": 134,
+      "reverse_kl": 0.11153331375844007,
+      "grad_norm": 0.4807116985321045,
+      "response_tokens": 119025,
+      "mean_response_tokens": 1859.765625,
+      "max_response_tokens": 5451,
+      "teacher_seconds": 34.99119607498869,
+      "student_seconds": 42.13996702991426,
+      "student_peak_allocated_gib": 32.127564430236816,
+      "student_peak_reserved_gib": 32.884765625,
+      "teacher_peak_allocated_gib": 28.29396390914917,
+      "checksum_delta": -3.1458256216865266e-05,
+      "thinking_tags": 0,
+      "stop_count": 64
+    },
+    "94033": {
+      "step": 134,
+      "reverse_kl": 0.11153331375844007,
+      "grad_norm": 0.4806753695011139,
+      "response_tokens": 119025,
+      "mean_response_tokens": 1859.765625,
+      "max_response_tokens": 5451,
+      "teacher_seconds": 47.31913392106071,
+      "student_seconds": 55.1467396740336,
+      "student_peak_allocated_gib": 32.127564430236816,
+      "student_peak_reserved_gib": 32.884765625,
+      "teacher_peak_allocated_gib": 28.29396390914917,
+      "checksum_delta": -3.148891983073554e-05,
+      "thinking_tags": 0,
+      "stop_count": 64
+    }
+  }
+}

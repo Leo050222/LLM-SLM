@@ -1,0 +1,338 @@
+{
+  "status": "TEACHER_ON_STUDENT_TOP16_OK",
+  "topk": 16,
+  "selected_rows": 47,
+  "metric": "renormalized KL(student || teacher) on student-selected Top-16 support",
+  "elapsed_seconds": 62.39305933297146,
+  "rows": [
+    {
+      "dataset_index": 30,
+      "response_tokens": 23591,
+      "parquet_bytes": 877689,
+      "detail_bytes": 2268713,
+      "cached": false
+    },
+    {
+      "dataset_index": 54,
+      "response_tokens": 9593,
+      "parquet_bytes": 387787,
+      "detail_bytes": 943990,
+      "cached": false
+    },
+    {
+      "dataset_index": 70,
+      "response_tokens": 16699,
+      "parquet_bytes": 617552,
+      "detail_bytes": 1596153,
+      "cached": false
+    },
+    {
+      "dataset_index": 114,
+      "response_tokens": 21056,
+      "parquet_bytes": 771299,
+      "detail_bytes": 1984656,
+      "cached": false
+    },
+    {
+      "dataset_index": 122,
+      "response_tokens": 14306,
+      "parquet_bytes": 592466,
+      "detail_bytes": 1411540,
+      "cached": false
+    },
+    {
+      "dataset_index": 130,
+      "response_tokens": 22117,
+      "parquet_bytes": 887548,
+      "detail_bytes": 2211609,
+      "cached": false
+    },
+    {
+      "dataset_index": 134,
+      "response_tokens": 9534,
+      "parquet_bytes": 391096,
+      "detail_bytes": 939922,
+      "cached": false
+    },
+    {
+      "dataset_index": 146,
+      "response_tokens": 9795,
+      "parquet_bytes": 392535,
+      "detail_bytes": 954062,
+      "cached": false
+    },
+    {
+      "dataset_index": 154,
+      "response_tokens": 18332,
+      "parquet_bytes": 707612,
+      "detail_bytes": 1778524,
+      "cached": false
+    },
+    {
+      "dataset_index": 226,
+      "response_tokens": 3178,
+      "parquet_bytes": 132184,
+      "detail_bytes": 312819,
+      "cached": false
+    },
+    {
+      "dataset_index": 234,
+      "response_tokens": 9797,
+      "parquet_bytes": 360795,
+      "detail_bytes": 911149,
+      "cached": false
+    },
+    {
+      "dataset_index": 242,
+      "response_tokens": 4232,
+      "parquet_bytes": 157428,
+      "detail_bytes": 397320,
+      "cached": false
+    },
+    {
+      "dataset_index": 246,
+      "response_tokens": 9727,
+      "parquet_bytes": 388038,
+      "detail_bytes": 941865,
+      "cached": false
+    },
+    {
+      "dataset_index": 262,
+      "response_tokens": 12332,
+      "parquet_bytes": 477742,
+      "detail_bytes": 1193104,
+      "cached": false
+    },
+    {
+      "dataset_index": 274,
+      "response_tokens": 13731,
+      "parquet_bytes": 499128,
+      "detail_bytes": 1294946,
+      "cached": false
+    },
+    {
+      "dataset_index": 314,
+      "response_tokens": 15997,
+      "parquet_bytes": 656707,
+      "detail_bytes": 1578264,
+      "cached": false
+    },
+    {
+      "dataset_index": 326,
+      "response_tokens": 8451,
+      "parquet_bytes": 337758,
+      "detail_bytes": 825291,
+      "cached": false
+    },
+    {
+      "dataset_index": 338,
+      "response_tokens": 4685,
+      "parquet_bytes": 174565,
+      "detail_bytes": 439941,
+      "cached": false
+    },
+    {
+      "dataset_index": 346,
+      "response_tokens": 5476,
+      "parquet_bytes": 209508,
+      "detail_bytes": 527010,
+      "cached": false
+    },
+    {
+      "dataset_index": 366,
+      "response_tokens": 10011,
+      "parquet_bytes": 352891,
+      "detail_bytes": 930115,
+      "cached": false
+    },
+    {
+      "dataset_index": 374,
+      "response_tokens": 5158,
+      "parquet_bytes": 214723,
+      "detail_bytes": 507979,
+      "cached": false
+    },
+    {
+      "dataset_index": 382,
+      "response_tokens": 3299,
+      "parquet_bytes": 140329,
+      "detail_bytes": 324020,
+      "cached": false
+    },
+    {
+      "dataset_index": 386,
+      "response_tokens": 16565,
+      "parquet_bytes": 639445,
+      "detail_bytes": 1600600,
+      "cached": false
+    },
+    {
+      "dataset_index": 410,
+      "response_tokens": 10607,
+      "parquet_bytes": 418248,
+      "detail_bytes": 1037620,
+      "cached": false
+    },
+    {
+      "dataset_index": 450,
+      "response_tokens": 15529,
+      "parquet_bytes": 625679,
+      "detail_bytes": 1518623,
+      "cached": false
+    },
+    {
+      "dataset_index": 458,
+      "response_tokens": 15726,
+      "parquet_bytes": 623625,
+      "detail_bytes": 1543849,
+      "cached": false
+    },
+    {
+      "dataset_index": 486,
+      "response_tokens": 14338,
+      "parquet_bytes": 500336,
+      "detail_bytes": 1332750,
+      "cached": false
+    },
+    {
+      "dataset_index": 494,
+      "response_tokens": 15248,
+      "parquet_bytes": 532737,
+      "detail_bytes": 1411151,
+      "cached": false
+    },
+    {
+      "dataset_index": 518,
+      "response_tokens": 9765,
+      "parquet_bytes": 400797,
+      "detail_bytes": 964714,
+      "cached": false
+    },
+    {
+      "dataset_index": 526,
+      "response_tokens": 6468,
+      "parquet_bytes": 251512,
+      "detail_bytes": 628311,
+      "cached": false
+    },
+    {
+      "dataset_index": 530,
+      "response_tokens": 37211,
+      "parquet_bytes": 1281928,
+      "detail_bytes": 3431474,
+      "cached": false
+    },
+    {
+      "dataset_index": 534,
+      "response_tokens": 10453,
+      "parquet_bytes": 356230,
+      "detail_bytes": 952012,
+      "cached": false
+    },
+    {
+      "dataset_index": 546,
+      "response_tokens": 5706,
+      "parquet_bytes": 222195,
+      "detail_bytes": 554057,
+      "cached": false
+    },
+    {
+      "dataset_index": 594,
+      "response_tokens": 8271,
+      "parquet_bytes": 343626,
+      "detail_bytes": 807791,
+      "cached": false
+    },
+    {
+      "dataset_index": 602,
+      "response_tokens": 22525,
+      "parquet_bytes": 872056,
+      "detail_bytes": 2177588,
+      "cached": false
+    },
+    {
+      "dataset_index": 666,
+      "response_tokens": 6260,
+      "parquet_bytes": 259841,
+      "detail_bytes": 624995,
+      "cached": false
+    },
+    {
+      "dataset_index": 682,
+      "response_tokens": 20889,
+      "parquet_bytes": 828695,
+      "detail_bytes": 2063601,
+      "cached": false
+    },
+    {
+      "dataset_index": 750,
+      "response_tokens": 20226,
+      "parquet_bytes": 801893,
+      "detail_bytes": 1994958,
+      "cached": false
+    },
+    {
+      "dataset_index": 778,
+      "response_tokens": 4214,
+      "parquet_bytes": 174900,
+      "detail_bytes": 416905,
+      "cached": false
+    },
+    {
+      "dataset_index": 806,
+      "response_tokens": 7589,
+      "parquet_bytes": 249248,
+      "detail_bytes": 684646,
+      "cached": false
+    },
+    {
+      "dataset_index": 822,
+      "response_tokens": 20275,
+      "parquet_bytes": 698708,
+      "detail_bytes": 1858165,
+      "cached": false
+    },
+    {
+      "dataset_index": 858,
+      "response_tokens": 22654,
+      "parquet_bytes": 828671,
+      "detail_bytes": 2157275,
+      "cached": false
+    },
+    {
+      "dataset_index": 862,
+      "response_tokens": 21739,
+      "parquet_bytes": 811334,
+      "detail_bytes": 2098542,
+      "cached": false
+    },
+    {
+      "dataset_index": 870,
+      "response_tokens": 11112,
+      "parquet_bytes": 395791,
+      "detail_bytes": 1034576,
+      "cached": false
+    },
+    {
+      "dataset_index": 874,
+      "response_tokens": 20752,
+      "parquet_bytes": 746192,
+      "detail_bytes": 1954482,
+      "cached": false
+    },
+    {
+      "dataset_index": 878,
+      "response_tokens": 13626,
+      "parquet_bytes": 470895,
+      "detail_bytes": 1252872,
+      "cached": false
+    },
+    {
+      "dataset_index": 926,
+      "response_tokens": 11589,
+      "parquet_bytes": 390250,
+      "detail_bytes": 1048536,
+      "cached": false
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+metric,student_numerator,teacher_numerator,denominator,student_percent,teacher_percent,teacher_minus_student_pp,teacher_minus_student_count,teacher_relative_improvement_percent,teacher_over_student_ratio
+avg_accuracy,41604,60723,105952,39.2668,57.3118,18.0450,19119,45.9547,1.4595
+pass_at_8,9110,11007,13244,68.7859,83.1093,14.3235,1897,20.8233,1.2082
+pass_all_8,1560,3599,13244,11.7789,27.1746,15.3957,2039,130.7051,2.3071

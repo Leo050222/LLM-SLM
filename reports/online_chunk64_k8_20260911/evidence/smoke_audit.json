@@ -1,0 +1,69 @@
+{
+  "status": "REAL_JUDGE_SMOKE_AUDIT_OK",
+  "rows": [
+    {
+      "dataset_index": 0,
+      "tokens": 1024,
+      "takeovers": 3,
+      "teacher_tokens": 24,
+      "finish_reason": "length"
+    },
+    {
+      "dataset_index": 1,
+      "tokens": 826,
+      "takeovers": 0,
+      "teacher_tokens": 0,
+      "finish_reason": "stop"
+    },
+    {
+      "dataset_index": 2,
+      "tokens": 1024,
+      "takeovers": 5,
+      "teacher_tokens": 40,
+      "finish_reason": "length"
+    },
+    {
+      "dataset_index": 3,
+      "tokens": 1024,
+      "takeovers": 9,
+      "teacher_tokens": 72,
+      "finish_reason": "length"
+    },
+    {
+      "dataset_index": 4,
+      "tokens": 1024,
+      "takeovers": 9,
+      "teacher_tokens": 72,
+      "finish_reason": "length"
+    },
+    {
+      "dataset_index": 5,
+      "tokens": 1024,
+      "takeovers": 10,
+      "teacher_tokens": 80,
+      "finish_reason": "length"
+    },
+    {
+      "dataset_index": 6,
+      "tokens": 1024,
+      "takeovers": 0,
+      "teacher_tokens": 0,
+      "finish_reason": "length"
+    },
+    {
+      "dataset_index": 7,
+      "tokens": 1024,
+      "takeovers": 8,
+      "teacher_tokens": 64,
+      "finish_reason": "length"
+    }
+  ],
+  "run_status": {
+    "expected": 8,
+    "failed": [],
+    "completed": 8,
+    "elapsed_seconds": 943.6171999014914
+  },
+  "truncated_smoke": true,
+  "accuracy_claim": false
+}

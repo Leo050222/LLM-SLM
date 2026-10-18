@@ -1,0 +1,21 @@
+{
+  "model_name": "qwen3_4b_base",
+  "model": "/storage/yukaichengLab/share/model/Qwen3-4B",
+  "temperature": 0.0,
+  "do_sample": false,
+  "max_tokens": 2048,
+  "results": {
+    "openai/gsm8k": {
+      "correct": 127,
+      "total": 256,
+      "accuracy": 0.49609375,
+      "length_finished": 40
+    },
+    "DigitalLearningGmbH/MATH-lighteval": {
+      "correct": 88,
+      "total": 256,
+      "accuracy": 0.34375,
+      "length_finished": 204
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "job_id": 107953,
+  "dependency": "afterany:107946",
+  "generation_completion_guard": true,
+  "rows": 9142,
+  "code_rows": 4634,
+  "math_reasoning_rows": 4508,
+  "judge_provider": "OpenLux",
+  "judge_model": "gpt-4o-mini",
+  "authorization": "User: 跑完自动评分",
+  "api_probe_passed": true,
+  "cpus": 32,
+  "gpus": 0,
+  "memory_gib": 64,
+  "time_limit": "02:00:00",
+  "code_sha256": {
+    "system_prompt.txt": "b0baf7c0e5d392d0ae10c286c7c0da4f941e44ba72a5d17796667fa88d42b3af",
+    "judge_client.py": "459a4095bb55f48dd888f9c57b97bcf43ede0caafb5e6d51f73cf1cf06c4efc7",
+    "setup.py": "14e789b005730e71c6ee7ab0b39d58651e908efb33f8b5a45e58d1cdedccc46b",
+    "relay.py": "63a4fc0c3b7915130c84cf8663499a42d7e4f33bc87f218bb8dafcfa8b0146b4",
+    "code_scorer.py": "d3cadeadac0c8094855b9472dd8800988284a2e46fece54c9f3b02e6ced186f7",
+    "score.slurm": "c4938183b28492a7b104eee08a6de15569cd5f2aca8463667240ca1f54dc6639",
+    "ablation_core.py": "5ace90ebed4f97120dec841c4efb1aa87eaa6575c0d21806e05eca36889af809",
+    "score_one.py": "77111979c7536c337ade84cc131bfe680d558b3e0550bb5f339e21d8aec4fb0e",
+    "score.py": "a1f1d1fa36883c2ca63132b88fc087662439e18987954f9b5572ab5551e8ed56"
+  }
+}

@@ -1,0 +1,568 @@
+{
+  "completed_buckets": 16,
+  "total_buckets": 16,
+  "objects_scanned": 60850654,
+  "unique_matches": 1072510,
+  "named_wangxin_directory_roots": {
+    "auwomo-data/auwomo-data-processed/wangxin/": {
+      "objects": 142644,
+      "nonempty": 141754,
+      "bytes": 105701057042
+    },
+    "auwomo-data-processed/wangxin/": {
+      "objects": 929486,
+      "nonempty": 928581,
+      "bytes": 615174663013
+    }
+  },
+  "groups": {
+    "auwomo-data/auwomo-data-processed/wangxin/simforge-backups": {
+      "objects": 8,
+      "nonempty": 8,
+      "bytes": 551763
+    },
+    "auwomo-data/auwomo-data-processed/wangxin/simforge-migration": {
+      "objects": 3,
+      "nonempty": 3,
+      "bytes": 14626689007
+    },
+    "auwomo-data/auwomo-data-processed/wangxin/simforge": {
+      "objects": 142633,
+      "nonempty": 141743,
+      "bytes": 91073816272
+    },
+    "auwomo-data/wangxin_4090/": {
+      "objects": 1,
+      "nonempty": 0,
+      "bytes": 0
+    },
+    "auwomo-data/font-gb2312-dataset-v3/source/fonts/42534216337__MaoKenWangXingYuan-2.ttf": {
+      "objects": 1,
+      "nonempty": 1,
+      "bytes": 3047088
+    },
+    "auwomo-data/wanxin_westlake/zichuan/dLLM-RL/rl_genmol/results/results-rl-.storage.yukaichengLab.wangxin.GenMol.checkpoints.model_v2.ckpt-genmol_toy.txt": {
+      "objects": 1,
+      "nonempty": 1,
+      "bytes": 700
+    },
+    "auwomo-data/wanxin_westlake/zichuan/dLLM-RL/rl_genmol/temp_data/outputs-rl-.storage.yukaichengLab.wangxin.GenMol.checkpoints.model_v2.ckpt-genmol_toy.json": {
+      "objects": 1,
+      "nonempty": 1,
+      "bytes": 33089
+    },
+    "auwomo-data/wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-17": {
+      "objects": 67,
+      "nonempty": 67,
+      "bytes": 19763
+    },
+    "auwomo-data/wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-18": {
+      "objects": 103,
+      "nonempty": 103,
+      "bytes": 48415
+    },
+    "auwomo-data/wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-19": {
+      "objects": 103,
+      "nonempty": 103,
+      "bytes": 48415
+    },
+    "auwomo-data/wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-current": {
+      "objects": 103,
+      "nonempty": 103,
+      "bytes": 48415
+    },
+    "auwomo-data-processed/wangxin/": {
+      "objects": 1,
+      "nonempty": 0,
+      "bytes": 0
+    },
+    "auwomo-data-processed/wangxin/libero_plus": {
+      "objects": 30622,
+      "nonempty": 30622,
+      "bytes": 1320552477
+    },
+    "auwomo-data-processed/wangxin/simforge-backups": {
+      "objects": 8,
+      "nonempty": 8,
+      "bytes": 551763
+    },
+    "auwomo-data-processed/wangxin/simforge-migration": {
+      "objects": 3,
+      "nonempty": 3,
+      "bytes": 14626689007
+    },
+    "auwomo-data-processed/wangxin/simforge": {
+      "objects": 898852,
+      "nonempty": 897948,
+      "bytes": 599226869766
+    }
+  },
+  "eiloeo_matches_in_wangxin_paths": [],
+  "westlake_related_alias": {
+    "bucket": "auwomo-data",
+    "prefix": "wanxin_westlake/",
+    "status": "complete",
+    "objects_scanned": 4018863,
+    "size_bytes": 7364970341729,
+    "eiloeo_matches": []
+  },
+  "alias_weight_filename_examples": [
+    {
+      "key": "wanxin_westlake/GenMol/checkpoints/model.ckpt",
+      "size_bytes": 1396949417
+    },
+    {
+      "key": "wanxin_westlake/GenMol/checkpoints/model_v2.ckpt",
+      "size_bytes": 1397023575
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/best_model/model-00001-of-00004.safetensors",
+      "size_bytes": 4995581672
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/best_model/model-00002-of-00004.safetensors",
+      "size_bytes": 4999819552
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/best_model/model-00003-of-00004.safetensors",
+      "size_bytes": 4999802728
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/best_model/model-00004-of-00004.safetensors",
+      "size_bytes": 1035993232
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/checkpoint_step1000/model-00001-of-00004.safetensors",
+      "size_bytes": 4995581672
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/checkpoint_step1000/model-00002-of-00004.safetensors",
+      "size_bytes": 4999819552
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/checkpoint_step1000/model-00003-of-00004.safetensors",
+      "size_bytes": 4999802728
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/checkpoint_step1000/model-00004-of-00004.safetensors",
+      "size_bytes": 1035993232
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/checkpoint_step2000/model-00001-of-00004.safetensors",
+      "size_bytes": 4995581672
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/checkpoint_step2000/model-00002-of-00004.safetensors",
+      "size_bytes": 4999819552
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/checkpoint_step2000/model-00003-of-00004.safetensors",
+      "size_bytes": 4999802728
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/checkpoint_step2000/model-00004-of-00004.safetensors",
+      "size_bytes": 1035993232
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/checkpoint_step3000/model-00001-of-00004.safetensors",
+      "size_bytes": 4995581672
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/checkpoint_step3000/model-00002-of-00004.safetensors",
+      "size_bytes": 4999819552
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/checkpoint_step3000/model-00003-of-00004.safetensors",
+      "size_bytes": 4999802728
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/checkpoint_step3000/model-00004-of-00004.safetensors",
+      "size_bytes": 1035993232
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/final_model/model-00001-of-00004.safetensors",
+      "size_bytes": 4995581672
+    },
+    {
+      "key": "wanxin_westlake/LLaDA/checkpoints/sft_v1/final_model/model-00002-of-00004.safetensors",
+      "size_bytes": 4999819552
+    }
+  ],
+  "samples": {
+    "auwomo-data/auwomo-data-processed/wangxin/simforge-backups": [
+      {
+        "bucket": "auwomo-data",
+        "key": "auwomo-data-processed/wangxin/simforge-backups/pre-update-20260716_142759/head.txt",
+        "size_bytes": 41,
+        "last_modified": "2026-08-26T04:43:40Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "auwomo-data-processed/wangxin/simforge-backups/pre-update-20260716_142759/status.txt",
+        "size_bytes": 1822,
+        "last_modified": "2026-08-26T04:43:40Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "auwomo-data-processed/wangxin/simforge-backups/pre-update-20260716_142759/untracked-files.tar.gz",
+        "size_bytes": 16031,
+        "last_modified": "2026-08-26T04:43:40Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "auwomo-data-processed/wangxin/simforge-backups/pre-update-20260716_142759/working-tree.patch",
+        "size_bytes": 33900,
+        "last_modified": "2026-08-26T04:43:40Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "auwomo-data-processed/wangxin/simforge-backups/pre-update-20260717_021242/head.txt",
+        "size_bytes": 51,
+        "last_modified": "2026-08-26T04:44:20Z"
+      }
+    ],
+    "auwomo-data/auwomo-data-processed/wangxin/simforge-migration": [
+      {
+        "bucket": "auwomo-data",
+        "key": "auwomo-data-processed/wangxin/simforge-migration/MIGRATION_MANIFEST.txt",
+        "size_bytes": 1927,
+        "last_modified": "2026-08-26T04:43:40Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "auwomo-data-processed/wangxin/simforge-migration/simforge_d148420_runtime_v2_gpu23.tar",
+        "size_bytes": 14626686976,
+        "last_modified": "2026-08-26T04:43:57Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "auwomo-data-processed/wangxin/simforge-migration/simforge_d148420_runtime_v2_gpu23.tar.sha256",
+        "size_bytes": 104,
+        "last_modified": "2026-08-26T04:43:40Z"
+      }
+    ],
+    "auwomo-data/auwomo-data-processed/wangxin/simforge": [
+      {
+        "bucket": "auwomo-data",
+        "key": "auwomo-data-processed/wangxin/simforge/._Dockerfile",
+        "size_bytes": 163,
+        "last_modified": "2026-08-26T04:43:40Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "auwomo-data-processed/wangxin/simforge/._README.md",
+        "size_bytes": 163,
+        "last_modified": "2026-08-26T04:43:40Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "auwomo-data-processed/wangxin/simforge/.dockerignore",
+        "size_bytes": 909,
+        "last_modified": "2026-08-26T04:43:40Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "auwomo-data-processed/wangxin/simforge/.env",
+        "size_bytes": 1104,
+        "last_modified": "2026-08-26T04:43:40Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "auwomo-data-processed/wangxin/simforge/.env.example",
+        "size_bytes": 1449,
+        "last_modified": "2026-08-26T04:43:40Z"
+      }
+    ],
+    "auwomo-data/wangxin_4090/": [
+      {
+        "bucket": "auwomo-data",
+        "key": "wangxin_4090/",
+        "size_bytes": 0,
+        "last_modified": "2026-10-10T16:31:48Z"
+      }
+    ],
+    "auwomo-data/font-gb2312-dataset-v3/source/fonts/42534216337__MaoKenWangXingYuan-2.ttf": [
+      {
+        "bucket": "auwomo-data",
+        "key": "font-gb2312-dataset-v3/source/fonts/42534216337__MaoKenWangXingYuan-2.ttf",
+        "size_bytes": 3047088,
+        "last_modified": "2026-09-19T00:18:33Z"
+      }
+    ],
+    "auwomo-data/wanxin_westlake/zichuan/dLLM-RL/rl_genmol/results/results-rl-.storage.yukaichengLab.wangxin.GenMol.checkpoints.model_v2.ckpt-genmol_toy.txt": [
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/zichuan/dLLM-RL/rl_genmol/results/results-rl-.storage.yukaichengLab.wangxin.GenMol.checkpoints.model_v2.ckpt-genmol_toy.txt",
+        "size_bytes": 700,
+        "last_modified": "2026-09-28T14:53:24Z"
+      }
+    ],
+    "auwomo-data/wanxin_westlake/zichuan/dLLM-RL/rl_genmol/temp_data/outputs-rl-.storage.yukaichengLab.wangxin.GenMol.checkpoints.model_v2.ckpt-genmol_toy.json": [
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/zichuan/dLLM-RL/rl_genmol/temp_data/outputs-rl-.storage.yukaichengLab.wangxin.GenMol.checkpoints.model_v2.ckpt-genmol_toy.json",
+        "size_bytes": 33089,
+        "last_modified": "2026-09-28T14:53:25Z"
+      }
+    ],
+    "auwomo-data/wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-17": [
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-17/test_verify_paper_training_gat0/ase-train-reference.pt",
+        "size_bytes": 5,
+        "last_modified": "2026-10-05T23:01:50Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-17/test_verify_paper_training_gat0/ase-train-registering.pt",
+        "size_bytes": 5,
+        "last_modified": "2026-10-05T23:01:50Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-17/test_verify_paper_training_gat0/ase-val-reference.pt",
+        "size_bytes": 5,
+        "last_modified": "2026-10-05T23:01:50Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-17/test_verify_paper_training_gat0/ase-val-registering.pt",
+        "size_bytes": 5,
+        "last_modified": "2026-10-05T23:01:50Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-17/test_verify_paper_training_gat0/depth.png",
+        "size_bytes": 5,
+        "last_modified": "2026-10-05T23:01:50Z"
+      }
+    ],
+    "auwomo-data/wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-18": [
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-18/test_download_once_appends_val0/chunk.zip.part",
+        "size_bytes": 6,
+        "last_modified": "2026-10-05T23:01:50Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-18/test_download_once_appends_valcurrent/chunk.zip.part",
+        "size_bytes": 6,
+        "last_modified": "2026-10-05T23:01:51Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-18/test_download_once_preserves_p0/chunk.zip.part",
+        "size_bytes": 3,
+        "last_modified": "2026-10-05T23:01:51Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-18/test_download_once_preserves_pcurrent/chunk.zip.part",
+        "size_bytes": 3,
+        "last_modified": "2026-10-05T23:01:51Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-18/test_download_once_retains_tru0/chunk.zip.part",
+        "size_bytes": 5,
+        "last_modified": "2026-10-05T23:01:51Z"
+      }
+    ],
+    "auwomo-data/wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-19": [
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-19/test_download_once_appends_val0/chunk.zip.part",
+        "size_bytes": 6,
+        "last_modified": "2026-10-05T23:01:52Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-19/test_download_once_appends_valcurrent/chunk.zip.part",
+        "size_bytes": 6,
+        "last_modified": "2026-10-05T23:01:52Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-19/test_download_once_preserves_p0/chunk.zip.part",
+        "size_bytes": 3,
+        "last_modified": "2026-10-05T23:01:52Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-19/test_download_once_preserves_pcurrent/chunk.zip.part",
+        "size_bytes": 3,
+        "last_modified": "2026-10-05T23:01:52Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-19/test_download_once_retains_tru0/chunk.zip.part",
+        "size_bytes": 5,
+        "last_modified": "2026-10-05T23:01:52Z"
+      }
+    ],
+    "auwomo-data/wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-current": [
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-current/test_download_once_appends_val0/chunk.zip.part",
+        "size_bytes": 6,
+        "last_modified": "2026-10-05T23:01:54Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-current/test_download_once_appends_valcurrent/chunk.zip.part",
+        "size_bytes": 6,
+        "last_modified": "2026-10-05T23:01:54Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-current/test_download_once_preserves_p0/chunk.zip.part",
+        "size_bytes": 3,
+        "last_modified": "2026-10-05T23:01:54Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-current/test_download_once_preserves_pcurrent/chunk.zip.part",
+        "size_bytes": 3,
+        "last_modified": "2026-10-05T23:01:54Z"
+      },
+      {
+        "bucket": "auwomo-data",
+        "key": "wanxin_westlake/miniconda3/envs/yumuzhen_env/.tmp/pytest-of-wangxin/pytest-current/test_download_once_retains_tru0/chunk.zip.part",
+        "size_bytes": 5,
+        "last_modified": "2026-10-05T23:01:54Z"
+      }
+    ],
+    "auwomo-data-processed/wangxin/": [
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/",
+        "size_bytes": 0,
+        "last_modified": "2026-08-26T04:30:54Z"
+      }
+    ],
+    "auwomo-data-processed/wangxin/libero_plus": [
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/libero_plus/production_4000_compat_20260906_v2/4000_DELIVERY_SHA256SUMS",
+        "size_bytes": 4937,
+        "last_modified": "2026-09-07T19:32:26Z"
+      },
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/libero_plus/production_4000_compat_20260906_v2/4000_delivery_gate_report.json",
+        "size_bytes": 1102385,
+        "last_modified": "2026-09-07T19:32:26Z"
+      },
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/libero_plus/production_4000_compat_20260906_v2/PRODUCTION_COMPLETE",
+        "size_bytes": 67,
+        "last_modified": "2026-09-07T19:32:27Z"
+      },
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/libero_plus/production_4000_compat_20260906_v2/README.md",
+        "size_bytes": 1140,
+        "last_modified": "2026-09-07T19:32:27Z"
+      },
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/libero_plus/production_4000_compat_20260906_v2/README.part-0000-0014.md",
+        "size_bytes": 1140,
+        "last_modified": "2026-09-07T19:32:27Z"
+      }
+    ],
+    "auwomo-data-processed/wangxin/simforge-backups": [
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/simforge-backups/pre-update-20260716_142759/head.txt",
+        "size_bytes": 41,
+        "last_modified": "2026-08-26T04:49:17Z"
+      },
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/simforge-backups/pre-update-20260716_142759/status.txt",
+        "size_bytes": 1822,
+        "last_modified": "2026-08-26T04:49:30Z"
+      },
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/simforge-backups/pre-update-20260716_142759/untracked-files.tar.gz",
+        "size_bytes": 16031,
+        "last_modified": "2026-08-26T04:49:30Z"
+      },
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/simforge-backups/pre-update-20260716_142759/working-tree.patch",
+        "size_bytes": 33900,
+        "last_modified": "2026-08-26T04:49:34Z"
+      },
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/simforge-backups/pre-update-20260717_021242/head.txt",
+        "size_bytes": 51,
+        "last_modified": "2026-08-26T04:49:17Z"
+      }
+    ],
+    "auwomo-data-processed/wangxin/simforge-migration": [
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/simforge-migration/MIGRATION_MANIFEST.txt",
+        "size_bytes": 1927,
+        "last_modified": "2026-08-26T04:49:17Z"
+      },
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/simforge-migration/simforge_d148420_runtime_v2_gpu23.tar",
+        "size_bytes": 14626686976,
+        "last_modified": "2026-08-26T04:49:55Z"
+      },
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/simforge-migration/simforge_d148420_runtime_v2_gpu23.tar.sha256",
+        "size_bytes": 104,
+        "last_modified": "2026-08-26T04:49:17Z"
+      }
+    ],
+    "auwomo-data-processed/wangxin/simforge": [
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/simforge/._Dockerfile",
+        "size_bytes": 163,
+        "last_modified": "2026-08-26T04:49:52Z"
+      },
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/simforge/._README.md",
+        "size_bytes": 163,
+        "last_modified": "2026-08-26T04:49:52Z"
+      },
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/simforge/.dockerignore",
+        "size_bytes": 909,
+        "last_modified": "2026-08-26T04:49:53Z"
+      },
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/simforge/.env",
+        "size_bytes": 1104,
+        "last_modified": "2026-08-26T04:49:52Z"
+      },
+      {
+        "bucket": "auwomo-data-processed",
+        "key": "wangxin/simforge/.env.example",
+        "size_bytes": 1449,
+        "last_modified": "2026-08-26T04:49:55Z"
+      }
+    ]
+  },
+  "read_only": true,
+  "file_contents_scanned": false,
+  "juicefs_full_directory_search": {
+    "exit_code": 0,
+    "matches": 0,
+    "log": "../../h800-directory-inspection/codex-jfs-full-wangxin-20261011-145211-67cd/result.log"
+  }
+}

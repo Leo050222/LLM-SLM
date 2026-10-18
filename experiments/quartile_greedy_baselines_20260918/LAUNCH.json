@@ -1,0 +1,14 @@
+{
+  "generation_job_id": "106799",
+  "scoring_job_id": "106800",
+  "generation_dependency": "afterok:106797",
+  "scoring_dependency": "afterok:106799:106798",
+  "groups": [
+    "k0",
+    "teacher_greedy"
+  ],
+  "rows_added": 1600,
+  "total_rows": 5600,
+  "status_at_submission": "PENDING (Dependency)",
+  "output_root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_prefix/quartile_support_k_20260918"
+}

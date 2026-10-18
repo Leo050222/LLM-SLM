@@ -1,0 +1,5 @@
+{
+  "events": 32360,
+  "traces": 3812,
+  "definitions": "k1 only; same context immediately after one teacher token; excludes no next retained token; all five thresholds pooled; nats"
+}

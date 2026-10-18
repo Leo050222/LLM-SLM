@@ -1,0 +1,14 @@
+[
+  {
+    "bucket": "auwomo-data-processed",
+    "key": "wangxin/libero_plus/production_4000_compat_20260906_v2/deliveries/part_0000_episodes_000000_000099/lerobot/data/chunk-000/episode_000000.parquet",
+    "status": "read_metadata_ok",
+    "content_length": "22137"
+  },
+  {
+    "bucket": "auwomo-data-processed",
+    "key": "wangxin/simforge/README.md",
+    "status": "read_metadata_ok",
+    "content_length": "60842"
+  }
+]

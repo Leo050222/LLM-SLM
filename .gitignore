@@ -1,0 +1,35 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local credentials and environment overrides
+.env
+.env.*
+*.secrets.env
+*.secrets.*.env
+
+# Reinstallable dependencies and runtime/compiler caches
+node_modules/
+.pnpm-store/
+.mplcache/
+**/artifacts/cache/
+
+# Generated artifacts that embed third-party API key material; retain locally.
+reports/deepmath_student_top16_trace_difference.html
+reports/deepmath_baseline_sample_gap/data_legacy_json/case_0004.js
+reports/deepmath_baseline_sample_gap/data_legacy_json/case_0069.js
+
+# Local agent and execution state
+.agents/
+.aris/
+logs/
+tmp/
+remote_patch/
+
+# Organized local working artifacts
+.local/
+artifacts/legacy_tmp/
+artifacts/outputs/
+datasets/local/
+*.tsbuildinfo
+**/bridge-rollout-browser/dist/

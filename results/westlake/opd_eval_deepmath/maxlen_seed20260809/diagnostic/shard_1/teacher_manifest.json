@@ -1,0 +1,1502 @@
+[
+  {
+    "dataset_index": 1,
+    "response_tokens": 6716,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_001.npz",
+    "teacher_mass_mean": 0.999958872795105
+  },
+  {
+    "dataset_index": 5,
+    "response_tokens": 4097,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_005.npz",
+    "teacher_mass_mean": 0.9999926090240479
+  },
+  {
+    "dataset_index": 9,
+    "response_tokens": 3506,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_009.npz",
+    "teacher_mass_mean": 0.9999698996543884
+  },
+  {
+    "dataset_index": 13,
+    "response_tokens": 7071,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_013.npz",
+    "teacher_mass_mean": 0.9999948740005493
+  },
+  {
+    "dataset_index": 17,
+    "response_tokens": 3944,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_017.npz",
+    "teacher_mass_mean": 0.9999915957450867
+  },
+  {
+    "dataset_index": 21,
+    "response_tokens": 16888,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_021.npz",
+    "teacher_mass_mean": 0.9999091029167175
+  },
+  {
+    "dataset_index": 25,
+    "response_tokens": 6170,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_025.npz",
+    "teacher_mass_mean": 0.9999836087226868
+  },
+  {
+    "dataset_index": 29,
+    "response_tokens": 3547,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_029.npz",
+    "teacher_mass_mean": 0.9999743700027466
+  },
+  {
+    "dataset_index": 33,
+    "response_tokens": 5330,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_033.npz",
+    "teacher_mass_mean": 0.9999479651451111
+  },
+  {
+    "dataset_index": 37,
+    "response_tokens": 4111,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_037.npz",
+    "teacher_mass_mean": 0.9999774098396301
+  },
+  {
+    "dataset_index": 41,
+    "response_tokens": 7818,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_041.npz",
+    "teacher_mass_mean": 0.9999939799308777
+  },
+  {
+    "dataset_index": 45,
+    "response_tokens": 9063,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_045.npz",
+    "teacher_mass_mean": 0.9999613165855408
+  },
+  {
+    "dataset_index": 49,
+    "response_tokens": 5113,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_049.npz",
+    "teacher_mass_mean": 0.9999367594718933
+  },
+  {
+    "dataset_index": 53,
+    "response_tokens": 5759,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_053.npz",
+    "teacher_mass_mean": 0.9999876022338867
+  },
+  {
+    "dataset_index": 57,
+    "response_tokens": 4124,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_057.npz",
+    "teacher_mass_mean": 0.9999696612358093
+  },
+  {
+    "dataset_index": 61,
+    "response_tokens": 6665,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_061.npz",
+    "teacher_mass_mean": 0.9999922513961792
+  },
+  {
+    "dataset_index": 65,
+    "response_tokens": 8151,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_065.npz",
+    "teacher_mass_mean": 0.9998390674591064
+  },
+  {
+    "dataset_index": 69,
+    "response_tokens": 15747,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_069.npz",
+    "teacher_mass_mean": 0.9998269081115723
+  },
+  {
+    "dataset_index": 73,
+    "response_tokens": 6252,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_073.npz",
+    "teacher_mass_mean": 0.9996305108070374
+  },
+  {
+    "dataset_index": 77,
+    "response_tokens": 6079,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_077.npz",
+    "teacher_mass_mean": 0.9999716281890869
+  },
+  {
+    "dataset_index": 81,
+    "response_tokens": 5313,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_081.npz",
+    "teacher_mass_mean": 0.999995231628418
+  },
+  {
+    "dataset_index": 85,
+    "response_tokens": 15466,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_085.npz",
+    "teacher_mass_mean": 0.9999023675918579
+  },
+  {
+    "dataset_index": 89,
+    "response_tokens": 18554,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_089.npz",
+    "teacher_mass_mean": 0.9999696016311646
+  },
+  {
+    "dataset_index": 93,
+    "response_tokens": 4014,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_093.npz",
+    "teacher_mass_mean": 0.9999972581863403
+  },
+  {
+    "dataset_index": 97,
+    "response_tokens": 4236,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_097.npz",
+    "teacher_mass_mean": 0.9999988675117493
+  },
+  {
+    "dataset_index": 101,
+    "response_tokens": 19932,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_101.npz",
+    "teacher_mass_mean": 0.9999929666519165
+  },
+  {
+    "dataset_index": 105,
+    "response_tokens": 9927,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_105.npz",
+    "teacher_mass_mean": 0.9999809861183167
+  },
+  {
+    "dataset_index": 109,
+    "response_tokens": 3940,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_109.npz",
+    "teacher_mass_mean": 0.999998152256012
+  },
+  {
+    "dataset_index": 113,
+    "response_tokens": 3284,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_113.npz",
+    "teacher_mass_mean": 0.9999663829803467
+  },
+  {
+    "dataset_index": 117,
+    "response_tokens": 6957,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_117.npz",
+    "teacher_mass_mean": 0.9999690055847168
+  },
+  {
+    "dataset_index": 121,
+    "response_tokens": 3547,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_121.npz",
+    "teacher_mass_mean": 0.9999972581863403
+  },
+  {
+    "dataset_index": 125,
+    "response_tokens": 3723,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_125.npz",
+    "teacher_mass_mean": 0.9999867081642151
+  },
+  {
+    "dataset_index": 129,
+    "response_tokens": 8741,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_129.npz",
+    "teacher_mass_mean": 0.9999906420707703
+  },
+  {
+    "dataset_index": 133,
+    "response_tokens": 6931,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_133.npz",
+    "teacher_mass_mean": 0.9999867677688599
+  },
+  {
+    "dataset_index": 137,
+    "response_tokens": 3328,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_137.npz",
+    "teacher_mass_mean": 0.9999778270721436
+  },
+  {
+    "dataset_index": 141,
+    "response_tokens": 6762,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_141.npz",
+    "teacher_mass_mean": 0.9999926090240479
+  },
+  {
+    "dataset_index": 145,
+    "response_tokens": 5500,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_145.npz",
+    "teacher_mass_mean": 0.999893844127655
+  },
+  {
+    "dataset_index": 149,
+    "response_tokens": 10122,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_149.npz",
+    "teacher_mass_mean": 0.9999864101409912
+  },
+  {
+    "dataset_index": 153,
+    "response_tokens": 5134,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_153.npz",
+    "teacher_mass_mean": 0.9999892711639404
+  },
+  {
+    "dataset_index": 157,
+    "response_tokens": 4084,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_157.npz",
+    "teacher_mass_mean": 0.9999985694885254
+  },
+  {
+    "dataset_index": 161,
+    "response_tokens": 6976,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_161.npz",
+    "teacher_mass_mean": 0.9999473690986633
+  },
+  {
+    "dataset_index": 165,
+    "response_tokens": 2646,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_165.npz",
+    "teacher_mass_mean": 0.9999769330024719
+  },
+  {
+    "dataset_index": 169,
+    "response_tokens": 6808,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_169.npz",
+    "teacher_mass_mean": 0.9999616146087646
+  },
+  {
+    "dataset_index": 173,
+    "response_tokens": 5652,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_173.npz",
+    "teacher_mass_mean": 0.9999969005584717
+  },
+  {
+    "dataset_index": 177,
+    "response_tokens": 9805,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_177.npz",
+    "teacher_mass_mean": 0.9999607801437378
+  },
+  {
+    "dataset_index": 181,
+    "response_tokens": 5144,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_181.npz",
+    "teacher_mass_mean": 0.9999735951423645
+  },
+  {
+    "dataset_index": 185,
+    "response_tokens": 5744,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_185.npz",
+    "teacher_mass_mean": 0.9999874830245972
+  },
+  {
+    "dataset_index": 189,
+    "response_tokens": 9351,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_189.npz",
+    "teacher_mass_mean": 0.9997617602348328
+  },
+  {
+    "dataset_index": 193,
+    "response_tokens": 7455,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_193.npz",
+    "teacher_mass_mean": 0.9999783635139465
+  },
+  {
+    "dataset_index": 197,
+    "response_tokens": 8476,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_197.npz",
+    "teacher_mass_mean": 0.9999579191207886
+  },
+  {
+    "dataset_index": 201,
+    "response_tokens": 2242,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_201.npz",
+    "teacher_mass_mean": 0.9999945759773254
+  },
+  {
+    "dataset_index": 205,
+    "response_tokens": 11501,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_205.npz",
+    "teacher_mass_mean": 0.9995260238647461
+  },
+  {
+    "dataset_index": 209,
+    "response_tokens": 5040,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_209.npz",
+    "teacher_mass_mean": 0.9999323487281799
+  },
+  {
+    "dataset_index": 213,
+    "response_tokens": 5068,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_213.npz",
+    "teacher_mass_mean": 0.9999315142631531
+  },
+  {
+    "dataset_index": 217,
+    "response_tokens": 4423,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_217.npz",
+    "teacher_mass_mean": 0.9999806880950928
+  },
+  {
+    "dataset_index": 221,
+    "response_tokens": 6310,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_221.npz",
+    "teacher_mass_mean": 0.9999228715896606
+  },
+  {
+    "dataset_index": 225,
+    "response_tokens": 8547,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_225.npz",
+    "teacher_mass_mean": 0.999983549118042
+  },
+  {
+    "dataset_index": 229,
+    "response_tokens": 18892,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_229.npz",
+    "teacher_mass_mean": 0.9999849796295166
+  },
+  {
+    "dataset_index": 233,
+    "response_tokens": 5327,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_233.npz",
+    "teacher_mass_mean": 0.9999879002571106
+  },
+  {
+    "dataset_index": 237,
+    "response_tokens": 8888,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_237.npz",
+    "teacher_mass_mean": 0.9998927712440491
+  },
+  {
+    "dataset_index": 241,
+    "response_tokens": 3562,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_241.npz",
+    "teacher_mass_mean": 0.9999699592590332
+  },
+  {
+    "dataset_index": 245,
+    "response_tokens": 13873,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_245.npz",
+    "teacher_mass_mean": 0.9998223185539246
+  },
+  {
+    "dataset_index": 249,
+    "response_tokens": 5471,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_249.npz",
+    "teacher_mass_mean": 0.9999903440475464
+  },
+  {
+    "dataset_index": 253,
+    "response_tokens": 3846,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_253.npz",
+    "teacher_mass_mean": 0.9999766945838928
+  },
+  {
+    "dataset_index": 257,
+    "response_tokens": 5538,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_257.npz",
+    "teacher_mass_mean": 0.9999847412109375
+  },
+  {
+    "dataset_index": 261,
+    "response_tokens": 4251,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_261.npz",
+    "teacher_mass_mean": 0.9999473690986633
+  },
+  {
+    "dataset_index": 265,
+    "response_tokens": 11583,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_265.npz",
+    "teacher_mass_mean": 0.9999391436576843
+  },
+  {
+    "dataset_index": 269,
+    "response_tokens": 2549,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_269.npz",
+    "teacher_mass_mean": 0.9998132586479187
+  },
+  {
+    "dataset_index": 273,
+    "response_tokens": 18067,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_273.npz",
+    "teacher_mass_mean": 0.9999343752861023
+  },
+  {
+    "dataset_index": 277,
+    "response_tokens": 2693,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_277.npz",
+    "teacher_mass_mean": 0.9999862909317017
+  },
+  {
+    "dataset_index": 281,
+    "response_tokens": 6355,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_281.npz",
+    "teacher_mass_mean": 0.999900758266449
+  },
+  {
+    "dataset_index": 285,
+    "response_tokens": 5074,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_285.npz",
+    "teacher_mass_mean": 0.9999902844429016
+  },
+  {
+    "dataset_index": 289,
+    "response_tokens": 5590,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_289.npz",
+    "teacher_mass_mean": 0.999994158744812
+  },
+  {
+    "dataset_index": 293,
+    "response_tokens": 6186,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_293.npz",
+    "teacher_mass_mean": 0.9999854564666748
+  },
+  {
+    "dataset_index": 297,
+    "response_tokens": 4901,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_297.npz",
+    "teacher_mass_mean": 0.9999896287918091
+  },
+  {
+    "dataset_index": 301,
+    "response_tokens": 6981,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_301.npz",
+    "teacher_mass_mean": 0.999642014503479
+  },
+  {
+    "dataset_index": 305,
+    "response_tokens": 4725,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_305.npz",
+    "teacher_mass_mean": 0.9999809861183167
+  },
+  {
+    "dataset_index": 309,
+    "response_tokens": 18428,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_309.npz",
+    "teacher_mass_mean": 0.9999745488166809
+  },
+  {
+    "dataset_index": 313,
+    "response_tokens": 20669,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_313.npz",
+    "teacher_mass_mean": 0.9999741315841675
+  },
+  {
+    "dataset_index": 317,
+    "response_tokens": 10213,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_317.npz",
+    "teacher_mass_mean": 0.9999278783798218
+  },
+  {
+    "dataset_index": 321,
+    "response_tokens": 8351,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_321.npz",
+    "teacher_mass_mean": 0.9999470114707947
+  },
+  {
+    "dataset_index": 325,
+    "response_tokens": 4647,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_325.npz",
+    "teacher_mass_mean": 0.9999651312828064
+  },
+  {
+    "dataset_index": 329,
+    "response_tokens": 7383,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_329.npz",
+    "teacher_mass_mean": 0.9999978542327881
+  },
+  {
+    "dataset_index": 333,
+    "response_tokens": 17991,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_333.npz",
+    "teacher_mass_mean": 0.9999698400497437
+  },
+  {
+    "dataset_index": 337,
+    "response_tokens": 3803,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_337.npz",
+    "teacher_mass_mean": 0.9999842643737793
+  },
+  {
+    "dataset_index": 341,
+    "response_tokens": 4790,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_341.npz",
+    "teacher_mass_mean": 0.9999668598175049
+  },
+  {
+    "dataset_index": 345,
+    "response_tokens": 17113,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_345.npz",
+    "teacher_mass_mean": 0.9999638199806213
+  },
+  {
+    "dataset_index": 349,
+    "response_tokens": 4439,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_349.npz",
+    "teacher_mass_mean": 0.9999949336051941
+  },
+  {
+    "dataset_index": 353,
+    "response_tokens": 8689,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_353.npz",
+    "teacher_mass_mean": 0.9999662637710571
+  },
+  {
+    "dataset_index": 357,
+    "response_tokens": 2573,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_357.npz",
+    "teacher_mass_mean": 0.9999493360519409
+  },
+  {
+    "dataset_index": 361,
+    "response_tokens": 4891,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_361.npz",
+    "teacher_mass_mean": 0.9999799132347107
+  },
+  {
+    "dataset_index": 365,
+    "response_tokens": 13406,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_365.npz",
+    "teacher_mass_mean": 0.9999197125434875
+  },
+  {
+    "dataset_index": 369,
+    "response_tokens": 16552,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_369.npz",
+    "teacher_mass_mean": 0.999984085559845
+  },
+  {
+    "dataset_index": 373,
+    "response_tokens": 6420,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_373.npz",
+    "teacher_mass_mean": 0.9998775720596313
+  },
+  {
+    "dataset_index": 377,
+    "response_tokens": 7827,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_377.npz",
+    "teacher_mass_mean": 0.9999454021453857
+  },
+  {
+    "dataset_index": 381,
+    "response_tokens": 7665,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_381.npz",
+    "teacher_mass_mean": 0.9999405145645142
+  },
+  {
+    "dataset_index": 385,
+    "response_tokens": 17179,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_385.npz",
+    "teacher_mass_mean": 0.9998953938484192
+  },
+  {
+    "dataset_index": 389,
+    "response_tokens": 3202,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_389.npz",
+    "teacher_mass_mean": 0.9999739527702332
+  },
+  {
+    "dataset_index": 393,
+    "response_tokens": 6251,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_393.npz",
+    "teacher_mass_mean": 0.999991238117218
+  },
+  {
+    "dataset_index": 397,
+    "response_tokens": 9215,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_397.npz",
+    "teacher_mass_mean": 0.9999898076057434
+  },
+  {
+    "dataset_index": 401,
+    "response_tokens": 6416,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_401.npz",
+    "teacher_mass_mean": 0.9999949932098389
+  },
+  {
+    "dataset_index": 405,
+    "response_tokens": 5514,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_405.npz",
+    "teacher_mass_mean": 0.9999684691429138
+  },
+  {
+    "dataset_index": 409,
+    "response_tokens": 11001,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_409.npz",
+    "teacher_mass_mean": 0.9998704195022583
+  },
+  {
+    "dataset_index": 413,
+    "response_tokens": 6292,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_413.npz",
+    "teacher_mass_mean": 0.9999676942825317
+  },
+  {
+    "dataset_index": 417,
+    "response_tokens": 15073,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_417.npz",
+    "teacher_mass_mean": 0.9998940229415894
+  },
+  {
+    "dataset_index": 421,
+    "response_tokens": 9525,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_421.npz",
+    "teacher_mass_mean": 0.9999588131904602
+  },
+  {
+    "dataset_index": 425,
+    "response_tokens": 8594,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_425.npz",
+    "teacher_mass_mean": 0.9999834299087524
+  },
+  {
+    "dataset_index": 429,
+    "response_tokens": 4353,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_429.npz",
+    "teacher_mass_mean": 0.9999633431434631
+  },
+  {
+    "dataset_index": 433,
+    "response_tokens": 11135,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_433.npz",
+    "teacher_mass_mean": 0.9999138712882996
+  },
+  {
+    "dataset_index": 437,
+    "response_tokens": 7822,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_437.npz",
+    "teacher_mass_mean": 0.9999914765357971
+  },
+  {
+    "dataset_index": 441,
+    "response_tokens": 16002,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_441.npz",
+    "teacher_mass_mean": 0.9999338388442993
+  },
+  {
+    "dataset_index": 445,
+    "response_tokens": 9848,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_445.npz",
+    "teacher_mass_mean": 0.9999951124191284
+  },
+  {
+    "dataset_index": 449,
+    "response_tokens": 7608,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_449.npz",
+    "teacher_mass_mean": 0.9999961853027344
+  },
+  {
+    "dataset_index": 453,
+    "response_tokens": 4705,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_453.npz",
+    "teacher_mass_mean": 0.9999514222145081
+  },
+  {
+    "dataset_index": 457,
+    "response_tokens": 7759,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_457.npz",
+    "teacher_mass_mean": 0.9999961256980896
+  },
+  {
+    "dataset_index": 461,
+    "response_tokens": 8856,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_461.npz",
+    "teacher_mass_mean": 0.9999122023582458
+  },
+  {
+    "dataset_index": 465,
+    "response_tokens": 13099,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_465.npz",
+    "teacher_mass_mean": 0.9999878406524658
+  },
+  {
+    "dataset_index": 469,
+    "response_tokens": 11527,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_469.npz",
+    "teacher_mass_mean": 0.9998335838317871
+  },
+  {
+    "dataset_index": 473,
+    "response_tokens": 12182,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_473.npz",
+    "teacher_mass_mean": 0.9999704957008362
+  },
+  {
+    "dataset_index": 477,
+    "response_tokens": 9745,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_477.npz",
+    "teacher_mass_mean": 0.999832034111023
+  },
+  {
+    "dataset_index": 481,
+    "response_tokens": 9374,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_481.npz",
+    "teacher_mass_mean": 0.9999930262565613
+  },
+  {
+    "dataset_index": 485,
+    "response_tokens": 3233,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_485.npz",
+    "teacher_mass_mean": 0.9999674558639526
+  },
+  {
+    "dataset_index": 489,
+    "response_tokens": 3614,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_489.npz",
+    "teacher_mass_mean": 0.9999953508377075
+  },
+  {
+    "dataset_index": 493,
+    "response_tokens": 9263,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_493.npz",
+    "teacher_mass_mean": 0.9999632835388184
+  },
+  {
+    "dataset_index": 497,
+    "response_tokens": 6121,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_497.npz",
+    "teacher_mass_mean": 0.9999898672103882
+  },
+  {
+    "dataset_index": 501,
+    "response_tokens": 12254,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_501.npz",
+    "teacher_mass_mean": 0.9998775124549866
+  },
+  {
+    "dataset_index": 505,
+    "response_tokens": 10309,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_505.npz",
+    "teacher_mass_mean": 0.99998939037323
+  },
+  {
+    "dataset_index": 509,
+    "response_tokens": 6414,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_509.npz",
+    "teacher_mass_mean": 0.9999886751174927
+  },
+  {
+    "dataset_index": 513,
+    "response_tokens": 7763,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_513.npz",
+    "teacher_mass_mean": 0.9999985098838806
+  },
+  {
+    "dataset_index": 517,
+    "response_tokens": 26576,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_517.npz",
+    "teacher_mass_mean": 0.9999773502349854
+  },
+  {
+    "dataset_index": 521,
+    "response_tokens": 15424,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_521.npz",
+    "teacher_mass_mean": 0.999930739402771
+  },
+  {
+    "dataset_index": 525,
+    "response_tokens": 3356,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_525.npz",
+    "teacher_mass_mean": 0.999995768070221
+  },
+  {
+    "dataset_index": 529,
+    "response_tokens": 2835,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_529.npz",
+    "teacher_mass_mean": 0.9999026656150818
+  },
+  {
+    "dataset_index": 533,
+    "response_tokens": 12623,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_533.npz",
+    "teacher_mass_mean": 0.9999574422836304
+  },
+  {
+    "dataset_index": 537,
+    "response_tokens": 13782,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_537.npz",
+    "teacher_mass_mean": 0.9999515414237976
+  },
+  {
+    "dataset_index": 541,
+    "response_tokens": 20479,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_541.npz",
+    "teacher_mass_mean": 0.9999644160270691
+  },
+  {
+    "dataset_index": 545,
+    "response_tokens": 4197,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_545.npz",
+    "teacher_mass_mean": 0.9999963641166687
+  },
+  {
+    "dataset_index": 549,
+    "response_tokens": 12464,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_549.npz",
+    "teacher_mass_mean": 0.9999509453773499
+  },
+  {
+    "dataset_index": 553,
+    "response_tokens": 6294,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_553.npz",
+    "teacher_mass_mean": 0.9999901652336121
+  },
+  {
+    "dataset_index": 557,
+    "response_tokens": 5660,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_557.npz",
+    "teacher_mass_mean": 0.9999957084655762
+  },
+  {
+    "dataset_index": 561,
+    "response_tokens": 3613,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_561.npz",
+    "teacher_mass_mean": 0.9999908208847046
+  },
+  {
+    "dataset_index": 565,
+    "response_tokens": 16070,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_565.npz",
+    "teacher_mass_mean": 0.9999678134918213
+  },
+  {
+    "dataset_index": 569,
+    "response_tokens": 2801,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_569.npz",
+    "teacher_mass_mean": 0.9999229311943054
+  },
+  {
+    "dataset_index": 573,
+    "response_tokens": 13349,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_573.npz",
+    "teacher_mass_mean": 0.9998168349266052
+  },
+  {
+    "dataset_index": 577,
+    "response_tokens": 20836,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_577.npz",
+    "teacher_mass_mean": 0.9999585747718811
+  },
+  {
+    "dataset_index": 581,
+    "response_tokens": 4184,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_581.npz",
+    "teacher_mass_mean": 0.9998937845230103
+  },
+  {
+    "dataset_index": 585,
+    "response_tokens": 6655,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_585.npz",
+    "teacher_mass_mean": 0.9999851584434509
+  },
+  {
+    "dataset_index": 589,
+    "response_tokens": 5504,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_589.npz",
+    "teacher_mass_mean": 0.9999818205833435
+  },
+  {
+    "dataset_index": 593,
+    "response_tokens": 5109,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_593.npz",
+    "teacher_mass_mean": 0.9999654293060303
+  },
+  {
+    "dataset_index": 597,
+    "response_tokens": 6073,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_597.npz",
+    "teacher_mass_mean": 0.9999668598175049
+  },
+  {
+    "dataset_index": 601,
+    "response_tokens": 11908,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_601.npz",
+    "teacher_mass_mean": 0.9999706149101257
+  },
+  {
+    "dataset_index": 605,
+    "response_tokens": 9104,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_605.npz",
+    "teacher_mass_mean": 0.9999609589576721
+  },
+  {
+    "dataset_index": 609,
+    "response_tokens": 4857,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_609.npz",
+    "teacher_mass_mean": 0.9999893307685852
+  },
+  {
+    "dataset_index": 613,
+    "response_tokens": 4062,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_613.npz",
+    "teacher_mass_mean": 0.9999977350234985
+  },
+  {
+    "dataset_index": 617,
+    "response_tokens": 12682,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_617.npz",
+    "teacher_mass_mean": 0.9999921321868896
+  },
+  {
+    "dataset_index": 621,
+    "response_tokens": 6224,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_621.npz",
+    "teacher_mass_mean": 0.999879002571106
+  },
+  {
+    "dataset_index": 625,
+    "response_tokens": 3317,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_625.npz",
+    "teacher_mass_mean": 0.9999486207962036
+  },
+  {
+    "dataset_index": 629,
+    "response_tokens": 5275,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_629.npz",
+    "teacher_mass_mean": 0.9995659589767456
+  },
+  {
+    "dataset_index": 633,
+    "response_tokens": 5016,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_633.npz",
+    "teacher_mass_mean": 0.9999503493309021
+  },
+  {
+    "dataset_index": 637,
+    "response_tokens": 5747,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_637.npz",
+    "teacher_mass_mean": 0.9999127984046936
+  },
+  {
+    "dataset_index": 641,
+    "response_tokens": 4585,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_641.npz",
+    "teacher_mass_mean": 0.9999978542327881
+  },
+  {
+    "dataset_index": 645,
+    "response_tokens": 7323,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_645.npz",
+    "teacher_mass_mean": 0.999974250793457
+  },
+  {
+    "dataset_index": 649,
+    "response_tokens": 9342,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_649.npz",
+    "teacher_mass_mean": 0.9999754428863525
+  },
+  {
+    "dataset_index": 653,
+    "response_tokens": 6503,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_653.npz",
+    "teacher_mass_mean": 0.9999963045120239
+  },
+  {
+    "dataset_index": 657,
+    "response_tokens": 2180,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_657.npz",
+    "teacher_mass_mean": 0.9999913573265076
+  },
+  {
+    "dataset_index": 661,
+    "response_tokens": 3640,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_661.npz",
+    "teacher_mass_mean": 0.9999816417694092
+  },
+  {
+    "dataset_index": 665,
+    "response_tokens": 7501,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_665.npz",
+    "teacher_mass_mean": 0.9997905492782593
+  },
+  {
+    "dataset_index": 669,
+    "response_tokens": 16160,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_669.npz",
+    "teacher_mass_mean": 0.9999226331710815
+  },
+  {
+    "dataset_index": 673,
+    "response_tokens": 5058,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_673.npz",
+    "teacher_mass_mean": 0.9999880194664001
+  },
+  {
+    "dataset_index": 677,
+    "response_tokens": 9761,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_677.npz",
+    "teacher_mass_mean": 0.999984085559845
+  },
+  {
+    "dataset_index": 681,
+    "response_tokens": 7938,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_681.npz",
+    "teacher_mass_mean": 0.9999905824661255
+  },
+  {
+    "dataset_index": 685,
+    "response_tokens": 9608,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_685.npz",
+    "teacher_mass_mean": 0.9999896287918091
+  },
+  {
+    "dataset_index": 689,
+    "response_tokens": 5417,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_689.npz",
+    "teacher_mass_mean": 0.999967634677887
+  },
+  {
+    "dataset_index": 693,
+    "response_tokens": 6253,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_693.npz",
+    "teacher_mass_mean": 0.9999749064445496
+  },
+  {
+    "dataset_index": 697,
+    "response_tokens": 11046,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_697.npz",
+    "teacher_mass_mean": 0.9999364614486694
+  },
+  {
+    "dataset_index": 701,
+    "response_tokens": 15667,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_701.npz",
+    "teacher_mass_mean": 0.9998425245285034
+  },
+  {
+    "dataset_index": 705,
+    "response_tokens": 9231,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_705.npz",
+    "teacher_mass_mean": 0.9999919533729553
+  },
+  {
+    "dataset_index": 709,
+    "response_tokens": 14879,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_709.npz",
+    "teacher_mass_mean": 0.9999611377716064
+  },
+  {
+    "dataset_index": 713,
+    "response_tokens": 6236,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_713.npz",
+    "teacher_mass_mean": 0.9999968409538269
+  },
+  {
+    "dataset_index": 717,
+    "response_tokens": 5923,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_717.npz",
+    "teacher_mass_mean": 0.9999537467956543
+  },
+  {
+    "dataset_index": 721,
+    "response_tokens": 17784,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_721.npz",
+    "teacher_mass_mean": 0.9999302625656128
+  },
+  {
+    "dataset_index": 725,
+    "response_tokens": 7778,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_725.npz",
+    "teacher_mass_mean": 0.9999093413352966
+  },
+  {
+    "dataset_index": 729,
+    "response_tokens": 13674,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_729.npz",
+    "teacher_mass_mean": 0.9999627470970154
+  },
+  {
+    "dataset_index": 733,
+    "response_tokens": 3976,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_733.npz",
+    "teacher_mass_mean": 0.999962329864502
+  },
+  {
+    "dataset_index": 737,
+    "response_tokens": 5195,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_737.npz",
+    "teacher_mass_mean": 0.9999569654464722
+  },
+  {
+    "dataset_index": 741,
+    "response_tokens": 4375,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_741.npz",
+    "teacher_mass_mean": 0.9999769926071167
+  },
+  {
+    "dataset_index": 745,
+    "response_tokens": 2990,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_745.npz",
+    "teacher_mass_mean": 0.9999926686286926
+  },
+  {
+    "dataset_index": 749,
+    "response_tokens": 8009,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_749.npz",
+    "teacher_mass_mean": 0.9999431371688843
+  },
+  {
+    "dataset_index": 753,
+    "response_tokens": 6357,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_753.npz",
+    "teacher_mass_mean": 0.9999029636383057
+  },
+  {
+    "dataset_index": 757,
+    "response_tokens": 6088,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_757.npz",
+    "teacher_mass_mean": 0.9999536275863647
+  },
+  {
+    "dataset_index": 761,
+    "response_tokens": 16756,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_761.npz",
+    "teacher_mass_mean": 0.9998905658721924
+  },
+  {
+    "dataset_index": 765,
+    "response_tokens": 4264,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_765.npz",
+    "teacher_mass_mean": 0.9999751448631287
+  },
+  {
+    "dataset_index": 769,
+    "response_tokens": 7362,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_769.npz",
+    "teacher_mass_mean": 0.999937891960144
+  },
+  {
+    "dataset_index": 773,
+    "response_tokens": 5952,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_773.npz",
+    "teacher_mass_mean": 0.9999294281005859
+  },
+  {
+    "dataset_index": 777,
+    "response_tokens": 11675,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_777.npz",
+    "teacher_mass_mean": 0.9999815225601196
+  },
+  {
+    "dataset_index": 781,
+    "response_tokens": 2686,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_781.npz",
+    "teacher_mass_mean": 0.9999785423278809
+  },
+  {
+    "dataset_index": 785,
+    "response_tokens": 8012,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_785.npz",
+    "teacher_mass_mean": 0.9999926090240479
+  },
+  {
+    "dataset_index": 789,
+    "response_tokens": 3271,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_789.npz",
+    "teacher_mass_mean": 0.9999828338623047
+  },
+  {
+    "dataset_index": 793,
+    "response_tokens": 13910,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_793.npz",
+    "teacher_mass_mean": 0.9995543360710144
+  },
+  {
+    "dataset_index": 797,
+    "response_tokens": 6444,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_797.npz",
+    "teacher_mass_mean": 0.9999637603759766
+  },
+  {
+    "dataset_index": 801,
+    "response_tokens": 3856,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_801.npz",
+    "teacher_mass_mean": 0.9999428987503052
+  },
+  {
+    "dataset_index": 805,
+    "response_tokens": 9972,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_805.npz",
+    "teacher_mass_mean": 0.9999697208404541
+  },
+  {
+    "dataset_index": 809,
+    "response_tokens": 6562,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_809.npz",
+    "teacher_mass_mean": 0.9999898672103882
+  },
+  {
+    "dataset_index": 813,
+    "response_tokens": 2633,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_813.npz",
+    "teacher_mass_mean": 0.9999966621398926
+  },
+  {
+    "dataset_index": 817,
+    "response_tokens": 6940,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_817.npz",
+    "teacher_mass_mean": 0.9999974966049194
+  },
+  {
+    "dataset_index": 821,
+    "response_tokens": 10499,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_821.npz",
+    "teacher_mass_mean": 0.9999875426292419
+  },
+  {
+    "dataset_index": 825,
+    "response_tokens": 10800,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_825.npz",
+    "teacher_mass_mean": 0.9999627470970154
+  },
+  {
+    "dataset_index": 829,
+    "response_tokens": 6916,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_829.npz",
+    "teacher_mass_mean": 0.9999758005142212
+  },
+  {
+    "dataset_index": 833,
+    "response_tokens": 6851,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_833.npz",
+    "teacher_mass_mean": 0.9999897480010986
+  },
+  {
+    "dataset_index": 837,
+    "response_tokens": 4909,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_837.npz",
+    "teacher_mass_mean": 0.9999854564666748
+  },
+  {
+    "dataset_index": 841,
+    "response_tokens": 8440,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_841.npz",
+    "teacher_mass_mean": 0.9999949336051941
+  },
+  {
+    "dataset_index": 845,
+    "response_tokens": 5650,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_845.npz",
+    "teacher_mass_mean": 0.9999900460243225
+  },
+  {
+    "dataset_index": 849,
+    "response_tokens": 5603,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_849.npz",
+    "teacher_mass_mean": 0.9999890923500061
+  },
+  {
+    "dataset_index": 853,
+    "response_tokens": 5476,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_853.npz",
+    "teacher_mass_mean": 0.9999949932098389
+  },
+  {
+    "dataset_index": 857,
+    "response_tokens": 13827,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_857.npz",
+    "teacher_mass_mean": 0.9999586343765259
+  },
+  {
+    "dataset_index": 861,
+    "response_tokens": 8003,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_861.npz",
+    "teacher_mass_mean": 0.9999949932098389
+  },
+  {
+    "dataset_index": 865,
+    "response_tokens": 9965,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_865.npz",
+    "teacher_mass_mean": 0.999895453453064
+  },
+  {
+    "dataset_index": 869,
+    "response_tokens": 9330,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_869.npz",
+    "teacher_mass_mean": 0.9999564290046692
+  },
+  {
+    "dataset_index": 873,
+    "response_tokens": 9373,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_873.npz",
+    "teacher_mass_mean": 0.9999868869781494
+  },
+  {
+    "dataset_index": 877,
+    "response_tokens": 6850,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_877.npz",
+    "teacher_mass_mean": 0.9999969601631165
+  },
+  {
+    "dataset_index": 881,
+    "response_tokens": 18866,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_881.npz",
+    "teacher_mass_mean": 0.9999912977218628
+  },
+  {
+    "dataset_index": 885,
+    "response_tokens": 11636,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_885.npz",
+    "teacher_mass_mean": 0.9999845027923584
+  },
+  {
+    "dataset_index": 889,
+    "response_tokens": 12709,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_889.npz",
+    "teacher_mass_mean": 0.999991238117218
+  },
+  {
+    "dataset_index": 893,
+    "response_tokens": 5139,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_893.npz",
+    "teacher_mass_mean": 0.9999836683273315
+  },
+  {
+    "dataset_index": 897,
+    "response_tokens": 8924,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_897.npz",
+    "teacher_mass_mean": 0.999989926815033
+  },
+  {
+    "dataset_index": 901,
+    "response_tokens": 5862,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_901.npz",
+    "teacher_mass_mean": 0.9999968409538269
+  },
+  {
+    "dataset_index": 905,
+    "response_tokens": 19598,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_905.npz",
+    "teacher_mass_mean": 0.9999700784683228
+  },
+  {
+    "dataset_index": 909,
+    "response_tokens": 22138,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_909.npz",
+    "teacher_mass_mean": 0.9999555349349976
+  },
+  {
+    "dataset_index": 913,
+    "response_tokens": 16473,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_913.npz",
+    "teacher_mass_mean": 0.9999779462814331
+  },
+  {
+    "dataset_index": 917,
+    "response_tokens": 6751,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_917.npz",
+    "teacher_mass_mean": 0.9999836087226868
+  },
+  {
+    "dataset_index": 921,
+    "response_tokens": 3020,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_921.npz",
+    "teacher_mass_mean": 0.9999979734420776
+  },
+  {
+    "dataset_index": 925,
+    "response_tokens": 1888,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_925.npz",
+    "teacher_mass_mean": 0.9999977946281433
+  },
+  {
+    "dataset_index": 929,
+    "response_tokens": 4380,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_929.npz",
+    "teacher_mass_mean": 0.9999939799308777
+  },
+  {
+    "dataset_index": 933,
+    "response_tokens": 2024,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_933.npz",
+    "teacher_mass_mean": 0.9999979734420776
+  },
+  {
+    "dataset_index": 937,
+    "response_tokens": 4293,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_937.npz",
+    "teacher_mass_mean": 0.9999843239784241
+  },
+  {
+    "dataset_index": 941,
+    "response_tokens": 2924,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_941.npz",
+    "teacher_mass_mean": 0.9999956488609314
+  },
+  {
+    "dataset_index": 945,
+    "response_tokens": 1817,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_945.npz",
+    "teacher_mass_mean": 0.9999983906745911
+  },
+  {
+    "dataset_index": 949,
+    "response_tokens": 8837,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_949.npz",
+    "teacher_mass_mean": 0.9999966621398926
+  },
+  {
+    "dataset_index": 953,
+    "response_tokens": 6449,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_953.npz",
+    "teacher_mass_mean": 0.9999932050704956
+  },
+  {
+    "dataset_index": 957,
+    "response_tokens": 20795,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_957.npz",
+    "teacher_mass_mean": 0.9999706745147705
+  },
+  {
+    "dataset_index": 961,
+    "response_tokens": 19588,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_961.npz",
+    "teacher_mass_mean": 0.9999808669090271
+  },
+  {
+    "dataset_index": 965,
+    "response_tokens": 5946,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_965.npz",
+    "teacher_mass_mean": 0.9999760985374451
+  },
+  {
+    "dataset_index": 969,
+    "response_tokens": 25732,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_969.npz",
+    "teacher_mass_mean": 0.9999755620956421
+  },
+  {
+    "dataset_index": 973,
+    "response_tokens": 3694,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_973.npz",
+    "teacher_mass_mean": 0.9999873042106628
+  },
+  {
+    "dataset_index": 977,
+    "response_tokens": 2458,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_977.npz",
+    "teacher_mass_mean": 0.9999997019767761
+  },
+  {
+    "dataset_index": 981,
+    "response_tokens": 1717,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_981.npz",
+    "teacher_mass_mean": 0.9999785423278809
+  },
+  {
+    "dataset_index": 985,
+    "response_tokens": 1603,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_985.npz",
+    "teacher_mass_mean": 0.9999953508377075
+  },
+  {
+    "dataset_index": 989,
+    "response_tokens": 4193,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_989.npz",
+    "teacher_mass_mean": 0.9999927878379822
+  },
+  {
+    "dataset_index": 993,
+    "response_tokens": 4791,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_993.npz",
+    "teacher_mass_mean": 0.9999895095825195
+  },
+  {
+    "dataset_index": 997,
+    "response_tokens": 6778,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/maxlen_seed20260809/diagnostic/shard_1/teacher_topk/example_997.npz",
+    "teacher_mass_mean": 0.9999949336051941
+  }
+]

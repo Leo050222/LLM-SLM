@@ -1,0 +1,16 @@
+{
+  "job_name": "codex-wangxin-list-20261010-175438-c99e57",
+  "job_uid": "c78e08b9-ab2a-4b64-8159-0a6e184c320e",
+  "namespace": "dcloud-auwomo",
+  "read_only_storage": true,
+  "pods": [
+    {
+      "pod": "codex-wangxin-list-20261010-175438-c99e57-hn8lk",
+      "phase": "Succeeded",
+      "node": "172.16.1.4",
+      "exit_code": 0
+    }
+  ],
+  "cleanup": "confirmed",
+  "remaining_test_pods": 0
+}

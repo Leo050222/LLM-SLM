@@ -1,0 +1,20 @@
+{
+  "online": {
+    "full_correct": 476,
+    "same958_correct": 445
+  },
+  "qwen3_1_7b": {
+    "full_correct": 399,
+    "same958_correct": 368
+  },
+  "qwen3_14b": {
+    "full_correct": 610,
+    "same958_correct": 578
+  },
+  "methods": {
+    "symbolic": 466,
+    "boolean_normalized": 199,
+    "normalized_exact": 335
+  },
+  "without_takeover": 58
+}

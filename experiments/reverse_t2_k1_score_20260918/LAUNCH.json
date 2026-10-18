@@ -1,0 +1,10 @@
+{
+  "code_job_id": 106689,
+  "code_status": "COMPLETED",
+  "math_job_id": 106690,
+  "rows": 4571,
+  "math_rows": 2254,
+  "external_scoring_authorized": true,
+  "provider": "api.openlux.ai",
+  "model": "gpt-4o-mini"
+}

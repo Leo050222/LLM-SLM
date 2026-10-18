@@ -1,0 +1,227 @@
+{
+  "k16_t3": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 293,
+      "accuracy": 0.43471810089020774,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 831,
+      "accuracy": 0.7694444444444445,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 412,
+      "accuracy": 0.824,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k16_t3p5": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 261,
+      "accuracy": 0.38724035608308605,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 826,
+      "accuracy": 0.7648148148148148,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 413,
+      "accuracy": 0.826,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  },
+  "k16_t4": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 265,
+      "accuracy": 0.39317507418397624,
+      "score_status": {
+        "ok": 658,
+        "trace_timeout": 16
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 808,
+      "accuracy": 0.7481481481481481,
+      "score_status": {
+        "ok": 1072,
+        "trace_timeout": 8
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 398,
+      "accuracy": 0.796,
+      "score_status": {
+        "ok": 490,
+        "trace_timeout": 10
+      }
+    }
+  },
+  "k32_t2": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 288,
+      "accuracy": 0.42729970326409494,
+      "score_status": {
+        "ok": 630,
+        "trace_timeout": 44
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 824,
+      "accuracy": 0.762962962962963,
+      "score_status": {
+        "ok": 1065,
+        "trace_timeout": 15
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 416,
+      "accuracy": 0.832,
+      "score_status": {
+        "ok": 486,
+        "trace_timeout": 14
+      }
+    }
+  },
+  "k32_t2p5": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 291,
+      "accuracy": 0.4317507418397626,
+      "score_status": {
+        "ok": 636,
+        "trace_timeout": 38
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 818,
+      "accuracy": 0.7574074074074074,
+      "score_status": {
+        "ok": 1069,
+        "trace_timeout": 11
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 414,
+      "accuracy": 0.828,
+      "score_status": {
+        "ok": 485,
+        "trace_timeout": 15
+      }
+    }
+  },
+  "k32_t3": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 279,
+      "accuracy": 0.413946587537092,
+      "score_status": {
+        "ok": 645,
+        "trace_timeout": 29
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 809,
+      "accuracy": 0.7490740740740741,
+      "score_status": {
+        "ok": 1068,
+        "trace_timeout": 12
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 404,
+      "accuracy": 0.808,
+      "score_status": {
+        "ok": 489,
+        "trace_timeout": 11
+      }
+    }
+  },
+  "k32_t3p5": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 261,
+      "accuracy": 0.38724035608308605,
+      "score_status": {
+        "ok": 645,
+        "trace_timeout": 29
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 805,
+      "accuracy": 0.7453703703703703,
+      "score_status": {
+        "ok": 1067,
+        "trace_timeout": 13
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 412,
+      "accuracy": 0.824,
+      "score_status": {
+        "ok": 491,
+        "trace_timeout": 9
+      }
+    }
+  },
+  "k32_t4": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 253,
+      "accuracy": 0.37537091988130566,
+      "score_status": {
+        "trace_timeout": 27,
+        "ok": 647
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 816,
+      "accuracy": 0.7555555555555555,
+      "score_status": {
+        "ok": 1079,
+        "trace_timeout": 1
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 403,
+      "accuracy": 0.806,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  }
+}

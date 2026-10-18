@@ -1,0 +1,31 @@
+{
+  "job_id": 106181,
+  "gpus": 4,
+  "rows": 4571,
+  "rollouts": 1,
+  "threshold": 2,
+  "k": 1,
+  "main_model": "Qwen3-14B",
+  "intervention_model": "Qwen3-1.7B",
+  "hashes": {
+    "worker.py": "5880e2c12525fa8dce825d3f719c44700bbb6942e04433d6f4f22649290ddb2c",
+    "run.py": "9ac3238feb6015e63010b7f26400af3e45e072810bbd26ed156a9bbce80c512b",
+    "dispatch.py": "79657845ce593ca02bb9a810cd092b2c7ee8d9c9b0a670363ceb8a21b37564f8",
+    "queue_rpc.py": "0c522389642f405526c7420b4315b7cc52500b7b200c38f2e2e7416d86a68908",
+    "node.sh": "8a1d2fbfa10ddf0944cb2d52dd3905e0d9d7bb27530548c244a71b2c9200056e",
+    "worker_rank.sh": "100cf90aae3d51eb86e48670823217f8f00d93d52d80aec18c231c527ba5a394",
+    "ablation_core.py": "8e3f7e94f0819e43c231437199947447a516464c09041612add29ff9c789fb2e",
+    "deadline.py": "f61a2772497a2e62427d811a05cbb67dffd3b308bbfc4f3c7450c8279685d373",
+    "migration.py": "8a357a778f4f86f8239461a1d62a5ad5588fccfd795d18cd94958e3ac3e3445e",
+    "prepare.py": "d5d2f6555cfb43ce4e1d06262c490d647c0b7e1230a66358d68e540a8f0c5301",
+    "gpu.slurm": "121b887cbec1c39f7638771df316b97b3a70ca2463470f05c78f3a4ecccdd2b0",
+    "smoke.py": "739c33e1c42e2fa72097892c66985e7c6268f63cc5ccee8b309b8a0856d5f5c8"
+  },
+  "previous_job_id": 106157,
+  "preserved_rows": 1630,
+  "status": "COMPLETED",
+  "completed_at": "2026-09-18T15:14:53.888354+08:00",
+  "completed_rows": 4571,
+  "normal_stop_rows": 4327,
+  "timeout_rows": 244
+}

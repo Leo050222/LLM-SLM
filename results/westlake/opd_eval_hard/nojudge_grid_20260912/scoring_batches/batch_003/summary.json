@@ -1,0 +1,28 @@
+{
+  "k16_t2p5": {
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 291,
+      "accuracy": 0.4317507418397626,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 825,
+      "accuracy": 0.7638888888888888,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 424,
+      "accuracy": 0.848,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  }
+}

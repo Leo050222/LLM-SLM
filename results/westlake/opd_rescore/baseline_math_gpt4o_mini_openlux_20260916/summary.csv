@@ -1,0 +1,7 @@
+accuracy,config,correct,dataset,extraction_missing,judged,ok,total
+0.4305555555555556,student_only,465,bbh,,1080,1080,1080
+0.7981481481481482,teacher_only,862,bbh,,1080,1080,1080
+0.716,student_only,358,math500,,500,500,500
+0.846,teacher_only,423,math500,,500,500,500
+0.4169139465875371,student_only,281,olympiad_bench,1,674,673,674
+0.5504451038575667,teacher_only,371,olympiad_bench,,674,674,674

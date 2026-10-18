@@ -1,0 +1,11 @@
+{
+  "job_name": "codex-access-probe-20261010-180420-ef263e",
+  "job_uid": "2dfd43a2-dc8b-4947-a4da-a00e983e42d4",
+  "namespace": "dcloud-auwomo",
+  "node": "172.16.1.5",
+  "phase": "Succeeded",
+  "exit_code": 0,
+  "old_ssh_reachable": false,
+  "cleanup": "confirmed",
+  "remaining_test_pods": 0
+}

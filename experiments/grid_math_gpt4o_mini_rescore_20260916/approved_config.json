@@ -1,0 +1,43 @@
+{
+  "status": "user_approved",
+  "provider": "openlux",
+  "endpoint_from_existing_project_client": "https://api.openlux.ai/v1/chat/completions",
+  "model": "gpt-4o-mini",
+  "temperature": 0,
+  "response_format": {
+    "type": "json_object"
+  },
+  "max_tokens": 512,
+  "input_root": "/storage/yukaichengLab/wangxin/test_eiloeo/rollout_archive/grid_20260912_20260913/math",
+  "expected_records": 56350,
+  "datasets": {
+    "math500": 12500,
+    "olympiad_bench": 16850,
+    "bbh": 27000
+  },
+  "system_prompt_file": "gpt4o_mini_judge_prompt_v1.txt",
+  "user_message": "JSON serialization of candidate_answer and reference_answer only",
+  "reference_answer_source": "Original reference: row.solution for MATH500 and BBH; metadata.final_answer[0] for OlympiadBench. Preserve original reference content.",
+  "excluded_judge_inputs": [
+    "separately_added_full_rollout",
+    "problem",
+    "metadata",
+    "existing_score",
+    "config",
+    "model_identity",
+    "finish_reason"
+  ],
+  "trace_timeout_policy": "Apply old extraction to existing text; retain finish_reason separately; do not automatically label a timeout response incorrect.",
+  "request_policy": "one rollout per request; no cross-rollout mixing",
+  "proposed_max_concurrency": 128,
+  "rate_limit_policy": "bounded concurrency ramp; honor Retry-After; exponential backoff with jitter; reduce pressure on repeated 429",
+  "failure_policy": "API errors, invalid JSON and context overflow are technical errors, never coerced to is_correct=false",
+  "resume_policy": "cache by source SHA256 + exact prompt/config hash; persist each valid result atomically",
+  "output_root_proposed": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_rescore/grid_math_gpt4o_mini_openlux_20260916",
+  "submission_policy": "No model calls or job submission before user approves prompt; then CPU job with validated network egress and a small pilot before full ramp",
+  "credential_policy": "Use user-authorized credential without writing it to prompt, source code, Slurm script, command-line arguments, or logs",
+  "candidate_answer_source": "Exact output of the original dataset extractor (the predicted field where available and source-verified). It may be the entire original response. Do not apply additional OlympiadBench preprocess or suppress full-text fallback; the judge identifies the final answer from this content.",
+  "empty_candidate_policy": "is_correct=false with local extraction_missing status; avoid unnecessary API call; keep separate from model judgment",
+  "technical_extraction_failure_policy": "Track extraction exceptions separately; retry or investigate, never coerce technical failure into semantic wrong answer. A successful extractor returning full text is allowed.",
+  "prompt_sha256": "b0baf7c0e5d392d0ae10c286c7c0da4f941e44ba72a5d17796667fa88d42b3af"
+}

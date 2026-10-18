@@ -1,0 +1,8 @@
+{
+  "all_16_buckets_complete": true,
+  "all_partitioned_ranges_complete": true,
+  "related_alias_complete": true,
+  "range_boundary_check_passed": true,
+  "readonly_juicefs_search_exit_code": 0,
+  "readonly_juicefs_matches": 0
+}

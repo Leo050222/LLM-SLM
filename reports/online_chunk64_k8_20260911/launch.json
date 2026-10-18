@@ -1,0 +1,17 @@
+{
+  "gpu_job": "102149",
+  "score_job": "102150",
+  "coordinator_pid": 2395045,
+  "gpus": 2,
+  "student_gpus": 1,
+  "teacher_gpus": 1,
+  "concurrency": 64,
+  "questions": 1000,
+  "chunk_tokens": 64,
+  "teacher_tokens": 8,
+  "gap_threshold": 2.0,
+  "rollouts_per_question": 1,
+  "takeover_count_limit": null,
+  "resource_ceiling_nodes": 2,
+  "resource_ceiling_h800": 16
+}

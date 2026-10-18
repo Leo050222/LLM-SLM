@@ -1,0 +1,12 @@
+{
+  "score_job": 108311,
+  "generation_job": 108204,
+  "rows": 4571,
+  "cpus": 32,
+  "gpus": 0,
+  "trace_timeouts_count_wrong": 129,
+  "api_probe": "passed",
+  "model": "gpt-4o-mini",
+  "destination": "api.openlux.ai",
+  "source": "weak_resample_greedy_t2_k1_20260921"
+}

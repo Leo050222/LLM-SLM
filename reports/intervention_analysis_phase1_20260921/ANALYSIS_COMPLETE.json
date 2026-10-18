@@ -1,0 +1,9 @@
+{
+  "events": 399601,
+  "traces": 36568,
+  "archive_verified": true,
+  "input_sha256": "839bb5020a2876983035e14a02bc1500d52746d470d3223e9cebacbc7a4002e5",
+  "summary_script_sha256": "4e64cbc2195832c80632d338c39fb8502cf421b70f27fe3a4fdb4da38532c496",
+  "bootstrap_repeats": 2000,
+  "semantic_annotation_completed": false
+}

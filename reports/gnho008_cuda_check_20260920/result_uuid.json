@@ -1,0 +1,139 @@
+{
+  "job_id": "107895",
+  "node": "gnho008",
+  "devices": [
+    "GPU-cfe8b3f9-ba11-8e1b-21dd-74f4f6a17b61",
+    "GPU-2f9180e8-fa07-fbb2-3030-a9cb50ee5582",
+    "GPU-c33c45c6-61d6-36bc-e5ac-6d80e3bc4968",
+    "GPU-24ff6dd2-c945-0876-6d2a-064dd4bed3f7",
+    "GPU-050edb0f-9a6e-1ad5-ee48-c5ca77592845",
+    "GPU-4e119421-71b9-06a5-054f-cdf880bb4687",
+    "GPU-a62b0061-fce8-b11c-d392-df53adab095b",
+    "GPU-6aa50f92-b9ab-cbfb-f010-6b06dd885d4f"
+  ],
+  "allocated_devices": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+  ],
+  "inventory": [
+    {
+      "index": "0",
+      "uuid": "GPU-cfe8b3f9-ba11-8e1b-21dd-74f4f6a17b61",
+      "name": "NVIDIA H800",
+      "memory.used [MiB]": "0 MiB",
+      "memory.total [MiB]": "81559 MiB"
+    },
+    {
+      "index": "1",
+      "uuid": "GPU-2f9180e8-fa07-fbb2-3030-a9cb50ee5582",
+      "name": "NVIDIA H800",
+      "memory.used [MiB]": "0 MiB",
+      "memory.total [MiB]": "81559 MiB"
+    },
+    {
+      "index": "2",
+      "uuid": "GPU-c33c45c6-61d6-36bc-e5ac-6d80e3bc4968",
+      "name": "NVIDIA H800",
+      "memory.used [MiB]": "0 MiB",
+      "memory.total [MiB]": "81559 MiB"
+    },
+    {
+      "index": "3",
+      "uuid": "GPU-24ff6dd2-c945-0876-6d2a-064dd4bed3f7",
+      "name": "NVIDIA H800",
+      "memory.used [MiB]": "14 MiB",
+      "memory.total [MiB]": "81559 MiB"
+    },
+    {
+      "index": "4",
+      "uuid": "GPU-050edb0f-9a6e-1ad5-ee48-c5ca77592845",
+      "name": "NVIDIA H800",
+      "memory.used [MiB]": "0 MiB",
+      "memory.total [MiB]": "81559 MiB"
+    },
+    {
+      "index": "5",
+      "uuid": "GPU-4e119421-71b9-06a5-054f-cdf880bb4687",
+      "name": "NVIDIA H800",
+      "memory.used [MiB]": "0 MiB",
+      "memory.total [MiB]": "81559 MiB"
+    },
+    {
+      "index": "6",
+      "uuid": "GPU-a62b0061-fce8-b11c-d392-df53adab095b",
+      "name": "NVIDIA H800",
+      "memory.used [MiB]": "0 MiB",
+      "memory.total [MiB]": "81559 MiB"
+    },
+    {
+      "index": "7",
+      "uuid": "GPU-6aa50f92-b9ab-cbfb-f010-6b06dd885d4f",
+      "name": "NVIDIA H800",
+      "memory.used [MiB]": "0 MiB",
+      "memory.total [MiB]": "81559 MiB"
+    }
+  ],
+  "nvidia_smi": {
+    "returncode": 0,
+    "stdout": "index, uuid, name, memory.used [MiB], memory.total [MiB]\n0, GPU-cfe8b3f9-ba11-8e1b-21dd-74f4f6a17b61, NVIDIA H800, 0 MiB, 81559 MiB\n1, GPU-2f9180e8-fa07-fbb2-3030-a9cb50ee5582, NVIDIA H800, 0 MiB, 81559 MiB\n2, GPU-c33c45c6-61d6-36bc-e5ac-6d80e3bc4968, NVIDIA H800, 0 MiB, 81559 MiB\n3, GPU-24ff6dd2-c945-0876-6d2a-064dd4bed3f7, NVIDIA H800, 14 MiB, 81559 MiB\n4, GPU-050edb0f-9a6e-1ad5-ee48-c5ca77592845, NVIDIA H800, 0 MiB, 81559 MiB\n5, GPU-4e119421-71b9-06a5-054f-cdf880bb4687, NVIDIA H800, 0 MiB, 81559 MiB\n6, GPU-a62b0061-fce8-b11c-d392-df53adab095b, NVIDIA H800, 0 MiB, 81559 MiB\n7, GPU-6aa50f92-b9ab-cbfb-f010-6b06dd885d4f, NVIDIA H800, 0 MiB, 81559 MiB\n",
+    "stderr": ""
+  },
+  "results": [
+    {
+      "device": "GPU-cfe8b3f9-ba11-8e1b-21dd-74f4f6a17b61",
+      "returncode": 0,
+      "stdout": "{\"ok\": true, \"name\": \"NVIDIA H800\", \"uuid\": \"cfe8b3f9-ba11-8e1b-21dd-74f4f6a17b61\", \"free_bytes\": 84456898560, \"total_bytes\": 85009367040, \"fp32_checksum\": 17601.734462316483, \"bf16_checksum\": 17610.183669567108, \"sdpa_checksum\": 314.22788862138987, \"torch\": \"2.11.0+cu130\"}\n",
+      "stderr": ""
+    },
+    {
+      "device": "GPU-2f9180e8-fa07-fbb2-3030-a9cb50ee5582",
+      "returncode": 0,
+      "stdout": "{\"ok\": true, \"name\": \"NVIDIA H800\", \"uuid\": \"2f9180e8-fa07-fbb2-3030-a9cb50ee5582\", \"free_bytes\": 84456898560, \"total_bytes\": 85009367040, \"fp32_checksum\": 17601.734462316483, \"bf16_checksum\": 17610.183669567108, \"sdpa_checksum\": 314.22788862138987, \"torch\": \"2.11.0+cu130\"}\n",
+      "stderr": ""
+    },
+    {
+      "device": "GPU-c33c45c6-61d6-36bc-e5ac-6d80e3bc4968",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 5, in <module>\n  File \"/storage/yukaichengLab/wangxin/miniconda3/envs/verl-opd/lib/python3.11/site-packages/torch/cuda/__init__.py\", line 686, in get_device_properties\n    _lazy_init()  # will define _get_device_properties\n    ^^^^^^^^^^^^\n  File \"/storage/yukaichengLab/wangxin/miniconda3/envs/verl-opd/lib/python3.11/site-packages/torch/cuda/__init__.py\", line 478, in _lazy_init\n    torch._C._cuda_init()\nRuntimeError: No CUDA GPUs are available\n"
+    },
+    {
+      "device": "GPU-24ff6dd2-c945-0876-6d2a-064dd4bed3f7",
+      "returncode": 0,
+      "stdout": "{\"ok\": true, \"name\": \"NVIDIA H800\", \"uuid\": \"24ff6dd2-c945-0876-6d2a-064dd4bed3f7\", \"free_bytes\": 84442480640, \"total_bytes\": 85009367040, \"fp32_checksum\": 17601.734462316483, \"bf16_checksum\": 17610.183669567108, \"sdpa_checksum\": 314.22788862138987, \"torch\": \"2.11.0+cu130\"}\n",
+      "stderr": ""
+    },
+    {
+      "device": "GPU-050edb0f-9a6e-1ad5-ee48-c5ca77592845",
+      "returncode": 0,
+      "stdout": "{\"ok\": true, \"name\": \"NVIDIA H800\", \"uuid\": \"050edb0f-9a6e-1ad5-ee48-c5ca77592845\", \"free_bytes\": 84456898560, \"total_bytes\": 85009367040, \"fp32_checksum\": 17601.734462316483, \"bf16_checksum\": 17610.183669567108, \"sdpa_checksum\": 314.22788862138987, \"torch\": \"2.11.0+cu130\"}\n",
+      "stderr": ""
+    },
+    {
+      "device": "GPU-4e119421-71b9-06a5-054f-cdf880bb4687",
+      "returncode": 0,
+      "stdout": "{\"ok\": true, \"name\": \"NVIDIA H800\", \"uuid\": \"4e119421-71b9-06a5-054f-cdf880bb4687\", \"free_bytes\": 84456964096, \"total_bytes\": 85009367040, \"fp32_checksum\": 17601.734462316483, \"bf16_checksum\": 17610.183669567108, \"sdpa_checksum\": 314.22788862138987, \"torch\": \"2.11.0+cu130\"}\n",
+      "stderr": ""
+    },
+    {
+      "device": "GPU-a62b0061-fce8-b11c-d392-df53adab095b",
+      "returncode": 0,
+      "stdout": "{\"ok\": true, \"name\": \"NVIDIA H800\", \"uuid\": \"a62b0061-fce8-b11c-d392-df53adab095b\", \"free_bytes\": 84456964096, \"total_bytes\": 85009367040, \"fp32_checksum\": 17601.734462316483, \"bf16_checksum\": 17610.183669567108, \"sdpa_checksum\": 314.22788862138987, \"torch\": \"2.11.0+cu130\"}\n",
+      "stderr": ""
+    },
+    {
+      "device": "GPU-6aa50f92-b9ab-cbfb-f010-6b06dd885d4f",
+      "returncode": 0,
+      "stdout": "{\"ok\": true, \"name\": \"NVIDIA H800\", \"uuid\": \"6aa50f92-b9ab-cbfb-f010-6b06dd885d4f\", \"free_bytes\": 84456898560, \"total_bytes\": 85009367040, \"fp32_checksum\": 17601.734462316483, \"bf16_checksum\": 17610.183669567108, \"sdpa_checksum\": 314.22788862138987, \"torch\": \"2.11.0+cu130\"}\n",
+      "stderr": ""
+    }
+  ],
+  "all_passed": false,
+  "time": 1789917494.1889806
+}

@@ -1,0 +1,42 @@
+{
+  "model": {
+    "accuracy": 0.280875,
+    "all_8_correct_count": 73,
+    "all_8_correct_rate": 0.073,
+    "correct_count_histogram": {
+      "0": 492,
+      "1": 86,
+      "2": 60,
+      "3": 60,
+      "4": 51,
+      "5": 62,
+      "6": 49,
+      "7": 67,
+      "8": 73
+    },
+    "correct_rollouts": 2247,
+    "generation_elapsed_seconds_sum_shards": 3555.580701828003,
+    "max_response_tokens_observed": 40264,
+    "mean_response_tokens": 1311.931375,
+    "model": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+    "model_label": "student_only",
+    "pass_at_8": 0.508,
+    "pass_at_8_count": 508,
+    "questions": 1000,
+    "rollouts": 8000,
+    "rollouts_per_question": 8,
+    "score_timeout_seconds": 20.0,
+    "score_workers": 64,
+    "source_shard_sha256": {
+      "0": "df33fce680be4ca7d2aef5b1dafe65e92d2a1104c8e2865fa8245c31af64e9c7",
+      "1": "d35cb2a4e49738ad3122aa5b08cc0d01fa65593c38619292707746153edce3e1",
+      "2": "a58d277aac4c90f79a71a7613d127e235d82e8573adca01cb29c52cf9a5f5cc8",
+      "3": "e91bf3d8a88481992eb7300d94a11f1016ec4b73ae3504e4acdd1ad856666b52"
+    },
+    "status": "DEEPMATH_CHECKPOINT_NONTHINKING_X8_SCORING_COMPLETE",
+    "thinking_close_tag": 0,
+    "thinking_open_tag": 0,
+    "total_response_tokens": 10495451
+  },
+  "status": "STUDENT_ONLY_NONTHINKING_X8_SCORING_COMPLETE"
+}

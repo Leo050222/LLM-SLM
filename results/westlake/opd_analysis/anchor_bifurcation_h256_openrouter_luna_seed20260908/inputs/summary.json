@@ -1,0 +1,29 @@
+{
+  "cell_counts": {
+    "F_to_F": 1690,
+    "F_to_S": 3232,
+    "S_to_F": 684,
+    "S_to_S": 1594
+  },
+  "judge_inputs_sha256": "c102e60206cb61d91a79d33ebb88ba12b5923523f609a8242e4c65815cd24b4d",
+  "judge_items": 7200,
+  "lift_steps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "pairs_per_bridge": 8,
+  "questions_per_bin": 100,
+  "scope": "256_token_bridges_only",
+  "seed": 20260908,
+  "selected_questions": 900,
+  "selection_sha256": "574fe364bf18a35fb5344cd2982c66f79c9361b8d2bb9543474e6aea5cd67cc3",
+  "status": "ANCHOR_BIFURCATION_OPENROUTER_INPUTS_COMPLETE",
+  "unique_questions_across_bins": 900
+}

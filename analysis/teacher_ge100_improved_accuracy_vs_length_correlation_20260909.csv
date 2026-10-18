@@ -1,0 +1,8 @@
+metric,value
+prefixes,3293
+pearson_r,-0.065432
+pearson_p,0.0001717
+spearman_rho,-0.050841
+spearman_p,0.0035196
+accuracy_pp_per_100_extra_tokens,-0.483054
+extra_tokens_per_additional_correct_out_of_8,-11.078694

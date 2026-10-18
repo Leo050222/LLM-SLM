@@ -1,0 +1,74 @@
+{
+  "state": "COMPLETE",
+  "total_model_bytes": 26079213588,
+  "files": {
+    "COMPLETE.json": {
+      "size": 13146,
+      "sha256": "69a0f32afa49c5ce566147481d88f8dc4f7964adb4c5601d1bda7f567c9c81d5"
+    },
+    "VERIFIED.json": {
+      "size": 13146,
+      "sha256": "69a0f32afa49c5ce566147481d88f8dc4f7964adb4c5601d1bda7f567c9c81d5"
+    },
+    "status.json": {
+      "size": 1614,
+      "sha256": "0abffa36cc8232b91dbf4d62bc9820c7638ba93aea4b784c37d0a09cf3441002"
+    },
+    "plan.json": {
+      "size": 10581,
+      "sha256": "6c74aa20f87ec9956427b5158bd8db83ba0b0d87684cfebfa906b56e52f471bb"
+    },
+    "run.log": {
+      "size": 6591,
+      "sha256": "92ffacf367d4bb297709e463207eba590d650d9322cafe9d05c8dfbfcc4e14ae"
+    },
+    "verify_two_ready.log": {
+      "size": 3520,
+      "sha256": "61a5e01fab1b0c97d6f08276082f2bd2ea3fc4eeff4dc16e189efed4000368dc"
+    },
+    "publish_ready.log": {
+      "size": 2552,
+      "sha256": "5cf08c63a7814cd759cc3633a935bf1c986a11d5a9ed3dce351d853e8c552028"
+    },
+    "TWO_B_READY.json": {
+      "size": 7885,
+      "sha256": "ce9bfd64a878e49e946255fc619f77ca567103cdfcdcfb255af45ad3d0bb067a"
+    },
+    "models/Qwen3-VL-2B-Instruct/SOURCE.json": {
+      "size": 2818,
+      "sha256": "fe02f2dd0e1ceb602acf8ae4fd9d98b8ff5eb061c523bd4ac797d9f51bed2921"
+    },
+    "models/Qwen3-VL-2B-Instruct/VERIFIED.json": {
+      "size": 3400,
+      "sha256": "14d8a2a7a3c1e9b4ffde648dfde4dfab5b0f280537803ebb6401161f18a3f2cb"
+    },
+    "models/Qwen3-VL-2B-Instruct/PUBLICATION.json": {
+      "size": 369,
+      "sha256": "e6a84526ea1986aa68f1bf9a3d18855ebed2d10bdb4d8b9c8e3abf75a73ca25c"
+    },
+    "models/Qwen3-VL-2B-Thinking/SOURCE.json": {
+      "size": 2818,
+      "sha256": "6f59c9b802cf026e4db70cf7cfdd21e48a95f05b88c90169cef1e44822452209"
+    },
+    "models/Qwen3-VL-2B-Thinking/VERIFIED.json": {
+      "size": 3400,
+      "sha256": "3ba294d8a713e516f7178f3b04f6d02716340016be9de3fe258ef4dc14e0cc74"
+    },
+    "models/Qwen3-VL-2B-Thinking/PUBLICATION.json": {
+      "size": 369,
+      "sha256": "6ad926f32f224f462e6d6487a04362605a3e04f6f7dfe1d407d05908941cdea5"
+    },
+    "models/Qwen3-VL-8B-Thinking/SOURCE.json": {
+      "size": 4027,
+      "sha256": "7511339e72984082737e6701584b786cbb1966ef3586cc743e4dc6c928e9d68a"
+    },
+    "models/Qwen3-VL-8B-Thinking/VERIFIED.json": {
+      "size": 4408,
+      "sha256": "2badb1aea5a04ae87413dc7e10a136bb89f59a529b9b9a0b8c1750eabb0c3998"
+    },
+    "models/Qwen3-VL-8B-Thinking/PUBLICATION.json": {
+      "size": 369,
+      "sha256": "1164ec4f9331a08a3f099e0ce0b738ef28d26fb3f91e17cdadbc8b03f13882e3"
+    }
+  }
+}

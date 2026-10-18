@@ -1,0 +1,14 @@
+{
+  "status": "ANCHOR_BIFURCATION_OPENLUX_RUN_COMPLETE",
+  "model": "gpt-5.6-luna",
+  "api_url": "https://api.openlux.ai/v1/chat/completions",
+  "provider_order": [],
+  "allow_provider_fallbacks": false,
+  "inputs": "data/anchor_bifurcation_h256_openlux_luna_seed20260908/inputs/judge_inputs.jsonl",
+  "inputs_sha256": "c102e60206cb61d91a79d33ebb88ba12b5923523f609a8242e4c65815cd24b4d",
+  "requested": 7200,
+  "ok": 1,
+  "reused": 7199,
+  "failed": 0,
+  "elapsed_seconds": 15.549398183822632
+}

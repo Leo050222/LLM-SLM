@@ -1,0 +1,1 @@
+{"checksum_all_files":true,"completed":1789970710.6234927,"dtype":"BF16","manifest_sha256":"06a3728d5adf10ddd32324d634e331cb8eab4a4990f3909ae3d9a60ec75ca4bb","roles":{"student":{"bytes":13333975512,"events":43879,"shards":44},"teacher":{"bytes":13333975512,"events":43879,"shards":44}},"vocabulary_size":151936}

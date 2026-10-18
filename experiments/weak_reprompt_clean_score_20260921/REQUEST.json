@@ -1,0 +1,14 @@
+{
+  "experiment": "weak_reprompt_clean_t2_k1_20260921",
+  "score_code": "weak_reprompt_clean_score_20260921",
+  "generation_job": 107927,
+  "group": "r1_weak_reprompt_clean_t2_k1",
+  "rows": 4571,
+  "authorization": "User requested scoring completed rollouts; queued after successful generation",
+  "destination": "api.openlux.ai",
+  "model": "gpt-4o-mini",
+  "fields": [
+    "candidate_answer",
+    "reference_answer"
+  ]
+}

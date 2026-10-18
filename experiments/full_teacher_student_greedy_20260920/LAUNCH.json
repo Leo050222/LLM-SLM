@@ -1,0 +1,80 @@
+{
+  "status": "RUNNING_GENERATING",
+  "nodes": 1,
+  "gpus_per_node": 8,
+  "roles": {
+    "student": "Qwen3-1.7B",
+    "teacher": "Qwen3-14B"
+  },
+  "temperature": 0,
+  "completions_per_prompt_role": 1,
+  "expected_outputs": 9142,
+  "job_ids": [
+    107918
+  ],
+  "local_tests_passed": 6,
+  "gpu_smoke_executed": true,
+  "execution_order": [
+    "student",
+    "teacher",
+    "code_only_scoring"
+  ],
+  "cancelled_parallel_jobs": [
+    107880,
+    107881,
+    107882
+  ],
+  "failed_hardware_jobs": [
+    107875,
+    107876
+  ],
+  "code_sha256": {
+    "worker.py": "55045d9943ba94978bc76daae4c45e1f732d1cbd422637467ab32e1e521ad120",
+    "code_score.slurm": "3f68584d3aa77fc57ca2ceb28375571ecbb14f56a2324ea2f1bf78c1c43d0b8a",
+    "generation.py": "81ce100e6538c12569367d5d7530b08c130cfe7a9a93572a3955e992cc43b7f3",
+    "select_gpus.py": "44b423d9935ffc07fd226866b7730f7a8dc9b235e78808f6241e060a514b1f87",
+    "dispatch.py": "e70979660cc1238c8d7a83643b703b524530463635a3d240998f7780e9dc893a",
+    "queue_rpc.py": "0c522389642f405526c7420b4315b7cc52500b7b200c38f2e2e7416d86a68908",
+    "node.sh": "bc60ff34db537b400e5617470b0d2da3e5bebaf183256176c177565d778d6a2f",
+    "preflight.sh": "865160c8eda6011209fbabbee50e4ec96a2fd9fd1991b8cf4ca685ae8c410625",
+    "judge_client.py": "459a4095bb55f48dd888f9c57b97bcf43ede0caafb5e6d51f73cf1cf06c4efc7",
+    "submit.sh": "c302362d0e38c9fc2624f66ab69b37d3dce2c5b1aa3efe97c874e0bca74af8a7",
+    "worker_rank.sh": "7cf9283718b71d496df464d435f6b68d81b30c0531c654ea2c8143a334589bbd",
+    "code_scorer.py": "d3cadeadac0c8094855b9472dd8800988284a2e46fece54c9f3b02e6ced186f7",
+    "ablation_core.py": "5ace90ebed4f97120dec841c4efb1aa87eaa6575c0d21806e05eca36889af809",
+    "deadline.py": "f61a2772497a2e62427d811a05cbb67dffd3b308bbfc4f3c7450c8279685d373",
+    "test_greedy.py": "239e99060bc315534d9b21998f74d6a84b2e4e6139680aa1f520741ba9c789be",
+    "score_one.py": "77111979c7536c337ade84cc131bfe680d558b3e0550bb5f339e21d8aec4fb0e",
+    "prepare.py": "2400adb033ae8afbbac145f85b919449419650acf9d930eb45f0b5faf223acfb",
+    "test_generation.py": "555cc59ee4e817aa7e491fd52e5d094a9eb8858b1a09c3e695ad19feedbd8b0f",
+    "score.py": "a1f1d1fa36883c2ca63132b88fc087662439e18987954f9b5572ab5551e8ed56",
+    "gpu.slurm": "f5f3231da71524366d25c5359977dc4de9205edafeceb53ef4f6a7e27bb0f9ca",
+    "smoke.py": "ea9519de94e0455da052af59eee8c41dde038d748c5648939d0374c37a29e0be"
+  },
+  "node": "gnho008",
+  "allocated_gpus": 2,
+  "active_gpus": 2,
+  "excluded_physical_gpu": 2,
+  "replicas": 2,
+  "concurrency": 64,
+  "replaced_serial_job": 107911,
+  "slurm_gpu_ids": [
+    4,
+    6
+  ],
+  "gpu_uuids": [
+    "GPU-050edb0f-9a6e-1ad5-ee48-c5ca77592845",
+    "GPU-a62b0061-fce8-b11c-d392-df53adab095b"
+  ],
+  "cancelled_jobs": [
+    107911,
+    107916
+  ],
+  "failed_startup_jobs": [
+    107912,
+    107917
+  ],
+  "service_smoke_passed": true,
+  "verified_at": "2026-09-21 00:03 Asia/Shanghai",
+  "actual_generation_verified": true
+}

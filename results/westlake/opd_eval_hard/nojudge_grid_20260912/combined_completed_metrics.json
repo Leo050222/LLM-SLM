@@ -1,0 +1,398 @@
+{
+  "groups": {
+    "k1_t2": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 299,
+        "accuracy": 0.443620178041543,
+        "mean_interventions": 17.940652818991097,
+        "teacher_pooled_share": 0.01187863594122374
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 830,
+        "accuracy": 0.7685185185185185,
+        "mean_interventions": 18.605555555555554,
+        "teacher_pooled_share": 0.06914611737014886
+      },
+      "math500": {
+        "n": 500,
+        "correct": 419,
+        "accuracy": 0.838,
+        "mean_interventions": 9.71,
+        "teacher_pooled_share": 0.011531710422243494
+      }
+    },
+    "k1_t2p5": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 301,
+        "accuracy": 0.4465875370919881,
+        "mean_interventions": 10.961424332344214,
+        "teacher_pooled_share": 0.007406538566030775
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 835,
+        "accuracy": 0.7731481481481481,
+        "mean_interventions": 15.780555555555555,
+        "teacher_pooled_share": 0.04652019751226263
+      },
+      "math500": {
+        "n": 500,
+        "correct": 411,
+        "accuracy": 0.822,
+        "mean_interventions": 6.29,
+        "teacher_pooled_share": 0.007586265121271694
+      }
+    },
+    "k1_t3": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 279,
+        "accuracy": 0.413946587537092,
+        "mean_interventions": 7.329376854599406,
+        "teacher_pooled_share": 0.0049423871730045615
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 836,
+        "accuracy": 0.774074074074074,
+        "mean_interventions": 13.797222222222222,
+        "teacher_pooled_share": 0.04535120476977438
+      },
+      "math500": {
+        "n": 500,
+        "correct": 411,
+        "accuracy": 0.822,
+        "mean_interventions": 4.412,
+        "teacher_pooled_share": 0.005244726149691046
+      }
+    },
+    "k1_t3p5": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 270,
+        "accuracy": 0.40059347181008903,
+        "mean_interventions": 5.376854599406528,
+        "teacher_pooled_share": 0.003677533860405929
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 823,
+        "accuracy": 0.7620370370370371,
+        "mean_interventions": 12.118518518518519,
+        "teacher_pooled_share": 0.03598342694852951
+      },
+      "math500": {
+        "n": 500,
+        "correct": 395,
+        "accuracy": 0.79,
+        "mean_interventions": 3.076,
+        "teacher_pooled_share": 0.003549962607676044
+      }
+    },
+    "k1_t4": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 268,
+        "accuracy": 0.39762611275964393,
+        "mean_interventions": 3.764094955489614,
+        "teacher_pooled_share": 0.0024711656752457773
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 817,
+        "accuracy": 0.7564814814814815,
+        "mean_interventions": 10.937037037037037,
+        "teacher_pooled_share": 0.028715415452160827
+      },
+      "math500": {
+        "n": 500,
+        "correct": 401,
+        "accuracy": 0.802,
+        "mean_interventions": 2.154,
+        "teacher_pooled_share": 0.0026177692328259025
+      }
+    },
+    "k4_t2": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 298,
+        "accuracy": 0.4421364985163205,
+        "mean_interventions": 15.543026706231455,
+        "teacher_pooled_share": 0.04230430091013845
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 840,
+        "accuracy": 0.7777777777777778,
+        "mean_interventions": 13.094444444444445,
+        "teacher_pooled_share": 0.16874087930367387
+      },
+      "math500": {
+        "n": 500,
+        "correct": 426,
+        "accuracy": 0.852,
+        "mean_interventions": 8.67,
+        "teacher_pooled_share": 0.04202161721615276
+      }
+    },
+    "k4_t2p5": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 297,
+        "accuracy": 0.4406528189910979,
+        "mean_interventions": 9.783382789317507,
+        "teacher_pooled_share": 0.026206318216433287
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 836,
+        "accuracy": 0.774074074074074,
+        "mean_interventions": 11.366666666666667,
+        "teacher_pooled_share": 0.09855677972883957
+      },
+      "math500": {
+        "n": 500,
+        "correct": 414,
+        "accuracy": 0.828,
+        "mean_interventions": 5.718,
+        "teacher_pooled_share": 0.028319649590478693
+      }
+    },
+    "k4_t3": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 292,
+        "accuracy": 0.4332344213649852,
+        "mean_interventions": 6.56973293768546,
+        "teacher_pooled_share": 0.01832192409578514
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 830,
+        "accuracy": 0.7685185185185185,
+        "mean_interventions": 10.052777777777777,
+        "teacher_pooled_share": 0.12741874840203937
+      },
+      "math500": {
+        "n": 500,
+        "correct": 411,
+        "accuracy": 0.822,
+        "mean_interventions": 3.826,
+        "teacher_pooled_share": 0.01856990135575101
+      }
+    },
+    "k4_t3p5": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 287,
+        "accuracy": 0.4258160237388724,
+        "mean_interventions": 4.764094955489615,
+        "teacher_pooled_share": 0.012988801552325199
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 837,
+        "accuracy": 0.775,
+        "mean_interventions": 9.07037037037037,
+        "teacher_pooled_share": 0.1034381643574518
+      },
+      "math500": {
+        "n": 500,
+        "correct": 409,
+        "accuracy": 0.818,
+        "mean_interventions": 2.694,
+        "teacher_pooled_share": 0.012904880744326096
+      }
+    },
+    "k4_t4": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 250,
+        "accuracy": 0.37091988130563797,
+        "mean_interventions": 3.50593471810089,
+        "teacher_pooled_share": 0.009107265098056235
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 826,
+        "accuracy": 0.7648148148148148,
+        "mean_interventions": 8.150925925925925,
+        "teacher_pooled_share": 0.10340808993797694
+      },
+      "math500": {
+        "n": 500,
+        "correct": 405,
+        "accuracy": 0.81,
+        "mean_interventions": 2.116,
+        "teacher_pooled_share": 0.009546237612808395
+      }
+    },
+    "k8_t2": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 308,
+        "accuracy": 0.456973293768546,
+        "mean_interventions": 14.170623145400594,
+        "teacher_pooled_share": 0.07583124812331098
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 829,
+        "accuracy": 0.7675925925925926,
+        "mean_interventions": 10.25462962962963,
+        "teacher_pooled_share": 0.2870549408275038
+      },
+      "math500": {
+        "n": 500,
+        "correct": 430,
+        "accuracy": 0.86,
+        "mean_interventions": 8.0,
+        "teacher_pooled_share": 0.07625139123082729
+      }
+    },
+    "k8_t2p5": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 293,
+        "accuracy": 0.43471810089020774,
+        "mean_interventions": 9.387240356083087,
+        "teacher_pooled_share": 0.05160219139366086
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 835,
+        "accuracy": 0.7731481481481481,
+        "mean_interventions": 9.012037037037038,
+        "teacher_pooled_share": 0.22609086382570467
+      },
+      "math500": {
+        "n": 500,
+        "correct": 419,
+        "accuracy": 0.838,
+        "mean_interventions": 5.156,
+        "teacher_pooled_share": 0.04954334711877789
+      }
+    },
+    "k8_t3": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 278,
+        "accuracy": 0.4124629080118694,
+        "mean_interventions": 6.474777448071217,
+        "teacher_pooled_share": 0.03503163625287405
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 825,
+        "accuracy": 0.7638888888888888,
+        "mean_interventions": 8.125,
+        "teacher_pooled_share": 0.2314421212960399
+      },
+      "math500": {
+        "n": 500,
+        "correct": 414,
+        "accuracy": 0.828,
+        "mean_interventions": 3.688,
+        "teacher_pooled_share": 0.036187458551322674
+      }
+    },
+    "k8_t3p5": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 277,
+        "accuracy": 0.41097922848664686,
+        "mean_interventions": 4.615727002967359,
+        "teacher_pooled_share": 0.024058656770980624
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 817,
+        "accuracy": 0.7564814814814815,
+        "mean_interventions": 9.33611111111111,
+        "teacher_pooled_share": 0.2091954271330998
+      },
+      "math500": {
+        "n": 500,
+        "correct": 408,
+        "accuracy": 0.816,
+        "mean_interventions": 2.76,
+        "teacher_pooled_share": 0.02692682736086299
+      }
+    },
+    "k8_t4": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 250,
+        "accuracy": 0.37091988130563797,
+        "mean_interventions": 3.5519287833827895,
+        "teacher_pooled_share": 0.01839522360699146
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 814,
+        "accuracy": 0.7537037037037037,
+        "mean_interventions": 6.742592592592593,
+        "teacher_pooled_share": 0.14932700479799282
+      },
+      "math500": {
+        "n": 500,
+        "correct": 395,
+        "accuracy": 0.79,
+        "mean_interventions": 2.062,
+        "teacher_pooled_share": 0.01893936779824386
+      }
+    },
+    "k16_t2": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 305,
+        "accuracy": 0.45252225519287836,
+        "mean_interventions": 12.900593471810089,
+        "teacher_pooled_share": 0.13659527953369188
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 838,
+        "accuracy": 0.7759259259259259,
+        "mean_interventions": 7.491666666666666,
+        "teacher_pooled_share": 0.36551582309106745
+      },
+      "math500": {
+        "n": 500,
+        "correct": 424,
+        "accuracy": 0.848,
+        "mean_interventions": 7.462,
+        "teacher_pooled_share": 0.13516322566852704
+      }
+    },
+    "k16_t2p5": {
+      "olympiad_bench": {
+        "n": 674,
+        "correct": 291,
+        "accuracy": 0.4317507418397626,
+        "mean_interventions": 8.691394658753708,
+        "teacher_pooled_share": 0.09476862533626149
+      },
+      "bbh": {
+        "n": 1080,
+        "correct": 825,
+        "accuracy": 0.7638888888888888,
+        "mean_interventions": 6.787962962962963,
+        "teacher_pooled_share": 0.3269959108535905
+      },
+      "math500": {
+        "n": 500,
+        "correct": 424,
+        "accuracy": 0.848,
+        "mean_interventions": 4.79,
+        "teacher_pooled_share": 0.09418333189223908
+      }
+    }
+  },
+  "unscored_completed": [],
+  "created_at": 1789205550.9279332,
+  "definition": "Per-dataset accuracy,mean interventions per trace including zero,pooled teacher output token share excluding prompt/discarded draft"
+}

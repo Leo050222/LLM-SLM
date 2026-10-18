@@ -1,0 +1,13 @@
+# Experiment audit
+
+Verdict: WARN. Same-family review; acceptance provisional. No blocker to qualified descriptive prefix-level accuracy comparisons.
+
+- Cohort, seeds, active rollout code, scorer code and prompts aligned.
+- 70400 unique score keys and complete 800-results-per-cell coverage reconcile.
+- Raw accuracy and prefix-cluster bootstrap correctly computed.
+- Anchor-present cohort only; not unconditional benchmark accuracy.
+- 437/6400 series show decreasing realized interventions across increasing caps; not exact nested trajectories.
+- Caps0–4 and5–10 differ in deployment topology.
+- Bootstrap intervals conditional on eight fixed seeds.
+- Reasoning accuracy uses reference-based GPT-4o-mini judging.
+- Original output bodies not independently rehashed in this analysis.

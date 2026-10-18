@@ -1,0 +1,78 @@
+{
+  "Luna8-hard": {
+    "bbh": {
+      "traces": 1080,
+      "traces_with_negative": 20,
+      "judged": 18277,
+      "judged_negative": 644,
+      "takeovers": 3577,
+      "negative_takeovers": 20
+    },
+    "olympiad_bench": {
+      "traces": 674,
+      "judged": 12783,
+      "judged_negative": 1534,
+      "takeovers": 3058,
+      "negative_takeovers": 128,
+      "traces_with_negative": 108
+    },
+    "aime24": {
+      "traces": 30,
+      "judged": 867,
+      "judged_negative": 101,
+      "takeovers": 245,
+      "negative_takeovers": 8,
+      "traces_with_negative": 7
+    },
+    "aime25": {
+      "traces": 30,
+      "judged": 775,
+      "judged_negative": 112,
+      "takeovers": 188,
+      "negative_takeovers": 17,
+      "traces_with_negative": 14
+    }
+  },
+  "Luna8-math": {
+    "math500": {
+      "traces": 500,
+      "judged": 5406,
+      "judged_negative": 577,
+      "takeovers": 1125,
+      "negative_takeovers": 40,
+      "traces_with_negative": 31
+    }
+  },
+  "noLuna8": {
+    "math500": {
+      "traces": 500,
+      "takeovers": 4624,
+      "negative_takeovers": 476,
+      "traces_with_negative": 235
+    },
+    "bbh": {
+      "traces": 1080,
+      "traces_with_negative": 299,
+      "takeovers": 11331,
+      "negative_takeovers": 434
+    },
+    "olympiad_bench": {
+      "traces": 674,
+      "takeovers": 10854,
+      "negative_takeovers": 1282,
+      "traces_with_negative": 478
+    },
+    "aime24": {
+      "traces": 30,
+      "takeovers": 830,
+      "negative_takeovers": 94,
+      "traces_with_negative": 27
+    },
+    "aime25": {
+      "traces": 30,
+      "takeovers": 717,
+      "negative_takeovers": 77,
+      "traces_with_negative": 29
+    }
+  }
+}

@@ -1,0 +1,1195 @@
+{
+  "protocol": {
+    "dataset": "zwhe99/DeepMath-103K",
+    "sample_rows": 1000,
+    "stratification": "exact difficulty x full hierarchical topic",
+    "sampling": {
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "max_response_tokens": 4096,
+      "n": 1,
+      "seed": 20260809,
+      "thinking_mode": true
+    },
+    "diagnostic": "qwen3_1_7b-sampled actions scored by frozen qwen3_1_7b and 14B; top-k=128",
+    "reverse_kl_note": "k1 and k3 are Monte Carlo estimators of KL(student || teacher) under student-sampled actions; they are not exact full-vocabulary KL"
+  },
+  "qwen3_1_7b": {
+    "correct": 127,
+    "total": 1000,
+    "accuracy": 0.127,
+    "response_tokens": {
+      "count": 1000,
+      "finite_count": 1000,
+      "mean": 3986.897,
+      "std": 375.228390098265,
+      "sem": 11.865763554686893,
+      "p50": 4096.0,
+      "p90": 4096.0,
+      "p95": 4096.0,
+      "p99": 4096.0,
+      "max": 4096.0
+    },
+    "finish_reason": {
+      "length": 879,
+      "stop": 121
+    },
+    "score_method": {
+      "missing": 687,
+      "symbolic": 186,
+      "normalized_exact": 127
+    },
+    "thinking_open_tag": 1000,
+    "thinking_close_tag": 179
+  },
+  "qwen3_14b": {
+    "correct": 213,
+    "total": 1000,
+    "accuracy": 0.213,
+    "response_tokens": {
+      "count": 1000,
+      "finite_count": 1000,
+      "mean": 3863.935,
+      "std": 560.9364727859131,
+      "sem": 17.73836876664541,
+      "p50": 4096.0,
+      "p90": 4096.0,
+      "p95": 4096.0,
+      "p99": 4096.0,
+      "max": 4096.0
+    },
+    "finish_reason": {
+      "length": 795,
+      "stop": 205
+    },
+    "score_method": {
+      "missing": 662,
+      "symbolic": 125,
+      "normalized_exact": 213
+    },
+    "thinking_open_tag": 1000,
+    "thinking_close_tag": 324
+  },
+  "paired_correctness": {
+    "both_correct": 87,
+    "only_qwen3_1_7b_correct": 40,
+    "only_14b_correct": 126,
+    "both_wrong": 747
+  },
+  "token_diagnostics": {
+    "num_tokens": 3986897,
+    "token_weighted": {
+      "chosen_logprob_gap": {
+        "count": 3986897,
+        "finite_count": 3986897,
+        "mean": -0.21981953586189892,
+        "std": 0.8433898860346369,
+        "sem": 0.0004223873281476722,
+        "p50": -0.0001821352052502334,
+        "p90": 0.034647199511528004,
+        "p95": 0.2736560344696033,
+        "p99": 1.179819602966309,
+        "max": 8.750160217285156
+      },
+      "abs_chosen_gap": {
+        "count": 3986897,
+        "finite_count": 3986897,
+        "mean": 0.31709720328447816,
+        "std": 0.8118352534725272,
+        "sem": 0.00040658410693374873,
+        "p50": 0.011436287313699722,
+        "p90": 0.9156268596649165,
+        "p95": 1.615051078796385,
+        "p99": 3.9327849006652853,
+        "max": 32.74016571044922
+      },
+      "sampled_reverse_kl_k1": {
+        "count": 3986897,
+        "finite_count": 3986897,
+        "mean": 0.21981953586189892,
+        "std": 0.8433898860346369,
+        "sem": 0.0004223873281476722,
+        "p50": 0.0001821352052502334,
+        "p90": 0.7613002657890318,
+        "p95": 1.4843629360198958,
+        "p99": 3.9016921424865725,
+        "max": 32.74016571044922
+      },
+      "sampled_reverse_kl_k3": {
+        "count": 3986897,
+        "finite_count": 3986897,
+        "mean": 0.22119934648406006,
+        "std": 5.632019525197666,
+        "sem": 0.0028206333970977517,
+        "p50": 6.523542106151581e-05,
+        "p90": 0.35390020608901973,
+        "p95": 0.958567810058593,
+        "p99": 3.6642541694641126,
+        "max": 6301.94921875
+      },
+      "sampled_reverse_kl_k3_clipped20": {
+        "count": 3986897,
+        "finite_count": 3986897,
+        "mean": 0.22117785174625285,
+        "std": 5.631936359535953,
+        "sem": 0.0028205917459916303,
+        "p50": 6.523542106151581e-05,
+        "p90": 0.35390020608901973,
+        "p95": 0.958567810058593,
+        "p99": 3.6642541694641126,
+        "max": 6301.94921875
+      },
+      "raw_forward_kl_top128": {
+        "count": 3986897,
+        "finite_count": 3986897,
+        "mean": 0.338185682198864,
+        "std": 0.8727535357163113,
+        "sem": 0.00043709325922306256,
+        "p50": 0.01701485551893711,
+        "p90": 0.9625538825988766,
+        "p95": 1.6806035041809055,
+        "p99": 4.109373226165774,
+        "max": 36.43115234375
+      },
+      "effective_forward_kl_top128": {
+        "count": 3986897,
+        "finite_count": 3986897,
+        "mean": 0.31568686793326906,
+        "std": 0.7682914994508694,
+        "sem": 0.00038477648246103583,
+        "p50": 0.013858245685696602,
+        "p90": 0.9217195987701415,
+        "p95": 1.606303501129148,
+        "p99": 3.8331492328643804,
+        "max": 9.99954605102539
+      },
+      "teacher_mass_top128": {
+        "count": 3986897,
+        "finite_count": 3986897,
+        "mean": 0.9999589217297942,
+        "std": 0.0004937212787633523,
+        "sem": 2.4726596232615944e-07,
+        "p50": 1.0,
+        "p90": 1.0000001192092896,
+        "p95": 1.000000238418579,
+        "p99": 1.0000003576278687,
+        "max": 1.000001311302185
+      },
+      "student_mass_on_teacher_top128": {
+        "count": 3986897,
+        "finite_count": 3986897,
+        "mean": 0.9999534023843292,
+        "std": 0.0020735591838108706,
+        "sem": 1.0384818906519016e-06,
+        "p50": 1.0,
+        "p90": 1.0000011920928955,
+        "p95": 1.0000015497207642,
+        "p99": 1.0000017881393433,
+        "max": 1.0000022649765015
+      },
+      "topk_overlap": {
+        "count": 3986897,
+        "finite_count": 3986897,
+        "mean": 0.6678820039274905,
+        "std": 0.1073836302622259,
+        "sem": 5.3779972257571444e-05,
+        "p50": 0.6875,
+        "p90": 0.78125,
+        "p95": 0.8046875,
+        "p99": 0.8359375,
+        "max": 0.9375
+      },
+      "top1_agreement": {
+        "count": 3986897,
+        "finite_count": 3986897,
+        "mean": 0.8688172781990606,
+        "std": 0.3376001242430783,
+        "sem": 0.00016907721662611888,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "student_entropy": {
+        "count": 3986897,
+        "finite_count": 3986897,
+        "mean": 0.30251673912604166,
+        "std": 0.4486225506457033,
+        "sem": 0.0002246795742417169,
+        "p50": 0.021421000361442566,
+        "p90": 0.9983070015907287,
+        "p95": 1.2695276260375976,
+        "p99": 1.7455754566192634,
+        "max": 4.718600273132324
+      },
+      "teacher_entropy_lower_bound": {
+        "count": 3986897,
+        "finite_count": 3986897,
+        "mean": 0.424088590863219,
+        "std": 0.5609141769149076,
+        "sem": 0.0002809175737465607,
+        "p50": 0.08780825883150101,
+        "p90": 1.2997571229934692,
+        "p95": 1.5985687494277954,
+        "p99": 2.09360053062439,
+        "max": 3.7882542610168457
+      }
+    },
+    "rollout_weighted": {
+      "chosen_logprob_gap": {
+        "count": 1000,
+        "finite_count": 1000,
+        "mean": -0.21914537227153777,
+        "std": 0.07309605002922923,
+        "sem": 0.002311500060539818,
+        "p50": -0.20743778347969055,
+        "p90": -0.13322202265262603,
+        "p95": -0.11545108743011953,
+        "p99": -0.09290463894605638,
+        "max": -0.06915593147277832
+      },
+      "abs_chosen_gap": {
+        "count": 1000,
+        "finite_count": 1000,
+        "mean": 0.31614073398709297,
+        "std": 0.09504801617149759,
+        "sem": 0.003005682181824497,
+        "p50": 0.3018888682126999,
+        "p90": 0.4531698375940323,
+        "p95": 0.48396283388137806,
+        "p99": 0.5280809545516967,
+        "max": 0.584506630897522
+      },
+      "sampled_reverse_kl_k1": {
+        "count": 1000,
+        "finite_count": 1000,
+        "mean": 0.21914537227153777,
+        "std": 0.07309605002922923,
+        "sem": 0.002311500060539818,
+        "p50": 0.20743778347969055,
+        "p90": 0.32897833585739134,
+        "p95": 0.34876167625188825,
+        "p99": 0.3892262247204781,
+        "max": 0.4282425045967102
+      },
+      "sampled_reverse_kl_k3": {
+        "count": 1000,
+        "finite_count": 1000,
+        "mean": 0.22045951971411706,
+        "std": 0.10931930131802471,
+        "sem": 0.003456979843832052,
+        "p50": 0.20304438471794128,
+        "p90": 0.32845916152000426,
+        "p95": 0.3536626905202864,
+        "p99": 0.49508054673671714,
+        "max": 1.6593742370605469
+      },
+      "sampled_reverse_kl_k3_clipped20": {
+        "count": 1000,
+        "finite_count": 1000,
+        "mean": 0.22043840004503726,
+        "std": 0.10931172577918262,
+        "sem": 0.0034567402842596113,
+        "p50": 0.20304438471794128,
+        "p90": 0.32845916152000426,
+        "p95": 0.3536626905202864,
+        "p99": 0.49508054673671714,
+        "max": 1.6593742370605469
+      },
+      "raw_forward_kl_top128": {
+        "count": 1000,
+        "finite_count": 1000,
+        "mean": 0.33687776124477387,
+        "std": 0.12107801946344723,
+        "sem": 0.0038288231608669143,
+        "p50": 0.315377414226532,
+        "p90": 0.512951672077179,
+        "p95": 0.5572717428207397,
+        "p99": 0.6064814966917037,
+        "max": 0.7110356092453003
+      },
+      "effective_forward_kl_top128": {
+        "count": 1000,
+        "finite_count": 1000,
+        "mean": 0.3144624259397388,
+        "std": 0.1114095968453808,
+        "sem": 0.0035230807923251326,
+        "p50": 0.29609228670597076,
+        "p90": 0.47988589406013493,
+        "p95": 0.516412678360939,
+        "p99": 0.566551982164383,
+        "max": 0.650264322757721
+      },
+      "teacher_mass_top128": {
+        "count": 1000,
+        "finite_count": 1000,
+        "mean": 0.9999589832425118,
+        "std": 7.896577192887843e-05,
+        "sem": 2.497116964886436e-06,
+        "p50": 0.9999855756759644,
+        "p90": 0.9999979138374329,
+        "p95": 0.9999986886978149,
+        "p99": 0.9999995231628418,
+        "max": 0.9999998211860657
+      },
+      "student_mass_on_teacher_top128": {
+        "count": 1000,
+        "finite_count": 1000,
+        "mean": 0.9999535139203072,
+        "std": 9.699888923738243e-05,
+        "sem": 3.067374204965215e-06,
+        "p50": 0.9999855160713196,
+        "p90": 0.999998152256012,
+        "p95": 0.9999988108873368,
+        "p99": 0.9999995231628418,
+        "max": 0.9999998211860657
+      },
+      "topk_overlap": {
+        "count": 1000,
+        "finite_count": 1000,
+        "mean": 0.6672653025984764,
+        "std": 0.023764601225392687,
+        "sem": 0.0007515026755786939,
+        "p50": 0.6712436676025391,
+        "p90": 0.6943696975708008,
+        "p95": 0.6990801811218261,
+        "p99": 0.7073200035095215,
+        "max": 0.7170639038085938
+      },
+      "top1_agreement": {
+        "count": 1000,
+        "finite_count": 1000,
+        "mean": 0.8693212589025497,
+        "std": 0.03912705120055385,
+        "sem": 0.001237305999197758,
+        "p50": 0.8752514719963074,
+        "p90": 0.9169921875,
+        "p95": 0.923828125,
+        "p99": 0.93896484375,
+        "max": 0.947998046875
+      },
+      "student_entropy": {
+        "count": 1000,
+        "finite_count": 1000,
+        "mean": 0.30135122753679755,
+        "std": 0.08570752328131978,
+        "sem": 0.002710309861808788,
+        "p50": 0.29169122874736786,
+        "p90": 0.42443183362483977,
+        "p95": 0.4520083576440811,
+        "p99": 0.5003436839580535,
+        "max": 0.6518893837928772
+      },
+      "teacher_entropy_lower_bound": {
+        "count": 1000,
+        "finite_count": 1000,
+        "mean": 0.42232060013711453,
+        "std": 0.13109553125078507,
+        "sem": 0.004145604698222633,
+        "p50": 0.4060298204421997,
+        "p90": 0.6095528185367585,
+        "p95": 0.659718057513237,
+        "p99": 0.7237093836069106,
+        "max": 0.8739864230155945
+      }
+    },
+    "by_correctness": {
+      "false": {
+        "rollouts": 873,
+        "sampled_reverse_kl_k1": {
+          "count": 873,
+          "finite_count": 873,
+          "mean": 0.2231389306579532,
+          "std": 0.0745087061604628,
+          "sem": 0.002521737635636452,
+          "p50": 0.21340511739253998,
+          "p90": 0.3324577569961548,
+          "p95": 0.3519928455352783,
+          "p99": 0.39014562845230094,
+          "max": 0.4282425045967102
+        },
+        "sampled_reverse_kl_k3": {
+          "count": 873,
+          "finite_count": 873,
+          "mean": 0.22530020192214303,
+          "std": 0.11394958204290005,
+          "sem": 0.0038566090381945755,
+          "p50": 0.2079308182001114,
+          "p90": 0.33511024713516235,
+          "p95": 0.363459986448288,
+          "p99": 0.5053002047538756,
+          "max": 1.6593742370605469
+        },
+        "top1_agreement": {
+          "count": 873,
+          "finite_count": 873,
+          "mean": 0.8669605936517967,
+          "std": 0.03973115089811071,
+          "sem": 0.0013446957233580617,
+          "p50": 0.872314453125,
+          "p90": 0.916455078125,
+          "p95": 0.923681640625,
+          "p99": 0.93896484375,
+          "max": 0.947998046875
+        },
+        "topk_overlap": {
+          "count": 873,
+          "finite_count": 873,
+          "mean": 0.6689614540932515,
+          "std": 0.022856527387578925,
+          "sem": 0.0007735762477083266,
+          "p50": 0.6722316741943359,
+          "p90": 0.6946605682373047,
+          "p95": 0.699664306640625,
+          "p99": 0.7078482055664063,
+          "max": 0.7170639038085938
+        }
+      },
+      "true": {
+        "rollouts": 127,
+        "sampled_reverse_kl_k1": {
+          "count": 127,
+          "finite_count": 127,
+          "mean": 0.19169358903263498,
+          "std": 0.05542834342130048,
+          "sem": 0.004918470134104281,
+          "p50": 0.18371927738189697,
+          "p90": 0.2703649282455445,
+          "p95": 0.3016377121210098,
+          "p99": 0.33182286381721493,
+          "max": 0.3368333578109741
+        },
+        "sampled_reverse_kl_k3": {
+          "count": 127,
+          "finite_count": 127,
+          "mean": 0.18718459398493054,
+          "std": 0.06010541467502572,
+          "sem": 0.005333493096303888,
+          "p50": 0.17377032339572906,
+          "p90": 0.27915800213813785,
+          "p95": 0.30159822702407835,
+          "p99": 0.33539613366127013,
+          "max": 0.3647890090942383
+        },
+        "top1_agreement": {
+          "count": 127,
+          "finite_count": 127,
+          "mean": 0.8855485090120571,
+          "std": 0.03015567931900126,
+          "sem": 0.0026758838339580654,
+          "p50": 0.8899556994438171,
+          "p90": 0.9174701333045959,
+          "p95": 0.9255790829658508,
+          "p99": 0.9343378674983979,
+          "max": 0.9465394020080566
+        },
+        "topk_overlap": {
+          "count": 127,
+          "finite_count": 127,
+          "mean": 0.6556059305123457,
+          "std": 0.026556988375616285,
+          "sem": 0.0023565516505591176,
+          "p50": 0.6589621305465698,
+          "p90": 0.6876924157142639,
+          "p95": 0.6903259813785553,
+          "p99": 0.7038057112693786,
+          "max": 0.7072408199310303
+        }
+      }
+    }
+  },
+  "accuracy_by_difficulty": {
+    "qwen3_1_7b": {
+      "3.0": {
+        "correct": 15,
+        "total": 31,
+        "accuracy": 0.4838709677419355
+      },
+      "3.5": {
+        "correct": 0,
+        "total": 6,
+        "accuracy": 0.0
+      },
+      "4.0": {
+        "correct": 21,
+        "total": 56,
+        "accuracy": 0.375
+      },
+      "4.5": {
+        "correct": 3,
+        "total": 43,
+        "accuracy": 0.06976744186046512
+      },
+      "5.0": {
+        "correct": 27,
+        "total": 164,
+        "accuracy": 0.16463414634146342
+      },
+      "5.5": {
+        "correct": 13,
+        "total": 147,
+        "accuracy": 0.08843537414965986
+      },
+      "6.0": {
+        "correct": 19,
+        "total": 169,
+        "accuracy": 0.11242603550295859
+      },
+      "6.5": {
+        "correct": 5,
+        "total": 75,
+        "accuracy": 0.06666666666666667
+      },
+      "7.0": {
+        "correct": 9,
+        "total": 85,
+        "accuracy": 0.10588235294117647
+      },
+      "7.5": {
+        "correct": 3,
+        "total": 66,
+        "accuracy": 0.045454545454545456
+      },
+      "8.0": {
+        "correct": 10,
+        "total": 112,
+        "accuracy": 0.08928571428571429
+      },
+      "8.5": {
+        "correct": 2,
+        "total": 36,
+        "accuracy": 0.05555555555555555
+      },
+      "9.0": {
+        "correct": 0,
+        "total": 10,
+        "accuracy": 0.0
+      }
+    },
+    "qwen3_14b": {
+      "3.0": {
+        "correct": 15,
+        "total": 31,
+        "accuracy": 0.4838709677419355
+      },
+      "3.5": {
+        "correct": 3,
+        "total": 6,
+        "accuracy": 0.5
+      },
+      "4.0": {
+        "correct": 21,
+        "total": 56,
+        "accuracy": 0.375
+      },
+      "4.5": {
+        "correct": 5,
+        "total": 43,
+        "accuracy": 0.11627906976744186
+      },
+      "5.0": {
+        "correct": 41,
+        "total": 164,
+        "accuracy": 0.25
+      },
+      "5.5": {
+        "correct": 27,
+        "total": 147,
+        "accuracy": 0.1836734693877551
+      },
+      "6.0": {
+        "correct": 40,
+        "total": 169,
+        "accuracy": 0.23668639053254437
+      },
+      "6.5": {
+        "correct": 17,
+        "total": 75,
+        "accuracy": 0.22666666666666666
+      },
+      "7.0": {
+        "correct": 18,
+        "total": 85,
+        "accuracy": 0.21176470588235294
+      },
+      "7.5": {
+        "correct": 14,
+        "total": 66,
+        "accuracy": 0.21212121212121213
+      },
+      "8.0": {
+        "correct": 10,
+        "total": 112,
+        "accuracy": 0.08928571428571429
+      },
+      "8.5": {
+        "correct": 2,
+        "total": 36,
+        "accuracy": 0.05555555555555555
+      },
+      "9.0": {
+        "correct": 0,
+        "total": 10,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "accuracy_by_topic": {
+    "qwen3_1_7b": {
+      "Mathematics -> Algebra -> Abstract Algebra -> Field Theory": {
+        "correct": 2,
+        "total": 26,
+        "accuracy": 0.07692307692307693
+      },
+      "Mathematics -> Algebra -> Abstract Algebra -> Group Theory": {
+        "correct": 5,
+        "total": 37,
+        "accuracy": 0.13513513513513514
+      },
+      "Mathematics -> Algebra -> Abstract Algebra -> Other": {
+        "correct": 0,
+        "total": 15,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Algebra -> Abstract Algebra -> Ring Theory": {
+        "correct": 1,
+        "total": 18,
+        "accuracy": 0.05555555555555555
+      },
+      "Mathematics -> Algebra -> Algebra -> Algebraic Expressions": {
+        "correct": 3,
+        "total": 9,
+        "accuracy": 0.3333333333333333
+      },
+      "Mathematics -> Algebra -> Algebra -> Equations and Inequalities": {
+        "correct": 3,
+        "total": 26,
+        "accuracy": 0.11538461538461539
+      },
+      "Mathematics -> Algebra -> Algebra -> Polynomial Operations": {
+        "correct": 4,
+        "total": 29,
+        "accuracy": 0.13793103448275862
+      },
+      "Mathematics -> Algebra -> Intermediate Algebra -> Complex Numbers": {
+        "correct": 5,
+        "total": 16,
+        "accuracy": 0.3125
+      },
+      "Mathematics -> Algebra -> Intermediate Algebra -> Exponential Functions": {
+        "correct": 0,
+        "total": 20,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Algebra -> Intermediate Algebra -> Logarithmic Functions": {
+        "correct": 1,
+        "total": 6,
+        "accuracy": 0.16666666666666666
+      },
+      "Mathematics -> Algebra -> Intermediate Algebra -> Other": {
+        "correct": 3,
+        "total": 28,
+        "accuracy": 0.10714285714285714
+      },
+      "Mathematics -> Algebra -> Intermediate Algebra -> Quadratic Functions": {
+        "correct": 4,
+        "total": 8,
+        "accuracy": 0.5
+      },
+      "Mathematics -> Algebra -> Linear Algebra -> Determinants": {
+        "correct": 0,
+        "total": 2,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Algebra -> Linear Algebra -> Linear Transformations": {
+        "correct": 0,
+        "total": 13,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Algebra -> Linear Algebra -> Matrices": {
+        "correct": 2,
+        "total": 35,
+        "accuracy": 0.05714285714285714
+      },
+      "Mathematics -> Algebra -> Linear Algebra -> Vectors": {
+        "correct": 1,
+        "total": 13,
+        "accuracy": 0.07692307692307693
+      },
+      "Mathematics -> Algebra -> Prealgebra -> Fractions": {
+        "correct": 2,
+        "total": 3,
+        "accuracy": 0.6666666666666666
+      },
+      "Mathematics -> Algebra -> Prealgebra -> Integers": {
+        "correct": 0,
+        "total": 6,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Algebra -> Prealgebra -> Simple Equations": {
+        "correct": 5,
+        "total": 6,
+        "accuracy": 0.8333333333333334
+      },
+      "Mathematics -> Applied Mathematics -> Math Word Problems": {
+        "correct": 3,
+        "total": 7,
+        "accuracy": 0.42857142857142855
+      },
+      "Mathematics -> Applied Mathematics -> Statistics -> Mathematical Statistics": {
+        "correct": 3,
+        "total": 13,
+        "accuracy": 0.23076923076923078
+      },
+      "Mathematics -> Applied Mathematics -> Statistics -> Probability -> Counting Methods -> Combinations": {
+        "correct": 3,
+        "total": 13,
+        "accuracy": 0.23076923076923078
+      },
+      "Mathematics -> Applied Mathematics -> Statistics -> Probability -> Counting Methods -> Other": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Applied Mathematics -> Statistics -> Probability -> Other": {
+        "correct": 5,
+        "total": 43,
+        "accuracy": 0.11627906976744186
+      },
+      "Mathematics -> Calculus -> Differential Calculus -> Applications of Derivatives": {
+        "correct": 7,
+        "total": 67,
+        "accuracy": 0.1044776119402985
+      },
+      "Mathematics -> Calculus -> Differential Calculus -> Derivatives": {
+        "correct": 2,
+        "total": 26,
+        "accuracy": 0.07692307692307693
+      },
+      "Mathematics -> Calculus -> Differential Calculus -> Other": {
+        "correct": 0,
+        "total": 7,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Calculus -> Integral Calculus -> Applications of Integrals": {
+        "correct": 7,
+        "total": 45,
+        "accuracy": 0.15555555555555556
+      },
+      "Mathematics -> Calculus -> Integral Calculus -> Integrals": {
+        "correct": 0,
+        "total": 3,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Calculus -> Integral Calculus -> Techniques of Integration -> Multi-variable": {
+        "correct": 9,
+        "total": 47,
+        "accuracy": 0.19148936170212766
+      },
+      "Mathematics -> Calculus -> Integral Calculus -> Techniques of Integration -> Single-variable": {
+        "correct": 15,
+        "total": 76,
+        "accuracy": 0.19736842105263158
+      },
+      "Mathematics -> Calculus -> Other": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Differential Equations -> Ordinary Differential Equations (ODEs)": {
+        "correct": 3,
+        "total": 10,
+        "accuracy": 0.3
+      },
+      "Mathematics -> Differential Equations -> Partial Differential Equations (PDEs)": {
+        "correct": 1,
+        "total": 6,
+        "accuracy": 0.16666666666666666
+      },
+      "Mathematics -> Discrete Mathematics -> Algorithms": {
+        "correct": 0,
+        "total": 4,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Discrete Mathematics -> Combinatorics": {
+        "correct": 4,
+        "total": 34,
+        "accuracy": 0.11764705882352941
+      },
+      "Mathematics -> Discrete Mathematics -> Graph Theory": {
+        "correct": 1,
+        "total": 9,
+        "accuracy": 0.1111111111111111
+      },
+      "Mathematics -> Discrete Mathematics -> Logic": {
+        "correct": 0,
+        "total": 10,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Geometry -> Differential Geometry -> Curvature": {
+        "correct": 0,
+        "total": 3,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Geometry -> Differential Geometry -> Manifolds": {
+        "correct": 1,
+        "total": 12,
+        "accuracy": 0.08333333333333333
+      },
+      "Mathematics -> Geometry -> Differential Geometry -> Other": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "Mathematics -> Geometry -> Plane Geometry -> Angles": {
+        "correct": 0,
+        "total": 11,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Geometry -> Plane Geometry -> Area": {
+        "correct": 1,
+        "total": 3,
+        "accuracy": 0.3333333333333333
+      },
+      "Mathematics -> Geometry -> Plane Geometry -> Other": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Geometry -> Plane Geometry -> Polygons": {
+        "correct": 0,
+        "total": 11,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Geometry -> Plane Geometry -> Triangulations": {
+        "correct": 4,
+        "total": 20,
+        "accuracy": 0.2
+      },
+      "Mathematics -> Geometry -> Solid Geometry -> 3D Shapes": {
+        "correct": 0,
+        "total": 14,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Number Theory -> Congruences": {
+        "correct": 3,
+        "total": 26,
+        "accuracy": 0.11538461538461539
+      },
+      "Mathematics -> Number Theory -> Factorization": {
+        "correct": 0,
+        "total": 11,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Number Theory -> Greatest Common Divisors (GCD)": {
+        "correct": 0,
+        "total": 3,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Number Theory -> Other": {
+        "correct": 0,
+        "total": 7,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Number Theory -> Prime Numbers": {
+        "correct": 2,
+        "total": 14,
+        "accuracy": 0.14285714285714285
+      },
+      "Mathematics -> Other": {
+        "correct": 3,
+        "total": 35,
+        "accuracy": 0.08571428571428572
+      },
+      "Mathematics -> Precalculus -> Limits": {
+        "correct": 7,
+        "total": 72,
+        "accuracy": 0.09722222222222222
+      },
+      "Mathematics -> Precalculus -> Trigonometric Functions": {
+        "correct": 1,
+        "total": 14,
+        "accuracy": 0.07142857142857142
+      }
+    },
+    "qwen3_14b": {
+      "Mathematics -> Algebra -> Abstract Algebra -> Field Theory": {
+        "correct": 7,
+        "total": 26,
+        "accuracy": 0.2692307692307692
+      },
+      "Mathematics -> Algebra -> Abstract Algebra -> Group Theory": {
+        "correct": 12,
+        "total": 37,
+        "accuracy": 0.32432432432432434
+      },
+      "Mathematics -> Algebra -> Abstract Algebra -> Other": {
+        "correct": 2,
+        "total": 15,
+        "accuracy": 0.13333333333333333
+      },
+      "Mathematics -> Algebra -> Abstract Algebra -> Ring Theory": {
+        "correct": 1,
+        "total": 18,
+        "accuracy": 0.05555555555555555
+      },
+      "Mathematics -> Algebra -> Algebra -> Algebraic Expressions": {
+        "correct": 1,
+        "total": 9,
+        "accuracy": 0.1111111111111111
+      },
+      "Mathematics -> Algebra -> Algebra -> Equations and Inequalities": {
+        "correct": 3,
+        "total": 26,
+        "accuracy": 0.11538461538461539
+      },
+      "Mathematics -> Algebra -> Algebra -> Polynomial Operations": {
+        "correct": 3,
+        "total": 29,
+        "accuracy": 0.10344827586206896
+      },
+      "Mathematics -> Algebra -> Intermediate Algebra -> Complex Numbers": {
+        "correct": 6,
+        "total": 16,
+        "accuracy": 0.375
+      },
+      "Mathematics -> Algebra -> Intermediate Algebra -> Exponential Functions": {
+        "correct": 1,
+        "total": 20,
+        "accuracy": 0.05
+      },
+      "Mathematics -> Algebra -> Intermediate Algebra -> Logarithmic Functions": {
+        "correct": 1,
+        "total": 6,
+        "accuracy": 0.16666666666666666
+      },
+      "Mathematics -> Algebra -> Intermediate Algebra -> Other": {
+        "correct": 5,
+        "total": 28,
+        "accuracy": 0.17857142857142858
+      },
+      "Mathematics -> Algebra -> Intermediate Algebra -> Quadratic Functions": {
+        "correct": 4,
+        "total": 8,
+        "accuracy": 0.5
+      },
+      "Mathematics -> Algebra -> Linear Algebra -> Determinants": {
+        "correct": 0,
+        "total": 2,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Algebra -> Linear Algebra -> Linear Transformations": {
+        "correct": 4,
+        "total": 13,
+        "accuracy": 0.3076923076923077
+      },
+      "Mathematics -> Algebra -> Linear Algebra -> Matrices": {
+        "correct": 14,
+        "total": 35,
+        "accuracy": 0.4
+      },
+      "Mathematics -> Algebra -> Linear Algebra -> Vectors": {
+        "correct": 5,
+        "total": 13,
+        "accuracy": 0.38461538461538464
+      },
+      "Mathematics -> Algebra -> Prealgebra -> Fractions": {
+        "correct": 2,
+        "total": 3,
+        "accuracy": 0.6666666666666666
+      },
+      "Mathematics -> Algebra -> Prealgebra -> Integers": {
+        "correct": 1,
+        "total": 6,
+        "accuracy": 0.16666666666666666
+      },
+      "Mathematics -> Algebra -> Prealgebra -> Simple Equations": {
+        "correct": 4,
+        "total": 6,
+        "accuracy": 0.6666666666666666
+      },
+      "Mathematics -> Applied Mathematics -> Math Word Problems": {
+        "correct": 4,
+        "total": 7,
+        "accuracy": 0.5714285714285714
+      },
+      "Mathematics -> Applied Mathematics -> Statistics -> Mathematical Statistics": {
+        "correct": 4,
+        "total": 13,
+        "accuracy": 0.3076923076923077
+      },
+      "Mathematics -> Applied Mathematics -> Statistics -> Probability -> Counting Methods -> Combinations": {
+        "correct": 5,
+        "total": 13,
+        "accuracy": 0.38461538461538464
+      },
+      "Mathematics -> Applied Mathematics -> Statistics -> Probability -> Counting Methods -> Other": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Applied Mathematics -> Statistics -> Probability -> Other": {
+        "correct": 9,
+        "total": 43,
+        "accuracy": 0.20930232558139536
+      },
+      "Mathematics -> Calculus -> Differential Calculus -> Applications of Derivatives": {
+        "correct": 10,
+        "total": 67,
+        "accuracy": 0.14925373134328357
+      },
+      "Mathematics -> Calculus -> Differential Calculus -> Derivatives": {
+        "correct": 7,
+        "total": 26,
+        "accuracy": 0.2692307692307692
+      },
+      "Mathematics -> Calculus -> Differential Calculus -> Other": {
+        "correct": 0,
+        "total": 7,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Calculus -> Integral Calculus -> Applications of Integrals": {
+        "correct": 11,
+        "total": 45,
+        "accuracy": 0.24444444444444444
+      },
+      "Mathematics -> Calculus -> Integral Calculus -> Integrals": {
+        "correct": 0,
+        "total": 3,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Calculus -> Integral Calculus -> Techniques of Integration -> Multi-variable": {
+        "correct": 17,
+        "total": 47,
+        "accuracy": 0.3617021276595745
+      },
+      "Mathematics -> Calculus -> Integral Calculus -> Techniques of Integration -> Single-variable": {
+        "correct": 17,
+        "total": 76,
+        "accuracy": 0.2236842105263158
+      },
+      "Mathematics -> Calculus -> Other": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Differential Equations -> Ordinary Differential Equations (ODEs)": {
+        "correct": 5,
+        "total": 10,
+        "accuracy": 0.5
+      },
+      "Mathematics -> Differential Equations -> Partial Differential Equations (PDEs)": {
+        "correct": 1,
+        "total": 6,
+        "accuracy": 0.16666666666666666
+      },
+      "Mathematics -> Discrete Mathematics -> Algorithms": {
+        "correct": 1,
+        "total": 4,
+        "accuracy": 0.25
+      },
+      "Mathematics -> Discrete Mathematics -> Combinatorics": {
+        "correct": 5,
+        "total": 34,
+        "accuracy": 0.14705882352941177
+      },
+      "Mathematics -> Discrete Mathematics -> Graph Theory": {
+        "correct": 1,
+        "total": 9,
+        "accuracy": 0.1111111111111111
+      },
+      "Mathematics -> Discrete Mathematics -> Logic": {
+        "correct": 0,
+        "total": 10,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Geometry -> Differential Geometry -> Curvature": {
+        "correct": 0,
+        "total": 3,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Geometry -> Differential Geometry -> Manifolds": {
+        "correct": 3,
+        "total": 12,
+        "accuracy": 0.25
+      },
+      "Mathematics -> Geometry -> Differential Geometry -> Other": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Geometry -> Plane Geometry -> Angles": {
+        "correct": 0,
+        "total": 11,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Geometry -> Plane Geometry -> Area": {
+        "correct": 1,
+        "total": 3,
+        "accuracy": 0.3333333333333333
+      },
+      "Mathematics -> Geometry -> Plane Geometry -> Other": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Geometry -> Plane Geometry -> Polygons": {
+        "correct": 0,
+        "total": 11,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Geometry -> Plane Geometry -> Triangulations": {
+        "correct": 3,
+        "total": 20,
+        "accuracy": 0.15
+      },
+      "Mathematics -> Geometry -> Solid Geometry -> 3D Shapes": {
+        "correct": 0,
+        "total": 14,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Number Theory -> Congruences": {
+        "correct": 4,
+        "total": 26,
+        "accuracy": 0.15384615384615385
+      },
+      "Mathematics -> Number Theory -> Factorization": {
+        "correct": 1,
+        "total": 11,
+        "accuracy": 0.09090909090909091
+      },
+      "Mathematics -> Number Theory -> Greatest Common Divisors (GCD)": {
+        "correct": 0,
+        "total": 3,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Number Theory -> Other": {
+        "correct": 0,
+        "total": 7,
+        "accuracy": 0.0
+      },
+      "Mathematics -> Number Theory -> Prime Numbers": {
+        "correct": 4,
+        "total": 14,
+        "accuracy": 0.2857142857142857
+      },
+      "Mathematics -> Other": {
+        "correct": 5,
+        "total": 35,
+        "accuracy": 0.14285714285714285
+      },
+      "Mathematics -> Precalculus -> Limits": {
+        "correct": 16,
+        "total": 72,
+        "accuracy": 0.2222222222222222
+      },
+      "Mathematics -> Precalculus -> Trigonometric Functions": {
+        "correct": 3,
+        "total": 14,
+        "accuracy": 0.21428571428571427
+      }
+    }
+  }
+}

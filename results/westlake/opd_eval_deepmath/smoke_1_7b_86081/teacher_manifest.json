@@ -1,0 +1,14 @@
+[
+  {
+    "dataset_index": 0,
+    "response_tokens": 4096,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/smoke_1_7b_86081/teacher_topk/example_000.npz",
+    "teacher_mass_mean": 0.999994695186615
+  },
+  {
+    "dataset_index": 1,
+    "response_tokens": 4096,
+    "path": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_deepmath/smoke_1_7b_86081/teacher_topk/example_001.npz",
+    "teacher_mass_mean": 0.9999940991401672
+  }
+]

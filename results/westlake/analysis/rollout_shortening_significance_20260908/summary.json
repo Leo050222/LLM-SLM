@@ -1,0 +1,357 @@
+{
+  "baseline_accuracy": 0.3926683781334944,
+  "prefixes": 13244,
+  "unique_problems": 13244,
+  "horizons": {
+    "32": {
+      "rollouts": 847616,
+      "accuracy": 0.40499471458773784,
+      "all": {
+        "eligible_rollouts": 847616,
+        "within_prefix_accuracy_pp_per_10pct_more_shortening": 0.5003349412784427,
+        "within_prefix_all_rollouts": {
+          "eligible_rollouts": 847616,
+          "prefix_clusters": 13244,
+          "accuracy_pp_per_10pct_more_shortening": 0.4308489385604024,
+          "cluster_se_pp_per_10pct": 0.038532711309748856,
+          "cluster_z": 11.18138132292281,
+          "cluster_normal_p_two_sided": 5.030088824219696e-29
+        },
+        "within_prefix_shorter_rollouts": {
+          "eligible_rollouts": 471607,
+          "prefix_clusters": 13171,
+          "accuracy_pp_per_10pct_more_shortening": 0.500334941278443,
+          "cluster_se_pp_per_10pct": 0.06708262832265237,
+          "cluster_z": 7.458487447330544,
+          "cluster_normal_p_two_sided": 8.752135598594617e-14
+        }
+      },
+      "clean": {
+        "eligible_rollouts": 846980,
+        "within_prefix_accuracy_pp_per_10pct_more_shortening": 0.5001566671668913,
+        "within_prefix_all_rollouts": {
+          "eligible_rollouts": 846980,
+          "prefix_clusters": 13235,
+          "accuracy_pp_per_10pct_more_shortening": 0.7157856704515446,
+          "cluster_se_pp_per_10pct": 0.026327210637522448,
+          "cluster_z": 27.18805574607217,
+          "cluster_normal_p_two_sided": 8.991369235713216e-163
+        },
+        "within_prefix_shorter_rollouts": {
+          "eligible_rollouts": 471053,
+          "prefix_clusters": 13162,
+          "accuracy_pp_per_10pct_more_shortening": 0.5001566671668914,
+          "cluster_se_pp_per_10pct": 0.06712152639416465,
+          "cluster_z": 7.451509136275745,
+          "cluster_normal_p_two_sided": 9.227850076550487e-14
+        }
+      }
+    },
+    "64": {
+      "rollouts": 847616,
+      "accuracy": 0.41001113711869525,
+      "all": {
+        "eligible_rollouts": 847616,
+        "within_prefix_accuracy_pp_per_10pct_more_shortening": 0.6927777347069949,
+        "within_prefix_all_rollouts": {
+          "eligible_rollouts": 847616,
+          "prefix_clusters": 13244,
+          "accuracy_pp_per_10pct_more_shortening": 0.39820523900289634,
+          "cluster_se_pp_per_10pct": 0.04636438675682584,
+          "cluster_z": 8.588601442987315,
+          "cluster_normal_p_two_sided": 8.803432411175026e-18
+        },
+        "within_prefix_shorter_rollouts": {
+          "eligible_rollouts": 467126,
+          "prefix_clusters": 13115,
+          "accuracy_pp_per_10pct_more_shortening": 0.6927777347069949,
+          "cluster_se_pp_per_10pct": 0.06857827864305663,
+          "cluster_z": 10.101999472935688,
+          "cluster_normal_p_two_sided": 5.412715721873328e-24
+        }
+      },
+      "clean": {
+        "eligible_rollouts": 846966,
+        "within_prefix_accuracy_pp_per_10pct_more_shortening": 0.6925234548408342,
+        "within_prefix_all_rollouts": {
+          "eligible_rollouts": 846966,
+          "prefix_clusters": 13235,
+          "accuracy_pp_per_10pct_more_shortening": 0.7556482402420247,
+          "cluster_se_pp_per_10pct": 0.026699601984176504,
+          "cluster_z": 28.301854113400605,
+          "cluster_normal_p_two_sided": 3.2790049017780884e-176
+        },
+        "within_prefix_shorter_rollouts": {
+          "eligible_rollouts": 466561,
+          "prefix_clusters": 13106,
+          "accuracy_pp_per_10pct_more_shortening": 0.6925234548408338,
+          "cluster_se_pp_per_10pct": 0.06861806524765358,
+          "cluster_z": 10.092436333513715,
+          "cluster_normal_p_two_sided": 5.966982938642066e-24
+        }
+      }
+    },
+    "128": {
+      "rollouts": 847616,
+      "accuracy": 0.42016667925098156,
+      "all": {
+        "eligible_rollouts": 847616,
+        "within_prefix_accuracy_pp_per_10pct_more_shortening": 0.9949793186173953,
+        "within_prefix_all_rollouts": {
+          "eligible_rollouts": 847616,
+          "prefix_clusters": 13244,
+          "accuracy_pp_per_10pct_more_shortening": 0.12439029582784697,
+          "cluster_se_pp_per_10pct": 0.036848721611946855,
+          "cluster_z": 3.3757017987706237,
+          "cluster_normal_p_two_sided": 0.0007362767450804022
+        },
+        "within_prefix_shorter_rollouts": {
+          "eligible_rollouts": 459015,
+          "prefix_clusters": 12984,
+          "accuracy_pp_per_10pct_more_shortening": 0.9949793186173953,
+          "cluster_se_pp_per_10pct": 0.07322396853936397,
+          "cluster_z": 13.58816434652147,
+          "cluster_normal_p_two_sided": 4.707390414529932e-42
+        }
+      },
+      "clean": {
+        "eligible_rollouts": 846860,
+        "within_prefix_accuracy_pp_per_10pct_more_shortening": 0.9964315518144514,
+        "within_prefix_all_rollouts": {
+          "eligible_rollouts": 846860,
+          "prefix_clusters": 13235,
+          "accuracy_pp_per_10pct_more_shortening": 0.7878756618326024,
+          "cluster_se_pp_per_10pct": 0.04188097984038796,
+          "cluster_z": 18.812254747507456,
+          "cluster_normal_p_two_sided": 5.993359965522469e-79
+        },
+        "within_prefix_shorter_rollouts": {
+          "eligible_rollouts": 458450,
+          "prefix_clusters": 12975,
+          "accuracy_pp_per_10pct_more_shortening": 0.9964315518144519,
+          "cluster_se_pp_per_10pct": 0.07326901028555756,
+          "cluster_z": 13.599631657790576,
+          "cluster_normal_p_two_sided": 4.024551884306898e-42
+        }
+      }
+    },
+    "256": {
+      "rollouts": 847616,
+      "accuracy": 0.4420645669737239,
+      "all": {
+        "eligible_rollouts": 847616,
+        "within_prefix_accuracy_pp_per_10pct_more_shortening": 1.442099881887137,
+        "within_prefix_all_rollouts": {
+          "eligible_rollouts": 847616,
+          "prefix_clusters": 13244,
+          "accuracy_pp_per_10pct_more_shortening": 0.018840311207956848,
+          "cluster_se_pp_per_10pct": 0.005604761835094747,
+          "cluster_z": 3.3614829251060154,
+          "cluster_normal_p_two_sided": 0.0007752514971486985
+        },
+        "within_prefix_shorter_rollouts": {
+          "eligible_rollouts": 441094,
+          "prefix_clusters": 12585,
+          "accuracy_pp_per_10pct_more_shortening": 1.4420998818871376,
+          "cluster_se_pp_per_10pct": 0.08169503109686395,
+          "cluster_z": 17.652234934304296,
+          "cluster_normal_p_two_sided": 9.780785419448455e-70
+        }
+      },
+      "clean": {
+        "eligible_rollouts": 845968,
+        "within_prefix_accuracy_pp_per_10pct_more_shortening": 1.4421629668857643,
+        "within_prefix_all_rollouts": {
+          "eligible_rollouts": 845968,
+          "prefix_clusters": 13235,
+          "accuracy_pp_per_10pct_more_shortening": 0.6869741429638881,
+          "cluster_se_pp_per_10pct": 0.061665737634510505,
+          "cluster_z": 11.140289070010754,
+          "cluster_normal_p_two_sided": 7.985971674432765e-29
+        },
+        "within_prefix_shorter_rollouts": {
+          "eligible_rollouts": 440532,
+          "prefix_clusters": 12576,
+          "accuracy_pp_per_10pct_more_shortening": 1.4421629668857654,
+          "cluster_se_pp_per_10pct": 0.08174328421459726,
+          "cluster_z": 17.642586553039816,
+          "cluster_normal_p_two_sided": 1.1602632493315355e-69
+        }
+      }
+    }
+  },
+  "definitions": {
+    "length": "prefix + bridge + student continuation",
+    "reduction": "eight direct rollout mean length minus individual after-bridge length",
+    "clean": "exclude prefix if any direct rollout hits length; exclude individual after rollout if it hits length",
+    "weighting": "individual rollout; baseline accuracy matched to the prefixes represented in each bucket",
+    "inference": "descriptive association only; baseline is estimated from eight samples; no independence assumption or causal claim"
+  },
+  "sources": [
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_from_anchor_prefix_qwen3_1_7b_n8_seed20260827/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 57504957,
+      "mtime_ns": 1787961532000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h32_n8_x8_seed20260826/replicate_00/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55543735,
+      "mtime_ns": 1788426519000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h32_n8_x8_seed20260826/replicate_01/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55539404,
+      "mtime_ns": 1788458077000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h32_n8_x8_seed20260826/replicate_02/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55555259,
+      "mtime_ns": 1788463974000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h32_n8_x8_seed20260826/replicate_03/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55557683,
+      "mtime_ns": 1788459294000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h32_n8_x8_seed20260826/replicate_04/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55542470,
+      "mtime_ns": 1788458079000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h32_n8_x8_seed20260826/replicate_05/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55551244,
+      "mtime_ns": 1788463976000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h32_n8_x8_seed20260826/replicate_06/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55546990,
+      "mtime_ns": 1788459298000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h32_n8_x8_seed20260826/replicate_07/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55545932,
+      "mtime_ns": 1788458082000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h64_n8_x8_seed20260826/replicate_00/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55538448,
+      "mtime_ns": 1788463979000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h64_n8_x8_seed20260826/replicate_01/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55542446,
+      "mtime_ns": 1788459301000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h64_n8_x8_seed20260826/replicate_02/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55551059,
+      "mtime_ns": 1788458085000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h64_n8_x8_seed20260826/replicate_03/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55560979,
+      "mtime_ns": 1788463982000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h64_n8_x8_seed20260826/replicate_04/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55545993,
+      "mtime_ns": 1788459305000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h64_n8_x8_seed20260826/replicate_05/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55555191,
+      "mtime_ns": 1788458088000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h64_n8_x8_seed20260826/replicate_06/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55532901,
+      "mtime_ns": 1788463985000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h64_n8_x8_seed20260826/replicate_07/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55552486,
+      "mtime_ns": 1788459308000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h128_n8_x8_seed20260826/replicate_00/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55631886,
+      "mtime_ns": 1788458090000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h128_n8_x8_seed20260826/replicate_01/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55639849,
+      "mtime_ns": 1788463987000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h128_n8_x8_seed20260826/replicate_02/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55639497,
+      "mtime_ns": 1788459311000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h128_n8_x8_seed20260826/replicate_03/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55652601,
+      "mtime_ns": 1788458093000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h128_n8_x8_seed20260826/replicate_04/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55643041,
+      "mtime_ns": 1788463990000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h128_n8_x8_seed20260826/replicate_05/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55647637,
+      "mtime_ns": 1788459314000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h128_n8_x8_seed20260826/replicate_06/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55638116,
+      "mtime_ns": 1788458095000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h128_n8_x8_seed20260826/replicate_07/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55643905,
+      "mtime_ns": 1788463992000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h256_n8_seed20260826/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55604787,
+      "mtime_ns": 1787853993000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h256_n8_x8_seed20260826/replicate_01/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55610704,
+      "mtime_ns": 1788220162000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h256_n8_x8_seed20260826/replicate_02/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55615101,
+      "mtime_ns": 1788223360000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h256_n8_x8_seed20260826/replicate_03/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55606969,
+      "mtime_ns": 1788224503000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h256_n8_x8_seed20260826/replicate_04/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55618029,
+      "mtime_ns": 1788224611000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h256_n8_x8_seed20260826/replicate_05/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55609214,
+      "mtime_ns": 1788223722000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h256_n8_x8_seed20260826/replicate_06/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55613820,
+      "mtime_ns": 1788223960000000000
+    },
+    {
+      "path": "/storage/yukaichengLab/wangxin/test_eiloeo/dataset/train/student_after_bridge_qwen3_1_7b_h256_n8_x8_seed20260826/replicate_07/analysis_correctness_length_single_job/scores.jsonl",
+      "bytes": 55609420,
+      "mtime_ns": 1788219711000000000
+    }
+  ]
+}

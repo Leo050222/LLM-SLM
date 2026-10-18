@@ -1,0 +1,51 @@
+{
+  "job_id": 107946,
+  "status": "PENDING_PRIORITY",
+  "source_job": 107918,
+  "source_job_kept_running_until_new_preflight": true,
+  "nodes": 1,
+  "gpus": 8,
+  "cpus": 64,
+  "memory_gib": 512,
+  "replicas": 8,
+  "concurrency": 256,
+  "execution_order": [
+    "student",
+    "teacher",
+    "code_scoring"
+  ],
+  "output_root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_baselines/full_teacher_student_greedy_20260920",
+  "excluded_nodes": [
+    "gnho005",
+    "gnho008",
+    "gnho009",
+    "gnho018"
+  ],
+  "tests_passed": 7,
+  "code_sha256": {
+    "worker.py": "55045d9943ba94978bc76daae4c45e1f732d1cbd422637467ab32e1e521ad120",
+    "code_score.slurm": "3f68584d3aa77fc57ca2ceb28375571ecbb14f56a2324ea2f1bf78c1c43d0b8a",
+    "generation.py": "81ce100e6538c12569367d5d7530b08c130cfe7a9a93572a3955e992cc43b7f3",
+    "select_gpus.py": "e3730fbe58ffdbb929728259acb82d0be3dd5bbb9b5b4c29873b569286116a6e",
+    "dispatch.py": "2511691feaf7003b78c18203a58c57b65647200c7f9ff6d99e64244a814df2ae",
+    "cutover.py": "18dfd851a112d51dfbcd5c763de6f8f86a1b5132f421d83ca37cffda12541ec0",
+    "queue_rpc.py": "0c522389642f405526c7420b4315b7cc52500b7b200c38f2e2e7416d86a68908",
+    "node.sh": "5d422592abdec85d76227c9de915241eb77ca95d4910f0e64bd2b316a896f067",
+    "test_migration.py": "22b76979844e31b84ceee1ba4bb8e192fdae099e11ed04f10dfc08f9a94d618a",
+    "preflight.sh": "865160c8eda6011209fbabbee50e4ec96a2fd9fd1991b8cf4ca685ae8c410625",
+    "judge_client.py": "459a4095bb55f48dd888f9c57b97bcf43ede0caafb5e6d51f73cf1cf06c4efc7",
+    "worker_rank.sh": "7cf9283718b71d496df464d435f6b68d81b30c0531c654ea2c8143a334589bbd",
+    "code_scorer.py": "d3cadeadac0c8094855b9472dd8800988284a2e46fece54c9f3b02e6ced186f7",
+    "ablation_core.py": "5ace90ebed4f97120dec841c4efb1aa87eaa6575c0d21806e05eca36889af809",
+    "deadline.py": "f61a2772497a2e62427d811a05cbb67dffd3b308bbfc4f3c7450c8279685d373",
+    "test_greedy.py": "239e99060bc315534d9b21998f74d6a84b2e4e6139680aa1f520741ba9c789be",
+    "score_one.py": "77111979c7536c337ade84cc131bfe680d558b3e0550bb5f339e21d8aec4fb0e",
+    "migration.py": "af28cd2ab956a0434b0114797eb6d230b63c58dc1cf5bbb73b9416e2fe2876e5",
+    "prepare.py": "2400adb033ae8afbbac145f85b919449419650acf9d930eb45f0b5faf223acfb",
+    "test_generation.py": "555cc59ee4e817aa7e491fd52e5d094a9eb8858b1a09c3e695ad19feedbd8b0f",
+    "score.py": "a1f1d1fa36883c2ca63132b88fc087662439e18987954f9b5572ab5551e8ed56",
+    "gpu.slurm": "9cc69535f52c95ceba519df966775969e439664228c43f69c66925490763dbb4",
+    "smoke.py": "ea9519de94e0455da052af59eee8c41dde038d748c5648939d0374c37a29e0be"
+  },
+  "time_limit": "01:00:00"
+}

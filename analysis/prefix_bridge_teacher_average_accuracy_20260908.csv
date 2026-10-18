@@ -1,0 +1,7 @@
+condition,bridge_tokens,rollouts,correct_rollouts,average_accuracy_percent,delta_vs_student_from_prefix_pp,gap_to_teacher_from_prefix_pp
+student_from_prefix,0,105952,41604,39.2668,0.0000,18.0450
+student_after_bridge,32,847616,343280,40.4995,1.2326,16.8123
+student_after_bridge,64,847616,347532,41.0011,1.7343,16.3107
+student_after_bridge,128,847616,356140,42.0167,2.7498,15.2951
+student_after_bridge,256,847616,374701,44.2065,4.9396,13.1053
+teacher_from_prefix,0,105952,60723,57.3118,18.0450,0.0000

@@ -1,0 +1,18 @@
+{
+  "job_id": 106645,
+  "submitted_at": "2026-09-18T14:56:19+08:00",
+  "node": "gnho017",
+  "gpus": 4,
+  "model_phases": [
+    "student",
+    "teacher"
+  ],
+  "replicas_per_phase": 4,
+  "concurrency": 128,
+  "batch_size": 8,
+  "expected_outputs": 73136,
+  "new_outputs": 68502,
+  "reused_outputs": 4634,
+  "external_math_scoring_rows": 36064,
+  "external_scoring_approved": true
+}

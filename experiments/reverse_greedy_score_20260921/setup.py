@@ -1,0 +1,26 @@
+from pathlib import Path
+import fcntl,json,os,secrets,subprocess,sys,time
+p=Path('/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_ablation/reverse_greedy_t2_k1_8gpu_20260921');j=p/'judge';s=Path(__file__).parent
+j.mkdir(exist_ok=True)
+assert (p/'ALL_GENERATION_COMPLETE.json').exists()
+(j/'system_prompt.txt').write_bytes((s/'system_prompt.txt').read_bytes())
+lock=(j/'authorization_setup.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+assert Path('/storage/yukaichengLab/wangxin/test_eiloeo/opd_rescore/grid_math_gpt4o_mini_openlux_20260916/.openlux_api_key').is_file()
+auth=dict(authorized_by='user',instruction='帮我交评分任务',scope='Reverse greedy run, 4571 outputs across eight datasets; up to 2254 math/BBH grades via existing OpenLux gpt-4o-mini protocol',created_at=time.time())
+(j/'EXTERNAL_SCORING_APPROVED.json').write_text(json.dumps(auth,ensure_ascii=False,indent=2))
+assert not (j/'relay.json').exists(), 'Relay already configured; inspect rather than duplicate'
+f=j/'.relay_token';fd=os.open(f,os.O_WRONLY|os.O_CREAT|os.O_EXCL,0o600)
+with os.fdopen(fd,'wb') as out:out.write(secrets.token_bytes(32))
+log=(j/'relay.log').open('ab')
+proc=subprocess.Popen([sys.executable,str(s/'relay.py')],stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
+for _ in range(30):
+ if (j/'relay.json').exists():break
+ assert proc.poll() is None, 'Relay exited'
+ time.sleep(1)
+else:raise RuntimeError('Relay did not start')
+port=json.loads((j/'relay.json').read_text())['port']
+subprocess.run([sys.executable,str(s/'judge_client.py'),'--tunnel-port',str(port),'--probe'],check=True)
+assert not (p/'full_score_job_id.txt').exists()
+job=subprocess.check_output(['/soft/slurm/bin/sbatch','--parsable',str(s/'score.slurm')],text=True).strip()
+(p/'full_score_job_id.txt').write_text(job+'\n')
+print('FULL_SCORE_JOB',job,flush=True)

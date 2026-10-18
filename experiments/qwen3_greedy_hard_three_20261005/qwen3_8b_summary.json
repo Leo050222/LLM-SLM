@@ -1,0 +1,34 @@
+{
+  "aime24": {
+    "questions": 30,
+    "correct": 9,
+    "accuracy": 0.3,
+    "score_status": {
+      "ok": 30
+    }
+  },
+  "aime25": {
+    "questions": 30,
+    "correct": 6,
+    "accuracy": 0.2,
+    "score_status": {
+      "ok": 30
+    }
+  },
+  "bbh": {
+    "questions": 1080,
+    "correct": 782,
+    "accuracy": 0.7240740740740741,
+    "score_status": {
+      "ok": 1080
+    }
+  },
+  "olympiad_bench": {
+    "questions": 674,
+    "correct": 340,
+    "accuracy": 0.5044510385756676,
+    "score_status": {
+      "ok": 674
+    }
+  }
+}

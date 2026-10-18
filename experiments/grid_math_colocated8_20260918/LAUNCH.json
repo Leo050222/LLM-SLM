@@ -1,0 +1,14 @@
+{
+  "job_id": 106176,
+  "submitted_at": "2026-09-18T10:29:36+08:00",
+  "status_at_submission": "PENDING Resources",
+  "gpus": 8,
+  "model_pairs": 8,
+  "resume_completed": 87339,
+  "verified_groups": 38,
+  "time_limit": "UNLIMITED",
+  "status": "CANCELLED",
+  "cancelled_at": "2026-09-18T10:46:21+08:00",
+  "user_paused": true,
+  "started": false
+}

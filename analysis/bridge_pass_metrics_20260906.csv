@@ -1,0 +1,6 @@
+condition,group_count,pass_all_8_count,pass_all_8_fraction_percent,pass_all_8_delta_vs_direct_pp,pass_at_8_count,pass_at_8_fraction_percent,pass_at_8_delta_vs_direct_pp,improved_vs_direct_count,improved_vs_direct_fraction_percent,unchanged_vs_direct_count,unchanged_vs_direct_fraction_percent,degraded_vs_direct_count,degraded_vs_direct_fraction_percent
+direct_student,13244,1560,11.7789,0.0000,9110,68.7859,0.0000,,,,,,
+32_token,105952,13989,13.2031,1.4242,73986,69.8297,1.0439,31399,29.6351,46661,44.0398,27892,26.3251
+64_token,105952,14876,14.0403,2.2614,73936,69.7825,0.9967,32376,30.5572,46002,43.4178,27574,26.0250
+128_token,105952,16440,15.5165,3.7375,74116,69.9524,1.1666,34183,32.2627,45172,42.6344,26597,25.1029
+256_token,105952,20702,19.5390,7.7601,74060,69.8996,1.1137,37724,35.6048,43608,41.1583,24620,23.2369

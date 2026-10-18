@@ -1,0 +1,20 @@
+{
+  "status": "BATCH_JUDGE_COMPLETE",
+  "expected_traces": 1000,
+  "completed_traces": 1000,
+  "selected_anchors": 958,
+  "no_anchor_selected": 42,
+  "failed_traces": 0,
+  "missing_traces": [],
+  "judge_calls": 6980,
+  "recorded_api_tokens": 22806500,
+  "selected_labels": {
+    "local_correction": 653,
+    "reasoning_branch": 304,
+    "surface_only": 1
+  },
+  "selected_relative_position_mean": 0.2293903149474668,
+  "selected_relative_position_median": 0.17466819928803998,
+  "elapsed_seconds": 309.8496494293213,
+  "stop_reason": null
+}

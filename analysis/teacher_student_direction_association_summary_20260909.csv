@@ -1,0 +1,16 @@
+metric,value
+clean_prefixes,13234
+pearson_teacher_minus_student_length_vs_accuracy_lift,-0.143348
+pearson_p,1.0612e-61
+spearman_teacher_minus_student_length_vs_accuracy_lift,-0.140231
+spearman_p,4.2371e-59
+partial_pearson_controlling_student_length_and_accuracy,-0.197751
+partial_pearson_p,8.4561e-117
+direction_chi_square,155.2935
+direction_chi_square_p,1.4932e-32
+direction_cramers_v,0.076598
+changed_only_accuracy_improved_given_shorter_percent,85.6478
+changed_only_accuracy_improved_given_longer_percent,76.2359
+changed_only_risk_difference_pp,9.4119
+changed_only_odds_ratio_shorter_vs_longer,1.8602
+changed_only_fisher_p,2.3414e-29

@@ -1,0 +1,73 @@
+{
+  "accuracy": 0.283,
+  "by_difficulty": {
+    "6.0": {
+      "accuracy": 0.36807817589576547,
+      "correct": 113,
+      "mean_response_tokens": 1357.798045602606,
+      "rows": 307
+    },
+    "6.5": {
+      "accuracy": 0.3333333333333333,
+      "correct": 45,
+      "mean_response_tokens": 1354.414814814815,
+      "rows": 135
+    },
+    "7.0": {
+      "accuracy": 0.2631578947368421,
+      "correct": 40,
+      "mean_response_tokens": 1308.0657894736842,
+      "rows": 152
+    },
+    "7.5": {
+      "accuracy": 0.3305084745762712,
+      "correct": 39,
+      "mean_response_tokens": 1327.6525423728813,
+      "rows": 118
+    },
+    "8.0": {
+      "accuracy": 0.17676767676767677,
+      "correct": 35,
+      "mean_response_tokens": 1283.2474747474748,
+      "rows": 198
+    },
+    "8.5": {
+      "accuracy": 0.13432835820895522,
+      "correct": 9,
+      "mean_response_tokens": 1075.8358208955224,
+      "rows": 67
+    },
+    "9.0": {
+      "accuracy": 0.08695652173913043,
+      "correct": 2,
+      "mean_response_tokens": 979.4347826086956,
+      "rows": 23
+    }
+  },
+  "correct": 283,
+  "data": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_data/deepmath_ge6_opd_train15pct_seed20260811/test_1000.parquet",
+  "data_sha256": "6ef8e66d181b7522bad2904ad1fcf20d8fc152af0c9d7eb05e07a9f2f0415ae0",
+  "elapsed_seconds_generate_sum_shards": 2917.6693365573883,
+  "finish_reason": {
+    "stop": 1000
+  },
+  "max_response_tokens_observed": 7728,
+  "mean_response_tokens": 1303.87,
+  "model": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+  "model_label": "qwen3_1_7b",
+  "rows": 1000,
+  "sampling": {
+    "max_model_len": 40960,
+    "max_response_tokens": 40264,
+    "seed": 20260811,
+    "temperature": 1.0,
+    "thinking": false,
+    "top_k": -1,
+    "top_p": 1.0
+  },
+  "status": "DEEPMATH_GE6_NATIVE_NONTHINKING_OK",
+  "thinking_close_tag": 0,
+  "thinking_open_tag": 0,
+  "tokenizer": "/storage/yukaichengLab/share/model/Qwen3-1.7B",
+  "total_response_tokens": 1303870
+}

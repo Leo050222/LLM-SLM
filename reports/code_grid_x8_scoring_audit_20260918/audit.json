@@ -1,0 +1,194 @@
+{
+  "snapshot_started_at": 1789701325.6216748,
+  "finished_at": 1789701534.9555955,
+  "scoring_signature": "14b73525616699f3bc88e4e287f7df04e24f2e6e2bfe517586f0eaa0710f455b",
+  "expected_scores": 463400,
+  "snapshot_score_files": 358468,
+  "audit_errors": 0,
+  "errors": [],
+  "datasets": {
+    "cruxeval_i": {
+      "scored": 123200,
+      "correct": 60228,
+      "expected": 160000,
+      "statuses": {
+        "pass": 60228,
+        "fail": 62756,
+        "trace_timeout": 216
+      }
+    },
+    "cruxeval_o": {
+      "scored": 124892,
+      "correct": 56882,
+      "expected": 160000,
+      "statuses": {
+        "pass": 56882,
+        "fail": 67407,
+        "trace_timeout": 603
+      }
+    },
+    "humaneval_plus": {
+      "scored": 25256,
+      "correct": 21131,
+      "expected": 32800,
+      "statuses": {
+        "{\"base\": \"pass\", \"plus\": \"pass\"}": 21131,
+        "{\"base\": \"fail\", \"plus\": \"fail\"}": 2866,
+        "trace_timeout": 10,
+        "{\"base\": \"pass\", \"plus\": \"fail\"}": 1237,
+        "{\"base\": \"fail\", \"plus\": \"pass\"}": 12
+      }
+    },
+    "livecodebench": {
+      "scored": 26917,
+      "correct": 7660,
+      "expected": 35000,
+      "statuses": {
+        "fail": 18935,
+        "pass": 7660,
+        "solution_process_crash": 7,
+        "scoring_execution_timeout": 64,
+        "trace_timeout": 251
+      }
+    },
+    "mbpp_plus": {
+      "scored": 58203,
+      "correct": 42573,
+      "expected": 75600,
+      "statuses": {
+        "{\"base\": \"fail\", \"plus\": \"fail\"}": 8072,
+        "{\"base\": \"pass\", \"plus\": \"pass\"}": 42573,
+        "{\"base\": \"pass\", \"plus\": \"fail\"}": 7367,
+        "{\"base\": \"fail\", \"plus\": \"pass\"}": 153,
+        "trace_timeout": 23,
+        "{\"base\": \"timeout\", \"plus\": \"fail\"}": 5,
+        "{\"base\": \"timeout\", \"plus\": \"timeout\"}": 10
+      }
+    }
+  },
+  "exception_examples": {
+    "solution_process_crash": [
+      {
+        "group": "r0_k1_t2",
+        "file": "02244.json",
+        "dataset": "livecodebench",
+        "status": "solution_process_crash",
+        "exitcode": -11
+      },
+      {
+        "group": "r1_k16_t2",
+        "file": "02260.json",
+        "dataset": "livecodebench",
+        "status": "solution_process_crash",
+        "exitcode": -11
+      },
+      {
+        "group": "r1_k16_t3",
+        "file": "02143.json",
+        "dataset": "livecodebench",
+        "status": "solution_process_crash",
+        "exitcode": -11
+      },
+      {
+        "group": "r1_k32_t3",
+        "file": "02244.json",
+        "dataset": "livecodebench",
+        "status": "solution_process_crash",
+        "exitcode": -11
+      },
+      {
+        "group": "r1_k4_t4",
+        "file": "02163.json",
+        "dataset": "livecodebench",
+        "status": "solution_process_crash",
+        "exitcode": -11
+      },
+      {
+        "group": "r4_k16_t2",
+        "file": "02143.json",
+        "dataset": "livecodebench",
+        "status": "solution_process_crash",
+        "exitcode": -11
+      },
+      {
+        "group": "r4_k4_t4",
+        "file": "02156.json",
+        "dataset": "livecodebench",
+        "status": "solution_process_crash",
+        "exitcode": -11
+      }
+    ],
+    "scoring_execution_timeout": [
+      {
+        "group": "r0_k1_t2",
+        "file": "02187.json",
+        "dataset": "livecodebench",
+        "status": "scoring_execution_timeout",
+        "exitcode": null
+      },
+      {
+        "group": "r0_k16_t2",
+        "file": "02187.json",
+        "dataset": "livecodebench",
+        "status": "scoring_execution_timeout",
+        "exitcode": null
+      },
+      {
+        "group": "r0_k32_t2",
+        "file": "02180.json",
+        "dataset": "livecodebench",
+        "status": "scoring_execution_timeout",
+        "exitcode": null
+      },
+      {
+        "group": "r0_k8_t2.5",
+        "file": "02230.json",
+        "dataset": "livecodebench",
+        "status": "scoring_execution_timeout",
+        "exitcode": null
+      },
+      {
+        "group": "r0_k32_t3",
+        "file": "02239.json",
+        "dataset": "livecodebench",
+        "status": "scoring_execution_timeout",
+        "exitcode": null
+      },
+      {
+        "group": "r0_k32_t3",
+        "file": "02230.json",
+        "dataset": "livecodebench",
+        "status": "scoring_execution_timeout",
+        "exitcode": null
+      },
+      {
+        "group": "r0_k4_t4",
+        "file": "02199.json",
+        "dataset": "livecodebench",
+        "status": "scoring_execution_timeout",
+        "exitcode": null
+      },
+      {
+        "group": "r1_k8_t2",
+        "file": "02143.json",
+        "dataset": "livecodebench",
+        "status": "scoring_execution_timeout",
+        "exitcode": null
+      },
+      {
+        "group": "r1_k4_t2.5",
+        "file": "02143.json",
+        "dataset": "livecodebench",
+        "status": "scoring_execution_timeout",
+        "exitcode": null
+      },
+      {
+        "group": "r1_k8_t3",
+        "file": "02206.json",
+        "dataset": "livecodebench",
+        "status": "scoring_execution_timeout",
+        "exitcode": null
+      }
+    ]
+  }
+}

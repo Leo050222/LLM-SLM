@@ -1,0 +1,276 @@
+{
+  "aime24": {
+    "n": 30,
+    "mean_tokens": 2321.9666666666667,
+    "median_tokens": 2581.5,
+    "teacher_tokens": 65.33333333333333,
+    "student_only_tokens": 2375.6666666666665,
+    "teacher_only_tokens": 2801.2,
+    "mean_takeovers": 8.166666666666666,
+    "correct_n": 3,
+    "correct_takeovers": 2.6666666666666665,
+    "wrong_takeovers": 8.777777777777779,
+    "point_biserial": -0.3107543020346473,
+    "takeovers_length_r": 0.528929312889895,
+    "partial_r_loglength": -0.10214038172009371,
+    "r_bootstrap95": [
+      -0.4989843255203424,
+      -0.14283604188320936
+    ],
+    "bins": {
+      "1-2": {
+        "n": 4,
+        "correct": 1,
+        "accuracy": 0.25,
+        "rescued": 0,
+        "lost": 0
+      },
+      "3-5": {
+        "n": 10,
+        "correct": 2,
+        "accuracy": 0.2,
+        "rescued": 1,
+        "lost": 1
+      },
+      "6-10": {
+        "n": 6,
+        "correct": 0,
+        "accuracy": 0.0,
+        "rescued": 0,
+        "lost": 1
+      },
+      "11+": {
+        "n": 10,
+        "correct": 0,
+        "accuracy": 0.0,
+        "rescued": 0,
+        "lost": 1
+      }
+    }
+  },
+  "aime25": {
+    "n": 30,
+    "mean_tokens": 2104.5666666666666,
+    "median_tokens": 1732.5,
+    "teacher_tokens": 50.13333333333333,
+    "student_only_tokens": 2206.133333333333,
+    "teacher_only_tokens": 2403.366666666667,
+    "mean_takeovers": 6.266666666666667,
+    "correct_n": 7,
+    "correct_takeovers": 2.857142857142857,
+    "wrong_takeovers": 7.304347826086956,
+    "point_biserial": -0.40106185826198276,
+    "takeovers_length_r": 0.5860774990020194,
+    "partial_r_loglength": -0.3281014656198368,
+    "r_bootstrap95": [
+      -0.6695764443965182,
+      -0.05976660868839174
+    ],
+    "bins": {
+      "0": {
+        "n": 4,
+        "correct": 3,
+        "accuracy": 0.75,
+        "rescued": 1,
+        "lost": 0
+      },
+      "1-2": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666,
+        "rescued": 2,
+        "lost": 1
+      },
+      "3-5": {
+        "n": 7,
+        "correct": 1,
+        "accuracy": 0.14285714285714285,
+        "rescued": 1,
+        "lost": 0
+      },
+      "6-10": {
+        "n": 11,
+        "correct": 0,
+        "accuracy": 0.0,
+        "rescued": 0,
+        "lost": 0
+      },
+      "11+": {
+        "n": 5,
+        "correct": 1,
+        "accuracy": 0.2,
+        "rescued": 0,
+        "lost": 0
+      }
+    }
+  },
+  "olympiad_bench": {
+    "n": 674,
+    "mean_tokens": 1517.314540059347,
+    "median_tokens": 1204.0,
+    "teacher_tokens": 36.29228486646884,
+    "student_only_tokens": 1604.4451038575667,
+    "teacher_only_tokens": 1524.5771513353116,
+    "mean_takeovers": 4.537091988130563,
+    "correct_n": 232,
+    "correct_takeovers": 1.9396551724137931,
+    "wrong_takeovers": 5.900452488687783,
+    "point_biserial": -0.3283098795075274,
+    "takeovers_length_r": 0.5891100131534499,
+    "partial_r_loglength": -0.06126912770172595,
+    "r_bootstrap95": [
+      -0.43052092818676957,
+      -0.2619021156151445
+    ],
+    "bins": {
+      "0": {
+        "n": 103,
+        "correct": 72,
+        "accuracy": 0.6990291262135923,
+        "rescued": 13,
+        "lost": 11
+      },
+      "1-2": {
+        "n": 199,
+        "correct": 98,
+        "accuracy": 0.49246231155778897,
+        "rescued": 42,
+        "lost": 23
+      },
+      "3-5": {
+        "n": 163,
+        "correct": 42,
+        "accuracy": 0.25766871165644173,
+        "rescued": 23,
+        "lost": 14
+      },
+      "6-10": {
+        "n": 136,
+        "correct": 16,
+        "accuracy": 0.11764705882352941,
+        "rescued": 7,
+        "lost": 9
+      },
+      "11+": {
+        "n": 73,
+        "correct": 4,
+        "accuracy": 0.0547945205479452,
+        "rescued": 4,
+        "lost": 2
+      }
+    }
+  },
+  "bbh": {
+    "n": 1080,
+    "mean_tokens": 310.3361111111111,
+    "median_tokens": 204.0,
+    "teacher_tokens": 25.487037037037037,
+    "student_only_tokens": 479.7509259259259,
+    "teacher_only_tokens": 279.43148148148146,
+    "mean_takeovers": 3.312037037037037,
+    "correct_n": 484,
+    "correct_takeovers": 2.975206611570248,
+    "wrong_takeovers": 3.585570469798658,
+    "point_biserial": -0.08376971221484383,
+    "takeovers_length_r": 0.47090163488183007,
+    "partial_r_loglength": -0.0901382410420501,
+    "r_bootstrap95": [
+      -0.13595410798765514,
+      -0.026528533348248586
+    ],
+    "bins": {
+      "0": {
+        "n": 174,
+        "correct": 81,
+        "accuracy": 0.46551724137931033,
+        "rescued": 16,
+        "lost": 11
+      },
+      "1-2": {
+        "n": 412,
+        "correct": 205,
+        "accuracy": 0.4975728155339806,
+        "rescued": 113,
+        "lost": 47
+      },
+      "3-5": {
+        "n": 288,
+        "correct": 119,
+        "accuracy": 0.4131944444444444,
+        "rescued": 50,
+        "lost": 42
+      },
+      "6-10": {
+        "n": 152,
+        "correct": 59,
+        "accuracy": 0.3881578947368421,
+        "rescued": 37,
+        "lost": 20
+      },
+      "11+": {
+        "n": 54,
+        "correct": 20,
+        "accuracy": 0.37037037037037035,
+        "rescued": 14,
+        "lost": 4
+      }
+    }
+  },
+  "all": {
+    "n": 1814,
+    "mean_tokens": 821.7359426681367,
+    "median_tokens": 409.5,
+    "teacher_tokens": 30.568357221609702,
+    "student_only_tokens": 957.5418963616318,
+    "teacher_only_tokens": 818.9018743109151,
+    "mean_takeovers": 3.896361631753032,
+    "correct_n": 726,
+    "correct_takeovers": 2.6418732782369148,
+    "wrong_takeovers": 4.733455882352941,
+    "point_biserial": -0.2199147345166073,
+    "takeovers_length_r": 0.4299988534973526,
+    "partial_r_loglength": -0.1649586507923901,
+    "r_bootstrap95": [
+      -0.2657161906987837,
+      -0.18173126056481664
+    ],
+    "bins": {
+      "0": {
+        "n": 281,
+        "correct": 156,
+        "accuracy": 0.5551601423487544,
+        "rescued": 30,
+        "lost": 22
+      },
+      "1-2": {
+        "n": 618,
+        "correct": 306,
+        "accuracy": 0.49514563106796117,
+        "rescued": 157,
+        "lost": 71
+      },
+      "3-5": {
+        "n": 468,
+        "correct": 164,
+        "accuracy": 0.3504273504273504,
+        "rescued": 75,
+        "lost": 57
+      },
+      "6-10": {
+        "n": 305,
+        "correct": 75,
+        "accuracy": 0.2459016393442623,
+        "rescued": 44,
+        "lost": 30
+      },
+      "11+": {
+        "n": 142,
+        "correct": 25,
+        "accuracy": 0.176056338028169,
+        "rescued": 18,
+        "lost": 7
+      }
+    },
+    "partial_r_dataset_loglength": -0.16561734408535644
+  }
+}

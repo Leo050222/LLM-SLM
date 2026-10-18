@@ -1,0 +1,19 @@
+{
+  "api_url": "http://127.0.0.1:19000/v1/chat/completions",
+  "api_key_required": false,
+  "api_key": "EMPTY",
+  "judge_model": "qwen3.5-27b-anchor-judge",
+  "gap_threshold": 2.0,
+  "teacher_topk": 16,
+  "judge_temperature": 0.0,
+  "judge_max_tokens": 2048,
+  "judge_timeout_seconds": 180,
+  "judge_max_retries": 2,
+  "judge_extra_body": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "seed": 20260824
+  },
+  "prefix_max_chars": 120000
+}

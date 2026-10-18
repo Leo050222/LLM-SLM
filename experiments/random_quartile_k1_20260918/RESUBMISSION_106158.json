@@ -1,0 +1,23 @@
+{
+  "previous_job": 106061,
+  "previous_state": "FAILED",
+  "completed_before_retry": 0,
+  "job_id": 106158,
+  "reason": "Remove unrelated recovery_4gpu_20260917 migration dependency; strict experiment manifest initialization/resume validation retained",
+  "tests": "6 passed locally and remotely",
+  "input_sha256": "1f01fd67b2405a66f241b939273d8ac1260f8de06ef83557d8b2e76be68b4562",
+  "monitor_status": "PAUSED",
+  "hashes": {
+    "worker.py": "969f59d94c5a8f71bbe7fbbb9f4ddf4e51bbcfb554063a46b065bb035338a998",
+    "run.py": "9ac3238feb6015e63010b7f26400af3e45e072810bbd26ed156a9bbce80c512b",
+    "test_quartile.py": "3c988f5b2fb7d3ca35c9c30c7f6bff6f85ad9d8f6c28624e6764a12fcf270b29",
+    "dispatch.py": "f9dada5810860d4b47d9332ba3f813496f0e0695d815179eebb70ecf7a468209",
+    "queue_rpc.py": "0c522389642f405526c7420b4315b7cc52500b7b200c38f2e2e7416d86a68908",
+    "test_manifest.py": "3134dedeccd2faabdf765a64c0a90ed240b46d5d04fb4d7e3e51debf3ddcb81b",
+    "ablation_core.py": "3fe4b5607e6011ea509644c6f3b0dc9caf156bf0e08bfad7185b06fe8cb3e580",
+    "deadline.py": "f61a2772497a2e62427d811a05cbb67dffd3b308bbfc4f3c7450c8279685d373",
+    "migration.py": "97afb61f45d0c8e4c301733d6865224d707aea8db4e264385191167ba28c678e",
+    "prepare.py": "36aafe9728cfee4a275e7f3177a92672bf4b960c7cfcd43775b0349da36abec1",
+    "smoke.py": "9d7909e21ad1139b103ae8ee34df3c05a7efc967412e06afdb315578e254c45c"
+  }
+}

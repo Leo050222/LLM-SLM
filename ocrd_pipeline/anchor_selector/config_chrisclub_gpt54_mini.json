@@ -1,0 +1,9 @@
+{
+  "api_url": "http://38.145.220.6:9000/v1/chat/completions",
+  "judge_model": "gpt-5.4-mini",
+  "judge_temperature": 0.0,
+  "judge_max_tokens": 1200,
+  "judge_timeout_seconds": 180,
+  "judge_max_retries": 3,
+  "prefix_max_chars": 120000
+}

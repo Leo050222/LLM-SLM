@@ -1,0 +1,59 @@
+{
+  "protocol": {
+    "dataset": "DeepMath GE6 held-out test1000",
+    "questions": 1000,
+    "rollouts_per_question": 8,
+    "thinking": false,
+    "seed": 20260811
+  },
+  "methods": [
+    {
+      "name": "Student-only",
+      "model_label": "student_only",
+      "checkpoint_step": 0,
+      "rollouts": 8000,
+      "correct_rollouts": 2247,
+      "accuracy": 0.280875,
+      "pass_at_8": 0.508,
+      "all_8_correct_count": 73,
+      "all_8_correct_rate": 0.073,
+      "mean_response_tokens": 1311.931375
+    },
+    {
+      "name": "Traditional OPD",
+      "model_label": "traditional_opd_step133",
+      "checkpoint_step": 133,
+      "rollouts": 8000,
+      "correct_rollouts": 2301,
+      "accuracy": 0.287625,
+      "pass_at_8": 0.537,
+      "all_8_correct_count": 86,
+      "all_8_correct_rate": 0.086,
+      "mean_response_tokens": 1574.16975
+    },
+    {
+      "name": "Bridge OPD",
+      "model_label": "bridge_opd_step1656",
+      "checkpoint_step": 1656,
+      "rollouts": 8000,
+      "correct_rollouts": 2382,
+      "accuracy": 0.29775,
+      "pass_at_8": 0.533,
+      "all_8_correct_count": 80,
+      "all_8_correct_rate": 0.08,
+      "mean_response_tokens": 1789.8105
+    },
+    {
+      "name": "Good-Bridge OPD",
+      "model_label": "good_bridge_opd_step590",
+      "checkpoint_step": 590,
+      "rollouts": 8000,
+      "correct_rollouts": 2418,
+      "accuracy": 0.30225,
+      "pass_at_8": 0.546,
+      "all_8_correct_count": 76,
+      "all_8_correct_rate": 0.076,
+      "mean_response_tokens": 1696.941625
+    }
+  ]
+}

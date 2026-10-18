@@ -1,0 +1,5 @@
+# No-existing-reasoning rollout scoring
+
+Job 107833 scores generation job 107647: 4571 rows / eight datasets. One CPU-only Slurm allocation, 32 CPUs / 64 GiB, on gnho020. Code benchmarks use the same isolated official harnesses as the shift5 experiment; 2254 math/reasoning answers use OpenLux GPT-4o-mini with the byte-identical judge system prompt and unchanged extraction/temperature/schema. Only extracted candidate and reference answers go to the API. User explicitly requested scoring this experiment. Authenticated destination-restricted TLS relay on login02; API probe passed before submission. In-job API equivalence probes and known-correct code smoke precede full scoring.
+
+Source SHA and scoring signature tracked per row. Generation timeout counted wrong; answer_correct retained separately. API/harness errors remain unresolved rather than silently counted wrong. Complete marker requires all 4571 scores. Output: `/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_ablation/weak_reprompt_nodraft_t2_k1_20260920/summary.json`, summary.csv, and per-row scores under `r1_weak_reprompt_nodraft_t2_k1/scores`.

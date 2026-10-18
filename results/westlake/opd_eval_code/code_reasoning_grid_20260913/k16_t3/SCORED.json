@@ -1,0 +1,27 @@
+{
+  "cruxeval_o": {
+    "n": 800,
+    "correct": 364,
+    "acc": 0.455
+  },
+  "cruxeval_i": {
+    "n": 800,
+    "correct": 388,
+    "acc": 0.485
+  },
+  "humaneval_plus": {
+    "n": 164,
+    "correct": 139,
+    "acc": 0.8475609756097561
+  },
+  "mbpp_plus": {
+    "n": 378,
+    "correct": 273,
+    "acc": 0.7222222222222222
+  },
+  "livecodebench": {
+    "n": 175,
+    "correct": 52,
+    "acc": 0.29714285714285715
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "online": {
+    "aime25": {
+      "questions": 30,
+      "correct": 5,
+      "accuracy": 0.16666666666666666,
+      "score_status": {
+        "ok": 30
+      }
+    },
+    "aime24": {
+      "questions": 30,
+      "correct": 3,
+      "accuracy": 0.1,
+      "score_status": {
+        "ok": 30
+      }
+    },
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 127,
+      "accuracy": 0.1884272997032641,
+      "score_status": {
+        "ok": 674
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 385,
+      "accuracy": 0.35648148148148145,
+      "score_status": {
+        "ok": 1080
+      }
+    },
+    "math500": {
+      "questions": 500,
+      "correct": 290,
+      "accuracy": 0.58,
+      "score_status": {
+        "ok": 500
+      }
+    }
+  }
+}

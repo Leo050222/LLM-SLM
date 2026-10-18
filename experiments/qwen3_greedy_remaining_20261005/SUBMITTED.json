@@ -1,0 +1,60 @@
+{
+  "submitted_at": "2026-10-05T04:06:32.561813+00:00",
+  "jobs": {
+    "qwen3_4b": "115274",
+    "qwen3_8b": "115264",
+    "qwen3_4b_initial_failed": "115263"
+  },
+  "status_at_submission": {
+    "qwen3_4b": "PENDING_RETRY",
+    "qwen3_8b": "RUNNING"
+  },
+  "nodes_at_submission": {
+    "qwen3_4b": "gnho009",
+    "qwen3_8b": "gnho011"
+  },
+  "resources_each": {
+    "nodes": 1,
+    "gpus": 8,
+    "gpu_type": "H800",
+    "partition": "yukaichenglab",
+    "cpus": 64,
+    "memory": "512G",
+    "time": "24:00:00"
+  },
+  "datasets": {
+    "math500": 500,
+    "cruxeval_o": 800,
+    "cruxeval_i": 800,
+    "humaneval_plus": 164,
+    "mbpp_plus": 378,
+    "livecodebench": 175,
+    "total": 2817
+  },
+  "generation": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "n": 1,
+    "seed": 20261005,
+    "tensor_parallel_size": 8,
+    "max_context": 40960
+  },
+  "remote_output_root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_baselines/qwen3_greedy_remaining_20261005",
+  "node_exclude_for_retry": [
+    "gnho005",
+    "gnho008",
+    "gnho009",
+    "gnho018"
+  ],
+  "status_final": {
+    "qwen3_4b": "COMPLETED",
+    "qwen3_8b": "COMPLETED"
+  },
+  "verification": {
+    "qwen3_4b_generated": 2817,
+    "qwen3_4b_scored": 2817,
+    "qwen3_8b_generated": 2817,
+    "qwen3_8b_scored": 2817
+  },
+  "results_file": "full_results_summary.json"
+}

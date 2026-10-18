@@ -1,0 +1,101 @@
+{
+  "logit_range": [
+    -26.875,
+    41.75
+  ],
+  "max_diff_token": {
+    "id": 2435,
+    "original": -4.90625,
+    "replay": -5.15625,
+    "difference": -0.25,
+    "prob_original": 5.4630127145655886e-21,
+    "bf16_spacing": 0.03125
+  },
+  "top10": [
+    {
+      "id": 47772,
+      "original": 41.75,
+      "replay": 41.75,
+      "prob_original": 0.999963464599574,
+      "prob_replay": 0.9999586040791313,
+      "logprob_diff": -4.860709843512723e-06
+    },
+    {
+      "id": 13769,
+      "original": 31.25,
+      "replay": 31.375,
+      "prob_original": 2.7535443294543854e-05,
+      "prob_replay": 3.120159331146135e-05,
+      "logprob_diff": 0.12499513929015649
+    },
+    {
+      "id": 66,
+      "original": 30.125,
+      "replay": 30.25,
+      "prob_original": 8.939449605379589e-06,
+      "prob_replay": 1.0129674254077708e-05,
+      "logprob_diff": 0.12499513929015649
+    },
+    {
+      "id": 11130,
+      "original": 24.375,
+      "replay": 24.5,
+      "prob_original": 2.8452308535368075e-08,
+      "prob_replay": 3.2240532690776915e-08,
+      "logprob_diff": 0.12499513929015649
+    },
+    {
+      "id": 35950,
+      "original": 24.25,
+      "replay": 24.25,
+      "prob_original": 2.5109074153843574e-08,
+      "prob_replay": 2.5108952106216292e-08,
+      "logprob_diff": -4.860709843512723e-06
+    },
+    {
+      "id": 73046,
+      "original": 22.0,
+      "replay": 22.125,
+      "prob_original": 2.6464769452814624e-09,
+      "prob_replay": 2.998836680112313e-09,
+      "logprob_diff": 0.12499513929015649
+    },
+    {
+      "id": 4246,
+      "original": 21.5,
+      "replay": 21.5,
+      "prob_original": 1.6051694075358403e-09,
+      "prob_replay": 1.6051616052920629e-09,
+      "logprob_diff": -4.860709843512723e-06
+    },
+    {
+      "id": 10821,
+      "original": 20.25,
+      "replay": 20.125,
+      "prob_original": 4.5988873503224764e-10,
+      "prob_replay": 4.058484114833432e-10,
+      "logprob_diff": -0.1250048607098435
+    },
+    {
+      "id": 34,
+      "original": 19.875,
+      "replay": 19.75,
+      "prob_original": 3.16076597024406e-10,
+      "prob_replay": 2.7893526202684867e-10,
+      "logprob_diff": -0.1250048607098435
+    },
+    {
+      "id": 25844,
+      "original": 19.625,
+      "replay": 19.75,
+      "prob_original": 2.4616070127315227e-10,
+      "prob_replay": 2.7893526202684867e-10,
+      "logprob_diff": 0.12499513929015649
+    }
+  ],
+  "total_variation": 4.860617560981147e-06,
+  "kl_original_to_replay": 2.9746789268504235e-07,
+  "logsumexp_shift": 4.860709843512723e-06,
+  "mean_signed_diff": 0.014762916376228933,
+  "max_abs_logprob_diff": 0.2500048607098435
+}

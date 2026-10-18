@@ -1,0 +1,26 @@
+{
+  "verified_output_score_hash_pairs": 5442,
+  "bbh_subtasks_verified": 27,
+  "generation_statistics": {
+    "student": {
+      "finish_reasons": {
+        "stop": 1807,
+        "length": 7
+      },
+      "response_tokens": 1736981
+    },
+    "online": {
+      "finish_reasons": {
+        "stop": 1812,
+        "length": 2
+      },
+      "response_tokens": 1490629
+    },
+    "teacher": {
+      "finish_reasons": {
+        "stop": 1814
+      },
+      "response_tokens": 1485488
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "experiment": "quartile_support_k_20260918",
+  "generation_job_id": "106797",
+  "scoring_job_id": "106798",
+  "output_root": "/storage/yukaichengLab/wangxin/test_eiloeo/opd_eval_prefix/quartile_support_k_20260918",
+  "resources": "one node, 8 H800, 64 CPUs, 512 GiB"
+}

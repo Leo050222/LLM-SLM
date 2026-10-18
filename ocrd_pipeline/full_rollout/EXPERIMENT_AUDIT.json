@@ -1,0 +1,20 @@
+{
+  "audit_date": "2026-08-27",
+  "audit_job_id": 94329,
+  "audit_job_state": "COMPLETED",
+  "audit_job_exit_code": "0:0",
+  "verdict": "PASS",
+  "scope": "teacher_full_qwen3_14b_n8_seed20260826",
+  "verified_trace_count": 13244,
+  "verified_rollout_count": 105952,
+  "verified_generated_token_count": 121247514,
+  "missing_artifact_count": 0,
+  "extra_artifact_count": 0,
+  "finish_reason_counts": {
+    "stop": 105951,
+    "length": 1
+  },
+  "verifier_sha256": "04a84adf7a136c3d4481f88cbe8c2124dd9b7822fb7c18aab0e7dff56cc48d93",
+  "marker_repair_authorized_only_via_guarded_job": true,
+  "original_wrapper_marker_write_proven": false
+}

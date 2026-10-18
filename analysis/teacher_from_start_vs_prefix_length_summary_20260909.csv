@@ -1,0 +1,15 @@
+metric,teacher_from_start,teacher_from_prefix,difference_prefix_minus_start,relative_difference_percent
+problems_clean,13243,13243,,
+rollouts_per_problem,1,8,,
+mean_newly_generated_tokens,1439.1298,1143.8353,-295.2945,-20.5188
+mean_existing_prefix_tokens,0,312.3685,312.3685,
+mean_full_trace_tokens,1439.1298,1456.2038,17.0740,1.1864
+paired_median_full_trace_delta_tokens,,,44.1250,
+paired_p25_full_trace_delta_tokens,,,-191.5000,
+paired_p75_full_trace_delta_tokens,,,275.1250,
+from_prefix_full_trace_shorter_count,,5891,,
+from_prefix_full_trace_shorter_percent,,44.4839,,
+from_prefix_full_trace_longer_count,,7351,,
+from_prefix_full_trace_longer_percent,,55.5086,,
+mean_full_delta_ci95_low,,,7.4599,
+mean_full_delta_ci95_high,,,26.6882,

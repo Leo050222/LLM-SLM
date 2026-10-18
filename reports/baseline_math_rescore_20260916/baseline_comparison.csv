@@ -1,0 +1,7 @@
+dataset,config,n,old_correct,new_correct,wrong_to_right,right_to_wrong,old_accuracy_percent,new_accuracy_percent,delta_pp
+bbh,student_only,1080,378,465,87,0,35.0,43.05555555555556,8.055555555555555
+bbh,teacher_only,1080,835,862,27,0,77.31481481481481,79.81481481481481,2.5
+math500,student_only,500,364,358,5,11,72.8,71.6,-1.2
+math500,teacher_only,500,437,423,4,18,87.4,84.6,-2.8
+olympiad_bench,student_only,674,202,281,83,4,29.97032640949555,41.69139465875371,11.72106824925816
+olympiad_bench,teacher_only,674,314,371,63,6,46.58753709198813,55.04451038575667,8.456973293768545

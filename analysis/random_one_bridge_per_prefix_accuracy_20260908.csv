@@ -1,0 +1,5 @@
+horizon_tokens,selected_prefixes,selected_rollouts,all_bridge_accuracy_percent,single_selection_seed,single_selection_correct,single_selection_accuracy_percent,single_selection_delta_vs_all_bridges_pp,single_selection_lift_vs_student_prefix_pp,selection_only_sd_pp,simulation_count,simulation_p2_5_percent,simulation_p97_5_percent,simulation_min_percent,simulation_max_percent
+32,13244,105952,40.4995,20260908,42872,40.4636,-0.0359,1.1968,0.1065,10000,40.2965,40.7118,40.0936,40.9412
+64,13244,105952,41.0011,20260908,43426,40.9865,-0.0146,1.7196,0.1132,10000,40.7864,41.2243,40.5552,41.4121
+128,13244,105952,42.0167,20260908,44572,42.0681,0.0514,2.8013,0.1232,10000,41.7802,42.2644,41.5471,42.5126
+256,13244,105952,44.2065,20260908,46905,44.2700,0.0636,5.0032,0.1443,10000,43.9199,44.4900,43.6556,44.7203

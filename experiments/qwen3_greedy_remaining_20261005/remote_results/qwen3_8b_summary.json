@@ -1,0 +1,64 @@
+{
+  "math500": {
+    "questions": 500,
+    "correct": 413,
+    "accuracy": 0.826,
+    "score_status": {
+      "ok": 500
+    },
+    "mean_tokens": 2923.534
+  },
+  "cruxeval_o": {
+    "questions": 800,
+    "correct": 240,
+    "accuracy": 0.3,
+    "score_status": {
+      "fail": 560,
+      "pass": 240
+    },
+    "mean_tokens": 719.11625
+  },
+  "cruxeval_i": {
+    "questions": 800,
+    "correct": 315,
+    "accuracy": 0.39375,
+    "score_status": {
+      "pass": 315,
+      "fail": 485
+    },
+    "mean_tokens": 319.9525
+  },
+  "humaneval_plus": {
+    "questions": 164,
+    "correct": 133,
+    "accuracy": 0.8109756097560976,
+    "score_status": {
+      "{'base': 'pass', 'plus': 'pass'}": 133,
+      "{'base': 'pass', 'plus': 'fail'}": 9,
+      "{'base': 'fail', 'plus': 'fail'}": 22
+    },
+    "mean_tokens": 412.2317073170732
+  },
+  "mbpp_plus": {
+    "questions": 378,
+    "correct": 254,
+    "accuracy": 0.671957671957672,
+    "score_status": {
+      "{'base': 'pass', 'plus': 'pass'}": 254,
+      "{'base': 'fail', 'plus': 'fail'}": 86,
+      "{'base': 'pass', 'plus': 'fail'}": 36,
+      "{'base': 'fail', 'plus': 'pass'}": 2
+    },
+    "mean_tokens": 76.9920634920635
+  },
+  "livecodebench": {
+    "questions": 175,
+    "correct": 48,
+    "accuracy": 0.2742857142857143,
+    "score_status": {
+      "fail": 127,
+      "pass": 48
+    },
+    "mean_tokens": 5441.302857142857
+  }
+}

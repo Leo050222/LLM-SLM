@@ -1,0 +1,38 @@
+{
+  "online": {
+    "aime25": {
+      "questions": 30,
+      "correct": 3,
+      "accuracy": 0.1,
+      "score_status": {
+        "ok": 30
+      }
+    },
+    "aime24": {
+      "questions": 30,
+      "correct": 4,
+      "accuracy": 0.13333333333333333,
+      "score_status": {
+        "ok": 30
+      }
+    },
+    "olympiad_bench": {
+      "questions": 674,
+      "correct": 242,
+      "accuracy": 0.3590504451038576,
+      "score_status": {
+        "ok": 673,
+        "user_aborted": 1
+      }
+    },
+    "bbh": {
+      "questions": 1080,
+      "correct": 568,
+      "accuracy": 0.5259259259259259,
+      "score_status": {
+        "ok": 1079,
+        "user_aborted": 1
+      }
+    }
+  }
+}

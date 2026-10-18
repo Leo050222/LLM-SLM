@@ -1,0 +1,25 @@
+{
+  "online": {
+    "counts": {
+      "aime24": 30,
+      "aime25": 30,
+      "olympiad_bench": 674,
+      "bbh": 1080
+    },
+    "correct": {
+      "aime24": 4,
+      "aime25": 3,
+      "olympiad_bench": 242,
+      "bbh": 568
+    },
+    "statuses": {
+      "ok": 1812,
+      "user_aborted": 2
+    },
+    "teacher_tokens": 166327,
+    "takeovers": 5471,
+    "max_takeovers": 41,
+    "judge_calls": 27727
+  },
+  "verified": "1814 records:1812 completed + user-aborted436/900; source/output hashes, same samples/prompts and pre-score gate verified"
+}
